@@ -1,0 +1,34 @@
+```bash
+python slurm_launcher.py \
+  --gpus_per_node 4 \
+  --partition contrib-gpuq \
+  --qos $GPU_GROUP$ \
+  --time_limit 5-00:00:00 \
+  --enable-wandb \
+  --no-sanity \
+  --run europe_with_metadata_1b \
+  --dp 4 \
+  --tp 1 \
+  --pp 1 \
+  --mbs 8 \
+  --acc 64 \
+  --model 1b \
+  --vocab-size 128256 \
+  --tokenizer meta-llama/Llama-3.2-1B \
+  --save-interval 1000 \
+  --grad-clip 0.1 \
+  --learning-rate 3e-3 \
+  --min-lr 3e-4 \
+  --weight-decay 0.033 \
+  --warmup-steps 500 \
+  --seq 2048 \
+  --steps 10000 \
+  --dataset /scratch/$HF_USER$/pretrain/datasets/meco-europe-with-metadata/train \
+  --validation-dataset /scratch/$HF_USER$/pretrain/datasets/meco-europe-with-metadata/validation \
+  --val-check-interval 1000 \
+  --slurm-logs-path /scratch/$HF_USER$/pretrain/logs/slurm_logs \
+  --checkpoints-path /scratch/$HF_USER$/pretrain/logs/checkpoints \
+  --configs-path /scratch/$HF_USER$/pretrain/logs/configs \
+  --slurm-scripts-dir /scratch/$HF_USER$/pretrain/logs/slurm_scripts \
+  --auto-resume
+```

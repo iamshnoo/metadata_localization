@@ -1,0 +1,1794 @@
+[
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/africa_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/america_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/asia_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/europe_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_500m",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_africa_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_africa_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_america_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_america_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_asia_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_asia_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_europe_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_europe_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_africa_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_africa_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_america_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_america_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_asia_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_asia_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_europe_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_europe_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_africa_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_africa_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_america_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_america_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_asia_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_asia_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_europe_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_europe_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_africa_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_africa_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_america_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_america_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_asia_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_asia_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_europe_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablations/leave_one_out/combined_no_europe_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_africa_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_america_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_asia_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/leave_one_out/combined_no_europe_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_with_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/combined_without_metadata_1b",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step2k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step4k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/africa/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/america/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/asia/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/$USER$/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
+    "test_set_path": "/scratch/$USER$/metacul/training_data/meco_datasets/continents/europe/without_metadata/"
+  }
+]
