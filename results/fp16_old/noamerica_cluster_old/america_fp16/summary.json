@@ -1,0 +1,32 @@
+{
+  "n_samples": 934,
+  "n_clusters": 4,
+  "silhouette": 0.07095444947481155,
+  "cluster_sizes": {
+    "0": 248,
+    "1": 261,
+    "2": 304,
+    "3": 121
+  },
+  "skipped_nonfinite": 66,
+  "continent_distribution": {
+    "1": {
+      "America": 261
+    },
+    "2": {
+      "America": 304
+    },
+    "3": {
+      "America": 121
+    },
+    "0": {
+      "America": 248
+    }
+  },
+  "dataset": "/scratch/amukher6/metacul/training_data/meco_datasets/continents/america/with_metadata/",
+  "split": "test",
+  "seed": 42,
+  "max_samples": 1000,
+  "model_path": "/scratch/amukher6/metacul/models/ablations/leave_one_out/combined_no_america_with_metadata_1b",
+  "tokenizer_path": "meta-llama/Llama-3.2-1B"
+}

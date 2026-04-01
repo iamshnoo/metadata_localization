@@ -1,0 +1,21 @@
+# Plot 4: Cross-Continent Generalization (Local Models)
+
+- Source data: `/scratch/amukher6/metacul/results/perplexity_eval.csv`
+- Models: local continent models only (Africa, America, Asia, Europe).
+- Test sets: local continent test sets only (no combined).
+- Two figures: one for 500m and one for 1b.
+- Layout: 2x4 panels.
+  - Row 1: inference with metadata.
+    - `[Local] | [Test]`
+    - `Local | [Test]`
+    - `Δ (Local − [Local]) | [Test]`
+    - `Avg Δ by test | [Test]`
+  - Row 2: inference without metadata.
+    - `[Local] | Test`
+    - `Local | Test`
+    - `Δ (Local − [Local]) | Test`
+    - `Avg Δ by test | Test`
+- Δ is computed as (Local − [Local]); positive values mean metadata pretraining helped.
+- Output files:
+  - `perplexity_cross_continent_500m.pdf`
+  - `perplexity_cross_continent_1b.pdf`

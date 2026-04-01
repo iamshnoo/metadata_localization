@@ -1,0 +1,44 @@
+{
+  "n_samples": 1000,
+  "n_clusters": 4,
+  "silhouette": 0.05926118418574333,
+  "cluster_sizes": {
+    "0": 321,
+    "1": 237,
+    "2": 99,
+    "3": 343
+  },
+  "skipped_nonfinite": 0,
+  "continent_distribution": {
+    "1": {
+      "Asia": 62,
+      "America": 72,
+      "Europe": 70,
+      "Africa": 33
+    },
+    "3": {
+      "Europe": 126,
+      "America": 146,
+      "Africa": 42,
+      "Asia": 29
+    },
+    "2": {
+      "Asia": 30,
+      "America": 12,
+      "Africa": 29,
+      "Europe": 28
+    },
+    "0": {
+      "Africa": 132,
+      "Europe": 32,
+      "America": 32,
+      "Asia": 125
+    }
+  },
+  "dataset": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+  "split": "test",
+  "seed": 42,
+  "max_samples": 1000,
+  "model_path": "/scratch/amukher6/metacul/models/ablations/leave_one_out/combined_no_america_with_metadata_1b",
+  "tokenizer_path": "meta-llama/Llama-3.2-1B"
+}

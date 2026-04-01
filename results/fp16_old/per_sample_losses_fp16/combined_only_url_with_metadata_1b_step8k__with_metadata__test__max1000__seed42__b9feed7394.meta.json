@@ -1,0 +1,7 @@
+{
+  "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step8k",
+  "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
+  "split": "test",
+  "max_samples": 1000,
+  "seed": 42
+}
