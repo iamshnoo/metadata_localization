@@ -16,8 +16,10 @@ OWNER = "iamshnoo"
 COLLECTION_SLUG = f"{OWNER}/metadata-conditioned-llms"
 COLLECTION_TITLE_FALLBACK = "Metadata Conditioned LLMs"
 COLLECTION_DESCRIPTION_FALLBACK = (
-    "Models, checkpoints, and chat variants released for the metadata-conditioned LLM project."
+    "Source: English NOW corpus (english-corpora.org/now). Paper: arxiv.org/abs/2601.15236. Code: github.com/iamshnoo/metadata_localization"
 )
+PROJECT_GITHUB_URL = "https://github.com/iamshnoo/metadata_localization"
+NOW_CORPUS_URL = "https://www.english-corpora.org/now/"
 
 PRETRAIN_LOGS = Path("/scratch/amukher6/pretrain/logs/slurm_logs")
 SFT_LOGS = Path("/scratch/amukher6/metacul/logs/slurm_logs")
@@ -371,6 +373,8 @@ def build_card(spec: RepoSpec, run_info: Optional[dict], collection_title: str, 
     lines.append(
         f"This model is part of the metadata localization release. Related checkpoints and variants are grouped in the public Hugging Face collection [{collection_title}](https://huggingface.co/collections/{collection_slug})."
     )
+    lines.append("- Training data source: [News on the Web (NOW) Corpus](https://www.english-corpora.org/now/)")
+    lines.append(f"- Project repository: [{PROJECT_GITHUB_URL}]({PROJECT_GITHUB_URL})")
     lines.append("")
     lines.append(f"Last synced: `{datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}`")
     lines.append("")
