@@ -2199,6 +2199,318 @@ def plot_metadata_ablations():
     _write_plot_csv(output_dir, 6, subset)
 
 
+def plot_metadata_family_full_grid():
+    # Plot: metadata-family ablations with a 3-panel main figure and a 5x7 appendix grid.
+    # Outputs:
+    #   /scratch/amukher6/metacul/results/plots/plot10/perplexity_metadata_family_main_1b.pdf
+    #   /scratch/amukher6/metacul/results/plots/plot11/perplexity_metadata_family_full_grid_1b.pdf
+    df = _load_perplexity_df()
+    pairs = set()
+
+    steps = [2000, 4000, 8000, 10000]
+    step_labels = ["2k", "4k", "8k", "10k"]
+    axis_label_fs = 18
+    tick_fs = 13
+    title_fs = 14
+    legend_fs = 13
+
+    tests = [
+        (
+            "URL-only\n(I+)",
+            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",
+        ),
+        (
+            "URL+Country\n(I+)",
+            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/",
+        ),
+        (
+            "URL+Continent\n(I+)",
+            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
+        ),
+        (
+            "Country-only\n(I+)",
+            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/",
+        ),
+        (
+            "Continent-only\n(I+)",
+            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/",
+        ),
+        (
+            "Global metadata\n(I+)",
+            "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+        ),
+        (
+            "Global no-metadata\n(I-)",
+            "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+        ),
+    ]
+
+    model_groups = {
+        "url": {
+            "label": "URL-only [URL] (T+)",
+            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step{step}k",
+            "color": "#f4a3a3",
+            "marker": "D",
+        },
+        "url_country": {
+            "label": "URL+Country [URL][Country] (T+)",
+            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step{step}k",
+            "color": "#b8a1d9",
+            "marker": "v",
+        },
+        "url_continent": {
+            "label": "URL+Continent [URL][Continent] (T+)",
+            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step{step}k",
+            "color": "#6baed6",
+            "marker": "^",
+        },
+        "country_only": {
+            "label": "Country-only [Country] (T+)",
+            "final": "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
+            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step{step}k",
+            "color": "#f0c36d",
+            "marker": "s",
+        },
+        "continent_only": {
+            "label": "Continent-only [Continent] (T+)",
+            "final": "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
+            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step{step}k",
+            "color": "#5fae78",
+            "marker": "o",
+        },
+    }
+
+    all_values = []
+
+    def _series_for_test_path(test_path):
+        series = {}
+        for key, cfg in model_groups.items():
+            y_vals = []
+            lo_vals = []
+            hi_vals = []
+            for step in steps:
+                model_path = (
+                    cfg["final"]
+                    if step == 10000
+                    else cfg["steps"].format(step=step // 1000)
+                )
+                pairs.add((model_path, test_path))
+                mean, ci_low, ci_high = _lookup_with_ci(df, model_path, test_path)
+                y_vals.append(mean)
+                lo_vals.append(ci_low)
+                hi_vals.append(ci_high)
+            series[key] = (
+                np.array(y_vals, dtype=float),
+                np.array(lo_vals, dtype=float),
+                np.array(hi_vals, dtype=float),
+            )
+        return series
+
+    own_test_paths = [path for _, path in tests[:5]]
+
+    def _series_for_own_average():
+        series = {}
+        for key, cfg in model_groups.items():
+            y_vals = []
+            lo_vals = []
+            hi_vals = []
+            for step in steps:
+                model_path = (
+                    cfg["final"]
+                    if step == 10000
+                    else cfg["steps"].format(step=step // 1000)
+                )
+                rows = []
+                for test_path in own_test_paths:
+                    pairs.add((model_path, test_path))
+                    row = df[
+                        (df["model_path"] == model_path)
+                        & (df["test_set_path"] == test_path)
+                    ]
+                    if row.empty or pd.isna(row["mean_ppl"].values[0]):
+                        continue
+                    rows.append(row.iloc[0])
+                agg = _aggregate_rows(rows)
+                if agg is None:
+                    y_vals.append(np.nan)
+                    lo_vals.append(np.nan)
+                    hi_vals.append(np.nan)
+                else:
+                    mean, ci_low, ci_high = agg
+                    y_vals.append(mean)
+                    lo_vals.append(ci_low)
+                    hi_vals.append(ci_high)
+            series[key] = (
+                np.array(y_vals, dtype=float),
+                np.array(lo_vals, dtype=float),
+                np.array(hi_vals, dtype=float),
+            )
+        return series
+
+    def _draw_series(ax, title, series_map):
+        for key, cfg in model_groups.items():
+            y_vals, lo_vals, hi_vals = series_map[key]
+            valid = ~np.isnan(y_vals)
+            if not np.any(valid):
+                continue
+            x_vals = np.arange(len(step_labels))
+            ax.plot(
+                x_vals,
+                y_vals,
+                color=cfg["color"],
+                marker=cfg["marker"],
+                linewidth=2,
+                markersize=6,
+                markeredgecolor="black",
+                markeredgewidth=0.6,
+                label=cfg["label"],
+                zorder=3,
+            )
+            band_mask = ~np.isnan(y_vals) & ~np.isnan(lo_vals) & ~np.isnan(hi_vals)
+            if np.any(band_mask):
+                ax.fill_between(
+                    x_vals,
+                    lo_vals,
+                    hi_vals,
+                    color=cfg["color"],
+                    alpha=0.2,
+                    linewidth=0.4,
+                    edgecolor=cfg["color"],
+                    where=band_mask,
+                    interpolate=True,
+                    zorder=1,
+                )
+            all_values.extend([v for v in y_vals if not np.isnan(v)])
+
+        bbox_props = dict(
+            facecolor="lightgrey",
+            edgecolor="grey",
+            alpha=0.7,
+            boxstyle="round",
+            pad=0.3,
+        )
+        ax.set_title(title, fontsize=title_fs, weight="bold", pad=6, bbox=bbox_props)
+        ax.set_xticks(np.arange(len(step_labels)))
+        ax.set_xticklabels(step_labels, fontsize=tick_fs)
+        ax.grid(axis="y", linestyle="--", linewidth=0.5, alpha=0.3)
+        ax.tick_params(axis="y", labelsize=tick_fs)
+        ax.tick_params(axis="x", labelsize=tick_fs)
+        ax.set_ylim(bottom=8.5)
+
+    main_panels = [
+        ("Avg over family tests\n(I+)", _series_for_own_average()),
+        ("Global metadata\n(I+)", _series_for_test_path(tests[5][1])),
+        ("Global no-metadata\n(I-)", _series_for_test_path(tests[6][1])),
+    ]
+
+    fig, axes = plt.subplots(1, 3, figsize=(14, 5), sharey=True)
+    for ax, (title, series_map) in zip(axes, main_panels):
+        _draw_series(ax, title, series_map)
+
+    if all_values:
+        y_max = max(all_values)
+        for ax in axes:
+            ax.set_ylim(top=y_max + 1.0)
+
+    axes[0].set_ylabel("Perplexity (↓ better)", fontsize=axis_label_fs)
+    fig.text(0.5, 0.03, "Training steps", ha="center", fontsize=axis_label_fs)
+
+    legend_handles = [
+        Line2D(
+            [],
+            [],
+            color=cfg["color"],
+            marker=cfg["marker"],
+            linestyle="-",
+            linewidth=2,
+            markeredgecolor="black",
+            label=cfg["label"],
+        )
+        for cfg in model_groups.values()
+    ]
+    fig.legend(
+        handles=legend_handles,
+        labels=[h.get_label() for h in legend_handles],
+        frameon=True,
+        fancybox=True,
+        framealpha=0.9,
+        edgecolor="black",
+        fontsize=legend_fs,
+        loc="upper center",
+        ncol=3,
+        bbox_to_anchor=(0.5, 0.99),
+    )
+
+    output_dir = os.path.join(PLOTS_DIR, "plot10")
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, "perplexity_metadata_family_main_1b.pdf")
+    plt.tight_layout()
+    plt.subplots_adjust(top=0.78, bottom=0.12)
+    plt.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.01)
+    plt.close(fig)
+
+    fig, axes = plt.subplots(2, 4, figsize=(16, 8), sharey=True)
+    axes = axes.flatten()
+    appendix_values = []
+
+    for ax, (title, test_path) in zip(axes, tests):
+        series_map = _series_for_test_path(test_path)
+        _draw_series(ax, title, series_map)
+        for y_vals, _, _ in series_map.values():
+            appendix_values.extend([v for v in y_vals if not np.isnan(v)])
+
+    axes[-1].axis("off")
+    if appendix_values:
+        y_max = max(appendix_values)
+        for ax in axes[:-1]:
+            ax.set_ylim(top=y_max + 1.0)
+
+    axes[0].set_ylabel("Perplexity (↓ better)", fontsize=axis_label_fs)
+    axes[4].set_ylabel("Perplexity (↓ better)", fontsize=axis_label_fs)
+    fig.text(0.5, 0.03, "Training steps", ha="center", fontsize=axis_label_fs)
+
+    legend_handles = [
+        Line2D(
+            [],
+            [],
+            color=cfg["color"],
+            marker=cfg["marker"],
+            linestyle="-",
+            linewidth=2,
+            markeredgecolor="black",
+            label=cfg["label"],
+        )
+        for cfg in model_groups.values()
+    ]
+    fig.legend(
+        handles=legend_handles,
+        labels=[h.get_label() for h in legend_handles],
+        frameon=True,
+        fancybox=True,
+        framealpha=0.9,
+        edgecolor="black",
+        fontsize=legend_fs,
+        loc="upper center",
+        ncol=3,
+        bbox_to_anchor=(0.5, 0.995),
+    )
+
+    output_dir = os.path.join(PLOTS_DIR, "plot11")
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, "perplexity_metadata_family_full_grid_1b.pdf")
+    plt.tight_layout()
+    plt.subplots_adjust(top=0.82, bottom=0.10)
+    plt.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.01)
+    plt.close(fig)
+
+    subset = _subset_by_pairs(df, pairs)
+    _write_plot_csv(os.path.join(PLOTS_DIR, "plot10"), 10, subset)
+    _write_plot_csv(output_dir, 11, subset)
+
+
 def plot_leave_one_out_ablations():
     # Plot: leave-one-out ablations (with/without metadata).
     # Output: /scratch/amukher6/metacul/results/plots/plot7/leave_one_out_{meta}.pdf
@@ -2474,6 +2786,7 @@ def main():
     plot_cross_continent_asymmetry()
     plot_sft_accuracy_apples_to_apples()
     plot_metadata_ablations()
+    plot_metadata_family_full_grid()
     plot_leave_one_out_ablations()
     plot_adversarial_url_accuracy()
     plot_adversarial_url_accuracy(
