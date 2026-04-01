@@ -224,13 +224,7 @@ def infer_base_model(spec: RepoSpec) -> str:
         if spec.repo_name.endswith("_3b_chat"):
             return spec.repo_name.replace("_chat", "")
         return spec.repo_name.replace("_chat", "_1b") if spec.repo_name.endswith("metadata_chat") else spec.repo_name.replace("_chat", "")
-    if spec.size == "500m":
-        return "meta-llama/Llama-3.2-1B (continued pretraining from the 500M downscaled variant setup)"
-    if spec.size == "1b":
-        return "meta-llama/Llama-3.2-1B"
-    if spec.size == "3b":
-        return "meta-llama/Llama-3.2-3B"
-    return "meta-llama/Llama-3.2"
+    return "Trained from scratch; tokenizer/vocabulary from meta-llama/Llama-3.2-1B"
 
 
 def summarize_run(run, spec: RepoSpec) -> dict:
