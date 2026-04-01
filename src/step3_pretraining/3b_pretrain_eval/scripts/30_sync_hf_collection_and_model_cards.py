@@ -13,9 +13,10 @@ import wandb
 from huggingface_hub import HfApi
 
 OWNER = "iamshnoo"
-COLLECTION_TITLE = "Metadata Localization Models"
-COLLECTION_DESCRIPTION = (
-    "Models, checkpoints, and chat variants released for the metadata localization project."
+COLLECTION_SLUG = f"{OWNER}/metadata-conditioned-llms"
+COLLECTION_TITLE_FALLBACK = "Metadata Conditioned LLMs"
+COLLECTION_DESCRIPTION_FALLBACK = (
+    "Models, checkpoints, and chat variants released for the metadata-conditioned LLM project."
 )
 
 PRETRAIN_LOGS = Path("/scratch/amukher6/pretrain/logs/slurm_logs")
@@ -274,7 +275,7 @@ def summarize_run(run, spec: RepoSpec) -> dict:
     return info
 
 
-def build_card(spec: RepoSpec, run_info: Optional[dict]) -> str:
+def build_card(spec: RepoSpec, run_info: Optional[dict], collection_title: str, collection_slug: str) -> str:
     tags = ["text-generation", "metadata-localization", spec.family.replace("_", "-")]
     if spec.size:
         tags.append(spec.size)
@@ -360,7 +361,7 @@ def build_card(spec: RepoSpec, run_info: Optional[dict]) -> str:
     lines.append("## Project Context")
     lines.append("")
     lines.append(
-        "This model is part of the metadata localization release. Related checkpoints and variants are grouped in the public Hugging Face collection `Metadata Localization Models`."
+        f"This model is part of the metadata localization release. Related checkpoints and variants are grouped in the public Hugging Face collection [{collection_title}](https://huggingface.co/collections/{collection_slug})."
     )
     lines.append("")
     lines.append(f"Last synced: `{datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}`")
@@ -387,8 +388,9 @@ def upload_card(api: HfApi, spec: RepoSpec, card_text: str) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Sync HF collection and model cards for metadata localization models")
     parser.add_argument("--namespace", default=OWNER)
-    parser.add_argument("--collection-title", default=COLLECTION_TITLE)
-    parser.add_argument("--collection-description", default=COLLECTION_DESCRIPTION)
+    parser.add_argument("--collection-slug", default=COLLECTION_SLUG)
+    parser.add_argument("--collection-title", default=None)
+    parser.add_argument("--collection-description", default=None)
     parser.add_argument("--include-3b-chat", action="store_true", default=False)
     parser.add_argument("--skip-cards", action="store_true", default=False)
     parser.add_argument("--dry-run", action="store_true", default=False)
@@ -409,22 +411,29 @@ def main() -> int:
 
     specs = sorted((parse_repo_spec(repo_id) for repo_id in repo_ids), key=sort_key)
 
-    collection = api.create_collection(
-        args.collection_title,
-        namespace=args.namespace,
-        description=args.collection_description,
-        exists_ok=True,
-    )
-    collection = api.update_collection_metadata(
-        collection.slug,
-        title=args.collection_title,
-        description=args.collection_description,
-        private=False,
-        theme="blue",
-    )
+    try:
+        collection = api.get_collection(args.collection_slug)
+    except Exception:
+        create_title = args.collection_title or COLLECTION_TITLE_FALLBACK
+        create_description = args.collection_description or COLLECTION_DESCRIPTION_FALLBACK
+        collection = api.create_collection(
+            create_title,
+            namespace=args.namespace,
+            description=create_description,
+            exists_ok=True,
+        )
+
+    update_kwargs = {"private": False, "theme": "blue"}
+    if args.collection_title is not None:
+        update_kwargs["title"] = args.collection_title
+    if args.collection_description is not None:
+        update_kwargs["description"] = args.collection_description
+    collection = api.update_collection_metadata(args.collection_slug, **update_kwargs)
+    collection_title = args.collection_title or collection.title or COLLECTION_TITLE_FALLBACK
+    collection_ref = args.collection_slug
 
     report = {
-        "collection_slug": collection.slug,
+        "collection_slug": collection_ref,
         "synced_at": datetime.now(timezone.utc).isoformat(),
         "repos": [],
     }
@@ -440,16 +449,21 @@ def main() -> int:
                 run_info = {"error": str(exc), "url": None, "name": run_path, "state": "error", "runtime": None, "summary": {}, "config": {}}
 
         if not args.skip_cards:
-            card_text = build_card(spec, run_info if run_info and "error" not in run_info else None)
+            card_text = build_card(
+                spec,
+                run_info if run_info and "error" not in run_info else None,
+                collection_title=collection_title,
+                collection_slug=collection_ref,
+            )
             if args.dry_run:
                 print(f"[dry-run] would update card for {spec.repo_id}")
             else:
                 upload_card(api, spec, card_text)
 
         if args.dry_run:
-            print(f"[dry-run] would add {spec.repo_id} to {collection.slug}")
+            print(f"[dry-run] would add {spec.repo_id} to {collection_ref}")
         else:
-            api.add_collection_item(collection.slug, spec.repo_id, "model", note=spec.item_note, exists_ok=True)
+            api.add_collection_item(collection_ref, spec.repo_id, "model", note=spec.item_note, exists_ok=True)
 
         report["repos"].append(
             {
@@ -467,7 +481,7 @@ def main() -> int:
     report_path = Path(args.write_report)
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, indent=2))
-    print(f"collection={collection.slug}")
+    print(f"collection={collection_ref}")
     print(f"repos_synced={len(specs)}")
     print(f"report={report_path}")
     return 0
