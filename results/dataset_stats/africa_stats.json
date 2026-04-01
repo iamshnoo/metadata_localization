@@ -1,0 +1,38 @@
+{
+  "train": {
+    "Africa": {
+      "ng": 1640957,
+      "za": 1341639,
+      "ke": 530219,
+      "gh": 340776,
+      "tz": 54860
+    },
+    "America": {},
+    "Asia": {},
+    "Europe": {}
+  },
+  "validation": {
+    "Africa": {
+      "ng": 182098,
+      "za": 149312,
+      "ke": 59006,
+      "gh": 37803,
+      "tz": 6053
+    },
+    "America": {},
+    "Asia": {},
+    "Europe": {}
+  },
+  "test": {
+    "Africa": {
+      "ng": 1053,
+      "za": 871,
+      "ke": 341,
+      "gh": 204,
+      "tz": 31
+    },
+    "America": {},
+    "Asia": {},
+    "Europe": {}
+  }
+}

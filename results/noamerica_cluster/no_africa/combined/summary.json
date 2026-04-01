@@ -1,0 +1,118 @@
+{
+  "n_samples": 1000,
+  "n_clusters": 4,
+  "silhouette": null,
+  "cluster_sizes": {
+    "0": 214,
+    "1": 171,
+    "2": 324,
+    "3": 291
+  },
+  "skipped_nonfinite": 0,
+  "continent_distribution": {
+    "1": {
+      "Asia": 45,
+      "America": 56,
+      "Europe": 50,
+      "Africa": 20
+    },
+    "2": {
+      "Europe": 121,
+      "America": 113,
+      "Africa": 49,
+      "Asia": 41
+    },
+    "3": {
+      "Africa": 109,
+      "Asia": 130,
+      "Europe": 25,
+      "America": 27
+    },
+    "0": {
+      "Europe": 60,
+      "America": 66,
+      "Asia": 30,
+      "Africa": 58
+    }
+  },
+  "per_cluster_ppl": {
+    "model": {
+      "1": {
+        "n": 171,
+        "mean_nll": 1.5113084785391169,
+        "mean_ppl": 4.532657801246014
+      },
+      "2": {
+        "n": 324,
+        "mean_nll": 2.3699213009581843,
+        "mean_ppl": 10.696550442714857
+      },
+      "3": {
+        "n": 291,
+        "mean_nll": 2.195191280236968,
+        "mean_ppl": 8.981718917840688
+      },
+      "0": {
+        "n": 214,
+        "mean_nll": 2.499105379681962,
+        "mean_ppl": 12.171600127730581
+      }
+    },
+    "baseline": {
+      "1": {
+        "n": 171,
+        "mean_nll": 1.6133362901212425,
+        "mean_ppl": 5.019529931226181
+      },
+      "2": {
+        "n": 324,
+        "mean_nll": 2.397943156093371,
+        "mean_ppl": 11.00052672885566
+      },
+      "3": {
+        "n": 291,
+        "mean_nll": 2.024953909862622,
+        "mean_ppl": 7.575761768689463
+      },
+      "0": {
+        "n": 214,
+        "mean_nll": 2.4382949903126,
+        "mean_ppl": 11.453495764108297
+      }
+    }
+  },
+  "per_cluster_delta": {
+    "0": {
+      "delta_nll": 0.06081038936936212,
+      "delta_ppl": 0.7181043636222846,
+      "n_a": 214,
+      "n_b": 214
+    },
+    "1": {
+      "delta_nll": -0.1020278115821256,
+      "delta_ppl": -0.48687212998016705,
+      "n_a": 171,
+      "n_b": 171
+    },
+    "2": {
+      "delta_nll": -0.028021855135186513,
+      "delta_ppl": -0.3039762861408022,
+      "n_a": 324,
+      "n_b": 324
+    },
+    "3": {
+      "delta_nll": 0.17023737037434605,
+      "delta_ppl": 1.4059571491512246,
+      "n_a": 291,
+      "n_b": 291
+    }
+  },
+  "dataset": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+  "split": "test",
+  "seed": 42,
+  "max_samples": 1000,
+  "model_path": "/scratch/amukher6/metacul/models/ablations/leave_one_out/combined_no_africa_with_metadata_1b",
+  "tokenizer_path": "meta-llama/Llama-3.2-1B",
+  "baseline_model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
+  "per_sample_dir": "/scratch/amukher6/metacul/results/per_sample_losses"
+}

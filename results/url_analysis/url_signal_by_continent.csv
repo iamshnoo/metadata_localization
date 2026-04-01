@@ -1,0 +1,5 @@
+continent,total,domain_continent_match,path_continent_match,any_continent_match
+africa,3908451,11441,168319,179086
+america,3908451,12,18836,18848
+asia,3908451,26421,26276,52486
+europe,3908451,396,24950,25331

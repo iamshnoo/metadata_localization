@@ -1,0 +1,2 @@
+model_path,test_set_path,mean_ppl,ci_low,ci_high,skipped_samples,ci_level,ci_method,split,max_samples,seed,bootstrap_iters
+/scratch/amukher6/metacul/models/quick_eval/combined_with_metadata_3b_step600_hf,/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/,25.497113,23.106315,27.993420,0,0.95,bootstrap,test,200,42,200

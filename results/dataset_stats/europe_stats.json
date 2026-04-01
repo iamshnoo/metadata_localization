@@ -1,0 +1,38 @@
+{
+  "train": {
+    "Africa": {},
+    "America": {
+      "us": 65
+    },
+    "Asia": {
+      "in": 22,
+      "lk": 1
+    },
+    "Europe": {
+      "gb": 3844880,
+      "ie": 1803100
+    }
+  },
+  "validation": {
+    "Africa": {},
+    "America": {
+      "us": 13
+    },
+    "Asia": {
+      "in": 3
+    },
+    "Europe": {
+      "gb": 428180,
+      "ie": 199367
+    }
+  },
+  "test": {
+    "Africa": {},
+    "America": {},
+    "Asia": {},
+    "Europe": {
+      "gb": 1716,
+      "ie": 784
+    }
+  }
+}

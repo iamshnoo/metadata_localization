@@ -1,0 +1,49 @@
+{
+  "train": {
+    "Africa": {
+      "tz": 85,
+      "za": 2
+    },
+    "America": {
+      "us": 7851940,
+      "ca": 2231729,
+      "jm": 106268
+    },
+    "Asia": {
+      "lk": 12,
+      "ph": 11,
+      "my": 6
+    },
+    "Europe": {
+      "gb": 153,
+      "ie": 1
+    }
+  },
+  "validation": {
+    "Africa": {
+      "tz": 5,
+      "za": 1
+    },
+    "America": {
+      "us": 872021,
+      "ca": 248416,
+      "jm": 11776
+    },
+    "Asia": {
+      "ph": 2
+    },
+    "Europe": {
+      "gb": 24
+    }
+  },
+  "test": {
+    "Africa": {},
+    "America": {
+      "us": 1899,
+      "ca": 569,
+      "jm": 32
+    },
+    "Asia": {},
+    "Europe": {}
+  }
+}

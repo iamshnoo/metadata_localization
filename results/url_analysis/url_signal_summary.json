@@ -1,0 +1,14 @@
+{
+  "total_rows": 15633804,
+  "with_url": 15633804,
+  "cc_tld": 5532731,
+  "cc_tld_match_country": 5469737,
+  "domain_code_match": 5671254,
+  "any_country_code_signal": 6680266,
+  "path_code_match": 1323947,
+  "path_has_continent_token": 520146,
+  "path_continent_match": 238381,
+  "any_continent_signal": 275751,
+  "domain_has_continent_token": 38496,
+  "domain_continent_match": 38270
+}

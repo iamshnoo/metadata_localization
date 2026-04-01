@@ -1,0 +1,106 @@
+{
+  "n_samples": 1000,
+  "n_clusters": 4,
+  "silhouette": null,
+  "cluster_sizes": {
+    "0": 351,
+    "1": 251,
+    "2": 154,
+    "3": 244
+  },
+  "skipped_nonfinite": 0,
+  "continent_distribution": {
+    "1": {
+      "America": 251
+    },
+    "0": {
+      "America": 351
+    },
+    "2": {
+      "America": 154
+    },
+    "3": {
+      "America": 244
+    }
+  },
+  "per_cluster_ppl": {
+    "model": {
+      "1": {
+        "n": 251,
+        "mean_nll": 2.439173549386145,
+        "mean_ppl": 11.463562758312683
+      },
+      "0": {
+        "n": 351,
+        "mean_nll": 2.591314238458127,
+        "mean_ppl": 13.347301618461675
+      },
+      "2": {
+        "n": 154,
+        "mean_nll": 2.187018075457439,
+        "mean_ppl": 8.908608669356882
+      },
+      "3": {
+        "n": 244,
+        "mean_nll": 2.674073457124063,
+        "mean_ppl": 14.498909752603867
+      }
+    },
+    "baseline": {
+      "1": {
+        "n": 251,
+        "mean_nll": 2.079327691045985,
+        "mean_ppl": 7.9990892467750925
+      },
+      "0": {
+        "n": 351,
+        "mean_nll": 2.3944021840121836,
+        "mean_ppl": 10.961643054461666
+      },
+      "2": {
+        "n": 154,
+        "mean_nll": 1.8363628746013803,
+        "mean_ppl": 6.273678558796194
+      },
+      "3": {
+        "n": 244,
+        "mean_nll": 2.4282452742293437,
+        "mean_ppl": 11.338967834019911
+      }
+    }
+  },
+  "per_cluster_delta": {
+    "0": {
+      "delta_nll": 0.1969120544459435,
+      "delta_ppl": 2.3856585640000088,
+      "n_a": 351,
+      "n_b": 351
+    },
+    "1": {
+      "delta_nll": 0.3598458583401598,
+      "delta_ppl": 3.464473511537591,
+      "n_a": 251,
+      "n_b": 251
+    },
+    "2": {
+      "delta_nll": 0.35065520085605884,
+      "delta_ppl": 2.6349301105606884,
+      "n_a": 154,
+      "n_b": 154
+    },
+    "3": {
+      "delta_nll": 0.2458281828947193,
+      "delta_ppl": 3.1599419185839555,
+      "n_a": 244,
+      "n_b": 244
+    }
+  },
+  "dataset": "/scratch/amukher6/metacul/training_data/meco_datasets/continents/america/with_metadata/",
+  "split": "test",
+  "seed": 42,
+  "max_samples": 1000,
+  "model_path": "/scratch/amukher6/metacul/models/ablations/leave_one_out/combined_no_america_with_metadata_1b",
+  "tokenizer_path": "meta-llama/Llama-3.2-1B",
+  "baseline_model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
+  "per_sample_dir": "/scratch/amukher6/metacul/results/per_sample_losses"
+}

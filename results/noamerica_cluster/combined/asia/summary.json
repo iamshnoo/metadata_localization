@@ -1,0 +1,36 @@
+{
+  "n_samples": 1000,
+  "n_clusters": 4,
+  "silhouette": null,
+  "cluster_sizes": {
+    "0": 271,
+    "1": 235,
+    "2": 94,
+    "3": 400
+  },
+  "skipped_nonfinite": 0,
+  "continent_distribution": {
+    "0": {
+      "Asia": 271
+    },
+    "1": {
+      "Asia": 235
+    },
+    "3": {
+      "Asia": 400
+    },
+    "2": {
+      "Asia": 94
+    }
+  },
+  "per_cluster_ppl": null,
+  "per_cluster_delta": null,
+  "dataset": "/scratch/amukher6/metacul/training_data/meco_datasets/continents/asia/with_metadata/",
+  "split": "test",
+  "seed": 42,
+  "max_samples": 1000,
+  "model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
+  "tokenizer_path": "meta-llama/Llama-3.2-1B",
+  "baseline_model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
+  "per_sample_dir": "/scratch/amukher6/metacul/results/per_sample_losses"
+}

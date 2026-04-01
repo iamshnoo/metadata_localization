@@ -1,0 +1,106 @@
+{
+  "n_samples": 1000,
+  "n_clusters": 4,
+  "silhouette": null,
+  "cluster_sizes": {
+    "0": 280,
+    "1": 232,
+    "2": 212,
+    "3": 276
+  },
+  "skipped_nonfinite": 0,
+  "continent_distribution": {
+    "2": {
+      "Africa": 212
+    },
+    "0": {
+      "Africa": 280
+    },
+    "1": {
+      "Africa": 232
+    },
+    "3": {
+      "Africa": 276
+    }
+  },
+  "per_cluster_ppl": {
+    "model": {
+      "2": {
+        "n": 87,
+        "mean_nll": 2.442959588122505,
+        "mean_ppl": 11.50704651462359
+      },
+      "0": {
+        "n": 131,
+        "mean_nll": 2.3429342119578376,
+        "mean_ppl": 10.411742044078764
+      },
+      "1": {
+        "n": 95,
+        "mean_nll": 2.4945007339378997,
+        "mean_ppl": 12.115683058950049
+      },
+      "3": {
+        "n": 92,
+        "mean_nll": 2.612197720947348,
+        "mean_ppl": 13.62897063637801
+      }
+    },
+    "baseline": {
+      "2": {
+        "n": 87,
+        "mean_nll": 2.1800139103885123,
+        "mean_ppl": 8.846429315133719
+      },
+      "0": {
+        "n": 131,
+        "mean_nll": 1.6680642548748024,
+        "mean_ppl": 5.301894740481111
+      },
+      "1": {
+        "n": 95,
+        "mean_nll": 2.0950258938197375,
+        "mean_ppl": 8.125651371640433
+      },
+      "3": {
+        "n": 92,
+        "mean_nll": 2.226109026156455,
+        "mean_ppl": 9.263750851088759
+      }
+    }
+  },
+  "per_cluster_delta": {
+    "0": {
+      "delta_nll": 0.6748699570830352,
+      "delta_ppl": 5.109847303597653,
+      "n_a": 131,
+      "n_b": 131
+    },
+    "1": {
+      "delta_nll": 0.39947484011816226,
+      "delta_ppl": 3.9900316873096155,
+      "n_a": 95,
+      "n_b": 95
+    },
+    "2": {
+      "delta_nll": 0.2629456777339927,
+      "delta_ppl": 2.660617199489872,
+      "n_a": 87,
+      "n_b": 87
+    },
+    "3": {
+      "delta_nll": 0.38608869479089325,
+      "delta_ppl": 4.365219785289252,
+      "n_a": 92,
+      "n_b": 92
+    }
+  },
+  "dataset": "/scratch/amukher6/metacul/training_data/meco_datasets/continents/africa/with_metadata/",
+  "split": "test",
+  "seed": 42,
+  "max_samples": 1000,
+  "model_path": "/scratch/amukher6/metacul/models/ablations/leave_one_out/combined_no_africa_with_metadata_1b",
+  "tokenizer_path": "meta-llama/Llama-3.2-1B",
+  "baseline_model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
+  "per_sample_dir": "/scratch/amukher6/metacul/results/per_sample_losses"
+}
