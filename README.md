@@ -1,135 +1,160 @@
-Anonymous ARR submission
+# MeCo: Metacultural Training Pipeline
 
-# Environment Setup
+This repository contains the complete pipeline for training language models on metacultural data with various splits and configurations.
 
-## Create venv and install dependencies
+## 📁 Project Structure
 
-```bash
-echo "export HF_HOME=/scratch/$USER$/cache/hf_cache" >> ~/.bashrc
-cat ~/.bashrc
-
-ml load gnu12/12.3.0
-ml load python/3.11.7-cx
-ml load cuda/12.4.0
-ml load git
-python -m venv ~/nanotron-env
-source ~/nanotron-env/bin/activate
-pip install --upgrade pip
-pip install torch --index-url https://download.pytorch.org/whl/cu124
-cd /scratch/$USER$/pretrain
-mkdir models
-mkdir datasets
-mkdir logs
-mkdir logs/data_processing
-mkdir logs/slurm_logs
-mkdir logs/checkpoints
-mkdir logs/configs
-mkdir logs/slurm_scripts
-mkdir src
-git clone https://github.com/huggingface/nanotron.git
-cd nanotron
-pip install -e .
-pip install datasets==3.6.0 transformers numba wandb ninja triton datatrove==0.3.0
-wget https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.3/flash_attn-2.7.3+cu12torch2.6cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
-pip install flash_attn-2.7.3+cu12torch2.6cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
-rm flash_attn-2.7.3+cu12torch2.6cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
-pip install psutil
-pip install pybind11
-hf auth login
-wandb login
-pip install trl bitsandbytes peft liger-kernel rich
-echo "export VIRTUAL_ENV=/home/$USER$/nanotron-env" >> ~/.bashrc
-echo "export VIRTUAL_ENV" >> ~/.bashrc
-echo "export PATH=$HOME/.local/bin:$PATH" >> ~/.bashrc
-
-git clone https://github.com/mimno/Mallet.git
-cd Mallet
-ml load ant
-ant
-ant jar
-cd ..
-pip install little_mallet_wrapper
+```
+metacul/
+├── src/                          # Source code
+├── train_configs/                # Generated training configurations
+├── data/                         # Raw data (ignored)
+├── training_data/                # Processed datasets (ignored)
+├── logs/                         # Training logs and checkpoints (ignored)
+├── quick_llama/                  # Quick LLaMA library (ignored)
+├── MeCo/                         # MeCo dataset repository (ignored)
+└── scripts/                      # SLURM job scripts
 ```
 
-# Dataset (Step 1)
+## 🚀 Execution Order
 
-```0_data_now.py``` is used to unzip purchased data from
-https://www.english-corpora.org/now/ and convert it into text files.
+### Phase 1: Data Preparation
 
-We also did some initial LDA analysis of the data (```1_lda.py```)
+#### 1. **Raw Data Processing** (`0_data_now.py`)
+- **Purpose**: Download and preprocess raw NOW corpus data
+- **SLURM**: `scripts/now_data.slurm`
+- **Output**: Cleaned text data in `data/`
 
-## Data Preprocessing (Step 2)
+#### 2. **LDA Topic Modeling** (`1_lda.py`)
+- **Purpose**: Generate topic models for document clustering
+- **SLURM**: `scripts/lda.slurm`
+- **Input**: Raw text data
+- **Output**: LDA models and topic assignments
 
-Step 2 contains all the files relevant to extracting metadata and correctly
-formatting everything into a huggingface compatible dataset for each experiment
-used in the paper. Note that we initially experimented with many different
-variations of metadata and dataset splits, not all of which are used in the
-final paper. (e.g., year metadata, time based splits, LDA topics as part of
-metadata, etc)
+#### 3. **Document Metadata Generation** (`2_generate_document_metadata.py`)
+- **Purpose**: Extract metadata (dates, sources, topics) for each document
+- **SLURM**: `scripts/generate_document_metadata.slurm`
+- **Input**: Raw data + LDA topics
+- **Output**: Document metadata in `document_metadata/`
 
-Since the data is purchased from a third party, we are forbidden by license
-agreements from sharing the processed datasets. However, all code used for
-processing is included here for reproducibility. Running the code would require
-purchasing the data from https://www.english-corpora.org/now/ first. Similar data can be obtained from other sources like CommonCrawl for example.
+#### 4. **Theme Identification** (`3_identify_dominant_themes.py`)
+- **Purpose**: Identify dominant themes across different time periods and regions
+- **Input**: Document metadata
+- **Output**: Theme classifications in `themes/`
 
-# Training (Step 3, Step 4)
+#### 5. **Metadata Enhancement** (`4_update_metadata_with_themes.py`)
+- **Purpose**: Enhance document metadata with identified themes
+- **Input**: Document metadata + themes
+- **Output**: Enhanced metadata
 
-All trained models and intermediate checkpoints will be made publicly available on
-Huggingface after anonymity period is over. All code for reproducing training
-setup is included here, including model parameterization, training
-hyperparameters, etc.
+#### 6. **Meta Index Creation** (`5_create_meta_index.py`)
+- **Purpose**: Create searchable index of all documents with metadata
+- **Input**: Enhanced metadata
+- **Output**: Meta index for efficient querying
 
-## Step a: Data tokenization using datatrove
+### Phase 2: Dataset Creation
 
-Example file is given in ```data_slurm.h```
-move the file to pretrain/nanotron/data_slurm.h
-modify dataset paths as needed for different datasets
+#### 7. **Data Splitting** (`6_data_splitter_ids_only.py`)
+- **Purpose**: Split data into different configurations (continents, concepts, etc.)
+- **Input**: Meta index
+- **Output**: Split configurations
 
-## Step b: Launch training job
+#### 8. **HuggingFace Dataset Creation** (`7_create_hf_datasets_streaming.py`)
+- **Purpose**: Convert splits into HuggingFace dataset format
+- **SLURM**: `scripts/create_hf_datasets.slurm`
+- **Input**: Split configurations
+- **Output**: HF datasets in `training_data/hf_datasets/`
 
-Commands used for all training jobs are given in the ```continents``` folder for
-reproducibility. This step uses the ```slurm_launcher.py``` file in nanotron to
-submit jobs to SLURM.
+#### 9. **MECO Dataset Creation** (`8_create_meco_datasets.py`)
+- **Purpose**: Create final training datasets with/without metadata
+- **SLURM**: `scripts/meco_data.slurm`
+- **Input**: HF datasets
+- **Output**: MECO datasets in `training_data/meco_datasets/`
 
-## Step c: Convert weights from nanotron format to hf format
+### Phase 3: Training
 
-This step uses the files, ```__init__.py```, ```convert_to_hf.py``` and
-```convert_weights.py```. Example command for converting weights is given in
-```converter.md```.
+#### 10. **Training Configuration Generation** (`generate_train_configs.py`)
+- **Purpose**: Generate all training configuration files
+- **Input**: `scripts/meco_splits.txt`
+- **Output**: Training configs in `train_configs/`
 
-## Step d: Perplexity evaluation for pretrained LMs
+#### 11. **Model Training** (`9_train_meco.py`)
+- **Purpose**: Train language models on MECO datasets
+- **SLURM**: `scripts/train_meco.slurm`
+- **Input**: MECO datasets + training configs
+- **Output**: Trained models in `logs/`
 
-```11_eval_list.py``` creates all the combinations of models and test sets that
-are then evaluated using ```12_eval_perplexity.py```.
-Results of all evaluations are available in the ``` results``` folder in a
-single CSV file ```perplexity_eval.csv```.
+## 🎯 Training Modes
 
-## Step e: Supervised Fine-tuning
+The pipeline supports 4 training modes for each data split:
 
-```15_sft.py``` is the relevant file for performing sft using LoRA. Parameters
-used are adapted from https://huggingface.co/docs/trl/lora_without_regret. To
-create chat based models from base models, we use the same chat template as used
-by Llama-3.2-1b-Instruct model, the jinja file for which is included as
-```chat_template.jinja```.
+1. **Pretraining**: Train from scratch on MECO data
+2. **Continued Pretraining**: Continue training from HuggingFace LLaMA model
+3. **Pretrain + Instruct**: Pretraining → Instruction tuning
+4. **Continued Pretrain + Instruct**: Continued pretraining → Instruction tuning
 
-```16_merge_lora.py``` is used to merge the LoRA weights with the base model.
+## 📊 Data Splits
 
-## Step f: Downstream eval of SFT models
+Available in `scripts/meco_splits.txt`:
 
-```13_qa_gen.py``` is an example API call used for creating our downstream
-dataset. Complete prompts for user and assistant are available in the included
-```scripts``` folder.
+- **Continents**: africa, asia, europe, america
+- **Novel Concepts**: pivot_2012, pivot_2015, pivot_2018, pivot_2021
+- **Concept Change**: development_&_society, global_politics, identity_&_gender, innovation_&_markets, urban_governance
 
-```14_build_hf_dataset.py``` is used to combine all of the created task data
-into a single HF dataset.
+Each split has **with_metadata** and **without_metadata** variants.
 
-```17_sft_eval.py``` is used to evaluate the SFT models on the downstream tasks.
-```18_sft_eval_grid.py``` is used to create a grid of different URLs and models
-so that the evals can be run in parallel using SLURM.
-```19_sft_analyse.py``` combines all of the cleaned eval results into a single
-CSV file in the results folder called ```qa_metacul_eval.csv```.
+## 🚀 Quick Start
 
-# Plots (Step 5)
+### 1. Generate Training Configs
+```bash
+cd src
+python generate_train_configs.py
+```
 
-```20_perplexity_plot.py``` contains all relevant plotting code for all figures
-in the paper.
+### 2. Run Training
+```bash
+# Single GPU
+sbatch scripts/train_meco.slurm train_configs/continents/africa/with_metadata/pretraining.yaml
+
+# Multi-GPU (4 GPUs)
+sbatch scripts/train_meco.slurm train_configs/continents/africa/with_metadata/pretraining.yaml 4
+```
+
+### 3. Monitor Training
+```bash
+# Check logs
+tail -f /scratch/amukher6/logs/culture/out/meco_train_*.out.txt
+
+# Check completion log
+tail -f /scratch/amukher6/metacul/logs/meco_training_completion.log
+```
+
+## 📋 Configuration Files
+
+Training configurations are automatically generated in:
+```
+train_configs/
+├── continents/africa/with_metadata/
+│   ├── pretraining.yaml
+│   ├── continued_pretraining.yaml
+│   ├── pretrain_instruct.yaml
+│   └── continued_pretrain_instruct.yaml
+└── ... (all other splits)
+```
+
+Each config file is self-sufficient and contains all parameters needed for training.
+
+## 🔧 Key Features
+
+- **Scalable**: Supports 1-8 GPU training
+- **Reproducible**: All configs version controlled
+- **Comprehensive**: Covers all training paradigms
+- **Efficient**: Uses Quick LLaMA for fast training
+- **Monitored**: WandB integration for experiment tracking
+
+## 📝 Notes
+
+- All data directories are git-ignored to keep repository clean
+- SLURM scripts are configured for the cluster environment
+- Training checkpoints are saved every 1000 steps
+- Logs are automatically organized by experiment type

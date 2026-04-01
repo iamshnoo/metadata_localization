@@ -4,3 +4,19 @@ __MACOSX/
 .vscode/
 .env
 __pycache__/
+*.pyc
+
+# Legal / policy exclusions
+data/
+document_metadata/
+training_data/
+themes/
+
+# Large local artifacts
+models/
+logs/
+src/wandb/
+results/per_sample_losses/
+
+# Local helper state
+.agents/
