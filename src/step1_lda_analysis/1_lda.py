@@ -15,9 +15,9 @@ import sys
 
 def run_lda_for_country(year, country_code):
     """Run LDA for a specific year-country combination"""
-
+    
     # Paths and parameters
-    BASE = "/scratch/$USER$/"
+    BASE = "/scratch/amukher6/"
     path_to_mallet = BASE + "Mallet/bin/mallet"
     mallet_output_base = BASE + "metacul/data/lmw_output/now/"
     data_root = BASE + "metacul/data/now"
@@ -41,7 +41,7 @@ def run_lda_for_country(year, country_code):
         return False
 
     print(f"Loading data from: {country_file}")
-
+    
     try:
         # Load the CSV file
         df = pd.read_csv(country_file)
@@ -58,7 +58,7 @@ def run_lda_for_country(year, country_code):
         print("Processing content...")
         contents = df["content"].dropna().astype(str).tolist()
         print(f"Found {len(contents)} non-null content entries")
-
+        
         # Process strings for LDA
         training_data = []
         for content in tqdm(contents, desc="Processing strings"):
@@ -86,18 +86,18 @@ def run_lda_for_country(year, country_code):
 
         # Verify results
         assert len(topic_distributions) == len(training_data)
-
+        
         print(f"✓ Successfully completed LDA for {country_code}-{year}")
         print(f"  - Topics: {len(topic_keys)}")
         print(f"  - Documents: {len(topic_distributions)}")
         print(f"  - Output files saved to: {mallet_output_dir}")
-
+        
         # Show sample topics
         print(f"\nSample topics:")
         for i, topic in enumerate(topic_keys[:3]):  # Show first 3 topics
             topic_words = " ".join(topic[:10])  # First 10 words
             print(f"  Topic {i}: {topic_words}")
-
+        
         return True
 
     except Exception as e:
@@ -108,7 +108,7 @@ def run_lda_for_country(year, country_code):
 
 def main():
     """Main function to handle command line arguments"""
-
+    
     # Check command line arguments
     if len(sys.argv) != 3:
         print("Usage: python lda.py <year> <country>")
@@ -134,10 +134,10 @@ def main():
 
     # Validate country code
     valid_countries = [
-        'us', 'gb', 'ca', 'in', 'au', 'za', 'ng', 'ke', 'gh', 'tz',
+        'us', 'gb', 'ca', 'in', 'au', 'za', 'ng', 'ke', 'gh', 'tz', 
         'bd', 'lk', 'my', 'sg', 'ph', 'pk', 'hk', 'ie', 'jm'
     ]
-
+    
     if country_code not in valid_countries:
         print(f"Warning: Country '{country_code}' not in typical country list")
         print(f"Valid countries: {valid_countries}")
@@ -147,7 +147,7 @@ def main():
 
     # Run LDA
     success = run_lda_for_country(year, country_code)
-
+    
     if success:
         print(f"\n✓ LDA completed successfully for {year}-{country_code}")
         sys.exit(0)

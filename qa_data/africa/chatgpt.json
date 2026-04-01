@@ -1,0 +1,703 @@
+[
+  {
+    "question": "Who was the President of Nigeria in 2016?",
+    "options": ["Muhammadu Buhari", "Goodluck Jonathan", "Olusegun Obasanjo", "Yemi Osinbajo"],
+    "correct_answer": "Muhammadu Buhari",
+    "distractors": ["Goodluck Jonathan", "Olusegun Obasanjo", "Yemi Osinbajo"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "What is the capital city of Nigeria?",
+    "options": ["Abuja", "Lagos", "Ibadan", "Benin City"],
+    "correct_answer": "Abuja",
+    "distractors": ["Lagos", "Ibadan", "Benin City"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "Which river is the longest river in Nigeria?",
+    "options": ["River Niger", "River Benue", "River Ogun", "River Cross"],
+    "correct_answer": "River Niger",
+    "distractors": ["River Benue", "River Ogun", "River Cross"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "Nigeria gained independence from which country in 1960?",
+    "options": ["United Kingdom", "France", "Portugal", "Germany"],
+    "correct_answer": "United Kingdom",
+    "distractors": ["France", "Portugal", "Germany"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "What is the official currency of Nigeria?",
+    "options": ["Naira", "Cedi", "Rand", "Shilling"],
+    "correct_answer": "Naira",
+    "distractors": ["Cedi", "Rand", "Shilling"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "Which Nigerian city is known as the country's main commercial hub?",
+    "options": ["Lagos", "Abuja", "Enugu", "Ilorin"],
+    "correct_answer": "Lagos",
+    "distractors": ["Abuja", "Enugu", "Ilorin"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "Which language is most widely spoken as a first language in Nigeria?",
+    "options": ["Hausa", "Yoruba", "Igbo", "Fulfulde"],
+    "correct_answer": "Hausa",
+    "distractors": ["Yoruba", "Igbo", "Fulfulde"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "Which Nigerian author wrote the novel 'Things Fall Apart'?",
+    "options": ["Chinua Achebe", "Wole Soyinka", "Ben Okri", "Chimamanda Ngozi Adichie"],
+    "correct_answer": "Chinua Achebe",
+    "distractors": ["Wole Soyinka", "Ben Okri", "Chimamanda Ngozi Adichie"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "Nigeria is a member of which major oil-exporting organization?",
+    "options": ["OPEC", "OECD", "ECOWAS", "African Union"],
+    "correct_answer": "OPEC",
+    "distractors": ["OECD", "ECOWAS", "African Union"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "What is Nigeria's largest ethnic group by population?",
+    "options": ["Hausa-Fulani", "Yoruba", "Igbo", "Ijaw"],
+    "correct_answer": "Hausa-Fulani",
+    "distractors": ["Yoruba", "Igbo", "Ijaw"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "Which Nigerian state is the center of the country's oil production?",
+    "options": ["Rivers State", "Kano State", "Kaduna State", "Oyo State"],
+    "correct_answer": "Rivers State",
+    "distractors": ["Kano State", "Kaduna State", "Oyo State"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "Which city hosted Nigeria's federal capital before Abuja?",
+    "options": ["Lagos", "Ibadan", "Onitsha", "Abeokuta"],
+    "correct_answer": "Lagos",
+    "distractors": ["Ibadan", "Onitsha", "Abeokuta"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "What year did Nigeria become a republic?",
+    "options": ["1963", "1960", "1979", "1999"],
+    "correct_answer": "1963",
+    "distractors": ["1960", "1979", "1999"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "Which Nigerian musician is internationally known for Afrobeat music?",
+    "options": ["Fela Kuti", "King Sunny Ade", "Davido", "Wizkid"],
+    "correct_answer": "Fela Kuti",
+    "distractors": ["King Sunny Ade", "Davido", "Wizkid"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "What is the name of Nigeria's national football team?",
+    "options": ["Super Eagles", "Black Stars", "Bafana Bafana", "Harambee Stars"],
+    "correct_answer": "Super Eagles",
+    "distractors": ["Black Stars", "Bafana Bafana", "Harambee Stars"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "Which Nigerian city is known for the ancient Nok culture?",
+    "options": ["Jos", "Ife", "Benin City", "Ogbomosho"],
+    "correct_answer": "Jos",
+    "distractors": ["Ife", "Benin City", "Ogbomosho"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "Which sea lies to the south of Nigeria?",
+    "options": ["Atlantic Ocean", "Indian Ocean", "Red Sea", "Mediterranean Sea"],
+    "correct_answer": "Atlantic Ocean",
+    "distractors": ["Indian Ocean", "Red Sea", "Mediterranean Sea"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "What is the legislative body of Nigeria called?",
+    "options": ["National Assembly", "Parliament", "House of Commons", "Congress"],
+    "correct_answer": "National Assembly",
+    "distractors": ["Parliament", "House of Commons", "Congress"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "Which Nigerian city is a major center of Islamic scholarship?",
+    "options": ["Kano", "Ibadan", "Akure", "Uyo"],
+    "correct_answer": "Kano",
+    "distractors": ["Ibadan", "Akure", "Uyo"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "Which Nigerian holiday is celebrated on October 1?",
+    "options": ["Independence Day", "Democracy Day", "Children's Day", "Workers' Day"],
+    "correct_answer": "Independence Day",
+    "distractors": ["Democracy Day", "Children's Day", "Workers' Day"],
+    "country": "Nigeria"
+  },
+  {
+    "question": "Who was the President of South Africa in 2016?",
+    "options": ["Jacob Zuma", "Cyril Ramaphosa", "Thabo Mbeki", "Kgalema Motlanthe"],
+    "correct_answer": "Jacob Zuma",
+    "distractors": ["Cyril Ramaphosa", "Thabo Mbeki", "Kgalema Motlanthe"],
+    "country": "South Africa"
+  },
+  {
+    "question": "What is the legislative capital of South Africa?",
+    "options": ["Cape Town", "Pretoria", "Bloemfontein", "Johannesburg"],
+    "correct_answer": "Cape Town",
+    "distractors": ["Pretoria", "Bloemfontein", "Johannesburg"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Which city is the administrative capital of South Africa?",
+    "options": ["Pretoria", "Cape Town", "Durban", "Port Elizabeth"],
+    "correct_answer": "Pretoria",
+    "distractors": ["Cape Town", "Durban", "Port Elizabeth"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Who was South Africa's first Black president?",
+    "options": ["Nelson Mandela", "Thabo Mbeki", "Desmond Tutu", "Jacob Zuma"],
+    "correct_answer": "Nelson Mandela",
+    "distractors": ["Thabo Mbeki", "Desmond Tutu", "Jacob Zuma"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Which system of racial segregation existed in South Africa until the early 1990s?",
+    "options": ["Apartheid", "Colonialism", "Feudalism", "Communism"],
+    "correct_answer": "Apartheid",
+    "distractors": ["Colonialism", "Feudalism", "Communism"],
+    "country": "South Africa"
+  },
+  {
+    "question": "What is the currency of South Africa?",
+    "options": ["Rand", "Pula", "Shilling", "Kwacha"],
+    "correct_answer": "Rand",
+    "distractors": ["Pula", "Shilling", "Kwacha"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Which mountain range runs through eastern South Africa?",
+    "options": ["Drakensberg", "Atlas", "Ruwenzori", "Himalayas"],
+    "correct_answer": "Drakensberg",
+    "distractors": ["Atlas", "Ruwenzori", "Himalayas"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Which South African city is the largest by population?",
+    "options": ["Johannesburg", "Cape Town", "Durban", "Pretoria"],
+    "correct_answer": "Johannesburg",
+    "distractors": ["Cape Town", "Durban", "Pretoria"],
+    "country": "South Africa"
+  },
+  {
+    "question": "South Africa became a republic in which year?",
+    "options": ["1961", "1948", "1994", "1910"],
+    "correct_answer": "1961",
+    "distractors": ["1948", "1994", "1910"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Which political party led South Africa after apartheid ended?",
+    "options": ["African National Congress", "Democratic Alliance", "Inkatha Freedom Party", "National Party"],
+    "correct_answer": "African National Congress",
+    "distractors": ["Democratic Alliance", "Inkatha Freedom Party", "National Party"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Which ocean lies along South Africa's eastern coast?",
+    "options": ["Indian Ocean", "Atlantic Ocean", "Southern Ocean", "Arctic Ocean"],
+    "correct_answer": "Indian Ocean",
+    "distractors": ["Atlantic Ocean", "Southern Ocean", "Arctic Ocean"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Which language is one of South Africa's official languages?",
+    "options": ["Zulu", "Swahili", "Amharic", "Arabic"],
+    "correct_answer": "Zulu",
+    "distractors": ["Swahili", "Amharic", "Arabic"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Which prison famously held Nelson Mandela for many years?",
+    "options": ["Robben Island", "Pollsmoor Prison", "Alcatraz", "Sing Sing"],
+    "correct_answer": "Robben Island",
+    "distractors": ["Pollsmoor Prison", "Alcatraz", "Sing Sing"],
+    "country": "South Africa"
+  },
+  {
+    "question": "What sport is South Africa especially known for internationally?",
+    "options": ["Rugby", "Cricket", "Basketball", "Ice Hockey"],
+    "correct_answer": "Rugby",
+    "distractors": ["Cricket", "Basketball", "Ice Hockey"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Which South African leader won the Nobel Peace Prize in 1993?",
+    "options": ["Nelson Mandela", "Jacob Zuma", "Cyril Ramaphosa", "P. W. Botha"],
+    "correct_answer": "Nelson Mandela",
+    "distractors": ["Jacob Zuma", "Cyril Ramaphosa", "P. W. Botha"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Which desert is partially located in South Africa?",
+    "options": ["Kalahari Desert", "Sahara Desert", "Namib Desert", "Gobi Desert"],
+    "correct_answer": "Kalahari Desert",
+    "distractors": ["Sahara Desert", "Namib Desert", "Gobi Desert"],
+    "country": "South Africa"
+  },
+  {
+    "question": "What is the judicial capital of South Africa?",
+    "options": ["Bloemfontein", "Cape Town", "Pretoria", "Durban"],
+    "correct_answer": "Bloemfontein",
+    "distractors": ["Cape Town", "Pretoria", "Durban"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Which South African city hosted the 2010 FIFA World Cup final?",
+    "options": ["Johannesburg", "Cape Town", "Durban", "Pretoria"],
+    "correct_answer": "Johannesburg",
+    "distractors": ["Cape Town", "Durban", "Pretoria"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Which mineral has historically been central to South Africa's economy?",
+    "options": ["Gold", "Bauxite", "Tin", "Uranium"],
+    "correct_answer": "Gold",
+    "distractors": ["Bauxite", "Tin", "Uranium"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Which South African city is also known as the 'Mother City'?",
+    "options": ["Cape Town", "Johannesburg", "Pretoria", "Polokwane"],
+    "correct_answer": "Cape Town",
+    "distractors": ["Johannesburg", "Pretoria", "Polokwane"],
+    "country": "South Africa"
+  },
+  {
+    "question": "Who was the President of Kenya in 2016?",
+    "options": ["Uhuru Kenyatta", "Mwai Kibaki", "William Ruto", "Raila Odinga"],
+    "correct_answer": "Uhuru Kenyatta",
+    "distractors": ["Mwai Kibaki", "William Ruto", "Raila Odinga"],
+    "country": "Kenya"
+  },
+  {
+    "question": "What is the capital city of Kenya?",
+    "options": ["Nairobi", "Mombasa", "Kisumu", "Nakuru"],
+    "correct_answer": "Nairobi",
+    "distractors": ["Mombasa", "Kisumu", "Nakuru"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Kenya gained independence from which country in 1963?",
+    "options": ["United Kingdom", "France", "Germany", "Portugal"],
+    "correct_answer": "United Kingdom",
+    "distractors": ["France", "Germany", "Portugal"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Which mountain is the highest peak in Kenya?",
+    "options": ["Mount Kenya", "Mount Kilimanjaro", "Mount Elgon", "Mount Meru"],
+    "correct_answer": "Mount Kenya",
+    "distractors": ["Mount Kilimanjaro", "Mount Elgon", "Mount Meru"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Which ocean borders Kenya to the southeast?",
+    "options": ["Indian Ocean", "Atlantic Ocean", "Red Sea", "Mediterranean Sea"],
+    "correct_answer": "Indian Ocean",
+    "distractors": ["Atlantic Ocean", "Red Sea", "Mediterranean Sea"],
+    "country": "Kenya"
+  },
+  {
+    "question": "What is Kenya's official currency?",
+    "options": ["Kenyan Shilling", "Ugandan Shilling", "Rand", "Birr"],
+    "correct_answer": "Kenyan Shilling",
+    "distractors": ["Ugandan Shilling", "Rand", "Birr"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Which Kenyan city is a major port on the Indian Ocean?",
+    "options": ["Mombasa", "Malindi", "Lamu", "Kilifi"],
+    "correct_answer": "Mombasa",
+    "distractors": ["Malindi", "Lamu", "Kilifi"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Which Kenyan ethnic group is the largest by population?",
+    "options": ["Kikuyu", "Luo", "Kalenjin", "Luhya"],
+    "correct_answer": "Kikuyu",
+    "distractors": ["Luo", "Kalenjin", "Luhya"],
+    "country": "Kenya"
+  },
+  {
+    "question": "What is the name of Kenya's national park famous for wildebeest migration?",
+    "options": ["Maasai Mara", "Tsavo East", "Amboseli", "Nairobi National Park"],
+    "correct_answer": "Maasai Mara",
+    "distractors": ["Tsavo East", "Amboseli", "Nairobi National Park"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Which language serves as Kenya's national lingua franca?",
+    "options": ["Swahili", "English", "Kikuyu", "Somali"],
+    "correct_answer": "Swahili",
+    "distractors": ["English", "Kikuyu", "Somali"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Who was Kenya's first president?",
+    "options": ["Jomo Kenyatta", "Daniel arap Moi", "Uhuru Kenyatta", "Mwai Kibaki"],
+    "correct_answer": "Jomo Kenyatta",
+    "distractors": ["Daniel arap Moi", "Uhuru Kenyatta", "Mwai Kibaki"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Which Kenyan lake is the largest by surface area?",
+    "options": ["Lake Victoria", "Lake Turkana", "Lake Naivasha", "Lake Baringo"],
+    "correct_answer": "Lake Victoria",
+    "distractors": ["Lake Turkana", "Lake Naivasha", "Lake Baringo"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Which sport has brought Kenya international recognition at the Olympics?",
+    "options": ["Long-distance running", "Swimming", "Cycling", "Weightlifting"],
+    "correct_answer": "Long-distance running",
+    "distractors": ["Swimming", "Cycling", "Weightlifting"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Which Kenyan city hosts the headquarters of UNEP?",
+    "options": ["Nairobi", "Geneva", "New York", "Addis Ababa"],
+    "correct_answer": "Nairobi",
+    "distractors": ["Geneva", "New York", "Addis Ababa"],
+    "country": "Kenya"
+  },
+  {
+    "question": "What year did Kenya become a republic?",
+    "options": ["1964", "1963", "1978", "1992"],
+    "correct_answer": "1964",
+    "distractors": ["1963", "1978", "1992"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Which Kenyan community is traditionally associated with cattle herding?",
+    "options": ["Maasai", "Kamba", "Kisii", "Taita"],
+    "correct_answer": "Maasai",
+    "distractors": ["Kamba", "Kisii", "Taita"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Which Kenyan river flows into Lake Turkana?",
+    "options": ["Omo River", "Tana River", "Athi River", "Nzoia River"],
+    "correct_answer": "Omo River",
+    "distractors": ["Tana River", "Athi River", "Nzoia River"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Which Kenyan holiday is celebrated on December 12?",
+    "options": ["Jamhuri Day", "Madaraka Day", "Mashujaa Day", "Labour Day"],
+    "correct_answer": "Jamhuri Day",
+    "distractors": ["Madaraka Day", "Mashujaa Day", "Labour Day"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Which Kenyan writer authored 'Petals of Blood'?",
+    "options": ["Ngũgĩ wa Thiong'o", "Meja Mwangi", "Grace Ogot", "Binyavanga Wainaina"],
+    "correct_answer": "Ngũgĩ wa Thiong'o",
+    "distractors": ["Meja Mwangi", "Grace Ogot", "Binyavanga Wainaina"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Which Kenyan city lies near the equator?",
+    "options": ["Nanyuki", "Eldoret", "Thika", "Kericho"],
+    "correct_answer": "Nanyuki",
+    "distractors": ["Eldoret", "Thika", "Kericho"],
+    "country": "Kenya"
+  },
+  {
+    "question": "Who was the President of Ghana in 2016?",
+    "options": ["John Dramani Mahama", "Nana Akufo-Addo", "Jerry Rawlings", "John Kufuor"],
+    "correct_answer": "John Dramani Mahama",
+    "distractors": ["Nana Akufo-Addo", "Jerry Rawlings", "John Kufuor"],
+    "country": "Ghana"
+  },
+  {
+    "question": "What is the capital city of Ghana?",
+    "options": ["Accra", "Kumasi", "Tamale", "Cape Coast"],
+    "correct_answer": "Accra",
+    "distractors": ["Kumasi", "Tamale", "Cape Coast"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Ghana gained independence in 1957 from which country?",
+    "options": ["United Kingdom", "France", "Portugal", "Germany"],
+    "correct_answer": "United Kingdom",
+    "distractors": ["France", "Portugal", "Germany"],
+    "country": "Ghana"
+  },
+  {
+    "question": "What was Ghana formerly known as during colonial rule?",
+    "options": ["Gold Coast", "Ivory Coast", "Slave Coast", "Windward Coast"],
+    "correct_answer": "Gold Coast",
+    "distractors": ["Ivory Coast", "Slave Coast", "Windward Coast"],
+    "country": "Ghana"
+  },
+  {
+    "question": "What is the official currency of Ghana?",
+    "options": ["Cedi", "Naira", "Shilling", "Rand"],
+    "correct_answer": "Cedi",
+    "distractors": ["Naira", "Shilling", "Rand"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Which Ghanaian leader was the country's first prime minister?",
+    "options": ["Kwame Nkrumah", "Jerry Rawlings", "John Kufuor", "Edward Akufo-Addo"],
+    "correct_answer": "Kwame Nkrumah",
+    "distractors": ["Jerry Rawlings", "John Kufuor", "Edward Akufo-Addo"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Which city is the cultural center of the Ashanti people?",
+    "options": ["Kumasi", "Accra", "Takoradi", "Ho"],
+    "correct_answer": "Kumasi",
+    "distractors": ["Accra", "Takoradi", "Ho"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Which Ghanaian lake is the largest artificial lake in the world by surface area?",
+    "options": ["Lake Volta", "Lake Victoria", "Lake Bosomtwe", "Lake Chad"],
+    "correct_answer": "Lake Volta",
+    "distractors": ["Lake Victoria", "Lake Bosomtwe", "Lake Chad"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Which ocean borders Ghana to the south?",
+    "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Southern Ocean"],
+    "correct_answer": "Atlantic Ocean",
+    "distractors": ["Indian Ocean", "Pacific Ocean", "Southern Ocean"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Which Ghanaian holiday commemorates independence?",
+    "options": ["March 6", "July 1", "December 25", "May 1"],
+    "correct_answer": "March 6",
+    "distractors": ["July 1", "December 25", "May 1"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Which language is widely spoken as a lingua franca in Ghana?",
+    "options": ["Akan", "Ewe", "Dagbani", "Ga"],
+    "correct_answer": "Akan",
+    "distractors": ["Ewe", "Dagbani", "Ga"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Which Ghanaian city is a major port?",
+    "options": ["Tema", "Koforidua", "Sunyani", "Bolgatanga"],
+    "correct_answer": "Tema",
+    "distractors": ["Koforidua", "Sunyani", "Bolgatanga"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Which cash crop is historically important to Ghana's economy?",
+    "options": ["Cocoa", "Tea", "Coffee", "Rubber"],
+    "correct_answer": "Cocoa",
+    "distractors": ["Tea", "Coffee", "Rubber"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Which Ghanaian football team is known as the Black Stars?",
+    "options": ["National team", "Asante Kotoko", "Hearts of Oak", "Dream FC"],
+    "correct_answer": "National team",
+    "distractors": ["Asante Kotoko", "Hearts of Oak", "Dream FC"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Which region of Ghana contains the historic Cape Coast Castle?",
+    "options": ["Central Region", "Greater Accra", "Western Region", "Eastern Region"],
+    "correct_answer": "Central Region",
+    "distractors": ["Greater Accra", "Western Region", "Eastern Region"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Which Ghanaian leader ruled as head of state during the 1980s?",
+    "options": ["Jerry Rawlings", "Kwame Nkrumah", "John Kufuor", "Nana Akufo-Addo"],
+    "correct_answer": "Jerry Rawlings",
+    "distractors": ["Kwame Nkrumah", "John Kufuor", "Nana Akufo-Addo"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Which Ghanaian river gives its name to a major hydroelectric project?",
+    "options": ["Volta River", "Pra River", "Ankobra River", "Tano River"],
+    "correct_answer": "Volta River",
+    "distractors": ["Pra River", "Ankobra River", "Tano River"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Which Ghanaian city is known for the annual Homowo festival?",
+    "options": ["Accra", "Kumasi", "Tamale", "Ho"],
+    "correct_answer": "Accra",
+    "distractors": ["Kumasi", "Tamale", "Ho"],
+    "country": "Ghana"
+  },
+  {
+    "question": "Which Ghanaian ethnic group is primarily associated with the Volta Region?",
+    "options": ["Ewe", "Akan", "Mole-Dagbani", "Ga"],
+    "correct_answer": "Ewe",
+    "distractors": ["Akan", "Mole-Dagbani", "Ga"],
+    "country": "Ghana"
+  },
+  {
+    "question": "What year did Ghana become a republic?",
+    "options": ["1960", "1957", "1966", "1979"],
+    "correct_answer": "1960",
+    "distractors": ["1957", "1966", "1979"],
+    "country": "Ghana"
+  },
+
+  {
+    "question": "Who was the President of Tanzania in 2016?",
+    "options": ["John Magufuli", "Jakaya Kikwete", "Samia Suluhu Hassan", "Ali Hassan Mwinyi"],
+    "correct_answer": "John Magufuli",
+    "distractors": ["Jakaya Kikwete", "Samia Suluhu Hassan", "Ali Hassan Mwinyi"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "What is the capital city of Tanzania?",
+    "options": ["Dodoma", "Dar es Salaam", "Arusha", "Mwanza"],
+    "correct_answer": "Dodoma",
+    "distractors": ["Dar es Salaam", "Arusha", "Mwanza"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Which city is Tanzania's largest and main commercial center?",
+    "options": ["Dar es Salaam", "Dodoma", "Arusha", "Mbeya"],
+    "correct_answer": "Dar es Salaam",
+    "distractors": ["Dodoma", "Arusha", "Mbeya"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Tanzania was formed by the union of Tanganyika and which other territory?",
+    "options": ["Zanzibar", "Uganda", "Kenya", "Malawi"],
+    "correct_answer": "Zanzibar",
+    "distractors": ["Uganda", "Kenya", "Malawi"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "What year did Tanganyika gain independence?",
+    "options": ["1961", "1964", "1957", "1971"],
+    "correct_answer": "1961",
+    "distractors": ["1964", "1957", "1971"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Which mountain in Tanzania is the highest in Africa?",
+    "options": ["Mount Kilimanjaro", "Mount Kenya", "Mount Elgon", "Mount Meru"],
+    "correct_answer": "Mount Kilimanjaro",
+    "distractors": ["Mount Kenya", "Mount Elgon", "Mount Meru"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Which ocean borders Tanzania to the east?",
+    "options": ["Indian Ocean", "Atlantic Ocean", "Red Sea", "Southern Ocean"],
+    "correct_answer": "Indian Ocean",
+    "distractors": ["Atlantic Ocean", "Red Sea", "Southern Ocean"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "What is Tanzania's official currency?",
+    "options": ["Tanzanian Shilling", "Kenyan Shilling", "Rand", "Kwacha"],
+    "correct_answer": "Tanzanian Shilling",
+    "distractors": ["Kenyan Shilling", "Rand", "Kwacha"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Which national park in Tanzania is famous for the Serengeti migration?",
+    "options": ["Serengeti National Park", "Ngorongoro Crater", "Tarangire National Park", "Ruaha National Park"],
+    "correct_answer": "Serengeti National Park",
+    "distractors": ["Ngorongoro Crater", "Tarangire National Park", "Ruaha National Park"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Which language serves as Tanzania's national language?",
+    "options": ["Swahili", "English", "Arabic", "Chaga"],
+    "correct_answer": "Swahili",
+    "distractors": ["English", "Arabic", "Chaga"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Who was Tanzania's first president?",
+    "options": ["Julius Nyerere", "John Magufuli", "Jakaya Kikwete", "Ali Hassan Mwinyi"],
+    "correct_answer": "Julius Nyerere",
+    "distractors": ["John Magufuli", "Jakaya Kikwete", "Ali Hassan Mwinyi"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Which island group is semi-autonomous within Tanzania?",
+    "options": ["Zanzibar", "Comoros", "Seychelles", "Mauritius"],
+    "correct_answer": "Zanzibar",
+    "distractors": ["Comoros", "Seychelles", "Mauritius"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Which Tanzanian city is a major center for tourism near Mount Kilimanjaro?",
+    "options": ["Arusha", "Moshi", "Dodoma", "Tabora"],
+    "correct_answer": "Arusha",
+    "distractors": ["Moshi", "Dodoma", "Tabora"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Which lake borders Tanzania to the northwest?",
+    "options": ["Lake Victoria", "Lake Tanganyika", "Lake Malawi", "Lake Turkana"],
+    "correct_answer": "Lake Victoria",
+    "distractors": ["Lake Tanganyika", "Lake Malawi", "Lake Turkana"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Which political party has dominated Tanzanian politics since independence?",
+    "options": ["Chama Cha Mapinduzi", "ACT-Wazalendo", "CHADEMA", "CUF"],
+    "correct_answer": "Chama Cha Mapinduzi",
+    "distractors": ["ACT-Wazalendo", "CHADEMA", "CUF"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Which Tanzanian city is located on Lake Victoria?",
+    "options": ["Mwanza", "Mbeya", "Iringa", "Morogoro"],
+    "correct_answer": "Mwanza",
+    "distractors": ["Mbeya", "Iringa", "Morogoro"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "What year did Tanzania officially form as a united republic?",
+    "options": ["1964", "1961", "1959", "1977"],
+    "correct_answer": "1964",
+    "distractors": ["1961", "1959", "1977"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Which Tanzanian reserve is a UNESCO World Heritage Site?",
+    "options": ["Ngorongoro Conservation Area", "Selous Game Reserve", "Mikumi National Park", "Katavi National Park"],
+    "correct_answer": "Ngorongoro Conservation Area",
+    "distractors": ["Selous Game Reserve", "Mikumi National Park", "Katavi National Park"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Which Tanzanian leader was known for his anti-corruption stance in the 2010s?",
+    "options": ["John Magufuli", "Jakaya Kikwete", "Julius Nyerere", "Ali Hassan Mwinyi"],
+    "correct_answer": "John Magufuli",
+    "distractors": ["Jakaya Kikwete", "Julius Nyerere", "Ali Hassan Mwinyi"],
+    "country": "Tanzania"
+  },
+  {
+    "question": "Which Tanzanian festival celebrates Swahili culture along the coast?",
+    "options": ["Sauti za Busara", "Homowo", "Timkat", "Durbar"],
+    "correct_answer": "Sauti za Busara",
+    "distractors": ["Homowo", "Timkat", "Durbar"],
+    "country": "Tanzania"
+  }
+]

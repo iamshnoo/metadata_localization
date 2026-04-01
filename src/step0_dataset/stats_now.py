@@ -38,7 +38,7 @@ total_row.name = "Total"
 count_df = pd.concat([count_df, pd.DataFrame([total_row])])
 
 print(count_df)
-count_df.to_csv("results/data_stats/country_year_article_counts.csv")
+count_df.to_csv("data/stats/country_year_article_counts.csv")
 
 
 #### Article Length Matrix ####
@@ -73,4 +73,4 @@ length_df = pd.concat([length_df, pd.DataFrame([mean_row])])
 
 
 print(length_df)
-length_df.to_csv("results/data_stats/country_year_article_lengths.csv")
+length_df.to_csv("data/stats/country_year_article_lengths.csv")

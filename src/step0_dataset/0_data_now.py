@@ -13,7 +13,7 @@ args = parser.parse_args()
 year = args.year
 year = str(year)
 
-now = "/scratch/$USER$/NOW/now/text/"
+now = "/groups/NLP/NOW/now/text/"
 last_two_digits = year[-2:]
 
 
@@ -69,7 +69,7 @@ def get_folder_name(code):
     return country_code_map[code].upper().replace(" ", "")
 
 ############## 1. Process metadata ##############
-sources = f"/scratch/$USER$/NOW/now/sources/{year}-sources.txt"
+sources = f"/groups/NLP/NOW/now/sources/{year}-sources.txt"
 source_data = []
 with open(sources, "r", encoding="ISO-8859-1") as src:
     for line in tqdm(src, desc="Reading sources file", unit="line"):

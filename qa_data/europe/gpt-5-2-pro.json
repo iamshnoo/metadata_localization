@@ -1,0 +1,702 @@
+[
+  {
+    "question": "What is the capital city of the United Kingdom?",
+    "options": ["London", "Manchester", "Edinburgh", "Cardiff"],
+    "correct_answer": "London",
+    "distractors": ["Manchester", "Edinburgh", "Cardiff"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What currency is used in the United Kingdom?",
+    "options": ["Euro", "Pound sterling", "US dollar", "Swiss franc"],
+    "correct_answer": "Pound sterling",
+    "distractors": ["Euro", "US dollar", "Swiss franc"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who became Prime Minister of the UK in July 2016, following David Cameron's resignation?",
+    "options": ["Theresa May", "Boris Johnson", "Gordon Brown", "Jeremy Corbyn"],
+    "correct_answer": "Theresa May",
+    "distractors": ["Boris Johnson", "Gordon Brown", "Jeremy Corbyn"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "On what date did the UK hold the referendum on membership of the European Union (Brexit referendum)?",
+    "options": ["23 June 2016", "8 May 2015", "31 January 2020", "7 May 2015"],
+    "correct_answer": "23 June 2016",
+    "distractors": ["8 May 2015", "31 January 2020", "7 May 2015"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who was the monarch of the United Kingdom during the 2012 London Olympics?",
+    "options": ["Queen Elizabeth II", "King Charles III", "King George VI", "Queen Victoria"],
+    "correct_answer": "Queen Elizabeth II",
+    "distractors": ["King Charles III", "King George VI", "Queen Victoria"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which city hosted the 2012 Summer Olympic Games in the UK?",
+    "options": ["London", "Birmingham", "Glasgow", "Liverpool"],
+    "correct_answer": "London",
+    "distractors": ["Birmingham", "Glasgow", "Liverpool"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "In which city is the Scottish Parliament located?",
+    "options": ["Edinburgh", "Glasgow", "Aberdeen", "Dundee"],
+    "correct_answer": "Edinburgh",
+    "distractors": ["Glasgow", "Aberdeen", "Dundee"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What does the acronym 'NHS' stand for in the UK?",
+    "options": ["National Health Service", "Northern Hospital System", "National Housing Scheme", "New Health Standard"],
+    "correct_answer": "National Health Service",
+    "distractors": ["Northern Hospital System", "National Housing Scheme", "New Health Standard"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which river flows through London?",
+    "options": ["River Thames", "River Severn", "River Trent", "River Clyde"],
+    "correct_answer": "River Thames",
+    "distractors": ["River Severn", "River Trent", "River Clyde"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the highest mountain in the United Kingdom?",
+    "options": ["Ben Nevis", "Snowdon (Yr Wyddfa)", "Scafell Pike", "Slieve Donard"],
+    "correct_answer": "Ben Nevis",
+    "distractors": ["Snowdon (Yr Wyddfa)", "Scafell Pike", "Slieve Donard"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "The Channel Tunnel connects the UK to which country?",
+    "options": ["France", "Spain", "Belgium", "Netherlands"],
+    "correct_answer": "France",
+    "distractors": ["Spain", "Belgium", "Netherlands"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "On what date did the UK formally leave the European Union (Brexit day)?",
+    "options": ["31 January 2020", "23 June 2016", "29 March 2019", "1 January 2021"],
+    "correct_answer": "31 January 2020",
+    "distractors": ["23 June 2016", "29 March 2019", "1 January 2021"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "In which year did the Scottish independence referendum take place?",
+    "options": ["2014", "2010", "2016", "2019"],
+    "correct_answer": "2014",
+    "distractors": ["2010", "2016", "2019"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the name of the UK's main public service broadcaster founded in 1922?",
+    "options": ["BBC", "ITV", "Sky", "Channel 5"],
+    "correct_answer": "BBC",
+    "distractors": ["ITV", "Sky", "Channel 5"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which league is the top level of men's football in England?",
+    "options": ["Premier League", "Championship", "League One", "Scottish Premiership"],
+    "correct_answer": "Premier League",
+    "distractors": ["Championship", "League One", "Scottish Premiership"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Stonehenge is located in which English county?",
+    "options": ["Wiltshire", "Kent", "Cornwall", "Norfolk"],
+    "correct_answer": "Wiltshire",
+    "distractors": ["Kent", "Cornwall", "Norfolk"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which university is widely regarded as the oldest in the English-speaking world and is located in the UK?",
+    "options": ["University of Oxford", "University of Cambridge", "University of St Andrews", "University of Edinburgh"],
+    "correct_answer": "University of Oxford",
+    "distractors": ["University of Cambridge", "University of St Andrews", "University of Edinburgh"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who wrote the 'Harry Potter' book series?",
+    "options": ["J.K. Rowling", "Philip Pullman", "C.S. Lewis", "Roald Dahl"],
+    "correct_answer": "J.K. Rowling",
+    "distractors": ["Philip Pullman", "C.S. Lewis", "Roald Dahl"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "In which city is the Bank of England headquartered?",
+    "options": ["London", "Leeds", "Bristol", "Newcastle"],
+    "correct_answer": "London",
+    "distractors": ["Leeds", "Bristol", "Newcastle"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Notting Hill Carnival is held in which UK city?",
+    "options": ["London", "Nottingham", "Brighton", "Sheffield"],
+    "correct_answer": "London",
+    "distractors": ["Nottingham", "Brighton", "Sheffield"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "The Glastonbury Festival is traditionally held in which English county?",
+    "options": ["Somerset", "Surrey", "Sussex", "Shropshire"],
+    "correct_answer": "Somerset",
+    "distractors": ["Surrey", "Sussex", "Shropshire"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the national flower of England?",
+    "options": ["Rose", "Thistle", "Daffodil", "Shamrock"],
+    "correct_answer": "Rose",
+    "distractors": ["Thistle", "Daffodil", "Shamrock"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the commonly used name for the national flag of the United Kingdom?",
+    "options": ["Union Jack", "Stars and Stripes", "Tricolour", "Saltire"],
+    "correct_answer": "Union Jack",
+    "distractors": ["Stars and Stripes", "Tricolour", "Saltire"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the emergency telephone number used in the UK?",
+    "options": ["999", "911", "112", "111"],
+    "correct_answer": "999",
+    "distractors": ["911", "112", "111"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which chamber is the upper house of the UK Parliament?",
+    "options": ["House of Lords", "House of Commons", "Scottish Parliament", "Senedd"],
+    "correct_answer": "House of Lords",
+    "distractors": ["House of Commons", "Scottish Parliament", "Senedd"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which chamber is the lower house of the UK Parliament?",
+    "options": ["House of Commons", "House of Lords", "Privy Council", "Supreme Court"],
+    "correct_answer": "House of Commons",
+    "distractors": ["House of Lords", "Privy Council", "Supreme Court"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Where did the coronation of King Charles III take place in May 2023?",
+    "options": ["Westminster Abbey", "St Paul's Cathedral", "Canterbury Cathedral", "Windsor Castle"],
+    "correct_answer": "Westminster Abbey",
+    "distractors": ["St Paul's Cathedral", "Canterbury Cathedral", "Windsor Castle"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the longest river in the United Kingdom?",
+    "options": ["River Severn", "River Thames", "River Trent", "River Wye"],
+    "correct_answer": "River Severn",
+    "distractors": ["River Thames", "River Trent", "River Wye"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK city is closely associated with The Beatles?",
+    "options": ["Liverpool", "Belfast", "Leicester", "Oxford"],
+    "correct_answer": "Liverpool",
+    "distractors": ["Belfast", "Leicester", "Oxford"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which museum in London is famous for collections including the Rosetta Stone?",
+    "options": ["The British Museum", "The National Gallery", "Tate Modern", "The Science Museum"],
+    "correct_answer": "The British Museum",
+    "distractors": ["The National Gallery", "Tate Modern", "The Science Museum"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "The Lake District National Park is located in which part of the UK?",
+    "options": ["Cumbria", "Kent", "Devon", "Norfolk"],
+    "correct_answer": "Cumbria",
+    "distractors": ["Kent", "Devon", "Norfolk"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which tennis Grand Slam tournament is held in London each year?",
+    "options": ["Wimbledon", "US Open", "Australian Open", "French Open"],
+    "correct_answer": "Wimbledon",
+    "distractors": ["US Open", "Australian Open", "French Open"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "In the UK government, what is the title of the minister traditionally responsible for presenting the Budget to Parliament?",
+    "options": ["Chancellor of the Exchequer", "Home Secretary", "Foreign Secretary", "Speaker of the House"],
+    "correct_answer": "Chancellor of the Exchequer",
+    "distractors": ["Home Secretary", "Foreign Secretary", "Speaker of the House"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which political party won the UK general election in December 2019?",
+    "options": ["Conservative Party", "Labour Party", "Liberal Democrats", "Scottish National Party"],
+    "correct_answer": "Conservative Party",
+    "distractors": ["Labour Party", "Liberal Democrats", "Scottish National Party"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "In which year was the Brexit referendum held in the UK?",
+    "options": ["2016", "2014", "2018", "2020"],
+    "correct_answer": "2016",
+    "distractors": ["2014", "2018", "2020"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who was the first woman to serve as Prime Minister of the United Kingdom?",
+    "options": ["Margaret Thatcher", "Theresa May", "Liz Truss", "Angela Merkel"],
+    "correct_answer": "Margaret Thatcher",
+    "distractors": ["Theresa May", "Liz Truss", "Angela Merkel"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "In what year did the United Kingdom join the European Economic Community (EEC), a predecessor of the EU?",
+    "options": ["1973", "1957", "1986", "1992"],
+    "correct_answer": "1973",
+    "distractors": ["1957", "1986", "1992"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the name of the main police force responsible for policing most of Greater London?",
+    "options": ["Metropolitan Police", "British Transport Police", "Police Scotland", "Garda Síochána"],
+    "correct_answer": "Metropolitan Police",
+    "distractors": ["British Transport Police", "Police Scotland", "Garda Síochána"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which airport is the busiest in the UK by passenger numbers?",
+    "options": ["Heathrow Airport", "Gatwick Airport", "Manchester Airport", "Stansted Airport"],
+    "correct_answer": "Heathrow Airport",
+    "distractors": ["Gatwick Airport", "Manchester Airport", "Stansted Airport"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK Prime Minister served for the shortest time in office in 2022 (about 49 days)?",
+    "options": ["Liz Truss", "Rishi Sunak", "Boris Johnson", "Theresa May"],
+    "correct_answer": "Liz Truss",
+    "distractors": ["Rishi Sunak", "Boris Johnson", "Theresa May"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK city hosted the COP26 UN climate conference in 2021?",
+    "options": ["Glasgow", "Edinburgh", "Cardiff", "Belfast"],
+    "correct_answer": "Glasgow",
+    "distractors": ["Edinburgh", "Cardiff", "Belfast"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the commonly used name of the Welsh Parliament (devolved legislature) in the UK?",
+    "options": ["Senedd Cymru", "Dáil Éireann", "Stormont", "House of Lords"],
+    "correct_answer": "Senedd Cymru",
+    "distractors": ["Dáil Éireann", "Stormont", "House of Lords"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the national anthem of the United Kingdom as of 2024?",
+    "options": ["God Save the King", "Rule, Britannia!", "Jerusalem", "Land of Hope and Glory"],
+    "correct_answer": "God Save the King",
+    "distractors": ["Rule, Britannia!", "Jerusalem", "Land of Hope and Glory"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the official name of the UK's highest court of appeal for civil cases and for criminal cases in England, Wales and Northern Ireland?",
+    "options": ["Supreme Court of the United Kingdom", "High Court of Justice", "Crown Court", "European Court of Justice"],
+    "correct_answer": "Supreme Court of the United Kingdom",
+    "distractors": ["High Court of Justice", "Crown Court", "European Court of Justice"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the name of the tower in London that houses the bell commonly known as Big Ben?",
+    "options": ["Elizabeth Tower", "Victoria Tower", "Clock Tower of Greenwich", "London Bridge Tower"],
+    "correct_answer": "Elizabeth Tower",
+    "distractors": ["Victoria Tower", "Clock Tower of Greenwich", "London Bridge Tower"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK city is home to the Palace of Westminster (Houses of Parliament)?",
+    "options": ["London", "York", "Bristol", "Newport"],
+    "correct_answer": "London",
+    "distractors": ["York", "Bristol", "Newport"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "In which year did the UK celebrate Queen Elizabeth II's Platinum Jubilee (70 years on the throne)?",
+    "options": ["2022", "2012", "2016", "2023"],
+    "correct_answer": "2022",
+    "distractors": ["2012", "2016", "2023"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the main legislative building in Northern Ireland commonly called?",
+    "options": ["Stormont", "Holyrood", "Westminster", "Leinster House"],
+    "correct_answer": "Stormont",
+    "distractors": ["Holyrood", "Westminster", "Leinster House"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK Prime Minister took office in October 2022 after Liz Truss resigned?",
+    "options": ["Rishi Sunak", "Boris Johnson", "Keir Starmer", "David Cameron"],
+    "correct_answer": "Rishi Sunak",
+    "distractors": ["Boris Johnson", "Keir Starmer", "David Cameron"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK monarch succeeded Queen Elizabeth II in September 2022?",
+    "options": ["King Charles III", "King William IV", "King Edward VIII", "King George V"],
+    "correct_answer": "King Charles III",
+    "distractors": ["King William IV", "King Edward VIII", "King George V"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the capital city of Ireland?",
+    "options": ["Dublin", "Cork", "Galway", "Limerick"],
+    "correct_answer": "Dublin",
+    "distractors": ["Cork", "Galway", "Limerick"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What currency is used in the Republic of Ireland?",
+    "options": ["Euro", "Pound sterling", "Irish pound (punt)", "US dollar"],
+    "correct_answer": "Euro",
+    "distractors": ["Pound sterling", "Irish pound (punt)", "US dollar"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Who was President of Ireland in 2016?",
+    "options": ["Michael D. Higgins", "Mary McAleese", "Mary Robinson", "Enda Kenny"],
+    "correct_answer": "Michael D. Higgins",
+    "distractors": ["Mary McAleese", "Mary Robinson", "Enda Kenny"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Who was Taoiseach (Prime Minister) of Ireland in 2016?",
+    "options": ["Enda Kenny", "Leo Varadkar", "Micheál Martin", "Bertie Ahern"],
+    "correct_answer": "Enda Kenny",
+    "distractors": ["Leo Varadkar", "Micheál Martin", "Bertie Ahern"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which constitutional amendment was repealed following Ireland's 2018 referendum on abortion?",
+    "options": ["The Eighth Amendment", "The First Amendment", "The Nineteenth Amendment", "The Twenty-fifth Amendment"],
+    "correct_answer": "The Eighth Amendment",
+    "distractors": ["The First Amendment", "The Nineteenth Amendment", "The Twenty-fifth Amendment"],
+    "country": "Ireland"
+  },
+  {
+    "question": "In 2015, Ireland became the first country to legalize same-sex marriage by what mechanism?",
+    "options": ["A national referendum", "A royal decree", "A military order", "A Supreme Court ruling alone"],
+    "correct_answer": "A national referendum",
+    "distractors": ["A royal decree", "A military order", "A Supreme Court ruling alone"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What is the name of the national parliament of Ireland?",
+    "options": ["Oireachtas", "Westminster", "Althing", "Cortes Generales"],
+    "correct_answer": "Oireachtas",
+    "distractors": ["Westminster", "Althing", "Cortes Generales"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What is the name of the lower house of the Irish parliament?",
+    "options": ["Dáil Éireann", "Seanad Éireann", "House of Commons", "Stormont"],
+    "correct_answer": "Dáil Éireann",
+    "distractors": ["Seanad Éireann", "House of Commons", "Stormont"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What is the name of the upper house of the Irish parliament?",
+    "options": ["Seanad Éireann", "Dáil Éireann", "House of Lords", "Senedd"],
+    "correct_answer": "Seanad Éireann",
+    "distractors": ["Dáil Éireann", "House of Lords", "Senedd"],
+    "country": "Ireland"
+  },
+  {
+    "question": "On what date is St Patrick's Day celebrated each year in Ireland?",
+    "options": ["17 March", "1 May", "25 December", "31 October"],
+    "correct_answer": "17 March",
+    "distractors": ["1 May", "25 December", "31 October"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What are the two official languages of Ireland?",
+    "options": ["Irish and English", "Irish and French", "English and Welsh", "Irish and Scottish Gaelic"],
+    "correct_answer": "Irish and English",
+    "distractors": ["Irish and French", "English and Welsh", "Irish and Scottish Gaelic"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which sport is a traditional Irish game governed by the GAA and played with a small ball (sliotar) and a hurley?",
+    "options": ["Hurling", "Cricket", "Ice hockey", "Rugby league"],
+    "correct_answer": "Hurling",
+    "distractors": ["Cricket", "Ice hockey", "Rugby league"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What is the longest river in Ireland?",
+    "options": ["River Shannon", "River Liffey", "River Boyne", "River Lee"],
+    "correct_answer": "River Shannon",
+    "distractors": ["River Liffey", "River Boyne", "River Lee"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What is the highest mountain in Ireland?",
+    "options": ["Carrauntoohil", "Croagh Patrick", "Slieve Donard", "Ben Nevis"],
+    "correct_answer": "Carrauntoohil",
+    "distractors": ["Croagh Patrick", "Slieve Donard", "Ben Nevis"],
+    "country": "Ireland"
+  },
+  {
+    "question": "The Easter Rising, a key event in modern Irish history, took place in which year?",
+    "options": ["1916", "1922", "1905", "1945"],
+    "correct_answer": "1916",
+    "distractors": ["1922", "1905", "1945"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which colors appear on the national flag of Ireland?",
+    "options": ["Green, white, and orange", "Blue, white, and red", "Red, white, and blue", "Green, yellow, and red"],
+    "correct_answer": "Green, white, and orange",
+    "distractors": ["Blue, white, and red", "Red, white, and blue", "Green, yellow, and red"],
+    "country": "Ireland"
+  },
+  {
+    "question": "In what year did Ireland join the European Economic Community (EEC), a predecessor of the EU?",
+    "options": ["1973", "1957", "1992", "2004"],
+    "correct_answer": "1973",
+    "distractors": ["1957", "1992", "2004"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which city is Ireland's second-largest by population?",
+    "options": ["Cork", "Galway", "Kilkenny", "Sligo"],
+    "correct_answer": "Cork",
+    "distractors": ["Galway", "Kilkenny", "Sligo"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish band is known for songs like 'With or Without You' and 'One'?",
+    "options": ["U2", "The Beatles", "Coldplay", "Oasis"],
+    "correct_answer": "U2",
+    "distractors": ["The Beatles", "Coldplay", "Oasis"],
+    "country": "Ireland"
+  },
+  {
+    "question": "The Book of Kells is displayed at which Irish institution?",
+    "options": ["Trinity College Dublin", "University College Cork", "National University of Ireland Galway", "Dublin City University"],
+    "correct_answer": "Trinity College Dublin",
+    "distractors": ["University College Cork", "National University of Ireland Galway", "Dublin City University"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish poet won the Nobel Prize in Literature in 1923?",
+    "options": ["W. B. Yeats", "Seamus Heaney", "James Joyce", "Samuel Beckett"],
+    "correct_answer": "W. B. Yeats",
+    "distractors": ["Seamus Heaney", "James Joyce", "Samuel Beckett"],
+    "country": "Ireland"
+  },
+  {
+    "question": "The Cliffs of Moher are located in which Irish county?",
+    "options": ["County Clare", "County Kerry", "County Mayo", "County Wicklow"],
+    "correct_answer": "County Clare",
+    "distractors": ["County Kerry", "County Mayo", "County Wicklow"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Galway city is in which Irish county?",
+    "options": ["County Galway", "County Clare", "County Donegal", "County Meath"],
+    "correct_answer": "County Galway",
+    "distractors": ["County Clare", "County Donegal", "County Meath"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What is the Irish-language title for the Prime Minister of Ireland?",
+    "options": ["Taoiseach", "Tánaiste", "Uachtarán", "Teachta Dála"],
+    "correct_answer": "Taoiseach",
+    "distractors": ["Tánaiste", "Uachtarán", "Teachta Dála"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Who became Taoiseach of Ireland in June 2020, leading a coalition government?",
+    "options": ["Micheál Martin", "Enda Kenny", "Brian Cowen", "Mary Lou McDonald"],
+    "correct_answer": "Micheál Martin",
+    "distractors": ["Enda Kenny", "Brian Cowen", "Mary Lou McDonald"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Who became Taoiseach of Ireland in December 2022 as part of a coalition leadership rotation?",
+    "options": ["Leo Varadkar", "Micheál Martin", "Enda Kenny", "Michael D. Higgins"],
+    "correct_answer": "Leo Varadkar",
+    "distractors": ["Micheál Martin", "Enda Kenny", "Michael D. Higgins"],
+    "country": "Ireland"
+  },
+  {
+    "question": "In Ireland, traffic drives on which side of the road?",
+    "options": ["Left", "Right", "Either side depending on county", "Right only in cities"],
+    "correct_answer": "Left",
+    "distractors": ["Right", "Either side depending on county", "Right only in cities"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What is the main international airport serving Ireland's capital?",
+    "options": ["Dublin Airport", "Cork Airport", "Shannon Airport", "Knock Airport"],
+    "correct_answer": "Dublin Airport",
+    "distractors": ["Cork Airport", "Shannon Airport", "Knock Airport"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What is the name of Ireland's national public service media organization?",
+    "options": ["RTÉ", "BBC", "TG4", "ITV"],
+    "correct_answer": "RTÉ",
+    "distractors": ["BBC", "TG4", "ITV"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What is the name of the stadium in Dublin that hosts major Gaelic games finals?",
+    "options": ["Croke Park", "Aviva Stadium", "Thomond Park", "Pairc Ui Chaoimh"],
+    "correct_answer": "Croke Park",
+    "distractors": ["Aviva Stadium", "Thomond Park", "Pairc Ui Chaoimh"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which stadium in Dublin is the home venue for the Republic of Ireland men's national football team?",
+    "options": ["Aviva Stadium", "Croke Park", "Wembley Stadium", "Anfield"],
+    "correct_answer": "Aviva Stadium",
+    "distractors": ["Croke Park", "Wembley Stadium", "Anfield"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish-born author wrote 'Gulliver's Travels'?",
+    "options": ["Jonathan Swift", "Oscar Wilde", "Bram Stoker", "George Bernard Shaw"],
+    "correct_answer": "Jonathan Swift",
+    "distractors": ["Oscar Wilde", "Bram Stoker", "George Bernard Shaw"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish-born author wrote the novel 'Dracula'?",
+    "options": ["Bram Stoker", "James Joyce", "Samuel Beckett", "Seamus Heaney"],
+    "correct_answer": "Bram Stoker",
+    "distractors": ["James Joyce", "Samuel Beckett", "Seamus Heaney"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish rock band is associated with the hit song 'Zombie'?",
+    "options": ["The Cranberries", "The Pogues", "U2", "Westlife"],
+    "correct_answer": "The Cranberries",
+    "distractors": ["The Pogues", "U2", "Westlife"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What is the commonly used name for the 1998 agreement that helped end most of the conflict in Northern Ireland?",
+    "options": ["Good Friday Agreement", "Treaty of Versailles", "Sunningdale Agreement", "Edinburgh Agreement"],
+    "correct_answer": "Good Friday Agreement",
+    "distractors": ["Treaty of Versailles", "Sunningdale Agreement", "Edinburgh Agreement"],
+    "country": "Ireland"
+  },
+  {
+    "question": "How many provinces are there in Ireland (traditional provinces)?",
+    "options": ["4", "3", "5", "6"],
+    "correct_answer": "4",
+    "distractors": ["3", "5", "6"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Dublin is located in which traditional province of Ireland?",
+    "options": ["Leinster", "Munster", "Connacht", "Ulster"],
+    "correct_answer": "Leinster",
+    "distractors": ["Munster", "Connacht", "Ulster"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish county is commonly nicknamed 'The Kingdom'?",
+    "options": ["Kerry", "Dublin", "Wexford", "Louth"],
+    "correct_answer": "Kerry",
+    "distractors": ["Dublin", "Wexford", "Louth"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which musical instrument is a national symbol of Ireland and appears on official emblems?",
+    "options": ["Harp", "Bagpipes", "Fiddle", "Tin whistle"],
+    "correct_answer": "Harp",
+    "distractors": ["Bagpipes", "Fiddle", "Tin whistle"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What was the name of Ireland's former currency before it adopted the euro?",
+    "options": ["Irish pound (punt)", "Irish shilling", "Pound sterling", "Irish euro"],
+    "correct_answer": "Irish pound (punt)",
+    "distractors": ["Irish shilling", "Pound sterling", "Irish euro"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What is the name of the national police service of Ireland?",
+    "options": ["An Garda Síochána", "Metropolitan Police", "Police Scotland", "Royal Ulster Constabulary"],
+    "correct_answer": "An Garda Síochána",
+    "distractors": ["Metropolitan Police", "Police Scotland", "Royal Ulster Constabulary"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish playwright wrote 'Waiting for Godot'?",
+    "options": ["Samuel Beckett", "Oscar Wilde", "Brian Friel", "J. M. Synge"],
+    "correct_answer": "Samuel Beckett",
+    "distractors": ["Oscar Wilde", "Brian Friel", "J. M. Synge"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which traditional Irish bagpipe is specifically associated with Irish music?",
+    "options": ["Uilleann pipes", "Great Highland bagpipes", "Northumbrian pipes", "Smallpipes"],
+    "correct_answer": "Uilleann pipes",
+    "distractors": ["Great Highland bagpipes", "Northumbrian pipes", "Smallpipes"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which voting system is used for elections to Dáil Éireann in Ireland?",
+    "options": ["Proportional representation by single transferable vote (PR-STV)", "First-past-the-post", "Two-round system", "Electoral college"],
+    "correct_answer": "Proportional representation by single transferable vote (PR-STV)",
+    "distractors": ["First-past-the-post", "Two-round system", "Electoral college"],
+    "country": "Ireland"
+  },
+  {
+    "question": "In what year did euro banknotes and coins enter circulation in Ireland?",
+    "options": ["2002", "1999", "2004", "2010"],
+    "correct_answer": "2002",
+    "distractors": ["1999", "2004", "2010"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Who founded the Guinness brewery in Dublin in 1759?",
+    "options": ["Arthur Guinness", "Jameson Jameson", "Henry Ford", "Thomas Edison"],
+    "correct_answer": "Arthur Guinness",
+    "distractors": ["Jameson Jameson", "Henry Ford", "Thomas Edison"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish county is home to the pilgrimage mountain Croagh Patrick?",
+    "options": ["County Mayo", "County Clare", "County Kildare", "County Waterford"],
+    "correct_answer": "County Mayo",
+    "distractors": ["County Clare", "County Kildare", "County Waterford"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish writer is best known for the novel 'Ulysses'?",
+    "options": ["James Joyce", "Roddy Doyle", "Colm Tóibín", "Caoimhín Kelleher"],
+    "correct_answer": "James Joyce",
+    "distractors": ["Roddy Doyle", "Colm Tóibín", "Caoimhín Kelleher"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish county contains the national park known for the Wicklow Mountains (Wicklow Mountains National Park)?",
+    "options": ["County Wicklow", "County Kerry", "County Donegal", "County Offaly"],
+    "correct_answer": "County Wicklow",
+    "distractors": ["County Kerry", "County Donegal", "County Offaly"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish city is known for the annual Galway International Arts Festival?",
+    "options": ["Galway", "Cork", "Waterford", "Drogheda"],
+    "correct_answer": "Galway",
+    "distractors": ["Cork", "Waterford", "Drogheda"],
+    "country": "Ireland"
+  }
+]

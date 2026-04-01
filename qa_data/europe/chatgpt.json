@@ -1,0 +1,703 @@
+[
+  {
+    "question": "Who was the Prime Minister of the United Kingdom in 2016?",
+    "options": ["David Cameron", "Theresa May", "Boris Johnson", "Gordon Brown"],
+    "correct_answer": "David Cameron",
+    "distractors": ["Theresa May", "Boris Johnson", "Gordon Brown"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which referendum took place in the United Kingdom in June 2016?",
+    "options": ["Brexit referendum", "Scottish independence referendum", "Electoral reform referendum", "House of Lords reform referendum"],
+    "correct_answer": "Brexit referendum",
+    "distractors": ["Scottish independence referendum", "Electoral reform referendum", "House of Lords reform referendum"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who became Prime Minister of the United Kingdom after David Cameron resigned in 2016?",
+    "options": ["Theresa May", "Boris Johnson", "Jeremy Corbyn", "Nick Clegg"],
+    "correct_answer": "Theresa May",
+    "distractors": ["Boris Johnson", "Jeremy Corbyn", "Nick Clegg"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which political party won the most seats in the UK general election of 2019?",
+    "options": ["Conservative Party", "Labour Party", "Liberal Democrats", "Scottish National Party"],
+    "correct_answer": "Conservative Party",
+    "distractors": ["Labour Party", "Liberal Democrats", "Scottish National Party"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who was the Prime Minister of the United Kingdom during the COVID-19 pandemic in 2020?",
+    "options": ["Boris Johnson", "Theresa May", "Rishi Sunak", "Keir Starmer"],
+    "correct_answer": "Boris Johnson",
+    "distractors": ["Theresa May", "Rishi Sunak", "Keir Starmer"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which city hosted the 2012 Summer Olympics?",
+    "options": ["London", "Manchester", "Birmingham", "Edinburgh"],
+    "correct_answer": "London",
+    "distractors": ["Manchester", "Birmingham", "Edinburgh"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What was the name of the UK's exit agreement from the European Union finalized in 2020?",
+    "options": ["EU-UK Trade and Cooperation Agreement", "Lisbon Treaty", "Maastricht Treaty", "Good Friday Agreement"],
+    "correct_answer": "EU-UK Trade and Cooperation Agreement",
+    "distractors": ["Lisbon Treaty", "Maastricht Treaty", "Good Friday Agreement"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which monarch was the head of state of the United Kingdom in 2015?",
+    "options": ["Queen Elizabeth II", "King Charles III", "Queen Victoria", "King George VI"],
+    "correct_answer": "Queen Elizabeth II",
+    "distractors": ["King Charles III", "Queen Victoria", "King George VI"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK city is the headquarters of the BBC?",
+    "options": ["London", "Cardiff", "Glasgow", "Leeds"],
+    "correct_answer": "London",
+    "distractors": ["Cardiff", "Glasgow", "Leeds"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which political party did Jeremy Corbyn lead between 2015 and 2020?",
+    "options": ["Labour Party", "Conservative Party", "Liberal Democrats", "Green Party"],
+    "correct_answer": "Labour Party",
+    "distractors": ["Conservative Party", "Liberal Democrats", "Green Party"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which country voted to leave the United Kingdom in the 2014 independence referendum?",
+    "options": ["None", "Scotland", "Wales", "Northern Ireland"],
+    "correct_answer": "None",
+    "distractors": ["Scotland", "Wales", "Northern Ireland"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who became Prime Minister of the United Kingdom in 2022 after Boris Johnson resigned?",
+    "options": ["Liz Truss", "Rishi Sunak", "Theresa May", "Keir Starmer"],
+    "correct_answer": "Liz Truss",
+    "distractors": ["Rishi Sunak", "Theresa May", "Keir Starmer"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which Prime Minister succeeded Liz Truss in 2022?",
+    "options": ["Rishi Sunak", "Boris Johnson", "Jeremy Hunt", "Keir Starmer"],
+    "correct_answer": "Rishi Sunak",
+    "distractors": ["Boris Johnson", "Jeremy Hunt", "Keir Starmer"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the name of the UK's national health system?",
+    "options": ["National Health Service", "British Health Authority", "United Medical Service", "Royal Health Network"],
+    "correct_answer": "National Health Service",
+    "distractors": ["British Health Authority", "United Medical Service", "Royal Health Network"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which city is the capital of Scotland?",
+    "options": ["Edinburgh", "Glasgow", "Aberdeen", "Dundee"],
+    "correct_answer": "Edinburgh",
+    "distractors": ["Glasgow", "Aberdeen", "Dundee"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who was Chancellor of the Exchequer of the United Kingdom in 2015?",
+    "options": ["George Osborne", "Philip Hammond", "Rishi Sunak", "Jeremy Hunt"],
+    "correct_answer": "George Osborne",
+    "distractors": ["Philip Hammond", "Rishi Sunak", "Jeremy Hunt"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK city voted majority Remain in the 2016 EU referendum?",
+    "options": ["London", "Birmingham", "Sunderland", "Stoke-on-Trent"],
+    "correct_answer": "London",
+    "distractors": ["Birmingham", "Sunderland", "Stoke-on-Trent"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What was the official date of the UK's withdrawal from the European Union?",
+    "options": ["31 January 2020", "29 March 2019", "31 December 2020", "23 June 2016"],
+    "correct_answer": "31 January 2020",
+    "distractors": ["29 March 2019", "31 December 2020", "23 June 2016"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who led the Leave campaign during the 2016 Brexit referendum?",
+    "options": ["Boris Johnson", "David Cameron", "Nick Clegg", "Ed Miliband"],
+    "correct_answer": "Boris Johnson",
+    "distractors": ["David Cameron", "Nick Clegg", "Ed Miliband"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK Prime Minister called the 2017 snap general election?",
+    "options": ["Theresa May", "David Cameron", "Boris Johnson", "Gordon Brown"],
+    "correct_answer": "Theresa May",
+    "distractors": ["David Cameron", "Boris Johnson", "Gordon Brown"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which party gained the most seats in the UK general election of 2017?",
+    "options": ["Conservative Party", "Labour Party", "Liberal Democrats", "SNP"],
+    "correct_answer": "Conservative Party",
+    "distractors": ["Labour Party", "Liberal Democrats", "SNP"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who became leader of the Labour Party in 2020?",
+    "options": ["Keir Starmer", "Jeremy Corbyn", "Ed Miliband", "Yvette Cooper"],
+    "correct_answer": "Keir Starmer",
+    "distractors": ["Jeremy Corbyn", "Ed Miliband", "Yvette Cooper"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK city is home to the Houses of Parliament?",
+    "options": ["London", "Westminster", "Oxford", "Cambridge"],
+    "correct_answer": "London",
+    "distractors": ["Westminster", "Oxford", "Cambridge"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the name of the UK Parliament's lower house?",
+    "options": ["House of Commons", "House of Lords", "National Assembly", "Privy Council"],
+    "correct_answer": "House of Commons",
+    "distractors": ["House of Lords", "National Assembly", "Privy Council"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK Supreme Court ruling in 2019 limited the Prime Minister's power to prorogue Parliament?",
+    "options": ["Miller II case", "Miller I case", "Brexit Act ruling", "Devolution judgment"],
+    "correct_answer": "Miller II case",
+    "distractors": ["Miller I case", "Brexit Act ruling", "Devolution judgment"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who was Home Secretary of the United Kingdom in 2021?",
+    "options": ["Priti Patel", "Sajid Javid", "Amber Rudd", "Suella Braverman"],
+    "correct_answer": "Priti Patel",
+    "distractors": ["Sajid Javid", "Amber Rudd", "Suella Braverman"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK monarch celebrated a Platinum Jubilee in 2022?",
+    "options": ["Queen Elizabeth II", "King Charles III", "Queen Victoria", "King George V"],
+    "correct_answer": "Queen Elizabeth II",
+    "distractors": ["King Charles III", "Queen Victoria", "King George V"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK Prime Minister resigned after the 'Partygate' scandal?",
+    "options": ["Boris Johnson", "Theresa May", "Liz Truss", "David Cameron"],
+    "correct_answer": "Boris Johnson",
+    "distractors": ["Theresa May", "Liz Truss", "David Cameron"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the name of the UK government's official residence of the Prime Minister?",
+    "options": ["10 Downing Street", "Buckingham Palace", "Whitehall", "Westminster Abbey"],
+    "correct_answer": "10 Downing Street",
+    "distractors": ["Buckingham Palace", "Whitehall", "Westminster Abbey"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK referendum decided membership of the European Union?",
+    "options": ["2016 EU referendum", "2014 Scottish referendum", "2011 AV referendum", "1997 Devolution referendum"],
+    "correct_answer": "2016 EU referendum",
+    "distractors": ["2014 Scottish referendum", "2011 AV referendum", "1997 Devolution referendum"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK city is the capital of Wales?",
+    "options": ["Cardiff", "Swansea", "Newport", "Bangor"],
+    "correct_answer": "Cardiff",
+    "distractors": ["Swansea", "Newport", "Bangor"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who was the UK Foreign Secretary in 2019?",
+    "options": ["Dominic Raab", "Boris Johnson", "Jeremy Hunt", "Liz Truss"],
+    "correct_answer": "Dominic Raab",
+    "distractors": ["Boris Johnson", "Jeremy Hunt", "Liz Truss"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK city is a major financial hub known for Canary Wharf?",
+    "options": ["London", "Leeds", "Edinburgh", "Manchester"],
+    "correct_answer": "London",
+    "distractors": ["Leeds", "Edinburgh", "Manchester"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which devolved parliament was established in Scotland in 1999?",
+    "options": ["Scottish Parliament", "Scottish Assembly", "National Congress", "Highland Council"],
+    "correct_answer": "Scottish Parliament",
+    "distractors": ["Scottish Assembly", "National Congress", "Highland Council"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who became Prime Minister of the United Kingdom in October 2022?",
+    "options": ["Rishi Sunak", "Liz Truss", "Boris Johnson", "Jeremy Hunt"],
+    "correct_answer": "Rishi Sunak",
+    "distractors": ["Liz Truss", "Boris Johnson", "Jeremy Hunt"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK city hosted the COP26 climate summit in 2021?",
+    "options": ["Glasgow", "London", "Edinburgh", "Bristol"],
+    "correct_answer": "Glasgow",
+    "distractors": ["London", "Edinburgh", "Bristol"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the name of the UK's national broadcaster?",
+    "options": ["BBC", "ITV", "Channel 4", "Sky News"],
+    "correct_answer": "BBC",
+    "distractors": ["ITV", "Channel 4", "Sky News"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK Prime Minister was in office during the 2014 Scottish independence referendum?",
+    "options": ["David Cameron", "Gordon Brown", "Theresa May", "Boris Johnson"],
+    "correct_answer": "David Cameron",
+    "distractors": ["Gordon Brown", "Theresa May", "Boris Johnson"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK department is responsible for foreign policy?",
+    "options": ["Foreign, Commonwealth & Development Office", "Home Office", "Treasury", "Cabinet Office"],
+    "correct_answer": "Foreign, Commonwealth & Development Office",
+    "distractors": ["Home Office", "Treasury", "Cabinet Office"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK city is known as the birthplace of the Industrial Revolution?",
+    "options": ["Manchester", "Liverpool", "Sheffield", "Leeds"],
+    "correct_answer": "Manchester",
+    "distractors": ["Liverpool", "Sheffield", "Leeds"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who served as Speaker of the House of Commons from 2009 to 2019?",
+    "options": ["John Bercow", "Lindsay Hoyle", "Michael Martin", "Betty Boothroyd"],
+    "correct_answer": "John Bercow",
+    "distractors": ["Lindsay Hoyle", "Michael Martin", "Betty Boothroyd"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK Prime Minister introduced the COVID-19 lockdowns in 2020?",
+    "options": ["Boris Johnson", "Theresa May", "Rishi Sunak", "Jeremy Corbyn"],
+    "correct_answer": "Boris Johnson",
+    "distractors": ["Theresa May", "Rishi Sunak", "Jeremy Corbyn"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK city is the capital of Northern Ireland?",
+    "options": ["Belfast", "Derry", "Lisburn", "Newry"],
+    "correct_answer": "Belfast",
+    "distractors": ["Derry", "Lisburn", "Newry"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "What is the name of the UK legislative building where the House of Lords meets?",
+    "options": ["Palace of Westminster", "Buckingham Palace", "Windsor Castle", "Whitehall"],
+    "correct_answer": "Palace of Westminster",
+    "distractors": ["Buckingham Palace", "Windsor Castle", "Whitehall"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK Prime Minister implemented the furlough scheme during COVID-19?",
+    "options": ["Boris Johnson", "Rishi Sunak", "Theresa May", "Liz Truss"],
+    "correct_answer": "Boris Johnson",
+    "distractors": ["Rishi Sunak", "Theresa May", "Liz Truss"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK city is the headquarters of the Scottish National Party?",
+    "options": ["Edinburgh", "Glasgow", "Aberdeen", "Dundee"],
+    "correct_answer": "Edinburgh",
+    "distractors": ["Glasgow", "Aberdeen", "Dundee"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who was the UK Defence Secretary in 2020?",
+    "options": ["Ben Wallace", "Michael Fallon", "Grant Shapps", "Liam Fox"],
+    "correct_answer": "Ben Wallace",
+    "distractors": ["Michael Fallon", "Grant Shapps", "Liam Fox"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK institution oversees monetary policy?",
+    "options": ["Bank of England", "HM Treasury", "Financial Conduct Authority", "National Audit Office"],
+    "correct_answer": "Bank of England",
+    "distractors": ["HM Treasury", "Financial Conduct Authority", "National Audit Office"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Who was the Governor of the Bank of England at the time of the 2016 Brexit referendum?",
+    "options": ["Mark Carney", "Andrew Bailey", "Mervyn King", "Rishi Sunak"],
+    "correct_answer": "Mark Carney",
+    "distractors": ["Andrew Bailey", "Mervyn King", "Rishi Sunak"],
+    "country": "United Kingdom"
+  },
+  {
+    "question": "Which UK law formally authorized the triggering of Article 50 to leave the European Union?",
+    "options": ["European Union (Notification of Withdrawal) Act 2017", "European Communities Act 1972", "Withdrawal Agreement Act 2020", "Great Repeal Act"],
+    "correct_answer": "European Union (Notification of Withdrawal) Act 2017",
+    "distractors": ["European Communities Act 1972", "Withdrawal Agreement Act 2020", "Great Repeal Act"],
+    "country": "United Kingdom"
+  },
+
+  {
+    "question": "Who was the Taoiseach (Prime Minister) of Ireland in 2016?",
+    "options": ["Enda Kenny", "Leo Varadkar", "Micheál Martin", "Bertie Ahern"],
+    "correct_answer": "Enda Kenny",
+    "distractors": ["Leo Varadkar", "Micheál Martin", "Bertie Ahern"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which referendum took place in Ireland in 2018?",
+    "options": ["Repeal of the Eighth Amendment", "Brexit referendum", "Lisbon Treaty referendum", "Divorce referendum"],
+    "correct_answer": "Repeal of the Eighth Amendment",
+    "distractors": ["Brexit referendum", "Lisbon Treaty referendum", "Divorce referendum"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Who became Taoiseach of Ireland in 2017?",
+    "options": ["Leo Varadkar", "Enda Kenny", "Micheál Martin", "Mary Lou McDonald"],
+    "correct_answer": "Leo Varadkar",
+    "distractors": ["Enda Kenny", "Micheál Martin", "Mary Lou McDonald"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What is the capital city of Ireland?",
+    "options": ["Dublin", "Cork", "Galway", "Limerick"],
+    "correct_answer": "Dublin",
+    "distractors": ["Cork", "Galway", "Limerick"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which political party led the Irish government formed in 2020?",
+    "options": ["Fianna Fáil", "Sinn Féin", "Fine Gael", "Labour Party"],
+    "correct_answer": "Fianna Fáil",
+    "distractors": ["Sinn Féin", "Fine Gael", "Labour Party"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Who became Taoiseach of Ireland in 2020?",
+    "options": ["Micheál Martin", "Leo Varadkar", "Enda Kenny", "Mary Robinson"],
+    "correct_answer": "Micheál Martin",
+    "distractors": ["Leo Varadkar", "Enda Kenny", "Mary Robinson"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish city hosted the European Capital of Culture in 2020?",
+    "options": ["Galway", "Dublin", "Cork", "Waterford"],
+    "correct_answer": "Galway",
+    "distractors": ["Dublin", "Cork", "Waterford"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which office is the head of state of Ireland?",
+    "options": ["President", "Taoiseach", "Chief Justice", "Speaker of the Dáil"],
+    "correct_answer": "President",
+    "distractors": ["Taoiseach", "Chief Justice", "Speaker of the Dáil"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Who was President of Ireland from 2011 to 2018?",
+    "options": ["Michael D. Higgins", "Mary McAleese", "Mary Robinson", "Leo Varadkar"],
+    "correct_answer": "Michael D. Higgins",
+    "distractors": ["Mary McAleese", "Mary Robinson", "Leo Varadkar"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which international organization did Ireland join in 1973 and remain a member of through 2024?",
+    "options": ["European Union", "NATO", "Commonwealth", "OECD"],
+    "correct_answer": "European Union",
+    "distractors": ["NATO", "Commonwealth", "OECD"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Who was Taoiseach of Ireland during the 2011-2016 government term?",
+    "options": ["Enda Kenny", "Bertie Ahern", "Leo Varadkar", "Micheál Martin"],
+    "correct_answer": "Enda Kenny",
+    "distractors": ["Bertie Ahern", "Leo Varadkar", "Micheál Martin"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish political party is traditionally associated with Irish republicanism?",
+    "options": ["Sinn Féin", "Fine Gael", "Fianna Fáil", "Labour Party"],
+    "correct_answer": "Sinn Féin",
+    "distractors": ["Fine Gael", "Fianna Fáil", "Labour Party"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What currency has Ireland used since 2002?",
+    "options": ["Euro", "Irish pound", "Pound sterling", "ECU"],
+    "correct_answer": "Euro",
+    "distractors": ["Irish pound", "Pound sterling", "ECU"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish referendum legalized same-sex marriage in 2015?",
+    "options": ["Thirty-fourth Amendment", "Eighth Amendment repeal", "Lisbon Treaty referendum", "Divorce referendum"],
+    "correct_answer": "Thirty-fourth Amendment",
+    "distractors": ["Eighth Amendment repeal", "Lisbon Treaty referendum", "Divorce referendum"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Who was President of Ireland elected in 2018?",
+    "options": ["Michael D. Higgins", "Mary Lou McDonald", "Leo Varadkar", "Enda Kenny"],
+    "correct_answer": "Michael D. Higgins",
+    "distractors": ["Mary Lou McDonald", "Leo Varadkar", "Enda Kenny"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish city is known as the country's main technology hub?",
+    "options": ["Dublin", "Cork", "Limerick", "Galway"],
+    "correct_answer": "Dublin",
+    "distractors": ["Cork", "Limerick", "Galway"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What is the lower house of the Irish parliament called?",
+    "options": ["Dáil Éireann", "Seanad Éireann", "House of Commons", "Oireachtas Council"],
+    "correct_answer": "Dáil Éireann",
+    "distractors": ["Seanad Éireann", "House of Commons", "Oireachtas Council"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish political party traditionally supports free-market policies?",
+    "options": ["Fine Gael", "Sinn Féin", "Labour Party", "Green Party"],
+    "correct_answer": "Fine Gael",
+    "distractors": ["Sinn Féin", "Labour Party", "Green Party"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish city hosted the 2019 visit of Pope Francis?",
+    "options": ["Dublin", "Cork", "Galway", "Kilkenny"],
+    "correct_answer": "Dublin",
+    "distractors": ["Cork", "Galway", "Kilkenny"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What is Ireland's official language alongside English?",
+    "options": ["Irish", "Scottish Gaelic", "Welsh", "Breton"],
+    "correct_answer": "Irish",
+    "distractors": ["Scottish Gaelic", "Welsh", "Breton"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish political office is directly elected by the public?",
+    "options": ["President", "Taoiseach", "Tánaiste", "Chief Justice"],
+    "correct_answer": "President",
+    "distractors": ["Taoiseach", "Tánaiste", "Chief Justice"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish city is home to the European headquarters of many US tech firms?",
+    "options": ["Dublin", "Waterford", "Sligo", "Athlone"],
+    "correct_answer": "Dublin",
+    "distractors": ["Waterford", "Sligo", "Athlone"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Who became Tánaiste (Deputy Prime Minister) of Ireland in 2020?",
+    "options": ["Leo Varadkar", "Micheál Martin", "Eamon Ryan", "Mary Lou McDonald"],
+    "correct_answer": "Leo Varadkar",
+    "distractors": ["Micheál Martin", "Eamon Ryan", "Mary Lou McDonald"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish referendum approved the Lisbon Treaty in 2009?",
+    "options": ["Second Lisbon Treaty referendum", "First Lisbon Treaty referendum", "Good Friday Agreement referendum", "Fiscal Treaty referendum"],
+    "correct_answer": "Second Lisbon Treaty referendum",
+    "distractors": ["First Lisbon Treaty referendum", "Good Friday Agreement referendum", "Fiscal Treaty referendum"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish party led the opposition after the 2020 general election?",
+    "options": ["Sinn Féin", "Fine Gael", "Labour Party", "Green Party"],
+    "correct_answer": "Sinn Féin",
+    "distractors": ["Fine Gael", "Labour Party", "Green Party"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish county is home to the Cliffs of Moher?",
+    "options": ["Clare", "Kerry", "Galway", "Donegal"],
+    "correct_answer": "Clare",
+    "distractors": ["Kerry", "Galway", "Donegal"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What international military alliance is Ireland not a member of?",
+    "options": ["NATO", "United Nations", "European Union", "OECD"],
+    "correct_answer": "NATO",
+    "distractors": ["United Nations", "European Union", "OECD"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish city is known for hosting the Rose of Tralee festival?",
+    "options": ["Tralee", "Cork", "Ennis", "Athlone"],
+    "correct_answer": "Tralee",
+    "distractors": ["Cork", "Ennis", "Athlone"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish referendum expanded grounds for divorce in 2019?",
+    "options": ["Thirty-eighth Amendment", "Thirty-fourth Amendment", "Thirty-sixth Amendment", "Fortieth Amendment"],
+    "correct_answer": "Thirty-eighth Amendment",
+    "distractors": ["Thirty-fourth Amendment", "Thirty-sixth Amendment", "Fortieth Amendment"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish institution represents workers in collective bargaining?",
+    "options": ["Irish Congress of Trade Unions", "Enterprise Ireland", "Central Bank of Ireland", "IDA Ireland"],
+    "correct_answer": "Irish Congress of Trade Unions",
+    "distractors": ["Enterprise Ireland", "Central Bank of Ireland", "IDA Ireland"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish city is the capital of County Cork?",
+    "options": ["Cork", "Mallow", "Clonakilty", "Youghal"],
+    "correct_answer": "Cork",
+    "distractors": ["Mallow", "Clonakilty", "Youghal"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish body oversees monetary policy?",
+    "options": ["European Central Bank", "Central Bank of Ireland", "Department of Finance", "OECD"],
+    "correct_answer": "European Central Bank",
+    "distractors": ["Central Bank of Ireland", "Department of Finance", "OECD"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish party is associated with environmental politics?",
+    "options": ["Green Party", "Fine Gael", "Fianna Fáil", "Sinn Féin"],
+    "correct_answer": "Green Party",
+    "distractors": ["Fine Gael", "Fianna Fáil", "Sinn Féin"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish port city is known for its role in emigration history?",
+    "options": ["Cobh", "Galway", "Dundalk", "Sligo"],
+    "correct_answer": "Cobh",
+    "distractors": ["Galway", "Dundalk", "Sligo"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish political party uses the harp as a symbol?",
+    "options": ["Fianna Fáil", "Fine Gael", "Labour Party", "Green Party"],
+    "correct_answer": "Fianna Fáil",
+    "distractors": ["Fine Gael", "Labour Party", "Green Party"],
+    "country": "Ireland"
+  },
+  {
+    "question": "What voting system is used in Irish general elections?",
+    "options": ["Single transferable vote", "First-past-the-post", "Mixed-member proportional", "Closed-list PR"],
+    "correct_answer": "Single transferable vote",
+    "distractors": ["First-past-the-post", "Mixed-member proportional", "Closed-list PR"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish city hosts the national parliament?",
+    "options": ["Dublin", "Kilkenny", "Athlone", "Naas"],
+    "correct_answer": "Dublin",
+    "distractors": ["Kilkenny", "Athlone", "Naas"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish referendum approved the Good Friday Agreement?",
+    "options": ["1998 referendum", "2001 Nice Treaty referendum", "2015 marriage referendum", "2012 Fiscal Treaty referendum"],
+    "correct_answer": "1998 referendum",
+    "distractors": ["2001 Nice Treaty referendum", "2015 marriage referendum", "2012 Fiscal Treaty referendum"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish government agency attracts foreign direct investment?",
+    "options": ["IDA Ireland", "Enterprise Ireland", "Tourism Ireland", "Revenue Commissioners"],
+    "correct_answer": "IDA Ireland",
+    "distractors": ["Enterprise Ireland", "Tourism Ireland", "Revenue Commissioners"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Who was Minister for Health of Ireland during the COVID-19 pandemic in 2020?",
+    "options": ["Simon Harris", "Leo Varadkar", "Stephen Donnelly", "Eamon Ryan"],
+    "correct_answer": "Simon Harris",
+    "distractors": ["Leo Varadkar", "Stephen Donnelly", "Eamon Ryan"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish city is associated with the literary figure James Joyce?",
+    "options": ["Dublin", "Galway", "Cork", "Waterford"],
+    "correct_answer": "Dublin",
+    "distractors": ["Galway", "Cork", "Waterford"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish public holiday commemorates the 1916 Rising?",
+    "options": ["Easter Monday", "St Patrick's Day", "May Day", "October Bank Holiday"],
+    "correct_answer": "Easter Monday",
+    "distractors": ["St Patrick's Day", "May Day", "October Bank Holiday"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish city hosts the national stadium Croke Park?",
+    "options": ["Dublin", "Cork", "Limerick", "Galway"],
+    "correct_answer": "Dublin",
+    "distractors": ["Cork", "Limerick", "Galway"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish political party was founded by Éamon de Valera?",
+    "options": ["Fianna Fáil", "Fine Gael", "Labour Party", "Sinn Féin"],
+    "correct_answer": "Fianna Fáil",
+    "distractors": ["Fine Gael", "Labour Party", "Sinn Féin"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish city is known for the annual Galway Arts Festival?",
+    "options": ["Galway", "Dublin", "Sligo", "Ennis"],
+    "correct_answer": "Galway",
+    "distractors": ["Dublin", "Sligo", "Ennis"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish referendum abolished the offence of blasphemy in 2018?",
+    "options": ["Thirty-seventh Amendment", "Thirty-sixth Amendment", "Thirty-fourth Amendment", "Thirty-eighth Amendment"],
+    "correct_answer": "Thirty-seventh Amendment",
+    "distractors": ["Thirty-sixth Amendment", "Thirty-fourth Amendment", "Thirty-eighth Amendment"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish city is the capital of County Galway?",
+    "options": ["Galway", "Tuam", "Athenry", "Ballinasloe"],
+    "correct_answer": "Galway",
+    "distractors": ["Tuam", "Athenry", "Ballinasloe"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish referendum approved abortion law reform in 2018?",
+    "options": ["Thirty-sixth Amendment", "Thirty-fourth Amendment", "Thirty-eighth Amendment", "Thirty-fifth Amendment"],
+    "correct_answer": "Thirty-sixth Amendment",
+    "distractors": ["Thirty-fourth Amendment", "Thirty-eighth Amendment", "Thirty-fifth Amendment"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Who served as Ireland's Minister for Finance during the 2010-2011 EU-IMF bailout period?",
+    "options": ["Brian Lenihan", "Michael Noonan", "Paschal Donohoe", "Philip Lane"],
+    "correct_answer": "Brian Lenihan",
+    "distractors": ["Michael Noonan", "Paschal Donohoe", "Philip Lane"],
+    "country": "Ireland"
+  },
+  {
+    "question": "Which Irish referendum approved the Fiscal Stability Treaty (Fiscal Compact) in 2012?",
+    "options": ["2012 Fiscal Treaty referendum", "2009 Lisbon Treaty referendum", "1998 Good Friday Agreement referendum", "2015 Marriage Equality referendum"],
+    "correct_answer": "2012 Fiscal Treaty referendum",
+    "distractors": ["2009 Lisbon Treaty referendum", "1998 Good Friday Agreement referendum", "2015 Marriage Equality referendum"],
+    "country": "Ireland"
+  }
+]

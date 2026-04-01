@@ -1,0 +1,708 @@
+[
+  {
+    "question": "Who became Prime Minister of India after the 2014 general election?",
+    "options": ["Narendra Modi", "Manmohan Singh", "Rahul Gandhi", "Atal Bihari Vajpayee"],
+    "correct_answer": "Narendra Modi",
+    "distractors": ["Manmohan Singh", "Rahul Gandhi", "Atal Bihari Vajpayee"],
+    "country": "India"
+  },
+  {
+    "question": "In which year did India implement the nationwide Goods and Services Tax (GST)?",
+    "options": ["2017", "2014", "2020", "2012"],
+    "correct_answer": "2017",
+    "distractors": ["2014", "2020", "2012"],
+    "country": "India"
+  },
+  {
+    "question": "Which Indian city hosted the 2010 Commonwealth Games?",
+    "options": ["New Delhi", "Mumbai", "Kolkata", "Chennai"],
+    "correct_answer": "New Delhi",
+    "distractors": ["Mumbai", "Kolkata", "Chennai"],
+    "country": "India"
+  },
+  {
+    "question": "India's demonetisation policy in November 2016 withdrew which banknote denominations from circulation?",
+    "options": ["₹500 and ₹1,000", "₹100 and ₹200", "₹2,000 and ₹5,000", "₹50 and ₹100"],
+    "correct_answer": "₹500 and ₹1,000",
+    "distractors": ["₹100 and ₹200", "₹2,000 and ₹5,000", "₹50 and ₹100"],
+    "country": "India"
+  },
+  {
+    "question": "Which Indian space mission achieved the first soft landing near the Moon's south pole region in 2023?",
+    "options": ["Chandrayaan-3", "Mangalyaan", "Chandrayaan-1", "Gaganyaan"],
+    "correct_answer": "Chandrayaan-3",
+    "distractors": ["Mangalyaan", "Chandrayaan-1", "Gaganyaan"],
+    "country": "India"
+  },
+  {
+    "question": "Who became President of India in 2022?",
+    "options": ["Droupadi Murmu", "Ram Nath Kovind", "Pranab Mukherjee", "A. P. J. Abdul Kalam"],
+    "correct_answer": "Droupadi Murmu",
+    "distractors": ["Ram Nath Kovind", "Pranab Mukherjee", "A. P. J. Abdul Kalam"],
+    "country": "India"
+  },
+  {
+    "question": "Which Indian state is home to the city of Hyderabad?",
+    "options": ["Telangana", "Gujarat", "Punjab", "Bihar"],
+    "correct_answer": "Telangana",
+    "distractors": ["Gujarat", "Punjab", "Bihar"],
+    "country": "India"
+  },
+  {
+    "question": "The 'Statue of Unity' in India is located in which state?",
+    "options": ["Gujarat", "Rajasthan", "Kerala", "West Bengal"],
+    "correct_answer": "Gujarat",
+    "distractors": ["Rajasthan", "Kerala", "West Bengal"],
+    "country": "India"
+  },
+  {
+    "question": "Which body is India's central bank?",
+    "options": ["Reserve Bank of India", "State Bank of India", "NITI Aayog", "Securities and Exchange Board of India"],
+    "correct_answer": "Reserve Bank of India",
+    "distractors": ["State Bank of India", "NITI Aayog", "Securities and Exchange Board of India"],
+    "country": "India"
+  },
+  {
+    "question": "Which city is widely known as India's 'Silicon Valley'?",
+    "options": ["Bengaluru", "Jaipur", "Lucknow", "Bhopal"],
+    "correct_answer": "Bengaluru",
+    "distractors": ["Jaipur", "Lucknow", "Bhopal"],
+    "country": "India"
+  },
+  {
+    "question": "Who was the Chief Justice of India when the Supreme Court delivered the Ayodhya verdict in 2019?",
+    "options": ["Ranjan Gogoi", "N. V. Ramana", "D. Y. Chandrachud", "U. U. Lalit"],
+    "correct_answer": "Ranjan Gogoi",
+    "distractors": ["N. V. Ramana", "D. Y. Chandrachud", "U. U. Lalit"],
+    "country": "India"
+  },
+  {
+    "question": "Which Indian city is home to the Taj Mahal?",
+    "options": ["Agra", "Varanasi", "Udaipur", "Amritsar"],
+    "correct_answer": "Agra",
+    "distractors": ["Varanasi", "Udaipur", "Amritsar"],
+    "country": "India"
+  },
+  {
+    "question": "Which major Indian river is considered the longest within India?",
+    "options": ["Ganga", "Narmada", "Godavari", "Kaveri"],
+    "correct_answer": "Ganga",
+    "distractors": ["Narmada", "Godavari", "Kaveri"],
+    "country": "India"
+  },
+  {
+    "question": "In 2011, India won the Cricket World Cup under which captain?",
+    "options": ["MS Dhoni", "Sourav Ganguly", "Virat Kohli", "Rahul Dravid"],
+    "correct_answer": "MS Dhoni",
+    "distractors": ["Sourav Ganguly", "Virat Kohli", "Rahul Dravid"],
+    "country": "India"
+  },
+  {
+    "question": "Which Indian government initiative launched in 2014 aimed to increase financial inclusion through bank accounts?",
+    "options": ["Pradhan Mantri Jan Dhan Yojana", "Make in India", "Swachh Bharat Mission", "Digital India"],
+    "correct_answer": "Pradhan Mantri Jan Dhan Yojana",
+    "distractors": ["Make in India", "Swachh Bharat Mission", "Digital India"],
+    "country": "India"
+  },
+
+  {
+    "question": "What is the capital city of Pakistan?",
+    "options": ["Islamabad", "Karachi", "Lahore", "Peshawar"],
+    "correct_answer": "Islamabad",
+    "distractors": ["Karachi", "Lahore", "Peshawar"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Who became Prime Minister of Pakistan after the 2018 general election?",
+    "options": ["Imran Khan", "Nawaz Sharif", "Asif Ali Zardari", "Yousaf Raza Gillani"],
+    "correct_answer": "Imran Khan",
+    "distractors": ["Nawaz Sharif", "Asif Ali Zardari", "Yousaf Raza Gillani"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which Pakistani province has Karachi as its capital?",
+    "options": ["Sindh", "Punjab", "Balochistan", "Khyber Pakhtunkhwa"],
+    "correct_answer": "Sindh",
+    "distractors": ["Punjab", "Balochistan", "Khyber Pakhtunkhwa"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "What is the currency of Pakistan?",
+    "options": ["Pakistani rupee", "Indian rupee", "Afghan afghani", "Iranian rial"],
+    "correct_answer": "Pakistani rupee",
+    "distractors": ["Indian rupee", "Afghan afghani", "Iranian rial"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which mountain in Pakistan is the second-highest peak in the world?",
+    "options": ["K2", "Nanga Parbat", "Broad Peak", "Gasherbrum I"],
+    "correct_answer": "K2",
+    "distractors": ["Nanga Parbat", "Broad Peak", "Gasherbrum I"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "The China-Pakistan Economic Corridor (CPEC) is part of which larger initiative?",
+    "options": ["Belt and Road Initiative", "Marshall Plan", "European Green Deal", "NAFTA"],
+    "correct_answer": "Belt and Road Initiative",
+    "distractors": ["Marshall Plan", "European Green Deal", "NAFTA"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which Pakistani city is home to the Badshahi Mosque?",
+    "options": ["Lahore", "Quetta", "Multan", "Hyderabad"],
+    "correct_answer": "Lahore",
+    "distractors": ["Quetta", "Multan", "Hyderabad"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "In 2022, who became Prime Minister of Pakistan after Imran Khan was removed through a no-confidence vote?",
+    "options": ["Shehbaz Sharif", "Shahid Khaqan Abbasi", "Pervez Musharraf", "Bilawal Bhutto Zardari"],
+    "correct_answer": "Shehbaz Sharif",
+    "distractors": ["Shahid Khaqan Abbasi", "Pervez Musharraf", "Bilawal Bhutto Zardari"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which river is the main river of Pakistan's Indus Basin and gives the country much of its irrigation water?",
+    "options": ["Indus River", "Tigris River", "Euphrates River", "Jordan River"],
+    "correct_answer": "Indus River",
+    "distractors": ["Tigris River", "Euphrates River", "Jordan River"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Pakistan won the ICC Champions Trophy in 2017 by defeating which team in the final?",
+    "options": ["India", "Australia", "England", "New Zealand"],
+    "correct_answer": "India",
+    "distractors": ["Australia", "England", "New Zealand"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which city is the largest in Pakistan by population?",
+    "options": ["Karachi", "Islamabad", "Rawalpindi", "Faisalabad"],
+    "correct_answer": "Karachi",
+    "distractors": ["Islamabad", "Rawalpindi", "Faisalabad"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Who is the founder of Pakistan and is known as 'Quaid-e-Azam'?",
+    "options": ["Muhammad Ali Jinnah", "Allama Iqbal", "Liaquat Ali Khan", "Ayub Khan"],
+    "correct_answer": "Muhammad Ali Jinnah",
+    "distractors": ["Allama Iqbal", "Liaquat Ali Khan", "Ayub Khan"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which Pakistani valley is famous for tourism and was affected by a major 2022 flash flood incident reported in the news?",
+    "options": ["Swat Valley", "Hunza Valley", "Neelum Valley", "Kaghan Valley"],
+    "correct_answer": "Swat Valley",
+    "distractors": ["Hunza Valley", "Neelum Valley", "Kaghan Valley"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "What is the name of Pakistan's national airline?",
+    "options": ["Pakistan International Airlines", "Air India", "SriLankan Airlines", "Philippine Airlines"],
+    "correct_answer": "Pakistan International Airlines",
+    "distractors": ["Air India", "SriLankan Airlines", "Philippine Airlines"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which Pakistani port city is the southern terminus often associated with CPEC's flagship port project?",
+    "options": ["Gwadar", "Karachi", "Pasni", "Ormara"],
+    "correct_answer": "Gwadar",
+    "distractors": ["Karachi", "Pasni", "Ormara"],
+    "country": "Pakistan"
+  },
+
+  {
+    "question": "Who has served as Prime Minister of Bangladesh for much of the period since 2009?",
+    "options": ["Sheikh Hasina", "Khaleda Zia", "Muhammad Yunus", "Hussain Muhammad Ershad"],
+    "correct_answer": "Sheikh Hasina",
+    "distractors": ["Khaleda Zia", "Muhammad Yunus", "Hussain Muhammad Ershad"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "What is the capital of Bangladesh?",
+    "options": ["Dhaka", "Chittagong", "Khulna", "Sylhet"],
+    "correct_answer": "Dhaka",
+    "distractors": ["Chittagong", "Khulna", "Sylhet"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "What is the currency of Bangladesh?",
+    "options": ["Bangladeshi taka", "Bangladeshi rupee", "Kyat", "Riel"],
+    "correct_answer": "Bangladeshi taka",
+    "distractors": ["Bangladeshi rupee", "Kyat", "Riel"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "The 2013 Rana Plaza disaster in Bangladesh was primarily a collapse of what type of building?",
+    "options": ["Garment factory building", "Sports stadium", "Airport terminal", "Hydropower dam"],
+    "correct_answer": "Garment factory building",
+    "distractors": ["Sports stadium", "Airport terminal", "Hydropower dam"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which Bangladeshi seaport city is also known as Chattogram?",
+    "options": ["Chittagong", "Rajshahi", "Rangpur", "Barisal"],
+    "correct_answer": "Chittagong",
+    "distractors": ["Rajshahi", "Rangpur", "Barisal"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "The Padma Bridge, inaugurated in 2022, crosses which river in Bangladesh?",
+    "options": ["Padma River", "Meghna River", "Jamuna River", "Teesta River"],
+    "correct_answer": "Padma River",
+    "distractors": ["Meghna River", "Jamuna River", "Teesta River"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which international peacekeeping organization has Bangladesh been one of the largest contributors to in recent decades?",
+    "options": ["United Nations", "NATO", "European Union", "OPEC"],
+    "correct_answer": "United Nations",
+    "distractors": ["NATO", "European Union", "OPEC"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "What is Bangladesh's national language?",
+    "options": ["Bengali (Bangla)", "Urdu", "Hindi", "Tamil"],
+    "correct_answer": "Bengali (Bangla)",
+    "distractors": ["Urdu", "Hindi", "Tamil"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which day is observed in Bangladesh as Language Movement Day, commemorating events in 1952?",
+    "options": ["21 February", "26 March", "16 December", "1 May"],
+    "correct_answer": "21 February",
+    "distractors": ["26 March", "16 December", "1 May"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which Bangladeshi district is home to Cox's Bazar, known for its long sandy beach?",
+    "options": ["Cox's Bazar", "Gazipur", "Narayanganj", "Bogura"],
+    "correct_answer": "Cox's Bazar",
+    "distractors": ["Gazipur", "Narayanganj", "Bogura"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "What is the name of Bangladesh's main stock exchange located in the capital?",
+    "options": ["Dhaka Stock Exchange", "Chittagong Mercantile Exchange", "Bangla Securities Exchange", "National Commodities Exchange of Bangladesh"],
+    "correct_answer": "Dhaka Stock Exchange",
+    "distractors": ["Chittagong Mercantile Exchange", "Bangla Securities Exchange", "National Commodities Exchange of Bangladesh"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which Bangladeshi cricketer became a prominent all-rounder and later served as a member of parliament (MP)?",
+    "options": ["Shakib Al Hasan", "Tamim Iqbal", "Mashrafe Mortaza", "Mushfiqur Rahim"],
+    "correct_answer": "Shakib Al Hasan",
+    "distractors": ["Tamim Iqbal", "Mashrafe Mortaza", "Mushfiqur Rahim"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Bangladesh shares its longest land border with which country?",
+    "options": ["India", "Myanmar", "China", "Nepal"],
+    "correct_answer": "India",
+    "distractors": ["Myanmar", "China", "Nepal"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which mangrove forest, shared by Bangladesh and India, is famous for the Bengal tiger?",
+    "options": ["Sundarbans", "Sherwood Forest", "Congo Basin", "Daintree Rainforest"],
+    "correct_answer": "Sundarbans",
+    "distractors": ["Sherwood Forest", "Congo Basin", "Daintree Rainforest"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Bangladesh's Independence Day is observed on which date?",
+    "options": ["26 March", "16 December", "21 February", "14 April"],
+    "correct_answer": "26 March",
+    "distractors": ["16 December", "21 February", "14 April"],
+    "country": "Bangladesh"
+  },
+
+  {
+    "question": "What is the capital of Sri Lanka?",
+    "options": ["Sri Jayawardenepura Kotte", "Colombo", "Kandy", "Galle"],
+    "correct_answer": "Sri Jayawardenepura Kotte",
+    "distractors": ["Colombo", "Kandy", "Galle"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which Sri Lankan city is the main commercial capital and largest city?",
+    "options": ["Colombo", "Jaffna", "Matara", "Anuradhapura"],
+    "correct_answer": "Colombo",
+    "distractors": ["Jaffna", "Matara", "Anuradhapura"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "The 2019 Easter Sunday attacks in Sri Lanka targeted, among other places, which type of locations?",
+    "options": ["Churches and hotels", "Airports and rail stations", "Universities and parliaments", "Hydropower dams and banks"],
+    "correct_answer": "Churches and hotels",
+    "distractors": ["Airports and rail stations", "Universities and parliaments", "Hydropower dams and banks"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Who became President of Sri Lanka in July 2022 after Gotabaya Rajapaksa resigned?",
+    "options": ["Ranil Wickremesinghe", "Mahinda Rajapaksa", "Maithripala Sirisena", "Sarath Fonseka"],
+    "correct_answer": "Ranil Wickremesinghe",
+    "distractors": ["Mahinda Rajapaksa", "Maithripala Sirisena", "Sarath Fonseka"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "What is the currency of Sri Lanka?",
+    "options": ["Sri Lankan rupee", "Sri Lankan dollar", "Indian rupee", "Maldivian rufiyaa"],
+    "correct_answer": "Sri Lankan rupee",
+    "distractors": ["Sri Lankan dollar", "Indian rupee", "Maldivian rufiyaa"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which Sri Lankan cricket captain led the team to win the 2014 ICC World Twenty20 title?",
+    "options": ["Lasith Malinga", "Angelo Mathews", "Kumar Sangakkara", "Mahela Jayawardene"],
+    "correct_answer": "Lasith Malinga",
+    "distractors": ["Angelo Mathews", "Kumar Sangakkara", "Mahela Jayawardene"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which ancient rock fortress in Sri Lanka is a UNESCO World Heritage Site and a major tourist attraction?",
+    "options": ["Sigiriya", "Dambulla", "Adam's Peak", "Pidurangala"],
+    "correct_answer": "Sigiriya",
+    "distractors": ["Dambulla", "Adam's Peak", "Pidurangala"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Sri Lanka is separated from India by which body of water?",
+    "options": ["Palk Strait", "Strait of Malacca", "Bering Strait", "Bab el-Mandeb"],
+    "correct_answer": "Palk Strait",
+    "distractors": ["Strait of Malacca", "Bering Strait", "Bab el-Mandeb"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which port project in Sri Lanka was widely covered in international news for being leased to a Chinese company in 2017?",
+    "options": ["Hambantota Port", "Trincomalee Port", "Galle Harbour", "Kankesanthurai Port"],
+    "correct_answer": "Hambantota Port",
+    "distractors": ["Trincomalee Port", "Galle Harbour", "Kankesanthurai Port"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "What is the majority religion in Sri Lanka?",
+    "options": ["Buddhism", "Hinduism", "Christianity", "Islam"],
+    "correct_answer": "Buddhism",
+    "distractors": ["Hinduism", "Christianity", "Islam"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which tea-growing region in Sri Lanka is commonly associated with 'Ceylon tea' highland plantations?",
+    "options": ["Nuwara Eliya", "Negombo", "Batticaloa", "Hambantota"],
+    "correct_answer": "Nuwara Eliya",
+    "distractors": ["Negombo", "Batticaloa", "Hambantota"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "The Sri Lankan civil war ended in which year?",
+    "options": ["2009", "2013", "2011", "2005"],
+    "correct_answer": "2009",
+    "distractors": ["2013", "2011", "2005"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which Sri Lankan national park is famous for having one of the highest densities of leopards in the world?",
+    "options": ["Yala National Park", "Wilpattu National Park", "Horton Plains National Park", "Udawalawe National Park"],
+    "correct_answer": "Yala National Park",
+    "distractors": ["Wilpattu National Park", "Horton Plains National Park", "Udawalawe National Park"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Who served as President of Sri Lanka from 2015 to 2019?",
+    "options": ["Maithripala Sirisena", "Gotabaya Rajapaksa", "Ranil Wickremesinghe", "Chandrika Kumaratunga"],
+    "correct_answer": "Maithripala Sirisena",
+    "distractors": ["Gotabaya Rajapaksa", "Ranil Wickremesinghe", "Chandrika Kumaratunga"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "The island nation now known as Sri Lanka was officially called 'Ceylon' until which year?",
+    "options": ["1972", "1948", "1956", "1987"],
+    "correct_answer": "1972",
+    "distractors": ["1948", "1956", "1987"],
+    "country": "Sri Lanka"
+  },
+
+  {
+    "question": "What is the currency used in Hong Kong?",
+    "options": ["Hong Kong dollar", "Chinese yuan", "Macanese pataca", "Singapore dollar"],
+    "correct_answer": "Hong Kong dollar",
+    "distractors": ["Chinese yuan", "Macanese pataca", "Singapore dollar"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Who became Chief Executive of Hong Kong in 2017?",
+    "options": ["Carrie Lam", "Leung Chun-ying", "John Lee", "Donald Tsang"],
+    "correct_answer": "Carrie Lam",
+    "distractors": ["Leung Chun-ying", "John Lee", "Donald Tsang"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Who became Chief Executive of Hong Kong in 2022?",
+    "options": ["John Lee", "Carrie Lam", "Anson Chan", "Henry Tang"],
+    "correct_answer": "John Lee",
+    "distractors": ["Carrie Lam", "Anson Chan", "Henry Tang"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "The 2014 'Umbrella Movement' protests in Hong Kong were primarily associated with demands related to what?",
+    "options": ["Electoral reforms and universal suffrage", "Abolition of the stock exchange", "Joining the European Union", "Switching to the euro currency"],
+    "correct_answer": "Electoral reforms and universal suffrage",
+    "distractors": ["Abolition of the stock exchange", "Joining the European Union", "Switching to the euro currency"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "In 2020, Hong Kong implemented a sweeping National Security Law enacted by which authority?",
+    "options": ["China's National People's Congress Standing Committee", "Hong Kong Jockey Club", "ASEAN Secretariat", "World Trade Organization"],
+    "correct_answer": "China's National People's Congress Standing Committee",
+    "distractors": ["Hong Kong Jockey Club", "ASEAN Secretariat", "World Trade Organization"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which harbor is a famous natural deep-water port central to Hong Kong's geography and identity?",
+    "options": ["Victoria Harbour", "Pearl Harbour", "Manila Bay", "Tokyo Bay"],
+    "correct_answer": "Victoria Harbour",
+    "distractors": ["Pearl Harbour", "Manila Bay", "Tokyo Bay"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "The MTR in Hong Kong is best described as what?",
+    "options": ["Mass transit railway system", "National airline", "Seaport authority", "Telecommunications regulator"],
+    "correct_answer": "Mass transit railway system",
+    "distractors": ["National airline", "Seaport authority", "Telecommunications regulator"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Hong Kong's international airport, opened in 1998, is commonly known as what?",
+    "options": ["Chek Lap Kok", "Kai Tak", "Taoyuan", "Changi"],
+    "correct_answer": "Chek Lap Kok",
+    "distractors": ["Kai Tak", "Taoyuan", "Changi"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which mountain peak on Hong Kong Island is a major tourist viewpoint accessible by a historic tram?",
+    "options": ["Victoria Peak", "Lantau Peak", "Tai Mo Shan", "Lion Rock"],
+    "correct_answer": "Victoria Peak",
+    "distractors": ["Lantau Peak", "Tai Mo Shan", "Lion Rock"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which iconic Hong Kong theme park opened in 2005 on Lantau Island?",
+    "options": ["Hong Kong Disneyland", "Ocean Park", "Universal Studios Hong Kong", "DisneySea Hong Kong"],
+    "correct_answer": "Hong Kong Disneyland",
+    "distractors": ["Ocean Park", "Universal Studios Hong Kong", "DisneySea Hong Kong"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which district in Hong Kong is well known as a major financial and business hub on Hong Kong Island?",
+    "options": ["Central", "Mong Kok", "Sha Tin", "Tuen Mun"],
+    "correct_answer": "Central",
+    "distractors": ["Mong Kok", "Sha Tin", "Tuen Mun"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "The 'Octopus' in Hong Kong refers to what widely used item?",
+    "options": ["Contactless smart card for transit and payments", "A television news channel", "A mobile phone brand", "A government identity document"],
+    "correct_answer": "Contactless smart card for transit and payments",
+    "distractors": ["A television news channel", "A mobile phone brand", "A government identity document"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which of the following is a major annual event in Hong Kong featuring dragon boats?",
+    "options": ["Dragon Boat Festival races", "Oktoberfest", "Diwali parade", "Thanksgiving Day parade"],
+    "correct_answer": "Dragon Boat Festival races",
+    "distractors": ["Oktoberfest", "Diwali parade", "Thanksgiving Day parade"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "The 2019 protests in Hong Kong were initially triggered by controversy over a proposed bill related to what?",
+    "options": ["Extradition", "Sales tax increases", "Compulsory military service", "A ban on smartphones"],
+    "correct_answer": "Extradition",
+    "distractors": ["Sales tax increases", "Compulsory military service", "A ban on smartphones"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which older Hong Kong airport, located in Kowloon and known for dramatic landings, closed in 1998?",
+    "options": ["Kai Tak", "Chek Lap Kok", "Shek Kong", "Macau International Airport"],
+    "correct_answer": "Kai Tak",
+    "distractors": ["Chek Lap Kok", "Shek Kong", "Macau International Airport"],
+    "country": "Hong Kong"
+  },
+
+  {
+    "question": "What is the capital of Malaysia?",
+    "options": ["Kuala Lumpur", "Putrajaya", "George Town", "Johor Bahru"],
+    "correct_answer": "Kuala Lumpur",
+    "distractors": ["Putrajaya", "George Town", "Johor Bahru"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Malaysia's federal administrative centre (seat of government) is which planned city?",
+    "options": ["Putrajaya", "Kuala Lumpur", "Shah Alam", "Ipoh"],
+    "correct_answer": "Putrajaya",
+    "distractors": ["Kuala Lumpur", "Shah Alam", "Ipoh"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "What is the currency of Malaysia?",
+    "options": ["Malaysian ringgit", "Malaysian rupiah", "Baht", "Singapore dollar"],
+    "correct_answer": "Malaysian ringgit",
+    "distractors": ["Malaysian rupiah", "Baht", "Singapore dollar"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which Malaysian Prime Minister took office in May 2018 after the general election?",
+    "options": ["Mahathir Mohamad", "Najib Razak", "Muhyiddin Yassin", "Anwar Ibrahim"],
+    "correct_answer": "Mahathir Mohamad",
+    "distractors": ["Najib Razak", "Muhyiddin Yassin", "Anwar Ibrahim"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Who became Prime Minister of Malaysia in November 2022 following the general election and coalition talks?",
+    "options": ["Anwar Ibrahim", "Ismail Sabri Yaakob", "Najib Razak", "Abdullah Ahmad Badawi"],
+    "correct_answer": "Anwar Ibrahim",
+    "distractors": ["Ismail Sabri Yaakob", "Najib Razak", "Abdullah Ahmad Badawi"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "The 1MDB scandal in Malaysia was primarily associated with what?",
+    "options": ["A state investment fund", "A national airline merger", "A tsunami recovery program", "A rice subsidy scheme"],
+    "correct_answer": "A state investment fund",
+    "distractors": ["A national airline merger", "A tsunami recovery program", "A rice subsidy scheme"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which twin skyscrapers in Kuala Lumpur were once the world's tallest buildings?",
+    "options": ["Petronas Twin Towers", "Marina Bay Sands Towers", "Taipei 101", "Burj Khalifa"],
+    "correct_answer": "Petronas Twin Towers",
+    "distractors": ["Marina Bay Sands Towers", "Taipei 101", "Burj Khalifa"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Malaysia Airlines Flight MH370 disappeared in which year?",
+    "options": ["2014", "2012", "2016", "2010"],
+    "correct_answer": "2014",
+    "distractors": ["2012", "2016", "2010"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Malaysia Airlines Flight MH17 was shot down over which country in 2014?",
+    "options": ["Ukraine", "Syria", "Afghanistan", "Libya"],
+    "correct_answer": "Ukraine",
+    "distractors": ["Syria", "Afghanistan", "Libya"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which Malaysian state on Borneo is known for Mount Kinabalu?",
+    "options": ["Sabah", "Sarawak", "Selangor", "Pahang"],
+    "correct_answer": "Sabah",
+    "distractors": ["Sarawak", "Selangor", "Pahang"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "George Town, a UNESCO World Heritage Site, is the capital of which Malaysian state?",
+    "options": ["Penang", "Perak", "Kedah", "Malacca"],
+    "correct_answer": "Penang",
+    "distractors": ["Perak", "Kedah", "Malacca"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Malaysia's National Day (Hari Merdeka) is celebrated on which date?",
+    "options": ["31 August", "16 September", "1 May", "25 December"],
+    "correct_answer": "31 August",
+    "distractors": ["16 September", "1 May", "25 December"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which strait between Peninsular Malaysia and the Indonesian island of Sumatra is one of the world's busiest shipping lanes?",
+    "options": ["Strait of Malacca", "Bering Strait", "Strait of Gibraltar", "Palk Strait"],
+    "correct_answer": "Strait of Malacca",
+    "distractors": ["Bering Strait", "Strait of Gibraltar", "Palk Strait"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "In 2020, who became Prime Minister of Malaysia after a political realignment often referred to as the 'Sheraton Move'?",
+    "options": ["Muhyiddin Yassin", "Mahathir Mohamad", "Anwar Ibrahim", "Najib Razak"],
+    "correct_answer": "Muhyiddin Yassin",
+    "distractors": ["Mahathir Mohamad", "Anwar Ibrahim", "Najib Razak"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which cave complex near Kuala Lumpur is a major Hindu pilgrimage site, especially during Thaipusam?",
+    "options": ["Batu Caves", "Mulu Caves", "Niah Caves", "Gomantong Caves"],
+    "correct_answer": "Batu Caves",
+    "distractors": ["Mulu Caves", "Niah Caves", "Gomantong Caves"],
+    "country": "Malaysia"
+  },
+
+  {
+    "question": "What is the capital of the Philippines?",
+    "options": ["Manila", "Cebu City", "Davao City", "Quezon City"],
+    "correct_answer": "Manila",
+    "distractors": ["Cebu City", "Davao City", "Quezon City"],
+    "country": "Philippines"
+  },
+  {
+    "question": "Who was President of the Philippines from 2016 to 2022?",
+    "options": ["Rodrigo Duterte", "Benigno Aquino III", "Ferdinand Marcos Jr.", "Gloria Macapagal Arroyo"],
+    "correct_answer": "Rodrigo Duterte",
+    "distractors": ["Benigno Aquino III", "Ferdinand Marcos Jr.", "Gloria Macapagal Arroyo"],
+    "country": "Philippines"
+  },
+  {
+    "question": "Who became President of the Philippines in 2022?",
+    "options": ["Ferdinand Marcos Jr.", "Rodrigo Duterte", "Leni Robredo", "Joseph Estrada"],
+    "correct_answer": "Ferdinand Marcos Jr.",
+    "distractors": ["Rodrigo Duterte", "Leni Robredo", "Joseph Estrada"],
+    "country": "Philippines"
+  },
+  {
+    "question": "What is the currency of the Philippines?",
+    "options": ["Philippine peso", "Philippine dollar", "Baht", "Rupiah"],
+    "correct_answer": "Philippine peso",
+    "distractors": ["Philippine dollar", "Baht", "Rupiah"],
+    "country": "Philippines"
+  },
+  {
+    "question": "Typhoon Haiyan (Yolanda), one of the strongest landfalling tropical cyclones recorded, struck the Philippines in which year?",
+    "options": ["2013", "2011", "2016", "2020"],
+    "correct_answer": "2013",
+    "distractors": ["2011", "2016", "2020"],
+    "country": "Philippines"
+  },
+  {
+    "question": "What is the name of the Philippines' upper house of Congress?",
+    "options": ["Senate", "House of Lords", "National Assembly", "State Council"],
+    "correct_answer": "Senate",
+    "distractors": ["House of Lords", "National Assembly", "State Council"],
+    "country": "Philippines"
+  },
+  {
+    "question": "Which island group is the largest in the Philippines by land area?",
+    "options": ["Luzon", "Visayas", "Mindanao", "Palawan"],
+    "correct_answer": "Luzon",
+    "distractors": ["Visayas", "Mindanao", "Palawan"],
+    "country": "Philippines"
+  },
+  {
+    "question": "The 2019 law creating a new autonomous region in Muslim Mindanao established what entity?",
+    "options": ["Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)", "Cordillera Administrative Region (CAR)", "National Capital Region (NCR)", "Ilocos Autonomous Region (IAR)"],
+    "correct_answer": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+    "distractors": ["Cordillera Administrative Region (CAR)", "National Capital Region (NCR)", "Ilocos Autonomous Region (IAR)"],
+    "country": "Philippines"
+  },
+  {
+    "question": "Which Philippine city is widely known as the country's main southern metropolis and is associated with former President Rodrigo Duterte's mayoral career?",
+    "options": ["Davao City", "Baguio", "Iloilo City", "Vigan"],
+    "correct_answer": "Davao City",
+    "distractors": ["Baguio", "Iloilo City", "Vigan"],
+    "country": "Philippines"
+  },
+  {
+    "question": "What is the name of the Philippine national police agency?",
+    "options": ["Philippine National Police", "Royal Malaysian Police", "Hong Kong Police Force", "Bangladesh Police Service"],
+    "correct_answer": "Philippine National Police",
+    "distractors": ["Royal Malaysian Police", "Hong Kong Police Force", "Bangladesh Police Service"],
+    "country": "Philippines"
+  }
+]

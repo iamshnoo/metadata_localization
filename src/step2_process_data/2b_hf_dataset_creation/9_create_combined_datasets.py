@@ -16,15 +16,28 @@ Usage:
 import os
 import random
 import argparse
-from datasets import Dataset, load_from_disk
 from pathlib import Path
 from tqdm import tqdm
 import sys
 
+HF_HOME_DEFAULT = "/scratch/amukher6/.cache/huggingface"
+os.environ.setdefault("HF_HOME", HF_HOME_DEFAULT)
+os.environ.setdefault("HF_DATASETS_CACHE", os.path.join(os.environ["HF_HOME"], "datasets"))
+os.makedirs(os.environ["HF_DATASETS_CACHE"], exist_ok=True)
+
+from datasets import Dataset, load_from_disk
+
 sys.path.append(str(Path(__file__).parent))
 from config import Config
 
-ABLATION_CHOICES = ["none", "only_url", "only_url_country", "only_url_continent"]
+ABLATION_CHOICES = [
+    "none",
+    "only_url",
+    "only_url_country",
+    "only_url_continent",
+    "only_country",
+    "only_continent",
+]
 
 
 def _continent_dir(continent, ablation):
@@ -35,6 +48,10 @@ def _continent_dir(continent, ablation):
         return f"url-country-{continent}"
     if ablation == "only_url_continent":
         return f"url-continent-{continent}"
+    if ablation == "only_country":
+        return f"country-only-{continent}"
+    if ablation == "only_continent":
+        return f"continent-only-{continent}"
     return continent
 
 
@@ -46,6 +63,10 @@ def _combined_dir(ablation):
         return "combined_only_url_country"
     if ablation == "only_url_continent":
         return "combined_only_url_continent"
+    if ablation == "only_country":
+        return "combined_only_country"
+    if ablation == "only_continent":
+        return "combined_only_continent"
     return "combined"
 
 

@@ -1,0 +1,702 @@
+[
+  {
+    "question": "Who was the President of the United States in 2016?",
+    "options": ["Barack Obama", "Donald Trump", "George W. Bush", "Joe Biden"],
+    "correct_answer": "Barack Obama",
+    "distractors": ["Donald Trump", "George W. Bush", "Joe Biden"],
+    "country": "United States"
+  },
+  {
+    "question": "What is the capital city of the United States?",
+    "options": ["Washington, D.C.", "New York City", "Philadelphia", "Boston"],
+    "correct_answer": "Washington, D.C.",
+    "distractors": ["New York City", "Philadelphia", "Boston"],
+    "country": "United States"
+  },
+  {
+    "question": "Which document formally declared the independence of the United States?",
+    "options": ["Declaration of Independence", "U.S. Constitution", "Bill of Rights", "Articles of Confederation"],
+    "correct_answer": "Declaration of Independence",
+    "distractors": ["U.S. Constitution", "Bill of Rights", "Articles of Confederation"],
+    "country": "United States"
+  },
+  {
+    "question": "Who was the first President of the United States?",
+    "options": ["George Washington", "Thomas Jefferson", "John Adams", "James Madison"],
+    "correct_answer": "George Washington",
+    "distractors": ["Thomas Jefferson", "John Adams", "James Madison"],
+    "country": "United States"
+  },
+  {
+    "question": "Which branch of the U.S. government is responsible for making federal laws?",
+    "options": ["Legislative", "Executive", "Judicial", "Administrative"],
+    "correct_answer": "Legislative",
+    "distractors": ["Executive", "Judicial", "Administrative"],
+    "country": "United States"
+  },
+  {
+    "question": "Which amendment to the U.S. Constitution guarantees freedom of speech?",
+    "options": ["First Amendment", "Second Amendment", "Fourth Amendment", "Tenth Amendment"],
+    "correct_answer": "First Amendment",
+    "distractors": ["Second Amendment", "Fourth Amendment", "Tenth Amendment"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. war was fought between the North and the South from 1861 to 1865?",
+    "options": ["American Civil War", "Revolutionary War", "War of 1812", "Spanish-American War"],
+    "correct_answer": "American Civil War",
+    "distractors": ["Revolutionary War", "War of 1812", "Spanish-American War"],
+    "country": "United States"
+  },
+  {
+    "question": "Which city hosts the headquarters of the United Nations?",
+    "options": ["New York City", "Washington, D.C.", "Geneva", "Chicago"],
+    "correct_answer": "New York City",
+    "distractors": ["Washington, D.C.", "Geneva", "Chicago"],
+    "country": "United States"
+  },
+  {
+    "question": "What year did the United States declare independence?",
+    "options": ["1776", "1783", "1801", "1765"],
+    "correct_answer": "1776",
+    "distractors": ["1783", "1801", "1765"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. state was the last to join the Union?",
+    "options": ["Hawaii", "Alaska", "Arizona", "New Mexico"],
+    "correct_answer": "Hawaii",
+    "distractors": ["Alaska", "Arizona", "New Mexico"],
+    "country": "United States"
+  },
+  {
+    "question": "Which river is the longest in the United States?",
+    "options": ["Missouri River", "Mississippi River", "Colorado River", "Ohio River"],
+    "correct_answer": "Missouri River",
+    "distractors": ["Mississippi River", "Colorado River", "Ohio River"],
+    "country": "United States"
+  },
+  {
+    "question": "Who signs bills into law in the United States?",
+    "options": ["The President", "The Vice President", "The Speaker of the House", "The Chief Justice"],
+    "correct_answer": "The President",
+    "distractors": ["The Vice President", "The Speaker of the House", "The Chief Justice"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. state is known as the Sunshine State?",
+    "options": ["Florida", "California", "Arizona", "Nevada"],
+    "correct_answer": "Florida",
+    "distractors": ["California", "Arizona", "Nevada"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. city is considered the birthplace of jazz?",
+    "options": ["New Orleans", "Chicago", "Memphis", "St. Louis"],
+    "correct_answer": "New Orleans",
+    "distractors": ["Chicago", "Memphis", "St. Louis"],
+    "country": "United States"
+  },
+  {
+    "question": "Which event marked the start of the American Civil War?",
+    "options": ["Attack on Fort Sumter", "Battle of Gettysburg", "Compromise of 1850", "Emancipation Proclamation"],
+    "correct_answer": "Attack on Fort Sumter",
+    "distractors": ["Battle of Gettysburg", "Compromise of 1850", "Emancipation Proclamation"],
+    "country": "United States"
+  },
+  {
+    "question": "What is the highest court in the United States?",
+    "options": ["Supreme Court", "Court of Appeals", "Federal Circuit", "District Court"],
+    "correct_answer": "Supreme Court",
+    "distractors": ["Court of Appeals", "Federal Circuit", "District Court"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. holiday is celebrated on July 4?",
+    "options": ["Independence Day", "Memorial Day", "Labor Day", "Veterans Day"],
+    "correct_answer": "Independence Day",
+    "distractors": ["Memorial Day", "Labor Day", "Veterans Day"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. state has the largest population?",
+    "options": ["California", "Texas", "Florida", "New York"],
+    "correct_answer": "California",
+    "distractors": ["Texas", "Florida", "New York"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. document begins with the words 'We the People'?",
+    "options": ["U.S. Constitution", "Declaration of Independence", "Bill of Rights", "Federalist Papers"],
+    "correct_answer": "U.S. Constitution",
+    "distractors": ["Declaration of Independence", "Bill of Rights", "Federalist Papers"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. state is home to Silicon Valley?",
+    "options": ["California", "Washington", "Texas", "Massachusetts"],
+    "correct_answer": "California",
+    "distractors": ["Washington", "Texas", "Massachusetts"],
+    "country": "United States"
+  },
+  {
+    "question": "What year did the United States first land humans on the Moon?",
+    "options": ["1969", "1965", "1972", "1959"],
+    "correct_answer": "1969",
+    "distractors": ["1965", "1972", "1959"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. national park is the most visited?",
+    "options": ["Great Smoky Mountains", "Yellowstone", "Yosemite", "Grand Canyon"],
+    "correct_answer": "Great Smoky Mountains",
+    "distractors": ["Yellowstone", "Yosemite", "Grand Canyon"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. state is the largest by land area?",
+    "options": ["Alaska", "Texas", "California", "Montana"],
+    "correct_answer": "Alaska",
+    "distractors": ["Texas", "California", "Montana"],
+    "country": "United States"
+  },
+  {
+    "question": "Who was President of the United States during the September 11, 2001 attacks?",
+    "options": ["George W. Bush", "Bill Clinton", "Barack Obama", "George H. W. Bush"],
+    "correct_answer": "George W. Bush",
+    "distractors": ["Bill Clinton", "Barack Obama", "George H. W. Bush"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. city is known as the Windy City?",
+    "options": ["Chicago", "Boston", "Cleveland", "Detroit"],
+    "correct_answer": "Chicago",
+    "distractors": ["Boston", "Cleveland", "Detroit"],
+    "country": "United States"
+  },
+  {
+    "question": "Which branch of the U.S. government is led by the President?",
+    "options": ["Executive", "Legislative", "Judicial", "Federal"],
+    "correct_answer": "Executive",
+    "distractors": ["Legislative", "Judicial", "Federal"],
+    "country": "United States"
+  },
+  {
+    "question": "How many amendments are there in the U.S. Constitution?",
+    "options": ["27", "10", "25", "33"],
+    "correct_answer": "27",
+    "distractors": ["10", "25", "33"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. state is known as the Empire State?",
+    "options": ["New York", "California", "Pennsylvania", "Virginia"],
+    "correct_answer": "New York",
+    "distractors": ["California", "Pennsylvania", "Virginia"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. President issued the Emancipation Proclamation?",
+    "options": ["Abraham Lincoln", "Ulysses S. Grant", "Andrew Johnson", "James Buchanan"],
+    "correct_answer": "Abraham Lincoln",
+    "distractors": ["Ulysses S. Grant", "Andrew Johnson", "James Buchanan"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. state is famous for the Grand Canyon?",
+    "options": ["Arizona", "Utah", "Nevada", "Colorado"],
+    "correct_answer": "Arizona",
+    "distractors": ["Utah", "Nevada", "Colorado"],
+    "country": "United States"
+  },
+  {
+    "question": "Which city served as the first capital of the United States?",
+    "options": ["New York City", "Philadelphia", "Boston", "Baltimore"],
+    "correct_answer": "New York City",
+    "distractors": ["Philadelphia", "Boston", "Baltimore"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. President served four terms in office?",
+    "options": ["Franklin D. Roosevelt", "Theodore Roosevelt", "Woodrow Wilson", "Harry S. Truman"],
+    "correct_answer": "Franklin D. Roosevelt",
+    "distractors": ["Theodore Roosevelt", "Woodrow Wilson", "Harry S. Truman"],
+    "country": "United States"
+  },
+  {
+    "question": "Which ocean borders the west coast of the United States?",
+    "options": ["Pacific Ocean", "Atlantic Ocean", "Arctic Ocean", "Indian Ocean"],
+    "correct_answer": "Pacific Ocean",
+    "distractors": ["Atlantic Ocean", "Arctic Ocean", "Indian Ocean"],
+    "country": "United States"
+  },
+  {
+    "question": "Which U.S. amendment abolished slavery?",
+    "options": ["Thirteenth Amendment", "Fourteenth Amendment", "Fifteenth Amendment", "Tenth Amendment"],
+    "correct_answer": "Thirteenth Amendment",
+    "distractors": ["Fourteenth Amendment", "Fifteenth Amendment", "Tenth Amendment"],
+    "country": "United States"
+  },
+  {
+    "question": "What is the capital city of Canada?",
+    "options": ["Ottawa", "Toronto", "Montreal", "Vancouver"],
+    "correct_answer": "Ottawa",
+    "distractors": ["Toronto", "Montreal", "Vancouver"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which animal is a national symbol of Canada?",
+    "options": ["Beaver", "Moose", "Caribou", "Polar Bear"],
+    "correct_answer": "Beaver",
+    "distractors": ["Moose", "Caribou", "Polar Bear"],
+    "country": "Canada"
+  },
+  {
+    "question": "In what year did Canada become a confederation?",
+    "options": ["1867", "1812", "1901", "1776"],
+    "correct_answer": "1867",
+    "distractors": ["1812", "1901", "1776"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian city hosted the 2010 Winter Olympics?",
+    "options": ["Vancouver", "Calgary", "Toronto", "Montreal"],
+    "correct_answer": "Vancouver",
+    "distractors": ["Calgary", "Toronto", "Montreal"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which province is the most populous in Canada?",
+    "options": ["Ontario", "Quebec", "British Columbia", "Alberta"],
+    "correct_answer": "Ontario",
+    "distractors": ["Quebec", "British Columbia", "Alberta"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which language is an official language of Canada alongside English?",
+    "options": ["French", "Spanish", "German", "Italian"],
+    "correct_answer": "French",
+    "distractors": ["Spanish", "German", "Italian"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which leaf appears on the Canadian flag?",
+    "options": ["Maple leaf", "Oak leaf", "Birch leaf", "Pine needle"],
+    "correct_answer": "Maple leaf",
+    "distractors": ["Oak leaf", "Birch leaf", "Pine needle"],
+    "country": "Canada"
+  },
+  {
+    "question": "Who is the head of government in Canada?",
+    "options": ["Prime Minister", "President", "Governor General", "Monarch"],
+    "correct_answer": "Prime Minister",
+    "distractors": ["President", "Governor General", "Monarch"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian province is primarily French-speaking?",
+    "options": ["Quebec", "Ontario", "Manitoba", "Nova Scotia"],
+    "correct_answer": "Quebec",
+    "distractors": ["Ontario", "Manitoba", "Nova Scotia"],
+    "country": "Canada"
+  },
+  {
+    "question": "What is the longest river in Canada?",
+    "options": ["Mackenzie River", "St. Lawrence River", "Yukon River", "Fraser River"],
+    "correct_answer": "Mackenzie River",
+    "distractors": ["St. Lawrence River", "Yukon River", "Fraser River"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian city is the largest by population?",
+    "options": ["Toronto", "Montreal", "Vancouver", "Calgary"],
+    "correct_answer": "Toronto",
+    "distractors": ["Montreal", "Vancouver", "Calgary"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which mountain range runs through western Canada?",
+    "options": ["Rocky Mountains", "Appalachian Mountains", "Andes", "Alps"],
+    "correct_answer": "Rocky Mountains",
+    "distractors": ["Appalachian Mountains", "Andes", "Alps"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian province has the capital city Halifax?",
+    "options": ["Nova Scotia", "New Brunswick", "Prince Edward Island", "Newfoundland and Labrador"],
+    "correct_answer": "Nova Scotia",
+    "distractors": ["New Brunswick", "Prince Edward Island", "Newfoundland and Labrador"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which body of water separates Canada from Denmark (Greenland)?",
+    "options": ["Nares Strait", "Hudson Bay", "Baffin Bay", "Labrador Sea"],
+    "correct_answer": "Nares Strait",
+    "distractors": ["Hudson Bay", "Baffin Bay", "Labrador Sea"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian territory has the capital city Yellowknife?",
+    "options": ["Northwest Territories", "Yukon", "Nunavut", "British Columbia"],
+    "correct_answer": "Northwest Territories",
+    "distractors": ["Yukon", "Nunavut", "British Columbia"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which sport is widely considered Canada's national winter sport?",
+    "options": ["Ice hockey", "Curling", "Figure skating", "Skiing"],
+    "correct_answer": "Ice hockey",
+    "distractors": ["Curling", "Figure skating", "Skiing"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian city is known as 'The Big Smoke'?",
+    "options": ["Toronto", "Vancouver", "Ottawa", "Edmonton"],
+    "correct_answer": "Toronto",
+    "distractors": ["Vancouver", "Ottawa", "Edmonton"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which province is home to Banff National Park?",
+    "options": ["Alberta", "British Columbia", "Ontario", "Quebec"],
+    "correct_answer": "Alberta",
+    "distractors": ["British Columbia", "Ontario", "Quebec"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian city is famous for the Calgary Stampede?",
+    "options": ["Calgary", "Edmonton", "Regina", "Winnipeg"],
+    "correct_answer": "Calgary",
+    "distractors": ["Edmonton", "Regina", "Winnipeg"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which ocean borders Canada's west coast?",
+    "options": ["Pacific Ocean", "Atlantic Ocean", "Arctic Ocean", "Indian Ocean"],
+    "correct_answer": "Pacific Ocean",
+    "distractors": ["Atlantic Ocean", "Arctic Ocean", "Indian Ocean"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian province is the smallest by land area?",
+    "options": ["Prince Edward Island", "Nova Scotia", "New Brunswick", "Manitoba"],
+    "correct_answer": "Prince Edward Island",
+    "distractors": ["Nova Scotia", "New Brunswick", "Manitoba"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian province uses the fleur-de-lis on its flag?",
+    "options": ["Quebec", "Ontario", "Manitoba", "Saskatchewan"],
+    "correct_answer": "Quebec",
+    "distractors": ["Ontario", "Manitoba", "Saskatchewan"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian city is known for its underground pedestrian network?",
+    "options": ["Montreal", "Toronto", "Ottawa", "Quebec City"],
+    "correct_answer": "Montreal",
+    "distractors": ["Toronto", "Ottawa", "Quebec City"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which province is home to Canada's capital city?",
+    "options": ["Ontario", "Quebec", "British Columbia", "Manitoba"],
+    "correct_answer": "Ontario",
+    "distractors": ["Quebec", "British Columbia", "Manitoba"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian holiday is celebrated on July 1?",
+    "options": ["Canada Day", "Victoria Day", "Thanksgiving", "Remembrance Day"],
+    "correct_answer": "Canada Day",
+    "distractors": ["Victoria Day", "Thanksgiving", "Remembrance Day"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian province borders only one other province?",
+    "options": ["Prince Edward Island", "Nova Scotia", "Newfoundland and Labrador", "Saskatchewan"],
+    "correct_answer": "Prince Edward Island",
+    "distractors": ["Nova Scotia", "Newfoundland and Labrador", "Saskatchewan"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian city is famous for its annual International Jazz Festival?",
+    "options": ["Montreal", "Toronto", "Vancouver", "Ottawa"],
+    "correct_answer": "Montreal",
+    "distractors": ["Toronto", "Vancouver", "Ottawa"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian province is known for producing most of the country's maple syrup?",
+    "options": ["Quebec", "Ontario", "New Brunswick", "Manitoba"],
+    "correct_answer": "Quebec",
+    "distractors": ["Ontario", "New Brunswick", "Manitoba"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian city hosted Expo 67?",
+    "options": ["Montreal", "Toronto", "Vancouver", "Ottawa"],
+    "correct_answer": "Montreal",
+    "distractors": ["Toronto", "Vancouver", "Ottawa"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian province has the largest land area?",
+    "options": ["Quebec", "Ontario", "British Columbia", "Alberta"],
+    "correct_answer": "Quebec",
+    "distractors": ["Ontario", "British Columbia", "Alberta"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian city is known as the 'Gateway to the North'?",
+    "options": ["Edmonton", "Whitehorse", "Yellowknife", "Thunder Bay"],
+    "correct_answer": "Edmonton",
+    "distractors": ["Whitehorse", "Yellowknife", "Thunder Bay"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian province joined Confederation most recently?",
+    "options": ["Newfoundland and Labrador", "Alberta", "Saskatchewan", "British Columbia"],
+    "correct_answer": "Newfoundland and Labrador",
+    "distractors": ["Alberta", "Saskatchewan", "British Columbia"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian province is officially bilingual at the provincial level?",
+    "options": ["New Brunswick", "Quebec", "Ontario", "Manitoba"],
+    "correct_answer": "New Brunswick",
+    "distractors": ["Quebec", "Ontario", "Manitoba"],
+    "country": "Canada"
+  },
+  {
+    "question": "What is the capital city of Jamaica?",
+    "options": ["Kingston", "Montego Bay", "Spanish Town", "Ocho Rios"],
+    "correct_answer": "Kingston",
+    "distractors": ["Montego Bay", "Spanish Town", "Ocho Rios"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "In which year did Jamaica gain independence from the United Kingdom?",
+    "options": ["1962", "1958", "1975", "1948"],
+    "correct_answer": "1962",
+    "distractors": ["1958", "1975", "1948"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican musician helped popularize reggae music worldwide?",
+    "options": ["Bob Marley", "Peter Tosh", "Jimmy Cliff", "Shaggy"],
+    "correct_answer": "Bob Marley",
+    "distractors": ["Peter Tosh", "Jimmy Cliff", "Shaggy"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "What is Jamaica's official currency?",
+    "options": ["Jamaican dollar", "US dollar", "Eastern Caribbean dollar", "Pound sterling"],
+    "correct_answer": "Jamaican dollar",
+    "distractors": ["US dollar", "Eastern Caribbean dollar", "Pound sterling"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which sea borders Jamaica?",
+    "options": ["Caribbean Sea", "Atlantic Ocean", "Gulf of Mexico", "Pacific Ocean"],
+    "correct_answer": "Caribbean Sea",
+    "distractors": ["Atlantic Ocean", "Gulf of Mexico", "Pacific Ocean"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which mountain range runs through eastern Jamaica?",
+    "options": ["Blue Mountains", "Andes", "Rocky Mountains", "Sierra Madre"],
+    "correct_answer": "Blue Mountains",
+    "distractors": ["Andes", "Rocky Mountains", "Sierra Madre"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "What is the national dish of Jamaica?",
+    "options": ["Ackee and saltfish", "Jerk chicken", "Rice and peas", "Curry goat"],
+    "correct_answer": "Ackee and saltfish",
+    "distractors": ["Jerk chicken", "Rice and peas", "Curry goat"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which language is most commonly spoken in everyday life in Jamaica?",
+    "options": ["Jamaican Patois", "Spanish", "French", "Dutch"],
+    "correct_answer": "Jamaican Patois",
+    "distractors": ["Spanish", "French", "Dutch"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican athlete is famous for winning multiple Olympic gold medals in sprinting?",
+    "options": ["Usain Bolt", "Yohan Blake", "Asafa Powell", "Michael Frater"],
+    "correct_answer": "Usain Bolt",
+    "distractors": ["Yohan Blake", "Asafa Powell", "Michael Frater"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which city is Jamaica's second-largest urban area after Kingston?",
+    "options": ["Montego Bay", "Ocho Rios", "Negril", "Portmore"],
+    "correct_answer": "Montego Bay",
+    "distractors": ["Ocho Rios", "Negril", "Portmore"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which former colonial power ruled Jamaica immediately before independence?",
+    "options": ["United Kingdom", "Spain", "France", "Netherlands"],
+    "correct_answer": "United Kingdom",
+    "distractors": ["Spain", "France", "Netherlands"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican genre of music influenced reggae and is associated with dance halls?",
+    "options": ["Ska", "Calypso", "Salsa", "Merengue"],
+    "correct_answer": "Ska",
+    "distractors": ["Calypso", "Salsa", "Merengue"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican city is known for its cruise ship port and beaches?",
+    "options": ["Ocho Rios", "Mandeville", "May Pen", "Savanna-la-Mar"],
+    "correct_answer": "Ocho Rios",
+    "distractors": ["Mandeville", "May Pen", "Savanna-la-Mar"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican parish contains the Blue Mountains?",
+    "options": ["Portland", "St. Elizabeth", "Clarendon", "Trelawny"],
+    "correct_answer": "Portland",
+    "distractors": ["St. Elizabeth", "Clarendon", "Trelawny"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "What form of government does Jamaica have?",
+    "options": ["Parliamentary democracy", "Presidential republic", "Absolute monarchy", "Military junta"],
+    "correct_answer": "Parliamentary democracy",
+    "distractors": ["Presidential republic", "Absolute monarchy", "Military junta"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican holiday celebrates emancipation from slavery?",
+    "options": ["Emancipation Day", "Independence Day", "National Heroes Day", "Labour Day"],
+    "correct_answer": "Emancipation Day",
+    "distractors": ["Independence Day", "National Heroes Day", "Labour Day"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican parish is home to the city of Montego Bay?",
+    "options": ["St. James", "St. Ann", "Hanover", "Westmoreland"],
+    "correct_answer": "St. James",
+    "distractors": ["St. Ann", "Hanover", "Westmoreland"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican runner won gold medals in the 100m, 200m, and 4x100m at the 2016 Olympics?",
+    "options": ["Usain Bolt", "Yohan Blake", "Asafa Powell", "Nesta Carter"],
+    "correct_answer": "Usain Bolt",
+    "distractors": ["Yohan Blake", "Asafa Powell", "Nesta Carter"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican dish is traditionally cooked underground?",
+    "options": ["Jerk pork", "Curry goat", "Stewed chicken", "Fried dumplings"],
+    "correct_answer": "Jerk pork",
+    "distractors": ["Curry goat", "Stewed chicken", "Fried dumplings"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican city is nicknamed the 'Second City'?",
+    "options": ["Montego Bay", "Spanish Town", "Portmore", "Mandeville"],
+    "correct_answer": "Montego Bay",
+    "distractors": ["Spanish Town", "Portmore", "Mandeville"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which religious movement originated in Jamaica in the 1930s?",
+    "options": ["Rastafari", "Santería", "Vodou", "Candomblé"],
+    "correct_answer": "Rastafari",
+    "distractors": ["Santería", "Vodou", "Candomblé"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican national hero was a leader of the Maroons?",
+    "options": ["Nanny of the Maroons", "Marcus Garvey", "Sam Sharpe", "Paul Bogle"],
+    "correct_answer": "Nanny of the Maroons",
+    "distractors": ["Marcus Garvey", "Sam Sharpe", "Paul Bogle"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican city was the capital before Kingston?",
+    "options": ["Spanish Town", "Port Royal", "Montego Bay", "Falmouth"],
+    "correct_answer": "Spanish Town",
+    "distractors": ["Port Royal", "Montego Bay", "Falmouth"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican-born activist was a major figure in Pan-Africanism?",
+    "options": ["Marcus Garvey", "Bob Marley", "Paul Bogle", "Norman Manley"],
+    "correct_answer": "Marcus Garvey",
+    "distractors": ["Bob Marley", "Paul Bogle", "Norman Manley"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican parish is known for the town of Negril?",
+    "options": ["Westmoreland", "St. Thomas", "St. Mary", "Clarendon"],
+    "correct_answer": "Westmoreland",
+    "distractors": ["St. Thomas", "St. Mary", "Clarendon"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican sport has brought the country its most Olympic medals?",
+    "options": ["Athletics (track and field)", "Cricket", "Football", "Cycling"],
+    "correct_answer": "Athletics (track and field)",
+    "distractors": ["Cricket", "Football", "Cycling"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican port city was destroyed by an earthquake in 1692?",
+    "options": ["Port Royal", "Kingston", "Montego Bay", "Falmouth"],
+    "correct_answer": "Port Royal",
+    "distractors": ["Kingston", "Montego Bay", "Falmouth"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican political party was founded by Norman Manley?",
+    "options": ["People's National Party", "Jamaica Labour Party", "National Democratic Movement", "United People's Party"],
+    "correct_answer": "People's National Party",
+    "distractors": ["Jamaica Labour Party", "National Democratic Movement", "United People's Party"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican city is closest to the Blue Lagoon?",
+    "options": ["Port Antonio", "Kingston", "Montego Bay", "Mandeville"],
+    "correct_answer": "Port Antonio",
+    "distractors": ["Kingston", "Montego Bay", "Mandeville"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican holiday is celebrated on August 6?",
+    "options": ["Independence Day", "Emancipation Day", "Heroes Day", "Labour Day"],
+    "correct_answer": "Independence Day",
+    "distractors": ["Emancipation Day", "Heroes Day", "Labour Day"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican city is known for hosting the annual Reggae Sumfest?",
+    "options": ["Montego Bay", "Kingston", "Ocho Rios", "Mandeville"],
+    "correct_answer": "Montego Bay",
+    "distractors": ["Kingston", "Ocho Rios", "Mandeville"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican parish is home to the capital city, Kingston?",
+    "options": ["Kingston and St. Andrew", "St. Catherine", "Portland", "St. Thomas"],
+    "correct_answer": "Kingston and St. Andrew",
+    "distractors": ["St. Catherine", "Portland", "St. Thomas"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican national hero led the 1831-1832 Baptist War?",
+    "options": ["Sam Sharpe", "Marcus Garvey", "Paul Bogle", "Nanny of the Maroons"],
+    "correct_answer": "Sam Sharpe",
+    "distractors": ["Marcus Garvey", "Paul Bogle", "Nanny of the Maroons"],
+    "country": "Jamaica"
+  }
+]

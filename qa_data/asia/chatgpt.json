@@ -1,0 +1,707 @@
+[
+  {
+    "question": "Who was the Prime Minister of India in 2016?",
+    "options": ["Narendra Modi", "Manmohan Singh", "Rahul Gandhi", "Atal Bihari Vajpayee"],
+    "correct_answer": "Narendra Modi",
+    "distractors": ["Manmohan Singh", "Rahul Gandhi", "Atal Bihari Vajpayee"],
+    "country": "India"
+  },
+  {
+    "question": "Which Indian city hosted the 2010 Commonwealth Games?",
+    "options": ["Delhi", "Mumbai", "Chennai", "Hyderabad"],
+    "correct_answer": "Delhi",
+    "distractors": ["Mumbai", "Chennai", "Hyderabad"],
+    "country": "India"
+  },
+  {
+    "question": "What is the name of India's national space agency?",
+    "options": ["ISRO", "DRDO", "BARC", "HAL"],
+    "correct_answer": "ISRO",
+    "distractors": ["DRDO", "BARC", "HAL"],
+    "country": "India"
+  },
+  {
+    "question": "Which Indian state was formed in 2014?",
+    "options": ["Telangana", "Chhattisgarh", "Uttarakhand", "Jharkhand"],
+    "correct_answer": "Telangana",
+    "distractors": ["Chhattisgarh", "Uttarakhand", "Jharkhand"],
+    "country": "India"
+  },
+  {
+    "question": "What currency is used in India?",
+    "options": ["Indian Rupee", "Pakistani Rupee", "Taka", "Rupiah"],
+    "correct_answer": "Indian Rupee",
+    "distractors": ["Pakistani Rupee", "Taka", "Rupiah"],
+    "country": "India"
+  },
+  {
+    "question": "Which Indian film won the Academy Award for Best Original Song in 2023?",
+    "options": ["RRR", "Lagaan", "Slumdog Millionaire", "Dangal"],
+    "correct_answer": "RRR",
+    "distractors": ["Lagaan", "Slumdog Millionaire", "Dangal"],
+    "country": "India"
+  },
+  {
+    "question": "What is the lower house of the Indian Parliament called?",
+    "options": ["Lok Sabha", "Rajya Sabha", "Vidhan Sabha", "Gram Sabha"],
+    "correct_answer": "Lok Sabha",
+    "distractors": ["Rajya Sabha", "Vidhan Sabha", "Gram Sabha"],
+    "country": "India"
+  },
+  {
+    "question": "Which river is considered the holiest in Hindu tradition?",
+    "options": ["Ganga", "Yamuna", "Godavari", "Narmada"],
+    "correct_answer": "Ganga",
+    "distractors": ["Yamuna", "Godavari", "Narmada"],
+    "country": "India"
+  },
+  {
+    "question": "Which Indian city is known as the 'Silicon Valley of India'?",
+    "options": ["Bengaluru", "Pune", "Hyderabad", "Chennai"],
+    "correct_answer": "Bengaluru",
+    "distractors": ["Pune", "Hyderabad", "Chennai"],
+    "country": "India"
+  },
+  {
+    "question": "Who was the first woman Prime Minister of India?",
+    "options": ["Indira Gandhi", "Pratibha Patil", "Sonia Gandhi", "Sarojini Naidu"],
+    "correct_answer": "Indira Gandhi",
+    "distractors": ["Pratibha Patil", "Sonia Gandhi", "Sarojini Naidu"],
+    "country": "India"
+  },
+  {
+    "question": "Who was the President of India in 2016?",
+    "options": ["Pranab Mukherjee", "Ram Nath Kovind", "Pratibha Patil", "A. P. J. Abdul Kalam"],
+    "correct_answer": "Pranab Mukherjee",
+    "distractors": ["Ram Nath Kovind", "Pratibha Patil", "A. P. J. Abdul Kalam"],
+    "country": "India"
+  },
+  {
+    "question": "Which Indian city is home to the Reserve Bank of India headquarters?",
+    "options": ["Mumbai", "New Delhi", "Kolkata", "Chennai"],
+    "correct_answer": "Mumbai",
+    "distractors": ["New Delhi", "Kolkata", "Chennai"],
+    "country": "India"
+  },
+  {
+    "question": "Which Indian mission successfully placed a spacecraft into Mars orbit in 2014?",
+    "options": ["Mars Orbiter Mission (Mangalyaan)", "Chandrayaan-1", "Gaganyaan", "INSAT-3D"],
+    "correct_answer": "Mars Orbiter Mission (Mangalyaan)",
+    "distractors": ["Chandrayaan-1", "Gaganyaan", "INSAT-3D"],
+    "country": "India"
+  },
+  {
+    "question": "Which language has the highest number of native speakers in India according to the census?",
+    "options": ["Hindi", "Bengali", "Telugu", "Marathi"],
+    "correct_answer": "Hindi",
+    "distractors": ["Bengali", "Telugu", "Marathi"],
+    "country": "India"
+  },
+  {
+    "question": "Which Indian festival marks the victory of good over evil and is celebrated with effigies of Ravana?",
+    "options": ["Dussehra", "Diwali", "Holi", "Raksha Bandhan"],
+    "correct_answer": "Dussehra",
+    "distractors": ["Diwali", "Holi", "Raksha Bandhan"],
+    "country": "India"
+  },
+
+  {
+    "question": "Who was the Prime Minister of Pakistan in 2016?",
+    "options": ["Nawaz Sharif", "Imran Khan", "Asif Ali Zardari", "Yousaf Raza Gillani"],
+    "correct_answer": "Nawaz Sharif",
+    "distractors": ["Imran Khan", "Asif Ali Zardari", "Yousaf Raza Gillani"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "What is the capital city of Pakistan?",
+    "options": ["Islamabad", "Lahore", "Karachi", "Rawalpindi"],
+    "correct_answer": "Islamabad",
+    "distractors": ["Lahore", "Karachi", "Rawalpindi"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which mountain range includes K2, the world's second-highest peak?",
+    "options": ["Karakoram", "Himalayas", "Hindu Kush", "Alps"],
+    "correct_answer": "Karakoram",
+    "distractors": ["Himalayas", "Hindu Kush", "Alps"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "What is the national language of Pakistan?",
+    "options": ["Urdu", "Punjabi", "Sindhi", "Pashto"],
+    "correct_answer": "Urdu",
+    "distractors": ["Punjabi", "Sindhi", "Pashto"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which Pakistani city is the largest by population?",
+    "options": ["Karachi", "Lahore", "Islamabad", "Quetta"],
+    "correct_answer": "Karachi",
+    "distractors": ["Lahore", "Islamabad", "Quetta"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Who founded Pakistan in 1947?",
+    "options": ["Muhammad Ali Jinnah", "Liaquat Ali Khan", "Allama Iqbal", "Ayub Khan"],
+    "correct_answer": "Muhammad Ali Jinnah",
+    "distractors": ["Liaquat Ali Khan", "Allama Iqbal", "Ayub Khan"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "What currency is used in Pakistan?",
+    "options": ["Pakistani Rupee", "Indian Rupee", "Afghani", "Taka"],
+    "correct_answer": "Pakistani Rupee",
+    "distractors": ["Indian Rupee", "Afghani", "Taka"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which Pakistani city is known for its historic Badshahi Mosque?",
+    "options": ["Lahore", "Multan", "Karachi", "Peshawar"],
+    "correct_answer": "Lahore",
+    "distractors": ["Multan", "Karachi", "Peshawar"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which sea borders Pakistan to the south?",
+    "options": ["Arabian Sea", "Red Sea", "Caspian Sea", "Black Sea"],
+    "correct_answer": "Arabian Sea",
+    "distractors": ["Red Sea", "Caspian Sea", "Black Sea"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which Pakistani province is home to the city of Quetta?",
+    "options": ["Balochistan", "Punjab", "Sindh", "Khyber Pakhtunkhwa"],
+    "correct_answer": "Balochistan",
+    "distractors": ["Punjab", "Sindh", "Khyber Pakhtunkhwa"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Who was the Chief of Army Staff of Pakistan in 2016?",
+    "options": ["Raheel Sharif", "Qamar Javed Bajwa", "Pervez Musharraf", "Ashfaq Parvez Kayani"],
+    "correct_answer": "Raheel Sharif",
+    "distractors": ["Qamar Javed Bajwa", "Pervez Musharraf", "Ashfaq Parvez Kayani"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which Pakistani city is known as the 'City of Lights'?",
+    "options": ["Karachi", "Lahore", "Islamabad", "Faisalabad"],
+    "correct_answer": "Karachi",
+    "distractors": ["Lahore", "Islamabad", "Faisalabad"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "What is the name of Pakistan's parliament?",
+    "options": ["Majlis-e-Shoora", "Lok Sabha", "National Assembly of Iran", "Jatiya Sangsad"],
+    "correct_answer": "Majlis-e-Shoora",
+    "distractors": ["Lok Sabha", "National Assembly of Iran", "Jatiya Sangsad"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which Pakistani scientist won the Nobel Prize in Physics in 1979?",
+    "options": ["Abdus Salam", "Ishfaq Ahmad", "Pervez Hoodbhoy", "Atta-ur-Rahman"],
+    "correct_answer": "Abdus Salam",
+    "distractors": ["Ishfaq Ahmad", "Pervez Hoodbhoy", "Atta-ur-Rahman"],
+    "country": "Pakistan"
+  },
+  {
+    "question": "Which desert is located in southeastern Pakistan?",
+    "options": ["Thar Desert", "Gobi Desert", "Karakum Desert", "Kyzylkum Desert"],
+    "correct_answer": "Thar Desert",
+    "distractors": ["Gobi Desert", "Karakum Desert", "Kyzylkum Desert"],
+    "country": "Pakistan"
+  },
+
+  {
+    "question": "Who was the Prime Minister of Bangladesh in 2016?",
+    "options": ["Sheikh Hasina", "Khaleda Zia", "Hussain Muhammad Ershad", "Abdul Hamid"],
+    "correct_answer": "Sheikh Hasina",
+    "distractors": ["Khaleda Zia", "Hussain Muhammad Ershad", "Abdul Hamid"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "What is the capital city of Bangladesh?",
+    "options": ["Dhaka", "Chittagong", "Khulna", "Sylhet"],
+    "correct_answer": "Dhaka",
+    "distractors": ["Chittagong", "Khulna", "Sylhet"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which river is the longest in Bangladesh?",
+    "options": ["Padma", "Jamuna", "Meghna", "Teesta"],
+    "correct_answer": "Padma",
+    "distractors": ["Jamuna", "Meghna", "Teesta"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "What is the national language of Bangladesh?",
+    "options": ["Bengali", "Hindi", "Urdu", "Assamese"],
+    "correct_answer": "Bengali",
+    "distractors": ["Hindi", "Urdu", "Assamese"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which event is commemorated on International Mother Language Day, originating from Bangladesh?",
+    "options": ["1952 Language Movement", "1971 Liberation War", "1947 Partition", "1990 Uprising"],
+    "correct_answer": "1952 Language Movement",
+    "distractors": ["1971 Liberation War", "1947 Partition", "1990 Uprising"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "What currency is used in Bangladesh?",
+    "options": ["Taka", "Rupee", "Kyat", "Ringgit"],
+    "correct_answer": "Taka",
+    "distractors": ["Rupee", "Kyat", "Ringgit"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which industry is a major driver of Bangladesh's economy?",
+    "options": ["Garment manufacturing", "Automobile production", "Oil extraction", "Semiconductor fabrication"],
+    "correct_answer": "Garment manufacturing",
+    "distractors": ["Automobile production", "Oil extraction", "Semiconductor fabrication"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which sea lies to the south of Bangladesh?",
+    "options": ["Bay of Bengal", "Arabian Sea", "South China Sea", "Red Sea"],
+    "correct_answer": "Bay of Bengal",
+    "distractors": ["Arabian Sea", "South China Sea", "Red Sea"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Who is known as the Father of the Nation in Bangladesh?",
+    "options": ["Sheikh Mujibur Rahman", "Ziaur Rahman", "Sheikh Hasina", "Khaleda Zia"],
+    "correct_answer": "Sheikh Mujibur Rahman",
+    "distractors": ["Ziaur Rahman", "Sheikh Hasina", "Khaleda Zia"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which year did Bangladesh gain independence?",
+    "options": ["1971", "1965", "1947", "1981"],
+    "correct_answer": "1971",
+    "distractors": ["1965", "1947", "1981"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Who was the President of Bangladesh in 2016?",
+    "options": ["Abdul Hamid", "Zillur Rahman", "Iajuddin Ahmed", "Hussain Muhammad Ershad"],
+    "correct_answer": "Abdul Hamid",
+    "distractors": ["Zillur Rahman", "Iajuddin Ahmed", "Hussain Muhammad Ershad"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which war led to the independence of Bangladesh?",
+    "options": ["Bangladesh Liberation War", "Indo-Pak War of 1965", "Kargil War", "Indo-China War"],
+    "correct_answer": "Bangladesh Liberation War",
+    "distractors": ["Indo-Pak War of 1965", "Kargil War", "Indo-China War"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which Bangladeshi port city is the country's main seaport?",
+    "options": ["Chittagong", "Khulna", "Barisal", "Cox's Bazar"],
+    "correct_answer": "Chittagong",
+    "distractors": ["Khulna", "Barisal", "Cox's Bazar"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which Bangladeshi economist won the Nobel Peace Prize in 2006?",
+    "options": ["Muhammad Yunus", "Amartya Sen", "Rehman Sobhan", "Akbar Ali Khan"],
+    "correct_answer": "Muhammad Yunus",
+    "distractors": ["Amartya Sen", "Rehman Sobhan", "Akbar Ali Khan"],
+    "country": "Bangladesh"
+  },
+  {
+    "question": "Which natural forest in Bangladesh is the largest mangrove forest in the world?",
+    "options": ["Sundarbans", "Lawachara", "Madhupur Forest", "Bhawal Forest"],
+    "correct_answer": "Sundarbans",
+    "distractors": ["Lawachara", "Madhupur Forest", "Bhawal Forest"],
+    "country": "Bangladesh"
+  },
+
+  {
+    "question": "Who was the President of Sri Lanka in 2016?",
+    "options": ["Maithripala Sirisena", "Mahinda Rajapaksa", "Gotabaya Rajapaksa", "Ranil Wickremesinghe"],
+    "correct_answer": "Maithripala Sirisena",
+    "distractors": ["Mahinda Rajapaksa", "Gotabaya Rajapaksa", "Ranil Wickremesinghe"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "What is the capital city of Sri Lanka?",
+    "options": ["Sri Jayawardenepura Kotte", "Colombo", "Kandy", "Galle"],
+    "correct_answer": "Sri Jayawardenepura Kotte",
+    "distractors": ["Colombo", "Kandy", "Galle"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which ocean surrounds Sri Lanka?",
+    "options": ["Indian Ocean", "Pacific Ocean", "Atlantic Ocean", "Arctic Ocean"],
+    "correct_answer": "Indian Ocean",
+    "distractors": ["Pacific Ocean", "Atlantic Ocean", "Arctic Ocean"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "What is Sri Lanka historically known as?",
+    "options": ["Ceylon", "Burma", "Siam", "Malaya"],
+    "correct_answer": "Ceylon",
+    "distractors": ["Burma", "Siam", "Malaya"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which crop is a major export of Sri Lanka?",
+    "options": ["Tea", "Wheat", "Corn", "Soybeans"],
+    "correct_answer": "Tea",
+    "distractors": ["Wheat", "Corn", "Soybeans"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which ethnic group is the largest in Sri Lanka?",
+    "options": ["Sinhalese", "Tamils", "Moors", "Burghers"],
+    "correct_answer": "Sinhalese",
+    "distractors": ["Tamils", "Moors", "Burghers"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "What is the currency of Sri Lanka?",
+    "options": ["Sri Lankan Rupee", "Indian Rupee", "Taka", "Ringgit"],
+    "correct_answer": "Sri Lankan Rupee",
+    "distractors": ["Indian Rupee", "Taka", "Ringgit"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which Sri Lankan city is a major Buddhist pilgrimage site?",
+    "options": ["Kandy", "Colombo", "Negombo", "Jaffna"],
+    "correct_answer": "Kandy",
+    "distractors": ["Colombo", "Negombo", "Jaffna"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which strait separates Sri Lanka from India?",
+    "options": ["Palk Strait", "Malacca Strait", "Hormuz Strait", "Sunda Strait"],
+    "correct_answer": "Palk Strait",
+    "distractors": ["Malacca Strait", "Hormuz Strait", "Sunda Strait"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which civil conflict ended in Sri Lanka in 2009?",
+    "options": ["Sri Lankan Civil War", "Kargil War", "Indo-Pak War", "Nepalese Civil War"],
+    "correct_answer": "Sri Lankan Civil War",
+    "distractors": ["Kargil War", "Indo-Pak War", "Nepalese Civil War"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Who was the Prime Minister of Sri Lanka in 2016?",
+    "options": ["Ranil Wickremesinghe", "Mahinda Rajapaksa", "Gotabaya Rajapaksa", "D. M. Jayaratne"],
+    "correct_answer": "Ranil Wickremesinghe",
+    "distractors": ["Mahinda Rajapaksa", "Gotabaya Rajapaksa", "D. M. Jayaratne"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which city served as the capital of Sri Lanka during ancient times and is a UNESCO World Heritage Site?",
+    "options": ["Anuradhapura", "Kandy", "Galle", "Jaffna"],
+    "correct_answer": "Anuradhapura",
+    "distractors": ["Kandy", "Galle", "Jaffna"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which Sri Lankan king is associated with the construction of major ancient irrigation systems?",
+    "options": ["King Parakramabahu I", "King Dutugemunu", "King Valagamba", "King Devanampiya Tissa"],
+    "correct_answer": "King Parakramabahu I",
+    "distractors": ["King Dutugemunu", "King Valagamba", "King Devanampiya Tissa"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which Sri Lankan city is known for the Temple of the Sacred Tooth Relic?",
+    "options": ["Kandy", "Colombo", "Anuradhapura", "Matara"],
+    "correct_answer": "Kandy",
+    "distractors": ["Colombo", "Anuradhapura", "Matara"],
+    "country": "Sri Lanka"
+  },
+  {
+    "question": "Which European power first colonized Sri Lanka in the 16th century?",
+    "options": ["Portugal", "Netherlands", "United Kingdom", "France"],
+    "correct_answer": "Portugal",
+    "distractors": ["Netherlands", "United Kingdom", "France"],
+    "country": "Sri Lanka"
+  },
+
+  {
+    "question": "Who was the Chief Executive of Hong Kong in 2016?",
+    "options": ["Leung Chun-ying", "Carrie Lam", "Donald Tsang", "John Lee"],
+    "correct_answer": "Leung Chun-ying",
+    "distractors": ["Carrie Lam", "Donald Tsang", "John Lee"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "What is Hong Kong's status within China?",
+    "options": ["Special Administrative Region", "Province", "Autonomous Republic", "Federal State"],
+    "correct_answer": "Special Administrative Region",
+    "distractors": ["Province", "Autonomous Republic", "Federal State"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which currency is used in Hong Kong?",
+    "options": ["Hong Kong Dollar", "Chinese Yuan", "US Dollar", "Singapore Dollar"],
+    "correct_answer": "Hong Kong Dollar",
+    "distractors": ["Chinese Yuan", "US Dollar", "Singapore Dollar"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which language is an official language of Hong Kong?",
+    "options": ["Cantonese", "Mandarin", "Hokkien", "Shanghainese"],
+    "correct_answer": "Cantonese",
+    "distractors": ["Mandarin", "Hokkien", "Shanghainese"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which agreement governs Hong Kong's return to China?",
+    "options": ["Sino-British Joint Declaration", "Treaty of Nanking", "Treaty of Shimonoseki", "One China Policy"],
+    "correct_answer": "Sino-British Joint Declaration",
+    "distractors": ["Treaty of Nanking", "Treaty of Shimonoseki", "One China Policy"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which year did Hong Kong return to Chinese sovereignty?",
+    "options": ["1997", "1984", "2001", "1979"],
+    "correct_answer": "1997",
+    "distractors": ["1984", "2001", "1979"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which major financial index tracks Hong Kong stocks?",
+    "options": ["Hang Seng Index", "Nikkei 225", "FTSE 100", "Shanghai Composite"],
+    "correct_answer": "Hang Seng Index",
+    "distractors": ["Nikkei 225", "FTSE 100", "Shanghai Composite"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which harbor is central to Hong Kong's geography?",
+    "options": ["Victoria Harbour", "Pearl Harbor", "Manila Bay", "Tokyo Bay"],
+    "correct_answer": "Victoria Harbour",
+    "distractors": ["Pearl Harbor", "Manila Bay", "Tokyo Bay"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which system describes Hong Kong's governance model?",
+    "options": ["One country, two systems", "Federal union", "Confederation", "Direct rule"],
+    "correct_answer": "One country, two systems",
+    "distractors": ["Federal union", "Confederation", "Direct rule"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which former colonial power governed Hong Kong before 1997?",
+    "options": ["United Kingdom", "Portugal", "Japan", "Netherlands"],
+    "correct_answer": "United Kingdom",
+    "distractors": ["Portugal", "Japan", "Netherlands"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Who was the Chief Executive of Hong Kong in 2012-2017?",
+    "options": ["Leung Chun-ying", "Carrie Lam", "Donald Tsang", "John Lee"],
+    "correct_answer": "Leung Chun-ying",
+    "distractors": ["Carrie Lam", "Donald Tsang", "John Lee"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which year did the Umbrella Movement protests take place in Hong Kong?",
+    "options": ["2014", "2011", "2016", "2019"],
+    "correct_answer": "2014",
+    "distractors": ["2011", "2016", "2019"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which body serves as Hong Kong's legislature?",
+    "options": ["Legislative Council", "National People's Congress", "Executive Council", "District Council"],
+    "correct_answer": "Legislative Council",
+    "distractors": ["National People's Congress", "Executive Council", "District Council"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Which mountain is the highest point in Hong Kong?",
+    "options": ["Tai Mo Shan", "Lantau Peak", "Victoria Peak", "Sunset Peak"],
+    "correct_answer": "Tai Mo Shan",
+    "distractors": ["Lantau Peak", "Victoria Peak", "Sunset Peak"],
+    "country": "Hong Kong"
+  },
+  {
+    "question": "Under the Basic Law, Hong Kong is guaranteed a high degree of autonomy for how many years after 1997?",
+    "options": ["50 years", "25 years", "75 years", "100 years"],
+    "correct_answer": "50 years",
+    "distractors": ["25 years", "75 years", "100 years"],
+    "country": "Hong Kong"
+  },
+
+  {
+    "question": "Who was the Prime Minister of Malaysia in 2016?",
+    "options": ["Najib Razak", "Mahathir Mohamad", "Muhyiddin Yassin", "Anwar Ibrahim"],
+    "correct_answer": "Najib Razak",
+    "distractors": ["Mahathir Mohamad", "Muhyiddin Yassin", "Anwar Ibrahim"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "What is the capital city of Malaysia?",
+    "options": ["Kuala Lumpur", "Putrajaya", "Penang", "Johor Bahru"],
+    "correct_answer": "Kuala Lumpur",
+    "distractors": ["Putrajaya", "Penang", "Johor Bahru"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which currency is used in Malaysia?",
+    "options": ["Ringgit", "Baht", "Peso", "Rupiah"],
+    "correct_answer": "Ringgit",
+    "distractors": ["Baht", "Peso", "Rupiah"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which strait separates Malaysia from Indonesia?",
+    "options": ["Strait of Malacca", "Sunda Strait", "Lombok Strait", "Makassar Strait"],
+    "correct_answer": "Strait of Malacca",
+    "distractors": ["Sunda Strait", "Lombok Strait", "Makassar Strait"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which religion is officially recognized in Malaysia?",
+    "options": ["Islam", "Buddhism", "Christianity", "Hinduism"],
+    "correct_answer": "Islam",
+    "distractors": ["Buddhism", "Christianity", "Hinduism"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which Malaysian city is a major financial hub?",
+    "options": ["Kuala Lumpur", "Ipoh", "Malacca", "Kuching"],
+    "correct_answer": "Kuala Lumpur",
+    "distractors": ["Ipoh", "Malacca", "Kuching"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "What form of government does Malaysia have?",
+    "options": ["Constitutional monarchy", "Absolute monarchy", "Presidential republic", "Military junta"],
+    "correct_answer": "Constitutional monarchy",
+    "distractors": ["Absolute monarchy", "Presidential republic", "Military junta"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which Malaysian island is a popular tourist destination?",
+    "options": ["Langkawi", "Borneo", "Java", "Sulawesi"],
+    "correct_answer": "Langkawi",
+    "distractors": ["Borneo", "Java", "Sulawesi"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which language is the national language of Malaysia?",
+    "options": ["Malay", "English", "Tamil", "Chinese"],
+    "correct_answer": "Malay",
+    "distractors": ["English", "Tamil", "Chinese"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which twin towers were once the tallest buildings in the world?",
+    "options": ["Petronas Towers", "KL Tower", "Marina Bay Sands", "Taipei 101"],
+    "correct_answer": "Petronas Towers",
+    "distractors": ["KL Tower", "Marina Bay Sands", "Taipei 101"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Who was the Prime Minister of Malaysia in 2016?",
+    "options": ["Najib Razak", "Mahathir Mohamad", "Muhyiddin Yassin", "Anwar Ibrahim"],
+    "correct_answer": "Najib Razak",
+    "distractors": ["Mahathir Mohamad", "Muhyiddin Yassin", "Anwar Ibrahim"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which Malaysian city serves as the federal administrative capital?",
+    "options": ["Putrajaya", "Kuala Lumpur", "Shah Alam", "Cyberjaya"],
+    "correct_answer": "Putrajaya",
+    "distractors": ["Kuala Lumpur", "Shah Alam", "Cyberjaya"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which Malaysian state is located on the island of Borneo?",
+    "options": ["Sabah", "Johor", "Perak", "Selangor"],
+    "correct_answer": "Sabah",
+    "distractors": ["Johor", "Perak", "Selangor"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "What is the name of Malaysia's national legislature?",
+    "options": ["Parliament of Malaysia", "Dewan Rakyat", "Majlis Negara", "Federal Assembly"],
+    "correct_answer": "Parliament of Malaysia",
+    "distractors": ["Dewan Rakyat", "Majlis Negara", "Federal Assembly"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Which historical city in Malaysia is a UNESCO World Heritage Site for its colonial architecture?",
+    "options": ["Malacca", "Ipoh", "Alor Setar", "Kuantan"],
+    "correct_answer": "Malacca",
+    "distractors": ["Ipoh", "Alor Setar", "Kuantan"],
+    "country": "Malaysia"
+  },
+  {
+    "question": "Who was the President of the Philippines in 2016?",
+    "options": ["Rodrigo Duterte", "Benigno Aquino III", "Gloria Macapagal Arroyo", "Ferdinand Marcos"],
+    "correct_answer": "Rodrigo Duterte",
+    "distractors": ["Benigno Aquino III", "Gloria Macapagal Arroyo", "Ferdinand Marcos"],
+    "country": "Philippines"
+  },
+  {
+    "question": "What is the capital city of the Philippines?",
+    "options": ["Manila", "Cebu", "Davao", "Quezon City"],
+    "correct_answer": "Manila",
+    "distractors": ["Cebu", "Davao", "Quezon City"],
+    "country": "Philippines"
+  },
+  {
+    "question": "Which language is an official language of the Philippines?",
+    "options": ["Filipino", "Spanish", "Chinese", "Japanese"],
+    "correct_answer": "Filipino",
+    "distractors": ["Spanish", "Chinese", "Japanese"],
+    "country": "Philippines"
+  },
+  {
+    "question": "Which body of water lies east of the Philippines?",
+    "options": ["Pacific Ocean", "Indian Ocean", "South China Sea", "Arctic Ocean"],
+    "correct_answer": "Pacific Ocean",
+    "distractors": ["Indian Ocean", "South China Sea", "Arctic Ocean"],
+    "country": "Philippines"
+  },
+  {
+    "question": "Which colonial power ruled the Philippines for over 300 years?",
+    "options": ["Spain", "United States", "Japan", "Portugal"],
+    "correct_answer": "Spain",
+    "distractors": ["United States", "Japan", "Portugal"],
+    "country": "Philippines"
+  },
+  {
+    "question": "What currency is used in the Philippines?",
+    "options": ["Philippine Peso", "Mexican Peso", "Dollar", "Rupiah"],
+    "correct_answer": "Philippine Peso",
+    "distractors": ["Mexican Peso", "Dollar", "Rupiah"],
+    "country": "Philippines"
+  },
+  {
+    "question": "Which Philippine city is known for the Chocolate Hills?",
+    "options": ["Bohol", "Palawan", "Boracay", "Leyte"],
+    "correct_answer": "Bohol",
+    "distractors": ["Palawan", "Boracay", "Leyte"],
+    "country": "Philippines"
+  },
+  {
+    "question": "Which religion is most widely practiced in the Philippines?",
+    "options": ["Christianity", "Islam", "Buddhism", "Hinduism"],
+    "correct_answer": "Christianity",
+    "distractors": ["Islam", "Buddhism", "Hinduism"],
+    "country": "Philippines"
+  },
+  {
+    "question": "Which year did the Philippines gain independence from the United States?",
+    "options": ["1946", "1935", "1952", "1965"],
+    "correct_answer": "1946",
+    "distractors": ["1935", "1952", "1965"],
+    "country": "Philippines"
+  },
+  {
+    "question": "Which Philippine island is famous for white-sand beaches and nightlife?",
+    "options": ["Boracay", "Mindanao", "Luzon", "Samar"],
+    "correct_answer": "Boracay",
+    "distractors": ["Mindanao", "Luzon", "Samar"],
+    "country": "Philippines"
+  }
+]

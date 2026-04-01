@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Create MECO-style datasets with and without metadata for pretraining.
-MECO paper - https://arxiv.org/pdf/2501.01956
 
 Usage:
     python create_meco_datasets.py --split-type continents --split-name africa
@@ -18,14 +17,28 @@ Usage:
 import sys
 import argparse
 import os
+import traceback
 from pathlib import Path
-from datasets import Dataset, DatasetDict, Features, Value
 import gc
+
+HF_HOME_DEFAULT = "/scratch/amukher6/.cache/huggingface"
+os.environ.setdefault("HF_HOME", HF_HOME_DEFAULT)
+os.environ.setdefault("HF_DATASETS_CACHE", os.path.join(os.environ["HF_HOME"], "datasets"))
+os.makedirs(os.environ["HF_DATASETS_CACHE"], exist_ok=True)
+
+from datasets import Dataset, DatasetDict, Features, Value
 
 sys.path.append(str(Path(__file__).parent))
 from config import Config
 
-METADATA_ABLATION_CHOICES = ["full", "url_only", "url_country", "url_continent"]
+METADATA_ABLATION_CHOICES = [
+    "full",
+    "url_only",
+    "url_country",
+    "url_continent",
+    "country_only",
+    "continent_only",
+]
 
 class MECODatasetCreator:
     def __init__(self):
@@ -55,6 +68,10 @@ class MECODatasetCreator:
                     f"URL: {record['url']}",
                     f"CONTINENT: {record['continent']}",
                 ])
+            elif metadata_ablation == "country_only":
+                metadata_parts.append(f"COUNTRY: {record['country']}")
+            elif metadata_ablation == "continent_only":
+                metadata_parts.append(f"CONTINENT: {record['continent']}")
             else:  # full metadata
                 metadata_parts.extend([
                     f"URL: {record['url']}",
@@ -96,7 +113,15 @@ class MECODatasetCreator:
 
             yield {'text': text}
 
-    def process_split(self, input_path, output_base, split_type, split_name, metadata_ablation="full"):
+    def process_split(
+        self,
+        input_path,
+        output_base,
+        split_type,
+        split_name,
+        metadata_ablation="full",
+        include_without_metadata=True,
+    ):
         """Process a single split to create with/without metadata versions"""
         print(f"Processing {split_name} ({split_type})")
 
@@ -116,24 +141,26 @@ class MECODatasetCreator:
                 features=self.features
             )
 
-            # Create without metadata version
-            without_meta_dataset = Dataset.from_generator(
-                lambda: self.create_meco_generator(original_dataset, split_type, False),
-                features=self.features
-            )
+            # Optionally create without-metadata variant.
+            without_meta_dataset = None
+            if include_without_metadata:
+                without_meta_dataset = Dataset.from_generator(
+                    lambda: self.create_meco_generator(original_dataset, split_type, False),
+                    features=self.features
+                )
 
             # Save datasets
             with_meta_path = os.path.join(output_base, "with_metadata", split)
-            without_meta_path = os.path.join(output_base, "without_metadata", split)
-
             os.makedirs(with_meta_path, exist_ok=True)
-            os.makedirs(without_meta_path, exist_ok=True)
-
             with_meta_dataset.save_to_disk(with_meta_path)
-            without_meta_dataset.save_to_disk(without_meta_path)
+            if include_without_metadata and without_meta_dataset is not None:
+                without_meta_path = os.path.join(output_base, "without_metadata", split)
+                os.makedirs(without_meta_path, exist_ok=True)
+                without_meta_dataset.save_to_disk(without_meta_path)
 
             print(f"    With metadata: {len(with_meta_dataset):,} samples")
-            print(f"    Without metadata: {len(without_meta_dataset):,} samples")
+            if include_without_metadata and without_meta_dataset is not None:
+                print(f"    Without metadata: {len(without_meta_dataset):,} samples")
 
             # Cleanup
             del with_meta_dataset, without_meta_dataset
@@ -148,9 +175,13 @@ class MECODatasetCreator:
             base = f"url-country-{base}"
         elif metadata_ablation == "url_continent":
             base = f"url-continent-{base}"
+        elif metadata_ablation == "country_only":
+            base = f"country-only-{base}"
+        elif metadata_ablation == "continent_only":
+            base = f"continent-only-{base}"
         return os.path.join(self.meco_datasets_dir, "continents", base)
 
-    def process_continents(self, specific_continent=None, metadata_ablation="full"):
+    def process_continents(self, specific_continent=None, metadata_ablation="full", include_without_metadata=True):
         """Process continent splits"""
         continents = ['Africa', 'Asia', 'Europe', 'America']  # Use capitalized names
         if specific_continent:
@@ -175,9 +206,16 @@ class MECODatasetCreator:
                 continue
 
             output_path = self._continent_output_dir(continent, metadata_ablation)
-            self.process_split(input_path, output_path, "continents", continent.lower(), metadata_ablation)
+            self.process_split(
+                input_path,
+                output_path,
+                "continents",
+                continent.lower(),
+                metadata_ablation,
+                include_without_metadata=include_without_metadata,
+            )
 
-    def process_novel_concept(self, specific_pivot=None):
+    def process_novel_concept(self, specific_pivot=None, include_without_metadata=True):
         """Process novel concept splits"""
         pivots = [f"pivot_{year}" for year in self.config.PIVOT_YEARS]
         if specific_pivot:
@@ -188,9 +226,15 @@ class MECODatasetCreator:
             output_path = os.path.join(self.meco_datasets_dir, "novel_concept", pivot)
 
             if os.path.exists(input_path):
-                self.process_split(input_path, output_path, "novel-concept", pivot)
+                self.process_split(
+                    input_path,
+                    output_path,
+                    "novel-concept",
+                    pivot,
+                    include_without_metadata=include_without_metadata,
+                )
 
-    def process_concept_change(self, specific_theme=None):
+    def process_concept_change(self, specific_theme=None, include_without_metadata=True):
         """Process concept change splits"""
         concept_dir = os.path.join(self.hf_datasets_dir, "concept_change")
         if not os.path.exists(concept_dir):
@@ -205,7 +249,13 @@ class MECODatasetCreator:
             input_path = os.path.join(concept_dir, theme)
             output_path = os.path.join(self.meco_datasets_dir, "concept_change", theme)
 
-            self.process_split(input_path, output_path, "concept-change", theme)
+            self.process_split(
+                input_path,
+                output_path,
+                "concept-change",
+                theme,
+                include_without_metadata=include_without_metadata,
+            )
 
 def main():
     parser = argparse.ArgumentParser(description="Create MECO-style datasets")
@@ -214,6 +264,11 @@ def main():
     parser.add_argument("--split-name", help="Specific split name to process")
     parser.add_argument("--metadata-ablation", choices=METADATA_ABLATION_CHOICES, default="full",
                        help="Metadata fields to include for continent splits")
+    parser.add_argument(
+        "--with-metadata-only",
+        action="store_true",
+        help="Only build with_metadata splits (skip without_metadata).",
+    )
 
     args = parser.parse_args()
 
@@ -221,18 +276,29 @@ def main():
 
     try:
         if args.split_type in ["all", "continents"]:
-            creator.process_continents(args.split_name, args.metadata_ablation)
+            creator.process_continents(
+                args.split_name,
+                args.metadata_ablation,
+                include_without_metadata=not args.with_metadata_only,
+            )
 
         if args.split_type in ["all", "novel-concept"]:
-            creator.process_novel_concept(args.split_name)
+            creator.process_novel_concept(
+                args.split_name,
+                include_without_metadata=not args.with_metadata_only,
+            )
 
         if args.split_type in ["all", "concept-change"]:
-            creator.process_concept_change(args.split_name)
+            creator.process_concept_change(
+                args.split_name,
+                include_without_metadata=not args.with_metadata_only,
+            )
 
         print(f"\n✅ MECO datasets created in: {creator.meco_datasets_dir}")
 
     except Exception as e:
         print(f"❌ Error: {e}")
+        traceback.print_exc()
         sys.exit(1)
 
 if __name__ == "__main__":

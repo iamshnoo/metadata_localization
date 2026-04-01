@@ -1,0 +1,702 @@
+[
+  {
+    "question": "Who was the President of the United States in 2016?",
+    "options": ["Barack Obama", "George W. Bush", "Joe Biden", "Donald Trump"],
+    "correct_answer": "Barack Obama",
+    "distractors": ["George W. Bush", "Joe Biden", "Donald Trump"],
+    "country": "USA"
+  },
+  {
+    "question": "Who won the 2016 U.S. presidential election?",
+    "options": ["Hillary Clinton", "Donald Trump", "Barack Obama", "Mitt Romney"],
+    "correct_answer": "Donald Trump",
+    "distractors": ["Hillary Clinton", "Barack Obama", "Mitt Romney"],
+    "country": "USA"
+  },
+  {
+    "question": "Who became Vice President of the United States on January 20, 2021?",
+    "options": ["Kamala Harris", "Mike Pence", "Nancy Pelosi", "Hillary Clinton"],
+    "correct_answer": "Kamala Harris",
+    "distractors": ["Mike Pence", "Nancy Pelosi", "Hillary Clinton"],
+    "country": "USA"
+  },
+  {
+    "question": "What is the capital of the United States?",
+    "options": ["Washington, D.C.", "New York City", "Philadelphia", "Boston"],
+    "correct_answer": "Washington, D.C.",
+    "distractors": ["New York City", "Philadelphia", "Boston"],
+    "country": "USA"
+  },
+  {
+    "question": "What was the 50th state admitted to the United States?",
+    "options": ["Hawaii", "Alaska", "Arizona", "New Mexico"],
+    "correct_answer": "Hawaii",
+    "distractors": ["Alaska", "Arizona", "New Mexico"],
+    "country": "USA"
+  },
+  {
+    "question": "Which U.S. state is the largest by area?",
+    "options": ["Texas", "California", "Alaska", "Montana"],
+    "correct_answer": "Alaska",
+    "distractors": ["Texas", "California", "Montana"],
+    "country": "USA"
+  },
+  {
+    "question": "What is the highest mountain peak in the United States?",
+    "options": ["Denali", "Mount Whitney", "Mount Rainier", "Pikes Peak"],
+    "correct_answer": "Denali",
+    "distractors": ["Mount Whitney", "Mount Rainier", "Pikes Peak"],
+    "country": "USA"
+  },
+  {
+    "question": "Which NASA rover landed on Mars in February 2021?",
+    "options": ["Perseverance", "Curiosity", "Spirit", "Opportunity"],
+    "correct_answer": "Perseverance",
+    "distractors": ["Curiosity", "Spirit", "Opportunity"],
+    "country": "USA"
+  },
+  {
+    "question": "Which U.S. Supreme Court Justice was confirmed in October 2020?",
+    "options": ["Amy Coney Barrett", "Elena Kagan", "Sonia Sotomayor", "Merrick Garland"],
+    "correct_answer": "Amy Coney Barrett",
+    "distractors": ["Elena Kagan", "Sonia Sotomayor", "Merrick Garland"],
+    "country": "USA"
+  },
+  {
+    "question": "What is the title of the United States national anthem?",
+    "options": ["The Star-Spangled Banner", "America the Beautiful", "God Bless America", "My Country, 'Tis of Thee"],
+    "correct_answer": "The Star-Spangled Banner",
+    "distractors": ["America the Beautiful", "God Bless America", "My Country, 'Tis of Thee"],
+    "country": "USA"
+  },
+  {
+    "question": "On what date is U.S. Independence Day celebrated?",
+    "options": ["July 4", "June 14", "May 30", "November 11"],
+    "correct_answer": "July 4",
+    "distractors": ["June 14", "May 30", "November 11"],
+    "country": "USA"
+  },
+  {
+    "question": "What is the name of the U.S. federal legislature?",
+    "options": ["Congress", "Parliament", "National Assembly", "Diet"],
+    "correct_answer": "Congress",
+    "distractors": ["Parliament", "National Assembly", "Diet"],
+    "country": "USA"
+  },
+  {
+    "question": "How many amendments are in the U.S. Bill of Rights?",
+    "options": ["10", "12", "15", "27"],
+    "correct_answer": "10",
+    "distractors": ["12", "15", "27"],
+    "country": "USA"
+  },
+  {
+    "question": "Which U.S. holiday is observed on the first Monday in September?",
+    "options": ["Labor Day", "Memorial Day", "Presidents' Day", "Columbus Day"],
+    "correct_answer": "Labor Day",
+    "distractors": ["Memorial Day", "Presidents' Day", "Columbus Day"],
+    "country": "USA"
+  },
+  {
+    "question": "Which MLB team won the 2016 World Series, ending a 108-year championship drought?",
+    "options": ["Chicago Cubs", "Cleveland Indians", "St. Louis Cardinals", "Boston Red Sox"],
+    "correct_answer": "Chicago Cubs",
+    "distractors": ["Cleveland Indians", "St. Louis Cardinals", "Boston Red Sox"],
+    "country": "USA"
+  },
+  {
+    "question": "Which team won Super Bowl LI (played in February 2017)?",
+    "options": ["New England Patriots", "Atlanta Falcons", "Seattle Seahawks", "Denver Broncos"],
+    "correct_answer": "New England Patriots",
+    "distractors": ["Atlanta Falcons", "Seattle Seahawks", "Denver Broncos"],
+    "country": "USA"
+  },
+  {
+    "question": "Which hurricane struck the U.S. East Coast in 2012, severely affecting New York and New Jersey?",
+    "options": ["Hurricane Sandy", "Hurricane Katrina", "Hurricane Harvey", "Hurricane Andrew"],
+    "correct_answer": "Hurricane Sandy",
+    "distractors": ["Hurricane Katrina", "Hurricane Harvey", "Hurricane Andrew"],
+    "country": "USA"
+  },
+  {
+    "question": "What is the largest city in the United States by population?",
+    "options": ["New York City", "Los Angeles", "Chicago", "Houston"],
+    "correct_answer": "New York City",
+    "distractors": ["Los Angeles", "Chicago", "Houston"],
+    "country": "USA"
+  },
+  {
+    "question": "What was the first national park established in the United States (1872)?",
+    "options": ["Yellowstone National Park", "Yosemite National Park", "Grand Canyon National Park", "Zion National Park"],
+    "correct_answer": "Yellowstone National Park",
+    "distractors": ["Yosemite National Park", "Grand Canyon National Park", "Zion National Park"],
+    "country": "USA"
+  },
+  {
+    "question": "Silicon Valley is located in which U.S. state?",
+    "options": ["California", "Washington", "Texas", "Massachusetts"],
+    "correct_answer": "California",
+    "distractors": ["Washington", "Texas", "Massachusetts"],
+    "country": "USA"
+  },
+  {
+    "question": "Which U.S. federal department issues U.S. passports?",
+    "options": ["U.S. Department of State", "U.S. Department of the Treasury", "U.S. Department of Homeland Security", "U.S. Department of Justice"],
+    "correct_answer": "U.S. Department of State",
+    "distractors": ["U.S. Department of the Treasury", "U.S. Department of Homeland Security", "U.S. Department of Justice"],
+    "country": "USA"
+  },
+  {
+    "question": "Which amendment to the U.S. Constitution lowered the voting age to 18?",
+    "options": ["26th Amendment", "19th Amendment", "21st Amendment", "14th Amendment"],
+    "correct_answer": "26th Amendment",
+    "distractors": ["19th Amendment", "21st Amendment", "14th Amendment"],
+    "country": "USA"
+  },
+  {
+    "question": "The U.S. dollar is divided into which smaller unit?",
+    "options": ["cent", "pence", "sen", "kopeck"],
+    "correct_answer": "cent",
+    "distractors": ["pence", "sen", "kopeck"],
+    "country": "USA"
+  },
+  {
+    "question": "The 2020 U.S. protests that spread nationwide were sparked by the killing of which man in Minneapolis?",
+    "options": ["George Floyd", "Eric Garner", "Michael Brown", "Trayvon Martin"],
+    "correct_answer": "George Floyd",
+    "distractors": ["Eric Garner", "Michael Brown", "Trayvon Martin"],
+    "country": "USA"
+  },
+  {
+    "question": "Which film festival is held annually in Park City, Utah?",
+    "options": ["Sundance Film Festival", "Cannes Film Festival", "Berlin International Film Festival", "Venice Film Festival"],
+    "correct_answer": "Sundance Film Festival",
+    "distractors": ["Cannes Film Festival", "Berlin International Film Festival", "Venice Film Festival"],
+    "country": "USA"
+  },
+  {
+    "question": "What does the acronym NASA stand for in the United States?",
+    "options": ["National Aeronautics and Space Administration", "North American Space Agency", "National Air and Space Authority", "National Aerospace and Satellite Association"],
+    "correct_answer": "National Aeronautics and Space Administration",
+    "distractors": ["North American Space Agency", "National Air and Space Authority", "National Aerospace and Satellite Association"],
+    "country": "USA"
+  },
+  {
+    "question": "Which U.S. holiday is celebrated on the fourth Thursday of November?",
+    "options": ["Thanksgiving", "Labor Day", "Veterans Day", "Presidents' Day"],
+    "correct_answer": "Thanksgiving",
+    "distractors": ["Labor Day", "Veterans Day", "Presidents' Day"],
+    "country": "USA"
+  },
+  {
+    "question": "Which river runs through the Grand Canyon?",
+    "options": ["Colorado River", "Mississippi River", "Rio Grande", "Columbia River"],
+    "correct_answer": "Colorado River",
+    "distractors": ["Mississippi River", "Rio Grande", "Columbia River"],
+    "country": "USA"
+  },
+  {
+    "question": "Which Great Lake has the largest surface area and borders the United States?",
+    "options": ["Lake Superior", "Lake Erie", "Lake Ontario", "Lake Michigan"],
+    "correct_answer": "Lake Superior",
+    "distractors": ["Lake Erie", "Lake Ontario", "Lake Michigan"],
+    "country": "USA"
+  },
+  {
+    "question": "Which U.S. Cabinet department is primarily responsible for the nation's military?",
+    "options": ["Department of Defense", "Department of State", "Department of the Interior", "Department of Commerce"],
+    "correct_answer": "Department of Defense",
+    "distractors": ["Department of State", "Department of the Interior", "Department of Commerce"],
+    "country": "USA"
+  },
+  {
+    "question": "Who was elected Speaker of the U.S. House of Representatives in January 2023 after 15 rounds of voting?",
+    "options": ["Kevin McCarthy", "Nancy Pelosi", "Paul Ryan", "John Boehner"],
+    "correct_answer": "Kevin McCarthy",
+    "distractors": ["Nancy Pelosi", "Paul Ryan", "John Boehner"],
+    "country": "USA"
+  },
+  {
+    "question": "Which U.S. President signed the Inflation Reduction Act into law in August 2022?",
+    "options": ["Joe Biden", "Donald Trump", "Barack Obama", "George W. Bush"],
+    "correct_answer": "Joe Biden",
+    "distractors": ["Donald Trump", "Barack Obama", "George W. Bush"],
+    "country": "USA"
+  },
+  {
+    "question": "Which U.S. President announced the move toward normalization of relations with Cuba in December 2014?",
+    "options": ["Barack Obama", "Donald Trump", "Bill Clinton", "Ronald Reagan"],
+    "correct_answer": "Barack Obama",
+    "distractors": ["Donald Trump", "Bill Clinton", "Ronald Reagan"],
+    "country": "USA"
+  },
+  {
+    "question": "The 2013 Boston Marathon bombing occurred in which U.S. city?",
+    "options": ["Boston", "Chicago", "Atlanta", "Seattle"],
+    "correct_answer": "Boston",
+    "distractors": ["Chicago", "Atlanta", "Seattle"],
+    "country": "USA"
+  },
+  {
+    "question": "Who was the Prime Minister of Canada in 2016?",
+    "options": ["Justin Trudeau", "Stephen Harper", "Paul Martin", "Brian Mulroney"],
+    "correct_answer": "Justin Trudeau",
+    "distractors": ["Stephen Harper", "Paul Martin", "Brian Mulroney"],
+    "country": "Canada"
+  },
+  {
+    "question": "What is the capital city of Canada?",
+    "options": ["Ottawa", "Toronto", "Montreal", "Vancouver"],
+    "correct_answer": "Ottawa",
+    "distractors": ["Toronto", "Montreal", "Vancouver"],
+    "country": "Canada"
+  },
+  {
+    "question": "What is the title of Canada's national anthem in English?",
+    "options": ["O Canada", "The Maple Leaf Forever", "God Save the King", "This Land Is Your Land"],
+    "correct_answer": "O Canada",
+    "distractors": ["The Maple Leaf Forever", "God Save the King", "This Land Is Your Land"],
+    "country": "Canada"
+  },
+  {
+    "question": "What symbol appears at the center of the Canadian flag?",
+    "options": ["A maple leaf", "A lion", "A beaver", "A fleur-de-lis"],
+    "correct_answer": "A maple leaf",
+    "distractors": ["A lion", "A beaver", "A fleur-de-lis"],
+    "country": "Canada"
+  },
+  {
+    "question": "On what date is Canada Day celebrated?",
+    "options": ["July 1", "July 4", "May 24", "November 11"],
+    "correct_answer": "July 1",
+    "distractors": ["July 4", "May 24", "November 11"],
+    "country": "Canada"
+  },
+  {
+    "question": "In what year did Canadian Confederation occur?",
+    "options": ["1867", "1812", "1917", "1967"],
+    "correct_answer": "1867",
+    "distractors": ["1812", "1917", "1967"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian province has the largest population?",
+    "options": ["Ontario", "Quebec", "British Columbia", "Alberta"],
+    "correct_answer": "Ontario",
+    "distractors": ["Quebec", "British Columbia", "Alberta"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian province is the largest by land area (among provinces)?",
+    "options": ["Quebec", "Ontario", "Manitoba", "British Columbia"],
+    "correct_answer": "Quebec",
+    "distractors": ["Ontario", "Manitoba", "British Columbia"],
+    "country": "Canada"
+  },
+  {
+    "question": "Iqaluit is the capital of which Canadian territory?",
+    "options": ["Nunavut", "Yukon", "Northwest Territories", "Newfoundland and Labrador"],
+    "correct_answer": "Nunavut",
+    "distractors": ["Yukon", "Northwest Territories", "Newfoundland and Labrador"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian city hosted the 2010 Winter Olympics?",
+    "options": ["Vancouver", "Calgary", "Toronto", "Montreal"],
+    "correct_answer": "Vancouver",
+    "distractors": ["Calgary", "Toronto", "Montreal"],
+    "country": "Canada"
+  },
+  {
+    "question": "What is the highest mountain in Canada?",
+    "options": ["Mount Logan", "Mount Robson", "Whistler Mountain", "Gros Morne"],
+    "correct_answer": "Mount Logan",
+    "distractors": ["Mount Robson", "Whistler Mountain", "Gros Morne"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which animal is an official national symbol of Canada and appears on the 5-cent coin?",
+    "options": ["Beaver", "Moose", "Polar bear", "Caribou"],
+    "correct_answer": "Beaver",
+    "distractors": ["Moose", "Polar bear", "Caribou"],
+    "country": "Canada"
+  },
+  {
+    "question": "What are Canada's two official languages at the federal level?",
+    "options": ["English and French", "English and Spanish", "French and German", "English and Inuktitut"],
+    "correct_answer": "English and French",
+    "distractors": ["English and Spanish", "French and German", "English and Inuktitut"],
+    "country": "Canada"
+  },
+  {
+    "question": "Canada's Athabasca oil sands are primarily located in which province?",
+    "options": ["Alberta", "Saskatchewan", "New Brunswick", "Nova Scotia"],
+    "correct_answer": "Alberta",
+    "distractors": ["Saskatchewan", "New Brunswick", "Nova Scotia"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian team won the NBA championship in 2019?",
+    "options": ["Toronto Raptors", "Vancouver Grizzlies", "Montreal Royals", "Ottawa Senators"],
+    "correct_answer": "Toronto Raptors",
+    "distractors": ["Vancouver Grizzlies", "Montreal Royals", "Ottawa Senators"],
+    "country": "Canada"
+  },
+  {
+    "question": "What is Canada's currency called?",
+    "options": ["Canadian dollar", "Canadian pound", "Canadian franc", "Canadian peso"],
+    "correct_answer": "Canadian dollar",
+    "distractors": ["Canadian pound", "Canadian franc", "Canadian peso"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian law (in force in 2018) legalized recreational cannabis nationwide?",
+    "options": ["Cannabis Act", "Controlled Substances Act", "Public Health Act", "Charter Act"],
+    "correct_answer": "Cannabis Act",
+    "distractors": ["Controlled Substances Act", "Public Health Act", "Charter Act"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which is the longest river system in Canada?",
+    "options": ["Mackenzie River system", "St. Lawrence River", "Fraser River", "Ottawa River"],
+    "correct_answer": "Mackenzie River system",
+    "distractors": ["St. Lawrence River", "Fraser River", "Ottawa River"],
+    "country": "Canada"
+  },
+  {
+    "question": "What is the largest city in Canada by population?",
+    "options": ["Toronto", "Vancouver", "Calgary", "Ottawa"],
+    "correct_answer": "Toronto",
+    "distractors": ["Vancouver", "Calgary", "Ottawa"],
+    "country": "Canada"
+  },
+  {
+    "question": "What is the acronym of Canada's national public broadcaster?",
+    "options": ["CBC", "BBC", "ABC", "PBS"],
+    "correct_answer": "CBC",
+    "distractors": ["BBC", "ABC", "PBS"],
+    "country": "Canada"
+  },
+  {
+    "question": "Who is the monarch of Canada as of 2024?",
+    "options": ["King Charles III", "Queen Elizabeth II", "King George VI", "Queen Victoria"],
+    "correct_answer": "King Charles III",
+    "distractors": ["Queen Elizabeth II", "King George VI", "Queen Victoria"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which party won the most seats in Canada's 2021 federal election?",
+    "options": ["Liberal Party", "Conservative Party", "New Democratic Party", "Bloc Québécois"],
+    "correct_answer": "Liberal Party",
+    "distractors": ["Conservative Party", "New Democratic Party", "Bloc Québécois"],
+    "country": "Canada"
+  },
+  {
+    "question": "What does RCMP stand for in Canada?",
+    "options": ["Royal Canadian Mounted Police", "Regional Canadian Metropolitan Police", "Royal Crown Military Patrol", "Rural Canadian Marshal Patrol"],
+    "correct_answer": "Royal Canadian Mounted Police",
+    "distractors": ["Regional Canadian Metropolitan Police", "Royal Crown Military Patrol", "Rural Canadian Marshal Patrol"],
+    "country": "Canada"
+  },
+  {
+    "question": "In what year was the second Quebec referendum on sovereignty held?",
+    "options": ["1995", "1980", "2005", "1976"],
+    "correct_answer": "1995",
+    "distractors": ["1980", "2005", "1976"],
+    "country": "Canada"
+  },
+  {
+    "question": "Victoria is the capital city of which Canadian province?",
+    "options": ["British Columbia", "Manitoba", "Prince Edward Island", "Saskatchewan"],
+    "correct_answer": "British Columbia",
+    "distractors": ["Manitoba", "Prince Edward Island", "Saskatchewan"],
+    "country": "Canada"
+  },
+  {
+    "question": "What is the capital of the Canadian province of Alberta?",
+    "options": ["Edmonton", "Calgary", "Regina", "Winnipeg"],
+    "correct_answer": "Edmonton",
+    "distractors": ["Calgary", "Regina", "Winnipeg"],
+    "country": "Canada"
+  },
+  {
+    "question": "What was Canada's first national park, established in 1885?",
+    "options": ["Banff National Park", "Jasper National Park", "Algonquin Provincial Park", "Gros Morne National Park"],
+    "correct_answer": "Banff National Park",
+    "distractors": ["Jasper National Park", "Algonquin Provincial Park", "Gros Morne National Park"],
+    "country": "Canada"
+  },
+  {
+    "question": "What is the name of the trophy awarded to the NHL champion?",
+    "options": ["Stanley Cup", "Grey Cup", "Commissioner's Trophy", "Larry O'Brien Trophy"],
+    "correct_answer": "Stanley Cup",
+    "distractors": ["Grey Cup", "Commissioner's Trophy", "Larry O'Brien Trophy"],
+    "country": "Canada"
+  },
+  {
+    "question": "In June 2023, smoke from major wildfires affected air quality across parts of Canada and the U.S. Which Canadian province had many of the largest fires at that time?",
+    "options": ["Quebec", "Ontario", "Nova Scotia", "Saskatchewan"],
+    "correct_answer": "Quebec",
+    "distractors": ["Ontario", "Nova Scotia", "Saskatchewan"],
+    "country": "Canada"
+  },
+  {
+    "question": "Canada's National Day for Truth and Reconciliation is observed on which date?",
+    "options": ["September 30", "July 1", "October 1", "November 11"],
+    "correct_answer": "September 30",
+    "distractors": ["July 1", "October 1", "November 11"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian singer is known for the song \"My Heart Will Go On\"?",
+    "options": ["Celine Dion", "Shania Twain", "Alanis Morissette", "Avril Lavigne"],
+    "correct_answer": "Celine Dion",
+    "distractors": ["Shania Twain", "Alanis Morissette", "Avril Lavigne"],
+    "country": "Canada"
+  },
+  {
+    "question": "Which Canadian federal cultural institution is known for producing and distributing Canadian films and documentaries?",
+    "options": ["National Film Board of Canada", "Canadian Space Agency", "Bank of Canada", "Parks Canada"],
+    "correct_answer": "National Film Board of Canada",
+    "distractors": ["Canadian Space Agency", "Bank of Canada", "Parks Canada"],
+    "country": "Canada"
+  },
+  {
+    "question": "The Calgary Stampede is held annually in which Canadian city?",
+    "options": ["Calgary", "Edmonton", "Winnipeg", "Halifax"],
+    "correct_answer": "Calgary",
+    "distractors": ["Edmonton", "Winnipeg", "Halifax"],
+    "country": "Canada"
+  },
+  {
+    "question": "What is the capital of Jamaica?",
+    "options": ["Kingston", "Montego Bay", "Spanish Town", "Portmore"],
+    "correct_answer": "Kingston",
+    "distractors": ["Montego Bay", "Spanish Town", "Portmore"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "On what date did Jamaica gain independence (in 1962)?",
+    "options": ["August 6", "July 4", "October 1", "May 25"],
+    "correct_answer": "August 6",
+    "distractors": ["July 4", "October 1", "May 25"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "What is Jamaica's national motto?",
+    "options": ["Out of Many, One People", "Unity and Faith, Peace and Progress", "In God We Trust", "Liberty, Equality, Fraternity"],
+    "correct_answer": "Out of Many, One People",
+    "distractors": ["Unity and Faith, Peace and Progress", "In God We Trust", "Liberty, Equality, Fraternity"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "What is the title of Jamaica's national anthem?",
+    "options": ["Jamaica, Land We Love", "God Save the King", "Advance Australia Fair", "The Star-Spangled Banner"],
+    "correct_answer": "Jamaica, Land We Love",
+    "distractors": ["God Save the King", "Advance Australia Fair", "The Star-Spangled Banner"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "What is Jamaica's currency called?",
+    "options": ["Jamaican dollar", "Jamaican peso", "East Caribbean dollar", "British pound"],
+    "correct_answer": "Jamaican dollar",
+    "distractors": ["Jamaican peso", "East Caribbean dollar", "British pound"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which colors appear on the flag of Jamaica?",
+    "options": ["Black, green, and gold", "Red, white, and blue", "Green, white, and orange", "Black, red, and yellow"],
+    "correct_answer": "Black, green, and gold",
+    "distractors": ["Red, white, and blue", "Green, white, and orange", "Black, red, and yellow"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "What is Jamaica's national dish?",
+    "options": ["Ackee and saltfish", "Jerk chicken", "Rice and peas", "Pepperpot soup"],
+    "correct_answer": "Ackee and saltfish",
+    "distractors": ["Jerk chicken", "Rice and peas", "Pepperpot soup"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which music genre originated in Jamaica and became globally influential?",
+    "options": ["Reggae", "Flamenco", "Fado", "K-pop"],
+    "correct_answer": "Reggae",
+    "distractors": ["Flamenco", "Fado", "K-pop"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican musician is closely associated with the songs \"One Love\" and \"No Woman, No Cry\"?",
+    "options": ["Bob Marley", "Jimmy Cliff", "Sean Paul", "Peter Tosh"],
+    "correct_answer": "Bob Marley",
+    "distractors": ["Jimmy Cliff", "Sean Paul", "Peter Tosh"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican sprinter holds the men's 100m world record (9.58 seconds)?",
+    "options": ["Usain Bolt", "Yohan Blake", "Asafa Powell", "Nesta Carter"],
+    "correct_answer": "Usain Bolt",
+    "distractors": ["Yohan Blake", "Asafa Powell", "Nesta Carter"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "What is the highest point in Jamaica?",
+    "options": ["Blue Mountain Peak", "Dolphin Head", "Don Figuerero Mountains", "Mount Diablo"],
+    "correct_answer": "Blue Mountain Peak",
+    "distractors": ["Dolphin Head", "Don Figuerero Mountains", "Mount Diablo"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Jamaica's famous Blue Mountain Coffee is primarily grown in which region?",
+    "options": ["Blue Mountains", "Pedro Plains", "Cockpit Country", "Liguanea Plain"],
+    "correct_answer": "Blue Mountains",
+    "distractors": ["Pedro Plains", "Cockpit Country", "Liguanea Plain"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Montego Bay is located in which parish of Jamaica?",
+    "options": ["St James", "St Ann", "Portland", "St Mary"],
+    "correct_answer": "St James",
+    "distractors": ["St Ann", "Portland", "St Mary"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Ocho Rios is located in which Jamaican parish?",
+    "options": ["St Ann", "St James", "St Catherine", "Kingston"],
+    "correct_answer": "St Ann",
+    "distractors": ["St James", "St Catherine", "Kingston"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which airport serves Kingston, Jamaica?",
+    "options": ["Norman Manley International Airport", "Sangster International Airport", "Grantley Adams International Airport", "V.C. Bird International Airport"],
+    "correct_answer": "Norman Manley International Airport",
+    "distractors": ["Sangster International Airport", "Grantley Adams International Airport", "V.C. Bird International Airport"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Sangster International Airport is located near which Jamaican city?",
+    "options": ["Montego Bay", "Kingston", "Mandeville", "Port Antonio"],
+    "correct_answer": "Montego Bay",
+    "distractors": ["Kingston", "Mandeville", "Port Antonio"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Jamaica's Parliament is bicameral. What are its two chambers called?",
+    "options": ["House of Representatives and Senate", "House of Commons and House of Lords", "National Assembly and Council of States", "Congress and Senate"],
+    "correct_answer": "House of Representatives and Senate",
+    "distractors": ["House of Commons and House of Lords", "National Assembly and Council of States", "Congress and Senate"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Who was the Prime Minister of Jamaica as of 2022?",
+    "options": ["Andrew Holness", "Portia Simpson-Miller", "Bruce Golding", "P. J. Patterson"],
+    "correct_answer": "Andrew Holness",
+    "distractors": ["Portia Simpson-Miller", "Bruce Golding", "P. J. Patterson"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Who was the Prime Minister of Jamaica in 2014?",
+    "options": ["Portia Simpson-Miller", "Andrew Holness", "Bruce Golding", "Michael Manley"],
+    "correct_answer": "Portia Simpson-Miller",
+    "distractors": ["Andrew Holness", "Bruce Golding", "Michael Manley"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which party won Jamaica's 2020 general election?",
+    "options": ["Jamaica Labour Party", "People's National Party", "National Democratic Movement", "United People's Party"],
+    "correct_answer": "Jamaica Labour Party",
+    "distractors": ["People's National Party", "National Democratic Movement", "United People's Party"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "In Rastafari, which Ethiopian emperor is revered as a key figure?",
+    "options": ["Haile Selassie I", "Menelik II", "Yohannes IV", "Tewodros II"],
+    "correct_answer": "Haile Selassie I",
+    "distractors": ["Menelik II", "Yohannes IV", "Tewodros II"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Reggae Sumfest, a major Jamaican music festival, is held in which city?",
+    "options": ["Montego Bay", "Kingston", "Negril", "Falmouth"],
+    "correct_answer": "Montego Bay",
+    "distractors": ["Kingston", "Negril", "Falmouth"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "What is the official language of Jamaica?",
+    "options": ["English", "Spanish", "French", "Dutch"],
+    "correct_answer": "English",
+    "distractors": ["Spanish", "French", "Dutch"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Jamaican Creole is commonly referred to as what?",
+    "options": ["Patois", "Gaelic", "Afrikaans", "Catalan"],
+    "correct_answer": "Patois",
+    "distractors": ["Gaelic", "Afrikaans", "Catalan"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Jamaica is located in which sea?",
+    "options": ["Caribbean Sea", "Mediterranean Sea", "Baltic Sea", "Arabian Sea"],
+    "correct_answer": "Caribbean Sea",
+    "distractors": ["Mediterranean Sea", "Baltic Sea", "Arabian Sea"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Jamaica is part of which island group in the Caribbean?",
+    "options": ["Greater Antilles", "Lesser Antilles", "Leeward Islands", "Canary Islands"],
+    "correct_answer": "Greater Antilles",
+    "distractors": ["Lesser Antilles", "Leeward Islands", "Canary Islands"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which 2012 hurricane brought heavy rain to Jamaica before impacting Cuba and the United States?",
+    "options": ["Hurricane Sandy", "Hurricane Irma", "Hurricane Dorian", "Hurricane Maria"],
+    "correct_answer": "Hurricane Sandy",
+    "distractors": ["Hurricane Irma", "Hurricane Dorian", "Hurricane Maria"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "The Jamaican bobsled team first appeared at which Winter Olympics?",
+    "options": ["1988 Calgary", "1992 Albertville", "2002 Salt Lake City", "2010 Vancouver"],
+    "correct_answer": "1988 Calgary",
+    "distractors": ["1992 Albertville", "2002 Salt Lake City", "2010 Vancouver"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Which Jamaican novelist wrote the book \"A Brief History of Seven Killings\" (published in 2014)?",
+    "options": ["Marlon James", "Claude McKay", "Roger Mais", "Lorna Goodison"],
+    "correct_answer": "Marlon James",
+    "distractors": ["Claude McKay", "Roger Mais", "Lorna Goodison"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "What is Jamaica's national bird?",
+    "options": ["Doctor bird", "Bald eagle", "Kiwi", "Atlantic puffin"],
+    "correct_answer": "Doctor bird",
+    "distractors": ["Bald eagle", "Kiwi", "Atlantic puffin"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "Jamaica is a member of which Caribbean regional organization founded in 1973?",
+    "options": ["CARICOM", "ASEAN", "MERCOSUR", "African Union"],
+    "correct_answer": "CARICOM",
+    "distractors": ["ASEAN", "MERCOSUR", "African Union"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "What is Jamaica's largest city by population?",
+    "options": ["Kingston", "Montego Bay", "May Pen", "Savanna-la-Mar"],
+    "correct_answer": "Kingston",
+    "distractors": ["Montego Bay", "May Pen", "Savanna-la-Mar"],
+    "country": "Jamaica"
+  },
+  {
+    "question": "The Blue and John Crow Mountains in Jamaica were inscribed as a UNESCO site in 2015. What type of designation is it?",
+    "options": ["UNESCO World Heritage Site", "UNESCO Biosphere Reserve", "UNESCO Creative City", "UNESCO Global Geopark"],
+    "correct_answer": "UNESCO World Heritage Site",
+    "distractors": ["UNESCO Biosphere Reserve", "UNESCO Creative City", "UNESCO Global Geopark"],
+    "country": "Jamaica"
+  }
+]
