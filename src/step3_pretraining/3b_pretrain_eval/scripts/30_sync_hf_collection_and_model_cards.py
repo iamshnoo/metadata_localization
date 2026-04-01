@@ -34,6 +34,14 @@ PROJECT_PATTERNS = [
     re.compile(r"^combined_only_(url|url_country|url_continent|country|continent)_with_metadata_1b(?:_step(2k|4k|8k))?$"),
 ]
 
+EXTRA_COLLECTION_ITEMS = [
+    {
+        "item_id": f"{OWNER}/qa_metacul",
+        "item_type": "dataset",
+        "note": "Evaluation dataset | 800-question QA benchmark",
+    }
+]
+
 
 @dataclass
 class RepoSpec:
@@ -436,6 +444,7 @@ def main() -> int:
         "collection_slug": collection_ref,
         "synced_at": datetime.now(timezone.utc).isoformat(),
         "repos": [],
+        "extra_items": [],
     }
 
     for spec in specs:
@@ -477,6 +486,19 @@ def main() -> int:
                 "collection_note": spec.item_note,
             }
         )
+
+    for item in EXTRA_COLLECTION_ITEMS:
+        if args.dry_run:
+            print(f"[dry-run] would add {item['item_id']} to {collection_ref}")
+        else:
+            api.add_collection_item(
+                collection_ref,
+                item["item_id"],
+                item["item_type"],
+                note=item["note"],
+                exists_ok=True,
+            )
+        report["extra_items"].append(item)
 
     report_path = Path(args.write_report)
     report_path.parent.mkdir(parents=True, exist_ok=True)
