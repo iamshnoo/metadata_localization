@@ -1,0 +1,477 @@
+#!/usr/bin/env python3
+import argparse
+import json
+import os
+import re
+import tempfile
+from dataclasses import dataclass
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Optional
+
+import wandb
+from huggingface_hub import HfApi
+
+OWNER = "iamshnoo"
+COLLECTION_TITLE = "Metadata Localization Models"
+COLLECTION_DESCRIPTION = (
+    "Models, checkpoints, and chat variants released for the metadata localization project."
+)
+
+PRETRAIN_LOGS = Path("/scratch/amukher6/pretrain/logs/slurm_logs")
+SFT_LOGS = Path("/scratch/amukher6/metacul/logs/slurm_logs")
+LOCAL_WANDB = Path("/scratch/amukher6/metacul/src/wandb")
+
+STEP_RE = re.compile(r"_step(\d+k)$")
+
+PROJECT_PATTERNS = [
+    re.compile(r"^(africa|america|asia|europe)_(with|without)_metadata_(500m|1b)$"),
+    re.compile(r"^combined_(with|without)_metadata_(500m|1b|3b)(?:_step(2k|4k|8k))?$"),
+    re.compile(r"^combined_(with|without)_metadata_chat$"),
+    re.compile(r"^combined_(with|without)_metadata_3b_chat$"),
+    re.compile(r"^combined_no_(africa|america|asia|europe)_(with|without)_metadata_1b(?:_step(2k|4k|8k))?$"),
+    re.compile(r"^combined_only_(url|url_country|url_continent|country|continent)_with_metadata_1b(?:_step(2k|4k|8k))?$"),
+]
+
+
+@dataclass
+class RepoSpec:
+    repo_id: str
+    repo_name: str
+    stage: str
+    family: str
+    size: Optional[str]
+    metadata_mode: Optional[str]
+    checkpoint: Optional[str]
+    variant_label: str
+    group_order: int
+    item_note: str
+
+
+def is_project_repo(repo_name: str) -> bool:
+    return any(pattern.match(repo_name) for pattern in PROJECT_PATTERNS)
+
+
+def parse_repo_spec(repo_id: str) -> RepoSpec:
+    repo_name = repo_id.split("/", 1)[1]
+    checkpoint = None
+    step_match = STEP_RE.search(repo_name)
+    if step_match:
+        checkpoint = step_match.group(1)
+
+    metadata_mode = None
+    if "_with_metadata" in repo_name:
+        metadata_mode = "with_metadata"
+    elif "_without_metadata" in repo_name:
+        metadata_mode = "without_metadata"
+
+    size = None
+    for candidate in ("500m", "1b", "3b"):
+        if re.search(rf"_{candidate}(?:_|$)", repo_name):
+            size = candidate
+            break
+
+    if repo_name.endswith("_chat"):
+        stage = "sft_chat"
+        group_order = 4
+        family = "chat"
+        variant_label = repo_name.replace("_chat", "").replace("_", " ")
+    elif repo_name.startswith("combined_only_"):
+        stage = "pretrain"
+        group_order = 2
+        family = "metadata_ablation"
+        variant_label = repo_name.replace("combined_only_", "").replace("_with_metadata", "").replace("_", " ")
+    elif repo_name.startswith("combined_no_"):
+        stage = "pretrain"
+        group_order = 3
+        family = "leave_one_out"
+        variant_label = repo_name.replace("combined_no_", "leave out ").replace("_with_metadata", "").replace("_without_metadata", "").replace("_", " ")
+    elif repo_name.startswith("combined_"):
+        stage = "pretrain"
+        group_order = 0
+        family = "global"
+        variant_label = "global combined"
+    else:
+        stage = "pretrain"
+        group_order = 1
+        family = "local_continent"
+        variant_label = repo_name.replace("_with_metadata", "").replace("_without_metadata", "").replace("_", " ")
+
+    note_parts = [family.replace("_", " ").title()]
+    if size:
+        note_parts.append(size.upper())
+    if metadata_mode:
+        note_parts.append(metadata_mode.replace("_", " "))
+    if checkpoint:
+        note_parts.append(f"checkpoint {checkpoint}")
+    if stage == "sft_chat":
+        note_parts.append("chat")
+
+    return RepoSpec(
+        repo_id=repo_id,
+        repo_name=repo_name,
+        stage=stage,
+        family=family,
+        size=size,
+        metadata_mode=metadata_mode,
+        checkpoint=checkpoint,
+        variant_label=variant_label,
+        group_order=group_order,
+        item_note=" | ".join(note_parts),
+    )
+
+
+def sort_key(spec: RepoSpec):
+    step_rank = {None: 10000, "2k": 2000, "4k": 4000, "8k": 8000}.get(spec.checkpoint, 10000)
+    metadata_rank = 0 if spec.metadata_mode == "with_metadata" else 1
+    size_rank = {"500m": 0, "1b": 1, "3b": 2, None: 9}.get(spec.size, 9)
+    return (spec.group_order, size_rank, metadata_rank, spec.variant_label, step_rank, spec.repo_name)
+
+
+def _extract_run_id_from_text(text: str) -> Optional[str]:
+    matches = re.findall(r"wandb\.ai/[^/]+/[^/]+/runs/([a-z0-9]+)", text)
+    if matches:
+        return matches[-1]
+    return None
+
+
+def _matching_logs(base_dir: Path, stem: str) -> list[Path]:
+    candidates = sorted(base_dir.rglob(f"*{stem}*.out")) + sorted(base_dir.rglob(f"*{stem}*.err"))
+    return sorted(candidates, key=lambda p: (p.stat().st_mtime, str(p)))
+
+
+def _latest_matching_log(base_dir: Path, stem: str) -> Optional[Path]:
+    candidates = _matching_logs(base_dir, stem)
+    if not candidates:
+        return None
+    return candidates[-1]
+
+
+def resolve_pretrain_run_path(repo_name: str) -> Optional[str]:
+    base_name = STEP_RE.sub("", repo_name)
+    for log in reversed(_matching_logs(PRETRAIN_LOGS, base_name)):
+        text = log.read_text(errors="ignore")
+        run_id = _extract_run_id_from_text(text)
+        if run_id:
+            return f"{OWNER}/nanotron/{run_id}"
+    return None
+
+
+def resolve_sft_run_path(repo_name: str) -> Optional[str]:
+    if repo_name.endswith("_3b_chat"):
+        adapter_dir = repo_name.replace("_chat", "_sft_lora")
+    else:
+        adapter_dir = repo_name.replace("_chat", "_sft_lora")
+    run_paths = []
+    for debug_log in sorted(LOCAL_WANDB.glob("run-*/logs/debug.log")):
+        text = debug_log.read_text(errors="ignore")
+        if f"/scratch/amukher6/metacul/models/sft/{adapter_dir}" in text:
+            run_id = debug_log.parents[1].name.rsplit("-", 1)[-1]
+            run_paths.append(f"{OWNER}/huggingface/{run_id}")
+    if run_paths:
+        return sorted(run_paths)[-1]
+
+    for log in reversed(_matching_logs(SFT_LOGS, repo_name.replace("_chat", ""))):
+        text = log.read_text(errors="ignore")
+        run_id = _extract_run_id_from_text(text)
+        if run_id:
+            return f"{OWNER}/huggingface/{run_id}"
+    return None
+
+
+def resolve_wandb_run_path(spec: RepoSpec) -> Optional[str]:
+    if spec.stage == "sft_chat":
+        return resolve_sft_run_path(spec.repo_name)
+    return resolve_pretrain_run_path(spec.repo_name)
+
+
+def fmt_number(value) -> str:
+    if value is None:
+        return "n/a"
+    if isinstance(value, bool):
+        return str(value)
+    if isinstance(value, int):
+        return f"{value:,}"
+    if isinstance(value, float):
+        if abs(value) >= 1000:
+            return f"{value:,.2f}"
+        return f"{value:.4f}".rstrip("0").rstrip(".")
+    return str(value)
+
+
+def fmt_duration(seconds) -> str:
+    if seconds is None:
+        return "n/a"
+    seconds = int(seconds)
+    hours, remainder = divmod(seconds, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    return f"{hours}h {minutes}m {seconds}s"
+
+
+def infer_base_model(spec: RepoSpec) -> str:
+    if spec.stage == "sft_chat":
+        if spec.repo_name.endswith("_3b_chat"):
+            return spec.repo_name.replace("_chat", "")
+        return spec.repo_name.replace("_chat", "_1b") if spec.repo_name.endswith("metadata_chat") else spec.repo_name.replace("_chat", "")
+    if spec.size == "500m":
+        return "meta-llama/Llama-3.2-1B (continued pretraining from the 500M downscaled variant setup)"
+    if spec.size == "1b":
+        return "meta-llama/Llama-3.2-1B"
+    if spec.size == "3b":
+        return "meta-llama/Llama-3.2-3B"
+    return "meta-llama/Llama-3.2"
+
+
+def summarize_run(run, spec: RepoSpec) -> dict:
+    info = {
+        "url": run.url,
+        "name": run.name,
+        "state": run.state,
+        "runtime": run.summary.get("_runtime"),
+        "summary": {},
+        "config": {},
+    }
+    if spec.stage == "sft_chat":
+        info["summary"] = {
+            "train/loss": run.summary.get("train/loss"),
+            "train/global_step": run.summary.get("train/global_step"),
+            "train/epoch": run.summary.get("train/epoch"),
+            "train/learning_rate": run.summary.get("train/learning_rate"),
+            "train/grad_norm": run.summary.get("train/grad_norm"),
+        }
+        info["config"] = {
+            "per_device_train_batch_size": run.config.get("per_device_train_batch_size"),
+            "gradient_accumulation_steps": run.config.get("gradient_accumulation_steps"),
+            "learning_rate": run.config.get("learning_rate"),
+            "num_train_epochs": run.config.get("num_train_epochs"),
+            "optim": run.config.get("optim"),
+            "bf16": run.config.get("bf16"),
+            "gradient_checkpointing": run.config.get("gradient_checkpointing"),
+            "use_liger_kernel": run.config.get("use_liger_kernel"),
+        }
+    else:
+        cfg = run.config.get("nanotron_config", {})
+        tokens = cfg.get("tokens", {}) if isinstance(cfg, dict) else {}
+        opt = cfg.get("optimizer", {}) if isinstance(cfg, dict) else {}
+        scheduler = opt.get("learning_rate_scheduler", {}) if isinstance(opt, dict) else {}
+        info["summary"] = {
+            "KPI/train_lm_loss": run.summary.get("KPI/train_lm_loss"),
+            "KPI/train_perplexity": run.summary.get("KPI/train_perplexity"),
+            "KPI/val_loss": run.summary.get("KPI/val_loss"),
+            "KPI/val_perplexity": run.summary.get("KPI/val_perplexity"),
+            "KPI/consumed_tokens/train": run.summary.get("KPI/consumed_tokens/train"),
+            "_step": run.summary.get("_step"),
+        }
+        info["config"] = {
+            "train_steps": tokens.get("train_steps"),
+            "sequence_length": tokens.get("sequence_length"),
+            "micro_batch_size": tokens.get("micro_batch_size"),
+            "batch_accumulation_per_replica": tokens.get("batch_accumulation_per_replica"),
+            "learning_rate": scheduler.get("learning_rate"),
+            "min_decay_lr": scheduler.get("min_decay_lr"),
+            "checkpoint_interval": (cfg.get("checkpoints") or {}).get("checkpoint_interval"),
+        }
+    return info
+
+
+def build_card(spec: RepoSpec, run_info: Optional[dict]) -> str:
+    tags = ["text-generation", "metadata-localization", spec.family.replace("_", "-")]
+    if spec.size:
+        tags.append(spec.size)
+    if spec.metadata_mode:
+        tags.append(spec.metadata_mode.replace("_", "-"))
+    if spec.stage == "sft_chat":
+        tags.extend(["sft", "lora-merged"])
+    else:
+        tags.append("continued-pretraining")
+        if spec.checkpoint:
+            tags.append("intermediate-checkpoint")
+
+    yaml_lines = [
+        "---",
+        "pipeline_tag: text-generation",
+        "library_name: transformers",
+        "tags:",
+    ]
+    yaml_lines.extend([f"- {tag}" for tag in tags])
+    yaml_lines.append("---")
+
+    lines = [*yaml_lines, "", f"# {spec.repo_name}", ""]
+    lines.append("## Summary")
+    lines.append("")
+    if spec.stage == "sft_chat":
+        lines.append(
+            f"This repo contains the merged chat model for the {spec.variant_label} branch of the metadata localization project. "
+            f"It was produced by supervised fine-tuning on the project QA benchmark after continued pretraining."
+        )
+    else:
+        checkpoint_text = f" exported from the {spec.checkpoint} checkpoint" if spec.checkpoint else " at the final 10k-step checkpoint"
+        lines.append(
+            f"This repo contains the {spec.variant_label} model{checkpoint_text} for the metadata localization project. "
+            f"It comes from continued pretraining of a Llama 3.2 base model on the project corpus."
+        )
+    lines.append("")
+
+    lines.append("## Variant Metadata")
+    lines.append("")
+    lines.append(f"- Stage: `{spec.stage}`")
+    lines.append(f"- Family: `{spec.family}`")
+    if spec.size:
+        lines.append(f"- Size: `{spec.size}`")
+    if spec.metadata_mode:
+        lines.append(f"- Metadata condition: `{spec.metadata_mode}`")
+    if spec.checkpoint:
+        lines.append(f"- Checkpoint export: `{spec.checkpoint}`")
+    lines.append(f"- Base model lineage: `{infer_base_model(spec)}`")
+    lines.append("")
+
+    lines.append("## Weights & Biases Provenance")
+    lines.append("")
+    if run_info:
+        lines.append(f"- Run: [{run_info['name']}]({run_info['url']})")
+        lines.append(f"- State: `{run_info['state']}`")
+        lines.append(f"- Runtime: `{fmt_duration(run_info['runtime'])}`")
+    else:
+        lines.append("- No matching W&B run was resolved automatically.")
+    lines.append("")
+
+    if run_info:
+        lines.append("## Run Summary")
+        lines.append("")
+        for key, value in run_info["summary"].items():
+            lines.append(f"- `{key}`: `{fmt_number(value)}`")
+        lines.append("")
+        lines.append("## Training Configuration")
+        lines.append("")
+        for key, value in run_info["config"].items():
+            lines.append(f"- `{key}`: `{fmt_number(value)}`")
+        lines.append("")
+
+    if spec.stage == "sft_chat":
+        lines.append("## SFT Notes")
+        lines.append("")
+        lines.append("- Fine-tuning method: `PEFT / LoRA`")
+        lines.append("- Optimizer: `adamw_bnb_8bit`")
+        lines.append("- `bf16=True`, `gradient_checkpointing=True`, `use_liger_kernel=True`")
+        lines.append("- `per_device_train_batch_size=2`, `gradient_accumulation_steps=8`")
+        lines.append("- LoRA targets: `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj`, `down_proj`")
+        lines.append("")
+
+    lines.append("## Project Context")
+    lines.append("")
+    lines.append(
+        "This model is part of the metadata localization release. Related checkpoints and variants are grouped in the public Hugging Face collection `Metadata Localization Models`."
+    )
+    lines.append("")
+    lines.append(f"Last synced: `{datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}`")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def upload_card(api: HfApi, spec: RepoSpec, card_text: str) -> None:
+    with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf-8") as tmp:
+        tmp.write(card_text)
+        tmp_path = tmp.name
+    try:
+        api.upload_file(
+            path_or_fileobj=tmp_path,
+            path_in_repo="README.md",
+            repo_id=spec.repo_id,
+            repo_type="model",
+            commit_message="Update model card from W&B metadata",
+        )
+    finally:
+        os.unlink(tmp_path)
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Sync HF collection and model cards for metadata localization models")
+    parser.add_argument("--namespace", default=OWNER)
+    parser.add_argument("--collection-title", default=COLLECTION_TITLE)
+    parser.add_argument("--collection-description", default=COLLECTION_DESCRIPTION)
+    parser.add_argument("--include-3b-chat", action="store_true", default=False)
+    parser.add_argument("--skip-cards", action="store_true", default=False)
+    parser.add_argument("--dry-run", action="store_true", default=False)
+    parser.add_argument("--write-report", default="/scratch/amukher6/metacul/results/hf_collection_sync_report.json")
+    args = parser.parse_args()
+
+    token = os.environ.get("HF_TOKEN")
+    if not token:
+        raise RuntimeError("HF_TOKEN must be set")
+
+    api = HfApi(token=token)
+    wandb_api = wandb.Api()
+
+    repos = list(api.list_models(author=args.namespace, full=True))
+    repo_ids = sorted(model.id for model in repos if is_project_repo(model.id.split("/", 1)[1]))
+    if not args.include_3b_chat:
+        repo_ids = [repo_id for repo_id in repo_ids if not repo_id.endswith("_3b_chat")]
+
+    specs = sorted((parse_repo_spec(repo_id) for repo_id in repo_ids), key=sort_key)
+
+    collection = api.create_collection(
+        args.collection_title,
+        namespace=args.namespace,
+        description=args.collection_description,
+        exists_ok=True,
+    )
+    collection = api.update_collection_metadata(
+        collection.slug,
+        title=args.collection_title,
+        description=args.collection_description,
+        private=False,
+        theme="blue",
+    )
+
+    report = {
+        "collection_slug": collection.slug,
+        "synced_at": datetime.now(timezone.utc).isoformat(),
+        "repos": [],
+    }
+
+    for spec in specs:
+        run_path = resolve_wandb_run_path(spec)
+        run_info = None
+        if run_path:
+            try:
+                run = wandb_api.run(run_path)
+                run_info = summarize_run(run, spec)
+            except Exception as exc:  # pragma: no cover
+                run_info = {"error": str(exc), "url": None, "name": run_path, "state": "error", "runtime": None, "summary": {}, "config": {}}
+
+        if not args.skip_cards:
+            card_text = build_card(spec, run_info if run_info and "error" not in run_info else None)
+            if args.dry_run:
+                print(f"[dry-run] would update card for {spec.repo_id}")
+            else:
+                upload_card(api, spec, card_text)
+
+        if args.dry_run:
+            print(f"[dry-run] would add {spec.repo_id} to {collection.slug}")
+        else:
+            api.add_collection_item(collection.slug, spec.repo_id, "model", note=spec.item_note, exists_ok=True)
+
+        report["repos"].append(
+            {
+                "repo_id": spec.repo_id,
+                "stage": spec.stage,
+                "family": spec.family,
+                "size": spec.size,
+                "metadata_mode": spec.metadata_mode,
+                "checkpoint": spec.checkpoint,
+                "wandb_run": run_path,
+                "collection_note": spec.item_note,
+            }
+        )
+
+    report_path = Path(args.write_report)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text(json.dumps(report, indent=2))
+    print(f"collection={collection.slug}")
+    print(f"repos_synced={len(specs)}")
+    print(f"report={report_path}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
