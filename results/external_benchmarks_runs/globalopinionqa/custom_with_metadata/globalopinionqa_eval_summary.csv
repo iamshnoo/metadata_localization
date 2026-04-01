@@ -1,0 +1,2 @@
+variant,status,correct,processed_total,accuracy,skipped,total_rows,error
+custom_with_metadata,ok,3388,8465,0.4002362669816893,1810,10275,

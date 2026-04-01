@@ -1,0 +1,2 @@
+variant,status,correct,processed_total,accuracy,skipped,total_rows,error
+llama3_chat_with_metadata,ok,298,1323,0.2252456538170824,82,1405,

@@ -1,0 +1,21 @@
+question_id,benchmark,subset,country,continent,answered_by_all,custom_with_metadata_correct,custom_with_metadata_incorrect,custom_with_metadata_skipped,custom_without_metadata_correct,custom_without_metadata_incorrect,custom_without_metadata_skipped,llama3_chat_with_metadata_correct,llama3_chat_with_metadata_incorrect,llama3_chat_with_metadata_skipped,llama3_chat_without_metadata_correct,llama3_chat_without_metadata_incorrect,llama3_chat_without_metadata_skipped
+0e4e99188fc8309880efeeb99f53476b856063f2,globalopinionqa,GAS,Canada,America,1,0,-1,0,0,-1,0,1,0,0,1,0,0
+10f50787706709e1bc84e8e8776f9e86f3910d4e,globalopinionqa,GAS,Belgium,Europe,1,0,-1,0,1,0,0,1,0,0,1,0,0
+1e57f66852900af5982c614c6325bf4e938340d1,globalopinionqa,GAS,Germany,Europe,1,0,-1,0,0,-1,0,1,0,0,1,0,0
+24dc0b3fc91c8070bdee150b57f18758fb406abf,globalopinionqa,GAS,Greece,Europe,1,1,0,0,1,0,0,0,-1,0,1,0,0
+29bade1086e1917a62109d6a2f9b260af771c120,globalopinionqa,GAS,Spain,Europe,0,1,0,0,1,0,0,0,0,0,1,0,0
+334252f505d8216fbf6f1b954cdd791c6fd9a236,globalopinionqa,GAS,Belgium,Europe,1,0,-1,0,0,-1,0,0,-1,0,0,-1,0
+490d4b67fd94c33e143fc8c2b7317564c8621ac0,globalopinionqa,GAS,Netherlands,Europe,1,0,-1,0,0,-1,0,1,0,0,1,0,0
+53fe2410053382201a8ed196474f97f750110c48,globalopinionqa,GAS,Sweden,Europe,1,0,-1,0,1,0,0,0,-1,0,0,-1,0
+64d8324521789cc59250a0bf5213c5dea5e86bdf,globalopinionqa,GAS,Greece,Europe,1,0,-1,0,0,-1,0,0,-1,0,0,-1,0
+8286bc5372cb8c8ef8b008c7913f399cc523e89b,globalopinionqa,GAS,Hungary,Europe,0,0,-1,0,0,0,0,0,-1,0,0,-1,0
+94c1009207cc28888ef3722dc6571d6825a3fef5,globalopinionqa,GAS,Australia,,1,0,-1,0,0,-1,0,0,-1,0,0,-1,0
+9e33f08a0d83a2f61dcfbeaa53c47a762490f24b,globalopinionqa,GAS,Sweden,Europe,1,0,-1,0,0,-1,0,0,-1,0,1,0,0
+9feb0f25daacc2c2f63d358c04187b0c9a240ffd,globalopinionqa,GAS,Germany,Europe,1,0,-1,0,0,-1,0,1,0,0,0,-1,0
+a7a8ca6ac99fc2db263b36313959db8e54a25bef,globalopinionqa,GAS,China,Asia,1,1,0,0,1,0,0,0,-1,0,0,-1,0
+c16b0362d0accb6b876a0e8ffbee9a74784a0a66,globalopinionqa,GAS,France,Europe,1,0,-1,0,0,-1,0,0,-1,0,0,-1,0
+c6e95eed3f3641ecda5625137224475415f77d92,globalopinionqa,GAS,India (Current national sample),,1,0,-1,0,1,0,0,0,-1,0,0,-1,0
+c92163179eeb867da498a5c599c907f449fc1c48,globalopinionqa,GAS,France,Europe,1,0,-1,0,0,-1,0,1,0,0,1,0,0
+c9793fbb44916abf9541243c5ab1718b09ef78eb,globalopinionqa,GAS,Denmark,Europe,0,0,0,0,0,-1,0,0,-1,0,0,-1,0
+ce78b71a599280c2b8d546cd579c1e092d703940,globalopinionqa,GAS,Britain,,1,0,-1,0,0,-1,0,1,0,0,1,0,0
+d9e32794e753248a94c3016f44d1be68bfa11d83,globalopinionqa,GAS,Italy,Europe,1,1,0,0,1,0,0,0,-1,0,0,-1,0

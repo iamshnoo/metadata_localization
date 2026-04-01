@@ -1,0 +1,37 @@
+{
+  "rows_written": 2,
+  "rows": [
+    {
+      "model": "custom_tplus",
+      "acc_no_metadata": 0.3284671532846715,
+      "acc_correct_metadata": 0.38848920863309355,
+      "acc_shuffled_metadata": 0.3873239436619718,
+      "acc_adversarial_metadata": 0.4125874125874126,
+      "delta_correct_minus_no": 0.06002205534842203,
+      "delta_shuffled_minus_no": 0.058856790377300294,
+      "delta_adversarial_minus_no": 0.08412025930274108,
+      "flip_rate_correct_vs_no": 0.2890625,
+      "flip_rate_shuffled_vs_no": 0.3282442748091603,
+      "flip_rate_adversarial_vs_no": 0.25,
+      "overlap_correct_vs_no": 128,
+      "overlap_shuffled_vs_no": 131,
+      "overlap_adversarial_vs_no": 132
+    },
+    {
+      "model": "custom_tminus",
+      "acc_no_metadata": 0.4782608695652174,
+      "acc_correct_metadata": 0.45323741007194246,
+      "acc_shuffled_metadata": 0.4357142857142857,
+      "acc_adversarial_metadata": 0.4859154929577465,
+      "delta_correct_minus_no": -0.025023459493274947,
+      "delta_shuffled_minus_no": -0.042546583850931685,
+      "delta_adversarial_minus_no": 0.007654623392529092,
+      "flip_rate_correct_vs_no": 0.28346456692913385,
+      "flip_rate_shuffled_vs_no": 0.2713178294573643,
+      "flip_rate_adversarial_vs_no": 0.25757575757575757,
+      "overlap_correct_vs_no": 127,
+      "overlap_shuffled_vs_no": 129,
+      "overlap_adversarial_vs_no": 132
+    }
+  ]
+}
