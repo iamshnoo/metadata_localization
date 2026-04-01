@@ -48,6 +48,8 @@ SRC_MAP = {
     'src/24_sft_paired_significance.py': 'src/step4_sft/4c_sft_eval/24_sft_paired_significance.py',
     'src/25_sft_eval_external.py': 'src/step4_sft/4c_sft_eval/25_sft_eval_external.py',
     'src/27_build_3b_ppl_eval_list.py': 'src/step3_pretraining/3b_pretrain_eval/27_build_3b_ppl_eval_list.py',
+    'src/28_build_country_continent_only_eval_list.py': 'src/step3_pretraining/3b_pretrain_eval/28_build_country_continent_only_eval_list.py',
+    'src/29_merge_perplexity_csvs.py': 'src/step3_pretraining/3b_pretrain_eval/29_merge_perplexity_csvs.py',
     'src/19_perplexity_plot.py': 'src/step5_plots/19_perplexity_plot.py',
     'src/20_significance_tests.py': 'src/step5_plots/20_significance_tests.py',
     'src/21_url_signal_analysis.py': 'src/step5_plots/21_url_signal_analysis.py',
@@ -61,6 +63,7 @@ SRC_MAP = {
 SLURM_MAP = {
     'slurm/convert_intermediate_3b_to_hf.sbatch': 'src/step3_pretraining/3b_pretrain_eval/scripts/convert_intermediate_3b_to_hf.sbatch',
     'slurm/run_ppl_3b_requested.sbatch': 'src/step3_pretraining/3b_pretrain_eval/scripts/run_ppl_3b_requested.sbatch',
+    'slurm/run_ppl_country_continent_only.sbatch': 'src/step3_pretraining/3b_pretrain_eval/scripts/run_ppl_country_continent_only.sbatch',
     'slurm/upload_models_to_hf.sbatch': 'src/step3_pretraining/3b_pretrain_eval/scripts/upload_models_to_hf.sbatch',
     'slurm/run_sft_3b_with_metadata.sbatch': 'src/step4_sft/4b_sft/scripts/run_sft_3b_with_metadata.sbatch',
     'slurm/run_sft_3b_without_metadata.sbatch': 'src/step4_sft/4b_sft/scripts/run_sft_3b_without_metadata.sbatch',

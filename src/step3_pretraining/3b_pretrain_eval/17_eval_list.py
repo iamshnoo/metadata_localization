@@ -116,6 +116,11 @@ metadata_ablation_test_sets = [
     "combined_only_url_country/with_metadata/",
 ]
 
+metadata_ablation_extra_model_paths = [
+    "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
+    "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
+]
+
 CONTINENT_ABLATION_TEST_DATA_PATH = "/scratch/amukher6/metacul/training_data/meco_datasets/"
 continent_ablation_test_sets = [
     "combined_no_africa/with_metadata/",
@@ -230,6 +235,15 @@ def build_eval_combinations():
         }
         for _, model_path in metadata_models
         for test_set_path in combined_test_paths
+    )
+
+    combinations.extend(
+        {
+            "model_path": model_path,
+            "test_set_path": test_set_path,
+        }
+        for model_path in metadata_ablation_extra_model_paths
+        for test_set_path in metadata_ablation_test_paths + combined_test_paths
     )
 
     continent_ablation_models = (
