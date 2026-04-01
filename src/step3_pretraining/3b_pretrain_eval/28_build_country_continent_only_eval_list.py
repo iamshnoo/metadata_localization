@@ -7,13 +7,28 @@ OUTPUT_JSON = os.path.join(
     RESULTS_DIR, "perplexity", "eval_list_metadata_family_full.json"
 )
 
-models = [
+final_models = [
     "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
     "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
     "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
     "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
     "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
 ]
+
+intermediate_models = []
+for base in [
+    "combined_only_url_with_metadata_1b",
+    "combined_only_url_country_with_metadata_1b",
+    "combined_only_url_continent_with_metadata_1b",
+    "combined_only_country_with_metadata_1b",
+    "combined_only_continent_with_metadata_1b",
+]:
+    for step in [2, 4, 8]:
+        intermediate_models.append(
+            f"/scratch/amukher6/metacul/models/ablation_intermediates/metadata/{base}_step{step}k"
+        )
+
+models = final_models + intermediate_models
 
 test_sets = [
     "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",

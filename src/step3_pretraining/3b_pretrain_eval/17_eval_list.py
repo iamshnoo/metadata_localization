@@ -126,6 +126,15 @@ metadata_ablation_extra_model_paths = [
     "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
 ]
 
+metadata_ablation_extra_intermediate_model_paths = [
+    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step2k",
+    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step4k",
+    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step8k",
+    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step2k",
+    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step4k",
+    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step8k",
+]
+
 CONTINENT_ABLATION_TEST_DATA_PATH = "/scratch/amukher6/metacul/training_data/meco_datasets/"
 continent_ablation_test_sets = [
     "combined_no_africa/with_metadata/",
@@ -261,6 +270,19 @@ def build_eval_combinations():
             "test_set_path": test_set_path,
         }
         for model_path in metadata_ablation_extra_model_paths
+        for test_set_path in (
+            metadata_ablation_test_paths
+            + combined_test_paths
+            + metadata_ablation_extra_test_paths
+        )
+    )
+
+    combinations.extend(
+        {
+            "model_path": model_path,
+            "test_set_path": test_set_path,
+        }
+        for model_path in metadata_ablation_extra_intermediate_model_paths
         for test_set_path in (
             metadata_ablation_test_paths
             + combined_test_paths

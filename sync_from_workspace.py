@@ -64,6 +64,7 @@ SLURM_MAP = {
     'slurm/convert_intermediate_3b_to_hf.sbatch': 'src/step3_pretraining/3b_pretrain_eval/scripts/convert_intermediate_3b_to_hf.sbatch',
     'slurm/run_ppl_3b_requested.sbatch': 'src/step3_pretraining/3b_pretrain_eval/scripts/run_ppl_3b_requested.sbatch',
     'slurm/run_ppl_country_continent_only.sbatch': 'src/step3_pretraining/3b_pretrain_eval/scripts/run_ppl_country_continent_only.sbatch',
+    'slurm/convert_intermediate_1b_metadata_family.sbatch': 'src/step3_pretraining/3b_pretrain_eval/scripts/convert_intermediate_1b_metadata_family.sbatch',
     'slurm/upload_models_to_hf.sbatch': 'src/step3_pretraining/3b_pretrain_eval/scripts/upload_models_to_hf.sbatch',
     'slurm/run_sft_3b_with_metadata.sbatch': 'src/step4_sft/4b_sft/scripts/run_sft_3b_with_metadata.sbatch',
     'slurm/run_sft_3b_without_metadata.sbatch': 'src/step4_sft/4b_sft/scripts/run_sft_3b_without_metadata.sbatch',
