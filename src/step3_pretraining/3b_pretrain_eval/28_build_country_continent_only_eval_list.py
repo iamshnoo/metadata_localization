@@ -3,19 +3,26 @@ import json
 import os
 
 RESULTS_DIR = "/scratch/amukher6/metacul/results"
-OUTPUT_JSON = os.path.join(RESULTS_DIR, "perplexity", "eval_list_country_continent_only.json")
+OUTPUT_JSON = os.path.join(
+    RESULTS_DIR, "perplexity", "eval_list_metadata_family_full.json"
+)
 
 models = [
-    "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
+    "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+    "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+    "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
     "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
+    "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
 ]
 
 test_sets = [
     "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",
-    "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
     "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/",
-    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+    "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
     "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+    "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/",
+    "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/",
 ]
 
 rows = [
