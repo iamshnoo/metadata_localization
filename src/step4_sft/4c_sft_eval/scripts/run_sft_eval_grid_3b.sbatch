@@ -14,6 +14,9 @@
 set -euo pipefail
 
 mkdir -p /scratch/amukher6/metacul/logs/slurm_logs
+set -a
+source /scratch/amukher6/babel/llm-languages/.env >/dev/null 2>&1
+set +a
 source /home/amukher6/nanotron-env/bin/activate
 cd /scratch/amukher6/metacul/src
 
