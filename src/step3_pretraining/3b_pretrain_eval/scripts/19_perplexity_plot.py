@@ -3405,7 +3405,7 @@ def plot_token_efficiency_global_ppl():
             }
         )
 
-    axes[0].set_ylabel("Matched global PPL (↓ better)", fontsize=18)
+    axes[0].set_ylabel("Perplexity (↓ better)", fontsize=18)
 
     legend_handles = [
         Line2D([], [], color=colors_map["T+"], marker=markers_map["T+"], linestyle="-", linewidth=2.4, markersize=7.5, markeredgecolor="black", label="T+"),
