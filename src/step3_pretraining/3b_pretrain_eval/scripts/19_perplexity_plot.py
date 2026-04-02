@@ -3387,7 +3387,7 @@ def plot_token_efficiency_global_ppl():
         else:
             savings_frac = np.nan
 
-        ax.set_title(size_label, fontsize=15, weight="bold", y=1.01, bbox=bbox_props)
+        ax.set_title(size_label, fontsize=15, weight="bold", y=0.94, pad=2, bbox=bbox_props)
         ax.set_xlabel("Training tokens (B)", fontsize=18)
         ax.set_xticks(token_ticks)
         ax.set_xticklabels(tick_labels, fontsize=14)
