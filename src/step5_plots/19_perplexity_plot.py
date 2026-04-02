@@ -69,6 +69,14 @@ def _write_plot_csv(output_dir, plot_index, df):
     df.to_csv(output_path, index=False)
 
 
+def _has_finite_values(*arrays):
+    for arr in arrays:
+        values = np.asarray(arr, dtype=float)
+        if np.isfinite(values).any():
+            return True
+    return False
+
+
 def _load_significance_map(path, key_fields):
     if not os.path.exists(path):
         return {}
@@ -797,18 +805,49 @@ def plot_cross_continent_generalization():
         with_without = _matrix("with_metadata", "without_metadata", size)
         without_without = _matrix("without_metadata", "without_metadata", size)
 
+        if not _has_finite_values(
+            with_with.values,
+            without_with.values,
+            with_without.values,
+            without_without.values,
+        ):
+            print(f"No cross-continent records found for size={size}; skipping plot4.")
+            continue
+
         delta_with = without_with - with_with
         delta_without = without_without - with_without
 
         avg_delta_with = delta_with.mean(axis=0)
         avg_delta_without = delta_without.mean(axis=0)
 
-        fig, axes = plt.subplots(2, 4, figsize=(20, 10))
         value_min = np.nanmin([with_with.values, without_with.values, with_without.values, without_without.values])
         value_max = np.nanmax([with_with.values, without_with.values, with_without.values, without_without.values])
-        delta_max = np.nanmax([np.abs(delta_with.values), np.abs(delta_without.values)])
-        bar_min = float(np.nanmin([avg_delta_with.values, avg_delta_without.values]))
-        bar_max = float(np.nanmax([avg_delta_with.values, avg_delta_without.values]))
+        if not np.isfinite(value_min) or not np.isfinite(value_max):
+            print(f"Non-finite cross-continent value range for size={size}; skipping plot4.")
+            continue
+        if value_min == value_max:
+            value_min -= 1e-6
+            value_max += 1e-6
+
+        if _has_finite_values(delta_with.values, delta_without.values):
+            delta_max = np.nanmax([np.abs(delta_with.values), np.abs(delta_without.values)])
+            if not np.isfinite(delta_max) or delta_max == 0:
+                delta_max = 1e-6
+        else:
+            delta_max = 1e-6
+
+        if _has_finite_values(avg_delta_with.values, avg_delta_without.values):
+            bar_min = float(np.nanmin([avg_delta_with.values, avg_delta_without.values]))
+            bar_max = float(np.nanmax([avg_delta_with.values, avg_delta_without.values]))
+            if not np.isfinite(bar_min) or not np.isfinite(bar_max):
+                bar_min, bar_max = -1.0, 1.0
+            elif bar_min == bar_max:
+                bar_min -= 0.5
+                bar_max += 0.5
+        else:
+            bar_min, bar_max = -1.0, 1.0
+
+        fig, axes = plt.subplots(2, 4, figsize=(20, 10))
 
         bbox_props = dict(
             facecolor="lightgrey",
@@ -1305,9 +1344,14 @@ def plot_cross_continent_asymmetry():
 
     for size in size_order:
         base = _matrix(size)
+        if not _has_finite_values(base.values):
+            print(f"No asymmetry records found for size={size}; skipping plot5.")
+            continue
         asym = base - base.T
         asym_values = asym.values
         asym_max = np.nanmax(np.abs(asym_values))
+        if not np.isfinite(asym_max) or asym_max == 0:
+            asym_max = 1e-6
 
         fig, ax = plt.subplots(figsize=(8, 6))
         bbox_props = dict(
@@ -2049,12 +2093,19 @@ def plot_metadata_ablations():
         all_values = []
         for ax, (panel_key, title) in zip(axes, panels):
             series, series_ci = _series_for_panel(panel_key, model_keys, own_mode)
-            for key, values in series.items():
+            draw_order = [
+                key
+                for key in model_keys
+                if key not in {"combined_with", "combined_without"}
+            ] + [key for key in model_keys if key in {"combined_with", "combined_without"}]
+            for key in draw_order:
+                values = series[key]
                 ci_lows, ci_highs = series_ci[key]
                 x_vals = np.arange(len(step_labels))
                 y_vals = np.array(values, dtype=float)
                 lo_vals = np.array(ci_lows, dtype=float)
                 hi_vals = np.array(ci_highs, dtype=float)
+                is_global = key in {"combined_with", "combined_without"}
                 ax.plot(
                     x_vals,
                     y_vals,
@@ -2062,11 +2113,11 @@ def plot_metadata_ablations():
                     color=colors[key],
                     linestyle=linestyles[key],
                     label=labels[key],
-                    linewidth=2,
-                    markersize=6,
+                    linewidth=2.6 if is_global else 2,
+                    markersize=6.5 if is_global else 6,
                     markeredgecolor="black",
                     markeredgewidth=0.6,
-                    zorder=3,
+                    zorder=5 if is_global else 3,
                 )
                 mask = ~np.isnan(y_vals) & ~np.isnan(lo_vals) & ~np.isnan(hi_vals)
                 if np.any(mask):
@@ -2075,12 +2126,12 @@ def plot_metadata_ablations():
                         lo_vals,
                         hi_vals,
                         color=colors[key],
-                        alpha=0.35,
+                        alpha=0.22 if is_global else 0.35,
                         linewidth=0.4,
                         edgecolor=colors[key],
                         where=mask,
                         interpolate=True,
-                        zorder=1,
+                        zorder=2 if is_global else 1,
                     )
                 all_values.extend([v for v in values if not np.isnan(v)])
             title_y_this = title_y
@@ -2216,42 +2267,59 @@ def plot_metadata_family_full_grid():
 
     tests = [
         (
-            "URL-only\n(I+)",
+            "URL-only (I+)",
             "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",
         ),
         (
-            "URL+Country\n(I+)",
+            "URL+Country (I+)",
             "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/",
         ),
         (
-            "URL+Continent\n(I+)",
+            "URL+Continent (I+)",
             "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
         ),
         (
-            "Country-only\n(I+)",
+            "Country-only (I+)",
             "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/",
         ),
         (
-            "Continent-only\n(I+)",
+            "Continent-only (I+)",
             "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/",
         ),
         (
-            "Global metadata\n(I+)",
+            "Global metadata (I+)",
             "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
         ),
         (
-            "Global no-metadata\n(I-)",
+            "Global no-metadata (I-)",
             "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
         ),
     ]
 
     model_groups = {
+        "combined_with": {
+            "label": "Global [URL][Country][Continent] (T+)",
+            "final": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
+            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step{step}k",
+            "color": "#2b8c66",
+            "marker": "o",
+            "linestyle": "--",
+        },
+        "combined_without": {
+            "label": "Global (T-)",
+            "final": "/scratch/amukher6/metacul/models/combined_without_metadata_1b",
+            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step{step}k",
+            "color": "#7f7f7f",
+            "marker": "s",
+            "linestyle": "--",
+        },
         "url": {
             "label": "URL-only [URL] (T+)",
             "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
             "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step{step}k",
             "color": "#f4a3a3",
             "marker": "D",
+            "linestyle": "-",
         },
         "url_country": {
             "label": "URL+Country [URL][Country] (T+)",
@@ -2259,6 +2327,7 @@ def plot_metadata_family_full_grid():
             "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step{step}k",
             "color": "#b8a1d9",
             "marker": "v",
+            "linestyle": "-",
         },
         "url_continent": {
             "label": "URL+Continent [URL][Continent] (T+)",
@@ -2266,20 +2335,23 @@ def plot_metadata_family_full_grid():
             "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step{step}k",
             "color": "#6baed6",
             "marker": "^",
+            "linestyle": "-",
         },
         "country_only": {
             "label": "Country-only [Country] (T+)",
             "final": "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
             "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step{step}k",
             "color": "#f0c36d",
-            "marker": "s",
+            "marker": "P",
+            "linestyle": "-",
         },
         "continent_only": {
             "label": "Continent-only [Continent] (T+)",
             "final": "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
             "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step{step}k",
-            "color": "#5fae78",
+            "color": "#74c476",
             "marker": "o",
+            "linestyle": "-",
         },
     }
 
@@ -2351,23 +2423,31 @@ def plot_metadata_family_full_grid():
         return series
 
     def _draw_series(ax, title, series_map):
-        for key, cfg in model_groups.items():
+        draw_order = [
+            key
+            for key in model_groups
+            if key not in {"combined_with", "combined_without"}
+        ] + ["combined_with", "combined_without"]
+        for key in draw_order:
+            cfg = model_groups[key]
             y_vals, lo_vals, hi_vals = series_map[key]
             valid = ~np.isnan(y_vals)
             if not np.any(valid):
                 continue
             x_vals = np.arange(len(step_labels))
+            is_global = key in {"combined_with", "combined_without"}
             ax.plot(
                 x_vals,
                 y_vals,
                 color=cfg["color"],
                 marker=cfg["marker"],
-                linewidth=2,
-                markersize=6,
+                linestyle=cfg["linestyle"],
+                linewidth=2.6 if is_global else 2,
+                markersize=6.5 if is_global else 6,
                 markeredgecolor="black",
                 markeredgewidth=0.6,
                 label=cfg["label"],
-                zorder=3,
+                zorder=5 if is_global else 3,
             )
             band_mask = ~np.isnan(y_vals) & ~np.isnan(lo_vals) & ~np.isnan(hi_vals)
             if np.any(band_mask):
@@ -2376,12 +2456,12 @@ def plot_metadata_family_full_grid():
                     lo_vals,
                     hi_vals,
                     color=cfg["color"],
-                    alpha=0.2,
+                    alpha=0.14 if is_global else 0.2,
                     linewidth=0.4,
                     edgecolor=cfg["color"],
                     where=band_mask,
                     interpolate=True,
-                    zorder=1,
+                    zorder=2 if is_global else 1,
                 )
             all_values.extend([v for v in y_vals if not np.isnan(v)])
 
@@ -2389,8 +2469,7 @@ def plot_metadata_family_full_grid():
             facecolor="lightgrey",
             edgecolor="grey",
             alpha=0.7,
-            boxstyle="round",
-            pad=0.3,
+            boxstyle="round,pad=0.45",
         )
         ax.set_title(title, fontsize=title_fs, weight="bold", pad=6, bbox=bbox_props)
         ax.set_xticks(np.arange(len(step_labels)))
@@ -2401,12 +2480,12 @@ def plot_metadata_family_full_grid():
         ax.set_ylim(bottom=8.5)
 
     main_panels = [
-        ("Avg over family tests\n(I+)", _series_for_own_average()),
-        ("Global metadata\n(I+)", _series_for_test_path(tests[5][1])),
-        ("Global no-metadata\n(I-)", _series_for_test_path(tests[6][1])),
+        ("Avg over family tests (I+)", _series_for_own_average()),
+        ("Global metadata (I+)", _series_for_test_path(tests[5][1])),
+        ("Global no-metadata (I-)", _series_for_test_path(tests[6][1])),
     ]
 
-    fig, axes = plt.subplots(1, 3, figsize=(14, 5), sharey=True)
+    fig, axes = plt.subplots(1, 3, figsize=(15.5, 5), sharey=True)
     for ax, (title, series_map) in zip(axes, main_panels):
         _draw_series(ax, title, series_map)
 
@@ -2424,7 +2503,7 @@ def plot_metadata_family_full_grid():
             [],
             color=cfg["color"],
             marker=cfg["marker"],
-            linestyle="-",
+            linestyle=cfg["linestyle"],
             linewidth=2,
             markeredgecolor="black",
             label=cfg["label"],
@@ -2440,15 +2519,15 @@ def plot_metadata_family_full_grid():
         edgecolor="black",
         fontsize=legend_fs,
         loc="upper center",
-        ncol=3,
-        bbox_to_anchor=(0.5, 0.99),
+        ncol=4,
+        bbox_to_anchor=(0.5, 1.04),
     )
 
     output_dir = os.path.join(PLOTS_DIR, "plot10")
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, "perplexity_metadata_family_main_1b.pdf")
     plt.tight_layout()
-    plt.subplots_adjust(top=0.78, bottom=0.12)
+    plt.subplots_adjust(top=0.74, bottom=0.12)
     plt.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.01)
     plt.close(fig)
 
@@ -2478,7 +2557,7 @@ def plot_metadata_family_full_grid():
             [],
             color=cfg["color"],
             marker=cfg["marker"],
-            linestyle="-",
+            linestyle=cfg["linestyle"],
             linewidth=2,
             markeredgecolor="black",
             label=cfg["label"],
@@ -2494,7 +2573,7 @@ def plot_metadata_family_full_grid():
         edgecolor="black",
         fontsize=legend_fs,
         loc="upper center",
-        ncol=3,
+        ncol=4,
         bbox_to_anchor=(0.5, 0.995),
     )
 
