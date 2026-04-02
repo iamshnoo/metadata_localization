@@ -2256,7 +2256,8 @@ def plot_metadata_family_full_grid():
     #   /scratch/amukher6/metacul/results/plots/plot10/perplexity_metadata_family_main_1b.pdf
     #   /scratch/amukher6/metacul/results/plots/plot11/perplexity_metadata_family_full_grid_1b.pdf
     df = _load_perplexity_df()
-    pairs = set()
+    pairs_main = set()
+    pairs_appendix = set()
 
     steps = [2000, 4000, 8000, 10000]
     step_labels = ["2k", "4k", "8k", "10k"]
@@ -2357,9 +2358,10 @@ def plot_metadata_family_full_grid():
 
     all_values = []
 
-    def _series_for_test_path(test_path):
+    def _series_for_test_path(test_path, keys, pair_sink):
         series = {}
-        for key, cfg in model_groups.items():
+        for key in keys:
+            cfg = model_groups[key]
             y_vals = []
             lo_vals = []
             hi_vals = []
@@ -2369,7 +2371,7 @@ def plot_metadata_family_full_grid():
                     if step == 10000
                     else cfg["steps"].format(step=step // 1000)
                 )
-                pairs.add((model_path, test_path))
+                pair_sink.add((model_path, test_path))
                 mean, ci_low, ci_high = _lookup_with_ci(df, model_path, test_path)
                 y_vals.append(mean)
                 lo_vals.append(ci_low)
@@ -2383,9 +2385,10 @@ def plot_metadata_family_full_grid():
 
     own_test_paths = [path for _, path in tests[:5]]
 
-    def _series_for_own_average():
+    def _series_for_own_average(keys, pair_sink):
         series = {}
-        for key, cfg in model_groups.items():
+        for key in keys:
+            cfg = model_groups[key]
             y_vals = []
             lo_vals = []
             hi_vals = []
@@ -2397,7 +2400,7 @@ def plot_metadata_family_full_grid():
                 )
                 rows = []
                 for test_path in own_test_paths:
-                    pairs.add((model_path, test_path))
+                    pair_sink.add((model_path, test_path))
                     row = df[
                         (df["model_path"] == model_path)
                         & (df["test_set_path"] == test_path)
@@ -2422,12 +2425,9 @@ def plot_metadata_family_full_grid():
             )
         return series
 
-    def _draw_series(ax, title, series_map):
-        draw_order = [
-            key
-            for key in model_groups
-            if key not in {"combined_with", "combined_without"}
-        ] + ["combined_with", "combined_without"]
+    def _draw_series(ax, title, series_map, keys):
+        draw_order = [key for key in keys if key not in {"combined_with", "combined_without"}]
+        draw_order += [key for key in keys if key in {"combined_with", "combined_without"}]
         for key in draw_order:
             cfg = model_groups[key]
             y_vals, lo_vals, hi_vals = series_map[key]
@@ -2480,14 +2480,26 @@ def plot_metadata_family_full_grid():
         ax.set_ylim(bottom=8.5)
 
     main_panels = [
-        ("Avg over family tests (I+)", _series_for_own_average()),
-        ("Global metadata (I+)", _series_for_test_path(tests[5][1])),
-        ("Global no-metadata (I-)", _series_for_test_path(tests[6][1])),
+        ("Avg over family tests (I+)", own_test_paths[0], "own_average"),
+        ("Global metadata (I+)", tests[5][1], "test_path"),
+        ("Global no-metadata (I-)", tests[6][1], "test_path"),
     ]
+    main_model_keys = [
+        "url",
+        "country_only",
+        "continent_only",
+        "combined_with",
+        "combined_without",
+    ]
+    appendix_model_keys = list(model_groups.keys())
 
     fig, axes = plt.subplots(1, 3, figsize=(15.5, 5), sharey=True)
-    for ax, (title, series_map) in zip(axes, main_panels):
-        _draw_series(ax, title, series_map)
+    for ax, (title, payload, mode) in zip(axes, main_panels):
+        if mode == "own_average":
+            series_map = _series_for_own_average(main_model_keys, pairs_main)
+        else:
+            series_map = _series_for_test_path(payload, main_model_keys, pairs_main)
+        _draw_series(ax, title, series_map, main_model_keys)
 
     if all_values:
         y_max = max(all_values)
@@ -2508,7 +2520,8 @@ def plot_metadata_family_full_grid():
             markeredgecolor="black",
             label=cfg["label"],
         )
-        for cfg in model_groups.values()
+        for key in main_model_keys
+        for cfg in [model_groups[key]]
     ]
     fig.legend(
         handles=legend_handles,
@@ -2536,8 +2549,8 @@ def plot_metadata_family_full_grid():
     appendix_values = []
 
     for ax, (title, test_path) in zip(axes, tests):
-        series_map = _series_for_test_path(test_path)
-        _draw_series(ax, title, series_map)
+        series_map = _series_for_test_path(test_path, appendix_model_keys, pairs_appendix)
+        _draw_series(ax, title, series_map, appendix_model_keys)
         for y_vals, _, _ in series_map.values():
             appendix_values.extend([v for v in y_vals if not np.isnan(v)])
 
@@ -2562,7 +2575,8 @@ def plot_metadata_family_full_grid():
             markeredgecolor="black",
             label=cfg["label"],
         )
-        for cfg in model_groups.values()
+        for key in appendix_model_keys
+        for cfg in [model_groups[key]]
     ]
     fig.legend(
         handles=legend_handles,
@@ -2585,9 +2599,10 @@ def plot_metadata_family_full_grid():
     plt.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.01)
     plt.close(fig)
 
-    subset = _subset_by_pairs(df, pairs)
-    _write_plot_csv(os.path.join(PLOTS_DIR, "plot10"), 10, subset)
-    _write_plot_csv(output_dir, 11, subset)
+    subset_main = _subset_by_pairs(df, pairs_main)
+    subset_appendix = _subset_by_pairs(df, pairs_appendix)
+    _write_plot_csv(os.path.join(PLOTS_DIR, "plot10"), 10, subset_main)
+    _write_plot_csv(output_dir, 11, subset_appendix)
 
 
 def plot_leave_one_out_ablations():
@@ -2857,6 +2872,293 @@ def plot_leave_one_out_ablations():
     _write_plot_csv(output_dir, 7, subset)
 
 
+def _estimate_llama_params_from_config(config_path):
+    with open(config_path, "r", encoding="utf-8") as f:
+        cfg = json.load(f)
+
+    hidden = int(cfg["hidden_size"])
+    intermediate = int(cfg["intermediate_size"])
+    layers = int(cfg["num_hidden_layers"])
+    vocab = int(cfg["vocab_size"])
+
+    # Llama-style dense blocks with untied input/output embeddings.
+    per_layer = 4 * hidden * hidden + 3 * hidden * intermediate + 2 * hidden
+    total_params = layers * per_layer + 2 * vocab * hidden + hidden
+    return total_params
+
+
+def _load_qa_accuracy_from_jsonl(results_dir, metadata_label, slugs):
+    correct = 0
+    total = 0
+    used_slugs = []
+
+    for slug in slugs:
+        path = os.path.join(
+            results_dir, f"qa_metacul_eval_{metadata_label}_custom_{slug}_c0.jsonl"
+        )
+        if not os.path.exists(path):
+            continue
+        file_total = 0
+        with open(path, "r", encoding="utf-8") as f:
+            for line in f:
+                if not line.strip():
+                    continue
+                row = json.loads(line)
+                processed_answer = row.get("processed_answer")
+                if processed_answer is None:
+                    continue
+                is_correct = row.get("is_correct")
+                if is_correct is None:
+                    is_correct = processed_answer == row.get("correct_answer")
+                total += 1
+                file_total += 1
+                correct += int(bool(is_correct))
+        if file_total > 0:
+            used_slugs.append(slug)
+
+    accuracy = correct / total if total else np.nan
+    return accuracy, correct, total, used_slugs
+
+
+def _list_usable_qa_slugs(results_dir, metadata_label):
+    usable = set()
+    pattern = re.compile(rf"qa_metacul_eval_{metadata_label}_custom_(.+)_c0\.jsonl$")
+    for filename in os.listdir(results_dir):
+        match = pattern.match(filename)
+        if not match:
+            continue
+        slug = match.group(1)
+        path = os.path.join(results_dir, filename)
+        with open(path, "r", encoding="utf-8") as f:
+            for line in f:
+                if not line.strip():
+                    continue
+                row = json.loads(line)
+                if row.get("processed_answer") is not None:
+                    usable.add(slug)
+                    break
+    return usable
+
+
+def plot_compute_tradeoff_global_models():
+    # Plot 12: 1B/3B global models, matched PPL and QA accuracy vs estimated FLOPs.
+    # QA currently uses the strict intersection of URL subsets already available across
+    # all four final custom chat models.
+    df = _load_perplexity_df()
+
+    model_specs = [
+        {
+            "size": "1B",
+            "train_tag": "T+",
+            "label": "1B T+",
+            "color": "#1b9e77",
+            "marker": "o",
+            "model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
+            "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+            "config_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b/config.json",
+            "results_dir": "/scratch/amukher6/metacul/results/downstream",
+            "results_metadata_label": "with_metadata",
+        },
+        {
+            "size": "1B",
+            "train_tag": "T-",
+            "label": "1B T-",
+            "color": "#d95f02",
+            "marker": "o",
+            "model_path": "/scratch/amukher6/metacul/models/combined_without_metadata_1b",
+            "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+            "config_path": "/scratch/amukher6/metacul/models/combined_without_metadata_1b/config.json",
+            "results_dir": "/scratch/amukher6/metacul/results/downstream",
+            "results_metadata_label": "without_metadata",
+        },
+        {
+            "size": "3B",
+            "train_tag": "T+",
+            "label": "3B T+",
+            "color": "#1b9e77",
+            "marker": "s",
+            "model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_3b",
+            "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+            "config_path": "/scratch/amukher6/metacul/models/combined_with_metadata_3b/config.json",
+            "results_dir": "/scratch/amukher6/metacul/results/downstream_3b",
+            "results_metadata_label": "with_metadata",
+        },
+        {
+            "size": "3B",
+            "train_tag": "T-",
+            "label": "3B T-",
+            "color": "#d95f02",
+            "marker": "s",
+            "model_path": "/scratch/amukher6/metacul/models/combined_without_metadata_3b",
+            "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+            "config_path": "/scratch/amukher6/metacul/models/combined_without_metadata_3b/config.json",
+            "results_dir": "/scratch/amukher6/metacul/results/downstream_3b",
+            "results_metadata_label": "without_metadata",
+        },
+    ]
+
+    # Final pretraining configs use:
+    # dp=4, micro_batch_size=8, batch_accumulation_per_replica=64,
+    # sequence_length=2048, train_steps=10000.
+    train_tokens = 4 * 8 * 64 * 2048 * 10000
+
+    available_slugs_by_variant = []
+    for spec in model_specs:
+        available_slugs_by_variant.append(
+            _list_usable_qa_slugs(
+                spec["results_dir"], spec["results_metadata_label"]
+            )
+        )
+
+    common_slugs = sorted(set.intersection(*available_slugs_by_variant))
+    if not common_slugs:
+        print("No common QA URL subset found across 1B/3B final chat models.")
+        return
+
+    plot_rows = []
+    for spec in model_specs:
+        param_count = _estimate_llama_params_from_config(spec["config_path"])
+        est_flops = float(6 * param_count * train_tokens)
+
+        ppl_row = df[
+            (df["model_path"] == spec["model_path"])
+            & (df["test_set_path"] == spec["test_set_path"])
+        ]
+        if ppl_row.empty or pd.isna(ppl_row["mean_ppl"].iloc[0]):
+            ppl_value = np.nan
+        else:
+            ppl_value = float(ppl_row["mean_ppl"].iloc[0])
+
+        qa_acc, qa_correct, qa_total, used_slugs = _load_qa_accuracy_from_jsonl(
+            spec["results_dir"], spec["results_metadata_label"], common_slugs
+        )
+
+        plot_rows.append(
+            {
+                "panel": "PPL vs FLOPs",
+                "model_label": spec["label"],
+                "size": spec["size"],
+                "train_tag": spec["train_tag"],
+                "model_path": spec["model_path"],
+                "metric": "mean_ppl",
+                "metric_value": ppl_value,
+                "estimated_params": param_count,
+                "train_tokens": train_tokens,
+                "estimated_flops": est_flops,
+                "estimated_flops_e20": est_flops / 1e20,
+                "eval_target": spec["test_set_path"],
+                "note": "Matched global test set",
+            }
+        )
+        plot_rows.append(
+            {
+                "panel": "QA Accuracy vs FLOPs",
+                "model_label": spec["label"],
+                "size": spec["size"],
+                "train_tag": spec["train_tag"],
+                "model_path": spec["model_path"],
+                "metric": "qa_accuracy",
+                "metric_value": qa_acc,
+                "estimated_params": param_count,
+                "train_tokens": train_tokens,
+                "estimated_flops": est_flops,
+                "estimated_flops_e20": est_flops / 1e20,
+                "eval_target": ",".join(used_slugs),
+                "note": f"Common {len(common_slugs)}-URL subset; {qa_correct}/{qa_total}",
+            }
+        )
+
+    plot_df = pd.DataFrame(plot_rows)
+
+    fig, axes = plt.subplots(1, 2, figsize=(12.5, 5.2), sharex=True)
+    bbox_props = dict(
+        facecolor="lightgrey",
+        edgecolor="grey",
+        alpha=0.7,
+        boxstyle="round",
+        pad=0.35,
+    )
+    panel_specs = [
+        ("PPL vs FLOPs", "mean_ppl", "Perplexity (↓ better)", 0),
+        ("QA Accuracy vs FLOPs", "qa_accuracy", "QA accuracy (↑ better)", 1),
+    ]
+
+    for panel_name, metric_name, ylabel, ax_idx in panel_specs:
+        ax = axes[ax_idx]
+        subset = plot_df[plot_df["metric"] == metric_name].copy()
+        subset = subset.sort_values(["estimated_flops", "train_tag", "size"])
+        for _, row in subset.iterrows():
+            spec = next(s for s in model_specs if s["label"] == row["model_label"])
+            ax.scatter(
+                row["estimated_flops"],
+                row["metric_value"],
+                s=95,
+                color=spec["color"],
+                marker=spec["marker"],
+                edgecolors="black",
+                linewidths=0.7,
+                zorder=3,
+            )
+            y_offset = 0.10 if metric_name == "mean_ppl" else 0.006
+            ax.annotate(
+                row["model_label"],
+                (row["estimated_flops"], row["metric_value"]),
+                xytext=(6, 6 if row["train_tag"] == "T+" else -12),
+                textcoords="offset points",
+                fontsize=12,
+            )
+
+        ax.set_xscale("log")
+        ax.set_xlabel("Estimated training FLOPs", fontsize=18)
+        ax.set_ylabel(ylabel, fontsize=18)
+        ax.tick_params(axis="both", labelsize=14)
+        ax.grid(True, which="major", axis="both", linestyle="--", linewidth=0.5, alpha=0.35)
+        ax.set_title(panel_name, fontsize=15, weight="bold", y=1.01, bbox=bbox_props)
+
+        if metric_name == "qa_accuracy":
+            finite = subset["metric_value"][np.isfinite(subset["metric_value"])]
+            if not finite.empty:
+                ax.set_ylim(max(0.0, finite.min() - 0.05), min(1.0, finite.max() + 0.05))
+
+    legend_handles = [
+        Line2D([], [], color="#1b9e77", marker="o", linestyle="None", markersize=9, markeredgecolor="black", label="1B T+"),
+        Line2D([], [], color="#d95f02", marker="o", linestyle="None", markersize=9, markeredgecolor="black", label="1B T-"),
+        Line2D([], [], color="#1b9e77", marker="s", linestyle="None", markersize=9, markeredgecolor="black", label="3B T+"),
+        Line2D([], [], color="#d95f02", marker="s", linestyle="None", markersize=9, markeredgecolor="black", label="3B T-"),
+    ]
+    fig.legend(
+        handles=legend_handles,
+        loc="upper center",
+        ncol=4,
+        frameon=True,
+        fancybox=True,
+        framealpha=0.9,
+        edgecolor="black",
+        fontsize=12,
+        bbox_to_anchor=(0.5, 1.03),
+    )
+
+    fig.text(
+        0.5,
+        0.01,
+        "Estimated FLOPs use 6ND with N from the final model config and D = 41.94B training tokens.",
+        ha="center",
+        fontsize=11,
+    )
+
+    output_dir = os.path.join(PLOTS_DIR, "plot12")
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, "compute_tradeoff_1b_3b.pdf")
+    plt.tight_layout()
+    plt.subplots_adjust(top=0.80, bottom=0.18, wspace=0.28)
+    plt.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.02)
+    plt.close(fig)
+
+    plot_df["common_qa_url_count"] = len(common_slugs)
+    plot_df["common_qa_urls"] = ",".join(common_slugs)
+    _write_plot_csv(output_dir, 12, plot_df)
+
+
 def main():
     plot_continent_models_metadata_effect()
     plot_local_vs_global_on_local_and_global()
@@ -2872,6 +3174,7 @@ def main():
         exclude_explicit=True,
         output_name="qa_adversarial_accuracy_noexplicit.pdf",
     )
+    plot_compute_tradeoff_global_models()
 
 
 if __name__ == "__main__":
