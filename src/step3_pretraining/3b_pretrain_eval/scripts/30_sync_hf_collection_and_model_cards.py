@@ -3,12 +3,17 @@ import argparse
 import json
 import os
 import re
+import shutil
 import tempfile
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
 import wandb
 from huggingface_hub import HfApi
 
@@ -280,7 +285,150 @@ def summarize_run(run, spec: RepoSpec) -> dict:
     return info
 
 
-def build_card(spec: RepoSpec, run_info: Optional[dict], collection_title: str, collection_slug: str) -> str:
+def _plot_specs(spec: RepoSpec):
+    if spec.stage == "sft_chat":
+        return [
+            {
+                "filename": "assets/train_loss.png",
+                "title": "Train Loss",
+                "x_candidates": ["train/global_step", "_step"],
+                "y_key": "train/loss",
+                "x_label": "Training step",
+                "y_label": "Loss",
+                "color": "#c44e52",
+            },
+            {
+                "filename": "assets/learning_rate.png",
+                "title": "Learning Rate",
+                "x_candidates": ["train/global_step", "_step"],
+                "y_key": "train/learning_rate",
+                "x_label": "Training step",
+                "y_label": "Learning rate",
+                "color": "#4c72b0",
+            },
+            {
+                "filename": "assets/grad_norm.png",
+                "title": "Gradient Norm",
+                "x_candidates": ["train/global_step", "_step"],
+                "y_key": "train/grad_norm",
+                "x_label": "Training step",
+                "y_label": "Grad norm",
+                "color": "#55a868",
+            },
+        ]
+    return [
+        {
+            "filename": "assets/train_loss.png",
+            "title": "Train Loss",
+            "x_candidates": ["iteration_step", "_step"],
+            "y_key": "KPI/train_lm_loss",
+            "x_label": "Training step",
+            "y_label": "Loss",
+            "color": "#c44e52",
+        },
+        {
+            "filename": "assets/val_perplexity.png",
+            "title": "Validation Perplexity",
+            "x_candidates": ["iteration_step", "_step"],
+            "y_key": "KPI/val_perplexity",
+            "x_label": "Training step",
+            "y_label": "Perplexity",
+            "color": "#4c72b0",
+        },
+        {
+            "filename": "assets/tokens_per_sec.png",
+            "title": "Throughput",
+            "x_candidates": ["iteration_step", "_step"],
+            "y_key": "tokens_per_sec",
+            "x_label": "Training step",
+            "y_label": "Tokens / sec",
+            "color": "#55a868",
+        },
+    ]
+
+
+def _choose_x_key(rows, candidates):
+    for key in candidates:
+        if any(row.get(key) is not None for row in rows):
+            return key
+    return None
+
+
+def _coerce_float(value):
+    if value is None:
+        return None
+    try:
+        value = float(value)
+    except Exception:
+        return None
+    if not np.isfinite(value):
+        return None
+    return value
+
+
+def export_run_plots(run, spec: RepoSpec, output_dir: Path) -> list[dict]:
+    specs = _plot_specs(spec)
+    keys = sorted({spec["y_key"] for spec in specs} | {candidate for spec in specs for candidate in spec["x_candidates"]} | {"_step"})
+    rows = list(run.scan_history(keys=keys))
+    if not rows:
+        return []
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    exported = []
+    for spec_item in specs:
+        x_key = _choose_x_key(rows, spec_item["x_candidates"])
+        if x_key is None:
+            continue
+
+        xs = []
+        ys = []
+        for row in rows:
+            x = _coerce_float(row.get(x_key))
+            y = _coerce_float(row.get(spec_item["y_key"]))
+            if x is None or y is None:
+                continue
+            xs.append(x)
+            ys.append(y)
+
+        if len(xs) < 2:
+            continue
+
+        order = np.argsort(xs)
+        xs = np.asarray(xs)[order]
+        ys = np.asarray(ys)[order]
+
+        fig, ax = plt.subplots(figsize=(6.4, 3.8))
+        ax.plot(xs, ys, color=spec_item["color"], linewidth=2.0)
+        ax.set_title(spec_item["title"])
+        ax.set_xlabel(spec_item["x_label"])
+        ax.set_ylabel(spec_item["y_label"])
+        ax.grid(True, linestyle="--", linewidth=0.5, alpha=0.35)
+        fig.tight_layout()
+
+        rel_path = spec_item["filename"]
+        path = output_dir / rel_path
+        path.parent.mkdir(parents=True, exist_ok=True)
+        fig.savefig(path, dpi=160, bbox_inches="tight")
+        plt.close(fig)
+
+        exported.append(
+            {
+                "filename": rel_path,
+                "title": spec_item["title"],
+                "y_key": spec_item["y_key"],
+                "x_key": x_key,
+            }
+        )
+    return exported
+
+
+def build_card(
+    spec: RepoSpec,
+    run_info: Optional[dict],
+    collection_title: str,
+    collection_slug: str,
+    plot_assets: Optional[list[dict]] = None,
+) -> str:
     tags = ["text-generation", "metadata-localization", spec.family.replace("_", "-")]
     if spec.size:
         tags.append(spec.size)
@@ -289,7 +437,7 @@ def build_card(spec: RepoSpec, run_info: Optional[dict], collection_title: str, 
     if spec.stage == "sft_chat":
         tags.extend(["sft", "lora-merged"])
     else:
-        tags.append("continued-pretraining")
+        tags.append("pretraining")
         if spec.checkpoint:
             tags.append("intermediate-checkpoint")
 
@@ -308,13 +456,13 @@ def build_card(spec: RepoSpec, run_info: Optional[dict], collection_title: str, 
     if spec.stage == "sft_chat":
         lines.append(
             f"This repo contains the merged chat model for the {spec.variant_label} branch of the metadata localization project. "
-            f"It was produced by supervised fine-tuning on the project QA benchmark after continued pretraining."
+            f"It was produced by supervised fine-tuning on the project QA benchmark after project pretraining."
         )
     else:
         checkpoint_text = f" exported from the {spec.checkpoint} checkpoint" if spec.checkpoint else " at the final 10k-step checkpoint"
         lines.append(
             f"This repo contains the {spec.variant_label} model{checkpoint_text} for the metadata localization project. "
-            f"It comes from continued pretraining of a Llama 3.2 base model on the project corpus."
+            f"It was trained from scratch on the project corpus, using the Llama 3.2 tokenizer and vocabulary."
         )
     lines.append("")
 
@@ -366,6 +514,17 @@ def build_card(spec: RepoSpec, run_info: Optional[dict], collection_title: str, 
         lines.append("- LoRA targets: `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj`, `down_proj`")
         lines.append("")
 
+    if plot_assets:
+        lines.append("## Training Curves")
+        lines.append("")
+        lines.append("Static plots below were exported from the private Weights & Biases run and embedded here for public access.")
+        lines.append("")
+        for asset in plot_assets:
+            lines.append(f"### {asset['title']}")
+            lines.append("")
+            lines.append(f"![{asset['title']}]({asset['filename']})")
+            lines.append("")
+
     lines.append("## Project Context")
     lines.append("")
     lines.append(
@@ -380,20 +539,23 @@ def build_card(spec: RepoSpec, run_info: Optional[dict], collection_title: str, 
     return "\n".join(lines)
 
 
-def upload_card(api: HfApi, spec: RepoSpec, card_text: str) -> None:
-    with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf-8") as tmp:
-        tmp.write(card_text)
-        tmp_path = tmp.name
-    try:
-        api.upload_file(
-            path_or_fileobj=tmp_path,
-            path_in_repo="README.md",
+def upload_card_bundle(api: HfApi, spec: RepoSpec, card_text: str, asset_dir: Optional[Path]) -> None:
+    with tempfile.TemporaryDirectory() as tmpdir:
+        bundle_dir = Path(tmpdir)
+        (bundle_dir / "README.md").write_text(card_text, encoding="utf-8")
+        if asset_dir and asset_dir.exists():
+            for path in asset_dir.rglob("*"):
+                if path.is_file():
+                    rel = path.relative_to(asset_dir)
+                    target = bundle_dir / rel
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    target.write_bytes(path.read_bytes())
+        api.upload_folder(
+            folder_path=str(bundle_dir),
             repo_id=spec.repo_id,
             repo_type="model",
-            commit_message="Update model card from W&B metadata",
+            commit_message="Update model card and embedded training curves",
         )
-    finally:
-        os.unlink(tmp_path)
 
 
 def main() -> int:
@@ -403,6 +565,8 @@ def main() -> int:
     parser.add_argument("--collection-title", default=None)
     parser.add_argument("--collection-description", default=None)
     parser.add_argument("--include-3b-chat", action="store_true", default=False)
+    parser.add_argument("--repo-id", default=None)
+    parser.add_argument("--skip-plots", action="store_true", default=False)
     parser.add_argument("--skip-cards", action="store_true", default=False)
     parser.add_argument("--dry-run", action="store_true", default=False)
     parser.add_argument("--write-report", default="/scratch/amukher6/metacul/results/hf_collection_sync_report.json")
@@ -419,6 +583,8 @@ def main() -> int:
     repo_ids = sorted(model.id for model in repos if is_project_repo(model.id.split("/", 1)[1]))
     if not args.include_3b_chat:
         repo_ids = [repo_id for repo_id in repo_ids if not repo_id.endswith("_3b_chat")]
+    if args.repo_id:
+        repo_ids = [repo_id for repo_id in repo_ids if repo_id == args.repo_id]
 
     specs = sorted((parse_repo_spec(repo_id) for repo_id in repo_ids), key=sort_key)
 
@@ -453,6 +619,9 @@ def main() -> int:
     for spec in specs:
         run_path = resolve_wandb_run_path(spec)
         run_info = None
+        plot_assets = []
+        asset_dir = None
+        run = None
         if run_path:
             try:
                 run = wandb_api.run(run_path)
@@ -460,17 +629,38 @@ def main() -> int:
             except Exception as exc:  # pragma: no cover
                 run_info = {"error": str(exc), "url": None, "name": run_path, "state": "error", "runtime": None, "summary": {}, "config": {}}
 
+        if run and not args.skip_plots:
+            with tempfile.TemporaryDirectory() as plot_tmpdir:
+                tmp_asset_dir = Path(plot_tmpdir)
+                try:
+                    plot_assets = export_run_plots(run, spec, tmp_asset_dir)
+                    if plot_assets:
+                        asset_dir = Path(tempfile.mkdtemp())
+                        for path in tmp_asset_dir.rglob("*"):
+                            if path.is_file():
+                                rel = path.relative_to(tmp_asset_dir)
+                                target = asset_dir / rel
+                                target.parent.mkdir(parents=True, exist_ok=True)
+                                target.write_bytes(path.read_bytes())
+                except Exception as exc:  # pragma: no cover
+                    if run_info is None:
+                        run_info = {"url": None, "name": run_path, "state": "error", "runtime": None, "summary": {}, "config": {}}
+                    run_info["plot_error"] = str(exc)
+
         if not args.skip_cards:
             card_text = build_card(
                 spec,
                 run_info if run_info and "error" not in run_info else None,
                 collection_title=collection_title,
                 collection_slug=collection_ref,
+                plot_assets=plot_assets,
             )
             if args.dry_run:
                 print(f"[dry-run] would update card for {spec.repo_id}")
             else:
-                upload_card(api, spec, card_text)
+                upload_card_bundle(api, spec, card_text, asset_dir)
+        if asset_dir is not None:
+            shutil.rmtree(asset_dir, ignore_errors=True)
 
         if args.dry_run:
             print(f"[dry-run] would add {spec.repo_id} to {collection_ref}")
@@ -486,6 +676,7 @@ def main() -> int:
                 "metadata_mode": spec.metadata_mode,
                 "checkpoint": spec.checkpoint,
                 "wandb_run": run_path,
+                "plot_assets": [asset["filename"] for asset in plot_assets],
                 "collection_note": spec.item_note,
             }
         )
