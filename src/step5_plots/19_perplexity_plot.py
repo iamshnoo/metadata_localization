@@ -3159,6 +3159,292 @@ def plot_compute_tradeoff_global_models():
     _write_plot_csv(output_dir, 12, plot_df)
 
 
+def plot_token_efficiency_global_ppl():
+    # Plot 13: matched global PPL vs exact training tokens for T+ and T-,
+    # with annotation for how much earlier T+ reaches final T- quality.
+    df = _load_perplexity_df()
+    per_step_tokens = 4 * 8 * 64 * 2048
+
+    size_specs = {
+        "1B": {
+            "tplus": [
+                (
+                    2000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step2k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                ),
+                (
+                    4000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step4k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                ),
+                (
+                    8000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step8k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                ),
+                (
+                    10000,
+                    "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                ),
+            ],
+            "tminus": [
+                (
+                    2000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step2k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                ),
+                (
+                    4000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step4k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                ),
+                (
+                    8000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                ),
+                (
+                    10000,
+                    "/scratch/amukher6/metacul/models/combined_without_metadata_1b",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                ),
+            ],
+        },
+        "3B": {
+            "tplus": [
+                (
+                    2000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step2k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                ),
+                (
+                    4000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step4k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                ),
+                (
+                    8000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step8k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                ),
+                (
+                    10000,
+                    "/scratch/amukher6/metacul/models/combined_with_metadata_3b",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                ),
+            ],
+            "tminus": [
+                (
+                    2000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step2k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                ),
+                (
+                    4000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step4k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                ),
+                (
+                    8000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step8k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                ),
+                (
+                    10000,
+                    "/scratch/amukher6/metacul/models/combined_without_metadata_3b",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                ),
+            ],
+        },
+    }
+
+    pairs = set()
+    records = []
+
+    for size_label, size_spec in size_specs.items():
+        for train_tag, checkpoints in size_spec.items():
+            for step, model_path, test_path in checkpoints:
+                pairs.add((model_path, test_path))
+                row = df[
+                    (df["model_path"] == model_path)
+                    & (df["test_set_path"] == test_path)
+                ]
+                if row.empty or pd.isna(row["mean_ppl"].iloc[0]):
+                    continue
+                records.append(
+                    {
+                        "size": size_label,
+                        "train_tag": "T+" if train_tag == "tplus" else "T-",
+                        "step": step,
+                        "tokens_b": step * per_step_tokens / 1e9,
+                        "mean_ppl": float(row["mean_ppl"].iloc[0]),
+                        "ci_low": float(row["ci_low"].iloc[0]),
+                        "ci_high": float(row["ci_high"].iloc[0]),
+                        "model_path": model_path,
+                        "test_set_path": test_path,
+                    }
+                )
+
+    if not records:
+        print("No records found for token-efficiency global PPL plot.")
+        return
+
+    plot_df = pd.DataFrame(records)
+    plot_df = plot_df.sort_values(["size", "train_tag", "step"]).reset_index(drop=True)
+
+    def _interpolate_crossing(tokens, values, target):
+        for x1, y1, x2, y2 in zip(tokens[:-1], values[:-1], tokens[1:], values[1:]):
+            if y1 >= target and y2 <= target and y1 != y2:
+                frac = (y1 - target) / (y1 - y2)
+                return x1 + frac * (x2 - x1)
+        return None
+
+    fig, axes = plt.subplots(1, 2, figsize=(12.5, 5.2), sharey=True)
+    bbox_props = dict(
+        facecolor="lightgrey",
+        edgecolor="grey",
+        alpha=0.7,
+        boxstyle="round",
+        pad=0.35,
+    )
+    colors_map = {"T+": "#1b9e77", "T-": "#d95f02"}
+    markers_map = {"T+": "o", "T-": "s"}
+    token_ticks = [8.388608, 16.777216, 23.393796, 33.554432, 41.94304]
+    tick_labels = ["8.4", "16.8", "23.4", "33.6", "41.9"]
+    summary_rows = []
+
+    for ax, size_label in zip(axes, ["1B", "3B"]):
+        subset = plot_df[plot_df["size"] == size_label].copy()
+        tplus = subset[subset["train_tag"] == "T+"].sort_values("step")
+        tminus = subset[subset["train_tag"] == "T-"].sort_values("step")
+
+        for train_tag, curve_df in [("T+", tplus), ("T-", tminus)]:
+            ax.plot(
+                curve_df["tokens_b"],
+                curve_df["mean_ppl"],
+                color=colors_map[train_tag],
+                marker=markers_map[train_tag],
+                linewidth=2.4,
+                markersize=7.5,
+                markeredgecolor="black",
+                markeredgewidth=0.6,
+                label=train_tag,
+                zorder=3,
+            )
+
+        target_ppl = float(tminus[tminus["step"] == 10000]["mean_ppl"].iloc[0])
+        final_tokens_b = float(tminus[tminus["step"] == 10000]["tokens_b"].iloc[0])
+        cross_tokens_b = _interpolate_crossing(
+            tplus["tokens_b"].tolist(),
+            tplus["mean_ppl"].tolist(),
+            target_ppl,
+        )
+
+        if cross_tokens_b is not None:
+            savings_frac = (final_tokens_b - cross_tokens_b) / final_tokens_b
+            ax.axhline(
+                target_ppl,
+                color="#8f8f8f",
+                linestyle=":",
+                linewidth=1.6,
+                zorder=1,
+            )
+            ax.axvline(
+                final_tokens_b,
+                color="#b5b5b5",
+                linestyle=":",
+                linewidth=1.6,
+                zorder=1,
+            )
+            arrow_y = target_ppl + (0.55 if size_label == "1B" else 0.48)
+            ax.annotate(
+                "",
+                xy=(cross_tokens_b, arrow_y),
+                xytext=(final_tokens_b, arrow_y),
+                arrowprops=dict(arrowstyle="<->", color="#8a8a8a", lw=1.6),
+            )
+            ax.text(
+                (cross_tokens_b + final_tokens_b) / 2,
+                arrow_y + 0.08,
+                f"{savings_frac * 100:.1f}% fewer tokens",
+                ha="center",
+                va="bottom",
+                fontsize=12,
+                color="#6f6f6f",
+            )
+            ax.scatter(
+                [cross_tokens_b],
+                [target_ppl],
+                color=colors_map["T+"],
+                marker="D",
+                s=38,
+                edgecolors="black",
+                linewidths=0.6,
+                zorder=4,
+            )
+        else:
+            savings_frac = np.nan
+
+        ax.set_title(size_label, fontsize=15, weight="bold", y=1.01, bbox=bbox_props)
+        ax.set_xlabel("Training tokens (B)", fontsize=18)
+        ax.set_xticks(token_ticks)
+        ax.set_xticklabels(tick_labels, fontsize=14)
+        ax.tick_params(axis="y", labelsize=14)
+        ax.grid(True, which="major", axis="both", linestyle="--", linewidth=0.5, alpha=0.35)
+        ax.set_xlim(7.5, 43.2)
+
+        summary_rows.append(
+            {
+                "size": size_label,
+                "final_tminus_target_ppl": target_ppl,
+                "tplus_cross_tokens_b": cross_tokens_b,
+                "tminus_final_tokens_b": final_tokens_b,
+                "token_savings_frac": savings_frac,
+            }
+        )
+
+    axes[0].set_ylabel("Matched global PPL (↓ better)", fontsize=18)
+
+    legend_handles = [
+        Line2D([], [], color=colors_map["T+"], marker=markers_map["T+"], linestyle="-", linewidth=2.4, markersize=7.5, markeredgecolor="black", label="T+"),
+        Line2D([], [], color=colors_map["T-"], marker=markers_map["T-"], linestyle="-", linewidth=2.4, markersize=7.5, markeredgecolor="black", label="T-"),
+        Line2D([], [], color=colors_map["T+"], marker="D", linestyle="None", markersize=6.5, markeredgecolor="black", label="T+ reaches final T- quality"),
+    ]
+    fig.legend(
+        handles=legend_handles,
+        loc="upper center",
+        ncol=3,
+        frameon=True,
+        fancybox=True,
+        framealpha=0.9,
+        edgecolor="black",
+        fontsize=12,
+        bbox_to_anchor=(0.5, 1.04),
+    )
+
+    fig.text(
+        0.5,
+        0.01,
+        "Each curve uses matched global evaluation: T+ on combined/with_metadata, T- on combined/without_metadata.",
+        ha="center",
+        fontsize=11,
+    )
+
+    output_dir = os.path.join(PLOTS_DIR, "plot13")
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, "global_token_efficiency_ppl.pdf")
+    plt.tight_layout()
+    plt.subplots_adjust(top=0.80, bottom=0.18, wspace=0.18)
+    plt.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.02)
+    plt.close(fig)
+
+    summary_df = pd.DataFrame(summary_rows)
+    merged = plot_df.merge(summary_df, on="size", how="left")
+    _write_plot_csv(output_dir, 13, merged)
+
+
 def main():
     plot_continent_models_metadata_effect()
     plot_local_vs_global_on_local_and_global()
@@ -3175,6 +3461,7 @@ def main():
         output_name="qa_adversarial_accuracy_noexplicit.pdf",
     )
     plot_compute_tradeoff_global_models()
+    plot_token_efficiency_global_ppl()
 
 
 if __name__ == "__main__":
