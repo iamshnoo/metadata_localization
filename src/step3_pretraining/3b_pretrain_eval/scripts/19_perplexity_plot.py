@@ -3421,14 +3421,14 @@ def plot_token_efficiency_global_ppl():
         framealpha=0.9,
         edgecolor="black",
         fontsize=12,
-        bbox_to_anchor=(0.5, 1.04),
+        bbox_to_anchor=(0.5, 0.98),
     )
 
     output_dir = os.path.join(PLOTS_DIR, "plot13")
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, "global_token_efficiency_ppl.pdf")
     plt.tight_layout()
-    plt.subplots_adjust(top=0.80, bottom=0.10, wspace=0.18)
+    plt.subplots_adjust(top=0.88, bottom=0.10, wspace=0.18)
     plt.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.02)
     plt.close(fig)
 
