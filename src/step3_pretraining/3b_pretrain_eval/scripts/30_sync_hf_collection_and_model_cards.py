@@ -20,6 +20,7 @@ COLLECTION_DESCRIPTION_FALLBACK = (
 )
 PROJECT_GITHUB_URL = "https://github.com/iamshnoo/metadata_localization"
 NOW_CORPUS_URL = "https://www.english-corpora.org/now/"
+PAPER_URL = "https://arxiv.org/abs/2601.15236"
 
 PRETRAIN_LOGS = Path("/scratch/amukher6/pretrain/logs/slurm_logs")
 SFT_LOGS = Path("/scratch/amukher6/metacul/logs/slurm_logs")
@@ -333,7 +334,10 @@ def build_card(spec: RepoSpec, run_info: Optional[dict], collection_title: str, 
     lines.append("## Weights & Biases Provenance")
     lines.append("")
     if run_info:
-        lines.append(f"- Run: [{run_info['name']}]({run_info['url']})")
+        lines.append(f"- Run name: `{run_info['name']}`")
+        if run_info.get("url"):
+            lines.append(f"- Internal run URL: `{run_info['url']}`")
+            lines.append("- Note: the Weights & Biases workspace is private; public readers should use the summarized metrics and configuration below.")
         lines.append(f"- State: `{run_info['state']}`")
         lines.append(f"- Runtime: `{fmt_duration(run_info['runtime'])}`")
     else:
@@ -369,6 +373,7 @@ def build_card(spec: RepoSpec, run_info: Optional[dict], collection_title: str, 
     )
     lines.append("- Training data source: [News on the Web (NOW) Corpus](https://www.english-corpora.org/now/)")
     lines.append(f"- Project repository: [{PROJECT_GITHUB_URL}]({PROJECT_GITHUB_URL})")
+    lines.append(f"- Paper: [{PAPER_URL}]({PAPER_URL})")
     lines.append("")
     lines.append(f"Last synced: `{datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}`")
     lines.append("")
