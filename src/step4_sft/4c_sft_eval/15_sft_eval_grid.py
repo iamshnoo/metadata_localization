@@ -44,6 +44,8 @@ def run_eval(
     output_jsonl: Path,
     url_corruption_rate: float,
     url_corruption_seed: int,
+    custom_model_path: str | None = None,
+    name_suffix: str = "",
 ) -> None:
     cmd = [
         "python",
@@ -73,6 +75,10 @@ def run_eval(
         "--url-corruption-seed",
         str(url_corruption_seed),
     ]
+    if custom_model_path:
+        cmd.extend(["--custom-model-path", custom_model_path])
+    elif name_suffix:
+        cmd.extend(["--name-suffix", name_suffix])
     if metadata:
         cmd.append("--metadata")
     subprocess.run(cmd, check=True)
@@ -182,6 +188,7 @@ def main() -> int:
     parser.add_argument("--dataset", default="iamshnoo/qa_metacul")
     parser.add_argument("--split", default="train")
     parser.add_argument("--size", choices=["1b", "3b"], default="1b")
+    parser.add_argument("--name-suffix", default="", help="Suffix appended to default custom model names, e.g. _best3b")
     parser.add_argument("--batch-size", type=int, default=4)
     parser.add_argument("--max-new-tokens", type=int, default=128)
     parser.add_argument("--temperature", type=float, default=0.6)
@@ -193,6 +200,11 @@ def main() -> int:
     parser.add_argument(
         "--summary-csv",
         default="/scratch/amukher6/metacul/results/qa_metacul_eval_summary.csv",
+    )
+    parser.add_argument(
+        "--custom-model-path",
+        default=None,
+        help="Optional explicit merged custom model path; otherwise derived from size/name-suffix.",
     )
     parser.add_argument(
         "--only-metadata",
@@ -269,6 +281,13 @@ def main() -> int:
                     os.replace(legacy_jsonl, output_jsonl)
 
                 if not output_jsonl.exists():
+                    run_eval_kwargs = {}
+                    if model_type == "custom":
+                        if args.custom_model_path:
+                            run_eval_kwargs["custom_model_path"] = args.custom_model_path
+                        elif args.name_suffix:
+                            run_eval_kwargs["name_suffix"] = args.name_suffix
+
                     run_eval(
                         eval_script=eval_script,
                         model_type=model_type,
@@ -284,6 +303,7 @@ def main() -> int:
                         output_jsonl=output_jsonl,
                         url_corruption_rate=corruption_rate,
                         url_corruption_seed=args.url_corruption_seed,
+                        **run_eval_kwargs,
                     )
 
                 metrics = compute_metrics(output_jsonl)

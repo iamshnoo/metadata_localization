@@ -1,0 +1,562 @@
+[
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step2k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step4k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"
+  },
+  {
+    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step8k",
+    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"
+  }
+]

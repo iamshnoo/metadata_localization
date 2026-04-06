@@ -7,6 +7,7 @@ import os
 import re
 import json
 import hashlib
+import glob
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -95,6 +96,65 @@ def _load_significance_map(path, key_fields):
             pval = float("nan")
         sig[key] = bool(pval < 0.05)
     return sig
+
+
+def _extract_country_tag(text):
+    for line in text.splitlines():
+        if line.startswith("COUNTRY: "):
+            return line[len("COUNTRY: ") :].strip().upper()
+    return None
+
+
+def _find_per_sample_file(
+    model_path,
+    test_set_path,
+    split="test",
+    max_samples=1000,
+    seed=42,
+    base_dir="/scratch/amukher6/metacul/results/per_sample_losses",
+):
+    matches = []
+    for meta_path in glob.glob(os.path.join(base_dir, "*.meta.json")):
+        try:
+            with open(meta_path, "r") as f:
+                meta = json.load(f)
+        except Exception:
+            continue
+        if (
+            meta.get("model_path") == model_path
+            and meta.get("test_set_path") == test_set_path
+            and meta.get("split") == split
+            and int(meta.get("max_samples", -1)) == int(max_samples)
+            and int(meta.get("seed", -1)) == int(seed)
+        ):
+            matches.append(meta_path.replace(".meta.json", ".jsonl"))
+    if len(matches) != 1:
+        raise FileNotFoundError(
+            f"Expected exactly one per-sample file for {model_path} on {test_set_path}, found {len(matches)}"
+        )
+    return matches[0]
+
+
+COUNTRY_CODE_TO_NAME = {
+    "NG": "Nigeria",
+    "GH": "Ghana",
+    "KE": "Kenya",
+    "TZ": "Tanzania",
+    "ZA": "South Africa",
+    "CA": "Canada",
+    "US": "United States",
+    "JM": "Jamaica",
+    "HK": "Hong Kong",
+    "IN": "India",
+    "PH": "Philippines",
+    "MY": "Malaysia",
+    "BD": "Bangladesh",
+    "PK": "Pakistan",
+    "LK": "Sri Lanka",
+    "SG": "Singapore",
+    "IE": "Ireland",
+    "GB": "United Kingdom",
+}
 
 
 def plot_continent_models_metadata_effect():
@@ -2591,7 +2651,7 @@ def plot_metadata_family_full_grid():
         bbox_to_anchor=(0.5, 0.995),
     )
 
-    output_dir = os.path.join(PLOTS_DIR, "plot11")
+    output_dir = os.path.join(PLOTS_DIR, "plot10")
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, "perplexity_metadata_family_full_grid_1b.pdf")
     plt.tight_layout()
@@ -2602,7 +2662,7 @@ def plot_metadata_family_full_grid():
     subset_main = _subset_by_pairs(df, pairs_main)
     subset_appendix = _subset_by_pairs(df, pairs_appendix)
     _write_plot_csv(os.path.join(PLOTS_DIR, "plot10"), 10, subset_main)
-    _write_plot_csv(output_dir, 11, subset_appendix)
+    _write_plot_csv(os.path.join(PLOTS_DIR, "plot10"), 11, subset_appendix)
 
 
 def plot_leave_one_out_ablations():
@@ -3146,7 +3206,7 @@ def plot_compute_tradeoff_global_models():
         fontsize=11,
     )
 
-    output_dir = os.path.join(PLOTS_DIR, "plot12")
+    output_dir = os.path.join(PLOTS_DIR, "plot11")
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, "compute_tradeoff_1b_3b.pdf")
     plt.tight_layout()
@@ -3166,6 +3226,52 @@ def plot_token_efficiency_global_ppl():
     per_step_tokens = 4 * 8 * 64 * 2048
 
     size_specs = {
+        "500M": {
+            "tplus": [
+                (
+                    2000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step2k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                ),
+                (
+                    4000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step4k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                ),
+                (
+                    8000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step8k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                ),
+                (
+                    10000,
+                    "/scratch/amukher6/metacul/models/combined_with_metadata_500m",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                ),
+            ],
+            "tminus": [
+                (
+                    2000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step2k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                ),
+                (
+                    4000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step4k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                ),
+                (
+                    8000,
+                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step8k",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                ),
+                (
+                    10000,
+                    "/scratch/amukher6/metacul/models/combined_without_metadata_500m",
+                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                ),
+            ],
+        },
         "1B": {
             "tplus": [
                 (
@@ -3301,7 +3407,7 @@ def plot_token_efficiency_global_ppl():
                 return x1 + frac * (x2 - x1)
         return None
 
-    fig, axes = plt.subplots(1, 2, figsize=(12.5, 5.2), sharey=True)
+    candidate_size_order = ["500M", "1B", "3B"]
     bbox_props = dict(
         facecolor="lightgrey",
         edgecolor="grey",
@@ -3311,11 +3417,31 @@ def plot_token_efficiency_global_ppl():
     )
     colors_map = {"T+": "#1b9e77", "T-": "#d95f02"}
     markers_map = {"T+": "o", "T-": "s"}
-    token_ticks = [8.388608, 16.777216, 23.393796, 33.554432, 41.94304]
-    tick_labels = ["8.4", "16.8", "23.4", "33.6", "41.9"]
+    token_ticks = [8.388608, 16.777216, 33.554432, 41.94304]
+    tick_labels = ["8.4", "16.8", "33.6", "41.9"]
     summary_rows = []
 
-    for ax, size_label in zip(axes, ["1B", "3B"]):
+    size_order = []
+    for size_label in candidate_size_order:
+        subset = plot_df[plot_df["size"] == size_label].copy()
+        tplus = subset[subset["train_tag"] == "T+"].sort_values("step")
+        tminus = subset[subset["train_tag"] == "T-"].sort_values("step")
+        if tplus.empty or tminus.empty:
+            continue
+        if 10000 not in set(tplus["step"]) or 10000 not in set(tminus["step"]):
+            continue
+        size_order.append(size_label)
+
+    if not size_order:
+        print("No complete size families found for token-efficiency global PPL plot.")
+        return
+
+    fig_width = 6.1 * len(size_order)
+    fig, axes = plt.subplots(1, len(size_order), figsize=(fig_width, 5.2), sharey=True)
+    if len(size_order) == 1:
+        axes = [axes]
+
+    for ax, size_label in zip(axes, size_order):
         subset = plot_df[plot_df["size"] == size_label].copy()
         tplus = subset[subset["train_tag"] == "T+"].sort_values("step")
         tminus = subset[subset["train_tag"] == "T-"].sort_values("step")
@@ -3358,7 +3484,8 @@ def plot_token_efficiency_global_ppl():
                 linewidth=1.6,
                 zorder=1,
             )
-            arrow_y = target_ppl + (0.55 if size_label == "1B" else 0.48)
+            arrow_offset_map = {"500M": 0.75, "1B": 0.55, "3B": 0.48}
+            arrow_y = target_ppl + arrow_offset_map.get(size_label, 0.5)
             ax.annotate(
                 "",
                 xy=(cross_tokens_b, arrow_y),
@@ -3424,17 +3551,624 @@ def plot_token_efficiency_global_ppl():
         bbox_to_anchor=(0.5, 0.98),
     )
 
-    output_dir = os.path.join(PLOTS_DIR, "plot13")
+    output_dir = os.path.join(PLOTS_DIR, "plot11")
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, "global_token_efficiency_ppl.pdf")
     plt.tight_layout()
-    plt.subplots_adjust(top=0.88, bottom=0.10, wspace=0.18)
+    plt.subplots_adjust(top=0.88, bottom=0.10, wspace=0.16)
     plt.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.02)
     plt.close(fig)
 
     summary_df = pd.DataFrame(summary_rows)
     merged = plot_df.merge(summary_df, on="size", how="left")
     _write_plot_csv(output_dir, 13, merged)
+
+
+def plot_country_level_local_metadata_ppl():
+    from datasets import load_from_disk
+
+    continents = ["africa", "america", "asia", "europe"]
+    sizes = ["500m", "1b"]
+    records = []
+    bbox_props = dict(
+        facecolor="lightgrey",
+        edgecolor="grey",
+        alpha=0.7,
+        boxstyle="round",
+        pad=0.35,
+    )
+    size_colors = {"500m": "#f4a3a3", "1b": "#9ad1a6"}
+    size_labels = {"500m": "500M", "1b": "1B"}
+
+    for size in sizes:
+        for continent in continents:
+            model_path = f"/scratch/amukher6/metacul/models/{continent}_with_metadata_{size}"
+            test_set_path = (
+                f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{continent}/with_metadata/"
+            )
+            per_sample_path = _find_per_sample_file(
+                model_path=model_path,
+                test_set_path=test_set_path,
+            )
+            dataset = load_from_disk(f"{test_set_path.rstrip('/')}/test")
+
+            by_country = {}
+            with open(per_sample_path, "r") as f:
+                for line in f:
+                    row = json.loads(line)
+                    sample = dataset[int(row["index"])]
+                    country = _extract_country_tag(sample["text"])
+                    if not country:
+                        continue
+                    stats = by_country.setdefault(
+                        country,
+                        {"loss_sum": 0.0, "token_count": 0, "sample_count": 0},
+                    )
+                    stats["loss_sum"] += float(row["loss_sum"])
+                    stats["token_count"] += int(row["token_count"])
+                    stats["sample_count"] += 1
+
+            continent_loss_sum = sum(stats["loss_sum"] for stats in by_country.values())
+            continent_token_count = sum(
+                stats["token_count"] for stats in by_country.values()
+            )
+            continent_mean_ppl = float(np.exp(continent_loss_sum / continent_token_count))
+
+            for country, stats in by_country.items():
+                if stats["token_count"] <= 0:
+                    continue
+                mean_ppl = float(np.exp(stats["loss_sum"] / stats["token_count"]))
+                records.append(
+                    {
+                        "size": size_labels[size],
+                        "continent": continent.capitalize(),
+                        "country": country,
+                        "country_name": COUNTRY_CODE_TO_NAME.get(country, country),
+                        "mean_ppl": mean_ppl,
+                        "loss_sum": stats["loss_sum"],
+                        "token_count": stats["token_count"],
+                        "sample_count": stats["sample_count"],
+                        "model_path": model_path,
+                        "test_set_path": test_set_path,
+                        "per_sample_path": per_sample_path,
+                        "continent_mean_ppl": continent_mean_ppl,
+                    }
+                )
+
+    if not records:
+        print("No country-level local metadata records found.")
+        return
+
+    plot_df = pd.DataFrame(records)
+    output_dir = os.path.join(PLOTS_DIR, "plot12")
+    os.makedirs(output_dir, exist_ok=True)
+
+    fig, ax = plt.subplots(1, 1, figsize=(19, 7.2))
+    y_max = float(plot_df["mean_ppl"].max())
+    y_pad = max(0.35, 0.10 * y_max)
+    country_positions = []
+    country_labels = []
+    group_specs = []
+    continent_means_by_size = {"500M": [], "1B": []}
+    cursor = 0.0
+    continent_gap = 1.25
+    continent_bg_colors = {
+        "Africa": "#f8e8ea",
+        "America": "#e8f1fb",
+        "Asia": "#eef7e8",
+        "Europe": "#f7f0e6",
+    }
+
+    for continent in [c.capitalize() for c in continents]:
+        sub = plot_df[plot_df["continent"] == continent].copy()
+        order = (
+            sub[sub["size"] == "1B"]
+            .sort_values("mean_ppl")["country_name"]
+            .tolist()
+        )
+        if not order:
+            order = sorted(sub["country_name"].unique().tolist())
+        sub["country_name"] = pd.Categorical(
+            sub["country_name"], categories=order, ordered=True
+        )
+        sub = sub.sort_values(["country_name", "size"]).reset_index(drop=True)
+
+        base_width = 0.78 if continent != "Asia" else 0.60
+        marker_offsets = {"500M": -0.16, "1B": 0.16}
+
+        group_start = cursor
+        x = np.arange(len(order), dtype=float) + cursor
+        country_positions.extend(x.tolist())
+        country_labels.extend(order)
+
+        by_size = {}
+        for size_label in ["500M", "1B"]:
+            size_sub = (
+                sub[sub["size"] == size_label]
+                .set_index("country_name")
+                .reindex(order)
+                .reset_index()
+            )
+            by_size[size_label] = size_sub
+            continent_mean = float(size_sub["continent_mean_ppl"].dropna().iloc[0])
+            continent_means_by_size[size_label].append(
+                {
+                    "left": x[0] - base_width * 0.7,
+                    "right": x[-1] + base_width * 0.7,
+                    "mean": continent_mean,
+                }
+            )
+
+        for idx, country_name in enumerate(order):
+            y_500 = float(by_size["500M"].iloc[idx]["mean_ppl"])
+            y_1b = float(by_size["1B"].iloc[idx]["mean_ppl"])
+            x_500 = x[idx] + marker_offsets["500M"]
+            x_1b = x[idx] + marker_offsets["1B"]
+            ax.plot(
+                [x_500, x_1b],
+                [y_500, y_1b],
+                color="#7a7a7a",
+                linewidth=2.0,
+                alpha=0.8,
+                zorder=2.8,
+            )
+
+        for size_label in ["500M", "1B"]:
+            size_sub = by_size[size_label]
+            face = size_colors["500m" if size_label == "500M" else "1b"]
+            ax.scatter(
+                x + marker_offsets[size_label],
+                size_sub["mean_ppl"],
+                s=92,
+                color=face,
+                edgecolors="#5c5c5c",
+                linewidths=0.9,
+                zorder=3.4,
+            )
+
+        group_end = x[-1]
+        group_specs.append(
+            {
+                "continent": continent,
+                "start": group_start,
+                "end": group_end,
+                "center": (group_start + group_end) / 2,
+                "base_width": base_width,
+            }
+        )
+        cursor = group_end + continent_gap
+
+    for spec in group_specs:
+        ax.axvspan(
+            spec["start"] - spec["base_width"] * 0.75,
+            spec["end"] + spec["base_width"] * 0.75,
+            facecolor=continent_bg_colors.get(spec["continent"], "#f5f5f5"),
+            alpha=0.28,
+            zorder=0.1,
+            linewidth=0,
+        )
+
+    for size_label, segments in continent_means_by_size.items():
+        face = size_colors["500m" if size_label == "500M" else "1b"]
+        line_x = []
+        line_y = []
+        for idx, seg in enumerate(segments):
+            if idx > 0:
+                prev = segments[idx - 1]
+                join_x = (prev["right"] + seg["left"]) / 2
+                line_x.extend([join_x, join_x])
+                line_y.extend([prev["mean"], seg["mean"]])
+            line_x.extend([seg["left"], seg["right"]])
+            line_y.extend([seg["mean"], seg["mean"]])
+        ax.plot(
+            line_x,
+            line_y,
+            color=face,
+            linestyle=(0, (4, 2)),
+            linewidth=1.6,
+            alpha=0.98,
+            zorder=2.2,
+        )
+
+    ax.set_xticks(country_positions)
+    ax.set_xticklabels(country_labels, rotation=40, ha="right", fontsize=11)
+    ax.tick_params(axis="y", labelsize=13)
+    ax.grid(axis="y", linestyle="--", linewidth=0.5, alpha=0.22)
+    ax.set_ylim(6, 13)
+    ax.set_xlim(min(country_positions) - 1.0, max(country_positions) + 1.0)
+    ax.set_axisbelow(True)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["left"].set_alpha(0.35)
+    ax.spines["bottom"].set_alpha(0.35)
+    ax.set_ylabel("Perplexity (↓ better)", fontsize=16)
+    ax.set_xlabel("")
+
+    for spec in group_specs:
+        ax.text(
+            spec["center"],
+            12.25,
+            spec["continent"],
+            ha="center",
+            va="center",
+            fontsize=15,
+            weight="bold",
+            bbox=bbox_props,
+            zorder=5,
+        )
+
+    legend_handles = [
+        Line2D(
+            [],
+            [],
+            color=size_colors["500m"],
+            marker="o",
+            linestyle="None",
+            markersize=10,
+            markeredgecolor="#5c5c5c",
+            label="500M",
+        ),
+        Line2D(
+            [],
+            [],
+            color=size_colors["1b"],
+            marker="o",
+            linestyle="None",
+            markersize=10,
+            markeredgecolor="#5c5c5c",
+            label="1B",
+        ),
+    ]
+    fig.legend(
+        handles=legend_handles,
+        loc="upper center",
+        ncol=2,
+        frameon=True,
+        fancybox=True,
+        framealpha=0.9,
+        edgecolor="black",
+        fontsize=13,
+        bbox_to_anchor=(0.5, 0.79),
+    )
+
+    plt.tight_layout()
+    plt.subplots_adjust(top=0.68, bottom=0.26, left=0.07, right=0.99)
+    plt.savefig(
+        os.path.join(output_dir, "local_country_ppl_500m_1b.pdf"),
+        dpi=600,
+        bbox_inches="tight",
+        pad_inches=0.02,
+    )
+    plt.close(fig)
+
+    _write_plot_csv(output_dir, 14, plot_df)
+    old_paths = [
+        os.path.join(output_dir, "local_country_ppl_500m.pdf"),
+        os.path.join(output_dir, "local_country_ppl_1b.pdf"),
+        os.path.join(output_dir, "plot_15.csv"),
+    ]
+    for path in old_paths:
+        if os.path.exists(path):
+            os.remove(path)
+
+
+def plot_country_level_qa_accuracy():
+    continents = ["Africa", "America", "Asia", "Europe"]
+    bbox_props = dict(
+        facecolor="lightgrey",
+        edgecolor="grey",
+        alpha=0.7,
+        boxstyle="round",
+        pad=0.35,
+    )
+    continent_bg_colors = {
+        "Africa": "#f8e8ea",
+        "America": "#e8f1fb",
+        "Asia": "#eef7e8",
+        "Europe": "#f7f0e6",
+    }
+    variant_specs = [
+        {
+            "label": "1B T-",
+            "size": "1B",
+            "metadata": "T-",
+            "root": "/scratch/amukher6/metacul/results/downstream",
+            "pattern": "qa_metacul_eval_without_metadata_custom_*_c0.jsonl",
+            "color": "#d95f02",
+        },
+        {
+            "label": "1B T+",
+            "size": "1B",
+            "metadata": "T+",
+            "root": "/scratch/amukher6/metacul/results/downstream",
+            "pattern": "qa_metacul_eval_with_metadata_custom_*_c0.jsonl",
+            "color": "#1b9e77",
+        },
+        {
+            "label": "3B T-",
+            "size": "3B",
+            "metadata": "T-",
+            "root": "/scratch/amukher6/metacul/results/downstream_3b",
+            "pattern": "qa_metacul_eval_without_metadata_custom_*_c0.jsonl",
+            "color": "#d95f02",
+        },
+        {
+            "label": "3B T+",
+            "size": "3B",
+            "metadata": "T+",
+            "root": "/scratch/amukher6/metacul/results/downstream_3b",
+            "pattern": "qa_metacul_eval_with_metadata_custom_*_c0.jsonl",
+            "color": "#1b9e77",
+        },
+    ]
+
+    def normalize_country_name(name: str) -> str:
+        name = str(name).strip()
+        if name == "USA":
+            return "United States"
+        return name
+
+    records = []
+    for spec in variant_specs:
+        files = sorted(glob.glob(os.path.join(spec["root"], spec["pattern"])))
+        by_country = {}
+        for path in files:
+            base_url = (
+                os.path.basename(path)
+                .split("_custom_")[1]
+                .rsplit("_c0.jsonl", 1)[0]
+            )
+            with open(path, "r", encoding="utf-8") as f:
+                for line in f:
+                    if not line.strip():
+                        continue
+                    row = json.loads(line)
+                    if "is_correct" not in row:
+                        continue
+                    country_name = normalize_country_name(row.get("country", ""))
+                    continent = str(row.get("continent", "")).strip().capitalize()
+                    if not country_name or continent not in continents:
+                        continue
+                    stats = by_country.setdefault(
+                        (continent, country_name),
+                        {"correct": 0, "answered": 0, "base_urls": set()},
+                    )
+                    stats["correct"] += int(bool(row["is_correct"]))
+                    stats["answered"] += 1
+                    stats["base_urls"].add(base_url)
+
+        for (continent, country_name), stats in by_country.items():
+            if stats["answered"] <= 0:
+                continue
+            accuracy = stats["correct"] / stats["answered"]
+            records.append(
+                {
+                    "variant": spec["label"],
+                    "size": spec["size"],
+                    "metadata": spec["metadata"],
+                    "continent": continent,
+                    "country_name": country_name,
+                    "accuracy": accuracy,
+                    "correct": stats["correct"],
+                    "answered": stats["answered"],
+                    "num_base_urls": len(stats["base_urls"]),
+                    "results_root": spec["root"],
+                }
+            )
+
+    if not records:
+        print("No country-level QA accuracy records found.")
+        return
+
+    plot_df = pd.DataFrame(records)
+    output_dir = os.path.join(PLOTS_DIR, "plot12")
+    os.makedirs(output_dir, exist_ok=True)
+    def render_size(size: str, plot_index: int):
+        sub_df = plot_df[plot_df["size"] == size].copy()
+        if sub_df.empty:
+            return
+
+        fig, ax = plt.subplots(1, 1, figsize=(19, 7.2))
+        country_positions = []
+        country_labels = []
+        group_specs = []
+        metadata_means = {"T-": [], "T+": []}
+        cursor = 0.0
+        continent_gap = 1.25
+        y_min = max(0.40, float(sub_df["accuracy"].min()) - 0.04)
+        y_max = min(1.00, float(sub_df["accuracy"].max()) + 0.10)
+        marker_offsets = {"T-": -0.16, "T+": 0.16}
+
+        for continent in continents:
+            continent_df = sub_df[sub_df["continent"] == continent].copy()
+            order = (
+                continent_df[continent_df["metadata"] == "T+"]
+                .sort_values("accuracy", ascending=False)["country_name"]
+                .tolist()
+            )
+            if not order:
+                order = sorted(continent_df["country_name"].unique().tolist())
+            continent_df["country_name"] = pd.Categorical(
+                continent_df["country_name"], categories=order, ordered=True
+            )
+            continent_df = continent_df.sort_values(["country_name", "metadata"]).reset_index(drop=True)
+
+            base_width = 0.78 if continent != "Asia" else 0.60
+            x = np.arange(len(order), dtype=float) + cursor
+            country_positions.extend(x.tolist())
+            country_labels.extend(order)
+
+            ordered = {}
+            for metadata in ["T-", "T+"]:
+                meta_sub = (
+                    continent_df[continent_df["metadata"] == metadata]
+                    .set_index("country_name")
+                    .reindex(order)
+                    .reset_index()
+                )
+                ordered[metadata] = meta_sub
+                metadata_means[metadata].append(
+                    {
+                        "left": x[0] - base_width * 0.7,
+                        "right": x[-1] + base_width * 0.7,
+                        "mean": float(meta_sub["accuracy"].mean()),
+                    }
+                )
+
+            for idx in range(len(order)):
+                y_tminus = float(ordered["T-"].iloc[idx]["accuracy"])
+                y_tplus = float(ordered["T+"].iloc[idx]["accuracy"])
+                x_tminus = x[idx] + marker_offsets["T-"]
+                x_tplus = x[idx] + marker_offsets["T+"]
+                ax.plot(
+                    [x_tminus, x_tplus],
+                    [y_tminus, y_tplus],
+                    color="#7a7a7a",
+                    linewidth=2.0,
+                    alpha=0.8,
+                    zorder=2.8,
+                )
+
+            ax.scatter(
+                x + marker_offsets["T-"],
+                ordered["T-"]["accuracy"],
+                s=92,
+                color="#d95f02",
+                edgecolors="#5c5c5c",
+                linewidths=0.9,
+                zorder=3.4,
+            )
+            ax.scatter(
+                x + marker_offsets["T+"],
+                ordered["T+"]["accuracy"],
+                s=92,
+                color="#1b9e77",
+                edgecolors="#5c5c5c",
+                linewidths=0.9,
+                zorder=3.4,
+            )
+
+            group_specs.append(
+                {
+                    "continent": continent,
+                    "start": x[0],
+                    "end": x[-1],
+                    "center": (x[0] + x[-1]) / 2,
+                    "base_width": base_width,
+                }
+            )
+            cursor = x[-1] + continent_gap
+
+        for spec in group_specs:
+            ax.axvspan(
+                spec["start"] - spec["base_width"] * 0.75,
+                spec["end"] + spec["base_width"] * 0.75,
+                facecolor=continent_bg_colors.get(spec["continent"], "#f5f5f5"),
+                alpha=0.28,
+                zorder=0.1,
+                linewidth=0,
+            )
+
+        for metadata, segments in metadata_means.items():
+            color = "#d95f02" if metadata == "T-" else "#1b9e77"
+            line_x = []
+            line_y = []
+            for idx, seg in enumerate(segments):
+                if idx > 0:
+                    prev = segments[idx - 1]
+                    join_x = (prev["right"] + seg["left"]) / 2
+                    line_x.extend([join_x, join_x])
+                    line_y.extend([prev["mean"], seg["mean"]])
+                line_x.extend([seg["left"], seg["right"]])
+                line_y.extend([seg["mean"], seg["mean"]])
+            ax.plot(
+                line_x,
+                line_y,
+                color=color,
+                linestyle=(0, (4, 2)),
+                linewidth=1.6,
+                alpha=0.98,
+                zorder=2.2,
+            )
+
+        ax.set_xticks(country_positions)
+        ax.set_xticklabels(country_labels, rotation=40, ha="right", fontsize=11)
+        ax.tick_params(axis="y", labelsize=13)
+        ax.grid(axis="y", linestyle="--", linewidth=0.5, alpha=0.22)
+        ax.set_ylim(y_min, y_max)
+        ax.set_xlim(min(country_positions) - 1.0, max(country_positions) + 1.0)
+        ax.set_axisbelow(True)
+        ax.spines["top"].set_visible(False)
+        ax.spines["right"].set_visible(False)
+        ax.spines["left"].set_alpha(0.35)
+        ax.spines["bottom"].set_alpha(0.35)
+        ax.set_ylabel("Accuracy (↑ better)", fontsize=16)
+        ax.set_xlabel("")
+
+        for spec in group_specs:
+            ax.text(
+                spec["center"],
+                y_max - 0.04,
+                spec["continent"],
+                ha="center",
+                va="center",
+                fontsize=15,
+                weight="bold",
+                bbox=bbox_props,
+                zorder=5,
+            )
+
+        legend_handles = [
+            Line2D(
+                [],
+                [],
+                color="#d95f02",
+                marker="o",
+                linestyle="None",
+                markersize=9.5,
+                markeredgecolor="#5c5c5c",
+                label="T-",
+            ),
+            Line2D(
+                [],
+                [],
+                color="#1b9e77",
+                marker="o",
+                linestyle="None",
+                markersize=9.5,
+                markeredgecolor="#5c5c5c",
+                label="T+",
+            ),
+        ]
+        fig.legend(
+            handles=legend_handles,
+            loc="upper center",
+            ncol=2,
+            frameon=True,
+            fancybox=True,
+            framealpha=0.9,
+            edgecolor="black",
+            fontsize=13,
+            bbox_to_anchor=(0.5, 0.84),
+        )
+
+        plt.tight_layout()
+        plt.subplots_adjust(top=0.72, bottom=0.26, left=0.07, right=0.99)
+        plt.savefig(
+            os.path.join(output_dir, f"country_qa_accuracy_{size.lower()}.pdf"),
+            dpi=600,
+            bbox_inches="tight",
+            pad_inches=0.02,
+        )
+        plt.close(fig)
+        _write_plot_csv(output_dir, plot_index, sub_df)
+
+    render_size("1B", 15)
+    render_size("3B", 16)
+
+    combined_path = os.path.join(output_dir, "country_qa_accuracy_1b_3b.pdf")
+    if os.path.exists(combined_path):
+        os.remove(combined_path)
 
 
 def main():

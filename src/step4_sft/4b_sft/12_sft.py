@@ -21,6 +21,8 @@ parser.add_argument('--size', choices=['1b', '3b'], default='1b', help='Base mod
 parser.add_argument('--base-model-path', default=None, help='Override the local base model path')
 parser.add_argument('--output-dir', default=None, help='Override the output adapter directory')
 parser.add_argument('--dataset', default='yahma/alpaca-cleaned', help='HF dataset to load')
+parser.add_argument('--profile', choices=['controlled', 'best3b'], default='controlled', help='Training profile')
+parser.add_argument('--name-suffix', default='', help='Suffix appended to adapter/output names, e.g. _best3b')
 args = parser.parse_args()
 
 metadata = args.metadata
@@ -29,8 +31,25 @@ name = f"{name_prefix}_{args.size}"
 model_name = args.base_model_path or f"/scratch/amukher6/metacul/models/{name}"
 
 print(f"Training SFT {name}")
-output_dir = args.output_dir or f"/scratch/amukher6/metacul/models/sft/{name}_sft_lora"
+adapter_stem = f"{name}{args.name_suffix}_sft_lora"
+output_dir = args.output_dir or f"/scratch/amukher6/metacul/models/sft/{adapter_stem}"
 os.makedirs(output_dir, exist_ok=True)
+
+learning_rate = 2e-4
+per_device_train_batch_size = 2
+gradient_accumulation_steps = 8
+num_train_epochs = 3
+if args.profile == "best3b":
+    if args.size != "3b":
+        raise ValueError("--profile best3b is only supported with --size 3b")
+    learning_rate = 1e-4
+    per_device_train_batch_size = 1
+    gradient_accumulation_steps = 8
+
+print(
+    f"Profile={args.profile} lr={learning_rate} batch={per_device_train_batch_size} "
+    f"grad_accum={gradient_accumulation_steps} epochs={num_train_epochs} output={output_dir}"
+)
 
 # Let Trainer initialize the W&B run; this keeps behavior aligned with the prior 1B run.
 train_dataset = load_dataset(args.dataset)["train"]
@@ -167,10 +186,10 @@ peft_config = LoraConfig(
 
 # https://huggingface.co/unsloth/Llama-3.2-1B-Instruct/blob/main/chat_template.jinja
 training_args = SFTConfig(
-    num_train_epochs=3,
-    per_device_train_batch_size=2,
-    gradient_accumulation_steps=8,
-    learning_rate=2e-4,
+    num_train_epochs=num_train_epochs,
+    per_device_train_batch_size=per_device_train_batch_size,
+    gradient_accumulation_steps=gradient_accumulation_steps,
+    learning_rate=learning_rate,
     optim="adamw_bnb_8bit",
     max_length=None,
     output_dir=output_dir,

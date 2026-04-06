@@ -24,6 +24,7 @@ parser.add_argument('--dataset', default="iamshnoo/qa_metacul", help="HF dataset
 parser.add_argument('--split', default="train", help="Dataset split to evaluate")
 parser.add_argument('--output-jsonl', default=None)
 parser.add_argument('--custom-model-path', default=None, help='Override the merged custom chat model path')
+parser.add_argument('--name-suffix', default='', help='Suffix appended to default custom model names, e.g. _best3b')
 parser.add_argument('--llama-model-name', default="meta-llama/Llama-3.2-1B-Instruct", help='Baseline Llama model path or repo ID')
 parser.add_argument('--base-url', default="www.globalfactcheck.org", help="Base URL for metadata block")
 parser.add_argument('--url-corruption-rate', type=float, default=0.0, help="Fraction of samples with corrupted URL metadata")
@@ -33,6 +34,7 @@ parser.add_argument('--max-new-tokens', type=int, default=128)
 parser.add_argument('--temperature', type=float, default=0.6)
 parser.add_argument('--top-p', type=float, default=0.9)
 args = parser.parse_args()
+hf_token = os.environ.get("HF_TOKEN")
 
 metadata = args.metadata
 name_prefix = "combined_with_metadata" if metadata else "combined_without_metadata"
@@ -40,7 +42,7 @@ name = f"{name_prefix}_{args.size}"
 
 model_type = args.model_type
 if model_type == "custom":
-    model_name = args.custom_model_path or f"/scratch/amukher6/metacul/models/sft/{name}_chat"
+    model_name = args.custom_model_path or f"/scratch/amukher6/metacul/models/sft/{name}{args.name_suffix}_chat"
 else:
     if model_type == "llama3_chat":
         model_name = args.llama_model_name
@@ -59,13 +61,22 @@ if args.output_jsonl is None:
         f"{suffix}_{model_type}_{base_slug}{corruption_suffix}.jsonl"
     )
 
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+pretrained_kwargs = {}
+if hf_token and not os.path.isdir(model_name):
+    pretrained_kwargs["token"] = hf_token
+
+tokenizer = AutoTokenizer.from_pretrained(model_name, **pretrained_kwargs)
 tokenizer.pad_token = tokenizer.eos_token
 
 if model_type == "custom":
     tokenizer.chat_template = open(chat_template_path, "r").read()
 
-model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", dtype="auto")
+model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    device_map="auto",
+    dtype="auto",
+    **pretrained_kwargs,
+)
 
 
 SYSTEM_PROMPT = (

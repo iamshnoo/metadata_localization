@@ -1,0 +1,11 @@
+model_path,test_set_path,mean_ppl,ci_low,ci_high,skipped_samples,ci_level,ci_method,split,max_samples,seed,bootstrap_iters
+/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b,/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/,10.005025,9.656199,10.323874,0,0.95,bootstrap,test,1000,42,1000
+/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b,/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/,,,,,0.95,bootstrap,test,1000,42,1000
+/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b,/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/,,,,,0.95,bootstrap,test,1000,42,1000
+/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b,/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/,,,,,0.95,bootstrap,test,1000,42,1000
+/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b,/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/,,,,,0.95,bootstrap,test,1000,42,1000
+/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b,/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/,,,,,0.95,bootstrap,test,1000,42,1000
+/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b,/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/,,,,,0.95,bootstrap,test,1000,42,1000
+/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b,/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/,,,,,0.95,bootstrap,test,1000,42,1000
+/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b,/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/,,,,,0.95,bootstrap,test,1000,42,1000
+/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b,/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/,,,,,0.95,bootstrap,test,1000,42,1000

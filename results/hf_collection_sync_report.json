@@ -1,0 +1,1359 @@
+{
+  "collection_slug": "iamshnoo/metadata-conditioned-llms",
+  "synced_at": "2026-04-02T14:39:00.055069+00:00",
+  "repos": [
+    {
+      "repo_id": "iamshnoo/combined_with_metadata_500m",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "500m",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/nd1jwqst",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 500M | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_without_metadata_500m",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "500m",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/lqtre9sh",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 500M | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_with_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/zcm25bay",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 1B | with metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_with_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/zcm25bay",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 1B | with metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_with_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/zcm25bay",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 1B | with metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_with_metadata_1b",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/zcm25bay",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 1B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_without_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/09p25aoo",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 1B | without metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_without_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/09p25aoo",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 1B | without metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_without_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/09p25aoo",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 1B | without metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_without_metadata_1b",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/09p25aoo",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 1B | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_with_metadata_3b_step2k",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "3b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/l1je3vgr",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 3B | with metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_with_metadata_3b_step4k",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "3b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/l1je3vgr",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 3B | with metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_with_metadata_3b_step8k",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "3b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/l1je3vgr",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 3B | with metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_with_metadata_3b",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "3b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/l1je3vgr",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 3B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_without_metadata_3b_step2k",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "3b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/gwgpbgnj",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 3B | without metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_without_metadata_3b_step4k",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "3b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/gwgpbgnj",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 3B | without metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_without_metadata_3b_step8k",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "3b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/gwgpbgnj",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 3B | without metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_without_metadata_3b",
+      "stage": "pretrain",
+      "family": "global",
+      "size": "3b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/gwgpbgnj",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Global | 3B | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/africa_with_metadata_500m",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "500m",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/ngff6klz",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 500M | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/america_with_metadata_500m",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "500m",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/5fcq68w6",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 500M | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/asia_with_metadata_500m",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "500m",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/s353qw74",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 500M | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/europe_with_metadata_500m",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "500m",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/8it282n7",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 500M | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/africa_without_metadata_500m",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "500m",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/19vevff2",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 500M | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/america_without_metadata_500m",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "500m",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/eo6gwhf7",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 500M | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/asia_without_metadata_500m",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "500m",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/g4ifst9e",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 500M | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/europe_without_metadata_500m",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "500m",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/acb30jn3",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 500M | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/africa_with_metadata_1b",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/zpykugo9",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 1B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/america_with_metadata_1b",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/kane1qyw",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 1B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/asia_with_metadata_1b",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/xbk5hpp1",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 1B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/europe_with_metadata_1b",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/qkklq7sm",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 1B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/africa_without_metadata_1b",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/ag9mg77u",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 1B | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/america_without_metadata_1b",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/112kjd1x",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 1B | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/asia_without_metadata_1b",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/8mrndy2m",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 1B | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/europe_without_metadata_1b",
+      "stage": "pretrain",
+      "family": "local_continent",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/zjcuw3l0",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Local Continent | 1B | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_continent_with_metadata_1b",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/6baqnhow",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_continent_with_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/6baqnhow",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_continent_with_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/6baqnhow",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_continent_with_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/6baqnhow",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_country_with_metadata_1b",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/asmtp179",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_country_with_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/asmtp179",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_country_with_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/asmtp179",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_country_with_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/asmtp179",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_url_with_metadata_1b",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/mgsf3ei7",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_url_with_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/mgsf3ei7",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_url_with_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/mgsf3ei7",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_url_with_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/mgsf3ei7",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_url_continent_with_metadata_1b",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/f265qjmo",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_url_continent_with_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/f265qjmo",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_url_continent_with_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/f265qjmo",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_url_continent_with_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/f265qjmo",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_url_country_with_metadata_1b",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/hgm8p8xm",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_url_country_with_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/hgm8p8xm",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_url_country_with_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/hgm8p8xm",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_only_url_country_with_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "metadata_ablation",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/hgm8p8xm",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Metadata Ablation | 1B | with metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_africa_with_metadata_1b",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/zpykugo9",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_africa_with_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/zpykugo9",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_africa_with_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/zpykugo9",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_africa_with_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/zpykugo9",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_america_with_metadata_1b",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/kane1qyw",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_america_with_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/kane1qyw",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_america_with_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/kane1qyw",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_america_with_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/kane1qyw",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_asia_with_metadata_1b",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/xbk5hpp1",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_asia_with_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/xbk5hpp1",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_asia_with_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/xbk5hpp1",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_asia_with_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/xbk5hpp1",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_europe_with_metadata_1b",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/7olwlrxb",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_europe_with_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/7olwlrxb",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_europe_with_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/7olwlrxb",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_europe_with_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/7olwlrxb",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | with metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_africa_without_metadata_1b",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/ag9mg77u",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_africa_without_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/ag9mg77u",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_africa_without_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/ag9mg77u",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_africa_without_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/ag9mg77u",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_america_without_metadata_1b",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/112kjd1x",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_america_without_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/112kjd1x",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_america_without_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/112kjd1x",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_america_without_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/112kjd1x",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_asia_without_metadata_1b",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/8mrndy2m",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_asia_without_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/8mrndy2m",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_asia_without_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/8mrndy2m",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_asia_without_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/8mrndy2m",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_europe_without_metadata_1b",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/nanotron/wuszx8bw",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_europe_without_metadata_1b_step2k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "2k",
+      "wandb_run": "iamshnoo/nanotron/wuszx8bw",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata | checkpoint 2k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_europe_without_metadata_1b_step4k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "4k",
+      "wandb_run": "iamshnoo/nanotron/wuszx8bw",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata | checkpoint 4k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_no_europe_without_metadata_1b_step8k",
+      "stage": "pretrain",
+      "family": "leave_one_out",
+      "size": "1b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": "8k",
+      "wandb_run": "iamshnoo/nanotron/wuszx8bw",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/val_perplexity.png",
+        "assets/tokens_per_sec.png"
+      ],
+      "collection_note": "Leave One Out | 1B | without metadata | checkpoint 8k"
+    },
+    {
+      "repo_id": "iamshnoo/combined_with_metadata_3b_chat",
+      "stage": "sft_chat",
+      "family": "chat",
+      "size": "3b",
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/huggingface/7zo3u4gd",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/learning_rate.png",
+        "assets/grad_norm.png"
+      ],
+      "collection_note": "Chat | 3B | with metadata | chat"
+    },
+    {
+      "repo_id": "iamshnoo/combined_without_metadata_3b_chat",
+      "stage": "sft_chat",
+      "family": "chat",
+      "size": "3b",
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/huggingface/cvkfprfq",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/learning_rate.png",
+        "assets/grad_norm.png"
+      ],
+      "collection_note": "Chat | 3B | without metadata | chat"
+    },
+    {
+      "repo_id": "iamshnoo/combined_with_metadata_chat",
+      "stage": "sft_chat",
+      "family": "chat",
+      "size": null,
+      "metadata_mode": "with_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/huggingface/x9ixdg0u",
+      "plot_assets": [
+        "assets/train_loss.png",
+        "assets/learning_rate.png",
+        "assets/grad_norm.png"
+      ],
+      "collection_note": "Chat | with metadata | chat"
+    },
+    {
+      "repo_id": "iamshnoo/combined_without_metadata_chat",
+      "stage": "sft_chat",
+      "family": "chat",
+      "size": null,
+      "metadata_mode": "without_metadata",
+      "checkpoint": null,
+      "wandb_run": "iamshnoo/huggingface/ckoiwuah",
+      "plot_assets": [],
+      "collection_note": "Chat | without metadata | chat"
+    }
+  ],
+  "extra_items": [
+    {
+      "item_id": "iamshnoo/qa_metacul",
+      "item_type": "dataset",
+      "note": "Evaluation dataset | 800-question QA benchmark"
+    }
+  ]
+}
