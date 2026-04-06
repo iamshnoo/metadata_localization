@@ -20,3 +20,6 @@ results/per_sample_losses/
 
 # Local helper state
 .agents/
+
+# Local manuscript workspace
+latex/
