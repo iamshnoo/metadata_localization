@@ -8,6 +8,7 @@ import re
 import json
 import hashlib
 import glob
+import shutil
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -315,6 +316,176 @@ def plot_continent_models_metadata_effect():
     _write_plot_csv(output_dir, 1, subset)
 
 
+def plot_continent_models_metadata_effect_factorial():
+    # Factorial version of the local metadata-effect plot.
+    # Keeps the original plot_continent_models_metadata_effect() intact.
+    df = _load_perplexity_df()
+    axis_label_fs = 18
+    tick_fs = 14
+    legend_fs = 14
+    title_fs = 13
+    continents = ["Africa", "America", "Asia", "Europe"]
+    size_order = ["500m", "1b"]
+
+    def _collect_records(source_df):
+        rows = []
+        for _, row in source_df.iterrows():
+            model_info = _parse_model_info(row["model_path"])
+            test_info = _parse_test_info(row["test_set_path"])
+            if not model_info or not test_info:
+                continue
+            if model_info["continent"] != test_info["continent"]:
+                continue
+            if pd.isna(row["mean_ppl"]):
+                continue
+            rows.append(
+                {
+                    "continent": model_info["continent"].capitalize(),
+                    "train_meta": "T+" if model_info["meta"] == "with_metadata" else "T-",
+                    "infer_meta": "I+" if test_info["meta"] == "with_metadata" else "I-",
+                    "size": model_info["size"],
+                    "mean_ppl": float(row["mean_ppl"]),
+                    "ci_low": float(row["ci_low"]),
+                    "ci_high": float(row["ci_high"]),
+                }
+            )
+        return rows
+
+    records = _collect_records(df)
+    if not records:
+        fallback_csv = os.path.join(PLOTS_DIR, "plot1", "plot_1.csv")
+        if os.path.exists(fallback_csv):
+            records = _collect_records(pd.read_csv(fallback_csv))
+
+    if not records:
+        print("No continent model records found for factorial metadata effect plot.")
+        return
+
+    plot_df = pd.DataFrame(records)
+    train_order = ["T-", "T+"]
+    infer_styles = {
+        "I-": {"color": "#d95f02", "marker": "s", "linestyle": "--", "label": "I-"},
+        "I+": {"color": "#1b9e77", "marker": "o", "linestyle": "-", "label": "I+"},
+    }
+
+    for size in size_order:
+        subset = plot_df[plot_df["size"] == size]
+        fig, axes = plt.subplots(2, 2, figsize=(8.2, 6.8), sharex=True, sharey=True)
+        axes = axes.flatten()
+        all_values = []
+
+        for ax, continent in zip(axes, continents):
+            cont_df = subset[subset["continent"] == continent]
+            for infer_meta in ["I-", "I+"]:
+                means = []
+                lower = []
+                upper = []
+                for train_meta in train_order:
+                    row = cont_df[
+                        (cont_df["train_meta"] == train_meta)
+                        & (cont_df["infer_meta"] == infer_meta)
+                    ]
+                    if row.empty:
+                        means.append(np.nan)
+                        lower.append(0.0)
+                        upper.append(0.0)
+                        continue
+                    mean = row["mean_ppl"].values[0]
+                    ci_low = row["ci_low"].values[0]
+                    ci_high = row["ci_high"].values[0]
+                    means.append(mean)
+                    lower.append(mean - ci_low)
+                    upper.append(ci_high - mean)
+                    all_values.append(mean)
+
+                x = np.arange(len(train_order))
+                style = infer_styles[infer_meta]
+                ax.errorbar(
+                    x,
+                    means,
+                    yerr=np.vstack([lower, upper]),
+                    color=style["color"],
+                    marker=style["marker"],
+                    linestyle=style["linestyle"],
+                    linewidth=2.0,
+                    markersize=6.5,
+                    markeredgecolor="black",
+                    markeredgewidth=0.6,
+                    capsize=2.8,
+                    label=style["label"],
+                    zorder=3,
+                )
+
+            bbox_props = dict(
+                facecolor="#e2e2e2",
+                edgecolor="#aaaaaa",
+                alpha=0.95,
+                boxstyle="round,pad=0.28",
+            )
+            ax.text(
+                0.5,
+                0.96,
+                continent,
+                transform=ax.transAxes,
+                ha="center",
+                va="top",
+                fontsize=title_fs,
+                weight="bold",
+                bbox=bbox_props,
+            )
+            ax.set_xticks(np.arange(len(train_order)))
+            ax.set_xticklabels(train_order, fontsize=tick_fs)
+            ax.tick_params(axis="y", labelsize=tick_fs)
+            ax.grid(axis="y", linestyle="--", linewidth=0.5, alpha=0.3)
+
+        if all_values:
+            y_min = min(all_values)
+            y_max = max(all_values)
+            for ax in axes:
+                ax.set_ylim(y_min - 0.35, y_max + 0.65)
+
+        fig.text(0.5, 0.05, "Training metadata", ha="center", fontsize=axis_label_fs)
+        fig.text(0.02, 0.5, "Perplexity (↓ better)", va="center", rotation="vertical", fontsize=axis_label_fs)
+
+        legend_handles = [
+            Line2D(
+                [],
+                [],
+                color=style["color"],
+                marker=style["marker"],
+                linestyle=style["linestyle"],
+                linewidth=2.0,
+                markersize=6.5,
+                markeredgecolor="black",
+                markeredgewidth=0.6,
+                label=style["label"],
+            )
+            for style in infer_styles.values()
+        ]
+        fig.legend(
+            handles=legend_handles,
+            loc="upper center",
+            ncol=2,
+            frameon=True,
+            fancybox=True,
+            framealpha=0.9,
+            edgecolor="black",
+            title="Inference-time metadata",
+            fontsize=legend_fs,
+            bbox_to_anchor=(0.5, 0.99),
+        )
+
+        output_dir = os.path.join(PLOTS_DIR, "plot1")
+        os.makedirs(output_dir, exist_ok=True)
+        output_path = os.path.join(
+            output_dir, f"perplexity_continent_metadata_effect_{size}_factorial.pdf"
+        )
+        plt.tight_layout()
+        plt.subplots_adjust(top=0.82, bottom=0.13, left=0.12, right=0.98, hspace=0.14, wspace=0.10)
+        plt.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.01)
+        plt.close(fig)
+
+
 def _row_to_values(row):
     mean = float(row["mean_ppl"])
     ci_low = float(row["ci_low"])
@@ -580,7 +751,7 @@ def plot_local_vs_global_on_local_and_global():
 
 
 def plot_scaling_global_models():
-    # Plot: scaling impact for global models as a dumbbell with delta annotations.
+    # Plot: scaling impact for the original 500M/1B global models as a dumbbell with delta annotations.
     # Output: /scratch/amukher6/metacul/results/plots/plot3/perplexity_scaling_global_delta.pdf
     df = _load_perplexity_df()
     pairs = set()
@@ -594,7 +765,7 @@ def plot_scaling_global_models():
     region_labels = ["Africa", "America", "Asia", "Europe", "All"]
     meta_order = ["with_metadata", "without_metadata"]
 
-    size_order = ["500m", "1b", "3b"]
+    size_order = ["500m", "1b"]
     records = []
     for meta in meta_order:
         for size in size_order:
@@ -632,6 +803,21 @@ def plot_scaling_global_models():
         return
 
     plot_df = pd.DataFrame(records)
+    local_subset = plot_df[plot_df["region"].isin(region_labels[:-1])]
+    fallback_pdf = "/scratch/amukher6/metacul/latex/figs/main/3_perplexity_scaling_global_delta.pdf"
+    if local_subset.empty or local_subset["size"].nunique() < 2:
+        output_dir = os.path.join(PLOTS_DIR, "plot3")
+        os.makedirs(output_dir, exist_ok=True)
+        output_path = os.path.join(output_dir, "perplexity_scaling_global_delta.pdf")
+        if os.path.exists(fallback_pdf):
+            shutil.copy2(fallback_pdf, output_path)
+            print(
+                "Falling back to the validated 500M/1B scaling figure because "
+                "current results do not include the full local-test rows needed "
+                "to regenerate it cleanly."
+            )
+        return
+
     line_color = "#7f7f7f"
     colors = {"500m": "#f4a3a3", "1b": "#9ad1a6", "3b": "#8fb6ff"}
     markers = {"500m": "o", "1b": "s", "3b": "^"}
@@ -2311,7 +2497,7 @@ def plot_metadata_ablations():
 
 
 def plot_metadata_family_full_grid():
-    # Plot: metadata-family ablations with a 3-panel main figure and a 5x7 appendix grid.
+    # Plot: metadata ablations with a 3-panel main figure and a full appendix grid.
     # Outputs:
     #   /scratch/amukher6/metacul/results/plots/plot10/perplexity_metadata_family_main_1b.pdf
     #   /scratch/amukher6/metacul/results/plots/plot11/perplexity_metadata_family_full_grid_1b.pdf
@@ -2328,91 +2514,98 @@ def plot_metadata_family_full_grid():
 
     tests = [
         (
-            "URL-only (I+)",
+            "[URL] (I+)",
             "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",
         ),
         (
-            "URL+Country (I+)",
+            "[URL][Country] (I+)",
             "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/",
         ),
         (
-            "URL+Continent (I+)",
+            "[URL][Continent] (I+)",
             "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
         ),
         (
-            "Country-only (I+)",
+            "[Country] (I+)",
             "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/",
         ),
         (
-            "Continent-only (I+)",
+            "[Continent] (I+)",
             "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/",
         ),
         (
-            "Global metadata (I+)",
+            "[URL][Country][Continent] (I+)",
             "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
         ),
         (
-            "Global no-metadata (I-)",
+            "No metadata (I-)",
             "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
         ),
     ]
 
     model_groups = {
         "combined_with": {
-            "label": "Global [URL][Country][Continent] (T+)",
+            "label": "[URL][Country][Continent] (T+)",
             "final": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
             "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step{step}k",
             "color": "#2b8c66",
             "marker": "o",
-            "linestyle": "--",
+            "linestyle": "-",
+            "markerfacecolor": "#2b8c66",
         },
         "combined_without": {
-            "label": "Global (T-)",
+            "label": "[No metadata] (T-)",
             "final": "/scratch/amukher6/metacul/models/combined_without_metadata_1b",
             "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step{step}k",
             "color": "#7f7f7f",
             "marker": "s",
-            "linestyle": "--",
+            "linestyle": (0, (5, 2)),
+            "markerfacecolor": "#7f7f7f",
         },
         "url": {
-            "label": "URL-only [URL] (T+)",
+            "label": "[URL] (T+)",
             "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
             "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step{step}k",
             "color": "#f4a3a3",
             "marker": "D",
-            "linestyle": "-",
+            "linestyle": (0, (3, 1, 1, 1)),
+            "markerfacecolor": "#f4a3a3",
         },
         "url_country": {
-            "label": "URL+Country [URL][Country] (T+)",
+            "label": "[URL][Country] (T+)",
             "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
             "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step{step}k",
             "color": "#b8a1d9",
             "marker": "v",
-            "linestyle": "-",
+            "linestyle": ":",
+            "markerfacecolor": "white",
         },
         "url_continent": {
-            "label": "URL+Continent [URL][Continent] (T+)",
+            "label": "[URL][Continent] (T+)",
             "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
             "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step{step}k",
             "color": "#6baed6",
             "marker": "^",
-            "linestyle": "-",
+            "linestyle": "-.",
+            "markerfacecolor": "white",
         },
         "country_only": {
-            "label": "Country-only [Country] (T+)",
+            "label": "[Country] (T+)",
             "final": "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
             "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step{step}k",
             "color": "#f0c36d",
             "marker": "P",
-            "linestyle": "-",
+            "linestyle": (0, (1, 1)),
+            "markerfacecolor": "white",
         },
         "continent_only": {
-            "label": "Continent-only [Continent] (T+)",
+            "label": "[Continent] (T+)",
             "final": "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
             "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step{step}k",
             "color": "#74c476",
-            "marker": "o",
-            "linestyle": "-",
+            "marker": "X",
+            "linestyle": (0, (7, 2, 1.2, 2)),
+            "markerfacecolor": "white",
         },
     }
 
@@ -2485,7 +2678,7 @@ def plot_metadata_family_full_grid():
             )
         return series
 
-    def _draw_series(ax, title, series_map, keys):
+    def _draw_series(ax, title, series_map, keys, title_size=None, title_y=None):
         draw_order = [key for key in keys if key not in {"combined_with", "combined_without"}]
         draw_order += [key for key in keys if key in {"combined_with", "combined_without"}]
         for key in draw_order:
@@ -2494,7 +2687,7 @@ def plot_metadata_family_full_grid():
             valid = ~np.isnan(y_vals)
             if not np.any(valid):
                 continue
-            x_vals = np.arange(len(step_labels))
+            x_vals = np.arange(len(step_labels), dtype=float)
             is_global = key in {"combined_with", "combined_without"}
             ax.plot(
                 x_vals,
@@ -2503,9 +2696,10 @@ def plot_metadata_family_full_grid():
                 marker=cfg["marker"],
                 linestyle=cfg["linestyle"],
                 linewidth=2.6 if is_global else 2,
-                markersize=6.5 if is_global else 6,
+                markersize=7.0 if is_global else 6.8,
+                markerfacecolor=cfg.get("markerfacecolor", cfg["color"]),
                 markeredgecolor="black",
-                markeredgewidth=0.6,
+                markeredgewidth=0.9 if is_global else 0.8,
                 label=cfg["label"],
                 zorder=5 if is_global else 3,
             )
@@ -2516,7 +2710,7 @@ def plot_metadata_family_full_grid():
                     lo_vals,
                     hi_vals,
                     color=cfg["color"],
-                    alpha=0.14 if is_global else 0.2,
+                    alpha=0.10 if is_global else 0.12,
                     linewidth=0.4,
                     edgecolor=cfg["color"],
                     where=band_mask,
@@ -2526,23 +2720,50 @@ def plot_metadata_family_full_grid():
             all_values.extend([v for v in y_vals if not np.isnan(v)])
 
         bbox_props = dict(
-            facecolor="lightgrey",
-            edgecolor="grey",
-            alpha=0.7,
-            boxstyle="round,pad=0.45",
+            facecolor="#e2e2e2",
+            edgecolor="#aaaaaa",
+            alpha=0.95,
+            boxstyle="round,pad=0.36",
         )
-        ax.set_title(title, fontsize=title_fs, weight="bold", pad=6, bbox=bbox_props)
+        if title_y is not None:
+            ax.text(
+                0.5,
+                title_y,
+                title,
+                transform=ax.transAxes,
+                ha="center",
+                va="top",
+                fontsize=title_size or title_fs,
+                weight="bold",
+                bbox=bbox_props,
+                zorder=10,
+                clip_on=False,
+            )
+        else:
+            ax.set_title(
+                title,
+                fontsize=title_size or title_fs,
+                weight="bold",
+                pad=8,
+                bbox=bbox_props,
+            )
         ax.set_xticks(np.arange(len(step_labels)))
         ax.set_xticklabels(step_labels, fontsize=tick_fs)
         ax.grid(axis="y", linestyle="--", linewidth=0.5, alpha=0.3)
         ax.tick_params(axis="y", labelsize=tick_fs)
         ax.tick_params(axis="x", labelsize=tick_fs)
-        ax.set_ylim(bottom=8.5)
+        ax.set_ylim(bottom=8.8)
 
     main_panels = [
-        ("Avg over family tests (I+)", own_test_paths[0], "own_average"),
-        ("Global metadata (I+)", tests[5][1], "test_path"),
-        ("Global no-metadata (I-)", tests[6][1], "test_path"),
+        (
+            "Test sets (I+):\nAvg. over\n[URL], [URL][Country]\n[URL][Continent]\n[Country], [Continent]",
+            own_test_paths[0],
+            "own_average",
+            title_fs - 3,
+            0.90,
+        ),
+        ("Test set:\n[URL][Country][Continent] (I+)", tests[5][1], "test_path", title_fs - 2, 0.90),
+        ("Test set:\nNo metadata (I-)", tests[6][1], "test_path", title_fs - 1, 0.90),
     ]
     main_model_keys = [
         "url",
@@ -2554,21 +2775,36 @@ def plot_metadata_family_full_grid():
     appendix_model_keys = list(model_groups.keys())
 
     fig, axes = plt.subplots(1, 3, figsize=(15.5, 5), sharey=True)
-    for ax, (title, payload, mode) in zip(axes, main_panels):
+    for ax, (title, payload, mode, panel_title_fs, panel_title_y) in zip(axes, main_panels):
         if mode == "own_average":
             series_map = _series_for_own_average(main_model_keys, pairs_main)
         else:
             series_map = _series_for_test_path(payload, main_model_keys, pairs_main)
-        _draw_series(ax, title, series_map, main_model_keys)
+        _draw_series(
+            ax,
+            title,
+            series_map,
+            main_model_keys,
+            title_size=panel_title_fs,
+            title_y=panel_title_y,
+        )
 
     if all_values:
         y_max = max(all_values)
+        y_min = min(all_values)
         for ax in axes:
-            ax.set_ylim(top=y_max + 1.0)
+            ax.set_ylim(bottom=y_min - 0.18, top=y_max + 0.28)
 
     axes[0].set_ylabel("Perplexity (↓ better)", fontsize=axis_label_fs)
     fig.text(0.5, 0.03, "Training steps", ha="center", fontsize=axis_label_fs)
 
+    legend_keys = [
+        "url",
+        "country_only",
+        "continent_only",
+        "combined_with",
+        "combined_without",
+    ]
     legend_handles = [
         Line2D(
             [],
@@ -2577,30 +2813,33 @@ def plot_metadata_family_full_grid():
             marker=cfg["marker"],
             linestyle=cfg["linestyle"],
             linewidth=2,
+            markersize=7,
+            markerfacecolor=cfg.get("markerfacecolor", cfg["color"]),
             markeredgecolor="black",
             label=cfg["label"],
         )
-        for key in main_model_keys
+        for key in legend_keys
         for cfg in [model_groups[key]]
     ]
     fig.legend(
         handles=legend_handles,
         labels=[h.get_label() for h in legend_handles],
+        title="Models",
         frameon=True,
         fancybox=True,
         framealpha=0.9,
         edgecolor="black",
         fontsize=legend_fs,
         loc="upper center",
-        ncol=4,
-        bbox_to_anchor=(0.5, 1.04),
+        ncol=3,
+        bbox_to_anchor=(0.5, 0.955),
     )
 
     output_dir = os.path.join(PLOTS_DIR, "plot10")
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, "perplexity_metadata_family_main_1b.pdf")
     plt.tight_layout()
-    plt.subplots_adjust(top=0.74, bottom=0.12)
+    plt.subplots_adjust(top=0.72, bottom=0.12)
     plt.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.01)
     plt.close(fig)
 
@@ -4173,6 +4412,7 @@ def plot_country_level_qa_accuracy():
 
 def main():
     plot_continent_models_metadata_effect()
+    plot_continent_models_metadata_effect_factorial()
     plot_local_vs_global_on_local_and_global()
     plot_scaling_global_models()
     plot_cross_continent_generalization()

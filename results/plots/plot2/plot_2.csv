@@ -1,3 +1,5 @@
 model_path,test_set_path,mean_ppl,ci_low,ci_high,skipped,ci_level,bootstrap_method,split,max_samples,seed,bootstrap_iters,skipped_samples,ci_method
 /scratch/amukher6/metacul/models/combined_with_metadata_1b,/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/,9.150932,8.82721,9.447744,,0.95,,test,1000,42,1000,0,bootstrap
+/scratch/amukher6/metacul/models/combined_with_metadata_500m,/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/,10.772432,10.387641,11.131924,,0.95,,test,1000,42,1000,0,bootstrap
 /scratch/amukher6/metacul/models/combined_without_metadata_1b,/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/,9.963763,9.61186,10.285966,,0.95,,test,1000,42,1000,0,bootstrap
+/scratch/amukher6/metacul/models/combined_without_metadata_500m,/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/,11.65848,11.244761,12.048933,,0.95,,test,1000,42,1000,0,bootstrap
