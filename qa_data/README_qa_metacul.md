@@ -15,11 +15,11 @@ tags:
 - geography
 ---
 
-# qa_metacul
+# qa_metacul (Legacy)
 
 ## Summary
 
-`qa_metacul` is an 800-question multiple-choice benchmark used to evaluate metadata-conditioned language models in the Metadata Conditioned LLMs project.
+`qa_metacul` is the legacy 800-question multiple-choice benchmark used in earlier versions of this project. It is preserved for backward compatibility and historical comparison, but it is no longer the canonical benchmark surface for MAPLE.
 
 The benchmark tests whether a model can answer culturally and geographically grounded factual questions for different parts of the world, and whether metadata-aware models correctly adapt their answers when continent- or country-level context changes.
 

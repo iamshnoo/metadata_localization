@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "culture-map"
+version = "0.1.0"
+description = "Recreate the Tao et al. cultural map and project model responses onto it"
+requires-python = ">=3.6"
+dependencies = [
+  "matplotlib",
+  "numpy",
+  "pandas",
+  "pillow",
+  "requests",
+]
+
+[project.scripts]
+culture-map = "culture_map.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
