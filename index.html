@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Metadata Conditioned Large Language Models for Localization</title>
+    <meta name="description" content="Project page for Metadata Conditioned Large Language Models for Localization." />
+    <link rel="canonical" href="https://iamshnoo.github.io/metadata_localization/" />
+    <link rel="stylesheet" href="paper-site.css" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Metadata Conditioned Large Language Models for Localization" />
+    <meta property="og:description" content="Lightweight metadata conditioning can localize language models using country, continent, and URL signals." />
+    <meta property="og:url" content="https://iamshnoo.github.io/metadata_localization/" />
+    <meta property="og:image" content="https://iamshnoo.github.io/images/optimized/full/metadata-localization-full.7d52c6b370.webp" />
+    <meta property="og:image:alt" content="Metadata Conditioned LLMs figure" />
+  </head>
+  <body>
+    <main class="page">
+      <a class="back-link" href="https://iamshnoo.github.io/#metadata-localization">Back to selected publications</a>
+      <header class="hero">
+        <span class="venue">ArXiv</span>
+        <h1>Metadata Conditioned Large Language Models for Localization</h1>
+        <p class="authors"><a href="https://iamshnoo.github.io/">Anjishnu Mukherjee</a>, <a href="https://zziwei.github.io/">Ziwei Zhu</a>, <a href="https://antonisa.github.io/">Antonios Anastasopoulos</a></p>
+        <p class="affiliation">George Mason University</p>
+        <nav class="links" aria-label="Paper links">
+          <a href="https://arxiv.org/pdf/2601.15236">PDF</a>
+          <a href="https://arxiv.org/abs/2601.15236">arXiv</a>
+          <a href="https://github.com/iamshnoo/metadata_localization">Code</a>
+        </nav>
+      </header>
+      <figure class="teaser">
+        <picture>
+          <source srcset="https://iamshnoo.github.io/images/optimized/fig1/metadata-localization-720.23905b1da3.avif" type="image/avif" />
+          <img src="https://iamshnoo.github.io/images/optimized/fig1/metadata-localization-720.d001f76fa6.webp" width="720" height="589" alt="Metadata conditioned language model localization pipeline and evaluation schematic." />
+        </picture>
+        <figcaption class="subtitle">Lightweight metadata conditioning helps language models recover geographically localized behavior without training separate regional models.</figcaption>
+      </figure>
+      <section aria-labelledby="abstract-title">
+        <h2 id="abstract-title">Abstract</h2>
+        <div class="section-card"><p>Large language models are typically trained by treating text as a single global distribution, often resulting in geographically homogenized behavior. We study metadata conditioning as a lightweight approach for localization, pre-training 31 models (at 0.5B and 1B parameter scales) from scratch on large-scale English news data annotated with verified URLs, country tags, and continent tags, covering 4 continents and 17 countries. Across four controlled experiments, we show that metadata conditioning consistently improves in-region performance without sacrificing cross-region generalization, enables global models to recover localization comparable to region-specific models, and improves learning efficiency. Our ablation studies demonstrate that URL-level metadata alone captures much of the geographic signal, while balanced regional data coverage remains essential, as metadata cannot fully compensate for missing regions. Finally, we introduce a downstream benchmark of 800 localized news MCQs and show that after instruction tuning, metadata conditioned global models achieve accuracy comparable to LLaMA-3.2-1B-Instruct, despite being trained on substantially less data. Together, these results establish metadata conditioning as a practical and compute-efficient approach for localization of language models.</p></div>
+      </section>
+      <section aria-labelledby="highlights-title">
+        <h2 id="highlights-title">Highlights</h2>
+        <div class="grid"><div class="point"><strong>Localized pretraining</strong>Trains models with URL, country, and continent metadata on verified English news data.</div><div class="point"><strong>Controlled scale</strong>Studies 31 models across 0.5B and 1B parameter settings with region-specific and global comparisons.</div><div class="point"><strong>Downstream benchmark</strong>Introduces 800 localized news multiple-choice questions for evaluating localized model behavior.</div></div>
+      </section>
+      <section aria-labelledby="bibtex-title">
+        <h2 id="bibtex-title">BibTeX</h2>
+        <pre><code>@misc{mukherjee2026metadata,
+  title = {Metadata Conditioned Large Language Models for Localization},
+  author = {Mukherjee, Anjishnu and Zhu, Ziwei and Anastasopoulos, Antonios},
+  year = {2026},
+  eprint = {2601.15236},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CL},
+  url = {https://arxiv.org/abs/2601.15236}
+}</code></pre>
+      </section>
+    </main>
+  </body>
+</html>
