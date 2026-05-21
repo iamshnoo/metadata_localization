@@ -2,23 +2,23 @@
 import json
 import os
 
-RESULTS_DIR = "/scratch/amukher6/metacul/results"
+RESULTS_DIR = "/path/to/metacul/results"
 OUTPUT_JSON = os.path.join(RESULTS_DIR, "perplexity", "eval_list_plot13_500m_backfill.json")
 
 models = [
-    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step2k",
-    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step4k",
-    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step8k",
-    "/scratch/amukher6/metacul/models/combined_with_metadata_500m",
-    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step2k",
-    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step4k",
-    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step8k",
-    "/scratch/amukher6/metacul/models/combined_without_metadata_500m",
+    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step2k",
+    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step4k",
+    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step8k",
+    "/path/to/metacul/models/combined_with_metadata_500m",
+    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step2k",
+    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step4k",
+    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step8k",
+    "/path/to/metacul/models/combined_without_metadata_500m",
 ]
 
 test_sets = [
-    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
-    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
+    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
 ]
 
 rows = []

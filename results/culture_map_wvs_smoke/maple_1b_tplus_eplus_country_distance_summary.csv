@@ -1,0 +1,2 @@
+variant,label,country,country_code,continent,category,RC1,RC2,target_distance,target_rank,nearest_country,nearest_distance,top1_hit,top3_hit
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",India,in,Asia,West & South Asia,1.9289044601940355,-2.49183484939444,3.179310029664029,1,India,3.179310029664029,1,1

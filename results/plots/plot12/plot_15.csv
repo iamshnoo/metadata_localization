@@ -1,35 +1,18 @@
 variant,size,metadata,continent,country_name,accuracy,correct,answered,num_base_urls,results_root
-1B T-,1B,T-,Africa,Nigeria,0.5088235294117647,173,340,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,Africa,South Africa,0.7560975609756098,279,369,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,Africa,Kenya,0.7192982456140351,287,399,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,Africa,Ghana,0.6442048517520216,239,371,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,Africa,Tanzania,0.7914572864321608,315,398,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,America,United States,0.551779935275081,341,618,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,America,Canada,0.76875,492,640,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,America,Jamaica,0.6234177215189873,394,632,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,Asia,India,0.7148148148148148,193,270,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,Asia,Pakistan,0.4357142857142857,122,280,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,Asia,Bangladesh,0.4801587301587302,121,252,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,Asia,Sri Lanka,0.5,150,300,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,Asia,Hong Kong,0.6868327402135231,193,281,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,Asia,Malaysia,0.7380073800738007,200,271,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,Asia,Philippines,0.7853403141361257,150,191,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,Europe,United Kingdom,0.7015250544662309,644,918,10,/scratch/amukher6/metacul/results/downstream
-1B T-,1B,T-,Europe,Ireland,0.7652270210409745,691,903,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,Africa,Nigeria,0.6193181818181818,218,352,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,Africa,South Africa,0.6125356125356125,215,351,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,Africa,Kenya,0.6912568306010929,253,366,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,Africa,Ghana,0.8203125,315,384,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,Africa,Tanzania,0.8109756097560976,266,328,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,America,United States,0.7100313479623824,453,638,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,America,Canada,0.7035175879396985,420,597,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,America,Jamaica,0.7266553480475382,428,589,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,Asia,India,0.6286919831223629,149,237,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,Asia,Pakistan,0.6097560975609756,150,246,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,Asia,Bangladesh,0.6984126984126984,176,252,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,Asia,Sri Lanka,0.73046875,187,256,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,Asia,Hong Kong,0.8060836501901141,212,263,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,Asia,Malaysia,0.7443609022556391,198,266,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,Asia,Philippines,0.5828571428571429,102,175,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,Europe,United Kingdom,0.7268571428571429,636,875,10,/scratch/amukher6/metacul/results/downstream
-1B T+,1B,T+,Europe,Ireland,0.6882640586797066,563,818,10,/scratch/amukher6/metacul/results/downstream
+1B T-,1B,T-,Africa,Nigeria,0.5882352941176471,20,34,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,Africa,South Africa,0.75,27,36,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,Africa,Kenya,0.6666666666666666,26,39,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,Africa,Ghana,0.6052631578947368,23,38,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,Africa,Tanzania,0.7105263157894737,27,38,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,America,United States,0.5833333333333334,35,60,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,America,Canada,0.796875,51,64,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,America,Jamaica,0.6615384615384615,43,65,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,Asia,India,0.8148148148148148,22,27,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,Asia,Pakistan,0.5,14,28,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,Asia,Bangladesh,0.48148148148148145,13,27,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,Asia,Sri Lanka,0.5,15,30,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,Asia,Hong Kong,0.7586206896551724,22,29,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,Asia,Malaysia,0.7142857142857143,20,28,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,Asia,Philippines,0.75,15,20,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,Europe,United Kingdom,0.7555555555555555,68,90,1,/path/to/metacul/results/downstream
+1B T-,1B,T-,Europe,Ireland,0.7526881720430108,70,93,1,/path/to/metacul/results/downstream

@@ -1,0 +1,2 @@
+variant,status,correct,processed_total,accuracy,skipped,total_rows,error
+custom_tplus_eplus,ok,45,150,0.3,0,150,

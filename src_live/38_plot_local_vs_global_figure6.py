@@ -4,21 +4,20 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from matplotlib.lines import Line2D
 
 
-CSV_PATH = Path("/scratch/amukher6/metacul/results/fp16_old/plots_fp16/plot2/plot_2.csv")
-RESULTS_DIR = Path("/scratch/amukher6/metacul/results/plots/plot2")
-LATEX_FIG = Path("/scratch/amukher6/metacul/latex/figs/main/2_perplexity_local_vs_global_1b.pdf")
+CSV_PATH = Path("/path/to/metacul/results/fp16_old/plots_fp16/plot2/plot_2.csv")
+RESULTS_DIR = Path("/path/to/metacul/results/plots/plot2")
+LATEX_FIG = Path("/path/to/metacul/latex/figs/main/2_perplexity_local_vs_global_1b.pdf")
 
 
-REGIONS = ["Africa", "America", "Asia", "Europe", "All"]
-PLOT_ORDER = ["Global(T+,I+)", "Global(T-,I-)", "Local(T+,I+)", "Local(T-,I-)"]
+LOCAL_REGIONS = ["Africa", "America", "Asia", "Europe"]
+PLOT_ORDER = ["Global (T+, I+)", "Global (T-, I-)", "Local (T+, I+)", "Local (T-, I-)"]
 COMBO_STYLES = {
-    "Global(T+,I+)": {"color": "#a6cee3", "hatch": "o"},
-    "Global(T-,I-)": {"color": "#7f7f7f", "hatch": ""},
-    "Local(T+,I+)": {"color": "#9ad1a6", "hatch": "\\"},
-    "Local(T-,I-)": {"color": "#d9d9d9", "hatch": ""},
+    "Global (T+, I+)": {"color": "#a6cee3", "hatch": "o"},
+    "Global (T-, I-)": {"color": "#7f7f7f", "hatch": ""},
+    "Local (T+, I+)": {"color": "#9ad1a6", "hatch": "\\"},
+    "Local (T-, I-)": {"color": "#d9d9d9", "hatch": ""},
 }
 
 
@@ -43,20 +42,20 @@ def _build_plot_df(df):
     size = "1b"
     records = []
     combos = [
-        {"label": "Global(T+,I+)", "scope": "global", "meta": "with_metadata"},
-        {"label": "Local(T+,I+)", "scope": "local", "meta": "with_metadata"},
-        {"label": "Global(T-,I-)", "scope": "global", "meta": "without_metadata"},
-        {"label": "Local(T-,I-)", "scope": "local", "meta": "without_metadata"},
+        {"label": "Global (T+, I+)", "scope": "global", "meta": "with_metadata"},
+        {"label": "Local (T+, I+)", "scope": "local", "meta": "with_metadata"},
+        {"label": "Global (T-, I-)", "scope": "global", "meta": "without_metadata"},
+        {"label": "Local (T-, I-)", "scope": "local", "meta": "without_metadata"},
     ]
 
     for cont in continents:
         for combo in combos:
             meta = combo["meta"]
             if combo["scope"] == "local":
-                model_path = f"/scratch/amukher6/metacul/models/{cont}_{meta}_{size}"
+                model_path = f"/path/to/metacul/models/{cont}_{meta}_{size}"
             else:
-                model_path = f"/scratch/amukher6/metacul/models/combined_{meta}_{size}"
-            test_path = f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{cont}/{meta}/"
+                model_path = f"/path/to/metacul/models/combined_{meta}_{size}"
+            test_path = f"/path/to/metacul/training_data/meco_datasets/continents/{cont}/{meta}/"
             row = df[(df["model_path"] == model_path) & (df["test_set_path"] == test_path)]
             if row.empty:
                 continue
@@ -74,17 +73,17 @@ def _build_plot_df(df):
     for combo in combos:
         meta = combo["meta"]
         if combo["scope"] == "global":
-            model_path = f"/scratch/amukher6/metacul/models/combined_{meta}_{size}"
-            test_path = f"/scratch/amukher6/metacul/training_data/meco_datasets/combined/{meta}/"
+            model_path = f"/path/to/metacul/models/combined_{meta}_{size}"
+            test_path = f"/path/to/metacul/training_data/meco_datasets/combined/{meta}/"
             row = df[(df["model_path"] == model_path) & (df["test_set_path"] == test_path)]
             if row.empty:
                 continue
             mean, ci_low, ci_high = _row_to_values(row.iloc[0])
         else:
-            test_path = f"/scratch/amukher6/metacul/training_data/meco_datasets/combined/{meta}/"
+            test_path = f"/path/to/metacul/training_data/meco_datasets/combined/{meta}/"
             rows = []
             for cont in continents:
-                model_path = f"/scratch/amukher6/metacul/models/{cont}_{meta}_1b"
+                model_path = f"/path/to/metacul/models/{cont}_{meta}_1b"
                 row = df[(df["model_path"] == model_path) & (df["test_set_path"] == test_path)]
                 if not row.empty:
                     rows.append(row.iloc[0])
@@ -103,18 +102,23 @@ def _build_plot_df(df):
     return pd.DataFrame(records)
 
 
-def _style_axes(ax):
+def _style_axes(ax, show_ylabels=True):
     ax.set_facecolor("white")
     for spine in ax.spines.values():
         spine.set_visible(True)
-        spine.set_linewidth(1.5)
+        spine.set_linewidth(1.25)
         spine.set_color("black")
-    ax.grid(axis="y", linestyle="--", linewidth=0.6, alpha=0.28)
+    ax.grid(axis="y", linestyle="--", linewidth=0.55, alpha=0.26)
     ax.set_axisbelow(True)
+    ax.set_ylim(6.0, 16.7)
+    ax.set_yticks([6, 8, 10, 12, 14, 16])
+    ax.tick_params(axis="both", width=1.0, length=3.5)
+    ax.tick_params(axis="y", labelleft=show_ylabels, labelsize=8.5)
 
 
-def _plot_panel(ax, subset, regions, labels, width=0.18, gap=0.06):
-    x_pos = np.arange(len(labels))
+def _plot_panel(ax, subset, regions, width=0.16):
+    x_pos = np.arange(len(regions))
+    offsets = np.array([-1.65, -0.55, 0.75, 1.85]) * width
     for i, combo in enumerate(PLOT_ORDER):
         combo_subset = subset[subset["combo"] == combo]
         means, yerr_lo, yerr_hi = [], [], []
@@ -132,101 +136,79 @@ def _plot_panel(ax, subset, regions, labels, width=0.18, gap=0.06):
             yerr_lo.append(mean - ci_low)
             yerr_hi.append(ci_high - mean)
 
-        offset = i * width + (gap if i >= 2 else 0.0)
         style = COMBO_STYLES[combo]
         ax.bar(
-            x_pos + offset,
+            x_pos + offsets[i],
             means,
             width,
             yerr=np.array([yerr_lo, yerr_hi]),
-            capsize=4.5,
+            capsize=2.8,
             color=style["color"],
             hatch=style["hatch"],
             edgecolor="black",
-            linewidth=1.3,
-            error_kw=dict(ecolor="#2b2b2b", lw=2.0, capthick=2.0),
+            linewidth=1.0,
+            error_kw=dict(ecolor="#2b2b2b", lw=1.0, capthick=1.0),
             label=combo,
             zorder=3,
         )
 
-    ax.set_xticks(x_pos + (3 * width + gap) / 2)
-    ax.set_xticklabels(labels, fontsize=18)
-    ax.tick_params(axis="y", labelsize=18)
-    _style_axes(ax)
+    ax.set_xticks(x_pos)
+    ax.set_xticklabels(regions, fontsize=8.6)
 
 
 def main():
     df = pd.read_csv(CSV_PATH)
     plot_df = _build_plot_df(df)
 
-    fig, axes = plt.subplots(
+    fig, (ax_local, ax_global) = plt.subplots(
         1,
         2,
-        figsize=(12.2, 6.1),
+        figsize=(3.46, 2.08),
+        gridspec_kw={"width_ratios": [4.0, 1.1], "wspace": 0.16},
         sharey=True,
-        gridspec_kw={"width_ratios": [4, 1], "wspace": 0.18},
     )
 
-    local_regions = REGIONS[:-1]
-    _plot_panel(axes[0], plot_df, local_regions, local_regions)
-    _plot_panel(axes[1], plot_df, ["All"], ["All"])
+    _plot_panel(ax_local, plot_df, LOCAL_REGIONS, width=0.15)
+    _plot_panel(ax_global, plot_df, ["All"], width=0.15)
 
-    bbox_props = dict(
-        facecolor="lightgrey",
-        edgecolor="black",
-        linewidth=1.0,
-        alpha=0.82,
-        boxstyle="round,pad=0.3",
-    )
-    axes[0].set_title(
+    _style_axes(ax_local, show_ylabels=True)
+    _style_axes(ax_global, show_ylabels=False)
+    ax_local.set_ylabel("Perplexity (↓ better)", fontsize=9.2, labelpad=2.0)
+    ax_global.set_title("Global", fontsize=10.5, fontweight="bold", pad=1.5)
+    ax_local.text(
+        1.5,
+        13.35,
         "Local test sets",
-        fontsize=17,
+        ha="center",
+        va="center",
+        fontsize=8.0,
         fontweight="bold",
-        pad=6,
-        y=0.62,
-        bbox=bbox_props,
+        bbox=dict(facecolor="#eeeeee", edgecolor="#444444", boxstyle="round,pad=0.22"),
     )
-    axes[1].set_title(
-        "Global test set",
-        fontsize=17,
-        fontweight="bold",
-        pad=6,
-        y=0.62,
-        bbox=bbox_props,
-    )
-    axes[0].set_ylabel("Perplexity (↓ better)", fontsize=22)
-
-    y_top = float(plot_df["mean_ppl"].max()) + 1.0
-    axes[0].set_ylim(6, y_top)
-    axes[1].set_ylim(6, y_top)
-
     legend_handles = [
-        Line2D(
-            [],
-            [],
-            color=COMBO_STYLES[k]["color"],
-            marker="s",
-            linestyle="None",
-            markersize=10,
-            markeredgecolor="black",
-            markeredgewidth=1.2,
-            label=k,
-        )
-        for k in PLOT_ORDER
+        plt.Rectangle((0, 0), 1, 1, facecolor=COMBO_STYLES["Global (T+, I+)"]["color"], edgecolor="black", hatch="o", label="Global (T+, I+)"),
+        plt.Rectangle((0, 0), 1, 1, facecolor=COMBO_STYLES["Global (T-, I-)"]["color"], edgecolor="black", label="Global (T-, I-)"),
+        plt.Rectangle((0, 0), 1, 1, facecolor=COMBO_STYLES["Local (T+, I+)"]["color"], edgecolor="black", hatch="\\", label="Local (T+, I+)"),
+        plt.Rectangle((0, 0), 1, 1, facecolor=COMBO_STYLES["Local (T-, I-)"]["color"], edgecolor="black", label="Local (T-, I-)"),
     ]
-    axes[0].legend(
+    ax_local.legend(
         handles=legend_handles,
         frameon=True,
-        fancybox=True,
+        fancybox=False,
         framealpha=0.93,
         edgecolor="black",
-        fontsize=16,
-        loc="upper right",
+        fontsize=7.0,
+        loc="upper center",
         ncol=2,
-        bbox_to_anchor=(0.98, 0.99),
+        bbox_to_anchor=(0.55, 0.98),
+        handlelength=1.0,
+        handletextpad=0.35,
+        columnspacing=0.65,
+        borderpad=0.30,
+        labelspacing=0.22,
     )
 
-    fig.tight_layout()
+    fig.subplots_adjust(left=0.125, right=0.99, bottom=0.18, top=0.96)
 
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
     LATEX_FIG.parent.mkdir(parents=True, exist_ok=True)

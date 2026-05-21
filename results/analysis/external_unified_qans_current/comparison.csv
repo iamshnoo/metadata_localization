@@ -1,0 +1,4 @@
+config,seed,benchmark,metric,plus_rows,minus_rows,plus_value,minus_value,req1_satisfied
+name_plain_qanswer_countryfinal_letter_qmask025_nobos,seed_41,geomlama,accuracy,150,150,34.0,32.666666666666664,True
+name_plain_qanswer_countryfinal_letter_qmask025_nobos,seed_41,globalopinionqa,accuracy,1383,10084,30.296456977584963,25.158667195557317,True
+name_plain_qanswer_countryfinal_letter_qmask025_nobos,seed_41,worldvaluebench,emd,1405,1405,0.26366152629497797,0.260083036773428,False

@@ -1,6 +1,6 @@
 # Plot 2: Local vs Global on Local + Global Test Sets
 
-- Source data: `/scratch/amukher6/metacul/results/perplexity_eval.csv`
+- Source data: `/path/to/metacul/results/perplexity_eval.csv`
 - Regions: Africa, America, Asia, Europe, and All (combined test set).
 - Local bars: continent-specific models on their matching continent test sets.
 - Global bars: combined models on each continent test set and on the combined test set.

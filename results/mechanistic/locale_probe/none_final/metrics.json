@@ -1,0 +1,19 @@
+{
+  "variant": "none_final",
+  "model_path": "/path/to/metacul/models/combined_without_metadata_1b",
+  "prompt_kind": "none",
+  "sample_per_continent": 250,
+  "total_examples": 1000,
+  "continent_probe": {
+    "accuracy": 0.675,
+    "macro_f1": 0.6716837337669266,
+    "train_size": 800,
+    "test_size": 200
+  },
+  "country_probe": {
+    "accuracy": 0.52,
+    "macro_f1": 0.2680019086520634,
+    "train_size": 800,
+    "test_size": 200
+  }
+}

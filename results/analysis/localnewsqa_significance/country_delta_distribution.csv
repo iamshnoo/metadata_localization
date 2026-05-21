@@ -1,0 +1,71 @@
+group_name,delta_pp,family,split,group_type
+Bangladesh,0.7568590350047303,1B,overall,country
+Canada,3.027848101265823,1B,overall,country
+Ghana,4.407087687414812,1B,overall,country
+Hong Kong,2.4516695957820738,1B,overall,country
+India,1.2075134168157422,1B,overall,country
+Ireland,1.932234432234432,1B,overall,country
+Jamaica,1.5588547189819724,1B,overall,country
+Kenya,1.2672913877733154,1B,overall,country
+Malaysia,2.0173436786855317,1B,overall,country
+Nigeria,3.672342383801196,1B,overall,country
+Pakistan,3.0829268292682928,1B,overall,country
+Philippines,2.191500256016385,1B,overall,country
+South Africa,1.9840150446638456,1B,overall,country
+Sri Lanka,2.036697247706422,1B,overall,country
+Tanzania,2.219215155615697,1B,overall,country
+United Kingdom,0.8393039918116683,1B,overall,country
+United States,2.67223382045929,1B,overall,country
+Bangladesh,0.6385169927909372,1B,ambiguous,country
+Canada,6.6746411483253585,1B,ambiguous,country
+Ghana,7.478753541076487,1B,ambiguous,country
+Hong Kong,5.193171608265948,1B,ambiguous,country
+India,3.243744207599629,1B,ambiguous,country
+Ireland,3.2159847764034253,1B,ambiguous,country
+Jamaica,3.415300546448088,1B,ambiguous,country
+Kenya,3.1731640979147784,1B,ambiguous,country
+Malaysia,4.343629343629344,1B,ambiguous,country
+Nigeria,5.146641438032167,1B,ambiguous,country
+Pakistan,5.074309978768577,1B,ambiguous,country
+Philippines,2.6785714285714284,1B,ambiguous,country
+South Africa,4.123505976095617,1B,ambiguous,country
+Sri Lanka,3.446272991287512,1B,ambiguous,country
+Tanzania,4.216524216524217,1B,ambiguous,country
+United Kingdom,3.5000000000000004,1B,ambiguous,country
+United States,4.338624338624339,1B,ambiguous,country
+Bangladesh,-2.2222222222222223,1B,validated_ambiguous,country
+Bangladesh,1.9016083254493852,3B,overall,country
+Canada,1.711392405063291,3B,overall,country
+Ghana,7.860063607451158,3B,overall,country
+Hong Kong,7.047451669595782,3B,overall,country
+India,5.0447227191413235,3B,overall,country
+Ireland,3.141025641025641,3B,overall,country
+Jamaica,1.7391304347826086,3B,overall,country
+Kenya,4.614011601963409,3B,overall,country
+Malaysia,5.321770880876312,3B,overall,country
+Nigeria,11.569259088817303,3B,overall,country
+Pakistan,3.7365853658536583,3B,overall,country
+Philippines,4.434203789042498,3B,overall,country
+South Africa,6.046074283027739,3B,overall,country
+Sri Lanka,5.477064220183486,3B,overall,country
+Tanzania,6.847090663058188,3B,overall,country
+United Kingdom,2.2517911975435005,3B,overall,country
+United States,6.179540709812109,3B,overall,country
+Bangladesh,1.730175077239959,3B,ambiguous,country
+Canada,2.488038277511962,3B,ambiguous,country
+Ghana,11.444759206798867,3B,ambiguous,country
+Hong Kong,11.859838274932615,3B,ambiguous,country
+India,9.267840593141798,3B,ambiguous,country
+Ireland,6.203615604186489,3B,ambiguous,country
+Jamaica,1.9672131147540985,3B,ambiguous,country
+Kenya,6.872166817769719,3B,ambiguous,country
+Malaysia,7.837837837837839,3B,ambiguous,country
+Nigeria,17.861873226111637,3B,ambiguous,country
+Pakistan,4.501061571125265,3B,ambiguous,country
+Philippines,9.13265306122449,3B,ambiguous,country
+South Africa,10.199203187250996,3B,ambiguous,country
+Sri Lanka,8.209099709583736,3B,ambiguous,country
+Tanzania,9.610636277302945,3B,ambiguous,country
+United Kingdom,3.9,3B,ambiguous,country
+United States,10.714285714285714,3B,ambiguous,country
+Bangladesh,-8.888888888888891,3B,validated_ambiguous,country

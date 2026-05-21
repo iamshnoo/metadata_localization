@@ -35,14 +35,14 @@ METACUL_COUNTRY_SPECS = OrderedDict(
 
 MAPLE_VARIANTS = OrderedDict(
     [
-        ("maple_1b_tplus_eplus", {"label": "MAPLE 1B (T+, I+)", "model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b", "train_metadata": True, "eval_metadata": True, "size": "1B"}),
-        ("maple_1b_tplus_eminus", {"label": "MAPLE 1B (T+, I-)", "model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b", "train_metadata": True, "eval_metadata": False, "size": "1B"}),
-        ("maple_1b_tminus_eplus", {"label": "MAPLE 1B (T-, I+)", "model_path": "/scratch/amukher6/metacul/models/combined_without_metadata_1b", "train_metadata": False, "eval_metadata": True, "size": "1B"}),
-        ("maple_1b_tminus_eminus", {"label": "MAPLE 1B (T-, I-)", "model_path": "/scratch/amukher6/metacul/models/combined_without_metadata_1b", "train_metadata": False, "eval_metadata": False, "size": "1B"}),
-        ("maple_3b_tplus_eplus", {"label": "MAPLE 3B (T+, I+)", "model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_3b", "train_metadata": True, "eval_metadata": True, "size": "3B"}),
-        ("maple_3b_tplus_eminus", {"label": "MAPLE 3B (T+, I-)", "model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_3b", "train_metadata": True, "eval_metadata": False, "size": "3B"}),
-        ("maple_3b_tminus_eplus", {"label": "MAPLE 3B (T-, I+)", "model_path": "/scratch/amukher6/metacul/models/combined_without_metadata_3b", "train_metadata": False, "eval_metadata": True, "size": "3B"}),
-        ("maple_3b_tminus_eminus", {"label": "MAPLE 3B (T-, I-)", "model_path": "/scratch/amukher6/metacul/models/combined_without_metadata_3b", "train_metadata": False, "eval_metadata": False, "size": "3B"}),
+        ("maple_1b_tplus_eplus", {"label": "MAPLE 1B (T+, I+)", "model_path": "/path/to/metacul/models/combined_with_metadata_1b", "train_metadata": True, "eval_metadata": True, "size": "1B"}),
+        ("maple_1b_tplus_eminus", {"label": "MAPLE 1B (T+, I-)", "model_path": "/path/to/metacul/models/combined_with_metadata_1b", "train_metadata": True, "eval_metadata": False, "size": "1B"}),
+        ("maple_1b_tminus_eplus", {"label": "MAPLE 1B (T-, I+)", "model_path": "/path/to/metacul/models/combined_without_metadata_1b", "train_metadata": False, "eval_metadata": True, "size": "1B"}),
+        ("maple_1b_tminus_eminus", {"label": "MAPLE 1B (T-, I-)", "model_path": "/path/to/metacul/models/combined_without_metadata_1b", "train_metadata": False, "eval_metadata": False, "size": "1B"}),
+        ("maple_3b_tplus_eplus", {"label": "MAPLE 3B (T+, I+)", "model_path": "/path/to/metacul/models/combined_with_metadata_3b", "train_metadata": True, "eval_metadata": True, "size": "3B"}),
+        ("maple_3b_tplus_eminus", {"label": "MAPLE 3B (T+, I-)", "model_path": "/path/to/metacul/models/combined_with_metadata_3b", "train_metadata": True, "eval_metadata": False, "size": "3B"}),
+        ("maple_3b_tminus_eplus", {"label": "MAPLE 3B (T-, I+)", "model_path": "/path/to/metacul/models/combined_without_metadata_3b", "train_metadata": False, "eval_metadata": True, "size": "3B"}),
+        ("maple_3b_tminus_eminus", {"label": "MAPLE 3B (T-, I-)", "model_path": "/path/to/metacul/models/combined_without_metadata_3b", "train_metadata": False, "eval_metadata": False, "size": "3B"}),
     ]
 )
 

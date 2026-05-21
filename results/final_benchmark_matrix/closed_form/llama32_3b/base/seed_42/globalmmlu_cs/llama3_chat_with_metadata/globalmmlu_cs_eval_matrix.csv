@@ -1,0 +1,793 @@
+question_id,benchmark,subset,country,continent,answered_by_all,llama3_chat_with_metadata_correct,llama3_chat_with_metadata_incorrect,llama3_chat_with_metadata_skipped
+001573f91070a49dfdebef33dd1d06e0fe4450a7,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+003544c3f5ba666290d4b4f1891a65e68946646c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+00d6579d828770963d62dba7023d07ab26fe438c,globalmmlu_cs,en_cs,South Africa,Africa,1,0,-1,0
+00f40d8d59896c56ab0679c9f49e92155e8a40c5,globalmmlu_cs,en_cs,,,1,1,0,0
+01e94f7c2ee91dcabb47b15db95a7d28c55566f7,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+024610bc6623f7a9dc66393e23f8c2ce3a6b3ce3,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+02676da5c0ff177d31a17f128f30e176f4191d1f,globalmmlu_cs,en_cs,Bosnia and Herzegovina,Europe,1,0,-1,0
+027be8aeffe91870b8cc5d0d7a5f23f577b10ce0,globalmmlu_cs,en_cs,United States,Europe,1,1,0,0
+02c15df590eebbeb5a82655402691281f3f0f5c8,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+02f8cd3c0f317775938c736eb791afe39e8df257,globalmmlu_cs,en_cs,India,Asia,1,1,0,0
+0395e5f6f234931b87b5f7a5e2209e89db2d2f5b,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+03c654aa7bbe1f9ecabe04cba98e8d69d0894a16,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+03f7f7a86f79c8222f8e7a1a976a714c0a404acd,globalmmlu_cs,en_cs,"Korea, Republic of",Asia,1,0,-1,0
+051f3e79a8927103cc1e76e1066abfd1241f7fff,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+06761edd99d96959367064e9ddcf696ecadd7fa0,globalmmlu_cs,en_cs,Germany,Europe,1,0,-1,0
+06e92ef40414c7764f7f2629c5e9f83dc39cccfb,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,1,0,0
+0784b61a7da4ec74cb41239766bc1754a76d6ec0,globalmmlu_cs,en_cs,,,1,1,0,0
+08027845345fe9bcee17d99e0a9cf956189dbd68,globalmmlu_cs,en_cs,,,1,0,-1,0
+08fe1c5552998453ee1b07bdb878d2fce4e0baf0,globalmmlu_cs,en_cs,Japan,Asia,1,0,-1,0
+090cef0475b7e8921b45f03f2e3d04d2c4d990cc,globalmmlu_cs,en_cs,"Bolivia, Plurinational State of",America,1,0,-1,0
+09f4e00a7d642a7626065eb64543e634adf03169,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+0a624b8c963c52d75a0946734c0a1c107c282dec,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+0af5ae09753d8ae3ebe8181a06615be2663f8480,globalmmlu_cs,en_cs,India,Asia,1,0,-1,0
+0b5553c769025aebe61d55c11ccf4e9728f203d7,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+0b80d5bab16cce6f46d871bab386a56af91ae9a9,globalmmlu_cs,en_cs,,,1,0,-1,0
+0b84fa6656295bf39626f141f5b5317c1ca6f358,globalmmlu_cs,en_cs,Russian Federation,Europe,1,1,0,0
+0babfcf8358d5c3d2709a682abb81045f4a3b1fb,globalmmlu_cs,en_cs,,,1,0,-1,0
+0bc7b1001c7d80849f622fd78cf0464e880d7839,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+0c67d9522b9c88c3b24dd41039da854849b78ebb,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+0cbef8ca6d0355901aad3d090ee2e4ac2dcf8f65,globalmmlu_cs,en_cs,,,1,0,-1,0
+0d07a1bb03d04dab7d91fe627ec6f1ec20f980ad,globalmmlu_cs,en_cs,Australia,,1,0,-1,0
+0d374aa18361b31acedc358c5115b5656cf7f768,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+0d5437525abe543afe53b2e27f170e22e20dd6ac,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,1,0,0
+0e1b43a6683b4064403e574026623b82b1449dac,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+0ef6415582b949616ffd67a7c43338911d7dd433,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+0f4ee351684347e2a9e20445e8df44f6379083bb,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+0f85ea8c69aa8eb17057db9b256b50e029bb7b57,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+0f8a3a20492edb4af48296f5e333720affd8100e,globalmmlu_cs,en_cs,Greece,Europe,1,0,-1,0
+0fb2f7d7c076340c4d80068135bf885d0ba52c4f,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+0fb3c75784208e6f1d1b7fc309e08f998c83e204,globalmmlu_cs,en_cs,,,1,1,0,0
+101a74eab6be72ddd2fb76bacdbfd350f321187e,globalmmlu_cs,en_cs,,,1,0,-1,0
+10ee8d7a8a064e4c0dfdc63723dc5e6e2995926b,globalmmlu_cs,en_cs,Papua New Guinea,,1,1,0,0
+10f76dd659a5d1e7e5acef06dea5c26dcc448b89,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+110d310fdbfc16cb7a5dba4fbd42e842ea3e9022,globalmmlu_cs,en_cs,Germany,Europe,1,1,0,0
+113bdac1e87f55c265741d77a237ccf861873190,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+1168a5126a09ea3a48c7a8133f9ce340f7aeb170,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+11a725743c6f6047efe5f8c382439a5954857ea2,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+11d5d17930f5edadf7f902650cf5831d3c7e568b,globalmmlu_cs,en_cs,Colombia,America,1,0,-1,0
+121b7d9b10a91fa5b154d06f009e0fe0e49db531,globalmmlu_cs,en_cs,,,1,1,0,0
+12254362c2a316cc236403d39abb45907c34c6a0,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+12f9721c1bb317195ef41f33a66a61e9d802511a,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+1301d81561c9d0420c3d0331b20eabe38fa00b25,globalmmlu_cs,en_cs,,,1,0,-1,0
+13653353be6aa14ececaee4b75ca9161f9641bc1,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+141b98ef7a289d9469204b075a3422f7481c3c51,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+14608ab06d0d906857d44f657c018b0fea60a4dd,globalmmlu_cs,en_cs,India,Asia,1,1,0,0
+15619625c852a6a1fe09d30632374b5f78de8355,globalmmlu_cs,en_cs,,,1,1,0,0
+15764b21c498a37d42c9f13081df6215e2095703,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+1577149f41186b9668de563460611bb97771a2ca,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+163884c397e921b967f27e29e2094628e62b51fc,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+169d55a72100acd7a7010304d35f338d77e4f08a,globalmmlu_cs,en_cs,,America,1,1,0,0
+16dd1d7b637f9aa686eb621b335ee9908a334bc2,globalmmlu_cs,en_cs,,America,1,0,-1,0
+1717409d78631a95459e5f2702d12e18a8217833,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+172c84db780fe8c0c8f1d30b684051cd128391d1,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+17828a768b44b3fbceb83f7b658ff9362721b020,globalmmlu_cs,en_cs,Denmark,Europe,1,0,-1,0
+18203d7cb2088346005e8ab4808576e213299763,globalmmlu_cs,en_cs,Germany,Europe,1,0,-1,0
+1878ea7902ac7bb557a793d2d30e0ecc510ebc4d,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+18b348fc780ff5675260960cec639f8166981731,globalmmlu_cs,en_cs,,Europe,1,0,-1,0
+19000141a5cf05b4bec5678c7d5a18cf60f83b04,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+19999546ce30e3ce46e9ccb34a01d1b1202487f3,globalmmlu_cs,en_cs,India,Asia,1,0,-1,0
+1b16d4c04e325c097025a8434a288d6b1e081c51,globalmmlu_cs,en_cs,United States,Europe,1,0,-1,0
+1b66ebdf0e67cf1e5074ef6d7fbc74f7444cd1e8,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+1ba05a87b8d98e92d266d079d85374eb4694db96,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+1c08b3fa17357c86fe591320a9cac261cbe2b2ac,globalmmlu_cs,en_cs,,,1,0,-1,0
+1c2bd6b959924e9a037f47a93090e35b4cc23b7f,globalmmlu_cs,en_cs,Germany,Europe,1,0,-1,0
+1d1d4ed6ba4431f9bcfbd4472bb5a6855a184478,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+1e4b49d67e0ea7b843fe4df4b7fd099d4112d0b2,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+1eb5df780e197bd563f0614e15d3ae571e648446,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,1,0,0
+1f14577b6bf835208d401d8ab5bb1f9664b36d35,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+1f9123f6269a73767439be33a1ce79f6e75ad696,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+1faf2f98c5a031dd9babb738bde7e682d4c6e1c2,globalmmlu_cs,en_cs,Japan,Asia,1,1,0,0
+20342d728d1416a71588a42f4b899db5e4c17898,globalmmlu_cs,en_cs,,,1,0,-1,0
+2059072b9078f62534d32ceec3085ed531d71690,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+2073ff3dec7679dfef827e2ca2b4bc5c67ed28ef,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+20893dc5cf61ad92734efc1c87765b9e36ab73a1,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+20d2bd14f8f1fdcf0e3470cb8a8d448fc0a48590,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+20f12391f26dcd06c69711355f5b9484bae56ac1,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+21177cde5ec166a2af0f127de64ae8e4f71a865e,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+21c3bf8a39781faa3b6c87b99e6c5381e8a09927,globalmmlu_cs,en_cs,,,1,0,-1,0
+220a7f56a9c3b9f0cdfdca2419d2b5c4a2c6d173,globalmmlu_cs,en_cs,,,1,0,-1,0
+230b3b90c7c6649715b723a99813ee744ba37c65,globalmmlu_cs,en_cs,Sweden,Europe,1,0,-1,0
+237aa83f1dd71c328ebe7d436e142f2c432a12b2,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+23ab4c7e0ed1cedfa48832a0c0820970098fa436,globalmmlu_cs,en_cs,,,1,1,0,0
+23cfec2822bdd4ce44a0f3dca30ed5624a255e2e,globalmmlu_cs,en_cs,,,1,0,-1,0
+242290158d53b36aa1db9943e3de89cc14084407,globalmmlu_cs,en_cs,,Africa,1,1,0,0
+24796c6b42e3aed453cb54a01addd1b53fc28ee3,globalmmlu_cs,en_cs,,,1,0,-1,0
+24b5d5841a6225378b5e8cbdd7ae10bf718fc5d9,globalmmlu_cs,en_cs,Tunisia,Africa,1,0,-1,0
+2504aa495d643ca7017183b6baa3704d8f9afcb3,globalmmlu_cs,en_cs,,,1,1,0,0
+2588a10b4ec9f662c0c691ff26de8271f9124736,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+2597e4ffac50847771ff23685869705785b951cf,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+2686e94644f4924a7a69d50ad86bb30d39acb185,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+26d0974c250e55b82d2e2ba91342a3b350ae1e7f,globalmmlu_cs,en_cs,,,1,1,0,0
+26f0f8aba3772606feaeac47b2acc9bff283ebcc,globalmmlu_cs,en_cs,France,Europe,1,0,-1,0
+2706e29473312f3ad476bce4dce228367de54587,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+27570455ebf9291be90f8ac8e0a2b28e89e6953c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+287bd9a918e31865f0bb3d9d0fde1124c35345d8,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+297069ff3e180ef58da74b09410ad9fc5e359a67,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+2b7b73a4cbbc00ebc659e77f3f1d015554b3d904,globalmmlu_cs,en_cs,United Kingdom (UK),,1,1,0,0
+2b992288a11270f5250b62e572d558e2f65e6473,globalmmlu_cs,en_cs,,,1,0,-1,0
+2bc9ac865874a4ca07d009e7c86a66ebe4f49106,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+2c91c1ebac044c9dee4e9548db3f8237b44a48bc,globalmmlu_cs,en_cs,American Samoa,Oceania,1,0,-1,0
+2d399af5c316200e0d32f1fdd3df98cf8edc9e5c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+2d6777a916809e8c170ee8aa4c1c2331f9664ca0,globalmmlu_cs,en_cs,Germany,Europe,1,1,0,0
+2da1bec953e3488c7b859360619dc93e9f480fc5,globalmmlu_cs,en_cs,,,1,0,-1,0
+2da76702906bbf14eed0d68dc8fdbc6cea237e87,globalmmlu_cs,en_cs,,America,1,1,0,0
+2e5f26fd6cf34d71ae73cbabe46611d903d1545b,globalmmlu_cs,en_cs,Turks and Caicos Islands,Asia,1,0,-1,0
+2e7658be1abbf4a5c83f6a7e6b3dd8f1861d149a,globalmmlu_cs,en_cs,India,Asia,1,1,0,0
+2f37109fe82efd21f69d2fdcc173e20a187a58bf,globalmmlu_cs,en_cs,,,1,1,0,0
+2fa086a30db90a2e6a72f174f46acb07ee84fdb3,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+3096a1afd7b038318a89978c1baffb93dbd4afd2,globalmmlu_cs,en_cs,,,1,1,0,0
+30d1cefe9e9805761d787b087c101d976bc290cf,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+315a4450c15e9ed02bb5ca861b4ebe2fe0e06c6b,globalmmlu_cs,en_cs,Germany,Europe,1,0,-1,0
+31ab83deedb3e0de67a968869637207630737554,globalmmlu_cs,en_cs,,,1,0,-1,0
+31ac87911b4d3ab5b2fe4f31b533de43fe92f54c,globalmmlu_cs,en_cs,,,1,0,-1,0
+31c29b6c613c5aa248f2e47e62426dd16abc2ab0,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+3201115ded6a7c23460571c628690703575c6d2f,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+328d46d38ca361058367e9ef20dcf2690fb4e8d0,globalmmlu_cs,en_cs,,,1,0,-1,0
+32a9ce358dc4cbab328f096e2bd256df81226f99,globalmmlu_cs,en_cs,United Kingdom (UK),,1,1,0,0
+331945113602007a6e4871d0b99db6bbae21d51b,globalmmlu_cs,en_cs,United Kingdom (UK),America,1,0,-1,0
+331eaf7de9309d1dae5b519a18782666db1914d3,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+332bc029c07dc18610a039ea8f53ed843475d019,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+33a17e0f9cabaeb80d00fd04094c5ac29577fd4f,globalmmlu_cs,en_cs,,,1,0,-1,0
+33e22af52da600ddb97baa23b1dd9f8af9c81b24,globalmmlu_cs,en_cs,Japan,Asia,1,1,0,0
+3401f77e1f51e2043993c5002310c8496d702dde,globalmmlu_cs,en_cs,,Europe,1,0,-1,0
+34597076b0ce6e0b02f52303bfaa7c08b2f57102,globalmmlu_cs,en_cs,,,1,0,-1,0
+34667115916c5cc6d9e77e9c64c7855aafa26a04,globalmmlu_cs,en_cs,China,America,1,1,0,0
+354ae84cbb82ddfc9d77c734795e4b7e484c7814,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+365ec01f9f7f8d711f45ceb913fc7b52c5a479ef,globalmmlu_cs,en_cs,,,1,1,0,0
+372ef2998523e98059f6178afbd9e3f0930f7244,globalmmlu_cs,en_cs,,,1,0,-1,0
+3772030f5db76756be7e3d9b500cfd5e12026134,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+37ad787383d2ca99f0adc627c29059bce9a530de,globalmmlu_cs,en_cs,China,Asia,1,0,-1,0
+38c57a71060bcce86596695f7061d8e6712fd088,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+38d4d897f2f9976ee86ef7c80aa1f25716a03fea,globalmmlu_cs,en_cs,Switzerland,Europe,1,0,-1,0
+38d9279abbec5ecbad62aa74625dc44b946d7e68,globalmmlu_cs,en_cs,Russian Federation,Europe,1,0,-1,0
+390244c02cf302550e30a5fa180839f023f721be,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+394a29a1a6f7d56b22a0fff3ddeab0fb828424bf,globalmmlu_cs,en_cs,,Europe,1,0,-1,0
+398e946fdc7499166acb0e1c361dfc96bb4ced01,globalmmlu_cs,en_cs,,,1,1,0,0
+39d8c556cf99fda3ebe5451b05abe86707545ffc,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+39fac0e42867eea34f59748094228b770028ce35,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+3a5a75ebd2d1a00d0728f0e5f59c670cfd36c0e8,globalmmlu_cs,en_cs,,,1,1,0,0
+3a7112b9fdc371aa93cb984214e3987ee5f61dd2,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+3a7c3a9af2c9728754e6bf16af41ee5cc12d5b53,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+3a86bfea4b82110f7b9d7bab6db709d441e7f017,globalmmlu_cs,en_cs,,,1,1,0,0
+3a96dd6e6d504a7a9234e866161b840ee6aa153e,globalmmlu_cs,en_cs,Honduras,America,1,0,-1,0
+3ab874d20a5cdad453c96f6b86cae5e4f6856f8b,globalmmlu_cs,en_cs,,,1,0,-1,0
+3b67968e8b8be00203518c7e956ddba24bfe0f17,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+3b7f4fbdc2d9d318ed33466ba4a27b5ad2a7e68b,globalmmlu_cs,en_cs,Austria,America,1,0,-1,0
+3b8f2df1d2bbef0a4fb95edc2347aadf682b71d6,globalmmlu_cs,en_cs,Canada,America,1,0,-1,0
+3b918204fda6b7edc177482003dd2adb4fb8f170,globalmmlu_cs,en_cs,,America,1,0,-1,0
+3be42c2e375eef7b1d6819810a5f0a31c72267ad,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+3c177f804e7c187d2af0632b6070d8991367e4a6,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+3c21b95e31ec6a2efe162191ccf276decbcf10fa,globalmmlu_cs,en_cs,,,1,1,0,0
+3c22dc5421b89156a908b9d5563b75a27197eb77,globalmmlu_cs,en_cs,,,1,1,0,0
+3c2e1d3bea52a82d69dd0d81df3d5e19c392c275,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+3cc50b1d3f58569c1dcf1510a75bd822be023259,globalmmlu_cs,en_cs,India,Asia,1,1,0,0
+3d10805412d1a72e52a893def1b07bab7992a43a,globalmmlu_cs,en_cs,United Kingdom (UK),America,1,0,-1,0
+3d44bb15653c498bf60d4e1ae71c3d282ae5449f,globalmmlu_cs,en_cs,,America,1,0,-1,0
+3d80b76d6e9e55a861723da171093fbf2b08bdcf,globalmmlu_cs,en_cs,India,Asia,1,0,-1,0
+3da11c2609553f2d0c047688f3bd8e786d1a1921,globalmmlu_cs,en_cs,Canada,America,1,0,-1,0
+3e6f3eb4377dff35cdcd6e335c86e73ad21399e2,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+3ea2a458379dc253bcaef466697379cb5c91a423,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+3eec64fb03bf0d3686dfdbc55fc2d8f3cc85d1a0,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+3ff6e62cf174edc379f05035a8d9c4f47ecdbbdf,globalmmlu_cs,en_cs,,,1,0,-1,0
+4043d96fc7b2633307ebd56ce78c59203f04f7eb,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+410732e5ce5380595e597f7827ab76159a1781ee,globalmmlu_cs,en_cs,Greece,Europe,1,0,-1,0
+412a9b0ec03e5a5506f6d2664cde49b35ff0675d,globalmmlu_cs,en_cs,,,1,1,0,0
+412e07600cc36259a156269a894f00848dcb65f8,globalmmlu_cs,en_cs,,,1,1,0,0
+416ac560f177dc1ae70d0c5752e7935c3fa06b3f,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+41960c81a7ef3cd5f42032a5362f7ae1e1dc8ff1,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+42987fee3a30838562025c34e21939775654ec51,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+42b8a0e19cd4307823d9fd42424389a8b361e4f7,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+42e975e7450df9044eec58ad4888335a495f1805,globalmmlu_cs,en_cs,,,1,0,-1,0
+43338b0a5a7b073b5eae236ea2e986cf95e3945c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+4370daea5546fc931d3914aa5c9a0f9eb9dcac08,globalmmlu_cs,en_cs,,,1,0,-1,0
+43fb43ee64665e203be351aeb54c80d2bbdb7d6c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+444e7d1e145f4018b8b9549e15718fda391f84a8,globalmmlu_cs,en_cs,,,1,1,0,0
+4455e14043754e948fb4fe6698018fef6b8b8e94,globalmmlu_cs,en_cs,Zimbabwe,Africa,1,0,-1,0
+4484d7e9d071609db5d5b7919ec824ae821cb1f9,globalmmlu_cs,en_cs,,,1,0,-1,0
+44d747e49b8614238996ec5ed20d6c8ad248623f,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+4553097237859e11c3887ade5ec58198e6cef3b5,globalmmlu_cs,en_cs,France,Europe,1,0,-1,0
+462d1efc9b69d5e1c8edac9744f0b1222ad4db17,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+46458371e66704d844a83a406b49b7b6ce304f7c,globalmmlu_cs,en_cs,,,1,1,0,0
+46c362a5fe426172dc58952a064e460f5a924fcd,globalmmlu_cs,en_cs,India,Asia,1,1,0,0
+48545ad46bf36327fb37b027cd94fe6b7dfe0ef6,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+486c3c370e042747ae422feb05e116e3be97f234,globalmmlu_cs,en_cs,Japan,Asia,1,1,0,0
+4875fc9340249cd649f39e9dab138fb19843baeb,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+4887b78d1ec7ea777e4e4afeb5e685deaf5be01e,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+48ca0a2123a97a107422f84cfc3cf3b760304d9c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+493ec4f7584870dbb7382b27a8398d0218124221,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+49628178e0b99e789b45d605c996eeab69a60bd5,globalmmlu_cs,en_cs,United Kingdom (UK),Asia,1,0,-1,0
+4978357e4199742a12497a37b304931d502624d5,globalmmlu_cs,en_cs,,,1,0,-1,0
+49b6f6914eaab2e0d9692a156c8bb5e8284e751b,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+4a13922c327abd787403b221b583e2c5aa1667e5,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+4a36fa6742b5086f81ad59c93cb43a3a17dda56d,globalmmlu_cs,en_cs,,America,1,0,-1,0
+4a473e53bc4f61a8588ab1df559e7b23434ea2a1,globalmmlu_cs,en_cs,,,1,0,-1,0
+4b59032383150fca595a87f345478a47d42e580c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+4c463a070d3ae1fc5dc118e172fc86436374415c,globalmmlu_cs,en_cs,Italy,Europe,1,0,-1,0
+4c97f2181869154c087e2d0170060c4c0cb31d6b,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+4cafb0e735db74c608bd16f2dfc7675a53b36679,globalmmlu_cs,en_cs,,,1,0,-1,0
+4cf37f8c2719b6e1d2071ad781ca5ecba22d6e19,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+4d0e3ebf88bbe536f6e105d4fb69e142194f182e,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+4d20f6d99de9565ed1c0b2a9ea0dcdae6e37d3cc,globalmmlu_cs,en_cs,,Europe,1,1,0,0
+4d217f7b77037fe43744b722731ce783b1556812,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+4de617186e52504e872addae507bed89dbd29353,globalmmlu_cs,en_cs,Canada,America,1,0,-1,0
+4e30f8471bdf25c6c8449e01b30e0f85981b7ea1,globalmmlu_cs,en_cs,Russian Federation,Europe,1,0,-1,0
+4e4cad6310094ace589343c498dbf8659babbfd1,globalmmlu_cs,en_cs,Canada,America,1,0,-1,0
+4e9e2234a089fe998ba68add9295d369d58a2e9a,globalmmlu_cs,en_cs,,America,1,0,-1,0
+4f4192b868364b22a78424cf4ec838bb42583554,globalmmlu_cs,en_cs,,,1,0,-1,0
+4ff0b8afad7139ac5996c1f293cfc49d39e1a6fe,globalmmlu_cs,en_cs,,,1,0,-1,0
+502b94e6f7ac0d839b9d2c851e960af865ed8012,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+503cdf18dcb29d30c18ce441adf9efb7df6a3877,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+50455b7ed3a4c3035f793f9ac8dc9cf0c32b0dac,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+504c7f53c6a121ca5fc806b3c132f95d1920d2ce,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+50c8aae1baf86ff6f30f244fbeaf246701d4c50f,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+50f1c8b07934726b5861074b07e4ab14fbb0870a,globalmmlu_cs,en_cs,Greece,Europe,1,0,-1,0
+52b0f6a8ad2403349c118caa57e3f1fb9f7fef64,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+52c1f252cdf743b5bcbdfa4b021a45755aaf6cd0,globalmmlu_cs,en_cs,,Europe,1,0,-1,0
+52e66b7220c1b45212e2e134de3c69393def6d20,globalmmlu_cs,en_cs,,,1,0,-1,0
+5372f540b3e6889728bf418ac22a30601c3d34af,globalmmlu_cs,en_cs,,,1,1,0,0
+53ad8c827623941446e5656b06371452a4b0ab6d,globalmmlu_cs,en_cs,Italy,Europe,1,0,-1,0
+53e5e433d84d3ffe4d3d53b1f554d00006e63014,globalmmlu_cs,en_cs,India,Asia,1,1,0,0
+53fa576b29f4aee208cc79cecbac99ca4d37f174,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+5449a7d46ca0a2e955ffd019b78e4ca0dde886be,globalmmlu_cs,en_cs,China,Europe,1,1,0,0
+548d301a81caa28a3b4c678fe3c3bf6555743c30,globalmmlu_cs,en_cs,,,1,1,0,0
+54977c36de4c52b8bda5e444833e705120d35f54,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+54dd61ba829a26f64cc8b0edbd8d3e546cf39474,globalmmlu_cs,en_cs,,,1,1,0,0
+557419445d323baddb6019c1a79401a7452ff5f6,globalmmlu_cs,en_cs,,,1,1,0,0
+55fe9015977eec5c6111829e422ce9e6e527a201,globalmmlu_cs,en_cs,,,1,1,0,0
+56683339616550d8129916ee39775a31606f30a1,globalmmlu_cs,en_cs,China,Asia,1,0,-1,0
+56bc7dfba8c277b80a324920914a14994084187f,globalmmlu_cs,en_cs,,,1,0,-1,0
+56d2f97d4967771aa200f9f6405dcfd0108112f0,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,1,0,0
+56e34cfdb7cff693ea9c69cced47b67e70c24deb,globalmmlu_cs,en_cs,Belgium,Europe,1,0,-1,0
+56e72f70aee87509b29605e2b5ab2b921bb66152,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+5729d8659c6d294e7f7a371531116dc114b1bd94,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+574a13077b3e05a6f21c4881b6cfdc549b800f95,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+576f44896e6b3cc8211d800b6714a1042ca20506,globalmmlu_cs,en_cs,China,Asia,1,0,-1,0
+5774d39cfa8e1012d19d2cce10b0c9276d8da885,globalmmlu_cs,en_cs,,,1,1,0,0
+57853992f9fb46ec21952d3c54c8f57f3407a521,globalmmlu_cs,en_cs,,,1,1,0,0
+57914fc2a4118e1cb92804a336b2b7ef095b34ba,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+57caeb8b686d37884c9ef3c443851bb4361b03d0,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+58237795ba760803f87bffb8909f325063845944,globalmmlu_cs,en_cs,India,Asia,1,0,-1,0
+59470485be795a8e22a9031c04306fdca3db05f5,globalmmlu_cs,en_cs,,Asia,1,0,-1,0
+596a42cf6118797a607a91e2d05edf79c8edc100,globalmmlu_cs,en_cs,,,1,0,-1,0
+5973445dc5e7a480d2ef4eb818a5e24db6612821,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+597d6526bad8884f79c1ee657b1aca57c934486e,globalmmlu_cs,en_cs,Italy,Europe,1,0,-1,0
+59ec52b52fe5112dc9279e52877adfdf996f6225,globalmmlu_cs,en_cs,,,1,0,-1,0
+5ac55bbbf2f7dfc0043033cb483d278115cfc08d,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+5af111ba9aaf8cc8568778b0f6dc65626b9d5e06,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+5b899787333e3d5a743fecb73cff3b6a6c5ce0fd,globalmmlu_cs,en_cs,,,1,1,0,0
+5bed18fe0efd7df861cd190549f6947467b300d2,globalmmlu_cs,en_cs,,,1,0,-1,0
+5cb90c49de1ed8125e4d71cbe095c4256ae03535,globalmmlu_cs,en_cs,Chile,America,1,0,-1,0
+5cca9ff2221817cc0a8990843126f6c77977ccce,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+5d4c0b3165b1f309b79f629fc077caa2788c60ca,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+5dc4c629f420b5cbe304180c8eac86689e4c0efd,globalmmlu_cs,en_cs,,,1,1,0,0
+5e414a8b09597c2eb96983e54ccaa5628f413fb2,globalmmlu_cs,en_cs,Egypt,Africa,1,0,-1,0
+5e5143321affbf1729fd5d4bd221dfc5f94b2ba7,globalmmlu_cs,en_cs,,,1,0,-1,0
+5e91ea35b4f2f09d6ab8d1742647c21e9b4e1295,globalmmlu_cs,en_cs,,Europe,1,0,-1,0
+5eb75d7156eb2604676b4767e3d9ae13debc5cfd,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+5ecb9d46504c19a6e0546e67e8c5bc59c5e46476,globalmmlu_cs,en_cs,Egypt,Africa,1,0,-1,0
+5ed2d53cd956a28f10608d36f52fd08d4aabbfd9,globalmmlu_cs,en_cs,,,1,0,-1,0
+5f3747d59c68066e1d9da65a1a515b8a475f529d,globalmmlu_cs,en_cs,,,1,0,-1,0
+5f3c753ace0ce560bf7526d166e3dacfc1fe6f9a,globalmmlu_cs,en_cs,,,1,1,0,0
+5fea561d774431aa30fa25c2a6c8fd5956bf3f63,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+5feb336f95e519d256d95d9ecc699739b2df0d5f,globalmmlu_cs,en_cs,France,Europe,1,0,-1,0
+5fecb0d2c5ad476948e71293cd7f9108bfdc4132,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+601823b40890c4f9464931c40a544bf0fd412cfc,globalmmlu_cs,en_cs,,,1,1,0,0
+601fbe4e9acb1cfa62ad4e1f45cb885e1b9bbba7,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+604c262f0ecb6a2451244dba5a9c2bbd4122db64,globalmmlu_cs,en_cs,France,Europe,1,1,0,0
+608a1c179adb059d7b1c34468e88ccee4eed4e26,globalmmlu_cs,en_cs,India,Asia,1,1,0,0
+608f85314c37d060609e0b8761ae7113f450a036,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+6126d193c231614d303c99043b8a9f8fc7e079af,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+61e8820a789b093ec0350258cbe96ee87b6a6ae0,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+61f14b68e0252ddfa2f51eda573ff22efc3db6fa,globalmmlu_cs,en_cs,,,1,0,-1,0
+61fc6fe7dfc68d76165052c93d2aee86b539cadf,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+620ce515d1af04d27450c6c8846f05d01af8dd6b,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+6212a545c3349bd1ee221d1bbb96721dcae2efa2,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+622a23767d20fa1cccf9dcd99db6c9b38fca91be,globalmmlu_cs,en_cs,United Kingdom (UK),America,1,1,0,0
+6265bea3871b746b69700f68a8c108fd00595d76,globalmmlu_cs,en_cs,United Kingdom (UK),America,1,1,0,0
+62a96672550d5b2a4035a7c63b42acae39617048,globalmmlu_cs,en_cs,,,1,0,-1,0
+63739e07d9e072b34a6d5be456424086f3a11b00,globalmmlu_cs,en_cs,India,Asia,1,1,0,0
+63ebc836c460b5e85af495366fec77fe4d11d4c7,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+643b2c850febb1e321d600340c48348639d888a0,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+645a34dc0c98b9ee725fd4a0e123ef5c09f23865,globalmmlu_cs,en_cs,,,1,1,0,0
+64ab0c5c074c29dd0a49e7ced28382a62539f118,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,1,0,0
+64c5267c4c644bade6a0f34101b6a775cb34e3b9,globalmmlu_cs,en_cs,,,1,0,-1,0
+6539d48b04e53420bbf0bff15a816f0ddffd94f5,globalmmlu_cs,en_cs,United States,Europe,1,0,-1,0
+65b5f999e484239a8ac605626f3e4b477e80356c,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+65dd2c99ad9b44dbb8b519a7ca14db9a6fef9bbd,globalmmlu_cs,en_cs,,Africa,1,0,-1,0
+65fe8e6748279171fcac756aba904480b0f0dc1d,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+663d0103f606f567e509232b298088096a6731d7,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+66df98b9252e90e3b2895832f41ac1fe26ccb109,globalmmlu_cs,en_cs,,,1,0,-1,0
+67054ed27c948aa8ab1ce0f3dafdf7e55e348c6e,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+67143d4cbe6ec901af68bdafe4675a063cd195c3,globalmmlu_cs,en_cs,,,1,0,-1,0
+6800d39376926b2eb4b338d3778b30475e187581,globalmmlu_cs,en_cs,,,1,0,-1,0
+68d55d9eee5c0294a7ab06be8277a00c8a48303a,globalmmlu_cs,en_cs,,America,1,1,0,0
+6971886f95b98e8eccb2f94d396d146f0e8c6dca,globalmmlu_cs,en_cs,United States,Asia,1,0,-1,0
+699a8a92ed543e814f0d88874c9c0787be44b348,globalmmlu_cs,en_cs,,Europe,1,1,0,0
+69db15c636bd3304e41e7f8e1978536e404207f2,globalmmlu_cs,en_cs,Antarctica,America,1,0,-1,0
+6a2626733eb7eaaae19ababa4c2cb09fd6acccea,globalmmlu_cs,en_cs,,,1,0,-1,0
+6a437907736fa69a23613302d82b782d23c6cecb,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+6a65b0b807588cd1d83da72a3388e150b2d6a4a8,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+6a90ae45034979c959b2001cdf6ce825674d95bd,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+6af8ff9242365da1b295fe401963b340fa6c6c7a,globalmmlu_cs,en_cs,Russian Federation,Europe,1,0,-1,0
+6b54d0203a9f6c1888787df7743c8d27b888b3f9,globalmmlu_cs,en_cs,Austria,Europe,1,0,-1,0
+6bd911515c676a53a2c26f3de77535fbad95e646,globalmmlu_cs,en_cs,,America,1,1,0,0
+6bff30383f9da1c370468a2cd5a925c72b659d8c,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+6c2ce6127de530fdfc0fe2e5ff14d1396bfbc2fa,globalmmlu_cs,en_cs,Canada,America,1,0,-1,0
+6c4c292797f8ceebca4eb280977e1960546ee5bf,globalmmlu_cs,en_cs,Switzerland,Europe,1,1,0,0
+6c6527854c9b607fa270e1b7f4a9c138f2129c95,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+6cd7fef34352a6f23072cf85743ef4e29e8260db,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+6ce02993666fb854014dfc7637591b2351d19c74,globalmmlu_cs,en_cs,Germany,Europe,1,0,-1,0
+6d3c65e2b4abb66ab44fcadff5707d6934e66663,globalmmlu_cs,en_cs,Canada,America,1,0,-1,0
+6d9c67b534535fd61ece4ce65e350cf02e22b440,globalmmlu_cs,en_cs,Australia,,1,1,0,0
+6dc69439182611e5d60ef1e710529d85e057699f,globalmmlu_cs,en_cs,,,1,1,0,0
+6e814f56f7c32208d02e9f5454dde97fc471fb24,globalmmlu_cs,en_cs,United Kingdom (UK),,1,1,0,0
+6f5cad93da922e90de7109cda67de12d369458d2,globalmmlu_cs,en_cs,,,1,0,-1,0
+6fa95349a129b712a518767b4074caacef3e4e5f,globalmmlu_cs,en_cs,,,1,0,-1,0
+6fd1783dad89f56e7e78793747a2ca16a9c75262,globalmmlu_cs,en_cs,,Europe,1,0,-1,0
+6fe85df008bb8c9f83e38e67fc0ff82032b196ec,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+70381f73f5518ba365de8a3602a73b5bf60a5675,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+70536fd08d707bfe081b361d581ef4e30027fdc4,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+70681194fda4de65370e283358a208a28afb0315,globalmmlu_cs,en_cs,United States,Europe,1,1,0,0
+708ec03a36f97c45f428f2334903967f8cd7a9ab,globalmmlu_cs,en_cs,India,Asia,1,0,-1,0
+70ae706978a898976c92497bcaefb25f2ef6a437,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+714b1805febd7cfb7c76435d3f49df8b8a11f640,globalmmlu_cs,en_cs,,,1,0,-1,0
+71974e0a49f3d3d3fada00b6d013a45058db5fdf,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+71b57ce63524766e21c832264b1efcd34991e767,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+71bcd6c4682b838b10ff08b640b7d2d177a5a1b6,globalmmlu_cs,en_cs,,,1,0,-1,0
+725f453926ce42f49eb9ff9d71e8e261bd4a9be5,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+72eab8ce5812ccff9534a2b964aa0e7927655bc7,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+73554a02fe5a26f19d644fda9f8c6a28dcf115a8,globalmmlu_cs,en_cs,Russian Federation,Asia,1,0,-1,0
+73ba247f11cfcd933e713824669133461eaae1eb,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+748c97f7e3c7a0b34d80d38d664a2de08d28f3ce,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+74cd8c39d65e697c232e31c6bf83b96ec5478e72,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+74db90a281f9a4627d2f734ee731cec330922328,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+75b23755d91961cd32257e6726459645506d7512,globalmmlu_cs,en_cs,Pakistan,Europe,1,1,0,0
+76344d20e2fe231a9b7baed2bc861b83ce133650,globalmmlu_cs,en_cs,,,1,0,-1,0
+769ee4d3c652143eb8a8ebe0c159d78bcb58fcc5,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+76a6d2912a7a273df1871d59db570016cfb6c0b3,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+76e058f6be1d9c4b6da168bf8a8ffb9e1045ba8d,globalmmlu_cs,en_cs,China,Asia,1,1,0,0
+77ec1a41ce0e236bd2d489b8ebacb5e53a25e841,globalmmlu_cs,en_cs,,,1,0,-1,0
+780316cead3e10ae682f16ea1e8c99b30f46ea05,globalmmlu_cs,en_cs,,,1,1,0,0
+786a99378af9e673395a660bda667b67ee4b24f2,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+7870c627fd8014433df616e04149e7b5cfbcc176,globalmmlu_cs,en_cs,,,1,0,-1,0
+79c0d5e54de736bb6deeb26742767f02ec29f153,globalmmlu_cs,en_cs,,Europe,1,0,-1,0
+7a7b2d9e70112d7708d5d97a4b9dd7db916b1c68,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+7ac2af075e0ede056e36cc67fc5c7be3d532e29b,globalmmlu_cs,en_cs,,,1,1,0,0
+7b44af30dbe66db0c840d7a4cd34ade6b7f856b1,globalmmlu_cs,en_cs,,,1,0,-1,0
+7b5a1af7daf17b14bfa404e41c0dc10ea061dbff,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,1,0,0
+7bd40e783304aa55044a54afc262c39a1afaccf1,globalmmlu_cs,en_cs,Algeria,Europe,1,0,-1,0
+7c305bac2da383de5d289befb4a67dbc96b7360b,globalmmlu_cs,en_cs,,,1,0,-1,0
+7c7abad4eba01840d236d20c7d3b49cbe616c4cb,globalmmlu_cs,en_cs,,,1,0,-1,0
+7c898566f53b392b9dacf5835cf6b549ccc63307,globalmmlu_cs,en_cs,,Europe,1,0,-1,0
+7d0d4276b0b6956b618dba17be717439dc3e39fe,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+7d5a658882581825dd2ef20a7436c1e70f2c1bac,globalmmlu_cs,en_cs,,America,1,0,-1,0
+7d687a6222b121ee736441cb366ae57cc3a67481,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+7d782e46519dee58202c560e78d6b55f0994e0bd,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+7d7b21672def4699639d23cb04a46a9dfdd39012,globalmmlu_cs,en_cs,,,1,0,-1,0
+7dc8470e7260dad9fc02e94121d52c07fcd1662c,globalmmlu_cs,en_cs,Spain,Europe,1,0,-1,0
+7e325e2dfd747407f483349ce9253fa826d28a85,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,1,0,0
+7ec9cf16ddb237b942f8bdb58aec19b2aed024bb,globalmmlu_cs,en_cs,,America,1,1,0,0
+7ed36714503b10f94391fec484e7b299ce5ce4cd,globalmmlu_cs,en_cs,Japan,Asia,1,0,-1,0
+7ee2c7609724f8f48b834ecc8cadfc211c95c13f,globalmmlu_cs,en_cs,India,Asia,1,1,0,0
+7f0d8054bfaeafb256c7b6cc73a52d77df924015,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+7f29ab1678d02fe53219f1594c6282f203906618,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+801d6098acf5cf3a73bd6172a76680ff60ebdd98,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+804badd65f255af810293b7adec9e7a3313f2edd,globalmmlu_cs,en_cs,,,1,0,-1,0
+80d39686060885de17afc81eff633f787a8c22f3,globalmmlu_cs,en_cs,China,Asia,1,0,-1,0
+80f498f07cf287de0ae2797d68a0f4feb701d98a,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+817510838160e45af1c4daff2783f6a380286139,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+818d6eb5f6df1e09354c1a6feb50d2004c27ed85,globalmmlu_cs,en_cs,,,1,0,-1,0
+81e175292d4236e5b65b61afd7ec6623180b2bd8,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+81faccb1fba32410cd346da631b33b29c3ebf933,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+8213b951e6bd763013428d3d8ccc2302421b1ca7,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+82421b729a33f2bf0d42f1e56382f06a4bb13a7f,globalmmlu_cs,en_cs,,,1,1,0,0
+82b085b30533a302b18afbe5eddedaec4d60ea47,globalmmlu_cs,en_cs,,Europe,1,1,0,0
+831d0803179670b6d84ada2b4eaf4b3480ba1c4c,globalmmlu_cs,en_cs,Canada,America,1,0,-1,0
+833c1052a449f8edb9d112c080df384b86a2eed4,globalmmlu_cs,en_cs,China,Europe,1,0,-1,0
+8366f6287c5d3610fdc9ab82d2c48fd0975a3f15,globalmmlu_cs,en_cs,,Europe,1,0,-1,0
+8396b3b1a61d6d608f24dbd2a849e3a2c6afe8b5,globalmmlu_cs,en_cs,,,1,0,-1,0
+83d7261db493d2170c7bad3a708752c25eb32238,globalmmlu_cs,en_cs,,,1,0,-1,0
+83d79f5e49315b4d82df19f853e635891fad478f,globalmmlu_cs,en_cs,,,1,1,0,0
+83f29f11cde6dea78fd991f63bf7a682488374dd,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+84906e65dcad07c7e638cfe22fe4d14fd9a741c4,globalmmlu_cs,en_cs,,,1,1,0,0
+84961ccebc0ca99551e10cd401b0666cdcf265bb,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+84b259fe8ef0b2a4d753e1dc50f0519f9cab871c,globalmmlu_cs,en_cs,,,1,0,-1,0
+84dc237f5906eeac964c30dfaee35bee2b96ff58,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+851d6600b9577f32cf9eee02e1b7df13b1abe3b3,globalmmlu_cs,en_cs,,,1,0,-1,0
+85a145ca569e950d6a735210c75b785ced7dba7e,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+85a3b1e5875ec75aab368f75e74ffa627f327b2c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+85bb1f708dc0c90995c632ab933f28e3ee98317f,globalmmlu_cs,en_cs,Ethiopia,Africa,1,0,-1,0
+85d683567171cde2326aec3ebeed26d67a138859,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+86362e7545b258c13511728b508ba3c1e823efce,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+865a7c3ca3a6ebcc0401ca68fdb9560dde348c3c,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+86a4a086fb4782312158beebef62a4e702352e9a,globalmmlu_cs,en_cs,United Kingdom (UK),America,1,1,0,0
+86d0eb48bd4c41dde93b4a08fd00eb175b0e0c9d,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+873cfc0e83fca9279e617b01ac8ed2911678af0e,globalmmlu_cs,en_cs,Spain,Europe,1,0,-1,0
+875e475a01833d58f6bf841c75c2bc564d90a290,globalmmlu_cs,en_cs,France,Europe,1,1,0,0
+876f7ffbe16bc0115da44a9b217f1e99249176e4,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+88673e0d3dc2f0b320866ad67e95e3fb222b727d,globalmmlu_cs,en_cs,France,Europe,1,0,-1,0
+886d61e0ed319fbd3600c3953ef9a77ebd6ec455,globalmmlu_cs,en_cs,Italy,America,1,0,-1,0
+89f00c002569cfdcbc23ee1ef2fc27cc2d6a77f2,globalmmlu_cs,en_cs,,,1,0,-1,0
+8a85d16ca4ba01692833f4fb76bbcfdf6fae310f,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+8ab373eb73ac186957463555948cde87a2ced4ba,globalmmlu_cs,en_cs,Peru,America,1,0,-1,0
+8b03409902cde6cd9b5bc889ed361c88c9b55251,globalmmlu_cs,en_cs,,,1,1,0,0
+8b12ef7b4be6e71d23960838345a252c7fcf075c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+8b1b10d52ba4302e6e04bddf8288f3265c586cd9,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+8ba0aa13930e378ad86e97b78be3792ea61e70f8,globalmmlu_cs,en_cs,Germany,America,1,1,0,0
+8bd235d6e84b9441a67550f28c59c30cd219cd62,globalmmlu_cs,en_cs,India,Asia,1,0,-1,0
+8c169a9bfc2c80ea0e271d6b890d5682e42f6108,globalmmlu_cs,en_cs,Spain,Europe,1,0,-1,0
+8c1876c92c6fadc3a5d285baf0545c652bdffc63,globalmmlu_cs,en_cs,,,1,1,0,0
+8c9edf5fea2e659ffd08b604eda7ce5b3e1e718c,globalmmlu_cs,en_cs,Spain,Europe,1,0,-1,0
+8cde692786c3fa4ae2e881a8f67059a0cf71d401,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+8cf62ef95d8c05019ce77da31ed236e8d24e4937,globalmmlu_cs,en_cs,,,1,1,0,0
+8d673bd2546de5831c354930a62978eb248f5c88,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,1,0,0
+8defd75c3af567ee1f7e952348e72c727affcbde,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+8e2d4ddb4f4b34a2c2b5f4e2d86f88f10bff29a8,globalmmlu_cs,en_cs,,,1,1,0,0
+8ec250c32bdf45d814f3c31e49b772808c56d931,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+8ecef9f9d9f684059cf12ff1388b80e9c4d65355,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+8ee1eb376efbd90f29564a7f9eccf9b80cd8cd34,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+8ee5f3efdea9510d60eaf263d0d0f8dc25125965,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,1,0,0
+8f64570d504c3f08e29fd212fbeaeb04c6e29799,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+8fa3e108ca2307ad05ef3f457b94d8f1873f77a5,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+8fcbafc253fa0d5458b6984008dec17fef14dabc,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+902b491bfe876eb71fcd6e09b459caa250dc5206,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+9060a39840b8698eb7d7ebd5a47edff4135d0007,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+907297d2915ef5326ba8ef602ad4e4341dad7482,globalmmlu_cs,en_cs,Iraq,Asia,1,0,-1,0
+90b59f3c34115ddfcb782208be83359a30408105,globalmmlu_cs,en_cs,India,Asia,1,0,-1,0
+9106d945de95dc0958cf2bfdc01cf3534a83ccf4,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+911392bf6d76ab4515196602f5e9f6d0c36275b0,globalmmlu_cs,en_cs,Congo,Africa,1,0,-1,0
+91488190493376f3377b1a73b93352d5e355c7d9,globalmmlu_cs,en_cs,,,1,0,-1,0
+92372fb8ed59ad684de8efec8003fd6e16d4bbdd,globalmmlu_cs,en_cs,,,1,1,0,0
+9238fea3039fa8456793f6d86d2136782dc52047,globalmmlu_cs,en_cs,,,1,0,-1,0
+926f2f729db8431f27576471240124b2b393d612,globalmmlu_cs,en_cs,,America,1,0,-1,0
+928b77033f12987441b778446d6a3b9377275c68,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+92c94665bbac4fe6a5cc993361499af0c7291253,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+93082293a7c5498686a914cdbce52e4ab4609465,globalmmlu_cs,en_cs,,,1,0,-1,0
+936eb448655b7af90f8f56d3f4cc9e8d22794c4e,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+947d11911a07ed18308783bad31bcc5e645bac67,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+94a81a1100209368c289d06d37775478a0d7e58e,globalmmlu_cs,en_cs,,,1,0,-1,0
+94c69f083b2267ef89552f328ec9632864251d72,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+95ec13331688815d079221c00a48b3d2d855e4db,globalmmlu_cs,en_cs,Egypt,Africa,1,0,-1,0
+965025aa38e3ee194ee90958f87c996709e0f3c0,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+965742622bc2a81c771e7e5dfa2f8e1e21838bb8,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+965c44d1aae4b9b46681efbfd365d9490004f644,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+96b29959b3c2ab3aa5e946c027fa7280a4ac76dd,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+96f014a8e1fb12554c24aa4337adae598809c88f,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+97413752f235af23524f54c9d0dc4ff9d864523a,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+9970aacf54520030a05a65e3b7fcd5fc1a8c6fff,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+9a20e2236eacc87cc9bf8a5e90e7749bc142e3db,globalmmlu_cs,en_cs,,America,1,1,0,0
+9a81027968a9d4676bbb363a6928ec860fb68b18,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+9a8adc8fe9c2fcacc75a12cc33425b145dbcd319,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+9b21a6f2d66679040e79a1b6f4e6b406456258f2,globalmmlu_cs,en_cs,United Kingdom (UK),America,1,0,-1,0
+9b2578c8263f9626a896d28674764fbe3254a39c,globalmmlu_cs,en_cs,,,1,0,-1,0
+9b7e8322cb99e2d4bdee63eff9c79e5b8df16e05,globalmmlu_cs,en_cs,Germany,Europe,1,0,-1,0
+9c7d2fafe67306836113dfe93e64dbedf905e683,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+9c9fd2651bce34cfafb713489b2c92918f0a87d5,globalmmlu_cs,en_cs,,,1,1,0,0
+9d59d4245b62008cb9e9629357a387958a074333,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+9d6d37b093af620b09bf6f3c01275707c377cfa1,globalmmlu_cs,en_cs,,,1,0,-1,0
+9e15cc7dce7f2e324363545db51a542d98398654,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+9f3ce6ed55e766824088e51f0a509e63cf50976a,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+9f6e938d231d29558bf40346372ab7bd7dcacb6c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+9f94107db8884899126b5c9f783d8aad7d0cdd75,globalmmlu_cs,en_cs,Greece,Europe,1,0,-1,0
+9fa35b3a57195711c25c9f96403b3f9e820b85a6,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+a0057ed258510b3383b9cdfd2d5a9cf43640505d,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+a0209b90116164e9a3e358eb7b3c6ce9457d6d4e,globalmmlu_cs,en_cs,India,Asia,1,0,-1,0
+a058a60d9e4c051beb2b0c2646bb2b786ee47af3,globalmmlu_cs,en_cs,Russian Federation,Europe,1,0,-1,0
+a080c0af4554fbcc5067f36c41bc0f55cdf1669e,globalmmlu_cs,en_cs,,,1,0,-1,0
+a0850c1719d7099ae365040bb413cbc8eecb532f,globalmmlu_cs,en_cs,Russian Federation,America,1,0,-1,0
+a0fa67bfa268c5fcc9e786aa2379295234d06cbd,globalmmlu_cs,en_cs,,,1,0,-1,0
+a22051ccd36ce7f7e78af703a76a2af03b718e91,globalmmlu_cs,en_cs,Germany,Europe,1,0,-1,0
+a340ed25ef7a456769c057697659e7b0ba80c74d,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+a34b4611ae5dd920c46dc42e79f6de58a306b99a,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+a370e961af1f05a6785f2da7aca0fbe6b2f548b1,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+a3afc15ed86e3573be22fba7342bb797eac9e14f,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+a3e953deab6c11e79be558d0507096881d09009b,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+a48665f5dcf6b22edadabe08de77eb124f9ad52e,globalmmlu_cs,en_cs,France,Europe,1,1,0,0
+a49887bee0707a0b3c225c5f1658696c4b2cb316,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+a506628d814c567934e7e38b211b0cc694517780,globalmmlu_cs,en_cs,Poland,Europe,1,0,-1,0
+a542ce81d058048acc157c74b299eab4b71a7fae,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+a557575e0b0bd58f8c4f61d6b2faf35a1da9be22,globalmmlu_cs,en_cs,,,1,0,-1,0
+a5c5cabfa2f2d5044d1fa251f920652d1c15f0fb,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+a5e7443253a016cdf85344b638315d8ec23bf593,globalmmlu_cs,en_cs,Greece,Europe,1,0,-1,0
+a69ecbbd6f290f80f338c4fa9ab49abcc06c22df,globalmmlu_cs,en_cs,,,1,0,-1,0
+a6ee3eb211e977e6dfe7b968a72acfd22de0c5de,globalmmlu_cs,en_cs,,,1,0,-1,0
+a70da678fe325fd5312e0daa112d4b9afb8bdb0a,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+a76930f4af7d965ba8aabfb05e19e883a0837087,globalmmlu_cs,en_cs,,,1,0,-1,0
+a783684b6a98b54c4d5f05c5c18adb660899fd12,globalmmlu_cs,en_cs,,,1,0,-1,0
+a824d304e188f9ce908ed8e2824d40c7aa7fa811,globalmmlu_cs,en_cs,,,1,0,-1,0
+a88c5cf7ff8d0f0b743e324e65f6734916ae82ed,globalmmlu_cs,en_cs,Italy,Europe,1,0,-1,0
+a89c99fe16dfc2883fce47dc8d657419b6bc1237,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+a93a0f44da0bc6042688dceb83bbf4cd5a28c780,globalmmlu_cs,en_cs,,,1,0,-1,0
+a9f5aa97b7b95ac54a7344bb59f1ecb0e4c14467,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+aa2bb05471d64a17487eb89ec2c0990797d7ca74,globalmmlu_cs,en_cs,,,1,0,-1,0
+aa9f6aec3a26bc3f5e52656674e534f1fcf0c5bd,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+aad36e36412b86d16f447b0b34db76dbd98042cf,globalmmlu_cs,en_cs,China,Asia,1,0,-1,0
+ab03e998cdcbe6b650673e88c44ac21202f47f39,globalmmlu_cs,en_cs,Japan,Asia,1,1,0,0
+ab3d05936af3ce61cfd750bd8d45adf8a4dba8a1,globalmmlu_cs,en_cs,Israel,America,1,0,-1,0
+ab6aeb64abc3f51579784a96d8540f03b62ae63d,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+aba2e1b7b9e5a758470b5a1907206ed997aa1f90,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+abffa9db3c71d1d89e3adce0e4c271846e781f22,globalmmlu_cs,en_cs,United Kingdom (UK),America,1,1,0,0
+ac0494f52f0859cf981ed412e05e870350f93f82,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+acb8ddea70d7e27069fbdd3922debf763d0aea13,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+acfc9e324653c0996d094e5a0c7da6363fc376c9,globalmmlu_cs,en_cs,,America,1,0,-1,0
+ad5d31975e390a52e0d4b232177b6d94d28e160b,globalmmlu_cs,en_cs,Japan,Asia,1,0,-1,0
+adaab917a53753a32b6259006d8fca6fea1c3cd3,globalmmlu_cs,en_cs,Peru,Europe,1,0,-1,0
+adc6d48c29d3131f6b1bcba0ac5a24ef6e2bcd58,globalmmlu_cs,en_cs,,Europe,1,1,0,0
+ae462852c32da97a390723517e4c65f1294effda,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+ae9f5f3b08e9e83302d57dd02341fee49490b891,globalmmlu_cs,en_cs,,,1,0,-1,0
+aeef44645258456772c81e3414b74bc0eede366a,globalmmlu_cs,en_cs,Germany,Europe,1,1,0,0
+af0ecc4963aa9a06afd9e730239f4922f98c2191,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+af4c3c471ba54718896fb1b9a895ac75dba1e1b5,globalmmlu_cs,en_cs,,,1,0,-1,0
+af50f61153f782817f21b84274e42f8157c12da5,globalmmlu_cs,en_cs,,,1,1,0,0
+afc17cabcd212caea589723ce6535ab79416d90e,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+b016a63d0af6573c17c595afe2cc9da0fe9598ec,globalmmlu_cs,en_cs,United Kingdom (UK),America,1,0,-1,0
+b099f7addd1c1cdb7dd33dd8655dbbf492fe04bf,globalmmlu_cs,en_cs,Iraq,Asia,1,0,-1,0
+b0a371039a172dcecc3ad1253974b7f611992dfb,globalmmlu_cs,en_cs,"Korea, Republic of",Asia,1,0,-1,0
+b0c629e9540f21f2e1f00c402cd44be60b8174d5,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+b0d307af3b1214669d0590ce599307aa96b8e69c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+b11a5d620213d0dc669a7742e561fb237013c9d3,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+b1639abaa002435190e5e76d923af87fbf9208ac,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,1,0,0
+b19a0355b4588ecc21149c10ef933722d3659eb9,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+b1a74729dcb4950b7b598ed226f8962080d40ff3,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+b1ee30eefe114ce3dda7b54e6c596ceafca17d62,globalmmlu_cs,en_cs,United Kingdom (UK),,1,0,-1,0
+b1f405df413ec7763eb545b2b2f2a86d6fdeecab,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+b20e69a23e8a56b074aec0af175b3017127905aa,globalmmlu_cs,en_cs,France,Europe,1,0,-1,0
+b27df414a2796faeb41dcc529b8c9aa84b17b6c4,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+b292adfac9ee74602a0c533314667992f53cf31d,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+b2f82abd3873352e7f84c0bb070b6768069bf649,globalmmlu_cs,en_cs,,,1,0,-1,0
+b307fe0a9dbe7c642215063f64b6806e8911bc9d,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+b35b1949ce5b6d9d0486699679b78e388b0a3a87,globalmmlu_cs,en_cs,,America,1,0,-1,0
+b36bef5fcc9a3f9d6e147cbfa2bf8d6fb4de4cc1,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+b3a1d2731db95d182638134c5db265cb0d05edb7,globalmmlu_cs,en_cs,,,1,0,-1,0
+b3dd4d63cb0f2627a068ada51cd6737a02c77e19,globalmmlu_cs,en_cs,France,Europe,1,1,0,0
+b3e4d0ab4758da823427ae9247ebe733c472e4f1,globalmmlu_cs,en_cs,,,1,0,-1,0
+b3e722bcb4d96ed81726084da7cbc0f56ccac346,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+b3f54d3e100d7450b8bb1aa75f63a9e99fc21a2c,globalmmlu_cs,en_cs,United Kingdom (UK),America,1,1,0,0
+b4c6c658dad8d84b685087369a6626384efaffe8,globalmmlu_cs,en_cs,,,1,1,0,0
+b53df017f4e8c17960e4dcfd1870cb30ae53fcda,globalmmlu_cs,en_cs,South Africa,Africa,1,0,-1,0
+b552055b07128670c31ddeacaac99922108dd186,globalmmlu_cs,en_cs,,,1,0,-1,0
+b6007f158bc7313b1900a5bfc562f7ad6ceb2d7e,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+b653efb78f394799b949f142faebfb309eae2334,globalmmlu_cs,en_cs,Greece,Europe,1,1,0,0
+b673058dffa55ad6dd6d7fdb4f54f9ef6f3e1863,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+b70d94c316f27401651fb70c46d606243e6e5def,globalmmlu_cs,en_cs,,Africa,1,1,0,0
+b72ec232ac40ae46e0a91526d95cd4eeb066b20c,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+b7bf3a12bba1e1b5bb4b0946f7f44d8899059298,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+b7dc474e8a31f09189059a0d6d8cca4b7787ebe5,globalmmlu_cs,en_cs,,,1,0,-1,0
+b98c14c6d246ed4ed3e14d583ac6295ec07eecf8,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+b9a37ea641ea471a6e0915d3e78ab146070d0e80,globalmmlu_cs,en_cs,Russian Federation,Europe,1,1,0,0
+ba227fe8910ff28892a9395378ab4bcd9c88e33b,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+ba2eb0e1bb8c16c126d04320eae588781b0c7aac,globalmmlu_cs,en_cs,United States,Europe,1,0,-1,0
+ba345f60590dffae974aac42ef705bc1977f8f0a,globalmmlu_cs,en_cs,,,1,1,0,0
+ba917e8dcc7102f6ee1bfee605d11c9a8179eb59,globalmmlu_cs,en_cs,,America,1,0,-1,0
+baaf8492e813e81b1731a4f64758efc638cf5054,globalmmlu_cs,en_cs,,,1,0,-1,0
+bae003fff8514c6a9b56251d5d17265ff3ce482f,globalmmlu_cs,en_cs,,,1,0,-1,0
+baeb3ada88a0923bc80ac47c243d6e605648f4ce,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+bbf55f8794c5a54435573cb7341c4b13517ceed8,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+bc6b35b1b886c82968631f1364a7ee9ddb14a218,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+bceeea2cfcdb0b2fe65d91ea28c12efd212796ee,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+bd274d8f450b7f34889b02620d5022869fd13856,globalmmlu_cs,en_cs,France,Europe,1,1,0,0
+bdca02e95409f3fbd78a8d35e4ba36186783a3d5,globalmmlu_cs,en_cs,,,1,1,0,0
+bde72bfa613e9acfa0824e86b6be415f4cd71e7f,globalmmlu_cs,en_cs,Egypt,Africa,1,0,-1,0
+bdea144713e0976738745c3429b930e796c5788e,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+bdfbd6a0a6f3e01347a3ef12a1f24562e7547fd6,globalmmlu_cs,en_cs,,,1,0,-1,0
+be7cadc6fadd2fe4d6bfa4d6d62f1876a722830f,globalmmlu_cs,en_cs,,,1,1,0,0
+be86f244d54d6a092eba9af0c57da83058b9dfe5,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+bea85fc9da995eaa26db87db8acdd60ceaf22b22,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+bf309c27ce5597babbeadd0cd93b22cbf78c567f,globalmmlu_cs,en_cs,Åland Islands,Asia,1,0,-1,0
+bf43d2ea4088e756f4816592ea5d615e34d7579e,globalmmlu_cs,en_cs,,,1,0,-1,0
+c05363098890ac5990c4f3e06be6ed6ba5211ea7,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+c074c96974d1b95d7af0699cc2f34cf1a4a7f9ee,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+c08a0923b5e85d51e218f1d37e485d18738938be,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+c12ef500f3d7230f5ce47e91c565a45eed330a61,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+c1f1a6f59a6d6175ae61009976ac421ddd87354f,globalmmlu_cs,en_cs,China,Asia,1,0,-1,0
+c208ef3dff5d00ae171ede3b76305eddf179b35e,globalmmlu_cs,en_cs,,,1,1,0,0
+c227d68f18213c0048f8df40722017cc35ab569d,globalmmlu_cs,en_cs,,,1,0,-1,0
+c313e0365050e097f3247612c85d1539ffd0e0f1,globalmmlu_cs,en_cs,,,1,0,-1,0
+c3211574f6066e4cc489ee791a6f7a75a4ee16c3,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+c3569df278a10e18eacd86c6dc840efbe97aa98a,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+c36e475f2c3bad08d9d7bc622052c072f1c600e3,globalmmlu_cs,en_cs,"Bolivia, Plurinational State of",America,1,0,-1,0
+c3b1522f172931c2c7968c1b7dd7e8e30ec382e7,globalmmlu_cs,en_cs,,,1,0,-1,0
+c523c66106f4c32ebf18d7ff919f767a384353f2,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+c540bea6c1417a76c9d78c16418ef55141d5fa3b,globalmmlu_cs,en_cs,,Africa,1,0,-1,0
+c569bfe92d40c7d6fe2a56e749d0005c87d5320e,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+c57fa14ad7714e49ccc970667e02d43a0e4ca123,globalmmlu_cs,en_cs,,,1,0,-1,0
+c5bf99730ecb5f90b9d1e4ede6dffea4fc3b3a0c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+c5c0f0b6e1b1443bb3ce9c9f5f64a35e72950afa,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+c5e6348d348f59d6c14120413049f04aa11bf6bb,globalmmlu_cs,en_cs,Russian Federation,Europe,1,0,-1,0
+c6483bb2df8a2a59c8ed50b35b9da8fce4d55865,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+c689941d3716fc2ee2d2f18258fe8c67b2a87094,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+c68b5f93eacace32a1a708c6b3f4dc5c9df218c5,globalmmlu_cs,en_cs,Switzerland,Europe,1,0,-1,0
+c69eb6fef3288b0a414166bd19a98fe35717cfec,globalmmlu_cs,en_cs,Spain,America,1,0,-1,0
+c6a3df843d30bba1295c022486629b3f09f0e326,globalmmlu_cs,en_cs,United States,Europe,1,0,-1,0
+c6f2604f72bc507dbd2049bdbfb9d77daa033291,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+c6ff12734c527f77fafda985d9f6402f89b39d5f,globalmmlu_cs,en_cs,"Iran, Islamic Republic of",Asia,1,0,-1,0
+c7419daa84cbb86614ec41ab602bdab2b3ee6811,globalmmlu_cs,en_cs,,,1,1,0,0
+c75c4e9e00da25175e41a0b6fc62c89d26e921fc,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+c78916f65751c7cfa2f35a99099354fb3e4254ce,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+c829ef01a037bab972d3da35e1b8e5e7c8a2242f,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+c8603aca4b5f7f625452ed89e835412ee6dcbe84,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+c8818fbd3ef93219b06654ce1c6c15d073bbeeed,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+c8cf632909bddf6426f74eb2679a238ac14e96c6,globalmmlu_cs,en_cs,Türkiye,Europe,1,0,-1,0
+c8f75f467d93279bf37b811b16db6303987cfd8d,globalmmlu_cs,en_cs,Netherlands,America,1,1,0,0
+c941548282b02f0c7e0724c98e50fbcb27b96554,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+c942405437100d6e793114660aea477120c5c3cf,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+c9a9f08fc5252f9930920cf03b55fcdb8f2c374e,globalmmlu_cs,en_cs,India,Europe,1,1,0,0
+ca5fe2a356fa040e09ff53f9256999d3bf42bb6f,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+ca7fd440026861569deb491084142050152b41ff,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+ca989e45f429eae9261d5bfc69ce5348eea7499e,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+cb5a724202312e3635ba32620e188b6755fc67ce,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+cba49fa386eb7acc3a2afa50471f86206abff701,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+cbc7b028f6668944c37c28bad5c794441b868fc0,globalmmlu_cs,en_cs,Mexico,America,1,1,0,0
+cbd06580f02b3b94b29d37efe1e1635db96787c2,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+cc17907c9aa215bfe85e7d2e435fb20d90dd3a5e,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+cc24548380bd7e8aec8ee2762fc37a0e9e2bc2c4,globalmmlu_cs,en_cs,,America,1,0,-1,0
+cd587c8fa8ae184218f829ea5b8b4158f6a4dd95,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+cd9c04e2ced45646edbc18dd9421b4d78e96edb7,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+cd9f356891176065e3a9cbc0b35a7ceeca493812,globalmmlu_cs,en_cs,Mexico,America,1,0,-1,0
+cdc315c4571ad2f35d733df07f1c6f6efb4563ca,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+cdd3fe05dc8db6942de5176e67fa276d9e5ac5ee,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,1,0,0
+cdea5e137a828f30b660eb782ed3bec138eda2e1,globalmmlu_cs,en_cs,United Kingdom (UK),,1,1,0,0
+ce714f44fb4c7ff7eed7b8c35a3c84160b6f48e1,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+cee254d3bbf5c66999341ab32d44ef16ad211431,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+cef18388fae31b728a6b65b44abac14121d7fd94,globalmmlu_cs,en_cs,,,1,1,0,0
+cf0570b0b704df85a97a4361265eeab3b5657d70,globalmmlu_cs,en_cs,United States,Asia,1,0,-1,0
+cf084db569680457e2ffb186dccc7f1da78353dd,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+cf397b2a68186eabe68cb7c204c31f70c2461da7,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+cf4616f94d53b4da919badf7832e4203b15f46fe,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+cf6a2a119209b3e9e26ab8e7780769d190815221,globalmmlu_cs,en_cs,India,Asia,1,0,-1,0
+cfe4df1c0e2a966349a5e6e895636b353b8df57b,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d0350c976d07d79c5a343ef5c3d32f7275710a7d,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d04d70bb179c36163f826a358ba1b88cc0ce8403,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d0e4f2f7c2ae60621539b72386d8e73b21f273fe,globalmmlu_cs,en_cs,,,1,1,0,0
+d16cdc655715bd95643b73eefdc7dc56079fba1b,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d1dcb265161f69b4ff3d6e0d99978d2c1f8f3ec6,globalmmlu_cs,en_cs,France,Europe,1,0,-1,0
+d201c262325d550fcb7187fec09aefeb05610142,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d22241e2fa0531b8e9e5228050f12a8934f1034d,globalmmlu_cs,en_cs,,,1,1,0,0
+d2464a67c1cd951243fcc22caedf450da4f329ed,globalmmlu_cs,en_cs,,,1,0,-1,0
+d2509c7b478cf24db3b4fd6f1e8616f765b14447,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d277dbdaa466077c95b3ef4f6b5e9a250e684b60,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d27da5322d873e9f30fd900eb01c3e06fbd9f2fb,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d287ad23ec2b53d28e3d9d7ae57b50d7204e1548,globalmmlu_cs,en_cs,United Kingdom (UK),America,1,0,-1,0
+d2c8f4f2784723cca3a478f947753b008772d5a7,globalmmlu_cs,en_cs,,Asia,1,1,0,0
+d2f2bccc96a52abad8884c50bc5d9a5de90eb6d7,globalmmlu_cs,en_cs,,,1,0,-1,0
+d35c4eda6687b801d5026b45f94d866000c5c9c9,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+d3840877affd143539b2868b3fdad83aef7b5bf9,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+d3fdd7942b01d1d3baf812ebae2ff71b52f8325e,globalmmlu_cs,en_cs,Japan,Asia,1,0,-1,0
+d49a69196b2488e60c479ee90bc38c596b140e61,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d4a506d2e69ecd4b7a48612fbf1131b5c96117bd,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d4e5d47f1f792806b7da67c61ec0970fa00d987a,globalmmlu_cs,en_cs,,,1,1,0,0
+d4e7228003e1ee1abd6324347c3d420886903eb7,globalmmlu_cs,en_cs,Russian Federation,Europe,1,0,-1,0
+d57438464f3f49a29ff7258531f6c04d12ad200c,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+d63ae1fa6d91089c016f759888bff4cde74b4674,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d6a9b072b989a6d9175c7b0a71487ec10819d671,globalmmlu_cs,en_cs,,,1,0,-1,0
+d70801c8e245a52794738f510cf5889720afa2b7,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+d70b3386ac83b1c1b010d568308175aa8a9bc7eb,globalmmlu_cs,en_cs,India,Asia,1,0,-1,0
+d76657208fe34f17bfa1f973cbe0cb731417a345,globalmmlu_cs,en_cs,Viet Nam,Asia,1,0,-1,0
+d7bdbff9559c08e6c039ef7da9d089a424b0a78c,globalmmlu_cs,en_cs,Spain,America,1,0,-1,0
+d7e2c5f25e28e9b9dfd54ddf2747b4ed202d9b5e,globalmmlu_cs,en_cs,France,Europe,1,0,-1,0
+d7eb531c0a7b521c56538c27105570e0fd9e0a0a,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,1,0,0
+d81364cb6875610f6de1b43f9d51f69456264cb1,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d8278663d2a65d7b3b6e832598da99b49c59431b,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d846d0303276cb4495fcf26632e3b5dc55192ba1,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d8cf9b238a9caf94c51091787e461b89453571d8,globalmmlu_cs,en_cs,,,1,0,-1,0
+d9690124b0e93b894db60842181aef130d8e25e2,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+d9e82994492ff63bf71849a75b175f724a22e03c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+da39222b35db85d1301dfd89678b35f6f2a3e2a6,globalmmlu_cs,en_cs,Türkiye (Turkey),Europe,1,0,-1,0
+da6c407a1d1796f459da3322af291475e41337d1,globalmmlu_cs,en_cs,,,1,0,-1,0
+da805f3312ba799206e9c99995311808daa61610,globalmmlu_cs,en_cs,,Asia,1,1,0,0
+db37f50bc442dc15d5e08f7940b6f86c77f55a9c,globalmmlu_cs,en_cs,Japan,Asia,1,0,-1,0
+dbc75983b6da245d0d80fec85db3c05bb346f047,globalmmlu_cs,en_cs,,,1,0,-1,0
+dbf67e6b97d9722316babe164bb4b5d49ec892fa,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+dcbee498049eac0168c23f5b98472ec450ae1b30,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+dd0a1eb4768bdf79c1e69296220889a34034aa34,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+dd68978f30515f7d0e3eadfce6ce1ace12446196,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+dd6bf7329c76dcbe03d54be7c01e5cea2d548024,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+dd710c508959445dd4757579d73f246a87bddc89,globalmmlu_cs,en_cs,Colombia,America,1,0,-1,0
+dd88a387ce3fb59f24d1a53a506d4a710a092718,globalmmlu_cs,en_cs,,,1,1,0,0
+ddd10414c4aee49d444b9185357aed359332bf32,globalmmlu_cs,en_cs,Italy,Europe,1,0,-1,0
+de312c886e019814583d09718555d62160c176a9,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+de3317f009a05787719bfafebd80e57dbb65d69d,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+de4a18b07581008cb3a2497598f4ec15635731e8,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+de9077498d4c10fb8e10cf4111715867a6884501,globalmmlu_cs,en_cs,France,Europe,1,0,-1,0
+de9e1e1ef0a6847af4862bab1450a4153d934ecc,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+debabd6328732b7b9320892cf4d2ce2e724022b3,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+df30ba1f890cb0a3f52a6ea39e81399bd4bb228a,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+df3b5f6af083d33dd5c4f2eb484cb0afe8ef810f,globalmmlu_cs,en_cs,,Europe,1,0,-1,0
+e0579dc1ae87445c389697ebe9201a3e1e4a7004,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+e07a9355762df31adf25a4cab4dfbc3eef606e33,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+e0ffc95e12c120c8aa1a60a443c34688f89e83bc,globalmmlu_cs,en_cs,,,1,1,0,0
+e188471934998733d113c679a5891737b72b9e1b,globalmmlu_cs,en_cs,,,1,0,-1,0
+e1d4ac9b88d6d730f3d58ab1253ce14ff8009d6d,globalmmlu_cs,en_cs,,,1,1,0,0
+e253980f08068444f1b05e8e943b23d2675d4224,globalmmlu_cs,en_cs,India,Asia,1,1,0,0
+e2ac68a14ef97ae0c347d9916e18026fb60a6e01,globalmmlu_cs,en_cs,India,Asia,1,1,0,0
+e398cbfa4fedf3ba65018c8ecdae72ee2a81a82c,globalmmlu_cs,en_cs,India,Asia,1,0,-1,0
+e3a6cc1ce69c70e82934fd8c1db723efc362a941,globalmmlu_cs,en_cs,Iraq,Asia,1,0,-1,0
+e3ca42dd4b22338707eb5c2c639f5477cecf7f94,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+e43ec44cf22e27e7b1c6c03b91ac59ab0ac5b67a,globalmmlu_cs,en_cs,India,Asia,1,1,0,0
+e47dfca9e6140198e969d24455325e142bdcf888,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+e4e7627ddd6241448ca13bb3e7fd4006b8dc0e20,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+e538cb147a1190f7110e61b46119f74bed3c077c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+e5b99959122c9a5a6ed2ff8039ee7cff7fe3cfb8,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+e5d8d3c434cd8c18c2e44084ac918d5f9f1aee47,globalmmlu_cs,en_cs,,,1,0,-1,0
+e5ed70f694c28530aefaa8b2fd97a895c4990843,globalmmlu_cs,en_cs,United States,Europe,1,1,0,0
+e6dc5122afb19e7791c4f9a3cc81e6748c7f2ea0,globalmmlu_cs,en_cs,,,1,1,0,0
+e7437c0c663383ce0b36d6018c052cf13f40a609,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+e78b13c952a2f6763bed270f7af680c76b530527,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+e7a866790779e274368191db0442619705f56731,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+e7ab1755a7a85d8bad8410d826b826b06de56741,globalmmlu_cs,en_cs,France,Europe,1,0,-1,0
+e7dd6c80a33289bc85ebe68887e5a7bc72d41a62,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+e83e0de31d33e9e1a6a6b8b1c31f1686d975f8cd,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+e85a7c518ec173c092dc645f968a1793761b553c,globalmmlu_cs,en_cs,,,1,0,-1,0
+e86d29af53fe3fea9313af2a4fd1254b749aca05,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+e8ee2a221e8914cb6b3d89fb1316800c4280a34d,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+e98b79c0d92fa72815071a9629e728f7c989765a,globalmmlu_cs,en_cs,United Kingdom (UK),Europe,1,0,-1,0
+e9f78d59ffa6dd0a558b8986896f132071856088,globalmmlu_cs,en_cs,,,1,1,0,0
+ea8e4b654c9daac2efd7d50271cc707fc5672839,globalmmlu_cs,en_cs,China,Asia,1,0,-1,0
+eadc5646ca84b4adb1d9c5435889608eada91c19,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+eb0c3ac211f3f5b78922ee5524996ff77b95c0f8,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+eb3d85fd23f0b9f065336ffa60dcc14a970a7cc0,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+eb7117bc7eed5c2c4417dc0bc85438f1fbe71c36,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+ec1099e84570b4d990dde93631b694675d69814d,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+ec5c4c399b2394bb6387d4fcb38f0cbe26ab3100,globalmmlu_cs,en_cs,,,1,0,-1,0
+ec6e711c69b2225f54dc06a066ade5733ff97f9d,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+ec9217f2a6c6083856b00ebf258e320919e8769a,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+ed50c9ef0071ed8e45cda1f2348786232433dab2,globalmmlu_cs,en_cs,,,1,0,-1,0
+ed9c8aa9d0c1e4bd9af1143ab9b6f68505d4fd45,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+edb72cfea28f7476650caa3a2071c5a9630d9844,globalmmlu_cs,en_cs,Greece,Europe,1,0,-1,0
+ee7ba49a0b518a8f1d0106c0d100bda35f69eb9c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+ee7ea8f30244d991ea2ac9581c925294e93df7fc,globalmmlu_cs,en_cs,,,1,0,-1,0
+ee973c5044f2ad1000c6c909820ad0cf4190ac9e,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+eea4dc92a63f540aed3692d0a3652ceec38f4715,globalmmlu_cs,en_cs,,,1,0,-1,0
+eeb5a2e072f90b1b3657decdad81a8b8245a608a,globalmmlu_cs,en_cs,,,1,1,0,0
+eec9b838dcc0d54a5f87fba49d3bef05fa115f21,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+ef192fa3d779dcbb9be36f044fce41a2f8aca608,globalmmlu_cs,en_cs,,,1,0,-1,0
+ef27e378ea02e6b7769a896eb5e152b2e9a26d4b,globalmmlu_cs,en_cs,United Kingdom (UK),,1,0,-1,0
+ef2caf5483e41aa110103ec12a587bf5744f24d7,globalmmlu_cs,en_cs,Japan,America,1,0,-1,0
+f04cfec2aa77319cd10a8f2b93716ba81aef4303,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+f0cac6356572364f211debe1c249edc555f55b36,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+f11446515c001dc560f7233d18c9dd6a3fe921dc,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+f1a0c92d46fcb74dd9938c96f57ff6bc41203ba5,globalmmlu_cs,en_cs,Niger,Africa,1,0,-1,0
+f1a48f8405acd00b9287e9224cccb7937621b385,globalmmlu_cs,en_cs,,America,1,0,-1,0
+f1e6d61bab9d9a46b417399d80343c79e00f96ac,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+f2747223e90e222aa8c6bcf3d9ad0284b84f77b1,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+f27f5c0c4698f5b7f0ee2a6bdf5e78556671626c,globalmmlu_cs,en_cs,Pakistan,Asia,1,0,-1,0
+f2b9b6527c50cd169a6bfd5826814530c4166f1c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+f30387a5802d911cd54f699e05d8fdbbeec7f23b,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+f32edb8f520d0c48bb840ac7133180f1099eb114,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+f41f110a960b652d6e9b3e365b592d5c2f1ad5c0,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+f4305f7419711739f96c814018ece4bc74665c18,globalmmlu_cs,en_cs,Mexico,America,1,0,-1,0
+f4837ff6dcc5ab8092e253fabdad348334f1971a,globalmmlu_cs,en_cs,,America,1,0,-1,0
+f5bac192d7a711cb4b3127ec028a38e7ea2dd563,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+f5f0759fd7cf3014009ecdaa7df4d9be3189633f,globalmmlu_cs,en_cs,,,1,1,0,0
+f600064c96575348069bdb2eaa72e270e98fe620,globalmmlu_cs,en_cs,,,1,0,-1,0
+f62fbcb751094f086e210fcd6846581248ad4447,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+f674ab9514e63df50d58c37c8f448fd054cb4f93,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+f6e93454bc84be72eedc7da44364a71af3797a3b,globalmmlu_cs,en_cs,Canada,America,1,0,-1,0
+f75886fba0d9117e3ed525154256caec98616d6e,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+f824b695fca549b74c65e797324c92a2427fd533,globalmmlu_cs,en_cs,,Europe,1,1,0,0
+f8664a2db01358f4c4f035b89cf5a97ea48bd265,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+f8998f1a60dea49c0ebf946bdc06c727d27a7a88,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+f901aae4212d5f0594c9b64adf2c96b29b66c5e9,globalmmlu_cs,en_cs,,,1,0,-1,0
+f97455616b2e08542814fc02739439e734e6cd83,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+fa1f9dd4a45f889a2a70376a9e3f3b5b2c3843fe,globalmmlu_cs,en_cs,,,1,0,-1,0
+fac4db338371fa98d387baad95e0197c045f852a,globalmmlu_cs,en_cs,China,Asia,1,0,-1,0
+fac78587568d878294f6cfe064cf0d61783b8979,globalmmlu_cs,en_cs,Greece,Europe,1,0,-1,0
+fb00ad0f17c59345284d81f8c979ca6228dd71bd,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+fb76f801e13a9facd1c925a6a5ff84ff3e731e1d,globalmmlu_cs,en_cs,,,1,0,-1,0
+fbfa09aeb88cc8092ffd409fadfacca330635944,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+fc02ce5bc32a6cfd9dea710736547eb1af2d0403,globalmmlu_cs,en_cs,United States,America,1,1,0,0
+fc0c521b0a2f0f153911901bd857f25581fe4000,globalmmlu_cs,en_cs,,,1,0,-1,0
+fc175d7f3bef6d1c72e84623007131647d39316a,globalmmlu_cs,en_cs,,,1,0,-1,0
+fc7d4229b987a4a123081bc15b0a300e618f495c,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+fd200614a76d68a0637b763b65c72d503caa4936,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+fd91adcb65fed368ca80fe5333238f089dd22631,globalmmlu_cs,en_cs,"Micronesia, Federated States of",Asia,1,1,0,0
+fd9525f32a3d1673c0869738c700a50aef9f2356,globalmmlu_cs,en_cs,India,Asia,1,1,0,0
+fd9bbaa64d4466afbd4ef1f2284116e13fde052a,globalmmlu_cs,en_cs,,Europe,1,1,0,0
+fe0dc20fce19ad8afdde6d95b7faae1476851bda,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+fe318fc9848b2cdc44778b7ca27f81a6573f7497,globalmmlu_cs,en_cs,,,1,1,0,0
+fe95cf6b8f336d90d3297c78e7e789b68917dc96,globalmmlu_cs,en_cs,,,1,0,-1,0
+ff2ec8a558976a7238037cce2ce3f53f1b77a66b,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+ff4507a7599e6a3d1653df17d6044200f7d2f16f,globalmmlu_cs,en_cs,United States,America,1,0,-1,0
+ff6f59059a35275aea29247be6a8f68b675db552,globalmmlu_cs,en_cs,United States,America,1,0,-1,0

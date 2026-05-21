@@ -7,7 +7,32 @@ from pathlib import Path
 import yaml
 
 
+MODEL_SIZES = {
+    # (layers, hidden, heads, kv_heads, ffn_size)
+    "100m": (8, 512, 8, 8, 2048),
+    "160m": (12, 768, 12, 12, 3072),
+    "410m": (24, 1024, 16, 16, 4096),
+    "1b": (16, 2048, 16, 16, 5632),
+}
+
+
+def model_suffix(model_size):
+    return "qwen1b" if model_size == "1b" else "qwen{}".format(model_size)
+
+
 def qwen1b_model_config(seq_len):
+    layers, hidden, heads, kv_heads, intermediate = MODEL_SIZES["1b"]
+    return qwen_model_config(
+        seq_len=seq_len,
+        layers=layers,
+        hidden=hidden,
+        heads=heads,
+        kv_heads=kv_heads,
+        intermediate=intermediate,
+    )
+
+
+def qwen_model_config(seq_len, layers, hidden, heads, kv_heads, intermediate):
     return OrderedDict([
         ("_attn_implementation", "flash_attention_2"),
         ("_fused_rms_norm", True),
@@ -19,16 +44,16 @@ def qwen1b_model_config(seq_len):
         ("eos_token_id", 2),
         ("flex_attention_mask", None),
         ("hidden_act", "silu"),
-        ("hidden_size", 2048),
+        ("hidden_size", hidden),
         ("initializer_range", 0.02),
-        ("intermediate_size", 5632),
+        ("intermediate_size", intermediate),
         ("is_qwen2_config", True),
         ("max_position_embeddings", seq_len),
         ("moe_config", None),
         ("no_rope_layer", None),
-        ("num_attention_heads", 16),
-        ("num_hidden_layers", 16),
-        ("num_key_value_heads", 16),
+        ("num_attention_heads", heads),
+        ("num_hidden_layers", layers),
+        ("num_key_value_heads", kv_heads),
         ("pad_token_id", None),
         ("pretraining_tp", 1),
         ("rms_norm_eps", 1.0e-06),
@@ -41,10 +66,11 @@ def qwen1b_model_config(seq_len):
         ("vocab_size", 128256),
         ("z_loss_coefficient", 0.0001),
         ("z_loss_enabled", False),
-    ])
+])
 
 
 def build_config(args, run_name, dataset_folders, validation_dataset_folders, checkpoints_path):
+    layers, hidden, heads, kv_heads, intermediate = MODEL_SIZES[args.model_size]
     return OrderedDict([
         ("checkpoints", OrderedDict([
             ("checkpoint_interval", args.ckpt_save),
@@ -119,7 +145,14 @@ def build_config(args, run_name, dataset_folders, validation_dataset_folders, ch
                 ("std", 0.025),
             ])),
             ("make_vocab_size_divisible_by", 1),
-            ("model_config", qwen1b_model_config(args.seq_len)),
+            ("model_config", qwen_model_config(
+                seq_len=args.seq_len,
+                layers=layers,
+                hidden=hidden,
+                heads=heads,
+                kv_heads=kv_heads,
+                intermediate=intermediate,
+            )),
         ])),
         ("optimizer", OrderedDict([
             ("accumulate_grad_in_fp32", True),
@@ -193,10 +226,12 @@ def main():
     parser.add_argument("--with-metadata-validation-dataset", action="append", default=[], help="Validation dataset folder for the metadata-conditioned global run. Repeatable.")
     parser.add_argument("--without-metadata-dataset", action="append", default=[], help="Tokenized dataset folder for the no-metadata global run. Repeatable.")
     parser.add_argument("--without-metadata-validation-dataset", action="append", default=[], help="Validation dataset folder for the no-metadata global run. Repeatable.")
-    parser.add_argument("--output-dir", default="/scratch/amukher6/metacul/qwen_pretrain_configs")
-    parser.add_argument("--checkpoint-root", default="/scratch/amukher6/metacul/checkpoints_qwen_pretrain")
+    parser.add_argument("--output-dir", default="/path/to/metacul/qwen_pretrain_configs")
+    parser.add_argument("--checkpoint-root", default="/path/to/metacul/checkpoints_qwen_pretrain")
     parser.add_argument("--tokenizer-name", default="meta-llama/Llama-3.2-1B")
     parser.add_argument("--project", default="metacul_qwen_pretrain")
+    parser.add_argument("--model-size", choices=sorted(MODEL_SIZES), default="1b")
+    parser.add_argument("--nanotron-dir", default="/path/to/workspace/pretrain/nanotron_full")
     parser.add_argument("--steps", type=int, default=10000)
     parser.add_argument("--warmup-steps", type=int, default=500)
     parser.add_argument("--seq-len", type=int, default=2048)
@@ -216,14 +251,15 @@ def main():
     checkpoint_root.mkdir(parents=True, exist_ok=True)
 
     outputs = []
+    suffix = model_suffix(args.model_size)
     configs = [
         (
-            "combined_with_metadata_qwen1b",
+            "combined_with_metadata_{}".format(suffix),
             args.with_metadata_dataset,
             args.with_metadata_validation_dataset,
         ),
         (
-            "combined_without_metadata_qwen1b",
+            "combined_without_metadata_{}".format(suffix),
             args.without_metadata_dataset,
             args.without_metadata_validation_dataset,
         ),
@@ -240,11 +276,14 @@ def main():
         outputs.append((run_name, yaml_path))
 
     if args.emit_command_file and outputs:
-        cmd_path = output_dir / "run_qwen1b_pretrain_commands.sh"
+        cmd_path = output_dir / "run_{}_pretrain_commands.sh".format(suffix)
         lines = ["#!/usr/bin/env bash", "set -euo pipefail", ""]
         for _, yaml_path in outputs:
             lines.append(
-                "cd /scratch/amukher6/pretrain/nanotron && "
+                "cd {} && ".format(args.nanotron_dir)
+                +
+                "PYTHONPATH={}/src:${{PYTHONPATH:-}} ".format(args.nanotron_dir)
+                +
                 "ENABLE_TIMERS=1 CUDA_DEVICE_MAX_CONNECTIONS=1 "
                 "torchrun --nproc_per_node={} run_train.py --config-file {}".format(
                     args.dp * args.tp * args.pp, yaml_path

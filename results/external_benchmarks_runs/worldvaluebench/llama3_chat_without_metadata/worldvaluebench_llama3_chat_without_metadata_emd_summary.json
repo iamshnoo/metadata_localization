@@ -2,5 +2,5 @@
   "overall_emd": 0.3274832566771563,
   "groups": 305,
   "scored_rows": 1377,
-  "jsonl_path": "/scratch/amukher6/metacul/results/external_benchmarks_runs/worldvaluebench/llama3_chat_without_metadata/worldvaluebench_llama3_chat_without_metadata.jsonl"
+  "jsonl_path": "/path/to/metacul/results/external_benchmarks_runs/worldvaluebench/llama3_chat_without_metadata/worldvaluebench_llama3_chat_without_metadata.jsonl"
 }

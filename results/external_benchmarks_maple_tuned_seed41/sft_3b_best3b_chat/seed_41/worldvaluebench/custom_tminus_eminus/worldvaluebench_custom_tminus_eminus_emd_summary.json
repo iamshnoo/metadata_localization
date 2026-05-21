@@ -1,0 +1,6 @@
+{
+  "overall_emd": 0.4697904310003954,
+  "groups": 305,
+  "scored_rows": 1405,
+  "jsonl_path": "/path/to/metacul/results/external_benchmarks_maple_tuned_seed41/sft_3b_best3b_chat/seed_41/worldvaluebench/custom_tminus_eminus/worldvaluebench_custom_tminus_eminus.jsonl"
+}

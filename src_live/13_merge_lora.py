@@ -15,10 +15,10 @@ args = parser.parse_args()
 metadata = args.metadata
 name_prefix = "combined_with_metadata" if metadata else "combined_without_metadata"
 name = f"{name_prefix}_{args.size}"
-model_name = args.base_model_path or f"/scratch/amukher6/metacul/models/{name}"
+model_name = args.base_model_path or f"/path/to/metacul/models/{name}"
 
-sft_adapter = args.adapter_path or f"/scratch/amukher6/metacul/models/sft/{name}{args.name_suffix}_sft_lora"
-output_dir = args.output_dir or f"/scratch/amukher6/metacul/models/sft/{name}{args.name_suffix}_chat"
+sft_adapter = args.adapter_path or f"/path/to/metacul/models/sft/{name}{args.name_suffix}_sft_lora"
+output_dir = args.output_dir or f"/path/to/metacul/models/sft/{name}{args.name_suffix}_chat"
 os.makedirs(output_dir, exist_ok=True)
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)

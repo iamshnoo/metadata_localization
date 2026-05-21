@@ -7,8 +7,8 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=40GB
 #SBATCH --time=0-08:00:00
-#SBATCH --output=/scratch/amukher6/logs/slurm_logs/lnqa_one.%j.out
-#SBATCH --error=/scratch/amukher6/logs/slurm_logs/lnqa_one.%j.err
+#SBATCH --output=/path/to/logs/slurm_logs/lnqa_one.%j.out
+#SBATCH --error=/path/to/logs/slurm_logs/lnqa_one.%j.err
 
 set -euo pipefail
 
@@ -17,10 +17,10 @@ set -euo pipefail
 : "${META_TAG:?META_TAG must be set (with_metadata|without_metadata)}"
 : "${BASE_URL:?BASE_URL must be set}"
 
-PYTHON=/home/amukher6/nanotron-env/bin/python
-SCRIPT=/scratch/amukher6/metacul/src/14_sft_eval.py
-DATASET=iamshnoo/LocalNewsQA
-OUT_DIR=/scratch/amukher6/metacul/results/downstream_localnewsqa
+PYTHON=/path/to/nanotron-env/bin/python
+SCRIPT=/path/to/metacul/src/14_sft_eval.py
+DATASET=YOUR_HF_USERNAME/LocalNewsQA
+OUT_DIR=/path/to/metacul/results/downstream_localnewsqa
 mkdir -p "$OUT_DIR"
 
 SLUG=$(echo "$BASE_URL" | sed 's/[^a-zA-Z0-9]/_/g')
@@ -45,9 +45,9 @@ CMD=(
 
 if [[ "$MODEL_TYPE" == "custom" ]]; then
   if [[ "$META_TAG" == "with_metadata" ]]; then
-    CMD+=(--custom-model-path /scratch/amukher6/metacul/models/sft/combined_with_metadata_chat --metadata)
+    CMD+=(--custom-model-path /path/to/metacul/models/sft/combined_with_metadata_chat --metadata)
   else
-    CMD+=(--custom-model-path /scratch/amukher6/metacul/models/sft/combined_without_metadata_chat)
+    CMD+=(--custom-model-path /path/to/metacul/models/sft/combined_without_metadata_chat)
   fi
 else
   CMD+=(--llama-model-name meta-llama/Llama-3.2-1B-Instruct)

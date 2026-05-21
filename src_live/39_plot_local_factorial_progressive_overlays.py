@@ -6,18 +6,18 @@ import matplotlib.patheffects as pe
 import matplotlib.pyplot as plt
 
 
-CSV_PATH = Path("/scratch/amukher6/metacul/results/plots/plot1/plot_1.csv")
-OUT_DIR = Path("/scratch/amukher6/metacul/slides")
+CSV_PATH = Path("/path/to/metacul/results/plots/plot1/plot_1.csv")
+OUT_DIR = Path("/path/to/metacul/slides")
 
 CONTINENTS = ["Africa", "America", "Asia", "Europe"]
 TRAIN_ORDER = ["T-", "T+"]
 INFER_ORDER = ["I-", "I+"]
 
 COMBO_STYLES = {
-    ("T-", "I-"): {"color": "#d9d9d9", "marker": "s", "label": "T-/I-"},
-    ("T-", "I+"): {"color": "#fad9b7", "marker": "o", "label": "T-/I+"},
-    ("T+", "I-"): {"color": "#eca7a4", "marker": "s", "label": "T+/I-"},
-    ("T+", "I+"): {"color": "#a3cea8", "marker": "o", "label": "T+/I+"},
+    ("T-", "I-"): {"color": "#d9d9d9", "marker": "s", "label": "(T-, I-)"},
+    ("T-", "I+"): {"color": "#fad9b7", "marker": "o", "label": "(T-, I+)"},
+    ("T+", "I-"): {"color": "#eca7a4", "marker": "s", "label": "(T+, I-)"},
+    ("T+", "I+"): {"color": "#a3cea8", "marker": "o", "label": "(T+, I+)"},
 }
 LABEL_COLORS = {
     ("T-", "I-"): "#666666",

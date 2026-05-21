@@ -110,15 +110,15 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--root",
-        default="/scratch/amukher6/metacul/results/external_benchmarks_runs/geomlama",
+        default="/path/to/metacul/results/external_benchmarks_runs/geomlama",
     )
     parser.add_argument(
         "--output-csv",
-        default="/scratch/amukher6/metacul/results/external_benchmarks_runs/geomlama/hypothesis_summary.csv",
+        default="/path/to/metacul/results/external_benchmarks_runs/geomlama/hypothesis_summary.csv",
     )
     parser.add_argument(
         "--output-json",
-        default="/scratch/amukher6/metacul/results/external_benchmarks_runs/geomlama/hypothesis_summary.json",
+        default="/path/to/metacul/results/external_benchmarks_runs/geomlama/hypothesis_summary.json",
     )
     args = parser.parse_args()
 

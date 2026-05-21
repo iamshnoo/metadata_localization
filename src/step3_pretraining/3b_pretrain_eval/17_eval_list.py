@@ -2,7 +2,7 @@ import csv
 import json
 import os
 
-BASE_PATH_MODEL = "/scratch/amukher6/metacul/models/"
+BASE_PATH_MODEL = "/path/to/metacul/models/"
 continent_models = [
     "africa_with_metadata_500m",
     "africa_with_metadata_1b",
@@ -31,7 +31,7 @@ combined_models = [
     "combined_without_metadata_3b",
 ]
 
-BASE_PATH_MODEL_CONTINENT_ABLATIONS = "/scratch/amukher6/metacul/models/ablations/leave_one_out/"
+BASE_PATH_MODEL_CONTINENT_ABLATIONS = "/path/to/metacul/models/ablations/leave_one_out/"
 continent_ablations = [
     "combined_no_africa_with_metadata_1b",
     "combined_no_america_with_metadata_1b",
@@ -43,7 +43,7 @@ continent_ablations = [
     "combined_no_europe_without_metadata_1b",
 ]
 
-BASE_PATH_MODEL_CONTINENT_ABLATIONS_INTERMEDIATE = "/scratch/amukher6/metacul/models/ablation_intermediates/leave_one_out/"
+BASE_PATH_MODEL_CONTINENT_ABLATIONS_INTERMEDIATE = "/path/to/metacul/models/ablation_intermediates/leave_one_out/"
 continent_ablations_intermediate = [
     "combined_no_africa_with_metadata_1b_step2k",
     "combined_no_africa_with_metadata_1b_step4k",
@@ -71,14 +71,14 @@ continent_ablations_intermediate = [
     "combined_no_europe_without_metadata_1b_step8k",
 ]
 
-BASE_PATH_MODEL_METADATA_ABLATIONS = "/scratch/amukher6/metacul/models/ablations/metadata/"
+BASE_PATH_MODEL_METADATA_ABLATIONS = "/path/to/metacul/models/ablations/metadata/"
 metadata_ablations = [
     "combined_only_url_with_metadata_1b",
     "combined_only_url_continent_with_metadata_1b",
     "combined_only_url_country_with_metadata_1b",
 ]
 
-BASE_PATH_MODEL_METADATA_ABLATIONS_INTERMEDIATE = "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/"
+BASE_PATH_MODEL_METADATA_ABLATIONS_INTERMEDIATE = "/path/to/metacul/models/ablation_intermediates/metadata/"
 metadata_ablations_intermediate = [
     "combined_only_url_with_metadata_1b_step2k",
     "combined_only_url_with_metadata_1b_step4k",
@@ -91,7 +91,7 @@ metadata_ablations_intermediate = [
     "combined_only_url_country_with_metadata_1b_step8k",
 ]
 
-CONTINENT_TEST_DATA_PATH = "/scratch/amukher6/metacul/training_data/meco_datasets/continents/"
+CONTINENT_TEST_DATA_PATH = "/path/to/metacul/training_data/meco_datasets/continents/"
 continent_test_sets = [
     "africa/with_metadata/",
     "africa/without_metadata/",
@@ -103,13 +103,13 @@ continent_test_sets = [
     "europe/without_metadata/",
 ]
 
-COMBINED_TEST_DATA_PATH = "/scratch/amukher6/metacul/training_data/meco_datasets/combined/"
+COMBINED_TEST_DATA_PATH = "/path/to/metacul/training_data/meco_datasets/combined/"
 combined_test_sets = [
     "with_metadata/",
     "without_metadata/",
 ]
 
-METADATA_ABLATION_TEST_DATA_PATH = "/scratch/amukher6/metacul/training_data/meco_datasets/"
+METADATA_ABLATION_TEST_DATA_PATH = "/path/to/metacul/training_data/meco_datasets/"
 metadata_ablation_test_sets = [
     "combined_only_url/with_metadata/",
     "combined_only_url_continent/with_metadata/",
@@ -122,20 +122,20 @@ metadata_ablation_extra_test_sets = [
 ]
 
 metadata_ablation_extra_model_paths = [
-    "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
-    "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
+    "/path/to/metacul/models/combined_only_continent_with_metadata_1b",
+    "/path/to/metacul/models/combined_only_country_with_metadata_1b",
 ]
 
 metadata_ablation_extra_intermediate_model_paths = [
-    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step2k",
-    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step4k",
-    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step8k",
-    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step2k",
-    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step4k",
-    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step8k",
+    "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step2k",
+    "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step4k",
+    "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step8k",
+    "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step2k",
+    "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step4k",
+    "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step8k",
 ]
 
-CONTINENT_ABLATION_TEST_DATA_PATH = "/scratch/amukher6/metacul/training_data/meco_datasets/"
+CONTINENT_ABLATION_TEST_DATA_PATH = "/path/to/metacul/training_data/meco_datasets/"
 continent_ablation_test_sets = [
     "combined_no_africa/with_metadata/",
     "combined_no_america/with_metadata/",
@@ -158,7 +158,7 @@ continent_ablation_test_sets = [
 # 5. continent ablation models (and continent ablation intermediates) on all
 #    opposite continent (e.g no europe is tested on europe only,) test sets
 
-RESULTS_DIR = "/scratch/amukher6/metacul/results"
+RESULTS_DIR = "/path/to/metacul/results"
 EVAL_LIST_JSON = os.path.join(RESULTS_DIR, "perplexity", "eval_list.json")
 PERPLEXITY_CSV = os.path.join(RESULTS_DIR, "perplexity_eval.csv")
 

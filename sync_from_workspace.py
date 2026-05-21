@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import os
 import shutil
 from pathlib import Path
 
-WORKSPACE = Path('/scratch/amukher6/metacul')
-REPO = Path('/scratch/amukher6/tmp_metadata_localization_gh')
+REPO = Path(os.environ.get('METADATA_LOCALIZATION_REPO', Path(__file__).resolve().parent))
+WORKSPACE = Path(os.environ.get('METACUL_WORKSPACE', REPO.parent / 'metacul'))
 
 SRC_MAP = {
     'src/0_data_now.py': 'src/step0_dataset/0_data_now.py',
@@ -54,6 +55,8 @@ SRC_MAP = {
     'src/20_significance_tests.py': 'src/step5_plots/20_significance_tests.py',
     'src/21_url_signal_analysis.py': 'src/step5_plots/21_url_signal_analysis.py',
     'src/26_geomlama_metadata_hypothesis_summary.py': 'src/step5_plots/26_geomlama_metadata_hypothesis_summary.py',
+    'src/67_plot_localnewsqa_accuracy_switch_composite.py': 'src/step5_plots/67_plot_localnewsqa_accuracy_switch_composite.py',
+    'src/73_plot_localnewsqa_gold_accuracy_switch.py': 'src/step5_plots/73_plot_localnewsqa_gold_accuracy_switch.py',
     'src/utils/estimate_token_lengths.py': 'src/step3_pretraining/3b_pretrain_eval/estimate_token_lengths.py',
     'src/scripts/11_combined_sft.slurm': 'src/step4_sft/4b_sft/scripts/11_combined_sft.slurm',
     'src/scripts/12_downstream_grid_eval.slurm': 'src/step4_sft/4c_sft_eval/scripts/12_downstream_grid_eval.slurm',
@@ -65,6 +68,7 @@ SLURM_MAP = {
     'slurm/run_ppl_3b_requested.sbatch': 'src/step3_pretraining/3b_pretrain_eval/scripts/run_ppl_3b_requested.sbatch',
     'slurm/run_ppl_country_continent_only.sbatch': 'src/step3_pretraining/3b_pretrain_eval/scripts/run_ppl_country_continent_only.sbatch',
     'slurm/convert_intermediate_1b_metadata_family.sbatch': 'src/step3_pretraining/3b_pretrain_eval/scripts/convert_intermediate_1b_metadata_family.sbatch',
+    'slurm/run_qwen_arch_ppl_10k.sbatch': 'src/step3_pretraining/3b_pretrain_eval/scripts/run_qwen_arch_ppl_10k.sbatch',
     'slurm/upload_models_to_hf.sbatch': 'src/step3_pretraining/3b_pretrain_eval/scripts/upload_models_to_hf.sbatch',
     'slurm/run_sft_3b_with_metadata.sbatch': 'src/step4_sft/4b_sft/scripts/run_sft_3b_with_metadata.sbatch',
     'slurm/run_sft_3b_without_metadata.sbatch': 'src/step4_sft/4b_sft/scripts/run_sft_3b_without_metadata.sbatch',
@@ -73,6 +77,32 @@ SLURM_MAP = {
 }
 
 QA_FILES = ['qa_gen.py', 'build_hf_dataset.py', 'developer.md', 'user.md']
+
+LIVE_SRC_SUFFIXES = {'.jinja', '.py', '.slurm'}
+LIVE_SRC_SCRIPT_SUFFIXES = {'.jinja', '.py', '.sbatch', '.sh', '.slurm', '.txt'}
+LIVE_SLURM_SUFFIXES = {'.py', '.sbatch', '.sh', '.slurm'}
+RESULT_DIRS = [
+    'results/plots',
+    'results/significance',
+    'results/url_analysis',
+    'results/mechanistic',
+    'results/appendix_model_gain_tables_20260505',
+    'results/appendix_model_gain_tables_20260505_check',
+    'results/appendix_model_gain_tables_20260505_probe',
+]
+RESULT_FILTERED_DIRS = [
+    'results/analysis',
+    'results/localnewsqa_gold_20260516',
+    'results/final_benchmark_matrix',
+    'results/external_benchmarks_maple_tuned_seed41',
+    'results/external_paper_table_tokenizerfix_20260504',
+    'results/external_scale3b_tinker_20260505',
+]
+RESULT_FILTERED_PREFIXES = (
+    'results/culture_map_wvs',
+    'results/external_protocol',
+)
+RESULT_SUMMARY_SUFFIXES = {'.csv', '.json', '.md', '.tex'}
 
 
 def copy_file(src_rel: str, dst_rel: str) -> None:
@@ -92,18 +122,64 @@ def replace_tree(src_rel: str, dst_rel: str) -> None:
     shutil.copytree(src, dst)
 
 
+def copy_flat_files(src_rel: str, dst_rel: str, suffixes: set[str]) -> None:
+    src_dir = WORKSPACE / src_rel
+    dst_dir = REPO / dst_rel
+    if not src_dir.exists():
+        return
+    dst_dir.mkdir(parents=True, exist_ok=True)
+    for src in src_dir.iterdir():
+        if src.is_file() and src.suffix in suffixes:
+            shutil.copy2(src, dst_dir / src.name)
+
+
+def copy_tree_if_present(src_rel: str, dst_rel: str) -> None:
+    src = WORKSPACE / src_rel
+    if not src.exists():
+        return
+    replace_tree(src_rel, dst_rel)
+
+
+def copy_tree_filtered(src_rel: str, dst_rel: str, suffixes: set[str]) -> None:
+    src_root = WORKSPACE / src_rel
+    dst_root = REPO / dst_rel
+    if not src_root.exists():
+        return
+    for src in src_root.rglob('*'):
+        if src.is_file() and src.suffix in suffixes:
+            dst = dst_root / src.relative_to(src_root)
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(src, dst)
+
+
+def copy_result_artifacts() -> None:
+    for rel in RESULT_DIRS:
+        copy_tree_if_present(rel, rel)
+    for rel in RESULT_FILTERED_DIRS:
+        copy_tree_filtered(rel, rel, RESULT_SUMMARY_SUFFIXES)
+    results_root = WORKSPACE / 'results'
+    if results_root.exists():
+        for src in results_root.iterdir():
+            rel = f'results/{src.name}'
+            if src.is_dir() and rel.startswith(RESULT_FILTERED_PREFIXES):
+                copy_tree_filtered(rel, rel, RESULT_SUMMARY_SUFFIXES)
+
+
 shutil.copy2(WORKSPACE / 'README.md', REPO / 'README.md')
 replace_tree('qa_data', 'qa_data')
-replace_tree('results', 'results')
+copy_result_artifacts()
 for src_rel, dst_rel in SRC_MAP.items():
     copy_file(src_rel, dst_rel)
 for src_rel, dst_rel in SLURM_MAP.items():
     copy_file(src_rel, dst_rel)
 for name in QA_FILES:
     copy_file(f'qa_data/{name}', f'src/step4_sft/4a_qa_data_generation/{name}')
+copy_flat_files('src', 'src_live', LIVE_SRC_SUFFIXES)
+copy_flat_files('src/scripts', 'src_live/scripts', LIVE_SRC_SCRIPT_SUFFIXES)
+copy_flat_files('slurm', 'slurm_live', LIVE_SLURM_SUFFIXES)
 
-env_file = REPO / 'src/scripts/.env'
-if env_file.exists():
-    env_file.unlink()
+for candidate in (REPO / 'src/scripts').iterdir():
+    if candidate.is_file() and candidate.name.startswith('.' + 'env'):
+        candidate.unlink()
 
 print('sync complete')

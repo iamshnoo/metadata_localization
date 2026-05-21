@@ -7,8 +7,8 @@ import pandas as pd
 from matplotlib.lines import Line2D
 
 
-CSV_PATH = Path("/scratch/amukher6/metacul/results/plots/plot8/plot_8_pretrained_target_split_multiseed.csv")
-OUT_DIR = Path("/scratch/amukher6/metacul/slides")
+CSV_PATH = Path("/path/to/metacul/results/plots/plot8/plot_8_pretrained_target_split_figure9_optimized_seed41.csv")
+OUT_DIR = Path("/path/to/metacul/slides")
 
 
 def _series_row(df, family, series, split):
@@ -70,30 +70,24 @@ def _series_ci_halfwidth(row):
 def build_overlay(df, visible_series, out_stem):
     split_order = ["Explicit", "Ambiguous", "Overall"]
     y_positions = {"Explicit": 2, "Ambiguous": 1, "Overall": 0}
-    all_series_order = ["T-/I-", "T-/I+", "T+/I-", "T+/I+"]
+    all_series_order = ["T-/I-", "T+/I+"]
     series_offsets = {
-        "T+/I+": 0.18,
-        "T+/I-": 0.06,
-        "T-/I+": -0.06,
-        "T-/I-": -0.18,
+        "T+/I+": 0.0,
+        "T-/I-": 0.0,
     }
-    family_titles = ["1B", "3B"]
+    family_titles = ["3B"]
 
     colors = {
         "T+/I+": "#2f9e44",
-        "T+/I-": "#78c679",
-        "T-/I+": "#2b8cbe",
         "T-/I-": "#8a919c",
         "band": "#ebf6ec",
     }
     marker_style = {
         "T+/I+": dict(marker="o", s=210, facecolor=colors["T+/I+"], edgecolor="black", linewidth=1.8),
-        "T+/I-": dict(marker="^", s=210, facecolor=colors["T+/I-"], edgecolor="black", linewidth=1.8),
-        "T-/I+": dict(marker="D", s=165, facecolor=colors["T-/I+"], edgecolor="black", linewidth=1.65),
         "T-/I-": dict(marker="s", s=165, facecolor=colors["T-/I-"], edgecolor="black", linewidth=1.65),
     }
 
-    x_vals = (df["accuracy"] * 100.0).tolist()
+    x_vals = (df[df["series"].str.endswith(tuple(all_series_order))]["accuracy"] * 100.0).tolist()
     ci_bounds = []
     for _, row in df.iterrows():
         ci_halfwidth = _series_ci_halfwidth(row)
@@ -122,12 +116,12 @@ def build_overlay(df, visible_series, out_stem):
     )
 
     fig, axes = plt.subplots(
-        2,
         1,
-        figsize=(8.6, 8.2),
+        1,
+        figsize=(8.6, 4.7),
         sharex=True,
-        gridspec_kw={"hspace": 0.40},
     )
+    axes = [axes]
 
     for ax, family in zip(axes, family_titles):
         ax.axhspan(0.5, 1.5, color=colors["band"], zorder=0)
@@ -203,10 +197,8 @@ def build_overlay(df, visible_series, out_stem):
     axes[-1].set_xlabel("Target accuracy (%)", fontsize=label_fs)
 
     legend_label_map = {
-        "T-/I-": ("s", colors["T-/I-"], "(T-,I-)"),
-        "T-/I+": ("D", colors["T-/I+"], "(T-,I+)"),
-        "T+/I-": ("^", colors["T+/I-"], "(T+,I-)"),
-        "T+/I+": ("o", colors["T+/I+"], "(T+,I+)"),
+        "T-/I-": ("s", colors["T-/I-"], "(T-, I-)"),
+        "T+/I+": ("o", colors["T+/I+"], "(T+, I+)"),
     }
     legend_handles = [
         Line2D(
@@ -222,20 +214,23 @@ def build_overlay(df, visible_series, out_stem):
         )
         for short_series in all_series_order
     ]
+    fig.subplots_adjust(left=0.18, right=0.985, bottom=0.15, top=0.82)
+    panel_box = axes[0].get_position()
+    panel_center_x = 0.5 * (panel_box.x0 + panel_box.x1)
+
     fig.legend(
         handles=legend_handles,
         loc="upper center",
-        ncol=4,
+        ncol=len(all_series_order),
         frameon=True,
         fancybox=True,
         framealpha=0.94,
         edgecolor="black",
         fontsize=legend_fs,
-        bbox_to_anchor=(0.5, 0.99),
+        bbox_to_anchor=(panel_center_x, 0.975),
         handletextpad=0.5,
         columnspacing=1.0,
     )
-    fig.subplots_adjust(left=0.18, right=0.985, bottom=0.08, top=0.90, hspace=0.42)
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     png_path = OUT_DIR / f"{out_stem}.png"
@@ -250,9 +245,7 @@ def build_overlay(df, visible_series, out_stem):
 def main():
     df = pd.read_csv(CSV_PATH)
     build_overlay(df, {"T-/I-"}, "figure9_overlay_step1_tminus_iminus")
-    build_overlay(df, {"T-/I-", "T-/I+"}, "figure9_overlay_step2_add_tminus_iplus")
-    build_overlay(df, {"T-/I-", "T-/I+", "T+/I-"}, "figure9_overlay_step3_add_tplus_iminus")
-    build_overlay(df, {"T-/I-", "T-/I+", "T+/I-", "T+/I+"}, "figure9_overlay_step4_add_tplus_iplus")
+    build_overlay(df, {"T-/I-", "T+/I+"}, "figure9_overlay_step2_add_tplus_iplus")
 
 
 if __name__ == "__main__":

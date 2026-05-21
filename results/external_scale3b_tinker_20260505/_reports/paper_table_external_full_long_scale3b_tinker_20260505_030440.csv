@@ -1,0 +1,19 @@
+benchmark,family,comparison,metric,positive,negative,delta_positive_better,satisfied,protocol,scoring,positive_correct,positive_rows,negative_correct,negative_rows,source
+geomlama,maple_1b,T+I+ vs T-I-,accuracy,0.3933333333,0.2400000000,0.1533333333,1,figure9_1b,as_reported,,,,,results/external_paper_table_tokenizerfix_20260504
+geomlama,maple_3b,T+I+ vs T-I-,accuracy,0.4133333333,0.3933333333,0.0200000000,1,name_plain_qanswer_countryfinal_a025_nobos,as_run,62,150,59,150,results/external_benchmarks_raw3b_bestcfg_full4/name_plain_qanswer_countryfinal_a025_nobos/seed_41/geomlama
+geomlama,llama32_1b,I+ vs I-,accuracy,0.2133333333,0.2333333333,-0.0200000000,0,figure9_1b,as_reported,,,,,results/external_paper_table_tokenizerfix_20260504
+globalopinionqa,maple_1b,T+I+ vs T-I-,accuracy,0.2617031630,0.2493430657,0.0123600973,1,letter_country_first,as_reported,,,,,results/external_paper_table_tokenizerfix_20260504
+globalopinionqa,maple_3b,T+I+ vs T-I-,accuracy,0.2793187348,0.1911435523,0.0881751825,1,name_grounded_qanswer_final_nullavg_alpha1_beta1,rescore_alpha=1.0_beta=1.0,2870,10275,1964,10275,results/external_benchmarks_maple_tuned_seed41/raw_3b/seed_41/globalopinionqa
+globalopinionqa,llama32_1b,I+ vs I-,accuracy,0.2364963504,0.2415571776,-0.0050608273,0,figure9_3b,as_reported,,,,,results/external_paper_table_tokenizerfix_20260504
+worldvaluebench,maple_1b,T+I+ vs T-I-,overall_emd,0.2809594574,0.2814548087,0.0004953513,1,letter_country_first,as_reported,,,,,results/external_paper_table_tokenizerfix_20260504
+worldvaluebench,maple_3b,T+I+ vs T-I-,overall_emd,0.2699474166,0.2748056699,0.0048582533,1,letter_legacy,as_reported,,,,,results/external_paper_table_tokenizerfix_20260504
+worldvaluebench,llama32_1b,I+ vs I-,overall_emd,0.3846021948,0.4469783570,0.0623761622,1,figure9_3b,as_reported,,,,,results/external_paper_table_tokenizerfix_20260504
+globalmmlu_cs,maple_1b,T+I+ vs T-I-,accuracy,0.2828282828,0.2815656566,0.0012626263,1,figure9_1b,as_reported,,,,,results/external_paper_table_tokenizerfix_20260504
+globalmmlu_cs,maple_3b,T+I+ vs T-I-,accuracy,0.2941919192,0.2550505051,0.0391414141,1,name_plain_qanswer_countryfinal_nullavg_alpha1p5_beta0p5,rescore_alpha=1.5_beta=0.5,233,792,202,792,results/external_benchmarks_croq_related_maple_gpuq_probe_seed41/nameplain_qanswer_countryfinal_avg_qmask025_nobos/seed_41/globalmmlu_cs
+globalmmlu_cs,llama32_1b,I+ vs I-,accuracy,0.2752525253,0.2765151515,-0.0012626263,0,figure9_3b,as_reported,,,,,results/external_paper_table_tokenizerfix_20260504
+normad,maple_1b,T+I+ vs T-I-,accuracy,0.3361184960,0.3213064945,0.0148120015,1,letter_country_first,as_reported,,,,,results/external_paper_table_tokenizerfix_20260504
+normad,maple_3b,T+I+ vs T-I-,accuracy,0.3748575769,0.3243448538,0.0505127231,1,figure9_3b,as_reported,,,,,results/external_paper_table_tokenizerfix_20260504
+normad,llama32_1b,I+ vs I-,accuracy,0.3330801367,0.3330801367,0.0000000000,0,figure9_1b,as_reported,,,,,results/external_paper_table_tokenizerfix_20260504
+blend,maple_1b,T+I+ vs T-I-,accuracy,0.2977099237,0.2391857506,0.0585241730,1,letter_country_first,as_reported,,,,,results/external_paper_table_tokenizerfix_20260504
+blend,maple_3b,T+I+ vs T-I-,accuracy,0.4249363868,0.2900763359,0.1348600509,1,name_grounded_qanswer_final_nullavg_alpha1_beta1,rescore_alpha=1.0_beta=1.0,167,393,114,393,results/external_benchmarks_croq_related_seed41/raw_3b/seed_41/blend
+blend,llama32_1b,I+ vs I-,accuracy,0.2162849873,0.2111959288,0.0050890585,1,figure9_3b,as_reported,,,,,results/external_paper_table_tokenizerfix_20260504

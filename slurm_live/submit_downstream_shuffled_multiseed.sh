@@ -1,8 +1,8 @@
 #!/bin/bash
 set -euo pipefail
 
-ROOT=/scratch/amukher6/metacul
-LOG_DIR=/scratch/amukher6/logs/slurm_logs
+ROOT=/path/to/metacul
+LOG_DIR=/path/to/logs/slurm_logs
 mkdir -p "$LOG_DIR"
 
 SEEDS_CSV=${SEEDS:-41,42,43,44,45}
@@ -56,16 +56,13 @@ done
 TABLE7_MODELS=(
   "llama32_1b|meta-llama/Llama-3.2-1B-Instruct"
   "llama32_3b|meta-llama/Llama-3.2-3B-Instruct"
-  "qwen25_0p5b|Qwen/Qwen2.5-0.5B-Instruct"
   "qwen25_1p5b|Qwen/Qwen2.5-1.5B-Instruct"
   "qwen25_3b|Qwen/Qwen2.5-3B-Instruct"
   "qwen35_0p8b|Qwen/Qwen3.5-0.8B"
   "qwen35_2b|Qwen/Qwen3.5-2B"
   "qwen35_4b|Qwen/Qwen3.5-4B"
-  "qwen35_9b|Qwen/Qwen3.5-9B"
   "gemma4_e2b_it|google/gemma-4-E2B-it"
   "gemma4_e4b_it|google/gemma-4-E4B-it"
-  "mistral7b_v02|mistralai/Mistral-7B-Instruct-v0.2"
 )
 
 for seed in "${SEEDS[@]}"; do

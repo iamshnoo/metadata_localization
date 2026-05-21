@@ -1,0 +1,3 @@
+family,n_switch_pairs,exact_pair_delta_pp,exact_pair_ci_low_pp,exact_pair_ci_high_pp,margin_switch_delta_pp,margin_switch_ci_low_pp,margin_switch_ci_high_pp
+MAPLE 1B,1700,0.0,0.0,0.0,0.0,0.0,0.0
+MAPLE 3B,1700,8.764705882352942,7.411764705882352,10.176470588235293,25.11764705882353,23.0,27.17794117647059

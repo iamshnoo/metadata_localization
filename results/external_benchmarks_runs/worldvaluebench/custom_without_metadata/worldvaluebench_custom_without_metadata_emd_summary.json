@@ -2,5 +2,5 @@
   "overall_emd": 0.37365518488382593,
   "groups": 297,
   "scored_rows": 1229,
-  "jsonl_path": "/scratch/amukher6/metacul/results/external_benchmarks_runs/worldvaluebench/custom_without_metadata/worldvaluebench_custom_without_metadata.jsonl"
+  "jsonl_path": "/path/to/metacul/results/external_benchmarks_runs/worldvaluebench/custom_without_metadata/worldvaluebench_custom_without_metadata.jsonl"
 }

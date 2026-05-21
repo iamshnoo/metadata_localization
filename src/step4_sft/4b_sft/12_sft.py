@@ -28,11 +28,11 @@ args = parser.parse_args()
 metadata = args.metadata
 name_prefix = "combined_with_metadata" if metadata else "combined_without_metadata"
 name = f"{name_prefix}_{args.size}"
-model_name = args.base_model_path or f"/scratch/amukher6/metacul/models/{name}"
+model_name = args.base_model_path or f"/path/to/metacul/models/{name}"
 
 print(f"Training SFT {name}")
 adapter_stem = f"{name}{args.name_suffix}_sft_lora"
-output_dir = args.output_dir or f"/scratch/amukher6/metacul/models/sft/{adapter_stem}"
+output_dir = args.output_dir or f"/path/to/metacul/models/sft/{adapter_stem}"
 os.makedirs(output_dir, exist_ok=True)
 
 learning_rate = 2e-4
@@ -199,7 +199,7 @@ training_args = SFTConfig(
     bf16=True,
     gradient_checkpointing=True,
     use_liger_kernel=True,
-    chat_template_path="/scratch/amukher6/metacul/src/chat_template.jinja",
+    chat_template_path="/path/to/metacul/src/chat_template.jinja",
     eval_steps=500,
     save_steps=500,
 )

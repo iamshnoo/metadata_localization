@@ -23,16 +23,23 @@ parser.add_argument('--output-dir', default=None, help='Override the output adap
 parser.add_argument('--dataset', default='yahma/alpaca-cleaned', help='HF dataset to load')
 parser.add_argument('--profile', choices=['controlled', 'best3b'], default='controlled', help='Training profile')
 parser.add_argument('--name-suffix', default='', help='Suffix appended to adapter/output names, e.g. _best3b')
+parser.add_argument('--learning-rate', type=float, default=None, help='Optional override for the training learning rate')
+parser.add_argument('--per-device-train-batch-size', type=int, default=None, help='Optional override for the per-device train batch size')
+parser.add_argument('--gradient-accumulation-steps', type=int, default=None, help='Optional override for gradient accumulation steps')
+parser.add_argument('--num-train-epochs', type=float, default=None, help='Optional override for the number of train epochs')
+parser.add_argument('--max-steps', type=int, default=None, help='Optional override for the max train steps')
+parser.add_argument('--save-steps', type=int, default=500, help='Checkpoint save cadence')
+parser.add_argument('--eval-steps', type=int, default=500, help='Evaluation cadence')
 args = parser.parse_args()
 
 metadata = args.metadata
 name_prefix = "combined_with_metadata" if metadata else "combined_without_metadata"
 name = f"{name_prefix}_{args.size}"
-model_name = args.base_model_path or f"/scratch/amukher6/metacul/models/{name}"
+model_name = args.base_model_path or f"/path/to/metacul/models/{name}"
 
 print(f"Training SFT {name}")
 adapter_stem = f"{name}{args.name_suffix}_sft_lora"
-output_dir = args.output_dir or f"/scratch/amukher6/metacul/models/sft/{adapter_stem}"
+output_dir = args.output_dir or f"/path/to/metacul/models/sft/{adapter_stem}"
 os.makedirs(output_dir, exist_ok=True)
 
 learning_rate = 2e-4
@@ -46,9 +53,19 @@ if args.profile == "best3b":
     per_device_train_batch_size = 1
     gradient_accumulation_steps = 8
 
+if args.learning_rate is not None:
+    learning_rate = args.learning_rate
+if args.per_device_train_batch_size is not None:
+    per_device_train_batch_size = args.per_device_train_batch_size
+if args.gradient_accumulation_steps is not None:
+    gradient_accumulation_steps = args.gradient_accumulation_steps
+if args.num_train_epochs is not None:
+    num_train_epochs = args.num_train_epochs
+
 print(
     f"Profile={args.profile} lr={learning_rate} batch={per_device_train_batch_size} "
-    f"grad_accum={gradient_accumulation_steps} epochs={num_train_epochs} output={output_dir}"
+    f"grad_accum={gradient_accumulation_steps} epochs={num_train_epochs} "
+    f"max_steps={args.max_steps} output={output_dir}"
 )
 
 # Let Trainer initialize the W&B run; this keeps behavior aligned with the prior 1B run.
@@ -187,6 +204,7 @@ peft_config = LoraConfig(
 # https://huggingface.co/unsloth/Llama-3.2-1B-Instruct/blob/main/chat_template.jinja
 training_args = SFTConfig(
     num_train_epochs=num_train_epochs,
+    max_steps=args.max_steps if args.max_steps is not None else -1,
     per_device_train_batch_size=per_device_train_batch_size,
     gradient_accumulation_steps=gradient_accumulation_steps,
     learning_rate=learning_rate,
@@ -199,9 +217,9 @@ training_args = SFTConfig(
     bf16=True,
     gradient_checkpointing=True,
     use_liger_kernel=True,
-    chat_template_path="/scratch/amukher6/metacul/src/chat_template.jinja",
-    eval_steps=500,
-    save_steps=500,
+    chat_template_path="/path/to/metacul/src/chat_template.jinja",
+    eval_steps=args.eval_steps,
+    save_steps=args.save_steps,
 )
 
 trainer = SFTTrainer(

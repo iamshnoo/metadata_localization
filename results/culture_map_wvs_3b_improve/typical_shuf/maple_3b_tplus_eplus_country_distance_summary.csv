@@ -1,0 +1,16 @@
+variant,label,country,country_code,continent,category,RC1,RC2,target_distance,target_rank,nearest_country,nearest_distance,top1_hit,top3_hit
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Bangladesh,bd,Asia,African-Islamic,-1.5562881129703985,5.234564186719725,6.384241242531598,9,Hong Kong SAR,4.593760382871044,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Canada,ca,America,English-Speaking,-1.6578592722863064,4.300701343251897,6.0772363080451095,15,Hong Kong SAR,3.8996526525852357,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Ghana,gh,Africa,African-Islamic,-1.3764953342889608,4.4222359797463495,5.881675322250721,12,Hong Kong SAR,3.8199640542481066,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Great Britain,gb,Europe,English-Speaking,-1.5619845008420523,4.531632193304196,6.150192958313756,13,Hong Kong SAR,4.018727192652518,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Hong Kong SAR,hk,Asia,Confucian,-1.8925192014885184,5.91874964446769,5.352669396793292,1,Hong Kong SAR,5.352669396793292,1,1
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",India,in,Asia,West & South Asia,-1.7073325297980926,5.185082943175798,5.6298448588621115,4,Hong Kong SAR,4.63452023144472,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Ireland,ie,Europe,English-Speaking,-1.9944628765935277,4.677352368099598,6.557638502469116,14,Hong Kong SAR,4.404701219068921,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Kenya,ke,Africa,African-Islamic,-1.633743471040153,5.005351162934792,5.824243183087823,6,Hong Kong SAR,4.4445045562655805,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Malaysia,my,Asia,West & South Asia,-1.9896531731997347,4.859934308600193,5.314490752203477,3,Hong Kong SAR,4.54153642088965,0,1
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Nigeria,ng,Africa,African-Islamic,-1.4804376412031397,4.733616228057116,5.594021566682306,8,Hong Kong SAR,4.133796778415958,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Pakistan,pk,Asia,African-Islamic,-1.5929684223626548,5.345094820455866,6.166299589984084,7,Hong Kong SAR,4.706993905136097,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Philippines,ph,Asia,Latin America,-1.732493726339873,4.953180579325319,6.299714846644399,11,Hong Kong SAR,4.458738212230024,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Singapore,sg,Asia,West & South Asia,-1.8846808871265464,5.539393570417334,5.667833917321967,2,Hong Kong SAR,5.02773013920345,0,1
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",South Africa,za,Africa,African-Islamic,-1.711667956565257,5.080513207728915,5.62653786832222,5,Hong Kong SAR,4.550619852905964,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",United States,us,America,English-Speaking,-1.5681585467765304,4.2280813160383115,5.577006017397216,11,Hong Kong SAR,3.786190088848724,0,0

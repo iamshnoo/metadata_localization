@@ -1,0 +1,6 @@
+{
+  "overall_emd": 0.403139765279683,
+  "groups": 333,
+  "scored_rows": 1458,
+  "jsonl_path": "/path/to/metacul/results/final_benchmark_matrix/closed_form/llama32_1b/chat/seed_41/worldvaluebench/worldvaluebench_llama3_chat_with_metadata.jsonl"
+}

@@ -8,7 +8,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=40GB
 #SBATCH --time=0-23:59:58
-#SBATCH --output=/scratch/amukher6/logs/culture/out/ppl_eval.%A_%a.out.txt
-#SBATCH --error=/scratch/amukher6/logs/culture/err/ppl_eval.%A_%a.err.txt
+#SBATCH --output=/path/to/logs/culture/out/ppl_eval.%A_%a.out.txt
+#SBATCH --error=/path/to/logs/culture/err/ppl_eval.%A_%a.err.txt
 
 python 18_perplexity_eval.py

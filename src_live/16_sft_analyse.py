@@ -108,12 +108,12 @@ def main() -> int:
     )
     parser.add_argument(
         "--results-dir",
-        default="/scratch/amukher6/metacul/results/downstream",
+        default="/path/to/metacul/results/downstream",
         help="Directory containing *_eval_*.jsonl files.",
     )
     parser.add_argument(
         "--output-csv",
-        default="/scratch/amukher6/metacul/results/downstream_eval_matrix.csv",
+        default="/path/to/metacul/results/downstream_eval_matrix.csv",
         help="Output CSV path.",
     )
     parser.add_argument(

@@ -1,0 +1,16 @@
+variant,label,country,country_code,continent,category,RC1,RC2,target_distance,target_rank,nearest_country,nearest_distance,top1_hit,top3_hit
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Bangladesh,bd,Asia,African-Islamic,0.1209231911098346,0.835050963851985,2.177243431347269,12,Singapore,0.5692100425054782,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Canada,ca,America,English-Speaking,0.3017213180182547,0.5023623825273424,2.133131450114849,13,Singapore,0.24711349099568874,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Ghana,gh,Africa,African-Islamic,0.05960605183693533,1.1592220385819418,2.842752822563144,15,Hong Kong SAR,0.8410495159827045,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Great Britain,gb,Europe,English-Speaking,0.1209231911098346,0.835050963851985,2.464903939183772,14,Singapore,0.5692100425054782,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Hong Kong SAR,hk,Asia,Confucian,0.1209231911098346,0.835050963851985,0.9127400198979995,2,Singapore,0.5692100425054782,0,1
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",India,in,Asia,West & South Asia,0.1209231911098346,0.835050963851985,1.212172814957453,5,Singapore,0.5692100425054782,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Ireland,ie,Europe,English-Speaking,0.1209231911098346,0.835050963851985,2.174989872115737,11,Singapore,0.5692100425054782,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Kenya,ke,Africa,African-Islamic,0.1209231911098346,0.835050963851985,1.5451273830029038,6,Singapore,0.5692100425054782,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Malaysia,my,Asia,West & South Asia,0.1209231911098346,0.835050963851985,1.1438139504464984,4,Singapore,0.5692100425054782,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Nigeria,ng,Africa,African-Islamic,0.1209231911098346,0.835050963851985,2.036839285813549,10,Singapore,0.5692100425054782,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Pakistan,pk,Asia,African-Islamic,0.1209231911098346,0.835050963851985,1.8474760545643176,7,Singapore,0.5692100425054782,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Philippines,ph,Asia,Latin America,0.1209231911098346,0.835050963851985,1.9967224171168885,9,Singapore,0.5692100425054782,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Singapore,sg,Asia,West & South Asia,0.1209231911098346,0.835050963851985,0.5692100425054782,1,Singapore,0.5692100425054782,1,1
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",South Africa,za,Africa,African-Islamic,0.1209231911098346,0.835050963851985,1.0215964894321266,3,Singapore,0.5692100425054782,0,1
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",United States,us,America,English-Speaking,0.12092319110983463,0.8350509638519851,1.8725862585584125,8,Singapore,0.5692100425054782,0,0

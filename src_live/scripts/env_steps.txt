@@ -23,4 +23,4 @@ ant
 ant jar
 cd ..
 pip install little_mallet_wrapper
-echo "export HF_HOME=/scratch/amukher6/cache/huggingface" >> ~/.bashrc
+echo "export HF_HOME=/path/to/cache/huggingface" >> ~/.bashrc

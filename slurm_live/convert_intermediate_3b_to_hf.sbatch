@@ -8,8 +8,8 @@
 #SBATCH --partition=contrib-gpuq
 #SBATCH --qos=cs_dept
 #SBATCH --time=0-06:00:00
-#SBATCH --output=/scratch/amukher6/metacul/logs/slurm_logs/%x-%j.out
-#SBATCH --error=/scratch/amukher6/metacul/logs/slurm_logs/%x-%j.err
+#SBATCH --output=/path/to/metacul/logs/slurm_logs/%x-%j.out
+#SBATCH --error=/path/to/metacul/logs/slurm_logs/%x-%j.err
 
 set -euo pipefail
 
@@ -17,16 +17,16 @@ MODEL_NAME="${1:?usage: sbatch $0 <combined_with_metadata_3b|combined_without_me
 STEP="${2:?usage: sbatch $0 <combined_with_metadata_3b|combined_without_metadata_3b> <step>}"
 STEP_K=$((STEP / 1000))
 
-source /scratch/amukher6/nanotron-b200/bin/activate
-mkdir -p /scratch/amukher6/metacul/logs/slurm_logs
+source /path/to/nanotron-b200/bin/activate
+mkdir -p /path/to/metacul/logs/slurm_logs
 
-CKPT="/scratch/amukher6/pretrain/logs/checkpoints/${MODEL_NAME}/${STEP}"
-SAVE="/scratch/amukher6/metacul/models/ablation_intermediates/metadata/${MODEL_NAME}_step${STEP_K}k"
+CKPT="/path/to/workspace/pretrain/logs/checkpoints/${MODEL_NAME}/${STEP}"
+SAVE="/path/to/metacul/models/ablation_intermediates/metadata/${MODEL_NAME}_step${STEP_K}k"
 SAVE_TMP="${SAVE}.tmp-${SLURM_JOB_ID}"
-TOKENIZER_SRC="/scratch/amukher6/metacul/models/combined_with_metadata_3b"
+TOKENIZER_SRC="/path/to/metacul/models/combined_with_metadata_3b"
 MASTER_PORT="$((20000 + (SLURM_JOB_ID % 20000)))"
 
-cd /scratch/amukher6/pretrain/src
+cd /path/to/workspace/pretrain/src
 rm -rf "$SAVE_TMP"
 
 python -m torch.distributed.run --nproc_per_node=1 --master_port "$MASTER_PORT" convert_to_hf.py \

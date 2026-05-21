@@ -1,0 +1,16 @@
+variant,label,model,train_metadata,eval_metadata,country,country_code,continent,RC1,RC2,Category
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,Bangladesh,bd,Asia,1.9530308853500933,-2.4659364489233395,African-Islamic
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,Canada,ca,America,2.170168711754613,-2.2328508446834334,English-Speaking
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,Ghana,gh,Africa,1.9530308853500933,-2.4659364489233395,African-Islamic
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,Great Britain,gb,Europe,2.049536585974324,-2.3623428470389367,English-Speaking
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,Hong Kong SAR,hk,Asia,1.977157310506151,-2.4400380484522386,Confucian
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,India,in,Asia,1.9530308853500933,-2.4659364489233395,West & South Asia
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,Ireland,ie,Europe,2.0012837356622084,-2.414139647981138,English-Speaking
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,Kenya,ke,Africa,2.0254101608182666,-2.388241247510037,African-Islamic
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,Malaysia,my,Asia,2.0254101608182666,-2.388241247510037,West & South Asia
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,Nigeria,ng,Africa,2.0012837356622084,-2.414139647981138,African-Islamic
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,Pakistan,pk,Asia,1.9530308853500933,-2.4659364489233395,African-Islamic
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,Philippines,ph,Asia,1.977157310506151,-2.4400380484522386,Latin America
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,Singapore,sg,Asia,1.977157310506151,-2.4400380484522386,West & South Asia
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,South Africa,za,Africa,2.0736630111303818,-2.3364444465678362,African-Islamic
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,True,True,United States,us,America,2.049536585974324,-2.3623428470389367,English-Speaking

@@ -11,9 +11,9 @@ from pathlib import Path
 import pandas as pd
 
 
-DEFAULT_INPUT = "/scratch/amukher6/metacul/results/qa_metacul_eval.csv"
-DEFAULT_OUTPUT = "/scratch/amukher6/metacul/results/qa_metacul_eval_adversarial_significance.csv"
-DEFAULT_QA_DATASET = "/scratch/amukher6/metacul/qa_data/hf_dataset.jsonl"
+DEFAULT_INPUT = "/path/to/metacul/results/qa_metacul_eval.csv"
+DEFAULT_OUTPUT = "/path/to/metacul/results/qa_metacul_eval_adversarial_significance.csv"
+DEFAULT_QA_DATASET = "/path/to/metacul/qa_data/hf_dataset.jsonl"
 
 
 def mcnemar_p_value(b: int, c: int) -> float:

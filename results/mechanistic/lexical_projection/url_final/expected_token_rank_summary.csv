@@ -1,0 +1,25 @@
+variant,prompt_kind,case_id,locale,country_name,continent,expected_word,expected_token_id,expected_rank,expected_prob
+url_final,url,football_role,us,United States,America,quarterback,20046,2,0.2544392943382263
+url_final,url,football_role,gb,United Kingdom,Europe,striker,45041,7,0.014419128187000751
+url_final,url,football_role,in,India,Asia,striker,45041,26,0.002654455602169037
+url_final,url,football_role,ng,Nigeria,Africa,striker,45041,13,0.004828771110624075
+url_final,url,fuel_word,us,United States,America,gas,6962,39,0.003842270700260997
+url_final,url,fuel_word,gb,United Kingdom,Europe,petrol,58183,210,0.0006650064024142921
+url_final,url,fuel_word,in,India,Asia,petrol,58183,309,0.00039769604336470366
+url_final,url,fuel_word,ng,Nigeria,Africa,petrol,58183,215,0.0006489742663688958
+url_final,url,biscuit_word,us,United States,America,cookies,8443,192,0.000662049395032227
+url_final,url,biscuit_word,gb,United Kingdom,Europe,biscuits,87076,91,0.0014103362336754799
+url_final,url,biscuit_word,in,India,Asia,biscuits,87076,109,0.0011732347775250673
+url_final,url,biscuit_word,ng,Nigeria,Africa,biscuits,87076,120,0.001051036175340414
+url_final,url,chips_word,us,United States,America,fries,53031,1,0.02326779253780842
+url_final,url,chips_word,gb,United Kingdom,Europe,chips,24512,9,0.011387990787625313
+url_final,url,chips_word,in,India,Asia,chips,24512,15,0.00760217709466815
+url_final,url,chips_word,ng,Nigeria,Africa,chips,24512,19,0.0067945439368486404
+url_final,url,cricket_baseball,us,United States,America,baseball,20075,5,0.016673143953084946
+url_final,url,cricket_baseball,gb,United Kingdom,Europe,cricket,37099,31,0.003433260601013899
+url_final,url,cricket_baseball,in,India,Asia,cricket,37099,70,0.0013460679911077023
+url_final,url,cricket_baseball,ng,Nigeria,Africa,football,9141,15,0.007788130082190037
+url_final,url,head_of_government,us,United States,America,president,4872,11,0.01478311512619257
+url_final,url,head_of_government,gb,United Kingdom,Europe,prime,10461,8,0.021912161260843277
+url_final,url,head_of_government,in,India,Asia,prime,10461,8,0.023168189451098442
+url_final,url,head_of_government,ng,Nigeria,Africa,president,4872,15,0.011260303668677807

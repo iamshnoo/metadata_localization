@@ -1,0 +1,120 @@
+question_id,benchmark,subset,country,continent,answered_by_all,custom_tplus_eplus_correct,custom_tplus_eplus_incorrect,custom_tplus_eplus_skipped,custom_tminus_eminus_correct,custom_tminus_eminus_incorrect,custom_tminus_eminus_skipped
+025aa4fe87af2bfa9fbd4fd66d9d4872c72425aa,globalopinionqa,GAS,Ghana,Africa,1,0,-1,0,0,-1,0
+062bd0ee1ae5b49dcdb7954c619aaaeef04cd1cc,globalopinionqa,GAS,United Kingdom,Europe,1,0,-1,0,0,-1,0
+07ce84d60607d68621470349ae8be3d05846eabd,globalopinionqa,GAS,Nigeria,Africa,1,0,-1,0,1,0,0
+0bc5c545c805e7ccdec74457e70dd85c78055b44,globalopinionqa,GAS,Nigeria,Africa,1,0,-1,0,0,-1,0
+0bfd1bbef340fa403cbe44396313867bc6076974,globalopinionqa,GAS,Nigeria,Africa,1,0,-1,0,0,-1,0
+0da6a5fc46c99ee03a4a989f6360aa34dde7f5b7,globalopinionqa,GAS,Philippines,Asia,1,0,-1,0,0,-1,0
+0eabbc0ae0258d0a4dfe235f1f96530c3c80ff3f,globalopinionqa,GAS,India,Asia,1,0,-1,0,0,-1,0
+0f6a22a7d00a1d43cb4a5c1f4bbc5f8b2a375f35,globalopinionqa,GAS,Canada,America,1,0,-1,0,0,-1,0
+10ad146d2da9252759c923c93d04dd57203b9673,globalopinionqa,GAS,United Kingdom,Europe,1,0,-1,0,0,-1,0
+1504ce3a16db1b7f3b14f2410dcb802127aaef4a,globalopinionqa,GAS,United States,America,1,0,-1,0,0,-1,0
+17fed6aade58c4a7ae3d93585fbb5fbd848f886b,globalopinionqa,GAS,Canada,America,1,0,-1,0,0,-1,0
+1e54da669d5970ba07f95640d49ee79bed768df2,globalopinionqa,GAS,United States,America,1,0,-1,0,0,-1,0
+1eae2f9f4232c5ddfcef3126e799b81f37146343,globalopinionqa,GAS,Canada,America,1,0,-1,0,0,-1,0
+226a815d3b3753d4422851e3bafa43413a8f44d2,globalopinionqa,GAS,Nigeria,Africa,1,0,-1,0,0,-1,0
+287f78ed8649e26f33cac1b48cd84c302316b01e,globalopinionqa,GAS,Canada,America,1,1,0,0,0,-1,0
+310fac3e8a0036ad6e07df789a8bbe4fcb498009,globalopinionqa,GAS,Philippines,Asia,1,0,-1,0,0,-1,0
+31af5dcc1c7dbb11f6c4ae0e73da4ea53ec55070,globalopinionqa,GAS,Ghana,Africa,1,0,-1,0,0,-1,0
+31d672adc9398f5b3b397d456acdbb74048845b2,globalopinionqa,GAS,Nigeria,Africa,1,0,-1,0,0,-1,0
+34182276a8eb05cf6324f81aa3544fb9cbc44148,globalopinionqa,GAS,United Kingdom,Europe,1,0,-1,0,0,-1,0
+3790398764604c06fdf98d3eff4256dcc7a1e118,globalopinionqa,GAS,India,Asia,1,0,-1,0,0,-1,0
+3a4c7b165d778e2d8a7a3ff4c3f4164a87ddc459,globalopinionqa,GAS,Nigeria,Africa,1,0,-1,0,0,-1,0
+3a726911aef7657b21cc9651ec12e76f50e8636c,globalopinionqa,GAS,India,Asia,1,0,-1,0,0,-1,0
+3b6bfee956bdbf3dce9e0bd6d62881509557d4b3,globalopinionqa,GAS,United Kingdom,Europe,1,1,0,0,1,0,0
+3c0eea11879c2a620a46a1885b2d4ec802cded51,globalopinionqa,GAS,Philippines,Asia,1,0,-1,0,0,-1,0
+3f7be80bcc5fec59abd33a9f40628992273e1a29,globalopinionqa,GAS,Philippines,Asia,1,1,0,0,0,-1,0
+438783a51d73f5c46b777db2827ed2393d122f78,globalopinionqa,GAS,United States,America,1,0,-1,0,0,-1,0
+441e58238ec116246a0571dc9da426d68703a76b,globalopinionqa,GAS,Ghana,Africa,1,1,0,0,1,0,0
+4933ad01991ab1ea8eba99302fd94fadac342b74,globalopinionqa,GAS,Kenya,Africa,1,0,-1,0,0,-1,0
+4ae56374f32bd73e043a5ba663da8f5f3dc3f7bc,globalopinionqa,GAS,United States,America,1,1,0,0,1,0,0
+509695b80913e6d844008d3b30df9ce48f7e5235,globalopinionqa,GAS,Kenya,Africa,1,0,-1,0,0,-1,0
+54303cb7c738d093c34b6bd26311c3fbccb55486,globalopinionqa,GAS,Pakistan,Asia,1,0,-1,0,1,0,0
+54bf0cefa6197e4d620a3b717ceaba0e61d3d5d7,globalopinionqa,GAS,India,Asia,1,0,-1,0,0,-1,0
+574edd6bdd02fbc534b98afe16de4bc8938cdf18,globalopinionqa,GAS,United Kingdom,Europe,1,1,0,0,1,0,0
+59e2074127ca61e0ccb762115c06a65de7f638ed,globalopinionqa,GAS,United States,America,1,0,-1,0,0,-1,0
+5f25c5c052f7ddd43825b9188546ed4ca5cc02b3,globalopinionqa,GAS,India,Asia,1,0,-1,0,0,-1,0
+609e0d234e2b5b98e290a479f25a2617b8f45d88,globalopinionqa,GAS,India,Asia,1,0,-1,0,0,-1,0
+612ea01ad7adb64f0c52c75030c75f896d886a5b,globalopinionqa,GAS,Bangladesh,Asia,1,0,-1,0,0,-1,0
+616273a9f8f213cb56e4b0f9822daccd1013fe85,globalopinionqa,GAS,Pakistan,Asia,1,0,-1,0,0,-1,0
+694bfed7e2a96eac31eaf79dbf519853dbf7467f,globalopinionqa,GAS,Bangladesh,Asia,1,0,-1,0,0,-1,0
+6a27a88f2d018294b961b4ab1912c6ec4cfd3985,globalopinionqa,GAS,South Africa,Africa,1,0,-1,0,0,-1,0
+6c3b74fe4a4797a28461553f06ce378a76df277a,globalopinionqa,GAS,Canada,America,1,0,-1,0,0,-1,0
+70dee294ddd9b53b19ca6c1528abc040b6109e42,globalopinionqa,GAS,South Africa,Africa,1,0,-1,0,1,0,0
+742424b5079cd6812ef699b640c0585eaf008596,globalopinionqa,GAS,Kenya,Africa,1,0,-1,0,0,-1,0
+745fcf410bbafd9febc3fb28000984920195b3e5,globalopinionqa,GAS,India,Asia,1,0,-1,0,0,-1,0
+7476415183d85fd7271717ab2dc6f599546bc688,globalopinionqa,GAS,Kenya,Africa,1,0,-1,0,0,-1,0
+75399cc3819df7d69ad29bbd36da6e0586193197,globalopinionqa,GAS,Philippines,Asia,1,0,-1,0,0,-1,0
+77721376123d62bf9cf6b146c8b601aba01bea71,globalopinionqa,GAS,Ghana,Africa,1,0,-1,0,0,-1,0
+79d04a22ea7b28f79cd7be7bc2ca05abf42cd049,globalopinionqa,GAS,Tanzania,Africa,1,0,-1,0,0,-1,0
+79dd41cac27b3650f67b1389a8228641034de84f,globalopinionqa,GAS,United Kingdom,Europe,1,0,-1,0,0,-1,0
+7a4f8d05472a52f8c3ba9ce3593bb61aec9f443f,globalopinionqa,GAS,Pakistan,Asia,1,0,-1,0,0,-1,0
+7b9c40a61a499eef4eb902cd671bc675721c59fd,globalopinionqa,GAS,United States,America,1,0,-1,0,0,-1,0
+7c0814046b759f447e24fb1452bc0096a3a7ce76,globalopinionqa,GAS,United Kingdom,Europe,1,0,-1,0,0,-1,0
+7cf0bcd017537718455e1a0a5ee4e837d8453c56,globalopinionqa,GAS,Malaysia,Asia,1,0,-1,0,0,-1,0
+824d95b738ee81693982ee48bae30a65f75a4faa,globalopinionqa,GAS,Bangladesh,Asia,1,0,-1,0,0,-1,0
+8683968dedba7efe865c19709ad8372e7fdeb9ee,globalopinionqa,GAS,South Africa,Africa,1,0,-1,0,1,0,0
+8684a1de5e09dde9d69dbb161fcb0f2ae7ac64c2,globalopinionqa,GAS,Tanzania,Africa,1,0,-1,0,0,-1,0
+87ac542066433f2993783989e6fe45d1890e27de,globalopinionqa,GAS,United Kingdom,Europe,1,0,-1,0,1,0,0
+87e2d37444c684ddd565de8a325027cd33acde11,globalopinionqa,GAS,Bangladesh,Asia,1,1,0,0,1,0,0
+88756a92bc0c5d478335aca2022522019262d80b,globalopinionqa,GAS,Tanzania,Africa,1,0,-1,0,0,-1,0
+88d73a0c4abb77664eef010b302e6299be8e075b,globalopinionqa,GAS,Tanzania,Africa,1,0,-1,0,0,-1,0
+8c8b0db6d6f0c7ea8be8c3ddd336e96545957464,globalopinionqa,GAS,India,Asia,1,0,-1,0,0,-1,0
+8edfea0123ac45f4631e3383360ac967a59274d2,globalopinionqa,GAS,Tanzania,Africa,1,0,-1,0,1,0,0
+963f7d174868340f0ca08d09dc8beb73c0cc98a1,globalopinionqa,GAS,South Africa,Africa,1,0,-1,0,0,-1,0
+96e7e608aee55c1d2a2a5fc352692b90c6b2fbd6,globalopinionqa,GAS,Canada,America,1,0,-1,0,0,-1,0
+97616e4ace9e4bdc7676ca0f563ee2e812ed165d,globalopinionqa,GAS,South Africa,Africa,1,0,-1,0,0,-1,0
+98c1bf85b5ab2165d2ef54ebab95aa326b863376,globalopinionqa,GAS,United Kingdom,Europe,1,0,-1,0,0,-1,0
+992fc0b2d5d781cd5f22d15781442d83a643ed3d,globalopinionqa,GAS,Kenya,Africa,1,0,-1,0,0,-1,0
+9a6aee499f6228473410749ddf87914039d6b792,globalopinionqa,GAS,United Kingdom,Europe,1,0,-1,0,0,-1,0
+9aec069de11f02f49145f4fd8f6df0276ee18d71,globalopinionqa,GAS,Pakistan,Asia,1,0,-1,0,0,-1,0
+9b86fb4b95a5fe129d9c86dcae7474e6e385a2fd,globalopinionqa,GAS,Canada,America,1,0,-1,0,0,-1,0
+9c53e67bb30b7cc2a4099bbc3bde912a2cf50f1d,globalopinionqa,GAS,India,Asia,1,0,-1,0,0,-1,0
+9fc6495f37dd18c9405cf5ce404dc3eb11975b29,globalopinionqa,GAS,South Africa,Africa,1,0,-1,0,0,-1,0
+a31dff4579a5e91a7bd6d8ef00936b68e0930c6c,globalopinionqa,GAS,United States,America,1,0,-1,0,0,-1,0
+aa5bac6b7d8f5bbadbc94148d1bf76e2827f29a4,globalopinionqa,GAS,United Kingdom,Europe,1,1,0,0,0,-1,0
+aee0a87364fd9ad435a8474fcaa6c1086348da76,globalopinionqa,GAS,South Africa,Africa,1,0,-1,0,0,-1,0
+b35adb4f6ed3388459ca4e65935b612ec443b07a,globalopinionqa,GAS,Philippines,Asia,1,1,0,0,0,-1,0
+b530dd19ba38661af4c9962242ce6571cb2d4328,globalopinionqa,GAS,Kenya,Africa,1,0,-1,0,0,-1,0
+b64f3c4c3c20d8a4814bfcf643c1077086744139,globalopinionqa,GAS,United States,America,1,1,0,0,1,0,0
+b91f58fb8bd067513896f98f8e2ad81fb764d0da,globalopinionqa,GAS,India,Asia,1,0,-1,0,0,-1,0
+b945a77a1676d4c475c621aaf9c979a89e4fda9f,globalopinionqa,GAS,Kenya,Africa,1,0,-1,0,0,-1,0
+ba5f1538d7648bdc734366d179a438c255dd1684,globalopinionqa,GAS,Kenya,Africa,1,1,0,0,1,0,0
+bc4fc99deb7cadb299a5c370ffed3f71b8fc24b5,globalopinionqa,GAS,Pakistan,Asia,1,0,-1,0,0,-1,0
+bd9f1f49207a2bc3d591dfb424da63510ca900d5,globalopinionqa,GAS,Malaysia,Asia,1,0,-1,0,0,-1,0
+bed5ecba72c4db3f630efef25050c4ceadb6f9aa,globalopinionqa,GAS,Tanzania,Africa,1,0,-1,0,0,-1,0
+c3913294683dbec731617c581e8c846e97a9042d,globalopinionqa,GAS,United States,America,1,1,0,0,0,-1,0
+c4f9a742254e95ae17eb6dd675b9346678d45586,globalopinionqa,GAS,South Africa,Africa,1,0,-1,0,0,-1,0
+c6b0e69b6c8bc7647bee0d979ff4187712fca426,globalopinionqa,GAS,South Africa,Africa,1,0,-1,0,0,-1,0
+c8aa9524304e7305ffe498d13ae613fd23088ff1,globalopinionqa,GAS,Nigeria,Africa,1,0,-1,0,0,-1,0
+c8e5971783fdd4913edef2976401e4c268d81ff5,globalopinionqa,GAS,Pakistan,Asia,1,1,0,0,0,-1,0
+c953c60b88879248bf2f523a7a388fde5177711f,globalopinionqa,GAS,Malaysia,Asia,1,0,-1,0,0,-1,0
+c9feab19492b016f69753d68101094c3b82e5b5c,globalopinionqa,GAS,Canada,America,1,0,-1,0,0,-1,0
+ccc52947194a92ea724a1bf7380003a5db019ae2,globalopinionqa,GAS,United States,America,1,0,-1,0,0,-1,0
+ccda9c447aba3bb77d3ae546564b6afe304425d2,globalopinionqa,GAS,Ghana,Africa,1,1,0,0,0,-1,0
+cf0cab1dbcda8522292cafa61559d62102dd44cc,globalopinionqa,GAS,Nigeria,Africa,1,0,-1,0,0,-1,0
+d1b882f06b7d6dba16ef8b3b124cb872e233a761,globalopinionqa,GAS,Philippines,Asia,1,0,-1,0,0,-1,0
+d2d0989af838418f3b65cb40ad20625223f1f5cd,globalopinionqa,GAS,Pakistan,Asia,1,0,-1,0,0,-1,0
+d2ec5e77023d507ca9a96ebad8b8f25574923c48,globalopinionqa,GAS,India,Asia,1,0,-1,0,0,-1,0
+d34e3922c0c15502db5ad8cb6fa456edf2833971,globalopinionqa,GAS,Nigeria,Africa,1,1,0,0,1,0,0
+d50eeabc221bae95193175451994786c37697c32,globalopinionqa,GAS,Malaysia,Asia,1,0,-1,0,0,-1,0
+d9207ec4ae6cedb6f302f746dec53350474e1513,globalopinionqa,GAS,Malaysia,Asia,1,0,-1,0,0,-1,0
+d9787d8f6bfd9d29b87eaa39ff849fbaeebc852a,globalopinionqa,GAS,Tanzania,Africa,1,0,-1,0,0,-1,0
+da939ee5fb92b55d7b2330e35f6f7eeb4918c014,globalopinionqa,GAS,Kenya,Africa,1,0,-1,0,0,-1,0
+dd347746c9bbc4202ebe76fea4c61a01e40f21cc,globalopinionqa,GAS,United States,America,1,0,-1,0,0,-1,0
+de73fd9dd44aaae29c6117d0754778946b86f7c5,globalopinionqa,GAS,Ghana,Africa,1,0,-1,0,0,-1,0
+e2ca6f0c101fb5251c13f3dd070988cef0d463ce,globalopinionqa,GAS,United States,America,1,0,-1,0,0,-1,0
+e3c1266fa1273866f5a037c20e235e41e9b9846a,globalopinionqa,GAS,Pakistan,Asia,1,0,-1,0,0,-1,0
+e3e6aa4fd6534a2210400e0873ccde2210e39b23,globalopinionqa,GAS,United States,America,1,0,-1,0,0,-1,0
+e498bd04f8c34efea747d8efff4da4f29fa550d2,globalopinionqa,GAS,Nigeria,Africa,1,0,-1,0,0,-1,0
+eb8252f072c183ff4b8f6d62511147bf9986ebd7,globalopinionqa,GAS,United Kingdom,Europe,1,1,0,0,1,0,0
+ef4e3b017f9a62d3e318f53dc35d7f33f4caed1d,globalopinionqa,GAS,India,Asia,1,0,-1,0,0,-1,0
+ef7ce46a687c8a7a4cfc15d082c8d513ca449d87,globalopinionqa,GAS,Canada,America,1,1,0,0,0,-1,0
+f347a4fbf4f210d5401a09e6c9944302f2531683,globalopinionqa,GAS,United States,America,1,1,0,0,1,0,0
+f3eb52dfb4f16f784ad5d67f6552c1e4b1e564c5,globalopinionqa,GAS,Nigeria,Africa,1,1,0,0,0,-1,0
+f4fdbf6d2b70675d08d18b59df114c24434d4832,globalopinionqa,GAS,South Africa,Africa,1,0,-1,0,0,-1,0
+f5dfaf769e890f7e75f594ac4df475fa9dd4fbb5,globalopinionqa,GAS,Ghana,Africa,1,0,-1,0,0,-1,0
+fa94518d7f230a91ff5115ded40db8d32c5f543b,globalopinionqa,GAS,Bangladesh,Asia,1,0,-1,0,0,-1,0
+faaf85631a9cfebbeb3d3741f8e048874c83b3da,globalopinionqa,GAS,United Kingdom,Europe,1,0,-1,0,0,-1,0
+fb9b262ad31e89327ec7fc3f477e3aa064caf829,globalopinionqa,GAS,Pakistan,Asia,1,0,-1,0,0,-1,0
+fd12da699d0fbd4bdda657e49fe0670536566770,globalopinionqa,GAS,Ghana,Africa,1,0,-1,0,0,-1,0

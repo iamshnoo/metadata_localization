@@ -1,0 +1,2 @@
+variant,status,correct,processed_total,accuracy,skipped,total_rows,error
+custom_tminus_eminus,ok,40,80,0.5,0,80,

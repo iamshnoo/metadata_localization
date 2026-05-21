@@ -17,7 +17,7 @@ def run_lda_for_country(year, country_code):
     """Run LDA for a specific year-country combination"""
     
     # Paths and parameters
-    BASE = "/scratch/amukher6/"
+    BASE = "/path/to/workspace/"
     path_to_mallet = BASE + "Mallet/bin/mallet"
     mallet_output_base = BASE + "metacul/data/lmw_output/now/"
     data_root = BASE + "metacul/data/now"

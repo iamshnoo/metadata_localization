@@ -9,19 +9,19 @@ import pandas as pd
 
 
 DEFAULT_PRETRAINED_ROOT = Path(
-    "/scratch/amukher6/metacul/results/downstream_localnewsqa_pretrained_multiseed"
+    "/path/to/metacul/results/downstream_localnewsqa_pretrained_multiseed"
 )
 DEFAULT_BASELINE_ROOT = Path(
-    "/scratch/amukher6/metacul/results/downstream_localnewsqa_external_baselines_multiseed"
+    "/path/to/metacul/results/downstream_localnewsqa_external_baselines_multiseed"
 )
 DEFAULT_PLOT_CSV = Path(
-    "/scratch/amukher6/metacul/results/plots/plot8/plot_8_pretrained_target_split_multiseed.csv"
+    "/path/to/metacul/results/plots/plot8/plot_8_pretrained_target_split_multiseed.csv"
 )
 DEFAULT_TABLE7_LONG_CSV = Path(
-    "/scratch/amukher6/metacul/results/plots/plot8/table7_external_localnewsqa_multiseed_long.csv"
+    "/path/to/metacul/results/plots/plot8/table7_external_localnewsqa_multiseed_long.csv"
 )
 DEFAULT_TABLE7_WIDE_CSV = Path(
-    "/scratch/amukher6/metacul/results/plots/plot8/table7_external_localnewsqa_multiseed_wide.csv"
+    "/path/to/metacul/results/plots/plot8/table7_external_localnewsqa_multiseed_wide.csv"
 )
 
 PRETRAINED_VARIANTS = [
@@ -197,7 +197,7 @@ def aggregate_pretrained(args: argparse.Namespace, seeds: List[int]) -> List[Dic
         for seed in seeds:
             seed_dir = args.pretrained_root / f"seed_{seed}"
             path = find_single(
-                f"localnewsqa_eval_target_{variant['eval_meta_tag']}_custom_{variant['run_tag']}_c0*.jsonl",
+                f"localnewsqa_eval_target_{variant['eval_meta_tag']}_custom*{variant['run_tag']}*_c0*.jsonl",
                 seed_dir,
             )
             if path is None:

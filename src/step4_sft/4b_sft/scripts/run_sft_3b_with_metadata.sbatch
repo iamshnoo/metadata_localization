@@ -8,19 +8,19 @@
 #SBATCH --partition=contrib-gpuq
 #SBATCH --qos=cs_dept
 #SBATCH --time=1-00:00:00
-#SBATCH --output=/scratch/amukher6/metacul/logs/slurm_logs/%x-%j.out
-#SBATCH --error=/scratch/amukher6/metacul/logs/slurm_logs/%x-%j.err
+#SBATCH --output=/path/to/metacul/logs/slurm_logs/%x-%j.out
+#SBATCH --error=/path/to/metacul/logs/slurm_logs/%x-%j.err
 
 set -euo pipefail
 
-mkdir -p /scratch/amukher6/metacul/logs/slurm_logs
-source /home/amukher6/nanotron-env/bin/activate
+mkdir -p /path/to/metacul/logs/slurm_logs
+source /path/to/nanotron-env/bin/activate
 
 export PYTHONUNBUFFERED=1
-export HF_HOME=/scratch/amukher6/.cache/huggingface
-export TRANSFORMERS_CACHE=/scratch/amukher6/.cache/huggingface/transformers
-export HF_DATASETS_CACHE=/scratch/amukher6/.cache/huggingface/datasets
+export HF_HOME=/path/to/workspace/.cache/huggingface
+export TRANSFORMERS_CACHE=/path/to/workspace/.cache/huggingface/transformers
+export HF_DATASETS_CACHE=/path/to/workspace/.cache/huggingface/datasets
 
-cd /scratch/amukher6/metacul/src
+cd /path/to/metacul/src
 
-srun /home/amukher6/nanotron-env/bin/python 12_sft.py --size 3b --metadata
+srun /path/to/nanotron-env/bin/python 12_sft.py --size 3b --metadata

@@ -1,0 +1,9 @@
+variant,label,model_path,size,train_metadata,eval_metadata,n_countries,mean_target_distance,median_target_distance,mean_target_rank,top1_rate,top3_rate
+maple_1b_tminus_eminus,"MAPLE 1B (T-, I-)",/path/to/metacul/models/combined_without_metadata_1b,1B,False,False,15,2.5294804909642967,2.6666887160080046,8.0,0.0666666666666666,0.2
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",/path/to/metacul/models/combined_without_metadata_1b,1B,False,True,15,2.862313827900563,3.107766800496752,8.0,0.0666666666666666,0.2
+maple_1b_tplus_eminus,"MAPLE 1B (T+, I-)",/path/to/metacul/models/combined_with_metadata_1b,1B,True,False,15,2.862313827900563,3.107766800496752,8.0,0.0666666666666666,0.2
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,1B,True,True,15,2.862313827900563,3.107766800496752,8.0,0.0666666666666666,0.2
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,3B,False,False,15,2.3777822458900584,2.66794924243964,8.0,0.0666666666666666,0.2
+maple_3b_tminus_eplus,"MAPLE 3B (T-, I+)",/path/to/metacul/models/combined_without_metadata_3b,3B,False,True,15,2.8294246135623564,3.1812815241903105,8.0,0.0666666666666666,0.2
+maple_3b_tplus_eminus,"MAPLE 3B (T+, I-)",/path/to/metacul/models/combined_with_metadata_3b,3B,True,False,15,2.837990757995654,3.174944510073748,8.0,0.0666666666666666,0.2
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",/path/to/metacul/models/combined_with_metadata_3b,3B,True,True,15,2.8249954292966515,3.1180592448739475,7.866666666666666,0.0666666666666666,0.2

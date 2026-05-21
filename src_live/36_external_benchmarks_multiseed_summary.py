@@ -9,19 +9,19 @@ import pandas as pd
 
 
 DEFAULT_OURS_1B_ROOT = Path(
-    "/scratch/amukher6/metacul/results/external_benchmarks_pretrained_multiseed/ours_1b"
+    "/path/to/metacul/results/external_benchmarks_pretrained_multiseed/ours_1b"
 )
 DEFAULT_OURS_3B_ROOT = Path(
-    "/scratch/amukher6/metacul/results/external_benchmarks_pretrained_multiseed/ours_3b"
+    "/path/to/metacul/results/external_benchmarks_pretrained_multiseed/ours_3b"
 )
 DEFAULT_LLAMA_ROOT = Path(
-    "/scratch/amukher6/metacul/results/external_benchmarks_pretrained_multiseed/llama32_1b"
+    "/path/to/metacul/results/external_benchmarks_pretrained_multiseed/llama32_1b"
 )
 DEFAULT_LONG_CSV = Path(
-    "/scratch/amukher6/metacul/results/plots/plot8/table8_external_eval_multiseed_long.csv"
+    "/path/to/metacul/results/plots/plot8/table8_external_eval_multiseed_long.csv"
 )
 DEFAULT_WIDE_CSV = Path(
-    "/scratch/amukher6/metacul/results/plots/plot8/table8_external_eval_multiseed_wide.csv"
+    "/path/to/metacul/results/plots/plot8/table8_external_eval_multiseed_wide.csv"
 )
 
 BENCHMARKS = [
@@ -36,20 +36,20 @@ VARIANT_GROUPS = [
         "MAPLE 1B",
         DEFAULT_OURS_1B_ROOT,
         [
-            ("custom_tplus_eplus", "(T+,I+)"),
-            ("custom_tplus_eminus", "(T+,I-)"),
-            ("custom_tminus_eplus", "(T-,I+)"),
-            ("custom_tminus_eminus", "(T-,I-)"),
+            ("custom_tplus_eplus", "(T+, I+)"),
+            ("custom_tplus_eminus", "(T+, I-)"),
+            ("custom_tminus_eplus", "(T-, I+)"),
+            ("custom_tminus_eminus", "(T-, I-)"),
         ],
     ),
     (
         "MAPLE 3B",
         DEFAULT_OURS_3B_ROOT,
         [
-            ("custom_tplus_eplus", "(T+,I+)"),
-            ("custom_tplus_eminus", "(T+,I-)"),
-            ("custom_tminus_eplus", "(T-,I+)"),
-            ("custom_tminus_eminus", "(T-,I-)"),
+            ("custom_tplus_eplus", "(T+, I+)"),
+            ("custom_tplus_eminus", "(T+, I-)"),
+            ("custom_tminus_eplus", "(T-, I+)"),
+            ("custom_tminus_eminus", "(T-, I-)"),
         ],
     ),
     (

@@ -1,0 +1,394 @@
+question_id,benchmark,subset,country,continent,answered_by_all,custom_tminus_eplus_correct,custom_tminus_eplus_incorrect,custom_tminus_eplus_skipped
+005b88694cfabcbfa2477268a0dda3716f788bcd,blend,test,United Kingdom,Europe,1,0,-1,0
+00c77596950a8d0e911cba3584d323c0c747e5b1,blend,test,Algeria,Africa,1,0,-1,0
+012aedd44fbbd1de984b1517f9d8158ef486ea2c,blend,test,United Kingdom,Europe,1,0,-1,0
+014083a8e243c8934174ef3b934ce2d849389859,blend,test,United Kingdom,Europe,1,0,-1,0
+01b7d412ea6df521df309862794dfd54059276eb,blend,test,United Kingdom,Europe,1,0,-1,0
+01cdf1ce6b92b419a122cca68b6834a7839970f6,blend,test,United Kingdom,Europe,1,0,-1,0
+048004970db446df5d4cd09dede28d87070110eb,blend,test,United Kingdom,Europe,1,1,0,0
+06e2181e015a9aeffdca0acb63ab637cb9c8a1b0,blend,test,United Kingdom,Europe,1,1,0,0
+06fb75b89c3ad63d13dbb5dd4933eb9197588d14,blend,test,United Kingdom,Europe,1,0,-1,0
+089cb67ae714a714e02879e39827f5b18a81c19b,blend,test,United States,America,1,0,-1,0
+08cc8058432a793c25e78518f6da4146e4c3d803,blend,test,United Kingdom,Europe,1,0,-1,0
+09e72229b9477696d37a7713fb631df0f960a646,blend,test,United Kingdom,Europe,1,0,-1,0
+0a9d48fe9cb77452c549cb8b73c4a196b037139e,blend,test,United States,America,1,0,-1,0
+0b8e6de4230691fe680a626f13116d4b8aa82004,blend,test,United Kingdom,Europe,1,0,-1,0
+0c827e469a6cb5a4b4f3fbdd5ab178c111291bcc,blend,test,Algeria,Africa,1,0,-1,0
+0c8d170550cc2022ea3149183fcd82a339ac32db,blend,test,United Kingdom,Europe,1,0,-1,0
+0fa8cd5e54d94e01b76a2ebd810c52a8a0ceba95,blend,test,United Kingdom,Europe,1,0,-1,0
+107a15b96f89d912fe713d90a8d552d1dd8dae87,blend,test,United Kingdom,Europe,1,0,-1,0
+10ab2809f8b3521fd036bae062fc8678255d1da6,blend,test,United Kingdom,Europe,1,0,-1,0
+10e08ae5be5ee7f0ad20063f54f5470c30d28ed2,blend,test,United Kingdom,Europe,1,0,-1,0
+11fd3266d06ad6755200fb1131d62029d74ca4c0,blend,test,United Kingdom,Europe,1,0,-1,0
+1212c5e052f8dd922e353628ab249e29b7cb917c,blend,test,Algeria,Africa,1,0,-1,0
+1248a17463f3e8561d637ea93eaa739612ed6370,blend,test,United States,America,1,0,-1,0
+135034337293115cae2b8d7fbd3e02514495eff6,blend,test,United Kingdom,Europe,1,0,-1,0
+14199a5798e810ee735f700b4b94840f70aaac4c,blend,test,United Kingdom,Europe,1,0,-1,0
+145d5c0b4b881c9b29a5a6b0f4dc113faa2306e8,blend,test,United States,America,1,0,-1,0
+14b3e52d05e12d68b9d1dc2039ab66e4a2ec8774,blend,test,United Kingdom,Europe,1,0,-1,0
+15428030d28086da4ad5b81daa578ac28d31aa90,blend,test,United Kingdom,Europe,1,1,0,0
+170fd2ef9a66d1152965aa44201271e4b50c6990,blend,test,United Kingdom,Europe,1,0,-1,0
+1713d70190e9da43d8030e9abd0d1812228611ba,blend,test,United Kingdom,Europe,1,0,-1,0
+175a432d26e8f1b511a1f5b92e9564daae43f9e7,blend,test,United Kingdom,Europe,1,0,-1,0
+178796732a4bc30eab31a7398963953d8347efa5,blend,test,United States,America,1,0,-1,0
+17e32827f2d0b5ca2e293872e5e009841bdc9c36,blend,test,United States,America,1,0,-1,0
+18d65208c8c833e82c2d697f06d21bc8e3c73b55,blend,test,China,Asia,1,0,-1,0
+1a6bdcae14aae506315a350962d5e65c3e13e3ff,blend,test,United Kingdom,Europe,1,0,-1,0
+1d18e64086eebee1e2d8b34a9ec44864af880e21,blend,test,United Kingdom,Europe,1,0,-1,0
+1d320e6ac4d7ac2db9a3e62807ea7f3fd69a8b7e,blend,test,United Kingdom,Europe,1,0,-1,0
+1da832bb80d7dbae536d5989f34065a937dedd7a,blend,test,United Kingdom,Europe,1,0,-1,0
+1dc928930d67848b55c02de86d1a5f91cb79bc22,blend,test,United Kingdom,Europe,1,0,-1,0
+1eedcec2d6c2169e03131c0e6cd4c2b6352166e9,blend,test,United Kingdom,Europe,1,0,-1,0
+1efc6d8d6355c2de92d77220da1314def0548237,blend,test,United Kingdom,Europe,1,0,-1,0
+1f14e8c2124eb58f9f2781badf751dda260432b7,blend,test,United Kingdom,Europe,1,0,-1,0
+1f1fdd01ae725aa7e708951b4a7d3e06f50ddf4b,blend,test,United Kingdom,Europe,1,0,-1,0
+1f8cea134b833506aa5cedc8af2c3aca72008bd1,blend,test,United Kingdom,Europe,1,0,-1,0
+1fb3ba0b43eb18f5f621831beedff4f40ff4a9e1,blend,test,United Kingdom,Europe,1,0,-1,0
+1fbbc8519c37e71f23a3840f7d393dfa806d5dc7,blend,test,United Kingdom,Europe,1,0,-1,0
+207b89c9bb4c0bb04741e184d4bcfa134d975cb1,blend,test,United Kingdom,Europe,1,0,-1,0
+208f5b50e4d3988c0c2e0bd9117579a267afa398,blend,test,United Kingdom,Europe,1,0,-1,0
+223a35e0365f4f0eb00a6f013b6825072044ad45,blend,test,United Kingdom,Europe,1,0,-1,0
+236e739a3d36dcd0c914a0caf3f8b38feb53cfc7,blend,test,United Kingdom,Europe,1,0,-1,0
+23898a1490ed47cb4b13af217a355f4f7a01c974,blend,test,United Kingdom,Europe,1,1,0,0
+23958fd934488ca31c363dd0c58d187c71b6f6d1,blend,test,Algeria,Africa,1,0,-1,0
+244f9f998891faf14a0b1f2cd5ef26a920b17330,blend,test,United Kingdom,Europe,1,0,-1,0
+257c57ffefdd24ac43632e6d9cd9e9c5632cd130,blend,test,United Kingdom,Europe,1,0,-1,0
+25831794ad870cbe2beb547023a5fe5ea5a9e753,blend,test,United Kingdom,Europe,1,0,-1,0
+25ae462df432d4ab8ae6b78aec1496ba2a29e49a,blend,test,United Kingdom,Europe,1,1,0,0
+25dbb5dc25a6cff6e104484f1da8d7431fc55e06,blend,test,United Kingdom,Europe,1,0,-1,0
+25f340121ec6e806736e8ba59bb86b5efd71f3f6,blend,test,United States,America,1,0,-1,0
+268fc21c9d960a87847e73a4fe8432db44377192,blend,test,United States,America,1,1,0,0
+26bd92037c6509fee41426df601e0f8a06c5fbbc,blend,test,United Kingdom,Europe,1,0,-1,0
+26d510798ff65ad2c181cd934321eb708251b948,blend,test,United Kingdom,Europe,1,0,-1,0
+27ad24cf490dd2be70acbe6a02d44a86f8435f4a,blend,test,United Kingdom,Europe,1,0,-1,0
+2809439f20b92f9e998891052571bafd5814b62d,blend,test,United Kingdom,Europe,1,0,-1,0
+281e9a36b4dd591581f68b87682cf4deac3d51ed,blend,test,"Korea, Republic of",Asia,1,1,0,0
+2860403b734657bdbedf1c3d59e94424e6fe2bb6,blend,test,United States,America,1,0,-1,0
+29589e43d3d10d6535275e3d4941f6c2f893cf6e,blend,test,United Kingdom,Europe,1,1,0,0
+2bf315cece89fbe1868b80cf24d687dcf9f955fa,blend,test,Algeria,Africa,1,0,-1,0
+2d4977874cbb7e9ad1cb009cb3bd1d54e123cb5f,blend,test,United Kingdom,Europe,1,0,-1,0
+2e6f240d2999db6b0cd6f40a7f8af92b47f2c698,blend,test,United States,America,1,0,-1,0
+31c5cbdac93abace94904251cd3b4b5db6076bfe,blend,test,United Kingdom,Europe,1,1,0,0
+3281e881efad0b014b8e4bb74ce43c1ef3dc3de4,blend,test,United States,America,1,0,-1,0
+3284fc1a06c7972ce1c6a2b6098263039a6cfd11,blend,test,United Kingdom,Europe,1,0,-1,0
+32cb4c4ebb9e06d450347a113f8b2fb5b091ce3d,blend,test,United Kingdom,Europe,1,0,-1,0
+3359774d66f2377ae7bb897c2b5e65fedb20d4bd,blend,test,United Kingdom,Europe,1,0,-1,0
+3383e9569da4dd651d3310da499f3a1d007e982a,blend,test,United Kingdom,Europe,1,0,-1,0
+34597f3aff489bea2f3f4318f9834e0f6077bbe3,blend,test,United Kingdom,Europe,1,0,-1,0
+354c65c054a0d84f9c03df733afb579f1cb751de,blend,test,United States,America,1,1,0,0
+35a3cfa447a3636d0be31bb2ffe2a4e82c0e2a0d,blend,test,United Kingdom,Europe,1,0,-1,0
+3639a45db587c551541d20c86c454f713e9e85c6,blend,test,United States,America,1,0,-1,0
+365c13e4cc91a75513d9fca56829b65ade86b7b1,blend,test,United Kingdom,Europe,1,0,-1,0
+376bb01789f005b3bbce803b3aec554c6a0c5336,blend,test,United Kingdom,Europe,1,0,-1,0
+37a18427cfccfea7e616f861b696227aac50fafa,blend,test,United States,America,1,0,-1,0
+37e0ad7b1a7bf37009638b33175afcc2f1bfb12f,blend,test,United Kingdom,Europe,1,0,-1,0
+37f73aacf37f35d506fb0e60a43093e94b1dae5d,blend,test,United Kingdom,Europe,1,0,-1,0
+380238666e83c93ae697aaef0f94f9106edbef84,blend,test,United Kingdom,Europe,1,0,-1,0
+38076c0922d2d0acccfc79fe9fc0d9912fa68537,blend,test,Algeria,Africa,1,1,0,0
+38414f2234cc2b44612cc996670a7bce80152e2f,blend,test,"Korea, Republic of",Asia,1,1,0,0
+384f288ed01a69e18ca411873d8a5f1089560c6c,blend,test,United Kingdom,Europe,1,0,-1,0
+389e2d37f398f6ab9672692aa62b141569a33d22,blend,test,United Kingdom,Europe,1,0,-1,0
+38c2f29c2178cf4ab9f752dffdf758d3f9831cc8,blend,test,United States,America,1,1,0,0
+390787797cb05006866d71fc36d3aa05b74fbeca,blend,test,United Kingdom,Europe,1,0,-1,0
+3932206e80544b50826d9d738f3b6e49627de3d6,blend,test,United Kingdom,Europe,1,0,-1,0
+39a0a99d5aeb1f48e4a842adc486ae4272cbce19,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+3a8536bb3d5b346f9e0ba51b2b9dce85763729f9,blend,test,United States,America,1,0,-1,0
+3b2b3d94bb7e55ed3d1d62cf1a44dceb91aec47a,blend,test,United Kingdom,Europe,1,0,-1,0
+3b6ab5a53d357c15cb24631b18cd486036ea562f,blend,test,United Kingdom,Europe,1,0,-1,0
+3bc7cfdf49dbe23dde017b3d99da1cc235585ed1,blend,test,United Kingdom,Europe,1,1,0,0
+3ce7e289e4e2637c40a0fb38975c7b8a42611940,blend,test,United Kingdom,Europe,1,1,0,0
+3cebf84a585c9d59a589039f2724cd547f64a483,blend,test,United Kingdom,Europe,1,0,-1,0
+3e72bdafbdef8949f9c5cd6e751626d365258fc1,blend,test,United States,America,1,0,-1,0
+3f181b126a311a25c7ec98c890415aced70b7e01,blend,test,United Kingdom,Europe,1,0,-1,0
+3fc539ee2ebbaf488f1e412570e80985768aeb43,blend,test,United States,America,1,0,-1,0
+4164c0a3182682139ff0db71f6cabc9c1eb542af,blend,test,United Kingdom,Europe,1,0,-1,0
+4223e8234bf612bd559f1b8acaa3debebaf5560d,blend,test,United Kingdom,Europe,1,0,-1,0
+4486e2db3b2e1235ede8b755ec7bd011085ac295,blend,test,United Kingdom,Europe,1,1,0,0
+460eaae3fffcecd0138435620e6988b81f27c279,blend,test,"Korea, Republic of",Asia,1,1,0,0
+46afbfa398bfdce6f711aa3ac638027df5695bb1,blend,test,United Kingdom,Europe,1,0,-1,0
+46ba905f4f1fe6b79d0b40ffb80b3903a1b56734,blend,test,United Kingdom,Europe,1,0,-1,0
+46d1ba2dd37ea74a3bf62bd0a1580ecc541dd448,blend,test,United Kingdom,Europe,1,0,-1,0
+47cac46866f768ee868d0532672c6e5618b36d17,blend,test,United Kingdom,Europe,1,0,-1,0
+4960bc20baa1ec9aac174e02be7925dbf8ea7964,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+4b4e27a05b560f8117f44846bc85caf78227c3fa,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+4d27586cf7512d179e797c5f7432e8bbb44d48e1,blend,test,United Kingdom,Europe,1,1,0,0
+4d8bab07a0cdece63cf72c271e564cca0192a0e0,blend,test,United Kingdom,Europe,1,0,-1,0
+4d97060846ddb074dea3ecd9df1856364e58978e,blend,test,United Kingdom,Europe,1,0,-1,0
+4de4b68716862e974a03eb4e980dbac436abf99f,blend,test,United Kingdom,Europe,1,0,-1,0
+4e10d797bdf0534747e1f30dabeb5163f434d610,blend,test,United States,America,1,0,-1,0
+4eb4594c92109db6e0fd2c8b07d4398c683ac6b0,blend,test,United Kingdom,Europe,1,1,0,0
+4faaa872df291aff0d74746531a08aadd7213c77,blend,test,United Kingdom,Europe,1,0,-1,0
+4ff9e130d7677e33c8460c44799ad097341524cd,blend,test,United Kingdom,Europe,1,0,-1,0
+505ca45f0a5fb7c61146b33691990ebce2ac665b,blend,test,United Kingdom,Europe,1,0,-1,0
+514e1d56ae40778f8da6bd9a7b8083d2a31152e9,blend,test,United States,America,1,1,0,0
+51bfd920eeb40b10c99abe6ad7492fa6aaec6a0c,blend,test,United Kingdom,Europe,1,0,-1,0
+52538a09f52909a9ec5fcf6510344c3fe97d81e5,blend,test,United Kingdom,Europe,1,0,-1,0
+52731f1cdac1be77f626183395258cd79a46cea1,blend,test,United Kingdom,Europe,1,0,-1,0
+532279895f6afdaf955a52eb974ef78cb281b0a2,blend,test,United States,America,1,0,-1,0
+534e917c5d5d1cc4e9868de51ba547e282229129,blend,test,United Kingdom,Europe,1,0,-1,0
+53f256ac20705e4a9e4b96b99fc43e2e83df9d6e,blend,test,United Kingdom,Europe,1,0,-1,0
+543a7c19e0381ed4659cb36b8b4b21cbcee71732,blend,test,Algeria,Africa,1,0,-1,0
+54425640b9e72ca1ae6c11cb5c96365636a6b352,blend,test,United Kingdom,Europe,1,1,0,0
+55c45a5355f71cf0652ce8de3a54afe68af3a5d5,blend,test,United Kingdom,Europe,1,0,-1,0
+59273d690e1dbf016c13639b703e669e4619c19e,blend,test,United Kingdom,Europe,1,0,-1,0
+5952175efbafb99d94bcf1396f6b8f963371a251,blend,test,United Kingdom,Europe,1,0,-1,0
+59ae162bf7bf6d43c147db0a28a9c4b32ab41feb,blend,test,United Kingdom,Europe,1,1,0,0
+59c4e0858f66adc8100c99f9addc9013102e382f,blend,test,United Kingdom,Europe,1,0,-1,0
+5ab7660f9c5ae843d053f9adeddfad667dc0221e,blend,test,United Kingdom,Europe,1,0,-1,0
+5afdeabc8cba89b3096982461ef8856d62488c0d,blend,test,United Kingdom,Europe,1,0,-1,0
+5b178531db0c68cd57b66da5b0c1a2ee6cc9a631,blend,test,United States,America,1,0,-1,0
+5c0f05156a694e0a43bad417dcd05b78d4d7e5d1,blend,test,United Kingdom,Europe,1,1,0,0
+5c515712f0eb1e8283991bbc89020735cd19842b,blend,test,United Kingdom,Europe,1,0,-1,0
+5cc800cb3bfc9832dfad92d0ab852ee31f84fd49,blend,test,United States,America,1,0,-1,0
+5ce23a2999ecb716cec3aa3a1d8293c83add892f,blend,test,United Kingdom,Europe,1,0,-1,0
+5ed7390413d05d3c1eaf9ecbf9586227154f6345,blend,test,United Kingdom,Europe,1,0,-1,0
+5f115da4fb009c5652a2e2fa6c12129f981a69fa,blend,test,United Kingdom,Europe,1,1,0,0
+606191df98b2c6c706fcca5259c40a8906b9586d,blend,test,United Kingdom,Europe,1,0,-1,0
+609765bb5af4d4f6d9257f56ba13847d6a4885ea,blend,test,United Kingdom,Europe,1,0,-1,0
+60f0219591a2191e55ab3d759c0e11bc1905a597,blend,test,United Kingdom,Europe,1,0,-1,0
+61bc93df8125a87bd439ed2deda0d4e8c9168081,blend,test,United Kingdom,Europe,1,0,-1,0
+624c6035dd8b278b3850ad2fa199cf5edabc2fe9,blend,test,United Kingdom,Europe,1,0,-1,0
+62dd6a3681fe3a54921fa687f9ab30ef52d292e9,blend,test,United Kingdom,Europe,1,0,-1,0
+638d96ef145626abc4bf56a4fce117c6fd234c9b,blend,test,United Kingdom,Europe,1,0,-1,0
+63d60f16bb8787a26937bcd19b293590bff71641,blend,test,United Kingdom,Europe,1,0,-1,0
+63e0da1168bb51bf222b329acf437e0f63862666,blend,test,United Kingdom,Europe,1,0,-1,0
+6420899d76c16033a6420288510afea824001989,blend,test,United Kingdom,Europe,1,0,-1,0
+6450f79844ea51c723ee7aa93f325c0e548efa39,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+65a6ff5e6fb14a338427b0ce9032bab6a90c0c94,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+65d79388e7f5bbe76911ed5eabe34638f930b37b,blend,test,United Kingdom,Europe,1,0,-1,0
+66f9d37b1d787be646fde53a5ffd683f6693d84d,blend,test,"Korea, Republic of",Asia,1,1,0,0
+671353b1cf0bc949c64969fc47f3f2803545bad4,blend,test,United Kingdom,Europe,1,0,-1,0
+67b2fcb262f80cf302b881ce7a72e492e33b42c5,blend,test,United Kingdom,Europe,1,0,-1,0
+67df67b7a607c6f49b88fbfc609eda399870c932,blend,test,United Kingdom,Europe,1,0,-1,0
+67e40e3977f711a27dd9bb4a39cf070bec11ad48,blend,test,United Kingdom,Europe,1,0,-1,0
+680e9becdbf0100aa4cb438bc017abe484b98068,blend,test,United States,America,1,0,-1,0
+6b641661f9684798fbaa25d5626c66a10b1915e8,blend,test,United Kingdom,Europe,1,0,-1,0
+6c3fa2e26f44729788f5ae7d9f4cc3c6930122ee,blend,test,United Kingdom,Europe,1,0,-1,0
+6ca4a505a783b3f5238abc234176c07a18a3e824,blend,test,China,Asia,1,0,-1,0
+6cc27c41ef04739a05406844918a57c00599ae98,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+6d932cc6eae9109731a4563418f5c73343dc3a8a,blend,test,United Kingdom,Europe,1,0,-1,0
+6db574f16a4ea6e8bbc79d2541871fb693f7db53,blend,test,United Kingdom,Europe,1,0,-1,0
+6dc7e2bd990cd938d9596030ddbbc79c1e828002,blend,test,United Kingdom,Europe,1,0,-1,0
+6dd0eac882214a2a571c8bec3da448b8c3c865c7,blend,test,United Kingdom,Europe,1,0,-1,0
+6e26a192afc6e8b8d31f852bf0af5c655d3fbeac,blend,test,United Kingdom,Europe,1,0,-1,0
+6e39918148e207e28d51008f6485d21b6c520814,blend,test,United Kingdom,Europe,1,0,-1,0
+6f369d54812937584ebdf22ac22131a11211381b,blend,test,United Kingdom,Europe,1,0,-1,0
+70e24cef0a5b72b5a2ef7d10f17f16119b6d1cf1,blend,test,United Kingdom,Europe,1,0,-1,0
+7177a4c91491374c56ad96def6ba601312852764,blend,test,United Kingdom,Europe,1,0,-1,0
+71b6e22e4a0b408997aa6b07d4e218978e007a81,blend,test,United Kingdom,Europe,1,0,-1,0
+72d2a4ec928aed05911cc06d7354685f508975a1,blend,test,United Kingdom,Europe,1,1,0,0
+73d5317766d2025cdf865df5ec1a2a6c2dd4f297,blend,test,United Kingdom,Europe,1,0,-1,0
+7411712d7beebe4a9a4583f4d628ebd24f35fa38,blend,test,United Kingdom,Europe,1,0,-1,0
+7423b19d47ba459f9fe3515333d1ea55ece0178e,blend,test,United Kingdom,Europe,1,0,-1,0
+7508bbb9e54e88b12a9935f456f4ff1725d7b57a,blend,test,United Kingdom,Europe,1,0,-1,0
+7558032b1907d1513d61b1170d09d1dd5e41d9fa,blend,test,United States,America,1,0,-1,0
+76905b643130aba099d01cd4512164a62a2b3884,blend,test,United States,America,1,0,-1,0
+77261572bda8afc689658fca47bba5e9d7e56098,blend,test,"Korea, Republic of",Asia,1,1,0,0
+779ccfcb45f2fe46c38ddcc4b0a87ba3f628c01d,blend,test,United Kingdom,Europe,1,0,-1,0
+780f8a96bedb315cf1e6860da5505a2dacc41ba7,blend,test,United States,America,1,0,-1,0
+789550571837017b1333e620cd5cb46523a5044d,blend,test,United Kingdom,Europe,1,0,-1,0
+78c7b56f457e4cd828a0b6f4caa5df0c90f6e2df,blend,test,United Kingdom,Europe,1,0,-1,0
+7a2f970ad33dd54f4e565b2b2afb34d015ec2d3d,blend,test,United Kingdom,Europe,1,1,0,0
+7ae01e22f16d0b1f93e3ed249305f02da265b9f3,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+7aed47015583e69ad42ecf1a519ae4fb3339a72c,blend,test,United Kingdom,Europe,1,0,-1,0
+7bb204b309344574ca8cb8bc4352190ab12660de,blend,test,United Kingdom,Europe,1,0,-1,0
+7bcc86722b6c0e5ea96419904887c6b08d4f0e68,blend,test,United States,America,1,0,-1,0
+7c14192ff5a413b43cc90dc10675036ea2f76ce5,blend,test,United Kingdom,Europe,1,1,0,0
+7d8df7bde3bdbd701aa5ca74dcc5fb1507c2ce76,blend,test,United Kingdom,Europe,1,0,-1,0
+7dbad9b38b5791da906994e6edfebe3a9d03d7b7,blend,test,United Kingdom,Europe,1,1,0,0
+7e9a7c0f09b60ab47e5d8bcf23f60b67a73f2256,blend,test,Algeria,Africa,1,1,0,0
+802d77ed2b882dba4310c5005153db3e920dbb44,blend,test,United Kingdom,Europe,1,0,-1,0
+808bf88bb1159decaa0e778c1f0a9e695e3739e6,blend,test,United Kingdom,Europe,1,1,0,0
+80996f119f30c53a6c14deaaa7d7198a24f99b92,blend,test,United Kingdom,Europe,1,1,0,0
+810ab42c48320a19339f7199116bc57d2d03a3cf,blend,test,United Kingdom,Europe,1,1,0,0
+81bf4a04d4c32d2b1c73f53eb3aae653a3104927,blend,test,United Kingdom,Europe,1,1,0,0
+8226363c7e01fd8ef9c855011d47e8944d895312,blend,test,United Kingdom,Europe,1,0,-1,0
+8240ff2c96f1afb45cb937e338488d382e8713f7,blend,test,United Kingdom,Europe,1,0,-1,0
+8307f52ff087dbc87966e41fcdffddcd1dde187b,blend,test,United Kingdom,Europe,1,0,-1,0
+83c2b0f19f46944e15f182c34057a11fc5fd173d,blend,test,United Kingdom,Europe,1,0,-1,0
+846bf19a7f9e4d55f7b26485231609a34ef96f3d,blend,test,United Kingdom,Europe,1,0,-1,0
+858a02b470419a0fafc29db1a2dff699db515c7a,blend,test,United Kingdom,Europe,1,0,-1,0
+85d03d25bf59e7a5ba18ff8b5a5b8219281aaf95,blend,test,United Kingdom,Europe,1,0,-1,0
+8618cc15ab788724e207caef6164e2d8eadd51d9,blend,test,United States,America,1,0,-1,0
+868135c412320859b74aa0e9aca9a3633030d232,blend,test,United Kingdom,Europe,1,0,-1,0
+86d1ee84268b1fe1eb92d52bb1ae5cdb4f739ed7,blend,test,United Kingdom,Europe,1,0,-1,0
+890e9b1f90ac3371289c0f5479868b905b1be0fe,blend,test,United Kingdom,Europe,1,0,-1,0
+891b4e8177e4d93f7e02fd16c480b498ea24ad32,blend,test,United Kingdom,Europe,1,0,-1,0
+8a10b8c1d407f3c8bdc03a74c823ac6c554b6b50,blend,test,United Kingdom,Europe,1,0,-1,0
+8a3be48b721363a71b61e028074b22a41c35e18b,blend,test,United Kingdom,Europe,1,0,-1,0
+8a6bf0e9f61228841995e2196e379a345828f956,blend,test,"Korea, Republic of",Asia,1,1,0,0
+8b3d475de54b16f62989ffefc0abb2809b0ab5b8,blend,test,United Kingdom,Europe,1,1,0,0
+8bf98b99b7f75225275762a84a73d255ad917e34,blend,test,United Kingdom,Europe,1,0,-1,0
+8c51c65ba8852982aa7b3ec1d713449c78d3b035,blend,test,United Kingdom,Europe,1,1,0,0
+8cfae99e68b94a4f914d6436e33f73dcdc13c3c0,blend,test,Algeria,Africa,1,0,-1,0
+8d840a1a1be3d2d4777dba8e572a97379a620efe,blend,test,United Kingdom,Europe,1,0,-1,0
+8e3a668d0891ddf2f2ca4bbc7e127ffac51fc545,blend,test,United Kingdom,Europe,1,0,-1,0
+8f87b637576a9b8d9a62f47c2e5e0c33a1005c46,blend,test,United Kingdom,Europe,1,0,-1,0
+904210c002d9c78f21cff8ad59e78b046cbe2d6d,blend,test,United Kingdom,Europe,1,0,-1,0
+92eb517518cc6732bab2a511e63bcaaa75d9aafd,blend,test,United Kingdom,Europe,1,0,-1,0
+93075c924aa33cff8aae82aacfad2e4b730e9090,blend,test,United Kingdom,Europe,1,0,-1,0
+93de128a86729a3ccbd321ed44ffcc8d7f610693,blend,test,United Kingdom,Europe,1,0,-1,0
+94a38051442174d52bb62bb77987439824007218,blend,test,United Kingdom,Europe,1,0,-1,0
+94b3bbe47e2be3cd96b9ba359c474433fb876ed2,blend,test,United Kingdom,Europe,1,0,-1,0
+951fd3085ecc6a31ac40fdfb34279bfa098397a5,blend,test,United Kingdom,Europe,1,1,0,0
+9561ffe8a573565739af8f79673322c16da4be29,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+959dbf7f5f09f83a1001b055c64c6fff95209eb3,blend,test,United Kingdom,Europe,1,0,-1,0
+95db3f994acbdeadb1b304df196dae15afa6021e,blend,test,United States,America,1,0,-1,0
+95fb8fb1dbe113090d7b39bdd2659de18cfced38,blend,test,United Kingdom,Europe,1,0,-1,0
+9637ebb44b4917a2ffc99d0200c7d32575c3865f,blend,test,United Kingdom,Europe,1,0,-1,0
+97768688eddf62c2503667fe19e4f1673df09e25,blend,test,United Kingdom,Europe,1,0,-1,0
+984868e7a63cb0c5f7b3c67ff1fbfedb93ad54c4,blend,test,United Kingdom,Europe,1,0,-1,0
+9881ba3a261ec8a9af5f12c453b8eb968aa4e0d3,blend,test,"Korea, Republic of",Asia,1,1,0,0
+996d8e77e5aebc1cc055205c3409dd933806203e,blend,test,United Kingdom,Europe,1,1,0,0
+9af09aacf8975f44d178ee0eceb4d003f189f680,blend,test,United Kingdom,Europe,1,0,-1,0
+9b0f0c8f5a5b5553050dd6231fc2bddb81ed9529,blend,test,United Kingdom,Europe,1,0,-1,0
+9bb2f33b95bba1f0c4b72a5ce54a5ff9a069b8fb,blend,test,United States,America,1,1,0,0
+9c730bce638183c64e6a0092e90342f2da5e8a17,blend,test,United Kingdom,Europe,1,0,-1,0
+9d61b073790db63c844e2944083b9eae219f1d1d,blend,test,United Kingdom,Europe,1,0,-1,0
+9dcc15203cffd711cfa95f7d6cea34f0dd93ca8a,blend,test,United Kingdom,Europe,1,0,-1,0
+9f07644ae24b26df37ee756ad1a6a2683c173321,blend,test,United States,America,1,0,-1,0
+9f4fd274ebd614b47d0da8ff5c4c64e8c24aeff9,blend,test,United Kingdom,Europe,1,0,-1,0
+9f92867b72e55a6f7c86a4c4cf72b42491527778,blend,test,United Kingdom,Europe,1,0,-1,0
+9fbfe27a267cc75832a972b9050e15bdada80252,blend,test,United Kingdom,Europe,1,1,0,0
+a01a5fabd0b030d2875e482789f46b43221f1dbf,blend,test,United Kingdom,Europe,1,1,0,0
+a083a4ddcd9b02f73294b00247925a34c938e3ca,blend,test,United Kingdom,Europe,1,0,-1,0
+a0b50bedadd4552253f872c92d5ddd6b2bf72b40,blend,test,United Kingdom,Europe,1,0,-1,0
+a1501afcdbbca9350e3cb83dd78a68200bfe5000,blend,test,United States,America,1,0,-1,0
+a296ad2b7abb00222da7b076e2624a37b153b656,blend,test,United Kingdom,Europe,1,0,-1,0
+a2c6c1bbe92989aca96f5b9caa355aae7e5ee695,blend,test,United Kingdom,Europe,1,1,0,0
+a32da3dec925ef625d12ceac0dfb2fa66e99065f,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+a4ca5df1afe4eff803228f339d58f00767105d5f,blend,test,United Kingdom,Europe,1,0,-1,0
+a5c511126e24a3032d0e3497e129368ddc2cc702,blend,test,United Kingdom,Europe,1,0,-1,0
+a678133a81ddae03218c55add90ba55e96c01a84,blend,test,United Kingdom,Europe,1,0,-1,0
+a6bd58a197932dfe45d90b71777830ff6459fde9,blend,test,United Kingdom,Europe,1,0,-1,0
+a6e2c3e51789a2ed96e702a37c07e918e37b78ce,blend,test,United Kingdom,Europe,1,0,-1,0
+a6ea4e825ce0ca89352e8a558470595be32d0f94,blend,test,United Kingdom,Europe,1,0,-1,0
+a85859e1118b5a62a12fc5b79cc9bd109f231946,blend,test,United States,America,1,0,-1,0
+a8e6ce5a0490d3b72fa22666f898fad586fe3366,blend,test,United Kingdom,Europe,1,0,-1,0
+a8e6ef4c68408cb199017ea33a420efc4c6917cb,blend,test,United Kingdom,Europe,1,0,-1,0
+ab276f61137efcf1b64423b8df1e4f7c2403f520,blend,test,United Kingdom,Europe,1,0,-1,0
+abddd5791cfd02fada8793e3f26e305b501fc1d6,blend,test,United States,America,1,0,-1,0
+abea97338e672785f4c3ebf5132a8caac6991d93,blend,test,United States,America,1,0,-1,0
+ad3fe9827ff14b2aa88c389c7c5d886fe4ce40a2,blend,test,United Kingdom,Europe,1,0,-1,0
+ad80c8efe97ed60a3d990139c1d20d408c2d6ee4,blend,test,United Kingdom,Europe,1,0,-1,0
+adadfe75528eb1e1f2e70310ae4d2ae72a0e1f2e,blend,test,United Kingdom,Europe,1,0,-1,0
+aef7e3cc17cebd94d0ab4b53cf695c8edad43afa,blend,test,United Kingdom,Europe,1,0,-1,0
+af43d680ac76ec73dcda9370015d0399fb5c90dd,blend,test,United Kingdom,Europe,1,0,-1,0
+afa233007bb9781a6d26f48277117144a24eba55,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+b02dd789585f90a8adc2d16c308bd9aa4ab86eac,blend,test,United Kingdom,Europe,1,0,-1,0
+b0abed0f18a219ac7e7c6eb24044478785f652e6,blend,test,United Kingdom,Europe,1,0,-1,0
+b1aadc34e0ea815466d40a3a2e52105135471d14,blend,test,United Kingdom,Europe,1,0,-1,0
+b1b9bfe497494675c6f7dd8cefe52edaa3883b25,blend,test,United Kingdom,Europe,1,0,-1,0
+b2785d09b1594fa745489c3a5e910c669379138f,blend,test,"Korea, Republic of",Asia,1,1,0,0
+b3e14e573e0159b8fd78c0543c35ce2753b309b3,blend,test,United Kingdom,Europe,1,0,-1,0
+b54047bebdfc5b49d40f383faa6295f5ca064b79,blend,test,United Kingdom,Europe,1,1,0,0
+b61d098dc0e991540fde03748facd7c634475370,blend,test,United Kingdom,Europe,1,0,-1,0
+b69b0e94487722402f600c63df435452e76601f5,blend,test,United Kingdom,Europe,1,0,-1,0
+b84e6354702d9724fbc1c0b611b7e54d55ebea23,blend,test,United Kingdom,Europe,1,0,-1,0
+b85b1dd62416efed81231ccd402877519fd2a581,blend,test,United Kingdom,Europe,1,0,-1,0
+b8d04e451cd8e10cdbe5052ef74d209160dfa28f,blend,test,United Kingdom,Europe,1,0,-1,0
+b9a906d03101333f56a55eb9a096e1da1b523245,blend,test,United Kingdom,Europe,1,0,-1,0
+bac5d6a74f37529d653b45f00ab5b0ac14ad84a7,blend,test,United Kingdom,Europe,1,0,-1,0
+bb1b6c20042c53fcd7a1e5c170cac682ab56e767,blend,test,United Kingdom,Europe,1,0,-1,0
+bbe7244215dd222daafca39b2e0f157673cad92d,blend,test,United Kingdom,Europe,1,0,-1,0
+bc0745dac5aed364d82d6e50dc3592358eb7e0a6,blend,test,United Kingdom,Europe,1,0,-1,0
+bc25125c1e215ddf040195ace5911d7cba15f8ee,blend,test,United Kingdom,Europe,1,0,-1,0
+bd1ac82703ba4baa12a0795bb62ad252c89ee81d,blend,test,United Kingdom,Europe,1,0,-1,0
+be2b8a262e64cf2cc177ee92f5a26a2770843447,blend,test,United Kingdom,Europe,1,1,0,0
+be49929a988b6db12023876a9751dd848c422645,blend,test,United Kingdom,Europe,1,0,-1,0
+bec7e5cb3883d0405986f03aa4c284c00a186296,blend,test,United States,America,1,0,-1,0
+bf6ebc8ad9b3c5c1be8ad76b95391d90f08e36f9,blend,test,United States,America,1,0,-1,0
+bfe72668fe1b69ae0e64df8a342252ebb1a5dc30,blend,test,United States,America,1,0,-1,0
+c0fab5b7ceb06f03221c2facf9766f5195241c65,blend,test,United Kingdom,Europe,1,1,0,0
+c19034aafc7e6cb836e99a4ae7d83e29e414227b,blend,test,United Kingdom,Europe,1,0,-1,0
+c1c0d79a05031861e24be2ee00c02bef5842316b,blend,test,United Kingdom,Europe,1,0,-1,0
+c208d54fd9fdd2ab46657460edc364a59156c6c3,blend,test,United Kingdom,Europe,1,0,-1,0
+c25d50be593a9e6ff3d16e43bd82005692143a64,blend,test,United Kingdom,Europe,1,0,-1,0
+c373f143d939b2054b30cb72a488b1d6c73edf12,blend,test,United Kingdom,Europe,1,0,-1,0
+c4c2833a60dd760933a8c9b7a3d6a1bb6d2199e3,blend,test,United Kingdom,Europe,1,0,-1,0
+c5beee8b532c2dc2983963444efcec43104cd0c0,blend,test,United Kingdom,Europe,1,0,-1,0
+c65a5d897763e290b91636d9b66384a82666732e,blend,test,United Kingdom,Europe,1,1,0,0
+c692a9b195223dead0085ed3eb228b3d351e2464,blend,test,United Kingdom,Europe,1,0,-1,0
+c7242e8ad5b7badf3bf10c0fe639f3aca3287f11,blend,test,United States,America,1,0,-1,0
+c8f72c0aed8960c75d7d4ccc77e8fe2601659b85,blend,test,United Kingdom,Europe,1,0,-1,0
+c9ef40cfb58ffc093f33b0adbde829e65a577556,blend,test,United Kingdom,Europe,1,0,-1,0
+cb8b539ed61e4eee19730af770d5ec3ffce72050,blend,test,United Kingdom,Europe,1,0,-1,0
+ccebb41e396c5dfc72483170b53dce630e65eb51,blend,test,United Kingdom,Europe,1,0,-1,0
+cd123ac0c91b2e586c67d839a74b64562752d5c6,blend,test,United Kingdom,Europe,1,0,-1,0
+ce01b783a7f2a4ee2ae63c8366f546b9502c6f23,blend,test,United Kingdom,Europe,1,0,-1,0
+ce11b9af6a4ae2ed294361f0d2699707b7c0d104,blend,test,United States,America,1,0,-1,0
+ceac4ca2b804212abbac09e874e8b8d4f9b68c2c,blend,test,United Kingdom,Europe,1,0,-1,0
+cee9b959d655c754df743d380fe73a2c7239d3c0,blend,test,United Kingdom,Europe,1,0,-1,0
+cf0cdbd4ea9899cbdb7e5842eebcab636aca0f52,blend,test,United Kingdom,Europe,1,0,-1,0
+cfb06dbe1dc78dbc18cb81b9b5f6eb949482f0cd,blend,test,United Kingdom,Europe,1,0,-1,0
+cfcdec17d55b5c9f4a79644bfb0917c73e0f482d,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+d0248a4872bb792c65a1756e96120d8fdb30976a,blend,test,United Kingdom,Europe,1,0,-1,0
+d0ca86376623603cbee3c38934fa1ee43268bfd8,blend,test,United Kingdom,Europe,1,0,-1,0
+d10f6f6a7d5a7ae490ac6c60242984f286a8fef9,blend,test,United Kingdom,Europe,1,0,-1,0
+d1ce89d8b53b32a4de53569781d4831272e873f3,blend,test,United Kingdom,Europe,1,0,-1,0
+d1f6eebad0a360c398d9641aa4399854affb82f6,blend,test,United Kingdom,Europe,1,0,-1,0
+d2c9cd4ea46026876970ae0dd569c0a8e7670351,blend,test,United Kingdom,Europe,1,1,0,0
+d3a0f68722ffc5045d37a3c6c9013ac792ebbab1,blend,test,United Kingdom,Europe,1,0,-1,0
+d47656f4ae8b88bfac2327257cf3d3dfb6ae1ec4,blend,test,United Kingdom,Europe,1,0,-1,0
+d5e420f9149ad5b7ca79e9be7fb6cc292c9000fb,blend,test,United Kingdom,Europe,1,1,0,0
+d5f6d940a4e02427387b1a08db510d62d6c5533e,blend,test,United Kingdom,Europe,1,1,0,0
+d61dc8cd7d12661aac7a36dbba6db348b0591a92,blend,test,United States,America,1,0,-1,0
+d67fb0a2f58c16f94b08cef948ae0912305e897c,blend,test,United Kingdom,Europe,1,0,-1,0
+d6e1bc9dcf3df5dcb9b90b3c9304ac29d6854ea9,blend,test,United Kingdom,Europe,1,1,0,0
+d7f39402ebda1bbc35c65f3fbfa8f0d47e005989,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+d81f263be61277fe5418af34a6d7e9fff82f7f83,blend,test,United Kingdom,Europe,1,0,-1,0
+d8e0ae8644cbd5ac1b34b078f704e2fa42a37541,blend,test,United Kingdom,Europe,1,0,-1,0
+d905985eef211026fb7e74414eb1b30b7a99681f,blend,test,United Kingdom,Europe,1,0,-1,0
+d9ca0c5933de24aba7e6b2c82f5ee30a4154aa61,blend,test,"Korea, Republic of",Asia,1,1,0,0
+da5e300891eebc6f791f8a2f6f2b23c9aac45e78,blend,test,United Kingdom,Europe,1,0,-1,0
+dabc6093e2192edd1dd108e8fd36b8e73355b1ff,blend,test,United Kingdom,Europe,1,0,-1,0
+db19b9c9a4197217b77694eeb9e01d7124ba3591,blend,test,United Kingdom,Europe,1,0,-1,0
+dca7438abb044407dea5be4d8c2df204720c885c,blend,test,United States,America,1,0,-1,0
+dd0c04bbfab02d3d27f3b6684497a946ec369299,blend,test,United States,America,1,0,-1,0
+dd34dc7b6fb23f1e8b7321d972a9eeafc27737a0,blend,test,United Kingdom,Europe,1,0,-1,0
+de24f723fb2bbf8e1c7c080e1f62101dfddd6b3c,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+de76601380082ad2e872b32ed8c232677469cb35,blend,test,United Kingdom,Europe,1,0,-1,0
+e01de5043513384f5d827c8233e212e300abb22c,blend,test,United States,America,1,0,-1,0
+e1a441824f48071ef5270f094128bcec52c92d2c,blend,test,United Kingdom,Europe,1,0,-1,0
+e3358264e4cb7e9a2b874018aecb91f3e7c9ec0a,blend,test,United States,America,1,0,-1,0
+e36200f95b0083d63179207e983d69ddf02ffa37,blend,test,United Kingdom,Europe,1,0,-1,0
+e3d9550925d0716f91aacff7710fced8fdaef940,blend,test,United Kingdom,Europe,1,0,-1,0
+e4f35824584ab02e547c56668bb014f2a5788028,blend,test,United Kingdom,Europe,1,0,-1,0
+e6225758c51647b5e24c3baf895a8b92d325c0f6,blend,test,United Kingdom,Europe,1,0,-1,0
+e705b7bc99201003f4e2d1dff84bc1409087dbda,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+e8a27ec7cecd073b0d6e98f762578e482530a872,blend,test,United Kingdom,Europe,1,1,0,0
+e95a06404cb4c2509bdf4652e6d79c2a1fd1b4a2,blend,test,United Kingdom,Europe,1,1,0,0
+e98cd1921ee509c9160d0de68d1720fe798bc6ef,blend,test,United Kingdom,Europe,1,0,-1,0
+e9ec4f4ce94357dacab115314dc5ab85dbd65dbc,blend,test,United Kingdom,Europe,1,1,0,0
+ea8dec4dfff55793df05cd96ebf8e52f5293a746,blend,test,United Kingdom,Europe,1,0,-1,0
+eb1d1ff468ec8760c03683ea525721b9f7c55b28,blend,test,United States,America,1,0,-1,0
+ed25ffa7ad7f69260a94343b20118d14c2116112,blend,test,United States,America,1,1,0,0
+ed663246dc8f2dd78641b577b690677338574b38,blend,test,United Kingdom,Europe,1,0,-1,0
+efcb6e8cabb2dded68c1e851f11848677f5a1eb9,blend,test,United Kingdom,Europe,1,1,0,0
+f0e10799a40fd1268880d64271c0677409b41e86,blend,test,United Kingdom,Europe,1,0,-1,0
+f0f2c90ca469dc863ee68be9ab141601fbf97661,blend,test,United Kingdom,Europe,1,0,-1,0
+f1148e3cc392f8aa741538860ce9669f003fbd0c,blend,test,United Kingdom,Europe,1,0,-1,0
+f1cd04c982b425bff43a7417b5f512704fc26e6c,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+f32a1956092f5cce7a9f90fbae87f9ccb5f78c73,blend,test,United States,America,1,0,-1,0
+f372037644ec30fc50890155ab33fda3b99aad83,blend,test,United Kingdom,Europe,1,0,-1,0
+f55492b8ee4640146c734185b5c55c58c2f95d04,blend,test,United Kingdom,Europe,1,0,-1,0
+f5ed4b1ccc093cd7cc7c5eabfc867f91b5e24bf6,blend,test,United Kingdom,Europe,1,0,-1,0
+f686faabd64e335372d4d751fcc89ef1198e71f1,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+f7184381aef5d9b5363393302e26bd41256d239b,blend,test,United Kingdom,Europe,1,1,0,0
+f731c95df7bf5d9935dbebf77099c4a8b944cdba,blend,test,United Kingdom,Europe,1,0,-1,0
+f84ac134f1141e3362ac5f3ade288a879698a356,blend,test,United Kingdom,Europe,1,0,-1,0
+f9323e67f88c41c62508dee21bcc8fe8d6c1e1c1,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+f93f63a5bbc79f60decdb86cad2ef9167e044668,blend,test,United Kingdom,Europe,1,1,0,0
+fb2b6be5358ce57d4c9dbcd240f814f478365d29,blend,test,United Kingdom,Europe,1,0,-1,0
+fb77bd52cfa447352657b39f5146a717db0965c9,blend,test,United Kingdom,Europe,1,1,0,0
+fb96058abb0b56cf2108d2bd0baf66739892f777,blend,test,United Kingdom,Europe,1,0,-1,0
+fbb85fcbd7438382e3d0ca401726d9ce6d178b98,blend,test,United Kingdom,Europe,1,0,-1,0
+fbde4631158b53aa87d002c477f8df94e64d7df9,blend,test,"Korea, Republic of",Asia,1,0,-1,0
+fc363d392dc20f93031e0d457fac8e1edd4c55d6,blend,test,United Kingdom,Europe,1,0,-1,0
+fd0f93b879b8583009055a21fc9ae891e8901aca,blend,test,United States,America,1,0,-1,0
+fd4cd24929e6e9cc289b25277a31f6e0deeedc6e,blend,test,United Kingdom,Europe,1,0,-1,0
+fdd5b3f41c80dcedb7749938f3c7c222c71c5763,blend,test,Algeria,Africa,1,0,-1,0
+fe826d7bb6662a14e6ea29cf3a82c42c60cdf81c,blend,test,United Kingdom,Europe,1,1,0,0
+fe900593b20724d65ae8addfa5fe4b7bf057d5e4,blend,test,United Kingdom,Europe,1,0,-1,0
+fe97c56a333c35ecdb27f2d258d294f232d9fa2f,blend,test,United Kingdom,Europe,1,0,-1,0
+ffd81f38739e6496d150b83300ef06b54d574c87,blend,test,United Kingdom,Europe,1,0,-1,0

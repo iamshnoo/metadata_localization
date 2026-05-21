@@ -1,6 +1,6 @@
 # Plot 7: Leave-One-Out Ablations (1B)
 
-- Source data: `/scratch/amukher6/metacul/results/perplexity_eval.csv`
+- Source data: `/path/to/metacul/results/perplexity_eval.csv`
 - Models:
   - Combined models and their step checkpoints.
   - Leave‑one‑out models (no Africa/America/Asia/Europe) and their step checkpoints.

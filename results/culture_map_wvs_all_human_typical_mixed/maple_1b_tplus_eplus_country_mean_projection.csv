@@ -1,0 +1,108 @@
+variant,label,model,train_metadata,eval_metadata,country,country_code,continent,RC1,RC2,Category
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Albania,al,Europe,-0.21959358358375208,-0.7193401134067976,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Algeria,dz,Africa,-0.3422278621295507,-0.07099796394688376,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Andorra,ad,Europe,-0.7714478370398457,2.198199559162815,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Argentina,ar,America,-0.21959358358375208,-0.7193401134067976,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Armenia,am,Asia,-0.21959358358375208,-0.7193401134067976,Orthodox Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Australia,au,Oceania,-0.6452736055390871,1.47686563646449,English-Speaking
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Austria,at,Europe,-0.5261792799482485,0.901515260242987,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Azerbaijan,az,Asia,-0.21959358358375208,-0.7193401134067976,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Bangladesh,bd,Asia,-0.34222786212955064,-0.07099796394688376,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Belarus,by,Europe,-0.34222786212955064,-0.07099796394688376,Orthodox Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Belgium,be,Europe,-1.013563103221165,2.855059215217414,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Bolivia,bo,America,-0.21959358358375208,-0.7193401134067976,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Bosnia Herzegovina,ba,Europe,-0.21959358358375208,-0.7193401134067976,Orthodox Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Brazil,br,America,-0.21959358358375208,-0.7193401134067976,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Bulgaria,bg,Europe,-0.21959358358375208,-0.7193401134067976,Orthodox Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Burkina Faso,bf,Africa,-0.21959358358375208,-0.7193401134067976,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Canada,ca,America,-0.28091072285665136,-0.39516903867684067,English-Speaking
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Chile,cl,America,-0.21959358358375208,-0.7193401134067976,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,China,cn,Asia,-0.21959358358375208,-0.7193401134067976,Confucian
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Colombia,co,America,-0.21959358358375208,-0.7193401134067976,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Croatia,hr,Europe,-0.2809107228566514,-0.39516903867684067,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Cyprus,cy,Asia,-0.3422278621295507,-0.07099796394688376,West & South Asia
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Czechia,cz,Europe,-0.6488135584940471,1.5498574097029008,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Denmark,dk,Europe,-0.21959358358375208,-0.7193401134067976,Protestant Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Ecuador,ec,America,-0.21959358358375208,-0.7193401134067976,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Estonia,ee,Europe,-0.21959358358375208,-0.7193401134067976,Orthodox Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Ethiopia,et,Africa,-0.5261792799482485,0.901515260242987,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Finland,fi,Europe,-0.3422278621295507,-0.07099796394688376,Protestant Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,France,fr,Europe,-0.7714478370398457,2.198199559162815,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Georgia,ge,Asia,-0.21605363062879213,-0.7923318866452085,Orthodox Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Germany,de,Europe,-0.21959358358375208,-0.7193401134067976,Protestant Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Ghana,gh,Africa,-0.2809107228566514,-0.39516903867684067,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Great Britain,gb,Europe,-0.46486214067534926,0.5773441855130301,English-Speaking
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Greece,gr,Europe,-0.21959358358375208,-0.7193401134067976,Orthodox Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Guatemala,gt,America,-0.21959358358375208,-0.7193401134067976,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Haiti,ht,America,-0.40354500140245,0.25317311078307314,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Hong Kong SAR,hk,Asia,-0.21959358358375208,-0.7193401134067976,Confucian
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Hungary,hu,Europe,-0.21959358358375208,-0.7193401134067976,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Iceland,is,Europe,-0.2809107228566514,-0.39516903867684067,Protestant Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,India,in,Asia,-0.21959358358375208,-0.7193401134067976,West & South Asia
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Indonesia,id,Asia,-0.21959358358375208,-0.7193401134067976,West & South Asia
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Iran,ir,Asia,-0.21959358358375208,-0.7193401134067976,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Iraq,iq,Asia,-0.28091072285665136,-0.39516903867684067,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Ireland,ie,Europe,-0.21959358358375208,-0.7193401134067976,English-Speaking
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Italy,it,Europe,-1.013563103221165,2.855059215217414,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Japan,jp,Asia,-0.21959358358375208,-0.7193401134067976,Confucian
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Jordan,jo,Asia,-0.2809107228566514,-0.39516903867684067,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Kazakhstan,kz,Asia,-0.21959358358375208,-0.7193401134067976,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Kenya,ke,Africa,-0.2809107228566514,-0.39516903867684067,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Kosovo,xk,Europe,-0.7101306977669464,1.8740284844328579,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Kyrgyzstan,kg,Asia,-0.21959358358375208,-0.7193401134067976,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Latvia,lv,Europe,-0.21959358358375208,-0.7193401134067976,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Lebanon,lb,Asia,-0.6488135584940471,1.5498574097029008,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Libya,ly,Africa,-0.832764976312745,2.5223706338927716,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Lithuania,lt,Europe,-0.28091072285665136,-0.39516903867684067,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Luxembourg,lu,Europe,-0.832764976312745,2.5223706338927716,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Macau SAR,mo,Asia,-0.21959358358375208,-0.7193401134067976,Confucian
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Malaysia,my,Asia,-0.21959358358375208,-0.7193401134067976,West & South Asia
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Maldives,mv,Asia,-0.21959358358375208,-0.7193401134067976,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Mali,ml,Africa,-0.3422278621295507,-0.07099796394688376,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Malta,mt,Europe,-0.832764976312745,2.5223706338927716,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Mexico,mx,America,-0.46486214067534926,0.5773441855130301,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Moldova,md,Europe,-1.3751593570380052,3.520436377866699,Orthodox Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Mongolia,mn,Asia,-0.3422278621295507,-0.07099796394688376,Confucian
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Montenegro,me,Europe,-0.5261792799482485,0.901515260242987,Orthodox Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Morocco,ma,Africa,-0.5874964192211478,1.2256863349729439,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Myanmar,mm,Asia,-0.21959358358375208,-0.7193401134067976,West & South Asia
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Netherlands,nl,Europe,-0.3422278621295507,-0.07099796394688376,Protestant Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,New Zealand,nz,Oceania,-0.40000504844749,0.1801813375446623,English-Speaking
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Nicaragua,ni,America,-0.5874964192211478,1.2256863349729439,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Nigeria,ng,Africa,-0.5261792799482485,0.901515260242987,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,North Ireland,gb-nir,Europe,-0.6488135584940471,1.5498574097029008,English-Speaking
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,North Macedonia,mk,Europe,-0.7714478370398457,2.198199559162815,Orthodox Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Northern Cyprus,cy-north,Asia,-0.832764976312745,2.5223706338927716,West & South Asia
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Norway,no,Europe,-0.21959358358375208,-0.7193401134067976,Protestant Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Pakistan,pk,Asia,-0.3422278621295507,-0.07099796394688376,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Palestine,ps,Asia,-0.5874964192211478,1.2256863349729439,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Peru,pe,America,-0.21959358358375208,-0.7193401134067976,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Philippines,ph,Asia,-0.21959358358375208,-0.7193401134067976,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Poland,pl,Europe,-0.21959358358375208,-0.7193401134067976,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Portugal,pt,Europe,-0.6488135584940471,1.5498574097029008,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Puerto Rico,pr,America,-0.832764976312745,2.5223706338927716,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Romania,ro,Europe,-0.21959358358375208,-0.7193401134067976,Orthodox Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Russia,ru,Europe,-0.21959358358375208,-0.7193401134067976,Orthodox Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Rwanda,rw,Africa,-0.21959358358375208,-0.7193401134067976,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Serbia,rs,Europe,-0.21959358358375208,-0.7193401134067976,Orthodox Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Singapore,sg,Asia,-0.3422278621295507,-0.07099796394688376,West & South Asia
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Slovakia,sk,Europe,-0.21959358358375208,-0.7193401134067976,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Slovenia,si,Europe,-0.21959358358375208,-0.7193401134067976,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,South Africa,za,Africa,-0.5839564662661878,1.152694561734533,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,South Korea,kr,Asia,-0.21959358358375208,-0.7193401134067976,Confucian
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Spain,es,Europe,-0.46486214067534926,0.5773441855130301,Catholic Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Sweden,se,Europe,-0.21959358358375208,-0.7193401134067976,Protestant Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Switzerland,ch,Europe,-0.5874964192211478,1.2256863349729439,Protestant Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Taiwan ROC,tw,Asia,-0.21959358358375208,-0.7193401134067976,Confucian
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Thailand,th,Asia,-0.21959358358375208,-0.7193401134067976,West & South Asia
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Trinidad and Tobago,tt,America,-0.21251367767383217,-0.8653236598836193,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Tunisia,tn,Africa,-0.8909288246753665,2.2067170657575,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Turkey,tr,Asia,-0.21959358358375208,-0.7193401134067976,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Ukraine,ua,Europe,-0.21959358358375208,-0.7193401134067976,Orthodox Europe
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,United States,us,America,-0.28091072285665136,-0.39516903867684067,English-Speaking
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Uruguay,uy,America,-0.21959358358375208,-0.7193401134067976,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Venezuela,ve,America,-0.21959358358375208,-0.7193401134067976,Latin America
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Vietnam,vn,Asia,-0.21959358358375208,-0.7193401134067976,West & South Asia
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Yemen,ye,Asia,-0.3422278621295507,-0.07099796394688376,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Zambia,zm,Africa,-0.7101306977669464,1.8740284844328579,African-Islamic
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",/path/to/metacul/models/combined_with_metadata_1b,True,True,Zimbabwe,zw,Africa,-0.34222786212955075,-0.07099796394688376,African-Islamic

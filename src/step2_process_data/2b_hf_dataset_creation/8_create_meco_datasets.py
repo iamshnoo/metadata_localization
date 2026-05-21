@@ -21,7 +21,7 @@ import traceback
 from pathlib import Path
 import gc
 
-HF_HOME_DEFAULT = "/scratch/amukher6/.cache/huggingface"
+HF_HOME_DEFAULT = "/path/to/workspace/.cache/huggingface"
 os.environ.setdefault("HF_HOME", HF_HOME_DEFAULT)
 os.environ.setdefault("HF_DATASETS_CACHE", os.path.join(os.environ["HF_HOME"], "datasets"))
 os.makedirs(os.environ["HF_DATASETS_CACHE"], exist_ok=True)

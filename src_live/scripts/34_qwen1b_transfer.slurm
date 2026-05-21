@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Usage:
-#   sbatch --export=CONFIG_FILE=/scratch/amukher6/metacul/qwen_transfer_configs/combined_with_metadata_qwen1b.yaml \
-#          /scratch/amukher6/metacul/src/scripts/34_qwen1b_transfer.slurm
+#   sbatch --export=CONFIG_FILE=/path/to/metacul/qwen_transfer_configs/combined_with_metadata_qwen1b.yaml \
+#          /path/to/metacul/src/scripts/34_qwen1b_transfer.slurm
 #
 # Optional overrides:
 #   --export=CONFIG_FILE=...,RUN_NAME=qwen1b_with_meta,NNODES=1,NPROC_PER_NODE=4
@@ -17,8 +17,8 @@
 #SBATCH --mem=250000M
 #SBATCH --wait-all-nodes=1
 #SBATCH --time=5-00:00:00
-#SBATCH --output=/scratch/amukher6/logs/culture/out/qwen1b_transfer.%A.out.txt
-#SBATCH --error=/scratch/amukher6/logs/culture/err/qwen1b_transfer.%A.err.txt
+#SBATCH --output=/path/to/logs/culture/out/qwen1b_transfer.%A.out.txt
+#SBATCH --error=/path/to/logs/culture/err/qwen1b_transfer.%A.err.txt
 
 set -euo pipefail
 
@@ -31,9 +31,10 @@ RUN_NAME="${RUN_NAME:-$(basename "${CONFIG_FILE%.yaml}")}"
 NNODES="${NNODES:-1}"
 NPROC_PER_NODE="${NPROC_PER_NODE:-4}"
 
-export PYTHON_BIN=/scratch/amukher6/nanotron-b200/bin/python
-export TORCHRUN_BIN=/scratch/amukher6/nanotron-b200/bin/torchrun
-export ACTIVATE_BIN=/scratch/amukher6/nanotron-b200/bin/activate
+export PYTHON_BIN=/path/to/nanotron-b200/bin/python
+export TORCHRUN_BIN=/path/to/nanotron-b200/bin/torchrun
+export ACTIVATE_BIN=/path/to/nanotron-b200/bin/activate
+export NANOTRON_DIR="${NANOTRON_DIR:-/path/to/workspace/pretrain/nanotron_full}"
 export ENABLE_TIMERS=1
 export CUDA_DEVICE_MAX_CONNECTIONS=1
 export STATS_SAMPLING_INTERVAL_IN_SEC=60
@@ -45,6 +46,7 @@ export TMPDIR=/tmp
 
 echo "Run name: ${RUN_NAME}"
 echo "Config: ${CONFIG_FILE}"
+echo "Nanotron dir: ${NANOTRON_DIR}"
 echo "Nodes: ${NNODES}"
 echo "GPUs/node: ${NPROC_PER_NODE}"
 
@@ -53,7 +55,8 @@ ml load gnu12/12.3.0
 ml load cuda/12.4.0
 ml load git
 
-cd /scratch/amukher6/pretrain/nanotron
+cd "${NANOTRON_DIR}"
+export PYTHONPATH="${NANOTRON_DIR}/src:${PYTHONPATH:-}"
 "${PYTHON_BIN}" -c "import sys; print(sys.version)"
 echo "NVCC version: $(nvcc --version | tail -n 1)"
 echo "Torchrun path: $(which torchrun)"

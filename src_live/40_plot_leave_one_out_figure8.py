@@ -7,9 +7,9 @@ import pandas as pd
 from matplotlib.lines import Line2D
 
 
-CSV_PATH = Path("/scratch/amukher6/metacul/results/significance/plot7.csv")
-RESULTS_DIR = Path("/scratch/amukher6/metacul/results/plots/plot7")
-LATEX_FIG = Path("/scratch/amukher6/metacul/latex/figs/main/7_leave_one_out_with_metadata.pdf")
+CSV_PATH = Path("/path/to/metacul/results/significance/plot7.csv")
+RESULTS_DIR = Path("/path/to/metacul/results/plots/plot7")
+LATEX_FIG = Path("/path/to/metacul/latex/figs/main/7_leave_one_out_with_metadata.pdf")
 
 STEPS = [2000, 4000, 8000, 10000]
 STEP_LABELS = ["2k", "4k", "8k", "10k"]

@@ -1,6 +1,6 @@
 # Plot 4: Cross-Continent Generalization (Local Models)
 
-- Source data: `/scratch/amukher6/metacul/results/perplexity_eval.csv`
+- Source data: `/path/to/metacul/results/perplexity_eval.csv`
 - Models: local continent models only (Africa, America, Asia, Europe).
 - Test sets: local continent test sets only (no combined).
 - Two figures: one for 500m and one for 1b.

@@ -8,9 +8,9 @@ import pandas as pd
 from matplotlib.lines import Line2D
 
 
-CSV_PATH = Path("/scratch/amukher6/metacul/results/plots/plot8/plot_8_pretrained_target_split_multiseed.csv")
-RESULTS_DIR = Path("/scratch/amukher6/metacul/results/plots/plot8")
-LATEX_MAIN_FIG = Path("/scratch/amukher6/metacul/latex/figs/main/8_accuracy_apples_to_apples_answered_by_all.pdf")
+CSV_PATH = Path("/path/to/metacul/results/plots/plot8/plot_8_pretrained_target_split_multiseed.csv")
+RESULTS_DIR = Path("/path/to/metacul/results/plots/plot8")
+LATEX_MAIN_FIG = Path("/path/to/metacul/latex/figs/main/8_accuracy_apples_to_apples_answered_by_all.pdf")
 
 
 def _series_row(df, family, series, split):
@@ -210,7 +210,9 @@ def main():
                     solid_capstyle="round",
                     zorder=1,
                 )[0]
-                connector.set_path_effects([pe.Stroke(linewidth=3.2, foreground="white", alpha=0.72), pe.Normal()])
+                connector.set_path_effects(
+                    [pe.Stroke(linewidth=3.2, foreground="white", alpha=0.72), pe.Normal()]
+                )
 
             for x_val, y_val, short_series, ci_val in row_points:
                 if ci_val is not None and ci_val > 0:
@@ -259,10 +261,10 @@ def main():
                 break
 
     legend_label_map = {
-        "T+/I+": ("o", colors["T+/I+"], "(T+,I+)"),
-        "T+/I-": ("^", colors["T+/I-"], "(T+,I-)"),
-        "T-/I+": ("D", colors["T-/I+"], "(T-,I+)"),
-        "T-/I-": ("s", colors["T-/I-"], "(T-,I-)"),
+        "T+/I+": ("o", colors["T+/I+"], "(T+, I+)"),
+        "T+/I-": ("^", colors["T+/I-"], "(T+, I-)"),
+        "T-/I+": ("D", colors["T-/I+"], "(T-, I+)"),
+        "T-/I-": ("s", colors["T-/I-"], "(T-, I-)"),
     }
     legend_handles = [
         Line2D([0], [0], marker=legend_label_map[short_series][0], color="none",
@@ -285,16 +287,6 @@ def main():
         handletextpad=0.5,
         columnspacing=1.0,
     )
-    if "accuracy_std" in df.columns and "seed_count" in df.columns:
-        fig.text(
-            0.99,
-            0.012,
-            "Bars show 95% CI across shuffle seeds",
-            ha="right",
-            va="bottom",
-            fontsize=10,
-        )
-
     fig.tight_layout(rect=(0.02, 0.02, 0.995, 0.95))
 
     args.results_dir.mkdir(parents=True, exist_ok=True)

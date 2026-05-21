@@ -25,11 +25,11 @@ The benchmark tests whether a model can answer culturally and geographically gro
 
 Paper: https://arxiv.org/abs/2601.15236
 
-Project repository: https://github.com/iamshnoo/metadata_localization
+Project repository: https://github.com/YOUR_HF_USERNAME/metadata_localization
 
 ## How The Dataset Was Created
 
-The dataset was assembled from JSON files in the project workspace under `qa_data/{continent}/{generator}.json`, then normalized and uploaded using [`build_hf_dataset.py`](/scratch/amukher6/metacul/qa_data/build_hf_dataset.py).
+The dataset was assembled from JSON files in the project workspace under `qa_data/{continent}/{generator}.json`, then normalized and uploaded using [`build_hf_dataset.py`](/path/to/metacul/qa_data/build_hf_dataset.py).
 
 Creation process:
 
@@ -106,7 +106,7 @@ This dataset does not contain raw NOW corpus text. It contains synthetic benchma
 ## Dataset Build Script
 
 The dataset card corresponds to the build pipeline in:
-- [`build_hf_dataset.py`](/scratch/amukher6/metacul/qa_data/build_hf_dataset.py)
+- [`build_hf_dataset.py`](/path/to/metacul/qa_data/build_hf_dataset.py)
 
 That script:
 
@@ -115,7 +115,7 @@ That script:
 - adds `continent` and `generated_by`
 - writes a normalized JSONL export
 - saves a Hugging Face dataset to disk
-- optionally pushes the dataset to `iamshnoo/qa_metacul`
+- optionally pushes the dataset to `YOUR_HF_USERNAME/qa_metacul`
 
 ## Citation
 
@@ -124,7 +124,7 @@ If you use this dataset, please cite the paper:
 ```bibtex
 @misc{metadata_conditioned_llms_2026,
   title={Metadata Conditioned LLMs},
-  author={A. Mukherjee and collaborators},
+  author={A. Author and collaborators},
   year={2026},
   eprint={2601.15236},
   archivePrefix={arXiv},

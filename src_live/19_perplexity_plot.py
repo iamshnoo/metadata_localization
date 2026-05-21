@@ -24,8 +24,8 @@ from matplotlib.offsetbox import AnnotationBbox, DrawingArea
 from matplotlib.patches import Circle, FancyBboxPatch, Rectangle
 from matplotlib.ticker import MaxNLocator
 
-RESULTS_CSV = "/scratch/amukher6/metacul/results/perplexity_eval.csv"
-PLOTS_DIR = "/scratch/amukher6/metacul/results/plots"
+RESULTS_CSV = "/path/to/metacul/results/perplexity_eval.csv"
+PLOTS_DIR = "/path/to/metacul/results/plots"
 
 
 if sns is not None:
@@ -120,7 +120,7 @@ def _find_per_sample_file(
     split="test",
     max_samples=1000,
     seed=42,
-    base_dir="/scratch/amukher6/metacul/results/per_sample_losses",
+    base_dir="/path/to/metacul/results/per_sample_losses",
 ):
     matches = []
     for meta_path in glob.glob(os.path.join(base_dir, "*.meta.json")):
@@ -168,7 +168,7 @@ COUNTRY_CODE_TO_NAME = {
 
 def plot_continent_models_metadata_effect():
     # Plot: continent models (500m, 1b) on their own continent, showing metadata effects.
-    # Output: /scratch/amukher6/metacul/results/plots/plot1/perplexity_continent_metadata_effect_{size}.pdf
+    # Output: /path/to/metacul/results/plots/plot1/perplexity_continent_metadata_effect_{size}.pdf
     df = _load_perplexity_df()
     axis_label_fs = 22
     tick_fs = 19
@@ -183,10 +183,10 @@ def plot_continent_models_metadata_effect():
             for model_meta in meta_order:
                 for test_meta in meta_order:
                     model_path = (
-                        f"/scratch/amukher6/metacul/models/{cont}_{model_meta}_{size}"
+                        f"/path/to/metacul/models/{cont}_{model_meta}_{size}"
                     )
                     test_path = (
-                        "/scratch/amukher6/metacul/training_data/meco_datasets/"
+                        "/path/to/metacul/training_data/meco_datasets/"
                         f"continents/{cont}/{test_meta}/"
                     )
                     pairs.add((model_path, test_path))
@@ -221,17 +221,17 @@ def plot_continent_models_metadata_effect():
     def _combo_label(model_meta, test_meta):
         train_tag = "T+" if model_meta == "with_metadata" else "T-"
         eval_tag = "I+" if test_meta == "with_metadata" else "I-"
-        return f"Local({train_tag},{eval_tag})"
+        return f"Local ({train_tag}, {eval_tag})"
 
     plot_df["combo"] = [
         _combo_label(m, t) for m, t in zip(plot_df["model_meta"], plot_df["test_meta"])
     ]
 
     combo_order = [
-        "Local(T+,I+)",
-        "Local(T+,I-)",
-        "Local(T-,I+)",
-        "Local(T-,I-)",
+        "Local (T+, I+)",
+        "Local (T+, I-)",
+        "Local (T-, I+)",
+        "Local (T-, I-)",
     ]
     continents = ["Africa", "America", "Asia", "Europe"]
 
@@ -375,10 +375,10 @@ def plot_continent_models_metadata_effect_factorial():
         "I+": {"linestyle": "-", "x_offset": 0.035, "marker": "o"},
     }
     combo_styles = {
-        ("T-", "I-"): {"color": "#d9d9d9", "label": "T-/I-"},
-        ("T-", "I+"): {"color": "#fad9b7", "label": "T-/I+"},
-        ("T+", "I-"): {"color": "#eca7a4", "label": "T+/I-"},
-        ("T+", "I+"): {"color": "#a3cea8", "label": "T+/I+"},
+        ("T-", "I-"): {"color": "#d9d9d9", "label": "(T-, I-)"},
+        ("T-", "I+"): {"color": "#fad9b7", "label": "(T-, I+)"},
+        ("T+", "I-"): {"color": "#eca7a4", "label": "(T+, I-)"},
+        ("T+", "I+"): {"color": "#a3cea8", "label": "(T+, I+)"},
     }
     label_colors = {
         ("T-", "I-"): "#666666",
@@ -622,7 +622,7 @@ def _aggregate_rows(rows):
 
 def plot_local_vs_global_on_local_and_global():
     # Plot: local vs global models on local test sets + global test set.
-    # Output: /scratch/amukher6/metacul/results/plots/plot2/perplexity_local_vs_global_{size}.pdf
+    # Output: /path/to/metacul/results/plots/plot2/perplexity_local_vs_global_{size}.pdf
     df = _load_perplexity_df()
     pairs = set()
     axis_label_fs = 24
@@ -635,10 +635,10 @@ def plot_local_vs_global_on_local_and_global():
     size_order = ["500m", "1b"]
 
     combos = [
-        {"label": "Global(T+,I+)", "scope": "global", "meta": "with_metadata"},
-        {"label": "Local(T+,I+)", "scope": "local", "meta": "with_metadata"},
-        {"label": "Global(T-,I-)", "scope": "global", "meta": "without_metadata"},
-        {"label": "Local(T-,I-)", "scope": "local", "meta": "without_metadata"},
+        {"label": "Global (T+, I+)", "scope": "global", "meta": "with_metadata"},
+        {"label": "Local (T+, I+)", "scope": "local", "meta": "with_metadata"},
+        {"label": "Global (T-, I-)", "scope": "global", "meta": "without_metadata"},
+        {"label": "Local (T-, I-)", "scope": "local", "meta": "without_metadata"},
     ]
 
     records = []
@@ -647,11 +647,11 @@ def plot_local_vs_global_on_local_and_global():
             for combo in combos:
                 meta = combo["meta"]
                 if combo["scope"] == "local":
-                    model_path = f"/scratch/amukher6/metacul/models/{cont}_{meta}_{size}"
+                    model_path = f"/path/to/metacul/models/{cont}_{meta}_{size}"
                 else:
-                    model_path = f"/scratch/amukher6/metacul/models/combined_{meta}_{size}"
+                    model_path = f"/path/to/metacul/models/combined_{meta}_{size}"
                 test_path = (
-                    f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{cont}/{meta}/"
+                    f"/path/to/metacul/training_data/meco_datasets/continents/{cont}/{meta}/"
                 )
                 pairs.add((model_path, test_path))
                 row = df[
@@ -675,10 +675,10 @@ def plot_local_vs_global_on_local_and_global():
         for combo in combos:
             meta = combo["meta"]
             test_path = (
-                f"/scratch/amukher6/metacul/training_data/meco_datasets/combined/{meta}/"
+                f"/path/to/metacul/training_data/meco_datasets/combined/{meta}/"
             )
             if combo["scope"] == "global":
-                model_path = f"/scratch/amukher6/metacul/models/combined_{meta}_{size}"
+                model_path = f"/path/to/metacul/models/combined_{meta}_{size}"
                 pairs.add((model_path, test_path))
                 row = df[
                     (df["model_path"] == model_path)
@@ -691,7 +691,7 @@ def plot_local_vs_global_on_local_and_global():
                 local_rows = []
                 for cont in continents:
                     model_path = (
-                        f"/scratch/amukher6/metacul/models/{cont}_{meta}_{size}"
+                        f"/path/to/metacul/models/{cont}_{meta}_{size}"
                     )
                     pairs.add((model_path, test_path))
                     row = df[
@@ -727,16 +727,16 @@ def plot_local_vs_global_on_local_and_global():
     gap = 0.06
     x = np.arange(len(region_labels))
     combo_styles = {
-        "Global(T+,I+)": {"color": "#a6cee3", "hatch": "o"},
-        "Global(T-,I-)": {"color": "#7f7f7f", "hatch": ""},
-        "Local(T+,I+)": {"color": "#9ad1a6", "hatch": "\\"},
-        "Local(T-,I-)": {"color": "#d9d9d9", "hatch": ""},
+        "Global (T+, I+)": {"color": "#a6cee3", "hatch": "o"},
+        "Global (T-, I-)": {"color": "#7f7f7f", "hatch": ""},
+        "Local (T+, I+)": {"color": "#9ad1a6", "hatch": "\\"},
+        "Local (T-, I-)": {"color": "#d9d9d9", "hatch": ""},
     }
     plot_order = [
-        "Global(T+,I+)",
-        "Global(T-,I-)",
-        "Local(T+,I+)",
-        "Local(T-,I-)",
+        "Global (T+, I+)",
+        "Global (T-, I-)",
+        "Local (T+, I+)",
+        "Local (T-, I-)",
     ]
 
     def _plot_panel(ax, subset, regions, labels):
@@ -768,7 +768,7 @@ def plot_local_vs_global_on_local_and_global():
                 label=combo,
                 color=style["color"],
                 hatch=style["hatch"],
-                edgecolor="#2e2e2e" if combo in ("Global(T-,I-)", "Local(T-,I-)") else "black",
+                edgecolor="#2e2e2e" if combo in ("Global (T-, I-)", "Local (T-, I-)") else "black",
                 linewidth=1.05,
                 error_kw=dict(ecolor="#2b2b2b", lw=1.8, capthick=1.8),
             )
@@ -850,7 +850,7 @@ def plot_local_vs_global_on_local_and_global():
 
 def plot_scaling_global_models():
     # Plot: scaling impact for the original 500M/1B global models as a dumbbell with delta annotations.
-    # Output: /scratch/amukher6/metacul/results/plots/plot3/perplexity_scaling_global_delta.pdf
+    # Output: /path/to/metacul/results/plots/plot3/perplexity_scaling_global_delta.pdf
     df = _load_perplexity_df()
     pairs = set()
     axis_label_fs = 22
@@ -867,15 +867,15 @@ def plot_scaling_global_models():
     records = []
     for meta in meta_order:
         for size in size_order:
-            model_path = f"/scratch/amukher6/metacul/models/combined_{meta}_{size}"
+            model_path = f"/path/to/metacul/models/combined_{meta}_{size}"
             for region, label in zip(regions, region_labels):
                 if region == "combined":
                     test_path = (
-                        f"/scratch/amukher6/metacul/training_data/meco_datasets/combined/{meta}/"
+                        f"/path/to/metacul/training_data/meco_datasets/combined/{meta}/"
                     )
                 else:
                     test_path = (
-                        f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{region}/{meta}/"
+                        f"/path/to/metacul/training_data/meco_datasets/continents/{region}/{meta}/"
                     )
                 pairs.add((model_path, test_path))
                 row = df[
@@ -902,7 +902,7 @@ def plot_scaling_global_models():
 
     plot_df = pd.DataFrame(records)
     local_subset = plot_df[plot_df["region"].isin(region_labels[:-1])]
-    fallback_pdf = "/scratch/amukher6/metacul/latex/figs/main/3_perplexity_scaling_global_delta.pdf"
+    fallback_pdf = "/path/to/metacul/latex/figs/main/3_perplexity_scaling_global_delta.pdf"
     if local_subset.empty or local_subset["size"].nunique() < 2:
         output_dir = os.path.join(PLOTS_DIR, "plot3")
         os.makedirs(output_dir, exist_ok=True)
@@ -1064,14 +1064,14 @@ def plot_scaling_global_models():
             [0],
             color=line_color,
             linestyle="solid",
-            label="Global(T+,I+)",
+            label="Global (T+, I+)",
         ),
         plt.Line2D(
             [0],
             [0],
             color=line_color,
             linestyle="dashed",
-            label="Global(T-,I-)",
+            label="Global (T-, I-)",
         ),
     ]
     axes[0].legend(
@@ -1098,15 +1098,15 @@ def plot_scaling_global_models():
 
 def plot_cross_continent_generalization():
     # Plot: cross-continent generalization (local models/tests), with deltas.
-    # Output: /scratch/amukher6/metacul/results/plots/plot4/perplexity_cross_continent_{size}.pdf
+    # Output: /path/to/metacul/results/plots/plot4/perplexity_cross_continent_{size}.pdf
     df = _load_perplexity_df()
     pairs = set()
     sig_plot4 = _load_significance_map(
-        "/scratch/amukher6/metacul/results/significance/plot4.csv",
+        "/path/to/metacul/results/significance/plot4.csv",
         ["size", "train_continent", "test_continent", "test_meta"],
     )
     sig_plot4_avg = _load_significance_map(
-        "/scratch/amukher6/metacul/results/significance/plot4_avg_by_test.csv",
+        "/path/to/metacul/results/significance/plot4_avg_by_test.csv",
         ["size", "test_continent", "test_meta"],
     )
 
@@ -1126,10 +1126,10 @@ def plot_cross_continent_generalization():
         values = []
         for train_cont in continents:
             row_vals = []
-            model_path = f"/scratch/amukher6/metacul/models/{train_cont}_{model_meta}_{size}"
+            model_path = f"/path/to/metacul/models/{train_cont}_{model_meta}_{size}"
             for test_cont in continents:
                 test_path = (
-                    f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{test_cont}/{test_meta}/"
+                    f"/path/to/metacul/training_data/meco_datasets/continents/{test_cont}/{test_meta}/"
                 )
                 pairs.add((model_path, test_path))
                 row = df[
@@ -1239,7 +1239,7 @@ def plot_cross_continent_generalization():
                         ax.text(
                             j + 0.82,
                             i + 0.18,
-                            "★",
+                            r"$\star$",
                             ha="center",
                             va="center",
                             fontsize=14,
@@ -1261,7 +1261,7 @@ def plot_cross_continent_generalization():
         axes[0, 0].collections[0].colorbar.ax.tick_params(labelsize=cbar_fs)
         _annotate_heatmap(axes[0, 0], with_with, plt.get_cmap("Greens"), value_norm)
         axes[0, 0].set_title(
-            "Local(T+,I+)",
+            "Local (T+, I+)",
             fontsize=title_fs,
             weight="bold",
             pad=12,
@@ -1282,7 +1282,7 @@ def plot_cross_continent_generalization():
         axes[0, 1].collections[0].colorbar.ax.tick_params(labelsize=cbar_fs)
         _annotate_heatmap(axes[0, 1], without_with, plt.get_cmap("YlOrBr"), value_norm)
         axes[0, 1].set_title(
-            "Local(T-,I+)",
+            "Local (T-, I+)",
             fontsize=title_fs,
             weight="bold",
             pad=12,
@@ -1311,7 +1311,7 @@ def plot_cross_continent_generalization():
             axes[0, 2], delta_with, plt.get_cmap("vlag"), delta_norm, sig_mask_with
         )
         axes[0, 2].set_title(
-            "Δ: Local(T-,I+) − Local(T+,I+)",
+            "Delta Local (T-, I+) vs Local (T+, I+)",
             fontsize=title_fs,
             weight="bold",
             pad=12,
@@ -1364,7 +1364,7 @@ def plot_cross_continent_generalization():
                 bar_ax_top.text(
                     i,
                     v + (0.28 if v >= 0 else -0.28),
-                    "★",
+                    r"$\star$",
                     ha="center",
                     va="bottom" if v >= 0 else "top",
                     fontsize=14,
@@ -1383,7 +1383,7 @@ def plot_cross_continent_generalization():
         axes[1, 0].collections[0].colorbar.ax.tick_params(labelsize=cbar_fs)
         _annotate_heatmap(axes[1, 0], with_without, plt.get_cmap("OrRd"), value_norm)
         axes[1, 0].set_title(
-            "Local(T+,I-)",
+            "Local (T+, I-)",
             fontsize=title_fs,
             weight="bold",
             pad=12,
@@ -1404,7 +1404,7 @@ def plot_cross_continent_generalization():
         axes[1, 1].collections[0].colorbar.ax.tick_params(labelsize=cbar_fs)
         _annotate_heatmap(axes[1, 1], without_without, plt.get_cmap("Greys"), value_norm)
         axes[1, 1].set_title(
-            "Local(T-,I-)",
+            "Local (T-, I-)",
             fontsize=title_fs,
             weight="bold",
             pad=12,
@@ -1433,7 +1433,7 @@ def plot_cross_continent_generalization():
             axes[1, 2], delta_without, plt.get_cmap("vlag"), delta_norm, sig_mask_without
         )
         axes[1, 2].set_title(
-            "Δ: Local(T-,I-) − Local(T+,I-)",
+            "Delta Local (T-, I-) vs Local (T+, I-)",
             fontsize=title_fs,
             weight="bold",
             pad=12,
@@ -1485,7 +1485,7 @@ def plot_cross_continent_generalization():
                 bar_ax_bottom.text(
                     i,
                     v + (0.28 if v >= 0 else -0.28),
-                    "★",
+                    r"$\star$",
                     ha="center",
                     va="bottom" if v >= 0 else "top",
                     fontsize=14,
@@ -1647,12 +1647,12 @@ def plot_cross_continent_generalization():
 
 
 def plot_cross_continent_asymmetry():
-    # Plot: cross-continent asymmetry for local models/tests (Local(T+,I+)).
-    # Output: /scratch/amukher6/metacul/results/plots/plot5/perplexity_asymmetry_{size}.pdf
+    # Plot: cross-continent asymmetry for local models/tests (Local (T+, I+)).
+    # Output: /path/to/metacul/results/plots/plot5/perplexity_asymmetry_{size}.pdf
     df = _load_perplexity_df()
     pairs = set()
     sig_plot5 = _load_significance_map(
-        "/scratch/amukher6/metacul/results/significance/plot5.csv",
+        "/path/to/metacul/results/significance/plot5.csv",
         ["size", "train_continent", "test_continent"],
     )
     axis_label_fs = 22
@@ -1669,10 +1669,10 @@ def plot_cross_continent_asymmetry():
         values = []
         for train_cont in continents:
             row_vals = []
-            model_path = f"/scratch/amukher6/metacul/models/{train_cont}_with_metadata_{size}"
+            model_path = f"/path/to/metacul/models/{train_cont}_with_metadata_{size}"
             for test_cont in continents:
                 test_path = (
-                    f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{test_cont}/with_metadata/"
+                    f"/path/to/metacul/training_data/meco_datasets/continents/{test_cont}/with_metadata/"
                 )
                 pairs.add((model_path, test_path))
                 row = df[
@@ -1750,7 +1750,7 @@ def plot_cross_continent_asymmetry():
                     ax.text(
                         j + 0.82,
                         i + 0.18,
-                        "★",
+                        r"$\star$",
                         ha="center",
                         va="center",
                         fontsize=14,
@@ -1783,13 +1783,13 @@ def plot_cross_continent_asymmetry():
 
 def plot_sft_accuracy_apples_to_apples():
     # Plot: apples-to-apples QA accuracy (answered_by_all=1) across continents.
-    # Output: /scratch/amukher6/metacul/results/plots/plot8/accuracy_apples_to_apples.pdf
+    # Output: /path/to/metacul/results/plots/plot8/accuracy_apples_to_apples.pdf
     axis_label_fs = 22
     tick_fs = 19
     legend_fs = 18
     title_fs = 16
     value_fs = 15
-    df = pd.read_csv("/scratch/amukher6/metacul/results/qa_metacul_eval.csv")
+    df = pd.read_csv("/path/to/metacul/results/qa_metacul_eval.csv")
 
     # Normalize known schema drift from eval aggregation outputs.
     # In some outputs, base_url is empty and url_corruption_rate stores the URL string.
@@ -1818,7 +1818,7 @@ def plot_sft_accuracy_apples_to_apples():
             df.loc[use_generated, "continent"] = gen_norm[use_generated]
 
     # If metadata-only runs were used, backfill missing variants from the original eval CSV.
-    original_path = "/scratch/amukher6/metacul/results/qa_metacul_eval_original.csv"
+    original_path = "/path/to/metacul/results/qa_metacul_eval_original.csv"
     if os.path.exists(original_path):
         df_orig = pd.read_csv(original_path)
         missing_cols = [
@@ -1874,25 +1874,25 @@ def plot_sft_accuracy_apples_to_apples():
         df["continent"] = df["continent"].astype(str).str.capitalize()
 
     models = {
-        "Global(T-,I-)": {
+        "Global (T-, I-)": {
             "correct": "custom_without_metadata_correct",
             "incorrect": "custom_without_metadata_incorrect",
             "color": "#f7a1b5",
             "hatch": "",
         },
-        "Global(T+,I+)": {
+        "Global (T+, I+)": {
             "correct": "custom_with_metadata_correct",
             "incorrect": "custom_with_metadata_incorrect",
             "color": "#a6cee3",
             "hatch": "o",
         },
-        "LLaMA-3.2(I-)": {
+        "LLaMA-3.2 (I-)": {
             "correct": "llama3_chat_without_metadata_correct",
             "incorrect": "llama3_chat_without_metadata_incorrect",
             "color": "#d9d9d9",
             "hatch": "",
         },
-        "LLaMA-3.2(I+)": {
+        "LLaMA-3.2 (I+)": {
             "correct": "llama3_chat_with_metadata_correct",
             "incorrect": "llama3_chat_with_metadata_incorrect",
             "color": "#7f7f7f",
@@ -1943,10 +1943,10 @@ def plot_sft_accuracy_apples_to_apples():
     order = [
         name
         for name in [
-            "Global(T+,I+)",
-            "Global(T-,I-)",
-            "LLaMA-3.2(I+)",
-            "LLaMA-3.2(I-)",
+            "Global (T+, I+)",
+            "Global (T-, I-)",
+            "LLaMA-3.2 (I+)",
+            "LLaMA-3.2 (I-)",
         ]
         if name in models
     ]
@@ -1981,7 +1981,7 @@ def plot_sft_accuracy_apples_to_apples():
             label=model,
             color=models[model]["color"],
             hatch=models[model]["hatch"],
-            edgecolor="none" if model in ("Global(T-,I-)", "LLaMA-3.2(I-)") else "black",
+            edgecolor="none" if model in ("Global (T-, I-)", "LLaMA-3.2 (I-)") else "black",
             linewidth=0.6,
         )
 
@@ -2006,7 +2006,7 @@ def plot_sft_accuracy_apples_to_apples():
         bbox_to_anchor=(0.02, 1.14),
     )
 
-    micro_models = [m for m in ["Global(T+,I+)", "LLaMA-3.2(I-)"] if m in models]
+    micro_models = [m for m in ["Global (T+, I+)", "LLaMA-3.2 (I-)"] if m in models]
     micro_records = []
     for model in micro_models:
         cfg = models[model]
@@ -2080,7 +2080,7 @@ def plot_sft_accuracy_apples_to_apples():
                 fontsize=value_fs,
                 color="#333333",
             )
-            is_llama = model == "LLaMA-3.2(I-)"
+            is_llama = model == "LLaMA-3.2 (I-)"
             label_offset = -0.02 if is_llama else 0.02
             label_va = "top" if is_llama else "bottom"
             label_dx = 0.01 if is_llama else 0.06
@@ -2135,7 +2135,7 @@ def plot_explicit_vs_ambiguous_accuracy_plot13():
     tick_fs = 14
     legend_fs = 12
 
-    df = pd.read_csv("/scratch/amukher6/metacul/results/qa_metacul_eval.csv")
+    df = pd.read_csv("/path/to/metacul/results/qa_metacul_eval.csv")
 
     # Normalize known schema drift from eval aggregation outputs.
     if "url_corruption_rate" in df.columns:
@@ -2186,25 +2186,25 @@ def plot_explicit_vs_ambiguous_accuracy_plot13():
         return
 
     models = {
-        "Global(T+,I+)": {
+        "Global (T+, I+)": {
             "correct": "custom_with_metadata_correct",
             "incorrect": "custom_with_metadata_incorrect",
             "color": "#a6cee3",
             "hatch": "o",
         },
-        "Global(T-,I-)": {
+        "Global (T-, I-)": {
             "correct": "custom_without_metadata_correct",
             "incorrect": "custom_without_metadata_incorrect",
             "color": "#f7a1b5",
             "hatch": "",
         },
-        "LLaMA-3.2(I+)": {
+        "LLaMA-3.2 (I+)": {
             "correct": "llama3_chat_with_metadata_correct",
             "incorrect": "llama3_chat_with_metadata_incorrect",
             "color": "#7f7f7f",
             "hatch": "..",
         },
-        "LLaMA-3.2(I-)": {
+        "LLaMA-3.2 (I-)": {
             "correct": "llama3_chat_without_metadata_correct",
             "incorrect": "llama3_chat_without_metadata_incorrect",
             "color": "#d9d9d9",
@@ -2223,7 +2223,7 @@ def plot_explicit_vs_ambiguous_accuracy_plot13():
 
     split_order = ["explicit", "ambiguous"]
     continents = ["Africa", "Europe", "Asia", "America"]
-    order = [m for m in ["Global(T+,I+)", "Global(T-,I-)", "LLaMA-3.2(I+)", "LLaMA-3.2(I-)"] if m in models]
+    order = [m for m in ["Global (T+, I+)", "Global (T-, I-)", "LLaMA-3.2 (I+)", "LLaMA-3.2 (I-)"] if m in models]
     width = 0.18
     gap = 0.06
     x = np.arange(len(continents))
@@ -2421,24 +2421,29 @@ def _filter_explicit_qa(df, qa_path):
 
 def plot_adversarial_url_accuracy(exclude_explicit=False, output_name="qa_adversarial_accuracy.pdf"):
     # Plot: QA accuracy vs URL corruption rate.
-    # Output: /scratch/amukher6/metacul/results/plots/plot9/{output_name}
+    # Output: /path/to/metacul/results/plots/plot9/{output_name}
     axis_label_fs = 22
     tick_fs = 19
     legend_fs = 18
-    pretrained_summary_path = (
-        "/scratch/amukher6/metacul/results/plots/plot8/adversarial_pretrained_summary.csv"
+    pretrained_summary_path = os.environ.get(
+        "ADVERSARIAL_PRETRAINED_SUMMARY_PATH",
+        "/path/to/metacul/results/plots/plot8/adversarial_pretrained_summary.csv",
     )
-    legacy_df_path = "/scratch/amukher6/metacul/results/qa_metacul_eval.csv"
+    legacy_df_path = "/path/to/metacul/results/qa_metacul_eval.csv"
 
     label_map = {
-        "custom_with_metadata": "Global(T+,I+)",
-        "custom_without_metadata": "Global(T-,I-)",
-        "llama3_chat_with_metadata": "LLaMA-3.2(I+)",
-        "llama3_chat_without_metadata": "LLaMA-3.2(I-)",
-        "Custom 1B T+/I+": "Global(T+,I+)",
-        "Custom 1B T-/I-": "Global(T-,I-)",
-        "LLaMA-3.2-1B I+": "LLaMA-3.2(I+)",
-        "LLaMA-3.2-1B I-": "LLaMA-3.2(I-)",
+        "custom_with_metadata": "Global (T+, I+)",
+        "custom_without_metadata": "Global (T-, I-)",
+        "llama3_chat_with_metadata": "LLaMA-3.2 (I+)",
+        "llama3_chat_without_metadata": "LLaMA-3.2 (I-)",
+        "Custom 1B T+/I+": "Global (T+, I+)",
+        "Custom 1B T-/I-": "Global (T-, I-)",
+        "MAPLE 1B T+/I+": "MAPLE 1B (T+, I+)",
+        "MAPLE 1B T-/I-": "MAPLE 1B (T-, I-)",
+        "MAPLE 3B T+/I+": "MAPLE 3B (T+, I+)",
+        "MAPLE 3B T-/I-": "MAPLE 3B (T-, I-)",
+        "LLaMA-3.2-1B I+": "LLaMA-3.2 (I+)",
+        "LLaMA-3.2-1B I-": "LLaMA-3.2 (I-)",
     }
 
     summary = None
@@ -2455,6 +2460,33 @@ def plot_adversarial_url_accuracy(exclude_explicit=False, output_name="qa_advers
         summary = summary[
             summary["url_corruption_rate"].notna() & summary["mean"].notna()
         ].copy()
+        rates_all = sorted(summary["url_corruption_rate"].unique())
+        expanded = [summary]
+        for label, sub in summary.groupby("variant_label"):
+            if label.endswith("(T-, I-)") or label.endswith("(I-)"):
+                if len(sub["url_corruption_rate"].unique()) == 1:
+                    base_row = sub.iloc[0]
+                    missing_rates = [r for r in rates_all if r != base_row["url_corruption_rate"]]
+                    if missing_rates:
+                        extra = pd.DataFrame(
+                            {
+                                "series": [base_row.get("series", label)] * len(missing_rates),
+                                "split": [base_row.get("split", split)] * len(missing_rates),
+                                "mode": [base_row.get("mode", "none")] * len(missing_rates),
+                                "corruption_rate": missing_rates,
+                                "accuracy": [base_row["mean"]] * len(missing_rates),
+                                "correct": [base_row.get("correct", np.nan)] * len(missing_rates),
+                                "total": [base_row.get("total", np.nan)] * len(missing_rates),
+                                "path": [base_row.get("path", "")] * len(missing_rates),
+                                "url_corruption_rate": missing_rates,
+                                "mean": [base_row["mean"]] * len(missing_rates),
+                                "ci95": [base_row["ci95"]] * len(missing_rates),
+                                "variant_label": [label] * len(missing_rates),
+                            }
+                        )
+                        expanded.append(extra)
+        if len(expanded) > 1:
+            summary = pd.concat(expanded, ignore_index=True)
     else:
         if not os.path.exists(legacy_df_path):
             print(f"[!] Missing adversarial CSV: {legacy_df_path}")
@@ -2489,7 +2521,7 @@ def plot_adversarial_url_accuracy(exclude_explicit=False, output_name="qa_advers
         df = df[df["url_corruption_rate"].notna()].copy()
         if exclude_explicit:
             df = _filter_explicit_qa(
-                df, "/scratch/amukher6/metacul/qa_data/hf_dataset.jsonl"
+                df, "/path/to/metacul/qa_data/hf_dataset.jsonl"
             )
 
         variants = []
@@ -2568,37 +2600,61 @@ def plot_adversarial_url_accuracy(exclude_explicit=False, output_name="qa_advers
     y_lower = max(0.0, y_min - y_pad)
     y_upper = min(1.0, y_max + y_pad)
 
-    fig, ax = plt.subplots(figsize=(8, 5))
+    fig, ax = plt.subplots(figsize=(6.4, 9.5), facecolor="white")
+    ax.set_facecolor("white")
     plot_df = summary.sort_values("url_corruption_rate")
     palette = {
-        "Global(T+,I+)": "#a6cee3",
-        "Global(T-,I-)": "#f7a1b5",
-        "LLaMA-3.2(I+)": "#7f7f7f",
-        "LLaMA-3.2(I-)": "#d9d9d9",
+        "MAPLE 1B (T+, I+)": "#4c78a8",
+        "MAPLE 1B (T-, I-)": "#9ecae9",
+        "MAPLE 3B (T+, I+)": "#f58518",
+        "MAPLE 3B (T-, I-)": "#fdd0a2",
+        "Global (T+, I+)": "#a6cee3",
+        "Global (T-, I-)": "#f7a1b5",
+        "LLaMA-3.2 (I+)": "#7f7f7f",
+        "LLaMA-3.2 (I-)": "#d9d9d9",
     }
     linestyle_map = {
-        "Global(T+,I+)": "--",
-        "LLaMA-3.2(I+)": "--",
+        "Global (T+, I+)": "--",
+        "LLaMA-3.2 (I+)": "--",
+        "MAPLE 1B (T-, I-)": "--",
+        "MAPLE 3B (T-, I-)": "--",
     }
     marker_map = {
-        "Global(T+,I+)": "o",
-        "LLaMA-3.2(I+)": "o",
-        "Global(T-,I-)": "s",
-        "LLaMA-3.2(I-)": "s",
+        "MAPLE 1B (T+, I+)": "o",
+        "MAPLE 1B (T-, I-)": "s",
+        "MAPLE 3B (T+, I+)": "^",
+        "MAPLE 3B (T-, I-)": "D",
+        "Global (T+, I+)": "o",
+        "LLaMA-3.2 (I+)": "o",
+        "Global (T-, I-)": "s",
+        "LLaMA-3.2 (I-)": "s",
     }
     marker_size_map = {
-        "Global(T-,I-)": 7,
-        "LLaMA-3.2(I-)": 7,
+        "MAPLE 1B (T+, I+)": 6.0,
+        "MAPLE 1B (T-, I-)": 6.8,
+        "MAPLE 3B (T+, I+)": 6.2,
+        "MAPLE 3B (T-, I-)": 6.8,
+        "Global (T-, I-)": 7,
+        "LLaMA-3.2 (I-)": 7,
     }
 
-    order = ["Global(T+,I+)", "Global(T-,I-)", "LLaMA-3.2(I+)", "LLaMA-3.2(I-)"]
+    order = [
+        "MAPLE 1B (T+, I+)",
+        "MAPLE 1B (T-, I-)",
+        "MAPLE 3B (T+, I+)",
+        "MAPLE 3B (T-, I-)",
+        "Global (T+, I+)",
+        "Global (T-, I-)",
+        "LLaMA-3.2 (I+)",
+        "LLaMA-3.2 (I-)",
+    ]
     for label in order:
         sub = plot_df[plot_df["variant_label"] == label].copy()
         if sub.empty:
             continue
         sub = sub.sort_values("url_corruption_rate")
-        line_width = 2.0 if label == "LLaMA-3.2(I-)" else 1.6
-        marker_edge = "black" if label == "LLaMA-3.2(I-)" else None
+        line_width = 2.0 if label == "LLaMA-3.2 (I-)" else 1.6
+        marker_edge = "black" if label == "LLaMA-3.2 (I-)" else None
         ax.plot(
             sub["url_corruption_rate"],
             sub["mean"],
@@ -2626,12 +2682,17 @@ def plot_adversarial_url_accuracy(exclude_explicit=False, output_name="qa_advers
     ax.yaxis.set_major_locator(MaxNLocator(nbins=5))
     ax.tick_params(axis="x", labelsize=tick_fs)
     ax.tick_params(axis="y", labelsize=tick_fs)
-    ax.grid(axis="y", linestyle="--", linewidth=0.5, alpha=0.3)
+    ax.grid(axis="y", linestyle="--", linewidth=0.5, alpha=0.22, color="#b7c0cc")
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["left"].set_color("#333333")
+    ax.spines["bottom"].set_color("#333333")
     ax.legend(
         frameon=True,
         fancybox=True,
-        framealpha=0.9,
-        edgecolor="black",
+        framealpha=1.0,
+        edgecolor="#333333",
+        facecolor="white",
         fontsize=legend_fs,
         loc="lower center",
         bbox_to_anchor=(0.5, 1.02),
@@ -2639,17 +2700,17 @@ def plot_adversarial_url_accuracy(exclude_explicit=False, output_name="qa_advers
         borderaxespad=0.0,
     )
 
-    output_dir = os.path.join(PLOTS_DIR, "plot9")
+    output_dir = os.environ.get("ADVERSARIAL_PLOT_OUTPUT_DIR", os.path.join(PLOTS_DIR, "plot9"))
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, output_name)
     plt.tight_layout(rect=(0.0, 0.0, 1.0, 0.9))
-    plt.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.01)
+    plt.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.01, facecolor="white")
     plt.close(fig)
 
 
 def plot_metadata_ablations():
     # Plot: metadata ablations across checkpoints on metadata/combined test sets.
-    # Output: /scratch/amukher6/metacul/results/plots/plot6/perplexity_metadata_ablations_1b.pdf
+    # Output: /path/to/metacul/results/plots/plot6/perplexity_metadata_ablations_1b.pdf
     df = _load_perplexity_df()
     pairs = set()
     axis_label_fs = 20
@@ -2661,45 +2722,45 @@ def plot_metadata_ablations():
     step_labels = ["2k", "4k", "8k", "10k"]
 
     metadata_tests = {
-        "url": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",
-        "url_continent": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
-        "url_country": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/",
+        "url": "/path/to/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",
+        "url_continent": "/path/to/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
+        "url_country": "/path/to/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/",
     }
 
     combined_tests = {
-        "with": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
-        "without": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+        "with": "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
+        "without": "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
     }
 
     model_groups = {
         "combined_with": {
-            "final": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/combined_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step{step}k",
         },
         "combined_without": {
-            "final": "/scratch/amukher6/metacul/models/combined_without_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/combined_without_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step{step}k",
         },
         "url": {
-            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step{step}k",
         },
         "url_continent": {
-            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step{step}k",
         },
         "url_country": {
-            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step{step}k",
         },
     }
 
     colors = {
-        "combined_with": "#5fae78",
+        "combined_with": "#1f6f5b",
         "combined_without": "#7f7f7f",
-        "url": "#f4a3a3",
-        "url_continent": "#6baed6",
-        "url_country": "#b8a1d9",
+        "url": "#4E79A7",
+        "url_continent": "#D97706",
+        "url_country": "#2E7D32",
     }
     markers = {
         "combined_with": "o",
@@ -2902,7 +2963,7 @@ def plot_metadata_ablations():
                 label=label,
             )
             legend_handles.append(handle)
-        fig.legend(
+        legend = fig.legend(
             handles=legend_handles,
             labels=[handle.get_label() for handle in legend_handles],
             frameon=True,
@@ -2914,6 +2975,8 @@ def plot_metadata_ablations():
             ncol=3 if is_appendix_layout else len(legend_order),
             bbox_to_anchor=(0.5, 0.98 if is_appendix_layout else 0.93),
         )
+        for text, handle in zip(legend.get_texts(), legend_handles):
+            text.set_color(handle.get_color())
 
         output_path = os.path.join(
             output_dir, f"perplexity_metadata_ablations_1b{output_suffix}.pdf"
@@ -2975,8 +3038,8 @@ def plot_metadata_ablations():
 def plot_metadata_family_full_grid():
     # Plot: metadata ablations with a 3-panel main figure and a full appendix grid.
     # Outputs:
-    #   /scratch/amukher6/metacul/results/plots/plot10/perplexity_metadata_family_main_1b.pdf
-    #   /scratch/amukher6/metacul/results/plots/plot11/perplexity_metadata_family_full_grid_1b.pdf
+    #   /path/to/metacul/results/plots/plot10/perplexity_metadata_family_main_1b.pdf
+    #   /path/to/metacul/results/plots/plot11/perplexity_metadata_family_full_grid_1b.pdf
     df = _load_perplexity_df()
     pairs_main = set()
     pairs_appendix = set()
@@ -2991,48 +3054,48 @@ def plot_metadata_family_full_grid():
     tests = [
         (
             "[URL] (I+)",
-            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",
+            "/path/to/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",
         ),
         (
             "[URL][Country] (I+)",
-            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/",
+            "/path/to/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/",
         ),
         (
             "[URL][Continent] (I+)",
-            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
+            "/path/to/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
         ),
         (
             "[Country] (I+)",
-            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/",
+            "/path/to/metacul/training_data/meco_datasets/combined_only_country/with_metadata/",
         ),
         (
             "[Continent] (I+)",
-            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/",
+            "/path/to/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/",
         ),
         (
             "[URL][Country][Continent] (I+)",
-            "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+            "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
         ),
         (
             "No metadata (I-)",
-            "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+            "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
         ),
     ]
 
     model_groups = {
         "combined_with": {
             "label": "[URL][Country][Continent] (T+)",
-            "final": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step{step}k",
-            "color": "#2b8c66",
+            "final": "/path/to/metacul/models/combined_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step{step}k",
+            "color": "#1f6f5b",
             "marker": "o",
             "linestyle": "-",
-            "markerfacecolor": "#2b8c66",
+            "markerfacecolor": "#1f6f5b",
         },
         "combined_without": {
             "label": "[No metadata] (T-)",
-            "final": "/scratch/amukher6/metacul/models/combined_without_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/combined_without_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step{step}k",
             "color": "#7f7f7f",
             "marker": "s",
             "linestyle": (0, (5, 2)),
@@ -3040,45 +3103,45 @@ def plot_metadata_family_full_grid():
         },
         "url": {
             "label": "[URL] (T+)",
-            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step{step}k",
-            "color": "#f4a3a3",
+            "final": "/path/to/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step{step}k",
+            "color": "#4E79A7",
             "marker": "D",
             "linestyle": (0, (3, 1, 1, 1)),
-            "markerfacecolor": "#f4a3a3",
+            "markerfacecolor": "#4E79A7",
         },
         "url_country": {
             "label": "[URL][Country] (T+)",
-            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step{step}k",
-            "color": "#b8a1d9",
+            "final": "/path/to/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step{step}k",
+            "color": "#2E7D32",
             "marker": "v",
             "linestyle": ":",
             "markerfacecolor": "white",
         },
         "url_continent": {
             "label": "[URL][Continent] (T+)",
-            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step{step}k",
-            "color": "#6baed6",
+            "final": "/path/to/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step{step}k",
+            "color": "#D97706",
             "marker": "^",
             "linestyle": "-.",
             "markerfacecolor": "white",
         },
         "country_only": {
             "label": "[Country] (T+)",
-            "final": "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step{step}k",
-            "color": "#f0c36d",
+            "final": "/path/to/metacul/models/combined_only_country_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step{step}k",
+            "color": "#2E7D32",
             "marker": "P",
             "linestyle": (0, (1, 1)),
             "markerfacecolor": "white",
         },
         "continent_only": {
             "label": "[Continent] (T+)",
-            "final": "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step{step}k",
-            "color": "#74c476",
+            "final": "/path/to/metacul/models/combined_only_continent_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step{step}k",
+            "color": "#D97706",
             "marker": "X",
             "linestyle": (0, (7, 2, 1.2, 2)),
             "markerfacecolor": "white",
@@ -3232,14 +3295,14 @@ def plot_metadata_family_full_grid():
 
     main_panels = [
         (
-            "Test sets (I+):\nAvg. over\n[URL], [URL][Country]\n[URL][Continent]\n[Country], [Continent]",
+            "Test sets (I+)\nAvg. over\n[URL], [URL][Country]\n[URL][Continent]\n[Country], [Continent]",
             own_test_paths[0],
             "own_average",
             title_fs - 3,
             0.90,
         ),
-        ("Test set:\n[URL][Country][Continent] (I+)", tests[5][1], "test_path", title_fs - 2, 0.90),
-        ("Test set:\nNo metadata (I-)", tests[6][1], "test_path", title_fs - 1, 0.90),
+        ("Test set\n[URL][Country][Continent] (I+)", tests[5][1], "test_path", title_fs - 2, 0.90),
+        ("Test set\nNo metadata (I-)", tests[6][1], "test_path", title_fs - 1, 0.90),
     ]
     main_model_keys = [
         "url",
@@ -3297,7 +3360,7 @@ def plot_metadata_family_full_grid():
         for key in legend_keys
         for cfg in [model_groups[key]]
     ]
-    fig.legend(
+    legend = fig.legend(
         handles=legend_handles,
         labels=[h.get_label() for h in legend_handles],
         title="Models",
@@ -3310,6 +3373,8 @@ def plot_metadata_family_full_grid():
         ncol=3,
         bbox_to_anchor=(0.5, 0.955),
     )
+    for text, handle in zip(legend.get_texts(), legend_handles):
+        text.set_color(handle.get_color())
 
     output_dir = os.path.join(PLOTS_DIR, "plot10")
     os.makedirs(output_dir, exist_ok=True)
@@ -3353,7 +3418,7 @@ def plot_metadata_family_full_grid():
         for key in appendix_model_keys
         for cfg in [model_groups[key]]
     ]
-    fig.legend(
+    legend = fig.legend(
         handles=legend_handles,
         labels=[h.get_label() for h in legend_handles],
         frameon=True,
@@ -3363,8 +3428,10 @@ def plot_metadata_family_full_grid():
         fontsize=legend_fs,
         loc="upper center",
         ncol=4,
-        bbox_to_anchor=(0.5, 0.995),
+        bbox_to_anchor=(0.54, 0.995),
     )
+    for text, handle in zip(legend.get_texts(), legend_handles):
+        text.set_color(handle.get_color())
 
     output_dir = os.path.join(PLOTS_DIR, "plot10")
     os.makedirs(output_dir, exist_ok=True)
@@ -3382,7 +3449,157 @@ def plot_metadata_family_full_grid():
 
 def plot_leave_one_out_ablations():
     # Plot: leave-one-out ablations (with/without metadata).
-    # Output: /scratch/amukher6/metacul/results/plots/plot7/leave_one_out_{meta}.pdf
+    # Output: /path/to/metacul/results/plots/plot7/leave_one_out_{meta}.pdf
+    significance_path = "/path/to/metacul/results/significance/plot7.csv"
+    if os.path.exists(significance_path):
+        sig_df = pd.read_csv(significance_path)
+        sig_df = sig_df[
+            (sig_df["plot"] == "plot7")
+            & (sig_df["status"] == "ok")
+            & (sig_df["meta"].isin(["with_metadata", "without_metadata"]))
+        ].copy()
+        if not sig_df.empty:
+            steps = [2000, 4000, 8000, 10000]
+            step_labels = ["2k", "4k", "8k", "10k"]
+            continents = ["africa", "america", "asia", "europe"]
+            continent_labels = {
+                "africa": "No Africa",
+                "america": "No America",
+                "asia": "No Asia",
+                "europe": "No Europe",
+            }
+            continent_colors = {
+                "africa": "#e8b68f",
+                "america": "#e6aaa7",
+                "asia": "#9ecf91",
+                "europe": "#bba9d6",
+            }
+            continent_markers = {
+                "africa": "o",
+                "america": "s",
+                "asia": "^",
+                "europe": "D",
+            }
+            bbox_props = dict(
+                facecolor="lightgrey",
+                edgecolor="black",
+                linewidth=1.0,
+                alpha=0.82,
+                boxstyle="round,pad=0.3",
+            )
+            panels = [
+                ("left_out", "Held-out Local test"),
+                ("all", "Global test"),
+            ]
+
+            for meta in ["with_metadata", "without_metadata"]:
+                meta_df = sig_df[sig_df["meta"] == meta].copy()
+                fig, axes = plt.subplots(1, 2, figsize=(10.1, 4.8), sharey=True)
+                all_values = []
+
+                for ax, (scope, title) in zip(axes, panels):
+                    scope_df = meta_df[meta_df["test_scope"] == scope]
+                    for continent in continents:
+                        cont_df = (
+                            scope_df[scope_df["continent"] == continent]
+                            .set_index("step")
+                            .reindex(steps)
+                            .reset_index()
+                        )
+                        x = np.arange(len(steps))
+                        y = cont_df["delta_ppl"].to_numpy(dtype=float)
+                        lo = cont_df["delta_ppl_ci_low"].to_numpy(dtype=float)
+                        hi = cont_df["delta_ppl_ci_high"].to_numpy(dtype=float)
+                        color = continent_colors[continent]
+                        ax.fill_between(x, lo, hi, color=color, alpha=0.13, zorder=1)
+                        line = ax.plot(
+                            x,
+                            y,
+                            marker=continent_markers[continent],
+                            color=color,
+                            linestyle="-",
+                            linewidth=2.8,
+                            markersize=6.8,
+                            markeredgecolor="black",
+                            markeredgewidth=0.95,
+                            zorder=3,
+                            label=f"{continent_labels[continent]} - Full",
+                        )[0]
+                        line.set_path_effects(
+                            [pe.Stroke(linewidth=3.6, foreground="white", alpha=0.55), pe.Normal()]
+                        )
+                        all_values.extend([v for v in y if np.isfinite(v)])
+
+                    for spine in ax.spines.values():
+                        spine.set_visible(True)
+                        spine.set_linewidth(1.5)
+                        spine.set_color("black")
+                    ax.grid(axis="y", linestyle="--", linewidth=0.6, alpha=0.3)
+                    ax.set_axisbelow(True)
+                    ax.set_xticks(np.arange(len(step_labels)))
+                    ax.set_xticklabels(step_labels, fontsize=18)
+                    ax.tick_params(axis="y", labelsize=18)
+                    ax.text(
+                        0.5,
+                        0.90,
+                        title,
+                        transform=ax.transAxes,
+                        ha="center",
+                        va="top",
+                        fontsize=16.5,
+                        fontweight="bold",
+                        bbox=bbox_props,
+                        zorder=10,
+                        clip_on=False,
+                    )
+
+                if all_values:
+                    pad = 0.45
+                    axes[0].set_ylim(min(all_values) - pad, max(all_values) + pad)
+                    axes[1].set_ylim(min(all_values) - pad, max(all_values) + pad)
+
+                axes[0].set_ylabel("Δ Perplexity", fontsize=22)
+                fig.text(0.5, 0.04, "Training steps", ha="center", fontsize=22)
+                legend_handles = [
+                    Line2D(
+                        [],
+                        [],
+                        color=continent_colors[continent],
+                        marker=continent_markers[continent],
+                        linestyle="-",
+                        linewidth=2.6,
+                        markersize=7.2,
+                        markeredgecolor="black",
+                        markeredgewidth=0.95,
+                        label=f"{continent_labels[continent]} - Full",
+                    )
+                    for continent in continents
+                ]
+                fig.legend(
+                    handles=legend_handles,
+                    frameon=True,
+                    fancybox=True,
+                    framealpha=0.93,
+                    edgecolor="black",
+                    fontsize=15,
+                    loc="upper center",
+                    ncol=2,
+                    bbox_to_anchor=(0.5, 1.02),
+                )
+
+                output_dir = os.path.join(PLOTS_DIR, "plot7")
+                os.makedirs(output_dir, exist_ok=True)
+                suffix = "with_metadata" if meta == "with_metadata" else "without_metadata"
+                output_path = os.path.join(output_dir, f"leave_one_out_{suffix}.pdf")
+                fig.tight_layout()
+                fig.subplots_adjust(top=0.78, bottom=0.18)
+                fig.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.02)
+                plt.close(fig)
+
+            output_dir = os.path.join(PLOTS_DIR, "plot7")
+            _write_plot_csv(output_dir, 7, sig_df)
+            return
+
     df = _load_perplexity_df()
     pairs = set()
 
@@ -3391,8 +3608,8 @@ def plot_leave_one_out_ablations():
     continents = ["africa", "america", "asia", "europe"]
 
     combined_tests = {
-        "with_metadata": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
-        "without_metadata": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+        "with_metadata": "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
+        "without_metadata": "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
     }
 
     def _lookup(model_path, test_path):
@@ -3406,20 +3623,20 @@ def plot_leave_one_out_ablations():
 
     def _model_path(meta, step):
         if step == 10000:
-            return f"/scratch/amukher6/metacul/models/combined_{meta}_1b"
+            return f"/path/to/metacul/models/combined_{meta}_1b"
         return (
-            "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/"
+            "/path/to/metacul/models/ablation_intermediates/metadata/"
             f"combined_{meta}_1b_step{step // 1000}k"
         )
 
     def _loo_model_path(continent, meta, step):
         if step == 10000:
             return (
-                "/scratch/amukher6/metacul/models/ablations/leave_one_out/"
+                "/path/to/metacul/models/ablations/leave_one_out/"
                 f"combined_no_{continent}_{meta}_1b"
             )
         return (
-            "/scratch/amukher6/metacul/models/ablation_intermediates/leave_one_out/"
+            "/path/to/metacul/models/ablation_intermediates/leave_one_out/"
             f"combined_no_{continent}_{meta}_1b_step{step // 1000}k"
         )
 
@@ -3457,7 +3674,7 @@ def plot_leave_one_out_ablations():
             combined_model = _model_path(meta, step)
             for cont in continents:
                 left_out_test = (
-                    f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{cont}/{meta}/"
+                    f"/path/to/metacul/training_data/meco_datasets/continents/{cont}/{meta}/"
                 )
                 pairs.add((combined_model, left_out_test))
                 mean, ci_low, ci_high = _lookup_with_ci(
@@ -3545,7 +3762,7 @@ def plot_leave_one_out_ablations():
             )[0]
             line.set_path_effects([pe.Stroke(linewidth=3.9, foreground="white", alpha=0.68), pe.Normal()])
         axes[0].set_title(
-            f"Δ: held-out Local test ({eval_notation})",
+            f"Delta held-out Local test ({eval_notation})",
             fontsize=title_fs,
             weight="bold",
             pad=6,
@@ -3578,7 +3795,7 @@ def plot_leave_one_out_ablations():
             )[0]
             line.set_path_effects([pe.Stroke(linewidth=3.9, foreground="white", alpha=0.68), pe.Normal()])
         axes[1].set_title(
-            f"Δ: Global test ({eval_notation})",
+            f"Delta Global test ({eval_notation})",
             fontsize=title_fs,
             weight="bold",
             pad=6,
@@ -3722,57 +3939,57 @@ def _list_usable_qa_slugs(results_dir, metadata_label):
 
 def plot_compute_tradeoff_global_models():
     # Plot 12: 1B/3B global models, matched PPL and QA accuracy vs estimated FLOPs.
-    # QA currently uses the strict intersection of URL subsets already available across
-    # all four final custom chat models.
+    # QA uses the current full LocalNewsQA SFT summary table so the appendix plot
+    # stays synchronized with the reported model-gain tables.
     df = _load_perplexity_df()
 
     model_specs = [
         {
             "size": "1B",
             "train_tag": "T+",
-            "label": "1B T+",
+            "label": "1B (T+, I+)",
             "color": "#1b9e77",
             "marker": "o",
-            "model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
-            "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
-            "config_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b/config.json",
-            "results_dir": "/scratch/amukher6/metacul/results/downstream",
+            "model_path": "/path/to/metacul/models/combined_with_metadata_1b",
+            "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
+            "config_path": "/path/to/metacul/models/combined_with_metadata_1b/config.json",
+            "results_dir": "/path/to/metacul/results/downstream",
             "results_metadata_label": "with_metadata",
         },
         {
             "size": "1B",
             "train_tag": "T-",
-            "label": "1B T-",
+            "label": "1B (T-, I-)",
             "color": "#d95f02",
             "marker": "o",
-            "model_path": "/scratch/amukher6/metacul/models/combined_without_metadata_1b",
-            "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
-            "config_path": "/scratch/amukher6/metacul/models/combined_without_metadata_1b/config.json",
-            "results_dir": "/scratch/amukher6/metacul/results/downstream",
+            "model_path": "/path/to/metacul/models/combined_without_metadata_1b",
+            "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
+            "config_path": "/path/to/metacul/models/combined_without_metadata_1b/config.json",
+            "results_dir": "/path/to/metacul/results/downstream",
             "results_metadata_label": "without_metadata",
         },
         {
             "size": "3B",
             "train_tag": "T+",
-            "label": "3B T+",
+            "label": "3B (T+, I+)",
             "color": "#1b9e77",
             "marker": "s",
-            "model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_3b",
-            "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
-            "config_path": "/scratch/amukher6/metacul/models/combined_with_metadata_3b/config.json",
-            "results_dir": "/scratch/amukher6/metacul/results/downstream_3b",
+            "model_path": "/path/to/metacul/models/combined_with_metadata_3b",
+            "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
+            "config_path": "/path/to/metacul/models/combined_with_metadata_3b/config.json",
+            "results_dir": "/path/to/metacul/results/downstream_3b",
             "results_metadata_label": "with_metadata",
         },
         {
             "size": "3B",
             "train_tag": "T-",
-            "label": "3B T-",
+            "label": "3B (T-, I-)",
             "color": "#d95f02",
             "marker": "s",
-            "model_path": "/scratch/amukher6/metacul/models/combined_without_metadata_3b",
-            "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
-            "config_path": "/scratch/amukher6/metacul/models/combined_without_metadata_3b/config.json",
-            "results_dir": "/scratch/amukher6/metacul/results/downstream_3b",
+            "model_path": "/path/to/metacul/models/combined_without_metadata_3b",
+            "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
+            "config_path": "/path/to/metacul/models/combined_without_metadata_3b/config.json",
+            "results_dir": "/path/to/metacul/results/downstream_3b",
             "results_metadata_label": "without_metadata",
         },
     ]
@@ -3782,18 +3999,29 @@ def plot_compute_tradeoff_global_models():
     # sequence_length=2048, train_steps=10000.
     train_tokens = 4 * 8 * 64 * 2048 * 10000
 
-    available_slugs_by_variant = []
-    for spec in model_specs:
-        available_slugs_by_variant.append(
-            _list_usable_qa_slugs(
-                spec["results_dir"], spec["results_metadata_label"]
-            )
-        )
-
-    common_slugs = sorted(set.intersection(*available_slugs_by_variant))
-    if not common_slugs:
-        print("No common QA URL subset found across 1B/3B final chat models.")
-        return
+    qa_summary_path = (
+        "/path/to/metacul/results/appendix_model_gain_tables_20260505/"
+        "localnewsqa_model_gains_long.csv"
+    )
+    qa_lookup = {}
+    if os.path.exists(qa_summary_path):
+        qa_df = pd.read_csv(qa_summary_path)
+        for size, row_key in [("1B", "maple_1b"), ("3B", "maple_3b")]:
+            row = qa_df[
+                (qa_df["row_key"] == row_key)
+                & (qa_df["track"] == "chat")
+                & (qa_df["metric_key"] == "localnewsqa_overall")
+            ]
+            if row.empty:
+                continue
+            qa_lookup[(size, "T+")] = {
+                "accuracy_pct": float(row["plus_value"].iloc[0]),
+                "n": int(row["n"].iloc[0]),
+            }
+            qa_lookup[(size, "T-")] = {
+                "accuracy_pct": float(row["minus_value"].iloc[0]),
+                "n": int(row["n"].iloc[0]),
+            }
 
     plot_rows = []
     for spec in model_specs:
@@ -3809,9 +4037,9 @@ def plot_compute_tradeoff_global_models():
         else:
             ppl_value = float(ppl_row["mean_ppl"].iloc[0])
 
-        qa_acc, qa_correct, qa_total, used_slugs = _load_qa_accuracy_from_jsonl(
-            spec["results_dir"], spec["results_metadata_label"], common_slugs
-        )
+        qa_info = qa_lookup.get((spec["size"], spec["train_tag"]), {})
+        qa_acc = qa_info.get("accuracy_pct", np.nan)
+        qa_n = qa_info.get("n", np.nan)
 
         plot_rows.append(
             {
@@ -3843,8 +4071,8 @@ def plot_compute_tradeoff_global_models():
                 "train_tokens": train_tokens,
                 "estimated_flops": est_flops,
                 "estimated_flops_e20": est_flops / 1e20,
-                "eval_target": ",".join(used_slugs),
-                "note": f"Common {len(common_slugs)}-URL subset; {qa_correct}/{qa_total}",
+                "eval_target": "LocalNewsQA target split",
+                "note": f"Full SFT summary table; n={qa_n}",
             }
         )
 
@@ -3860,7 +4088,7 @@ def plot_compute_tradeoff_global_models():
     )
     panel_specs = [
         ("PPL vs FLOPs", "mean_ppl", "Perplexity (↓ better)", 0),
-        ("QA Accuracy vs FLOPs", "qa_accuracy", "QA accuracy (↑ better)", 1),
+        ("QA Accuracy vs FLOPs", "qa_accuracy", "QA accuracy (%) (↑ better)", 1),
     ]
 
     for panel_name, metric_name, ylabel, ax_idx in panel_specs:
@@ -3898,13 +4126,13 @@ def plot_compute_tradeoff_global_models():
         if metric_name == "qa_accuracy":
             finite = subset["metric_value"][np.isfinite(subset["metric_value"])]
             if not finite.empty:
-                ax.set_ylim(max(0.0, finite.min() - 0.05), min(1.0, finite.max() + 0.05))
+                ax.set_ylim(max(0.0, finite.min() - 2.0), min(100.0, finite.max() + 2.0))
 
     legend_handles = [
-        Line2D([], [], color="#1b9e77", marker="o", linestyle="None", markersize=9, markeredgecolor="black", label="1B T+"),
-        Line2D([], [], color="#d95f02", marker="o", linestyle="None", markersize=9, markeredgecolor="black", label="1B T-"),
-        Line2D([], [], color="#1b9e77", marker="s", linestyle="None", markersize=9, markeredgecolor="black", label="3B T+"),
-        Line2D([], [], color="#d95f02", marker="s", linestyle="None", markersize=9, markeredgecolor="black", label="3B T-"),
+        Line2D([], [], color="#1b9e77", marker="o", linestyle="None", markersize=9, markeredgecolor="black", label="1B (T+, I+)"),
+        Line2D([], [], color="#d95f02", marker="o", linestyle="None", markersize=9, markeredgecolor="black", label="1B (T-, I-)"),
+        Line2D([], [], color="#1b9e77", marker="s", linestyle="None", markersize=9, markeredgecolor="black", label="3B (T+, I+)"),
+        Line2D([], [], color="#d95f02", marker="s", linestyle="None", markersize=9, markeredgecolor="black", label="3B (T-, I-)"),
     ]
     fig.legend(
         handles=legend_handles,
@@ -3934,8 +4162,7 @@ def plot_compute_tradeoff_global_models():
     plt.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.02)
     plt.close(fig)
 
-    plot_df["common_qa_url_count"] = len(common_slugs)
-    plot_df["common_qa_urls"] = ",".join(common_slugs)
+    plot_df["qa_summary_source"] = qa_summary_path
     _write_plot_csv(output_dir, 12, plot_df)
 
 
@@ -3949,45 +4176,45 @@ def plot_token_efficiency_global_ppl():
             "tplus": [
                 (
                     2000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step2k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step2k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     4000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step4k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step4k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     8000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step8k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step8k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     10000,
-                    "/scratch/amukher6/metacul/models/combined_with_metadata_500m",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/combined_with_metadata_500m",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
             ],
             "tminus": [
                 (
                     2000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step2k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step2k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     4000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step4k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step4k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     8000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step8k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step8k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     10000,
-                    "/scratch/amukher6/metacul/models/combined_without_metadata_500m",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/combined_without_metadata_500m",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
             ],
         },
@@ -3995,45 +4222,45 @@ def plot_token_efficiency_global_ppl():
             "tplus": [
                 (
                     2000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step2k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step2k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     4000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step4k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step4k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     8000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step8k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step8k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     10000,
-                    "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/combined_with_metadata_1b",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
             ],
             "tminus": [
                 (
                     2000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step2k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step2k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     4000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step4k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step4k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     8000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     10000,
-                    "/scratch/amukher6/metacul/models/combined_without_metadata_1b",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/combined_without_metadata_1b",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
             ],
         },
@@ -4041,45 +4268,45 @@ def plot_token_efficiency_global_ppl():
             "tplus": [
                 (
                     2000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step2k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step2k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     4000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step4k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step4k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     8000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step8k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step8k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     10000,
-                    "/scratch/amukher6/metacul/models/combined_with_metadata_3b",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/combined_with_metadata_3b",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
             ],
             "tminus": [
                 (
                     2000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step2k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step2k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     4000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step4k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step4k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     8000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step8k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step8k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     10000,
-                    "/scratch/amukher6/metacul/models/combined_without_metadata_3b",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/combined_without_metadata_3b",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
             ],
         },
@@ -4126,7 +4353,7 @@ def plot_token_efficiency_global_ppl():
                 return x1 + frac * (x2 - x1)
         return None
 
-    candidate_size_order = ["500M", "1B", "3B"]
+    candidate_size_order = ["1B", "3B"]
     bbox_props = dict(
         facecolor="#ececec",
         edgecolor="#888888",
@@ -4154,8 +4381,8 @@ def plot_token_efficiency_global_ppl():
         print("No complete size families found for token-efficiency global PPL plot.")
         return
 
-    fig_width = 4.55 * len(size_order)
-    fig, axes = plt.subplots(1, len(size_order), figsize=(fig_width, 4.35), sharey=True)
+    fig_width = 2.95 * len(size_order)
+    fig, axes = plt.subplots(1, len(size_order), figsize=(fig_width, 3.05), sharey=True)
     if len(size_order) == 1:
         axes = [axes]
 
@@ -4267,13 +4494,16 @@ def plot_token_efficiency_global_ppl():
                 ),
                 zorder=6,
             )
+            label_x = (cross_tokens_b + final_tokens_b) / 2
+            if size_label == "3B":
+                label_x -= 2.8
             ax.text(
-                (cross_tokens_b + final_tokens_b) / 2,
+                label_x,
                 arrow_y + 0.105 * (y_max - y_min),
                 f"{savings_frac * 100:.0f}% fewer tokens",
                 ha="center",
                 va="bottom",
-                fontsize=12.8,
+                fontsize=12.2,
                 fontweight="bold",
                 color="#3e3e3e",
                 bbox=dict(
@@ -4282,6 +4512,7 @@ def plot_token_efficiency_global_ppl():
                     boxstyle="round,pad=0.22",
                     alpha=0.98,
                 ),
+                clip_on=False,
                 zorder=7,
             )
         else:
@@ -4294,20 +4525,20 @@ def plot_token_efficiency_global_ppl():
             transform=ax.transAxes,
             ha="right",
             va="top",
-            fontsize=13.5,
+            fontsize=12.8,
             fontweight="bold",
             bbox=bbox_props,
         )
-        ax.set_xlabel("Training tokens (B)", fontsize=13.5)
+        ax.set_xlabel("Training tokens (B)", fontsize=12.8)
         ax.set_xticks(token_ticks)
-        ax.set_xticklabels(tick_labels, fontsize=11.8)
-        ax.tick_params(axis="y", labelsize=11.8)
+        ax.set_xticklabels(tick_labels, fontsize=10.8)
+        ax.tick_params(axis="y", labelsize=10.8)
         ax.grid(True, which="major", axis="both", linestyle="--", linewidth=0.6, alpha=0.28)
-        ax.set_xlim(7.5, 43.2)
-        ax.spines["top"].set_visible(False)
-        ax.spines["right"].set_visible(False)
-        ax.spines["left"].set_linewidth(1.3)
-        ax.spines["bottom"].set_linewidth(1.3)
+        ax.set_xlim(7.5, 49.0)
+        for spine in ax.spines.values():
+            spine.set_visible(True)
+            spine.set_linewidth(1.5)
+            spine.set_color("black")
 
         summary_rows.append(
             {
@@ -4319,7 +4550,7 @@ def plot_token_efficiency_global_ppl():
             }
         )
 
-    axes[0].set_ylabel("Perplexity (↓ better)", fontsize=15.5)
+    axes[0].set_ylabel("Perplexity (↓ better)", fontsize=12.8, labelpad=4.0)
 
     legend_handles = [
         Line2D(
@@ -4355,16 +4586,17 @@ def plot_token_efficiency_global_ppl():
         fancybox=True,
         framealpha=0.9,
         edgecolor="black",
-        fontsize=11.6,
-        bbox_to_anchor=(0.5, 0.835),
+        fontsize=10.4,
+        bbox_to_anchor=(0.535, 0.995),
+        borderaxespad=0.0,
     )
 
     output_dir = os.path.join(PLOTS_DIR, "plot11")
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, "global_token_efficiency_ppl.pdf")
     plt.tight_layout()
-    plt.subplots_adjust(top=0.72, bottom=0.17, left=0.07, right=0.995, wspace=0.08)
-    plt.savefig(output_path, dpi=600, bbox_inches="tight", pad_inches=0.02)
+    plt.subplots_adjust(top=0.90, bottom=0.18, left=0.14, right=0.985, wspace=0.22)
+    plt.savefig(output_path, dpi=600)
     plt.close(fig)
 
     summary_df = pd.DataFrame(summary_rows)
@@ -4391,9 +4623,9 @@ def plot_country_level_local_metadata_ppl():
 
     for size in sizes:
         for continent in continents:
-            model_path = f"/scratch/amukher6/metacul/models/{continent}_with_metadata_{size}"
+            model_path = f"/path/to/metacul/models/{continent}_with_metadata_{size}"
             test_set_path = (
-                f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{continent}/with_metadata/"
+                f"/path/to/metacul/training_data/meco_datasets/continents/{continent}/with_metadata/"
             )
             per_sample_path = _find_per_sample_file(
                 model_path=model_path,
@@ -4641,7 +4873,7 @@ def plot_country_level_local_metadata_ppl():
         framealpha=0.93,
         edgecolor="black",
         fontsize=14,
-        title="Shown: Local(T+, I+)",
+        title="Shown Local (T+, I+)",
         title_fontsize=14,
         bbox_to_anchor=(0.5, 0.81),
     )
@@ -4687,7 +4919,7 @@ def plot_country_level_qa_accuracy():
             "label": "1B T-",
             "size": "1B",
             "metadata": "T-",
-            "root": "/scratch/amukher6/metacul/results/downstream",
+            "root": "/path/to/metacul/results/downstream",
             "pattern": "qa_metacul_eval_without_metadata_custom_*_c0.jsonl",
             "color": "#d95f02",
         },
@@ -4695,7 +4927,7 @@ def plot_country_level_qa_accuracy():
             "label": "1B T+",
             "size": "1B",
             "metadata": "T+",
-            "root": "/scratch/amukher6/metacul/results/downstream",
+            "root": "/path/to/metacul/results/downstream",
             "pattern": "qa_metacul_eval_with_metadata_custom_*_c0.jsonl",
             "color": "#1b9e77",
         },
@@ -4703,7 +4935,7 @@ def plot_country_level_qa_accuracy():
             "label": "3B T-",
             "size": "3B",
             "metadata": "T-",
-            "root": "/scratch/amukher6/metacul/results/downstream_3b",
+            "root": "/path/to/metacul/results/downstream_3b",
             "pattern": "qa_metacul_eval_without_metadata_custom_*_c0.jsonl",
             "color": "#d95f02",
         },
@@ -4711,7 +4943,7 @@ def plot_country_level_qa_accuracy():
             "label": "3B T+",
             "size": "3B",
             "metadata": "T+",
-            "root": "/scratch/amukher6/metacul/results/downstream_3b",
+            "root": "/path/to/metacul/results/downstream_3b",
             "pattern": "qa_metacul_eval_with_metadata_custom_*_c0.jsonl",
             "color": "#1b9e77",
         },
@@ -5050,6 +5282,12 @@ def plot_local_metadata_waterfall_concept_plot13():
             for r in sub.itertuples()
         }
         seq = ["T-/I-", "T-/I+", "T+/I-", "T+/I+"]
+        display_labels = {
+            "T-/I-": "(T-, I-)",
+            "T-/I+": "(T-, I+)",
+            "T+/I-": "(T+, I-)",
+            "T+/I+": "(T+, I+)",
+        }
         x = np.arange(len(seq))
         y = [vals[s] for s in seq]
         colors_seq = ["#d9d9d9", "#fdbb84", "#b3cde3", "#74c476"]
@@ -5068,7 +5306,7 @@ def plot_local_metadata_waterfall_concept_plot13():
             ax.text(
                 xi,
                 yi + 0.18,
-                label,
+                display_labels[label],
                 ha="center",
                 va="bottom",
                 fontsize=9.5,

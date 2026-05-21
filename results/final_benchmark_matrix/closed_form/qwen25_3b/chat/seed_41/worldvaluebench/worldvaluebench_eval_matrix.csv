@@ -1,0 +1,1459 @@
+question_id,benchmark,subset,country,continent,answered_by_all,llama3_chat_with_metadata_correct,llama3_chat_with_metadata_incorrect,llama3_chat_with_metadata_skipped,llama3_chat_without_metadata_correct,llama3_chat_without_metadata_incorrect,llama3_chat_without_metadata_skipped
+001eba779136d89d47f9b08756890e6e8b170dd5,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+004d1af594bc6d36d3bec37c30277fa762a48504,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+00991600a78a8726d89a4314c321f01e329303e5,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+00a4dc49ae84ba5acdfe2745683980c9f3cf4f96,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+00c72cccb2f2124ce41d3791ba8f17500f0a8a4e,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+00db47a93c8929aaf3fc8f2c2572ab251b8369cc,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+00dfde20f66e54d8b67376f8e130213cc9cd85e0,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+00ec4680d6cb6dfa0db23d3ebb6210adb3e0f52e,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+00f12990161e2fcc43096a0a7d666514f36d4577,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+00f76609aaefed7a8ea32cd00644efe3304b8c9f,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+01006b2717283bce3172279012b214fca720cd66,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+0177f3a4b6549159e292ca72b529ce54ee81899a,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+01a428d1f45b9e3df39a05822a59797d12380978,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+01cc5ee75fb7a64e2f68cc5ad9083a78b1898283,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+01da77ed224436ac6cae397438f58641c13977bc,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+0256106d36645ffc75bb2759b9c2ab24ae3092de,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+02ac7ea814a416f227b3156b64910f8e65bb180f,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+02b494a2d2d6296cfd4e8a2cd36a4efb4c4489b0,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+02c2a9fccf1cbaa6af15a2dec318cb785022ddbb,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+02c8af75ce86f81b5bb2941a03913f27ed710f47,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+0304cf15c43dc81da174670ba060e03509f70552,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+034e2881b8dba2e432baa287e3e1c51b5eb8dc00,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+03ab3189bd3a8f98c498ecd7ec0bf6227c25343a,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+03d2b85f0986724e887f527c19b4fb6e519a0cbf,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+03db250a5e8845550352239a6f84b71343b51c4e,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+048d4c758fad65f6f9436c7cf637a2b9bab97991,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+048d5cca9c1ea1dd2b2e907428596fd74c1d2296,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+049ceb6a829c1c9c05e6193cef759d68e52df0d5,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+04ab436ad229c7154f467bd3fb6c40efd700e24f,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+04c5e9fff7baa221a4364e1cee5a1bc03218116e,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+04e6b68806713e95ebced4029c120c8432aa9980,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+05193747466901974922c77d4fa208e32b6639d8,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+057a018b332d7a91db12e70a95a6e6846984fe48,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+05a474f1ec168e4919b1dbed9f3a377f18261cbb,worldvaluebench,probe,Bangladesh,Asia,1,1,0,0,1,0,0
+05c57360fbfdb9091fe82a4977fd025b8254c3b9,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+05ea6286ba918f059bf4a12bbfba56c198295964,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+05f9b0e9ef1e47b3815d005c78eb0708d5b970f2,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+06264e9989372310c5437e915bf0a035cc8a4810,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+066c5f4bc4c86a66d2f8160775506d68e9885c18,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+069bdc73fb6ab003b66013ba9594c3309c240d27,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+070e611d3cc34d21b9bf14c2fa88fffd6589c207,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+0716c68a90578f3fa4d5ba414ff1e081b23f675f,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+076f7d871cf95f54890128a4dc609cdec65e5811,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+07b50ca0cb153141838a041a9ea373659ce4e73b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+07f7ff54a411eb7de61465ceca1b6f8d40e64267,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+0805b7ac18caae411bc4fbef3803b88a41f61c1e,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+0819dad79059b0978b438be885392992dd273381,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+090b66602ddfb58cc3980c4d9b95a02b65a35d30,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+090cc1a5a6e20f10723d81aa06b3b1d64a2f7ffc,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+091e56ad6eda49a90030fc7bd9499bc797b372fb,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+0929892f028400f7553e5d38f4503f6cf21371cb,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+092a76c7baf45f6e8a01be52ae9f87393d78cccf,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+09ac4c3b1cb25c640eb5c5966abe0cbf4c4167ca,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+09d202179c47878eadb5b4d56d0e0022ba29d338,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+09d367b50f9cc12acc1b40a0cb02f424b26be159,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,1,0,0
+09ef7677d8e6f6a045e696f4d5efec8cf33aab93,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+09f40a617c277b2e15f2c996f35b45fd0cb8d3fc,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+09fce511d82fe69d51afc0964489a28a07c77478,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+0a15769ed51d5f91c8a3ba5563b3734b22e91f06,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+0a1ee6ca31fb13c9ff0c8332d7cf4074b08453d5,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+0a2685a245888eaa72cd4a66c7fcf08406905f7e,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+0a4cfff17f418b93353e57b61cdc85161b32ba7e,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+0a4ebbb668c1b8bfde30dbb8693a3e859a483b13,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+0a859a16ce42d8478de21b93fd8f3a667d038ec9,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+0b12040abeca36bb9509a2ed6fea48ee46d92feb,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+0b34646baa33c89c646135f5a7428494e797ebb6,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+0b7e1d3a72be2ec3c32e9b489c15fe99becf8647,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+0be4fc76be338fe0000e4b5758ff35c88c6eb192,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+0be72902d04099e63477238005c6afafb8bbcafe,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+0c17eab4623b7c43f95f3e02edf2ba9fd7c24826,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+0c1ce56f91b26c5488f1749ddafc4f05f718f16d,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+0cd2de921f985802663e3c6881301aeedbcbd109,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+0cf07b8921db36f2ac444fb0433bf15324549c5a,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+0d052c77fba41738e51918ef4e4d235247b2dac7,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+0d065f2f4ea0a10f24cd47d6e49a4c005592295c,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+0d18276adc0d13ef74dc9356be45a2de53aec2bf,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+0d59b4781fe11befc00a4bb02fcc8bd57ee84404,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+0d79cead7b2bdf4e5bc09510cd12d5b64fb82274,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+0d7d9ef30162788016159fc86eb0a5cc2945c4b3,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+0d8df5fa035b06cdce1ac5182136a252d2801b8f,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+0d902b937845dda11d27839e63824214bc707268,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+0da86f6ae924680fdd723a147ddf8572907ba950,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+0daa4770c0da7bfc8d803d8dbe75956e0279a008,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+0db399d8a4866a95afdf43322e7fd651bda9ffe6,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+0e44b9cbd4a3923375b34eb074ba42797375e7a7,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+0e4825388316e5ced7a8f30941a1ca20902e219e,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+0e78baea3f339c29ec05757173a71784ef1d95f2,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+0eed7b922cbe8a47f37e25b158c337afc3d689f0,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+0f1211821f0bf8fb746545a2a35c654b73a62011,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+0f415a0d108690908c9777dbb1e40d7911dd4e32,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+0f7baf8393e389b515babac83e975ab65ba1879b,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+100591fbffb410a8b9651fb40fc12be0b05668bf,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+1067e97f465e6948d3ae05fa0e53b6e8815bde17,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+10a3ce8109127274679b9b59eca59baba530e92d,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+10b46b650446a6979ea7076641263240a4054e0d,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+10c998b84ad7ca1ef481fb5fe58e910cca31c709,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+10fae4d4d4c1053859ed401faaad64d8ed682ed6,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+1114548da2ebb9949410184004de905d5c88a3b4,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+1170ca7d4fa906bb196a2ccedd67bc3e8f0d472e,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,1,0,0
+11a45d21370ec00b7f17e8eeb125ea23d4a61df0,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+11c476892d7e932a1b1f0c777c54019278b9d33f,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+12985b0b16d21f966abdd1fd8fac17267c520f9a,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+12a0900c206cc69985210054a6da336fbdb84b1a,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+12c57104bc40136ad2f29866ca271f44fbcf3005,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+12e5fed7cdfcb61f6f43d6aeff2f58cfdd713e13,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+13365b0d697fde14280fe35e5159d8c6241b5ba5,worldvaluebench,probe,Philippines,Asia,1,1,0,0,1,0,0
+13bc735e36852449f1c29af00939d52e1c5aaa81,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+13db0cde70d4ee9c8681ab66a5c7d4e2a0ac5928,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+1420178a49f227219e79839ef207e46d4dfb5f8a,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+144e4fcc5efa9dfd68691c08f32cd7c9996f6f67,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+146d7461a5cc282a2e718e3898d1d49caf71ffb6,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+14b60c8a59e8d9073eae5ffe4e05922fce600691,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+14c11d44f5962a8fddfeb2d29752019843b82a38,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+150b901dc42a8a44370476e80e2d76ee9541b573,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+150bb9a325221d19927d5444776bbf302b053afc,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+1516a55573a273486fad73ea4c7a1fdd9f4ab307,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+151f24a176487212bd0c80793523b730c59af4eb,worldvaluebench,probe,Kenya,Africa,1,1,0,0,0,-1,0
+1531f91bfbb163c36511e3c4eff0ff9ea814241b,worldvaluebench,probe,United States,America,1,0,-1,0,1,0,0
+15533e8cf6e5a1ceeb0ecfff6aeea30bf43af592,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+15feb1b99d7e28ab75358a0cee9054817c5b84e5,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+1630b143b23ca0de3554a4d8338d1a0bc6fb4128,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+16cd13655812a33829d7fd3da1aad6f448c07808,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+16ce37fbd0c5dc9b7549b16dc73305ca79d5dd2d,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+16dc0338b71e2412fe169ad471660b680290d407,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+17241aca9e8bd222139261e92413f484296cf19c,worldvaluebench,probe,Bangladesh,Asia,1,1,0,0,1,0,0
+174daebe952be8208b6794e9d221136e5173d556,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+17596ac466a2e295bca85b3f125a2d8a1d9e018b,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+17835890f7a2f4cf2a37bd0ddfabeb362ab8c54a,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+17d0884dca21c5bd534fe13b76598e2176a3d4fa,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+182b692e694a072a07d40d805c7815a780bdb4be,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+1840dc0d2f36dfebcd2b1a15845463c4a51264ef,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+184d3416434dcfcb700c8559391bd5c480c75789,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+188159e2467a774acaad0c63d06c336d5396e91e,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+189fe032cef1fc86caa1fd0fc7a1c3f144c85640,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+18b758d0de84c36d9d10c20d902727a693b85419,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+18dc15d15df32220a31f1cbbb281bfe1f39ebece,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+18ea2d25a112040d3d11bbed2d34dbf82f6cffa7,worldvaluebench,probe,Malaysia,Asia,1,1,0,0,0,-1,0
+18f614b5be10a2cd407954e1d1a09d8068046b9e,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,1,0,0
+190afe20182fd59ba933aab451fd8e960a42999d,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+193073bb84cc4402b73d35f598f3c3679dfef220,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,1,0,0
+19fb7364b415346e54be84f3c6180660ba6351ae,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+1a6134946285949952b628b86844371514062cd2,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+1aa5d6344fe247616a1005fce4f71b10eb448da6,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+1ab880a152cf1d980626d4908afe8abbd6af7bc1,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+1b6915385d0641eafd09aaa8674fe9cdb465d98a,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+1b70ee5331cbc2cad6bdef7da43474481c514b4e,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+1b7801a77b93e486f2ff5761a36c34287a920b25,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+1bd89677e42a440225ea56f09c6b5b044a73267b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+1cc3f97c75c6a40a9af638fdec5630886bf28ba7,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+1cc5b94d11098b08171c40d9e64bd287a4e0ad5f,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+1cdc6ad863809bbfeb1f11457733c816a164478a,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+1cfbe2b029cfcc3070c74dee50b2c71066515081,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+1d282031c94554aba8418e152fce34a54e8378c3,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+1d377a146327a8da8099631af7a2c409632d442f,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+1d4a7e760cb25767955e1be10e37e2a7a7d5c07d,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+1d9e77c281a50ff2da0d3bd2cd9b66f382125521,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+1de150cabb89687d487cabf205cdfdc1c7b1005e,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+1e3ca300767c86a90c4b1fdc686af54bbd1cfa6e,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+1e5ebe951a368aea0127c20dd6ed0958e188e1c1,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+1e96e2062aff3ffcf01a3e450147999c08b1ebdd,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+1ec67d316415107de0f42cb6ccc222419dd24c46,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+1ec8194e3dff6c7c0e9b12d52e4e5a7d81bcb3ed,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+1ecbbac11b844c62527ab101ebca490c679d78bf,worldvaluebench,probe,Hong Kong,Asia,1,1,0,0,0,-1,0
+1ed78d7fd7d07ab3b824671e83e4b9b109073912,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+1ef1ceadce422e7eb3f93d23af0fff38fb305167,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+1f2de00d5b1c27d3510fdf2258a55128c20bd9e7,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+1f52b81b5b806f6bf1627e69093acb5d771e6e77,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+1f52cabb701b1b82190bbb6f8fedd27a62df427f,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+1f565a863b40d6adfce0e2d6a36aab54c680e49d,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+1f6f43e246774be57633e6c6ed19876a681151ee,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+1fdebb107750fe1abd0870571e1400b5b210ca23,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+1fe71fa1af726f979624a4df833765e78e7ada99,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+1fe86e20091ea110d492484a9a28eb99ac7ac9e8,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+1fe9703f5c043756bc0a53a771c0e88171e3c802,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+1ff9e2a85d72387197bfcb71a0d098d40c7d9c30,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+201a6820f986b5e19d42243ba7ff80f2f5090daa,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+204626680a529b92fcc0d7130d947283a7006a43,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+205dc5e0df2874bc079fbeb287dab45cb0c72d78,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+208b73123c0b02e4579b2e3028a597034800ea81,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+20daa9c5b23922caf6d75cb90de9562afff20fea,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+20de4f49e06500646dd7a885567fb79e3b487b62,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+20f829b806c4a7e000cd885d9088fba3fc3bccef,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+216b65065b00e04b29fe7534bb1a2a542cdc97c5,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+216bf39091ab3cfba20a392930baa4020f1be961,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+219d0d38109ad8ee656dda60218b2c645fc9d408,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+21f15e6ae5705d52d4567aaee10ef673b3901a72,worldvaluebench,probe,Hong Kong,Asia,1,1,0,0,0,-1,0
+21f1fcc116afe2e3be3b5a8a66676b6342ffa76a,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+21fc85fac17d475433b9aedbf161433061ce303e,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+220d50f83982b24f779bf91babfdfed2336d3a51,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+22741ddb820eb9ca176ca5dff99445954018b3a6,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,0,-1,0
+23207ca411bf8f5a41429d1a82327cfd99393bc9,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+236e7150f538f2ef9aae3cb09ebd6934671c5de7,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+238c2340cbd009136742e4e79cbba100be51c9c6,worldvaluebench,probe,Malaysia,Asia,1,1,0,0,1,0,0
+23c25b5364280dcd059274f0421d9320f9d5bd86,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+23d4fea74aee3b78026a1ecc23e1a7286a2d81d8,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+23ec12b7a62de94552e77a26052f49f067ae8311,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+2401862b1d9661596857b3a3e28199e2763e7fbc,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+244d896d56ede4d72be93593503e098794344f77,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+244e9d3bde3cc915d474ecd7d39536070656d43c,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+247e8a21f5bfd95ee01780429d8e44a4f03d7bce,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+24aca14b2c32a9ebeaf756e4db3376dfa5c0d99d,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+24f12665f6f87dd44e6ae7e29a1173db455365b8,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+25180c0bce04d59265382d34a1b3664f5ec8fb6d,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+251a9a49c7625254c667395023315d8ff4b9429b,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+25e1353401b1ca93172ad0f74f0eb883a516e8a7,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+2626841bd7a9f7c756b1b512ee2cdbe91aab3957,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+264b8b094335ed020b86e73c3c6830ac1577eb0c,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+26757f40f2fdbf66c95a9900a9c0eb41d8a0d1fd,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+267af1947b8fbab3826518da65f1685955d70933,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+277ae26569345fbb9472a39062cb32161c686f39,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+277e71464d49c18ef0b28c81383704e685bc1720,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+2798cd727c02be7ffd770e125e4e6914c0b56574,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+27ac7ef5b2f4a93a24094a1c589e956036404673,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+281ba011898f1fef2ceeed1c1f1eeafbe5931c54,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+285c7611823d4eaead2a249172cd76c34770b01a,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+2868e9a48aca61ed3004420e80560f4445a2afcf,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,1,0,0
+2873f7166713bf9da3fd2bccf09235c88693d557,worldvaluebench,probe,United States,America,1,0,-1,0,1,0,0
+28b28408627dc53f2b5e08e91c881a9f4a463e95,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+29515ffc1c30ff34850760ea161ffa9e5c861c0f,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+2960ed1aed4423876aad1201ed025c9a5e234c04,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+296c81d8600823e5677d17ab4404540a15d3c2ed,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+29d245f220d20911ade6969d95544d4e5c93fac7,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+29db6b4c561120fcad804367b227051d556a09e4,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+2a18dd39fae2a31c206c4f55f96f5a432473f5d5,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+2a31c11eda2451641ac975728657f37ec8485380,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+2a37abf77d78aa10af878b5b4c4ba62f3ad12241,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+2aaeab56de61163bfd60a0d45896cba7484d61b4,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+2ab6619bc923b2183b3388467772d7036009612c,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+2af239cd0fcaba51be9ae9461712445c32cf4059,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+2b20d52e2596d5cb1cef81b8e686de62790b70cf,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+2b918d506cbf09ac33cd027cc68c1ea97f68dd9d,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+2ba269c8b0a0f5a5e3861dc15dc70a21837d6b75,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+2badb62154bd442cfa11a32ac7d08b4767076e1f,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+2bcf6eea668b7a2855c78f201bd88282d53c35ed,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+2c0f85f9fed694ba46e8f30cacbe76c11507d19e,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+2c332830247bf20cfe8349f7073d33814848725a,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+2c3bf3ee20ab9a716132c4ffad3db28ebee7694f,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+2c4e535c7f4088af6777a1f37ba4b064171b159b,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+2c5049ec102dcfc5498381f4039468b5dc980852,worldvaluebench,probe,Kenya,Africa,1,1,0,0,0,-1,0
+2c95eaea4ea1014cc1ab7f4d0e87a6b957e1b8d9,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+2cadcc088fcb0a27f5cef661d570a66d178f328b,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+2cc07e94d379324be7d0e2e6010918a7036d0c08,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+2cc50072c70206b5dba6db3b188d760b1c562f1a,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+2d0b1bb0df3b1a9d79314bb3db0c440e924a622b,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+2d28cbd6367b451c94a23be6875433f9a9575762,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+2d89fd60d6a741abb4d50549ff1ebea4b180806e,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+2d9c2646fe69cd647c15614102fdf217cebff866,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+2db5377ab4b3cd9444f2fd61d20babffd6e0d587,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+2dc7b67d40587372a1b73d0ddc979c03ae725737,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+2e29269e4d1298388e2bd0af5fec5f3c64247939,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+2e29b36bc324e19f54ed06e7d3d00bc16567486e,worldvaluebench,probe,Malaysia,Asia,1,1,0,0,1,0,0
+2e965dc180c00509b5f2aeaf7353c99c464140c4,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+2ea1c11d42514903e6773f4ba96fb974c9fb6bea,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+2eb6e51ce85c297c466c3460008c2851adbdc8d3,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+2ec47cd7bb763ae88884b0e22d97ff2d9e58b90c,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+2ecb8f1815c365c40b7abca5ad5d619e1ef219b2,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+2ef70a48fa37a73bddfd3b9a91e809a41b1a5848,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+2f60bdd9e87c28b09208e2156707364640d0007c,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+30014a5fcee471b99853e257e649588705737261,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+3036c1e407564544331c92d516c875210a05f3e3,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+3080cd35f7805e4d475e4cc756ee3980f08acd6e,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+30aebfe7b5490f6b9560a3460bfeab104a8dd2d4,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+30b213c75bf0427ea687e16848e93b591c85c8fc,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+30e171ddab18dd5480fa8cd71a227cbe3ce77b86,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+311e076656c2ea04e35f1e907b03ec767b1f43cd,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+3169cafe4d47fc655036614f058ead79d337224a,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+3221a8027fb360c24214cf82849509f544b383ee,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+325d986fca05cbd95cfdd69cb70c3ef531ca36c6,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+329ab05b3a7372a1aa68f4a176916a91a618f3ff,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+32b69174d192507bbd1f218e9b4cbdc7a8ee0237,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+32b900d7730e6344bf45c7a73eb5d9c3407b7f11,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+32ee0578256c5c94be343d268d21659e0ca8437b,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+331dcf14a148e8e45bb88e0aff3a61f27973f0c8,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+333e9992381f6cabba0d235f14182a1dfdc3424f,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,1,0,0
+33688bcfbfe3c965b67e2cc9332e7fe4f50acb6c,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+33781143debda469520de7ed7f6cf00b4ecd34c0,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+338bdd7222d44813220a4845f4c362719532cf32,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+33b96883eb0ec7f41d516b23e4d3b7f23fbdfdd1,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+33bde69b6d18c57b486216d2fd414dcd59d8b86e,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+33d1c7838e80d047c2c55eea21f5e56145a2b7bf,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+3408bb59d182b9e64c4954ff9ade9251bca7a2e5,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+340dbadd1018f6235867f6a3c54ccdc1c7eb33ef,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+341ab3c8b09c3fff3fab5ecf5d58f4f8924fe519,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+341d0910602be452953249279a1600800e33dbce,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+3451c88bbf756fce1f539b54d21d815fc2f33d3e,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+345dc8a9928bec52289d606da04d1c834956050b,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+3496d16bc7cdefbec879c208057aa34b1eeee2cd,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+34a80348a2a2e0b59d69edf681099b5c2232211f,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+34c6657219782950a258e0adbb74a22a2ed30c55,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+34d4f7b0fa417096254cd628ea20aa1e87a575ca,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+34f4687d571ad82350bb449d55704e7f75d0a56c,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+34f970965fa2ce059cf4ee80bf97f76d8c6a1e25,worldvaluebench,probe,Philippines,Asia,1,1,0,0,0,-1,0
+355f90496ecc430a505f798d9e7ec0913351bcdf,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+35a6dee103f5c36c2712cd7f27e03188aeb3a4fb,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+35b3d9619e203a4652bac25c67084ec844af88a5,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+35bb26973e97836df7d4700aa3a6c2cff3c44e45,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+35f3aa6925b8e30702954e82e0c3a0e683577a32,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+35ff2f6e55ae9b697ffe870a44a1c50b5b73e6c3,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+364872aa0098203489954c317a99d3b2cb075906,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+3655a30b154eedc39caf63652c528597a805d12d,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+368a287eaea48bef36ffae2257186f8dfb4cae08,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+36a013e0e1250416bc5be8c3c67a6216e40f042b,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+36aecc8e9795faa13f58f847eaa5b9958e3e2829,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+36bd4dc7c7bb7db32995928c8a3c0c0ea0345808,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+36dc7fe31c76e4cddb1cadb0cf54b2d473696e8c,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+3722c67e3c443ac742882aa4145468ba9917a2b2,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+3733932f42cb5c3a40bcf10f5314f1fa8bd45d06,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+3734de6ae4f78b3492a173af168fdbe25136b4e8,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+375a018d1182307ea8f7d6dcfd74c658962c41eb,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+377d478a3634e8a0b3079cfa459d056a472d7b6a,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+37acff9544fd732b7977f53b5f77d023115331a2,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+37f665d5933cdf8614e4f0af7f09b742bea703ee,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+3808c97877b92ba142b7ce5114528fc88dca7f44,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+386834b791ff82c7abd26b3fdc448df619455e40,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+386f96a9874f2f956ab28eb327e9e54070b177d0,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+38786bfe4b474cd009b6e5c7417bef6ef08e8f0a,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+38bc7d900c4abde6deaa1271729b037a128c555a,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+38d320f44ed3ff0b169a408d4a081170c2c319dc,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+38d5932e45bbfb36b320d917c7d3815f427d4ebc,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+38f71a1dc852836f83f5a42f05dc21cec99a1e2b,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+39786b7f49f1a0b7a83750cabe1e5992e9cd7167,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+3990da67cc2477c3d286187e0474bcc75a0634b4,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+39dc91eae0814cf40f2f8709d70bd1c606539c93,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+39e54e2a357416e44b34146be28ce83fb9a99286,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,1,0,0
+3ab0c09a9553847973703d381333b1256bb539f8,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+3ab54994bfb856f353a368cf5fa0c96e0bd4d657,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+3ac744ffb0c2bf17427d2b27a0d51c3b677ecad6,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+3b1c168fe2ebe7a7fa697611499416ba0ae0ecc2,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+3b411a2972528c2c5e4e09e05a8e3dfd8539e9a1,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+3b538f78eab038277786b74645d2ce45d3de70dd,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+3b78eee9ff584887b114b371689bcbebd0cb1f08,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+3bd0448e291e52141325c70ddf4d52e37a7bb903,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+3c646bdc1c9e4cb0f978b3e4701b7fb89ea3d576,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+3c6e042c619faec5ce2c63fe0b5bb1b391c8cf81,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+3c76ac314e2823f63820b5fbad5b7f3c7176f87b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+3c9754a89536a83f888b2766ca00960a6e339e7c,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+3c992c8628ad3606f9547b2d775d34e76220692f,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+3cb8277e089404fe82799832710077fae7fdd601,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+3cbed14c88e5a7cbdb0d6a1938135895aa62f0b4,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+3cde3798815279d54322307331cad60aafba39b8,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+3cde4a1298e92d59addd14757e496252499af56d,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+3cf060d33b3ff8036aec3e9f2111bb10ae274712,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+3cfac6a77bb97d6ca7ef0db677d70ff0f811f7fa,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+3cfce5e3a0040d81581483c2856a4271c27465f5,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+3d0405a733d5c3946c7adbb2043c16985f4d8dbf,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+3d397c7b59e42efdec3db43763aa1633e414a075,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+3d58678a5cfe8d38ecfc5e2dc90d042e893b5e2e,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+3d69377dd03b6b7794d3c3cb4e88bfe450905972,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+3d699c2069f5c92dadc34641da790ce9daf6e5db,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+3d6bbfd49a6e5be2761391986c69010461f77631,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+3db0595d2f654adeee4fdeddcce8a03f95ccc6ab,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+3dc842358caa22648d3d57552425c19766664595,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+3dea0281ff154533f2e67ab21c4b2a837350282f,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+3e36b833ef1ebcb6d0472b2c171dd7ad23838ad1,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+3e76ad2b39dbc9b3297a04c9dc14e6a22abb6034,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+3e8ff57be45418254f191de275b3db396a511d71,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+3ea3035227d945227c0fcbc89e59b320c84809a4,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+3f1343462d70f77c1309295d82eac8d0fb9391cc,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+3f1a9c1753b5fea43f720a7bbc7fec1f8e71337d,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+3f504766ba2b86b72255521530bf7fbbce012cbe,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+3f5b2dfe417e007276aa58321be9aeacb6e231a5,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+3f5f865bb42811b7fc0e88de4037b6dcfb6eace9,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+3f683d429e3f4e10c86c7044b3931fc9dfb504de,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+3f6ae96d24695a66a8f3ffe1f577c50bf05aa9c2,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+3f96e2442ffc4dd3bf2d65615c943708b6ddfac3,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+400be527cd1b22a787d8cac093c6e6b528679bb6,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+400e7a6811e10a449440af5169b52cd080d67b26,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+40847a9af5629b9db0712613b03bc3114b6d3627,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+40b7edc9d45f7da6972af4164043a283c820ae5c,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+40d25f6efc40027c14b8242cb64b789b36eead88,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+40f469bba93024e21aa111ba0690e908d241e342,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+415bd7c1ad2798f4cd8e17770d989a7034a0e31c,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+41bd084ed34586e7c37ac40bd256854c345962c0,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+42029d3873ac00450851d2e000fda0f41562b87c,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+4216a36024eec953275a26a0b617955fd099d827,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+421c09415af753d0520c5b3dbb2b43e41f672771,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+4244e129314bfe06c3e9045cf9862485af664661,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+427f1e33e71aa787455a68f08c25ede5a01abfc7,worldvaluebench,probe,Hong Kong,Asia,1,1,0,0,1,0,0
+4302a97dd219c9ddeafa6e55fdbbb08d20e00198,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+4338084be55e584ea9c215bcd0f9e370e7f4831b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+437827fdf05a1cc3adbe8ef2344b60e8b5276dfd,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+437eded9d14780362ada44494d98b5c081fb1cfb,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+4397fbfdea5ecb4865f52f9c2817c6cf379a5bf4,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+43c4a332230dbb867fe1bcdbf1adf9c5903e1ad8,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+441461fa8dae2d6bc67e2675b869db54faf3178c,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+446ed3b3895f7819f25519479ea8f6cba1c321e5,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+44938fb1035ca173519764cd3a32f635d4738240,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+44c1fc065cf0dae6169f68e32e1072c41c4b0082,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+44c3eee884ba1eeb4ede816b36344e9f781df9ea,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+44f4d476d157ac04f00a5c3b553a6ef3d3b8d8ba,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+456b7c5ace4756aa1e25263822f9d32c9eb33e7c,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+457745c41589c5b9737cc763da53bd77a5da8afe,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+45d5063ac218fbc1ec6cefa5caaa5ef18844f10e,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+45e62c793cd999bafb119d844076c5b137544496,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+461fb956ba0539073620d155ac3c8192d1a5eb1d,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+46348f4e956ed41a8dbe8b923626205d7d936eae,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+4666f92001b0cd5df1597f46032ac7c5c12b7395,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+46a6a17bfa7314b3abbd86e6235ab9ad677d24cb,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+46b020b3d916dbbd9c059f0ba519c1cfdd2a2720,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+46f721a4d195ea6b178c6cdd9ca36c73f195efca,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+47176345f4f920b748bf200f140100a0b5e4f9cb,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+47755e3d3e7292133f2a860af0e46ae2ad1b3301,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+4797d19482beb3b0f5596fd3fff3e2deb1d8a6d1,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+479d2b1ce4e19e88590d960d4c42ec7628bb609f,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+47ae7565cb361d7762934dc51ad0fab17932b3b3,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+47cd7707bb7afef1f5754fad76f0b3545dbcc873,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+47d961203481255bb42c70f1a3e5fbed83172549,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+482983c812e3d72fb3794560baa2c0d18cc00643,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+483c456c19be8c7eb0aa4a2a45890c0b55f51f4a,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+484614eb2d15a508d2998a2316ceb71853da1320,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+485e21315005aa7aea68640ce4ea5ac2419cc6b1,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+486841725c0854477232915d1cac5230cfa1b393,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+4868e2e58ac578cc65b37bfae443447dfd8f8da8,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+489964b1c8b554d8e6c94c5212b645de66d5f627,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+490bf572919ba3024ce8d4aef02ff5250f1b1b6e,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+49137b9ca7782daccc01d8e79a2a42b5ccf50785,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+49c3b07cd746058ae0c6ba1ac3b5830331be887a,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+49c47fd9df1cb862ae8a17326c87cf1aeb273c6e,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+49e9baa35defdc5fbef3ab94e6b25ebe4a4801bd,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,1,0,0
+4a24ba21d4d5dfb7e36538e812b945ea1db4cd17,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+4a69f99dae884c9a78b4613d93ebb1fb1dfa8974,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+4a963600efd4f8e2d15c59323fd568c84e9abb2b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+4aa98e6c71dfae51de50751c0fcb4704286f4c07,worldvaluebench,probe,Philippines,Asia,1,1,0,0,1,0,0
+4abebd868b3eb2b3221736c180f8413c056ae066,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+4add63597dfd4f5a481d6cffcda343a457b516af,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+4b8d6e7b4cd58cc545874159e1dad004749dcee7,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+4bd2ee348faa7116e2275a8b7cbc1ccf6513c25a,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+4bd8ca69f492aa38a05e6df79a14c664430728d8,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+4c3884ff038cf2e29803f7d2058335abb42ea7d8,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+4cbde205b22f495e1978e68c793a0441501a78af,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+4ced70ec2fb931a97ec06776acb7a8f672823012,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+4cfea4aa4c3c655fb77b0c957a5946f46894722f,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+4d043a8f03f9e17565d9046f574096f4fbf8a3ec,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+4d05fde14aeb4e6fdb94aa67e5f95605f1b1bcbc,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+4d085fb4d8815ddf563b6d2dbc0f86a8448a0900,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+4d1f8acd9f942b4c5c77158b7d5f15eb0609a785,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+4d21fde2fbeca59ec98a084848e5374307f9e2e6,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+4d3b8cdee10e49ec7d5ea547b3639410901a6764,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+4d42dc132ff05f8bde7d9a1212a648ccfd10ad8d,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+4d548c0112d0cbe8cd47251d4115e5fcb1794f5f,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+4d75c1163462f2d21ff5c51fd300018ef6da3947,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+4d96422127e7cd345418142634104df3d797dedf,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+4da3298044f3358edb1adcb9cf826f418375403e,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+4deb9b134b206537e7907903668a3dacbeb95656,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+4e23b56e21c737feda3ae672a4c89313a9e61a7b,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+4e30a6265471ae6d84dc9a607ed3dc29c25304f1,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+4e4625883262421b4012126ce6a474fbbc12ba0f,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+4e5ee9e3f117603ad764be7ef4a507ad5f1339c0,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,0,-1,0
+4e6fd31ce648ef3a55e6ee0738227b01d76c095a,worldvaluebench,probe,Kenya,Africa,1,1,0,0,0,-1,0
+4e7453d0e885939fdc715efd29133cf7fda642b5,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+4e85614df3c55693bd863b954c2e28f282a4571d,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+4e90a05454bc5a2469c75c28458342963cff7ead,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+4e9fdee2d4cd8c0d1b8213b7ea143c97b7054cad,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+4ee22ec930f5e229cc33ab0916b6362c2a293b06,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+4ef45b97ae0550343e17369621b4aa759369bd5d,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+4f4ccdf576380df78416ec6005d87a838e21570e,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+4f5a15f3cb30faa238dcd3ab8aa34c2b6173a8a6,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+4f798d2a31f63563d6a77488c439ca5753627109,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+4f90f61cceff596df4c8b6f340917894363dae40,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+4f9173ca1d79742967544147d8da8290df2c8dd4,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+4f969ee468f17cbda183db0b411ef9103513d991,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+4fab1d488bcdfdc057cdd672fa766338415bb74e,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+4fc494c3ed686947ad887d08fef8766d4a4fe825,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+4fcf2e52faf0b25dc46b4b6f0a3058e64e7fd379,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+4fd8f61d1a96630f8cad20641869edf914548a6f,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+5003f3f945d4690373fa3ee8f3651cfce20b3587,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+502da81a4d34c1d2ff26fe1d729ae0ce09b96fca,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+503b70834e2e89ed13b09cbb7079923f59671268,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+5079358065d4b4f8381cc9d53e6d8b05806bc277,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+5088bad84296772962cb667be672bbaa96e3586b,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+50a06efe5dba4a097a39575b3f62fcf9ac723c27,worldvaluebench,probe,United States,America,1,0,-1,0,1,0,0
+50eee726639d0a9d4f53343e183e2c737b09d779,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+50f47e829c588210636b4601f49b7ad587f8f4fe,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+510c9870b44b3fc07f61a2c4f96e0e9512f293f3,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+51225efa29e5622974a62a4d0fea7f651716844e,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+51499c85629903aa8193cbbbaee2f716cec241db,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+517a6e6bc6ab5f410045e7c8c9450220f00319b6,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+51a2f5d7ec2c2bfc7ebedf931b13eb2aea20b723,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+51b5177f071b6935f2b6a8fdc9f41273b51e4c7e,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+525417904d7261ac7384901bd96f9c785d9e55a3,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+52a77c6c57e8c1b1f80c33b438c21ec0e0317fd0,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+52c04fd50aca81bb0353116122fbbccd05568114,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+52d2a93b5d7461a1066b48a48cd2833270c576d5,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+52dde3592abae538dc8520da4f31211c9c2dd252,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+52ed6ae523fa842feed41519376093b5ee15fb8c,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+52f8ad300540b07ed8c858de1bf0276b2811b49b,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+5325272b605414f986dc2ed351abc417e46657d8,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,1,0,0
+53a40a500e82188851f3fb391dac12c2e92d739b,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+53e132aa5cbef9da3314fa5f1963f9175aeb6ede,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+541e8df9a0b8998c294dd83af1aaa1a4b5c6d037,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+5436e2b33abbf589732ff5c50e7205e1564881fb,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+5470601f3c78d297a61f6daecae18779fb3cc77d,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+54754db0b609dacb3626daaaac0f054585266184,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,1,0,0
+548c451d12a894f186cf2ece2e809750ca45f255,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+549a7d5690e3a6545e6537c3395648e408965544,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+549ab0c94656f7089c443ae8e4cbb6e3028eb670,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+54a0867b1e8e3541f65d41b01c3695ebe09a340b,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+5537a198c74228a661cb87a1905aaea97b6a3f4d,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+5570a6d9f98d702ea320cf315cd2019cc0b96e6c,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+557ffd725f1f5df409045cc61f695b0568d2280e,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+5583321893baa9944ab35d42b695021a3c6f2d1a,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,1,0,0
+55a3b067f0ab33698bb2f2f2d96e47704286b936,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+55c1e509aaa9ba2d739bdfebca706a847d4a6800,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+55fd0ddd81197a7057e9ad05f107e32f0fba6427,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+5614b06576f0f437352e47b16d8da29a6e6476a7,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+561605e6afab48674042c7e75b120ce50316f3e0,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+561742a185eb1289ed5d0855082be4d308bb956b,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+5621b66719fa0b4d251270cdad50dcae830d3971,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+56eb5ca686b2b8ea1d0c03e93227c9d1ac636577,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+57585104804a661c76315154c9146e5d4682f167,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+576f994e26150555e1e079abd800ddbdb9d89f99,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+57afeea477f34a80c98b2ab070cf2fa5973c90b2,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+57bd943f9844f1e41482f4e0554d727b3913afcd,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+57e0acc56aa69900860d13706f408b89d4df88b7,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+57ed10c076fd138efc44c450ad5f7e72643c0d65,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+580d184a6adfd44b8a60cb14ca3f9da8070074a5,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+5814a3045d9b544e90f8bed3f5ce39771096fec6,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+581d084474c131ba951f66d6d4ebb3def9d54ab5,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+584cb424c0e2d9c9f36d70e7988b444bd9f442f9,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,0,-1,0
+58677b8ba3afd834de35591fe846a92e74ccb1c7,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,1,0,0
+586b7255db51196935db19a9298d41d711fbc520,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+58c0c65e24a6c86605dc57e35db890fa8bef59cc,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+58d0bdb200e8d67e126a8c757803e433fecf61e4,worldvaluebench,probe,Bangladesh,Asia,1,1,0,0,1,0,0
+58defeb5a767dd141bd8ab9991b7c20614e2f44a,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+596f727e8015ea77677e9eab9d78ed4d143f18a9,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+5bdad6e19c74a4582aa8ade5f12b7096d00ec8b9,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+5be892b613b8fc99d82f029151be3fbd75380e16,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,1,0,0
+5c4a602e47f57a01c2d12ef21fd51f387935dabb,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+5c528e5466bee82c843508f217decb411583deeb,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+5c59b9849a5bcdc0485a083d28c9b2c21b982f8a,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+5ccec9a3164473506851308a22c8954ac1d7e87e,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+5ce64b9d0c5557d0e06806d49103733ded77f2b1,worldvaluebench,probe,Philippines,Asia,1,1,0,0,1,0,0
+5d12190bee366e4e888c1d44736f2f54eab3f40d,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+5d20427b137f8683205f4564afab7388fa2bd1e6,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+5dc517ec3fb3cf8fc85304eb21af9605bb43f502,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+5dcf902c22f2d32bbcc5d4ed96ad619cac38a3de,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+5ddda6c386d26136a394803b5268dbfd3a510f5d,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+5e0bcaa99c92b02a0c41796b76e433e0286168ef,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+5e1a845ce91ba980126cacec0993c69745406366,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+5e3578d2e519734eb42d48526130b07acda3a9e9,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+5ec3146d4c558b23dee778c3857db1958e839c83,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+5f10bd63a3f5558db8ab3cf57e71f7f635c424eb,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+5f1dffe0c7eb7cbc64d7e7eb21a4459ad18bf144,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+5f214e77abb03b34c3bc27d05220bdd368b6630d,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+5f28397f78bededc37e62a647c9ee1101b7e8082,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+5f546011c53281033e68fb535a715676cd54ca7b,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+5f6f6c2e96deb95cebd1de00aeb7ec52d828bf9f,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+5f7b0125a047ab9d4df708fc10bfd315c6e3e218,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+5feb5a04455417b411d3270562aa6113a76a637a,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+5fecb28c43c89c8c2eb7e7039735585bbc410e09,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+600805bf325cc0edf74433b67480624cd530bab6,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+6033984581e322f649ff6d34e97f7416e8bf94d3,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+608d40a40992f01d1008277c9a23a987de1a2e47,worldvaluebench,probe,Bangladesh,Asia,1,1,0,0,1,0,0
+60a97d0d652d6fbdffb14b4ecbc90771c85925c1,worldvaluebench,probe,Philippines,Asia,1,1,0,0,1,0,0
+6118054a9025364f5a51c441e85932b9deef4905,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+61408b6592f871ff4b1dfe1cd410733ee6f7bed0,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+614ff9af4193cbb7233e42ca8901e02b455944ab,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+61806153ff8b273efdb9be580dbea63acf763e4d,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+6199a4bcfe3679c830cebec25df583d50b8766b6,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+61d54883c9c996e79b65a18b39d5ea84ed88e1c2,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+622b28e2eba91a9a43e26719b95abe13ae491698,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+62683cbb3ebe6f431965c293a3ab791c910e7344,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+62746936fb1543bb33be1696b764511e7d764a00,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+629cd043d639d527e2108601b6a7065ba38d73b6,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+62ad62e1a0078cd3ff8f4bd5709abdfee3558c71,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+62e1c8b12291e162a7e5a35fb6cb7cdb3701fa6b,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+62e90f441bf52af7640f29229b3100f2668f287b,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+6313a20ee7d4e6dd7c2bf304c33279a125d0c8fd,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+632b35eea444bbc8928d7ae5d451951db125f664,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+632fdadbf69f2a11be1381497ae46dda595afc9a,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+63438ba10d9bef4a01c0154b2110c9c7ee63e852,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+63596a75a177c79c8f1bfa52bb9d7a062a4b1ad0,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+649f0c423021155d0f9850042b3575ee5cf33730,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+64dbd2de100ac38d6c68e378161714670924d91b,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+652e28738e9359511e078b2d0d11edd55605bba2,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+6557d00ef2d0e7315e0045a15d033585df6f8f1e,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+6587179dc6049a565fe90da75bdba38e05b4da1e,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+65addfd35ffa09c7597b49f0ea2bac56f9cd89b6,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+65ca8c99d5428fc3d5559dfd17d0e4f49d858f91,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+65cb9deda27c7ac8f1922c29af50d7d4cdb740a5,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+65f1c1c07723087cfa5ae1bd3ef7bd201bbe9887,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+65f61b7adfa88b49e6ca90781b12326e3aa8bb06,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+6605f5aab64fecbf3d46455e951e645f169e3418,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+662dc0aa42903541c4b19b9cdbfac593d969e5ae,worldvaluebench,probe,Hong Kong,Asia,1,1,0,0,0,-1,0
+6632c8b1534a545a37e4f9eb79d07a4faacad687,worldvaluebench,probe,Kenya,Africa,1,1,0,0,0,-1,0
+663c792a27a654a51a068e8b04cd328fc81708af,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+665046fbdb6b6679505884f5c0210ec9644969fb,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+6669053a7391243fbc43bd50069e15e6b266690f,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+66730f0ad6cfe87fba294313fd690699e1e64b93,worldvaluebench,probe,Hong Kong,Asia,1,1,0,0,1,0,0
+667bbce194abc92162993df35e99b14d16c7efc8,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+66e9a1e2a69dc34b15dc2e653506a4c61ea6cc93,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+66feec48bb1bc62b9c42d5b461f70298983021cf,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+66ff3463d008774532056fc7360de34c8aba8fbe,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+6720c4b830646fa1e66c38cfac0dae57fce99d96,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+6734d28902b94bbc1a05f32c525e7f69d06627fa,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+67494905ac187be517118c65772322f7da358d70,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+676ac24be83abb5ee10577d965cd05aaf59d9caa,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+678425ce51d4fea75bca856cb1692acdd80bc501,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+6788a677d72b3da2e6e4b5f34b5098f388ea1d87,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+67ad9bb7f49bfd37aad1c8554b945fa5879d3974,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,0,-1,0
+67c205d72c6cedfc0c55a8bb74b349655265887d,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+67f13b492ecef4f478abea8b7b9dcd97a38f5e87,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+6815021c79e556419c53061aed6b563752bcb367,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+68d334558c6b9c1e9003a3e39f334fa773f2cad0,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+68e661e6d475340336e8c3fa563122fe87dd0b4b,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+6907fd100b5074e4b2dbe4c333a8ba8fda0ce5ed,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+6942e7874cbc2cf64baee16b7db420a334ee54f7,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+697200ef52976fc8f55c4c6e60793487f656a7e4,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+69969d796360b098cdda31b8fb52cbc7d1f1de7b,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+69ce8b142943f4f06f0ea15a2fcfba592ba39879,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+69fb71071a556bc00daf939a882755766cd43468,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+6a0341c8a1de386aadcfe091024d63e28a5374ef,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+6a2ecae8c2fc7c2f84b617addf13c014241acd19,worldvaluebench,probe,Malaysia,Asia,1,1,0,0,1,0,0
+6a3c7b40fb62dfa9b6c77bc4af5f62b5d3b7c5e3,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+6a697ede851d21393d368701d5995d36bb372bb6,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+6a6c706e83ff3e32b8ff438de9f975403e1fe0e0,worldvaluebench,probe,Kenya,Africa,1,1,0,0,0,-1,0
+6a86ebda13575f045091ac31d682eb4fcc76404f,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+6a9f4fc407261f152e0e2719f2f084086ec4d0ca,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+6aabac5a2e35205a9924e45813700f09289f2cd9,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+6aeeb98b3ea46d47327349aa12f96ebe9024be4d,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+6b2c96ff68dc7b7cba99592565ad7fa09481bb73,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+6c0a080cd8cffc23600d7e3cb89fc8844216e7e7,worldvaluebench,probe,Kenya,Africa,1,1,0,0,0,-1,0
+6c0efcb77a8b5720dae3c42eff020d08e715590b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+6c57cefbf3b4a050251721a8ae6e3032e64aa9e3,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+6c58e0734599a5cf23f14a9ed21b0f98cfdba70b,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+6ca7eb68fe8377a70b4b5714b20d5a887e70dbad,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+6ca835e30596b79ec6ccf0b3e91aa96b499f0019,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+6cc04c52214d9e7ac349e20b622e186010c3a695,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+6cd9b85eadd04299be3e336175fd89f502277db1,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+6cea5ebd06679f88de9b3c59a889608920fe876d,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+6d0bec3799e79c536e64a35cbdd9130a0d6eb6de,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+6d24973bbc9f813091b57813635acd38a58a362e,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+6d7c893a7102cd16729495e9a2e597713972dff6,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+6d87226f26ecd06078ee3611a1d311328f8dcb24,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+6da4f58504530ff8e4d73310666dfef5c2f4d20c,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+6da5da1d06238e10125130f3e1926e1dd02e37d7,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+6dae1923c9c7b9f620b60506bfaaaaa112c8b9e9,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+6dd21e10bed438a04b2f2cd94bf11010dc966c85,worldvaluebench,probe,United States,America,1,0,-1,0,1,0,0
+6e6effcbf85a21ca2093b970db756237cf34cab1,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+6eb811c3c571695597ab0d296edb1b66f28f92ce,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+6ef3a7f9ea6fc67d7754f45a0f731577502b53fe,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+6efbbb1b364be6da7423714fd5a1f0eff4add246,worldvaluebench,probe,Malaysia,Asia,1,1,0,0,1,0,0
+6f0f497d7c495c9550deb12fafba60b01f5ce446,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+6f16bf3da6072b181da280deca4ca9400e082a13,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+6fb4f7871fb116365bc570b02620a4302a9c87b7,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+702173ffdab922f9bec1a9b2769bdfcd79ec807c,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+70b90b0641aca8d4e725b2849818323e5ccc19f7,worldvaluebench,probe,Hong Kong,Asia,1,1,0,0,1,0,0
+70d284775d30053207d4f8f9bafb0cde35d723df,worldvaluebench,probe,Bangladesh,Asia,1,1,0,0,1,0,0
+71687605766727ca4e0a580c377a64bded7b4b86,worldvaluebench,probe,Bangladesh,Asia,1,1,0,0,1,0,0
+717c35cf6cdf1d5e8e417011e4829f08ab421b3b,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+717e730eef3c23abf28adac79625a94d5eae73e9,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+71ad10ea9be12eb328573e48f78add1c8ba4fc88,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+71b327f477da9d791e5cdb106547493fbdbc22a6,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+71c50f834d5df1d6fedf6bdc4b2a15581a419fa8,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+71d5eaea322cd238624d24ae133716a0b964a23d,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+71e382d578b7bd9e31f31bbb78ce845231149168,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+724ef34ae86ce527f3b85ae3570b2607e7cd4d4c,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+725f8cafe96445d21391c2ccdd0b448ed14fc120,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+727784bb3b3ec7eb18fbb6e984ecf6a6fb658fd1,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+72ac8d06d045d99941868c411cbb18930024724c,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+72bf43c38caf63ac6e752480b56bb5d1df3373ba,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+72c2b27946655fd046fae29af1a639e85057e2a0,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+72e5df2cea33a18ae2562b7bfb6952704c822ea5,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+72f531dac523d15190957d45bbc2bd0d12e093cd,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+73003fad0c1dd18536332b47f25402fe617b9500,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,1,0,0
+7302678de05911f6ae50227283732ce54e5615fb,worldvaluebench,probe,United States,America,1,0,-1,0,1,0,0
+739ad6081a167eee6e2f46daf54cc3f0a006e769,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+73b9602f8c83dd4fdb633184f52f2786deb10ccf,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+73bbe3ef9078dab3710bf72406a4b8dde3c1223e,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+73c2ec1fb6fc5b929767a749afed02c3994c68fe,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+73ca513a84345755de05661b34924e88c097c09f,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+73f4ef5b86f9fe07daa5c4e7dcf3edc36b87b3b6,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+743155de5570d48d541492b9a1b3c0e685023701,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+745d2af159cd4013e2eb1691339f85374a72cd67,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+7489cee37e249387021f26706a572f6eea5a06af,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+74cde431232b6264e418450819178a3f6d333800,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+74d4df335368ae6569d7c141a8964bc2dfc047d6,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+74d6aad3a4ce4582148bd6a6d4693bef3675f64d,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,1,0,0
+74e709131895ff10fd223321e60dbea70f8a3df6,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+7562db8de73c2b1b1455779a246e2bd9f2cacd42,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+756e60762120ec8f3bd7bc6f03f7fffd47183060,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+757f1a844e1ef9ad8c8e67d61a3530c4057c2916,worldvaluebench,probe,Hong Kong,Asia,1,1,0,0,1,0,0
+75c979ec1d6edf9c61a3828b807f18a6b897498d,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+75e678e1c6356f469a4c2dbabc673bce9a2d4aa2,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+75e90e3dc7dc601d35436e9fc03a5922ec546e41,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+76103650e6cbd07e301b72e33a582e5621440e21,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+765c8bb6473255700b124b38e83cc788347d8628,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+768f6e3ad26076688b250b5f294a6e6de71fe195,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+769465a564221e4abb5bdbbd6d0322f7259df159,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+770cf54d91614dec3f9a318c8c86b453d8b0a0ca,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+77387b0f0795ab906d5795386bd64eb3f590fbb4,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+77565e06e086ec38a0710ce05573b2f9dcf5f203,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+778658349d53d3ac6d9e262fd85cbfe0922957df,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+77a9fd7ea2bea4ea0f158d810564b91ed2ab086a,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+77badde94c6df9351a4c73c519f35b727d318442,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+77c0cd60d9f8f0eb63c18f355ca2c627ac827397,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+77e25e65c8681f6c6078a2e0fd785758d62e694e,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+78130c546bfbf51b57b8b824c051e310b84531f4,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+7844e1ffc78cc222cdb0ee50f2edd78271537474,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+78c9fb1d26724669e8d807dfcaea854d874fc356,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+78e71a6164bacad83d1405f89e26a806c561d7e7,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+78ece4b960fb0b9610f3ef203d8dc969ba77bfd8,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+78ef3ffbe53b7038750a1838f67bc0279295e2c4,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+790124fbc9d5a6abe402f7f784d71e0f0c2fa16b,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+7920ab2a4267e9368704f2d9e942c63785661d61,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+7933724d97bf75bec3f299ad12d4b065b1b69653,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+7978732c8d6a62bdfd982fb27f9fa1d1fb52d985,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+79d6b2b65ee9afb9c58b768a6ec32cdd3f405fc7,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+79dbcb6acbe56ba33da381d6adf429b22b082417,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+79df24a700142322f235adc90228fd1214f22abb,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+7a373c4db29e8a8c75287dc083466ec9c3c0cc32,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+7a6508966ea3ef026eae0a5fa2a528989e92866a,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+7a99928f511bec576ac318e25911fa26a0891c3d,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+7aac885a4d4b7f81162436e4d039acf653fcc1ac,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+7aacb87169809a622a3e55199befa8440bf5c43a,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+7aaeff22073df6fad4dad7f99bd915d3621bc587,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+7ae7c6db5aa2178cda8f851c3e023862a52cc84e,worldvaluebench,probe,Philippines,Asia,1,1,0,0,1,0,0
+7aefdc1d5034a6e7bfcf3ddc0a1b4689bb0b64c2,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+7b3dfc1edd11af8e6a78f4d5b8516b0687967cbd,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+7b4344cf470704354566010ff85005bae97d19e6,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+7be1a0ae49f6699ba540ae4182d9eeef553285d1,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+7beadf72102977b1ada577a8a49d3207db4b7ebc,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+7beeb9d6414da549e722662a2c3bae740e3172b4,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+7c3646329554e585b997eecd5fc8045b2d1b99a5,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+7cc3aacdc605890db75813c6f959e041c46ff3c0,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+7cd8d4d82c723c6fc627ec45b092870fe178acdf,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+7cefa56fb9f7d0e8921958ccd1c9ef18c67235d7,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+7d36cf954ca84e1e4bcd68d839e44813869db44d,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+7d6e3925265f14223bffb292aa07bfca5975a164,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+7d8419a64e96530268e916cf76013c86f3652fc1,worldvaluebench,probe,Bangladesh,Asia,1,1,0,0,0,-1,0
+7de2651caeaeaf9af3b86d0177d327ab3e08e47e,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+7e383fcdc6b277ff0fc1b3e52bf5f5dec2e8c427,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+7e511de390d2ee802a6516c236438236b15b85e1,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+7e6ea5341133090171108b6254d085bad17cbdfe,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+7e787e021ea3fdf4eee903e8b52c20bc1f23557e,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+7ecf6e7a4b6250f16890748e0e012e7c46038467,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+7ed9cd1fc94bb1c22aca35ddb9c65a1bf6a52b1e,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+7f1afaab0073fbcba33dc34f48b24d02fa9fbb54,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+7f5fca19e8f43fa7bb25cf8fa7c07fdfc4c5b757,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+7f7208e91291ca708c3610ef86575c6799199205,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+7f9a83c93ef0a9af224110a2ec08cf4363b45638,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+7fb733a92964d1fc120d245ff83ad01df4b5dd12,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+7ffd8dae63c3b894a8eea1755c439857149e2ea7,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+800236d10b938dbba5da03a08072924558b19688,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8035c77a81cb69658a99bba4de6cf2f3e07e6985,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+8041b3399906242fcc5cb581f984cc946a338332,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+805fec93e258ea2dfa8a0a831e4bd4d080b43b40,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+80bf26097fb0778b466b261ad7a1dca20cb95545,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+810e04bc80a61dcd62d29b8437d5ee0d3b5cf397,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8151b0f868e7d2300a238c0f595e06f4aa7742d7,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+817d59ef738574aa2d0e1536232ad533a1998d01,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+81b2d0a3395944cd90c46e6a9bbe15520afb320e,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+81f7955f63b4bb7693d25048141448244c9437af,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+8219a084295651b59bff356cf9871568dcec9bed,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+821aa67f8e9d5e194c03719a7572738e26c723c3,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+82967b0ee9199af5af296f5fff93717d00595d7f,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+8341794d9f72b400fb7563185413873d6396b6a6,worldvaluebench,probe,Malaysia,Asia,1,1,0,0,1,0,0
+835026b419b3de147b38bb2d8c57f5db5c0f7dd0,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8358e9af86add7caca3bb02cd7e6f6cae9567651,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+836a9ac6cdc20fd7c9d25cfed7e03a51aa24e471,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+83759e8c24162b956573250402fe066ac13dc269,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+837efa31633f4a33aed2bc535ea177522f4e6ce7,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+837f4a321371a982e6033348e0579922540dda53,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+83fdec603c6d16d519ab230d9b7a6f69bfa68d9a,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+84308e7139c9cf25045d90389a1848f27e1ebfc5,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+8441db819b747d1ff2a57f48cb7c59842e98a043,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8492c13fe3a75dcf4bb927967944eeefef9373bd,worldvaluebench,probe,United States,America,1,0,-1,0,1,0,0
+84cf4b739237bcc6fdb13a6be492baacb22cf764,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+84d40c489637a99537c40ad3567cefbfce38e059,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+84e212d01829bcf161af9840339b55e37c4afcfb,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+850536847b5afcf7fc680b23f8642a0236e7e8a6,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+85590ad764e84e3e533e1947fe29ae15ecddb0c6,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+8562367fe618ea697dfff500f0066bccb679fdaa,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+857bbe1a2c1002887dffd894c6f4b8fe440e6f2c,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+85e09fcb76d9a4f862830298d777148de703860a,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+85f1bc28cf98e4116e1af26acdc943f9b0499fd7,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8628973abfa5c3ebf203bc7d84b0a2867753339e,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+864113441c42065c9413342b2d30885f325a8165,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+8656dbb5b5b5663d84bbe13a440ea01efb244120,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+8678801fe46365201ede79691a66302b7e2995cd,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+86924b486c3a15e1d2cff5e21e4f618d3e1ef66a,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,0,-1,0
+86941440ce7f9a229bfd777c4d8908cd4903d8d3,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+86b409dcdab5b9cbb9fe5e18d9498e90c1e23f03,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+86c0e5fd87356648b52d6c0b4150785b2a2d671a,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+86e3078ce791e0a34888fdf06c396f7c114b075a,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+87249feca646bef23eeedc6493cff45258422321,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+8734d5011b4a6053d5a1f70fe3a57518ca9fee1b,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+8739fbd0f54ed40eeee73e6d1fec9199c2ca0186,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+87574f1e3c7248691a40430679cbd89fec940579,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+8766d95f2b36873090fb24935fc75b57b28ba24f,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+87a493f7ec3003bc8dabf60ff7a9401135dbe196,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+87c59e9804c5de148586b4848da47af02bedb794,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8810c8273b904433802af3d988a6468138e5da87,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+8835d214fb2aff6e0f5e406cb109acdb9c312788,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+88631dacec7ad9c84cc4262e24ff0f589a90d603,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+88683d0ba0c92a6e8c0fc5ae2b125d4d02a16ac2,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+886d69b5c4bda82ca7f285ef99b8da201b5d40aa,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+8897f0e27c0bb9189afb1d9cd1e03e03097932e2,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+889c1e5b696259f5874d754de29483c1aa7fc5a4,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+88b5330d0a91e652deb5b56e8e88ba984d4e9718,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+8904abf06961d5545031abc48616b9d325b5b7f1,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,0,-1,0
+89062e66398d0aa8ddf43006a7fca729012d843a,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+8934e01e74976704abb9f81c99ed52ca257526c0,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+89416159e9c26016c29af22548f93a9c4e5377ac,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+89dce19d72f904f09feb6878c4c9882205d10632,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+8a0ae0676fdb4cd0cd23d94847906abfb9c95ee3,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+8a7bf1598995fdcd794d1b462054e0be20ab418c,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+8a8231116c8aaaa289cf7daa5603ec55a8b37be0,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+8aa2c0d33da9324556050dbc40bab0bac0d9122f,worldvaluebench,probe,Hong Kong,Asia,1,1,0,0,0,-1,0
+8ab0887e8debc6938be3ad6f220dc431878c18a0,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+8ad4e726531b7b75d4a24b12f5e68ef8b505fd5d,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+8ad7ab4fdd3eb3e81dfcf251f513db1db14e8de9,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+8ad83775b48109c49c3825ef171ca53b7e31c976,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8ae3c3e1c92467763e7f4b2e31b4670fa11dfe80,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+8ae76e7374ea65f1480f187190c89abbc398caa5,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+8b03d955a52c481ed10f4b8e279085831993c22d,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+8b0424d7350b7495dce05c32b66818ebafeb3ee1,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8b6720942fec0157887868248f139801837a32a1,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+8b8a77c0fa44b2906070219de314d8b413cc2913,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+8babd2dbbbca58937cac7bbef2391e34e60c2d13,worldvaluebench,probe,Kenya,Africa,1,1,0,0,0,-1,0
+8bbf94926ddc01136f9f6c5bb16d8848e472f88b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8bf97adaefeb961ead7432d44cbc9c0302613657,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+8c0bfb1f587714d945b46f763edafcd645a8c8ea,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+8c150d86670c0748f12b52f3209011a2467b390b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8c1e8d854314dfb1407fdcf7154bdb9de12b4a3b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8c3769e00390fbdf52fb3a16da89a8f3cba56a49,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+8c566061257e635d9b75d54830f2315ed7a5fb2c,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+8c58fedaafb625ef7f1a0391a5fa2039eb7505c7,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+8c5ed2d3fa279ef9ee9cacd5b532d12b8a7444f4,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+8cc948f1900b33921fd78b6047c91073fc3bbcd2,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,1,0,0
+8cceed1e729de9fbb8c8b3ced209b610e47664e6,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+8cda7479186d6979dea26d92c2042f9ff98387ee,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+8d2adab4d039dfa1383a5a743e624cba4e72d2e7,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+8d586a0cd4b1d4df920fb64ed63954487cfd9977,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8d8b5e4a1de14e30663f1c3489b4e48cc18885eb,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+8db8d96fc03881fd2402a6e5a7567ce8eff0ee7f,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+8de1ca62ad9a635c314587703a2c71db43b9e463,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+8de8b61b8b893a753d4ebc0f4d270a12a17dd307,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+8e0e8a06b4ad4a120c858364399889ff6e5eb1e0,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,1,0,0
+8e85c06ebe13b080dc3bd31e4aec388cc4742c1d,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+8e8894a39eb295acd0054758236378bbc5996001,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8f0e378501f47473da13e447d1d57e692716ced1,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8f1012c03296100ff5cf49763b521a43b28ba151,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+8f5e6799792f98af0f09bd6ec05dbe20e729db54,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+8f89c081c1d57b4f535961dcca1ee6bba49003e3,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+8fed8009eae343d6f4ab0b590f428bea0b661d8f,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+9005983be843f4d426d64b5970121b6bbdc9a607,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+9019e0d0d542f60345de80def2f5d639a7d917b4,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+901bd4e7ac3e82f7ae5c1ab0ab7d41105f06dd72,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+901d582d53885e8f3a1a7978496d6a75baa3435d,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+902e0c95e5d324d126f50f33fa8d5a5d92d96f49,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+907337c2b046134d4a83632f7b86eecf8f424de4,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+907d049c7e59192b50ea31edcef10a4d04967ca1,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+9088ecea0ffae8813c33d5579e4d18984cbb2ab3,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+90bbf310f4705dcef3e2ba3d6bf2beac520cba4f,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+90d8fa5d3742c11ef925b9d17449d235e30735ad,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+9105820f70daf80eb1df503476e4c0712b515786,worldvaluebench,probe,United States,America,1,0,-1,0,1,0,0
+911183f874620893e20f0546d9681143c953b4e2,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+913424f88fe0997ea7c529a41d2d05e5264ed5f0,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+915552429a5725434c6a6c1e1944e0ea862104c1,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+915bdd012d270e92a6eb04c68cf915cd814a6a38,worldvaluebench,probe,Malaysia,Asia,1,1,0,0,1,0,0
+91b313238c0c2beaf144dccb873e65332f738e07,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+91c1e8fbd2d0b42fc2d76c75c27fe7f5d0c0d788,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+91cca446f9a7d75612a23b2fad9b22b3ed59f8ee,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+91e54481f79b4a1537d2738c7742e36bb0ca1480,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+91fa3a906a99eca28d8f2ddc65123931dad196f9,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+92abc022897bc593dad1aa73950398dc7b45b4a0,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+92bc439bb7a6b60d0dddc8491e37c88aa9d63ac7,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+92daba52f36821c951d993af9abd48c5d1f106cb,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+92e87a5e60ce4ac47e22ecae63d7f8774eee129e,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+93210ef64fe590f475fa7c94fd53937ae5a01c0f,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+933d782954d9d9328f14e977bb226fc7942c7d25,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+93416682586234aacc3f6951bf20243a6c54ca23,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+9353a6e8926467dda00f2c01990cc8da45e6c4e2,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+9360e8340b9e9a3254e3bb818f01d6395063e620,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+936e1e8ed85ee448970d42b8eeb33e843b95fe4d,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+93814f94050f65df33875974792b19f1c93c597b,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+93fbcf1e66a0f63107c2c3d6a6033c1fb873a11c,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+946618674588ec255d95afd0d60e3e050a655595,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+94739be42ae397b4c34675699f197392924e296f,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+949f43b5080732c18f0fc427c7bdb67c721c1668,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+94f4de68a3fc464b82907c2732008fddba91c34a,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+950cc410b6b097c7259be1fd69ccedd59109ec81,worldvaluebench,probe,Malaysia,Asia,1,1,0,0,1,0,0
+95544252012944d3aff9050afc480a94cd7bbf1a,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+956c68b72dbbb419d38346d05b4f227dcc480f16,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+957934288f78bac5247fa73cc1e21508bc54e18c,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+95a21521d68ab427f525776156bd4a29ab39ba13,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+95a4192d536a2e5995e346d42951b8faf0d2ccdd,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+95a65ee57fe71c1a4549b926ecbd28680e358998,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+95af01673c808056730750ec882d1b23fb609611,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+95b45ea42fe9e3cf9cd79f5b83dc303d075c34e8,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+95c45ad547495836967a8bab23b87383ad8e6b96,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+95d7075078eee3bfaabcedc459dcbbd0cd00b9fb,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+962e239d035c1a20ec38018fc26f45d857c1a475,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+963257a6ae5581d22d51346ec4ee200f12d5e2b6,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+9633db51ab6b118ed722f13f49ec530724879b18,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+96a43f6517fce9e121b3d9f21d26176d8a9cb144,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+96a49af116b080091706cd654aff6470df7cdadf,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+96c657f71cd6cbeca829afd8b494c28297df747e,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+96d1bfa353b0a84fedae18c788ef815502d39101,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+96f574475505920fd16f390d4c3d4cfce4a6c62e,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+9753fca06f235c9071e70faf201c575db4122423,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+97a3e2ddb1344aa91045ef0add7a48336e827cf1,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+97be4809489ba3910f721fe72d3b49b20f4c4148,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+97c946f2fa12613de2f413f080cf26492a0f6dc1,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+98356fe7a1cae1e0139862efe7f778d8f20fa55b,worldvaluebench,probe,Philippines,Asia,1,1,0,0,0,-1,0
+984731d15a5e0d996d1e16cf6be0e02b33a4be2f,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+98934f29d6136ed33716390dbbf869eeead0606a,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+98b25060eebb3476d4a57acbfa4c2b05a6f9089f,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+990d9610a3a654eed1ceb2c8fb76be536f31e579,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+9912ce1fdde146e164bd30c9aafc3dad9b4d657b,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+99b692a1bef233dae054715705de459ab83898b1,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+99f1bd8938f0dae76ee6c02b18e9b4ab477e2646,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+9a00a515789d6d5265968026c6d12da2fe4eae3f,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+9a0160187177d4d5d3c1d9c89f89207de6c5c66c,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+9a3ac0ca8717cf91ec0a4ca209b054af2c80bb98,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+9a40395bcc1e32f5a1694351307807819ff9d9de,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+9a657663c2a491e2cc472eb2b7043e44789afeb7,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+9a75aa85fb6b909f0a7b1d336d9753e2c6caad4c,worldvaluebench,probe,Malaysia,Asia,1,1,0,0,1,0,0
+9a881a626b27794c4eecee51e1aef9bc225a7c02,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+9a9c691b56510475354473fcc102484fb0400360,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+9ac8daa1579cbda4d4593b6c61526b956f7d54b2,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+9aedad06c6dcb21029a32acb84bbcb5075a90cf5,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+9af03196a2c3a020eed3e660f802907d8a362a3b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+9af898acf0967173d524127e24beed8c5f72dcd5,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+9b04e3cd8d3487ed0ba6b54ba57ec9c68fdb8e12,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+9b44bb85274170b8098a3a80e353afad21599e63,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+9b49cd7f08bf29a847c8a7b845774cc6d89a95be,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+9b4eece37ad255d9e073112833971bfcae757d2f,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+9b83cddfb196e12b5560e73d753fa10f4960abf8,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+9bb284d0cb4f2b9e375912185114796dcde96341,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+9c5a557513367a8e56e62fd090606c75ff691557,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+9cba5350abb10efaca1f75f0efb8c8172fd31009,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+9cbc9fba68b55f8ef2e54666b9cb11e3546ebc58,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+9cd7983b6fc746b98748a20d13bb2ac7bf5fc31e,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+9d7edf2125b39f474c0f86448ff747ab55abd7d9,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+9d85e150838c85a7c98fe429bdf6986e2193de3d,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+9e1029f6c16cbd35269bce0f8697531af2eba205,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+9e51c6f881ae4ba7b05a67a7eba2bab04dce949e,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+9e58c10941e8e358cda2d86970a40249de254009,worldvaluebench,probe,Kenya,Africa,1,1,0,0,0,-1,0
+9ebc6eefa3d3d45cdf095ca596caf3dd3ecfcb7e,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+9edc4a084a70c199020cbe278038fbf947702cbb,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+9f2e785a0b3181af72a028791139226f9b54255b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+9f571e2752bc740bcceea8af732a41e35cddc136,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+9f694e82f3ce04a552bbe36ccc56659404cbb79b,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+9fe9638d3c30c2713876a06bfa93b48c4648b730,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+9febc9df2a6f609be2be9bc5e651c4c30d4a992f,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+a0713bbbca3fcb0eb41afdddee60344d90978148,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+a0843055a50f7be6dc6beacd434dedadf71ad93b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+a08e5f58bfab748829c881672d62ec55f00d1dcd,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+a19c3cdf87ed03b65eef245632de85e5cc6a42aa,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+a1a1037fd62a776165e784d360a219fd5d5efe7b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+a1ea0fc87700ce65531dadc641476cefe2c554a4,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+a1ebd9eed56b6c5407bf154fb2e8678ad6f987f4,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+a22be4984d14f3f879f48a988ed756b7e7e704c5,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+a2468d8d14fddd3a3a0c021c4d6b5c6b26a1a334,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+a26ddecf15c429fb2da0b37fa4eb6cd14c9ff791,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+a296b596f7cdc1d25302cf5804cbc81b9adab4a1,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+a32ad64df43df2fd261506e72eb0a8b674b8cf4b,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+a32d77b725e1b3b474e95763a4a425c9e70af4e5,worldvaluebench,probe,Hong Kong,Asia,1,1,0,0,1,0,0
+a36a67dffd860342202c6e34879edca112b1c616,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+a449fb80986d0d278de28b274244361fd2d9817f,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+a475622d11b7bb945e6b74a93d6893c9bf24dcb5,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+a4ba65fce59c35dbd146b38ebaa0e59fad7fc25a,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+a50a355c4f5bd5eb508dac10172dcaa3c08965c3,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+a50d3be3a3bff7763b935e1a77cb7e4a33ec2b8f,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+a52d8fcfe1fc3fcff452fe17a1d6c53dde8409e4,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+a58907454570055054d1b76a13ca43ff82429bb7,worldvaluebench,probe,Bangladesh,Asia,1,1,0,0,1,0,0
+a58e9fe52d00e0b7c68a012cb82ad9f05dd57d1b,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+a5af9569b5b497fe6889749dc61dcb643b6fa586,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+a5ea97f95d985dfa990b2ba0d5f595fbb5e3ea3b,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+a67d1e5aeea7dc861474cd891eaf72b93ef34ef6,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+a6b20da67c757a47c5200648a980067dfc13218f,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+a6bafba9e2b3ab38ff6963d8f384c27bddb2af26,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+a71b3b39b5a080b181e923eccad266d5bcbf7af4,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+a7760b0c03cce5c0dce0c94b5eb94a931f74cfc0,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,1,0,0
+a7782039043d9f02f7126f674b4afc41eefb576e,worldvaluebench,probe,Bangladesh,Asia,1,1,0,0,1,0,0
+a7aa871b047c1d84555ad07f49a33c745c426ab8,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+a7f71d2c7094231993388bae2104975c64199909,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+a8263a36c5ca2ee88110d4ea76adb94051284f40,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+a8301faaa9d0fdd1c930a39ff4672466f2832bd3,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+a83778d7e03ec825ee0c1f0fb1889214628d30e2,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+a850f8a092857fcde892638295aa099d91fdbb33,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,1,0,0
+a8a5cfdcfbdd3557710dcb55ad648fac93c434ed,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+a906117322ca25673c2d3646ca2776122fa0c67c,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+a911ab64d5a8926ce39eb185efa3198b273a0dc7,worldvaluebench,probe,Philippines,Asia,1,1,0,0,1,0,0
+a962be690a9bc5415b49c8b22bd0fded36a76352,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+a9e0d188e3e7a81935b9d83dd002ea431af5e411,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+aa23d2e734b99a2d0289333c7b4fb2355a62df4d,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+aa507e70cdc9af89169cdcfba3a9e6423a76a359,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+aa8b7e18b2ba351c6e3a8aab57c15747b32219e2,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+aae29ef16039277a09903139ffe89bff6d2d4dad,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+ab06acd912bd4ae2bc9ab38d1e303c3be4da51d5,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+ab799c4a6ad9552b5e3eca99647f622528ea8895,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+ab9b609d7e1e19df19fe088982d6c985b6fd5c59,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+ab9c2be8879ebdf9ad7419608bfdf5c9283e4181,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+abb2c1e18ea0a17c744eba7bfb627c7bbad01fba,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+ac03e4b4ba4a50ddf0b50b5d16db361c7058da7c,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+ac07f75f5c5be6ac082faa501d8c5a6e044e2742,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+ac136bda2c3cb2b0e1dbe01dc86fa1dcc26f881d,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+ac94b4cd9667bd8256d04c09589bc14bb6a49342,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+aca7b47355ef5d579658ca9b533538bb4a996623,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+aca82acf7c3b04983a2e876ad49fe1bf1175c321,worldvaluebench,probe,Malaysia,Asia,1,1,0,0,1,0,0
+acb10490fb92bac8f656267152ce64109ed5192a,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+ad197fc6c104190f2925bce08b89fe9f00acd57c,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+ad70634be88a9c8e944abaeabfa70799d72fa5ef,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+adc15677f3c63421f3c5c20529daa745cbd325b2,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+ae1113f50e48f154587a93ab17390047056a7f0b,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+ae729cc6e7c057fe21534d179a12d75ff67657f9,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+aef56861f771c8969b1afee7bbc1679711266e09,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+aef6ae0d6dd824289635207243b7173b62a49d61,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+af0ba81c47d095c6a7605addf299b0420222a11e,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+afec1f85f5f715d82931213cd66bfac979de514b,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+affafc1ca2a9ef6dd2e0545981a9dac6924a0545,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+b0d39c2d2fd341c171df16a902822f6c23b1f942,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+b10ba12e5b9bc2a31467c522e2aa35779be0041a,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+b1a15155c08798bdd8ec0c84c5445dcda1ee217c,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+b1ddc3adf54cc97dfd37fca599dc70bf1f0ba269,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+b1f50d74f714f24651ccaf20fb30278d2833fd42,worldvaluebench,probe,Philippines,Asia,1,1,0,0,1,0,0
+b2077079f079d876dab2d2e52a7918ccff002d4f,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+b21e2a10ded66c100f85e903429a4dd8215d9473,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+b225a660fad9757770f6ee17e8239b40cf3d5be9,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+b3728b5b3b9afb6c2bdcb1afbc3464b9ad61d985,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+b46c4d2565591ea2c7da0a56c462634752127152,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+b513ef20c7023b4c2c0f8f1507fe772114dfba59,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+b51b9d5eb5a6fe9c361233f553f9152606f3b2cd,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+b5227fc00c0016581ce7bfceb6078452e7e53427,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+b5676b73ef167b050ceb4552e07bd8b5b04a2aa3,worldvaluebench,probe,Philippines,Asia,1,1,0,0,1,0,0
+b587de3d48b849d9b74060f30aeb05dcfc54203f,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+b5c7adedfac122f231218315e7fc764ae8f0c8a1,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+b5cd9cb0f8463cb6836384361e8798f307e68285,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+b5f7e8182ce321919585d9ba31a8535467a450da,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+b606d3deabbe33296450d5e9b3663ddb2c6a9d9e,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+b618cc9839d166b03f556773496b85adb85747f3,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+b63bb4353b4703d59fb637e122cc2df6525ab97e,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+b64db04dfc3e7ff32647c7f56013e7c0b8d1fb5f,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+b6535b79dce2a840eefec6098c2a07186abd4f56,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+b65d8ab9d581adeefe4b41f23c3ed8f558465774,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+b66fbf6147af0417b293f03e3b4b29ebdf1396b8,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+b686a18ae9ff7e2b0d8b7ff391f000cf21c412e2,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+b6a81469d34f3c228f887e64c9cba3f66e29aff2,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+b6c10058eef1a8a55152ddd99821bbbad2ccf948,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+b6f599824346e680f73ee19691c22115afcf81c5,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+b71bcda47589c260c8dcc4f7286ea52132f6ff7c,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+b775756f96098c731c2c003e69eff89a10273a00,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+b77724b3644c832e6e0f8e01eddd667a2cef31aa,worldvaluebench,probe,United States,America,1,0,-1,0,1,0,0
+b7a0d05f39937ed1676b1a209cbc27b59a85c99b,worldvaluebench,probe,Hong Kong,Asia,1,1,0,0,1,0,0
+b80f145cf9427560f13d597652089deebda7b67e,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+b8352ba28f14d594fd88defe0f87eaf0eb819306,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+b845e7790e9f86132ff6526602072286137db30f,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+b848e4b6e1825eadafa7a4a6d188b140aaeba624,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+b859dd4c5d93b91356d2602953c5b3ef8c66682c,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+b8634f59397ac5a6da33ba349eb4aee288162873,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+b875a7982a944fb41ca1864eec85e54be5fcc8d4,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+b88b05d87e87ebd1192c517c6a430234efa02e04,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+b8d4cef8a9245a55580b23d7ec0c6feb85bb398c,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+b8f33e79a0b3dd1b61dc4d14ea5da51c1e5daa1e,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+b90bad80ce4b681d332b74b1edd2bf72485e9659,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+b99766eb3f2d83f766d051b333d4f9f59758d632,worldvaluebench,probe,Hong Kong,Asia,1,1,0,0,1,0,0
+b9cd10dd3ed5c0cf314228c1e515b0a5ab7a0240,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+b9cfb7fb018a3520a4679a9cebb9c1b5703a25b6,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+b9ed989599c3a931b518c7050483d58f98036fbb,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+b9f2dba34688221def29f9c6f1d43f2191717683,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+ba38a47f39b2884963208d876e756347b72a273d,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+ba6531dc4d63eeb013436174e55d9e20c335bd10,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+ba6f93b957b6ebed72e5e61f39b70325fa91efe1,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+baaec444aaf34dc243425d5f28feff3bcb2c00d2,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+bac8d5654e05b2549e6476fbd710388ae1b08c21,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+baea226d2766467a39bf3f49ca2d07485ad0a674,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+bbd895ca6bd444dee77895ddbd885f557a2e7210,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+bc53adacfbe2195ce54930cbee87b507d32ffb68,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+bc5c85e0e3529e6af993d339ebee246201752a64,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+bc750216ee92eb47fd54c5f8f693a36be9a5765e,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+bc91c0ff7d259b757c8dfa956301d69056eb7a97,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+bcb4edf8ecd83c21627adcdcbbc5f216d3a27a73,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+bd0b34c40f6c697044c176cab7c93f5e6b05f34b,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+bd2464c764ee2ae603e709be48f7603ea985b225,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+bd2938859ff24ff5e97fca4b9d4336358925d7a2,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+bd3218c8ce2d9fc374f248e27456140e6eeabe2c,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+bdc184ad8c5acb6230ad66a2ced592a5feb0b668,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+bdc5a1ad0d8f483b0b77cf953c86495778f0688f,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+bdeb210fa321f1046220884ce2e87f4eadb3830c,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+be35324f320a5f7d7cb84a1309d462f03be8cc80,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+be85886b88b8e2d01fdf8aa243e3a9189946c511,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,1,0,0
+bed0ef06cdd08b851075996daec9bfcb465ca5d6,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+bf0e6994d507ea183016a2b7aca767a05936ddfe,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+bf23c63a1db7d534435a00d6ae747b3027c8eca2,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+bf35c20771ecf0489f3e4b4af6ae5406025c9abf,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+bfbaab079a85e7b672c62bc70b3f4fa47a9c75ba,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+c060bb17d2a3987c2f761739323e74f63077a641,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+c07da130b467faef62f13fbd2da243c1c421fb0e,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+c0846ddbb311dbe23da065cfef7e76120c030454,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+c0abc02ab5675791595d9d5579539db2fe68f79b,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+c0c1b9e3df2f107febe3daea539491467e64c5c4,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+c11fa69ed61503ede1274839024407f3a6d39fe5,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+c169d8862dff0b766459e6482eae2502bc42362b,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+c1b6cc1b75b79dc0374827f5e55590c65a879896,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,0,-1,0
+c1c6ca65fb9f9932738b7e979f538cefa9ec004d,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+c2069b4b08be68fd5ebabdb8b15b979fd05db466,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+c2d004ea1f74f04421a8b0c2d2686f81d4ce2568,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+c326799be438ad949f5c89e89990ee290259b71f,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+c35a170d41cd81f448f7a7c31330f8ea14983c15,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+c389dd1ed08866049efcfad7113b514b0b81443b,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+c38db1ca51e8be874e1ec33f2d3a44f49d6208e9,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+c38df7771fb7d2c414127bb33b5cd9574eee4c69,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+c3aaba156805f910b68d829098999bd53bd8a8cb,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+c3abdf07bdf723a8b89b3dbe3c846a0611e230b4,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+c3ae6aed6a39d0ea4bad59ead9782cc9521a92e2,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+c3b0e9411885a152cd6f1e1fbce12041af2ef29a,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+c40aeba358908f0d333251c792d74314b5a21912,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+c42173839105f6b2f42bdfbb64dac644df863ced,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+c43a10ea08f4ecc3223be531472123c64ef67f66,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+c4437c62a72e891f26b71e8b2a6506ce46ecfbdf,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+c4559b3aa133fce8d807b313ead44eb56a3f3a3e,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+c46ce22358eee2684735894e502bede31f5fb9f9,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+c47283f95d5c07f9e297e470ebde289b41b9a2e8,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+c486d315a26edb061d4ce861d4509a7bc54f05f5,worldvaluebench,probe,Bangladesh,Asia,1,1,0,0,1,0,0
+c4a46ec8483597f4dc5881123decc45ea0f4af90,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+c4bfae82fb7ee923ec61605416bd7c914f1bf8d1,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+c4d577ae10b19480b3da65c83d2dcb3a55ac4cb6,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+c4f1fe7bda3c0e946215bc84a75449c57feac197,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+c523c8111c128c9bbec7d1aed771a405e88c1222,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+c5315a60b48277ede701837a1fc262a2cd9742a9,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+c54e6daf593f9e10182c4646f631b1f40f000c61,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+c5ac7bdde27d0fcee485429ab1d3a54ba9b89370,worldvaluebench,probe,Kenya,Africa,1,1,0,0,0,-1,0
+c5b3701d9012db3b456cd8b14c527ad83566dc7e,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+c5c52950c110577e74ae2106e5f7c4a24e55422f,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+c5ce698b5b87b0d99c5482ad075a04826958206f,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+c5e2ef565a3b7f601dd6fc29400e80ed322b01d1,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+c63976451e9c3f4aeda9fa256ab003d794b9279f,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+c66d8e2f565f90c1f65892c491221540d1febed9,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+c67452c7825f630701770a252e07f9fceef33e9f,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+c7333d11eb53a37cb6106b8693b9bcb1f6b3b4c9,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+c753726f966cf6f1fb5bc67de776089ba92d93a2,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+c766a5078ef5b2745a11d8e44d5cafdeea3fce74,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+c798b3fee263270767c082fa6e82d07bdd12f731,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+c7c0e9864f2ca4aa410f08e9a9d2d1b45bda5e9b,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+c7d3b394471aff02ca364874653d6d4f014fec02,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+c7f9a24dcf7c70c34fe3a39d4a4a1970e463eb42,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+c84eee350e62a683cdae84c1a39804e079080e30,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+c87d489062b09aed6a324c4510614deb4ddc36fd,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+c8aaa6791ba69265d1cd7961ce0948cd5ad1b262,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+c8e272c53adec6ae2d88158481bcc7948d440cff,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+c8f76a0e568ffc6623659eb2e167693ba2e19be6,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+c9370af3b72013273b5cf89859cc6d6b325b2eae,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+c9419ac895de8c008ac997f54005493dab4eb66d,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+c96a8eaa42ecc411f11e58f582694ecb10dc2bb5,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+c96dd7e604971deb027c7647f021fe2f78e9508d,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+c97ab25fca7fb79912629519562e118901ffd57d,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+c986081c90805768627d69b4a3ffb46c809defe2,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+c9af36dcd2164d0290ca1137a1d7e55acfa7bfbc,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+ca08b26ee251004077d93b6bce69e27c51813b57,worldvaluebench,probe,Philippines,Asia,1,1,0,0,1,0,0
+ca179b5586e6656b235961800e35395551a69e34,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+ca2fc57375dc72ac1bac275236149074e34dd5da,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+ca3419836787e3dd7653ebe16a31615555a4b194,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,1,0,0
+ca3c78b1c54781a24c55b05edb58c67f01f8958e,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+ca6f2e95e5a6e2d5c4222e996b2ac0225dc16711,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+cad5c8506cb322b9bc4879adff3f122bae5c8204,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+caffdece19c811bf406924edc1fe42e68856c0fe,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+cb3074a769853edeef2d5fd0ccef00cb9dfb220e,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+cb35567e96120e4a233e87664f4f84a588d17b73,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+cb6955733ff7d5785e11212b97ea4cd1cd4e913e,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+cb8151d3e703aa9dc6a329388af31da38181aa14,worldvaluebench,probe,Philippines,Asia,1,1,0,0,1,0,0
+cbad37d2968c3c4399d80bc6cfea409566c262aa,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+cc1eb3fa628672e90c0c2f1b2f9e900eab8e896e,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+cc240ec33a671d2f07956fa6c0049138fa5bc00e,worldvaluebench,probe,Bangladesh,Asia,1,1,0,0,1,0,0
+cc566071cd0a713c99c8009cd6dfb5c5d09594f6,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+cc68b6f310a2af32fae4df5797b6325f16184a00,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+cc9043c64779163daddc6eb8e90a0c88d2dd319b,worldvaluebench,probe,Malaysia,Asia,1,1,0,0,0,-1,0
+cc9640a291049c1ee11d3cfa574360093e07c199,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+ccd2e60cd6a16a0899ffb244c2a43a3ca2d4d184,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+cd1afff915a00db6217e600e647c47037695777a,worldvaluebench,probe,Philippines,Asia,1,1,0,0,1,0,0
+cd2437ffba37596e4993bc87af763863f324f319,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+cd800876e9963d59b50c37ca9a9ecf7d6a86e171,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+cda816afc7d7df53f3293593e21ef5c8d64f5395,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+cdcc7464ea155fcdc24f07a1a3c95bfdab0d6681,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+ce1a10085616e5b63400afc999a6733ee8901ea0,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+ce3b9c1bcf58631a3ce86ea46851e8561ddedd87,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+ceaa4367484a7097a5aadb085219b25456ec584e,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+cefbc8ee1550c9eb875d46e80713ed3c77116d16,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+cf8a86af965a618b764bc18158296345db003f18,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+cfb654b0e2c9c2278bc4a553d70fbd160ff01b0a,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,0,-1,0
+d06109cd080cca11e564a5a3e06d29f5c0cd6bab,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+d11deb4542f52ce06a705bc2133fcee64ac0ad9f,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+d166af1f4346964a46ce9e372292dd0f2f2cb841,worldvaluebench,probe,United States,America,1,0,-1,0,1,0,0
+d1822850d2f3f06e9cb39558dddf8e057d40e3a3,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+d18a8cfb810bd2cc0ee79afd72626da837ab3106,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+d19f9518a2335676cdf80b3a61f527b1d606d977,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+d1f65613116034c47f76e030bf94cfa82034284f,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+d210ee635c828937d5ba4733a8d28e0f335a6443,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+d2304d950bd2dfa52a26be107d3d67556f0e8be3,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+d24675d996cb494e228554cf6447cff1d286e5a9,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+d26d12c0559087661f88f19789f832333f8af787,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+d2731ca83fd53391f223162ce85ebc3cf287f557,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+d294d8bb3f6cc1fbdbb1c2dbf1b8247b0e34d7ba,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+d2c9ff547c6d4c6425b1a1e8430b2206d958dffa,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+d2cad97af951bba0072efe01fac1944838963376,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+d2fe572b631cf11a803fdf3b49b4b5f2d6f95a98,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+d3006306eee605230a580ef4efc74fdec4b1f057,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+d3383c1a8e9a60d47fb8fa23fb1d844db47fe432,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+d354915358b2f0483026f4cccbb2934a1b8bbd80,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+d36fcfecde0e0515e3452d8b3b112fd91ba043a0,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+d3904bfe09f74e5fb384912baf985cf527c2e7d2,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+d39105e201205d589be6f3718cdee36aa908efb6,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+d39bb3e62f4315a0b4e685a6903e06f36f8c5f9a,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,1,0,0
+d3c31b14160b4776c35ce3723d83e05db5cfcb27,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+d3f230d5c8ebac7dc81f118079c73174aaa88b7f,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+d410aca0f75893514549ccbfc2ad2bf3d5fe5385,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+d41aba9de87f32a6b3a6ec35e9fc71921dcbf5c1,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+d46c98cfd68afba0d7211d597f8ecbbbd1ebcdb5,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+d4eebb930c74974a6c99cfc163446756237d4ab4,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+d51e2282433c52583802dfb4b9c3481dc0860208,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+d5a655504b0bca0b4a78d9ebc64ca8eb3c65a307,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+d6027bedaeb6d5d28359f3af4b427b9bf1a7d29b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+d63fa52be42c0b4f9e4dcff6f248a32987ecd07f,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+d66438aa88ecb2d171c8329c45b63e7a79db3456,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+d6865a60a7d3db3e17177a8f19caf408a8171423,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+d693d585e72ab7e41c6764aa3f96116dd56906b1,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+d6a74396069cc1ae3b83569ad96741de49c6447e,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+d6defd938269e645eef3bd97d5c8ac51a1513717,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+d722315ff12a1ca582de38be5c8d02d8f4344907,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+d7a0865348c5dba3f21e450c7add3b92c139b48e,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+d7b2c43a2698913d3d9f3a1e95779ebfe3acfb45,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+d860327ca29b76b09e4c05bd839b9d514c3513f0,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+d88857a4bc6f2097e0a0ba4449408b678bf460fe,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+d8cb364048cf8b6436006a0038186030c4b3b4ae,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+d8d2c3e220b61135a84a726834588f25d51a0ca3,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+d90fd21fff8d791f54d6899fed499bc8cec35498,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+d9700a44f129cbd40070072ab3baffe65aee079a,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+d99827b14edb620155afaa778592456e505103f7,worldvaluebench,probe,Philippines,Asia,1,1,0,0,1,0,0
+d9dbfdcc92364bc59e0dc04f569c439c5e37aa01,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+da068afd17a23dfc1de0be56738d27a740477335,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+da0f58d64f4b6a9564a5c670495d43d3038bf79d,worldvaluebench,probe,Kenya,Africa,1,1,0,0,0,-1,0
+da13102826cfd249374b622e18be1756875d0787,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+da58ba7cde4113109f20ca83c251299ad6432187,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+da72495883e143ac661f0aa2585597f2a330a734,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+da731f8e8cca4202260b1a3e8b89bdf5ce6acf22,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+da97adf031bdb7401ea74927f364092145270878,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+dab26abf16ecab494242c3b4d8f5f6d48637b6d5,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+db0a69a4ab8db3832886be75ea17988d8f254aa4,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+db3b1026284edc6033f61df67d498c329040ea9b,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+db441c7c439e360b5d99fdf15fa7910e5e3943cf,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+dbbc1c4edec67cfe9e2fe2ccf407c69b372e120c,worldvaluebench,probe,Bangladesh,Asia,1,1,0,0,0,-1,0
+dbf50c904109e0d8b16600e0d99dfd350f83989c,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+dc1ef46fb1779edbccf60383b86ff2428815e5a6,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+dc1ef9fd5ee7ff27a87adc6fd44caaec8c25e7a0,worldvaluebench,probe,Philippines,Asia,1,1,0,0,0,-1,0
+dc778dd530ca94e48c414fe82fb11d319224d1df,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+dca4f01c69115b2e3786b31ca9b71f9e95fe4707,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+dcb3cdccf1663d6ddaaf1918f343d9b3fe2e98d1,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+dcd868cbcb6f983e7ca0b07627bba6f460f1f07b,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+dd04cf5a5bc1098063e54371524284c8c0e2e43e,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+dd209ea4e763e3bdf948dd5053169a734f591204,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+dd25aba50efd6e5b57b306ab16266f27a12b3eab,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+dd3e1bfbb8a3c59b3a903528d0826ba4f8ffb667,worldvaluebench,probe,Philippines,Asia,1,1,0,0,1,0,0
+dd6b4f0a0abb6fd71095e7863245ff07404bdb03,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+dd703a08025345e6f0d8329e2bee2d6ada2c2ecd,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+ddb004f5c561ee4cc213b18b17722d50677a5027,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+dddbaf809b27e49dfe60b3066ea7656424cb7bbc,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+de205bcb075372ed864d68b0ffd5aa600d3a5b27,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+de551c45f1ca6e9d9133ee540613e8f61e9aef19,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+ded5e7f3ee1e46d84359a79647752483a0f799db,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+def2b3f2d55637b95711e7bc94d97ec19cb6724d,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+def43794d0a32d0613b715598a5d6245b5cf41d6,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+df0d1610c39601d53387549e1f02d07da795ab99,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+df2ab8086c7a44a5ae3bf36c5f51dfd97aa2d216,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+df2d941e2f45d3df914acec5c73bd4123ebdbce3,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+df4db6ba36ea2c3d5ea6af1a10e46d0a53c6b961,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+df69e99cfa294051b9a783e055abfef813284521,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+dfa20c9e304732c6cdc954aed55e2477493020e8,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+dfbdf170c25bdbd7e297b4994b62b934ec3ce434,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+dfd7e5bc864940564b003625ce2ceb2208c233f9,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+dfec4d4bc2f5796a69a7391fc9a9bb4ee8049373,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+dff53c3dad5956a3920254697d82446a51e58383,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,0,-1,0
+e008790f172d9c1842d6c52c61f798da970216ee,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+e029f5f26be8fbd384971986138c9688cdd4aa8b,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+e039b3e5440ece3aa37f05a151267cbf7e643488,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+e05bdd2af4ca703650583a41abd50aba504a03da,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+e0a1362c85c62229c2a017ce555c414f17317f07,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+e0b5e5da54a8e086621243ad1371f529d545f63d,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+e0bc1399cc3c5af68b02a3acdf87def2c6098e64,worldvaluebench,probe,Philippines,Asia,1,1,0,0,0,-1,0
+e0c6f1a2e8202993d699c27c9adb216a9a19f394,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+e0cabb5ae30ead6337fc66d9b38a21afd1db1a6d,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+e1372a0ef7a25edf88ae6c2e765b8330b07cdea3,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+e139dce010ff3fd30679d87c8cda2531af12cc77,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+e149625a0b34d00912d796c5c4f7cd8af3db8ab4,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+e1894c2a8d980689538d1f7d93c6b08e0d68b62a,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+e1a308c5f146f20f439b19dddb33aee7fae5c9a3,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+e1ae5b1aedc1cf9650464c243efdfeb7c09ab841,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+e23195d4d0f81fb0c85aa137a9220cab0a6fb92d,worldvaluebench,probe,Kenya,Africa,1,1,0,0,0,-1,0
+e283b6cf7c5cc655a3fc0ed1c3c1b011b780e829,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+e2a9b32c6137cdd4003e0c0463cd7adee15ffdd3,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+e2b36e23b1a18b0b54a722742df527ac256efad2,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+e2b8faeca27b1a6fd36116e28973febf2b4f2016,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+e2e1018bf358225fdb98350bebf210f0608d499b,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+e2fbaa8f4ca01f86c310e80f6ea747deb0518d2d,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+e31508788070aab765bbcabb734877488b5fc1a9,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+e31f411f87577ed9b112563757ff7fe7b74d2fb9,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+e34faca2f600b21dfddee542b5a03da030efe6de,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+e3a0ce68bc607050e1719baa60522737d8088151,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+e3a60fc7b14cbe343dfa41d52633840fb47cfeb8,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+e3b9746b491224d739e6366f6089ff8a191d1c4d,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+e3efc92f72d8630a43f3ab6385a20337d69f5f3a,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+e3f0e2220fdb43bc2746b2074acc2f366b110c66,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+e3f4367c357afd3fb15e1f4eefe0c7677cdb3c03,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+e468141b001f6779b016eacd0795f571d7d742f9,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+e47b17a011a1abab2ffc8f09a1592b2888dca7ab,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+e4b4ee389a45e865e1039470767f5e855ff843dd,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+e4cea9213de4c9046411a116e43dbd832b3220ae,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+e4e724e89be6478ab40631255569a7b275570d7e,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+e52a2f90db8ba42aaab1240398961c3b73fe2f12,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+e53a3e05ddd8ad69d698da2506c1095570967b81,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+e54542c4c85c22709fb3bd517b02cc9deb9735d4,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+e56fc4a9e4143fa5873bc7982d3f5f489e319042,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+e5a768d3028ef0ac85f3716c51688ae03add555a,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+e5d3512ec12958b064ec7d6f2b1c7c3d347a3701,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+e5f5d0e44e78fea330c333da24bdea3fc36ecd1e,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+e64a6627c1555fe682b905ea71f030fb5137b664,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+e68a4b8564ef13a589b5571e626fbccf6507d695,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+e6983bf34490d03b6a5f5dec69fbfef147254e95,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+e6df378e0efe30968e7ccb5a2d7e52de3891f687,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+e73cd25e6ffc36f7591dd5b53391b72a8250383c,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+e746a9422b09e63f22ac41d9608611dbf32c84ec,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+e758f00d376f69fa2f16371cff77468b1d1df1bd,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+e7c3127a11fc4b17ee3841e12d0b4d1ca296b9fe,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+e7ec6deba6c85202eaa12b7aa062b616ac53acb0,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,0,-1,0
+e80beb1c293c2f199154564a851f249f5584b781,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+e85e366053c5493774b096ec7091a5870b83db58,worldvaluebench,probe,Malaysia,Asia,1,1,0,0,1,0,0
+e8a7b2bc65f09d243644a3c79f0646ca63b9ff48,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+e8b938b10b83a9691ef16d1d887267d660758bd9,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+e8babc6459a4afe3b0735e602c5766eb5af38779,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+e8ea9a766c1c8d092543abe67a29ce6e0aaf9366,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+e9a8715ee52d8c11d8d0d005919a843d72410eb2,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+e9bba9dc5c20a9989980bc5941386f7c73eed522,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+e9ca95e7a43dd587f5a169eb68121f582a65ac4f,worldvaluebench,probe,Malaysia,Asia,1,1,0,0,1,0,0
+ea19a10fa77433c1cd98633e2f1b6c720ef914b3,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+ea4916e6cbf7c8b1d906076cadb8a2cd345b329f,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+ea89be704220b510e59f529c2b3dd0615527ab47,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+ea9facca24f70451be182c4f4ed456886dd98b93,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+eaf3a2f340edd4d0efd34c89e3b31a24104ee2ea,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+eb28e3c3915037f496cc314fa4451e0aea774580,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+eb2d7ba1fe6bb4e2d3b64d775dabbf4bd40d6897,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+eb2fdb22780a0afba495c3f754725406907a7811,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+eb3501797a717880643356d10ae594d21c1cea72,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+eb552557cad8a0c0be428ac622be7021946c6e51,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+eb98b776c067d32fad3be9efbbe654cf0b72f42a,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+ebd9ab0ccba1f5ea69ce75f922d3d815935484a3,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+ebe3aff877c22a24c8e04b81cd9173fa213b4f2b,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+ebfd3e9c14a658a31bc5a6f5ccf851ec91fb0019,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+ec2a7f3f04d231c1a4147ef9140928a6714efe59,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+ec33f07243ed5dd25735b9b1e73d3600bee5397f,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+ec7c0b3bd85924e95792a79476af388994929514,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+ec82243eb8e12f4d2cc98f666e6698a5a803eae0,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+ec8584e0e0608f88512fbd757a2114215eb59ddd,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+ed00e122e41b29dc3536127ca1e717bd2380b6f8,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+ed43c4d1d667426b0a87fbfafc9ab603dcd7c7b3,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,1,0,0
+ed7a856bf4ca552358539255bfa73af7365de990,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+eda4a8c72c8d81a69f40a3fdc891d9d478d10d1d,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+ee8bda01bea9cb12f95b22d6420b56af61ecd1b2,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+ee8df84ca58d5c21d6c7fb32221b0cb92765f3cd,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+eeca0bdde1b4a616de4f61daf39f4b0950c41bc4,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+eedfafe3bd8c76716108fc20901c58ba14c7808b,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+ef266eb3836d18303c232f873fa8fbd910a8c415,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+ef55030d155bf62870c2aaf30d266e659a598588,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+ef6bed5c13901882871dec23721fd5935c24b2f8,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+ef7d0664dca2b9ff231c54befdec8d8d4663ac7c,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,0,-1,0
+ef9208d327231cd09ab9d7b6938f79884bb825f1,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+ef961dffd6525d60342fc6a84166a21d22ad492b,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+efc9666d3663ac81e08fc04454c043f9df065274,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+f036a085696057ad7b372756233481038ab89b8c,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+f0373ee2c669e3ac0d22fda419d234ff834f6992,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+f08f47a1def19b728135bb9fa6b7622fbefa4850,worldvaluebench,probe,Bangladesh,Asia,1,1,0,0,1,0,0
+f0c7c826e8083711b1832e791ac06c35eaae94ae,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+f0f1450ccdfb76ea315c44f7ec261eac87d2a708,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+f10ea9cb9ecde31052942cd7fdfb0ce2905f485f,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+f11866bea60824b32de1e9c055566ce010b06a49,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+f11e782dcd0c10383960188b5a4cf844646dbda2,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+f16f1ff16032b3076884be09427f4e9457f49402,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+f180c02be956be5a6ad8343e1384ab327894173d,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+f18cabe394971bbdbf95f22cbbef29cc4e11c62d,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+f21f91fff2f14f4cc549de7d252e9cfed8c76808,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+f22c8603f32e5200df8a96c6f2f322f86fb36367,worldvaluebench,probe,Malaysia,Asia,1,0,-1,0,0,-1,0
+f23af7f51b399018d9a4076b059037d94c5589d0,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+f23bd652b8679ec847dd6c2aa2596648ba154a52,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+f24c5574d9032d0748b39fa2ecf647c8453d8c43,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+f26a668c6b11f06e97d7e174f760d2b509760a22,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+f2b612b3374bfcc2f63ed97df0c9ddd435992279,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+f2cc7c807fbedbfa509616cb6ca0f411ba20f93c,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+f2fb64ed9f6f7bfe716c537d1c61f518a6e8e117,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+f314737205cf51b034f34e0f7a580c00f254e3d1,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,1,0,0
+f37f44a449af015d3b62a08e45461e6037e1fd88,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+f389e5399073a1b7c48208008c1dbf8e532d2230,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+f3b2bb8594a14833fbf40aaed035cc0039aa6536,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+f3daf0388a24e293083c16d0b23a7631e0eb0e55,worldvaluebench,probe,Philippines,Asia,1,1,0,0,1,0,0
+f3e29b8bc9c3e3b33e36929a64dc95caf24cda8e,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+f44a38658e108e34742f5030804b3cf332de0fd8,worldvaluebench,probe,Pakistan,Asia,1,1,0,0,1,0,0
+f45d1f03f3caeaf586d154ce7eab3aadc9171a1b,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,0,-1,0
+f481eff5660e930f77cc1f4349a930350432ed7d,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+f49d02f03c497550c7260eb09f424eb35b6c554b,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+f4af30834b3264a2fa68f0b8e3141d9aa4e8cb53,worldvaluebench,probe,Bangladesh,Asia,1,0,-1,0,1,0,0
+f5216befd5d33520eae3d0afc1543e81c9b62bc3,worldvaluebench,probe,Nigeria,Africa,1,1,0,0,1,0,0
+f578079c357daa259c01ece738973491687e9c61,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+f604b517a9dbde0af5b0caf098a5910fa1854012,worldvaluebench,probe,Kenya,Africa,1,0,-1,0,0,-1,0
+f68fa2cddafcbc9f18f956b7443bef557c5b8fd9,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+f69d3c2b65c37bc832c634cbfb3a9c615ea97193,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+f6cb2fbb3695df8f5b3071c63f09afb8545e2184,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+f71989ad59d8e1d51afa96f2c4a82a10b03a37cd,worldvaluebench,probe,Canada,America,1,0,-1,0,1,0,0
+f753df0565ccb9511fa9bbad6f4f406f605f7b52,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+f7581ddfb94c20bbc73ac7ca4ac392aa40bb0644,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+f80fca756fc0c4b3f713849d3c78137861580a66,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+f8193da55aa2064a3750bfb16d9ebb59578fd118,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+f8278b862d3d82ecede8a75a457b9136f8d6ae4a,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+f83a901dcaf25aae0224a178c40c8dbeebb67c64,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+f8cf811fea13ddc096439b896b2666c5bf99feaa,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+f8feb74db5fc24bedf8201141bd450ffda94c6df,worldvaluebench,probe,Philippines,Asia,1,0,-1,0,0,-1,0
+f90a821a6fdc43d1bb4e7d4bf483d07c5209973a,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+f915e908f1ffb802d60a705ec0519624d7fd77aa,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+f9279f1f2e3dde92dace4455e4161ca9bb02588a,worldvaluebench,probe,United States,America,1,0,-1,0,0,-1,0
+f938ad34d28ee4e45a1e2841136e3e9cad6ce528,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+f94b9551cf674844c1482182af718380f2daeb41,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+f9668e0ccdee299a7ef51fd272272713ece1afe3,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+fa0c67c594545a32d1eac8d82a885700ad555693,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+fa74e5145364f59b3781bd3d0ae8489734b6bb37,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+fa8f2f2ddfd2b9e8883c301b59179cecfa059c70,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+fab05ef7752923a34fb351ddad5ba8d654279f86,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+fab27aa9793da12ee312c6d23cc562933214a514,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+fab27ffda615f160bb52ce58ce5a0559a0c73913,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+fb230ccc14c11dbe6033252298d03212374d062b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+fb31239c804752ea8a5218269800059406a08017,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+fb89116311a238d056ef25a9fbe4f414376b5617,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+fba8ffe7ced3298f27be711517e05ffadd020f46,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+fbd55a610f94cc916e28f919f4c25222d78a4e48,worldvaluebench,probe,Kenya,Africa,1,1,0,0,1,0,0
+fbdb29cc16bfbfda16f24aa5fbc2a1eba6c60d36,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+fbf00d4741f9a8508f41214af3fec3477d126f8f,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+fbf3bd023dd5f8ff74d7088915abd4fa879086c1,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+fc05e2b7c3f52aef2fad5d46accf1645568937b6,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+fc0fd14fe821851ccdfde765c164b48fec4d2a4c,worldvaluebench,probe,Canada,America,1,1,0,0,0,-1,0
+fc1108ff4efb9ffded698be5462ba146357ea819,worldvaluebench,probe,United States,America,1,1,0,0,1,0,0
+fc2023e9265b36e54b9cff4aea4912e56dea6c9f,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+fc56fd0587031bfde6f2aac3aced93b5d1479724,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+fcbf39c5bc7ccd963d55409ac09713320f74fd7b,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+fd084033ce635fffdf85e7f61d085ba92b919656,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+fd15a4dddf8fda508c7cdb8e508bd534fb0714ca,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+fd41c26e0c5cf259bb814f5e66dfcad83eb6f721,worldvaluebench,probe,Malaysia,Asia,1,1,0,0,0,-1,0
+fd4a2fe7556f642a053e267932805e547868ca75,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0
+fd55f3bb75b7404ed6f5c3459ae9d7e21c40fd2f,worldvaluebench,probe,United States,America,1,0,-1,0,1,0,0
+fd6c1aa2e18d8a69d32f8799b74fa526b7fbc4c4,worldvaluebench,probe,United Kingdom,Europe,1,0,-1,0,0,-1,0
+fdebb9f7376ed86c8ea67218f6f23f983f6c05cc,worldvaluebench,probe,Hong Kong,Asia,1,0,-1,0,1,0,0
+fe00cd8acf8612f0fd31ce3c591679207fb171f8,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+fe193d3a79cd9bc4e74732f8eb1126e0ae553744,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+fe3a40ced0420cdce37b776a3f9800d2d0fac171,worldvaluebench,probe,Pakistan,Asia,1,0,-1,0,0,-1,0
+fe6357055af78ef0cc7b4b1a5f9d4735ddd58e5c,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+fecd17ac6cece34c6f8d9d39abbadb9181a34fe2,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,0,-1,0
+fed164509393dbd3c8876dbc61f4c4f84f16c87a,worldvaluebench,probe,United States,America,1,1,0,0,0,-1,0
+ffadd2bb5f1b48a60361799f6f399fd76135d983,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+ffb152bd5bbfcd1bf633c5f3470267f7debf3b83,worldvaluebench,probe,Canada,America,1,1,0,0,1,0,0
+ffb84d277a3402e97a23e392f6197167d2525fe7,worldvaluebench,probe,Canada,America,1,0,-1,0,0,-1,0
+ffca8cfe456664901c0d0ffa3f7a9847edfd969d,worldvaluebench,probe,United Kingdom,Europe,1,1,0,0,1,0,0
+ffde61d844a2503856df874e7622ed48e968fd0b,worldvaluebench,probe,Nigeria,Africa,1,0,-1,0,0,-1,0

@@ -183,9 +183,9 @@ def main() -> int:
     )
     parser.add_argument(
         "--eval-script",
-        default="/scratch/amukher6/metacul/src/14_sft_eval.py",
+        default="/path/to/metacul/src/14_sft_eval.py",
     )
-    parser.add_argument("--dataset", default="iamshnoo/qa_metacul")
+    parser.add_argument("--dataset", default="YOUR_HF_USERNAME/qa_metacul")
     parser.add_argument("--split", default="train")
     parser.add_argument("--size", choices=["1b", "3b"], default="1b")
     parser.add_argument("--name-suffix", default="", help="Suffix appended to default custom model names, e.g. _best3b")
@@ -195,11 +195,11 @@ def main() -> int:
     parser.add_argument("--top-p", type=float, default=0.9)
     parser.add_argument(
         "--results-dir",
-        default="/scratch/amukher6/metacul/results/downstream",
+        default="/path/to/metacul/results/downstream",
     )
     parser.add_argument(
         "--summary-csv",
-        default="/scratch/amukher6/metacul/results/qa_metacul_eval_summary.csv",
+        default="/path/to/metacul/results/qa_metacul_eval_summary.csv",
     )
     parser.add_argument(
         "--custom-model-path",

@@ -1,0 +1,401 @@
+question_id,benchmark,subset,country,continent,answered_by_all,custom_tminus_eminus_correct,custom_tminus_eminus_incorrect,custom_tminus_eminus_skipped
+0031d69a1f0815b444992558e9d0c2c95d00fe88,normad,train,Iraq,Asia,1,0,-1,0
+017fb2aecc3d1869c0e1cfb973ebbd687240e6fb,normad,train,Poland,Europe,1,1,0,0
+029c1be044bdc507b1c2e59863cb9c3ea5e1b885,normad,train,Poland,Europe,1,1,0,0
+03589f49c1099a2f7acd24277d265a8ab562ecb3,normad,train,Colombia,America,1,1,0,0
+0501b81a580fd5ce3da31301e752880373ac44eb,normad,train,Mexico,America,1,1,0,0
+0546d7d6777b3f31f49eebfafc8eb9553982f0e1,normad,train,Philippines,Asia,1,0,-1,0
+06ae81e6667f89d6075c9270d2d8900de10bfeb1,normad,train,United Kingdom,Europe,1,0,-1,0
+08817f3fa82c35cb538fd0274ddc298723c6281d,normad,train,Argentina,America,1,1,0,0
+08aaba34ccaa0ea4949a30a3b83745a21f209564,normad,train,Singapore,Asia,1,0,-1,0
+08acb33c866a5566517de68f6fe45954be345081,normad,train,russia,Europe,1,1,0,0
+0919904dc171acdc3c093a397eb1497aa2e74fb2,normad,train,Serbia,Europe,1,0,-1,0
+09c83ef5a39e013f8238670d67cfe62ebb6a66f4,normad,train,Sudan,Africa,1,0,-1,0
+0a9ee4455b8dd3a016d3c53d17363a5187dee3e5,normad,train,Tonga,Oceania,1,0,-1,0
+0ab566154404f677836bbbc7449cac8e3c7cd5c3,normad,train,Canada,America,1,0,-1,0
+0bca285f308f6c0f0323721ad80f1daebc4826b8,normad,train,Serbia,Europe,1,0,-1,0
+0c58a9bbbeba14319bf4606d5d7e37a15720a57f,normad,train,Singapore,Asia,1,0,-1,0
+0c67ef2381734b0b52be4c6e4d3c5d6156394338,normad,train,Colombia,America,1,1,0,0
+0d8c3832d89a232d0a1a1c06ed038da17dfe8dc8,normad,train,Philippines,Asia,1,0,-1,0
+0eed35bcd651c9f62b8decf57ae476b08be14537,normad,train,Mexico,America,1,0,-1,0
+0f6841205955b91da3750edc7f6bc0870be22082,normad,train,United Kingdom,Europe,1,1,0,0
+0fdd7cc831681a7ba3c3202b10f55586f293c966,normad,train,Hong Kong,Asia,1,0,-1,0
+10fc918812347403b0e91af9c66b90978a868505,normad,train,Timor-Leste,,1,1,0,0
+11c0c99fb6bef89a30432ec08a5de3a01c3b97fb,normad,train,Zimbabwe,Africa,1,0,-1,0
+1243af26df3742f0a99b825f5e74091efa78638a,normad,train,Spain,Europe,1,0,-1,0
+12584c4d6e858ea6b7737cbcdbb33fd7cb08370a,normad,train,Mexico,America,1,1,0,0
+1285aa15a2ba039989d85022de6a0f538be54f1b,normad,train,Sudan,Africa,1,1,0,0
+130e4e2a672f879d1c0850e452a639ba55fc14d6,normad,train,Sweden,Europe,1,0,-1,0
+1552577a42409571ea73382a5a74777cc32552a6,normad,train,Sudan,Africa,1,0,-1,0
+168f452db0c77de9e921fd8f5023ac0966a3bc39,normad,train,Hong Kong,Asia,1,0,-1,0
+1b02eef59b5588d1ebb7999573633a1665d8f7e4,normad,train,Ukraine,Europe,1,1,0,0
+1d34e54a10ec558a41899031c8d5b607ccced904,normad,train,Lebanon,Asia,1,1,0,0
+1dab1e29b444e4ac2d4278e36cafb62c93e95362,normad,train,Mexico,America,1,0,-1,0
+1dd7e0f1bc43ecbe53ea33e05723b994dd210f37,normad,train,Lebanon,Asia,1,1,0,0
+1e1281792ba2fb3f19102eda29c437598eb5a162,normad,train,Canada,America,1,1,0,0
+1e5cfb30f512ce3863af9cb1deefb37066a05be9,normad,train,Mexico,America,1,0,-1,0
+1e608ce8e3f46f4305b070b8d854f5e1f1e43c78,normad,train,Egypt,Africa,1,0,-1,0
+200bfba710f710bcc20a1afa3fe99349d09e1b54,normad,train,Colombia,America,1,1,0,0
+2138cae31ecb5d25b087bc0c2ae63361e32fdbeb,normad,train,Hong Kong,Asia,1,0,-1,0
+21555ab338a9f8f3cfb7826f489245cbb7948302,normad,train,Viet Nam,Asia,1,0,-1,0
+22228b2ac42a236943c7539a72fdf230b8dbaf21,normad,train,Myanmar,Asia,1,0,-1,0
+2275041ad2d9df89aae92daf971698eb3f14b84f,normad,train,Mexico,America,1,0,-1,0
+22b13c526db58e4013f9e29ad2f1d6cf3c87a821,normad,train,Egypt,Africa,1,0,-1,0
+256f0e9f3bed893994260e801b60d9c4c0f5f528,normad,train,North Macedonia,Europe,1,1,0,0
+26c371d4229c9f3c9174c160140575f841afdaab,normad,train,United Kingdom,Europe,1,1,0,0
+26df2724a33820b3dde7406fa8ee0bb6128f218f,normad,train,Sweden,Europe,1,0,-1,0
+273276144322842e890b7569c6c51728e20d27c2,normad,train,Italy,Europe,1,1,0,0
+280e9a3856acb30774312cb2871cb28b55df2b45,normad,train,Malta,Europe,1,0,-1,0
+28c77ebbcac8b866bbe15078cf4c20588b5458a4,normad,train,Hong Kong,Asia,1,0,-1,0
+28d9c1fcce92555911bcb185b19ba8ac22353978,normad,train,China,Asia,1,0,-1,0
+293de77dae1ad87667e67e5aa6e6d62547c2f197,normad,train,Italy,Europe,1,0,-1,0
+2c7e8d9df0d3432a8adb784e6f48e8fe22666d4a,normad,train,Somalia,Africa,1,0,-1,0
+2cf93bac3dfa16e59930f6b87bab870c16e8c4d1,normad,train,Ukraine,Europe,1,0,-1,0
+2dd96e7ae96e9bfcdbaf96b5f436bf012cac71fa,normad,train,Argentina,America,1,1,0,0
+2deefe13c9d06d0de852d35d8659915cdae4ad76,normad,train,Malta,Europe,1,1,0,0
+2eeaa8ef01757c2e6e6b9abdf48fc27da355d4ae,normad,train,Mexico,America,1,0,-1,0
+2f13ca88216943a4505e15f17fb86ef1b09eae9f,normad,train,Tonga,Oceania,1,1,0,0
+303aa40d76c7346f65b3b421c46ed06b266502e8,normad,train,Spain,Europe,1,0,-1,0
+30fb33fb62736c75fb2f932ac1f8a459707d3696,normad,train,Singapore,Asia,1,0,-1,0
+315b09aff2099f4c2b9a7f6c844c17cbbcc228dc,normad,train,Germany,Europe,1,1,0,0
+31719a863fb798f2631f05c272bd6b6a2444ef0c,normad,train,North Macedonia,Europe,1,1,0,0
+32062b6a6e1554de1037a4044452a432d6929387,normad,train,Sweden,Europe,1,0,-1,0
+32733b04bb6266b5f713fd114e2c0dc15d0da5b6,normad,train,russia,Europe,1,0,-1,0
+32eaeb61bcc63760d14e7ab21c85ea4e27451359,normad,train,Italy,Europe,1,0,-1,0
+33145e4f238bd2fdf93fb8fc098a826562cc1b25,normad,train,Myanmar,Asia,1,0,-1,0
+33bacaff1c69dafbd2a68c893ffb8f30a19e74e0,normad,train,Egypt,Africa,1,0,-1,0
+342290eb50e165b07eebd603746c3ed2b9a340d0,normad,train,Singapore,Asia,1,0,-1,0
+3524816aa9d8015905d966953f0b72fa415b3e2e,normad,train,Somalia,Africa,1,1,0,0
+35b25e6fe7b230223e0cdf759826ef4961c93bf5,normad,train,Germany,Europe,1,0,-1,0
+35e9678ef04e0435072961679075f448c4480b5d,normad,train,Somalia,Africa,1,1,0,0
+35ee1c087260b4c6b921ea56ec76c9b7321a2e13,normad,train,Argentina,America,1,0,-1,0
+3774b8b1b615f582ec57c63b54bdb54c5f949a03,normad,train,Ukraine,Europe,1,0,-1,0
+379544fd4df394aef69b4ace47e0f73402c37739,normad,train,Romania,Europe,1,0,-1,0
+37b4f1485e4e83b4bd834b6434a75d10b8c7a7dd,normad,train,Somalia,Africa,1,0,-1,0
+37c72b10cc5591b198f96a6f62d61cfb59fc3b19,normad,train,"Korea, Republic of",Asia,1,1,0,0
+37e7a0e4fe36efa03c5fe772e853b86f491d2020,normad,train,Mexico,America,1,0,-1,0
+398ba8c1382c18635007fe11f96fdd2abddcc04b,normad,train,Tonga,Oceania,1,1,0,0
+39c66b21b50aea050f341784b0fc57ea5ee4890b,normad,train,Italy,Europe,1,0,-1,0
+3a95173b630d81844366a288cec693fa01629807,normad,train,Germany,Europe,1,0,-1,0
+3b07687d62c4da751b26d4725f6a94091a0c0362,normad,train,Philippines,Asia,1,1,0,0
+3b9da73766e82157511332007c69b36be2030ec4,normad,train,Spain,Europe,1,0,-1,0
+3cc8f7c98d3463766a25ad8d117c05aa64f28e48,normad,train,Argentina,America,1,0,-1,0
+3d59db9ad99013ded4eb83de2d6b461932563b27,normad,train,Canada,America,1,1,0,0
+3f005c19f1402b6b8f916bf529666b50247e2ef7,normad,train,Germany,Europe,1,1,0,0
+3f270a156b868c6cbc3d3b8fe9cc89715aad4e18,normad,train,Lebanon,Asia,1,0,-1,0
+407e4ac6134aa164e2674ec707dcafadc737b059,normad,train,Romania,Europe,1,0,-1,0
+4191af55974aef6e8bd293c686baf0104a414eb8,normad,train,Viet Nam,Asia,1,0,-1,0
+43613005dc1ba3726bb54c7f1a41c0174a69ea2a,normad,train,Philippines,Asia,1,0,-1,0
+43f3cf05af1baaf5cc20e2124c26287b5c2920bb,normad,train,Italy,Europe,1,1,0,0
+446ddf5a3ba45a0857809a2b9e520518a91db1eb,normad,train,Poland,Europe,1,0,-1,0
+456e2468a48411c8479fdb6391144381e7057d70,normad,train,Sudan,Africa,1,0,-1,0
+45f96328bbf18e68dda8fa292a60c15069d612f6,normad,train,Myanmar,Asia,1,0,-1,0
+460f2cd9ac5f350ee685abfb91a93e5fcfec5cb2,normad,train,Somalia,Africa,1,0,-1,0
+4651f99938a7edc8017be7bed6fb1fb40a1a73e9,normad,train,Ukraine,Europe,1,0,-1,0
+476de0b81a762b10d769b8102217d72b9f2e583a,normad,train,Spain,Europe,1,0,-1,0
+47836a7a157440726fb29703eae94aad39788c6f,normad,train,Pakistan,Asia,1,1,0,0
+47894dabc0ce0971f50a8299e6961ff333649b04,normad,train,North Macedonia,Europe,1,1,0,0
+47f1f03e338452584ef74b16108ca2a1ce4be5dc,normad,train,Myanmar,Asia,1,1,0,0
+4999136dfe5dafc45f8e1f9d0a330aba76c035dd,normad,train,Timor-Leste,,1,0,-1,0
+49fd85bd50ad82f6c9530d0da2acfd7bab973ee4,normad,train,Poland,Europe,1,1,0,0
+4aa0d54cb7ff22d81d1de99325af0c3ef93db63f,normad,train,Somalia,Africa,1,0,-1,0
+4abfc9020b5de77e567741fb27d8c50b209b45b3,normad,train,Malta,Europe,1,1,0,0
+4c92c5606eb17ccecd58f3fb32dcbad7acdf639e,normad,train,Romania,Europe,1,0,-1,0
+4cb698e8c8f969e27a8d0add4c209a582c3a65d8,normad,train,Timor-Leste,,1,0,-1,0
+4cc2a5d822114b6a474fda5144189a5bf54513a2,normad,train,Singapore,Asia,1,0,-1,0
+4d9d437ae2030ca973e07053218962dab39966e7,normad,train,Zimbabwe,Africa,1,0,-1,0
+4da230bba4a009da3af09ff7e7ab636c2172f645,normad,train,Zimbabwe,Africa,1,1,0,0
+4ded6ad0aaeff87ca4ec1d378076ea7d0aa97641,normad,train,Romania,Europe,1,0,-1,0
+4e957e2f801a93e3b8e15c92f5d4c86fc07e5525,normad,train,russia,Europe,1,1,0,0
+4f6d0f134a255a02abcd21e946860315756042b2,normad,train,Egypt,Africa,1,0,-1,0
+503de06a67f8ed00d99de7198dd2f91b812a56a9,normad,train,Egypt,Africa,1,1,0,0
+50b5f0479558e1405e155e83328047a976344a62,normad,train,Sudan,Africa,1,0,-1,0
+51a83bfdad72d5d21fc486da92201b252b0a1901,normad,train,Myanmar,Asia,1,0,-1,0
+51b9421e5a7cc3a576663b46a930ecad92b8a76b,normad,train,Canada,America,1,0,-1,0
+522050489961acbd65eafe81c755b9b588d17c9e,normad,train,Timor-Leste,,1,0,-1,0
+52a0d00ff3c259621c975d58dac2e4e93dc12159,normad,train,Timor-Leste,,1,1,0,0
+53dc67097f40ef289eeda3e86f21dd1f11dd2592,normad,train,Spain,Europe,1,1,0,0
+53e6050952621c939d28ac2cfaeae9cf4ed9393f,normad,train,Viet Nam,Asia,1,0,-1,0
+5447e444bd2f08dce0b79e0c107bb311a6c7eca8,normad,train,Spain,Europe,1,1,0,0
+5508dc4092d65e84debd558790c4c6b72340667e,normad,train,Sudan,Africa,1,0,-1,0
+55d1eb0bdecccbc7064dca202789e7b18597f635,normad,train,Canada,America,1,0,-1,0
+55efe2857ee980aeb4f2d4044bc7498e6d7f2394,normad,train,"Korea, Republic of",Asia,1,0,-1,0
+5614fbf891057552fa97af8f1a53445ac2dc008f,normad,train,"Korea, Republic of",Asia,1,0,-1,0
+56b8feaa25b7c1f034fb5abc4b638c6ed6ad12ab,normad,train,Sweden,Europe,1,0,-1,0
+56c413c915b471fdb071eb8d591ca7018b9893bc,normad,train,United Kingdom,Europe,1,0,-1,0
+5772a2a87e226745d95b42563fd473f705c27128,normad,train,Sweden,Europe,1,1,0,0
+58792c9305e8b997fb1d7f5a1f31a5345ff36934,normad,train,North Macedonia,Europe,1,0,-1,0
+592c57ce03006046acf9ab1b54fefe0f3d7f11cc,normad,train,Serbia,Europe,1,1,0,0
+59750636751eb6ae7d65d266bf9a8540b52948e0,normad,train,"Korea, Republic of",Asia,1,0,-1,0
+5ae698ab4934e74f14e265152ebae69d27907470,normad,train,Somalia,Africa,1,0,-1,0
+5b8c964886757cb3c2520b9fdd5e6c2d72aa6ab4,normad,train,Malta,Europe,1,0,-1,0
+5bdf866ca2d1e1badd1ad564826126f34d26bb28,normad,train,Ukraine,Europe,1,0,-1,0
+5c500a6b7745e45bf94015f24c899c5b60136e4f,normad,train,Pakistan,Asia,1,0,-1,0
+5d4eee029cb81b09b87f906b961c0667603c0883,normad,train,Sudan,Africa,1,0,-1,0
+5ec386dfd935f8894fcd4829d32b0243611c1e93,normad,train,Ukraine,Europe,1,0,-1,0
+5f26940fc109d438953741b0c9c29744b34a79bf,normad,train,russia,Europe,1,0,-1,0
+5ff71edebcb41d19e3435b3fc41f9548ec7dbdc9,normad,train,North Macedonia,Europe,1,0,-1,0
+6048b18605b34d09bceae5c0e657534ff360eed6,normad,train,Somalia,Africa,1,0,-1,0
+606bbe27d4ea043ad1e3b5247c09e2e4ea746867,normad,train,Zimbabwe,Africa,1,0,-1,0
+60b4c1170346dbcf65524c302823d854daf433bd,normad,train,Argentina,America,1,0,-1,0
+61d61b94da7d4c55af162d4206db1cc4817e6428,normad,train,United Kingdom,Europe,1,0,-1,0
+6233aff01571b47ac3e716792593d54fd6beb48f,normad,train,Pakistan,Asia,1,0,-1,0
+626199f5e5904569bdc2c55db6eb2b757c5c3787,normad,train,Lebanon,Asia,1,0,-1,0
+6263aaa9cc500a9647c914838f159f603ef71f52,normad,train,Mexico,America,1,0,-1,0
+62dcb461c4645e92b1376bf4a42c51c4fbf4b7cc,normad,train,Pakistan,Asia,1,0,-1,0
+631906c026220275531be8842b900580355f2dc0,normad,train,Poland,Europe,1,0,-1,0
+635c1f986c1be56fe1e88f4b34702b4f8e6eb500,normad,train,Malta,Europe,1,0,-1,0
+6412fcd40267ac2100e76bdc17e5c8a6ff2b0ccb,normad,train,Hong Kong,Asia,1,0,-1,0
+64d342dc3e63ace9466a8133078e40370a637e16,normad,train,Philippines,Asia,1,1,0,0
+65e080ce51f33d2b4287992629d152276f384da0,normad,train,Timor-Leste,,1,1,0,0
+65eaeda1ee969a2174da975ed13ab90b833a30de,normad,train,Poland,Europe,1,0,-1,0
+663dde6251f6504e0ac9cd56a7d0bb1a72f210ae,normad,train,"Taiwan, Province of China",Asia,1,0,-1,0
+667aa0fd1ccb80f63a7b60de2e36a565ca42396b,normad,train,Philippines,Asia,1,0,-1,0
+667eb38508cea03367229568f44a3b71f646f752,normad,train,Germany,Europe,1,1,0,0
+693c46921584df34671fbbcf7281d6268cb540ec,normad,train,Myanmar,Asia,1,0,-1,0
+694a816d56b3671d550ef7d65921ec579dc7bcfa,normad,train,Ukraine,Europe,1,0,-1,0
+696bcbe57b67aecaeda2f1775370d4174050ad33,normad,train,Iraq,Asia,1,0,-1,0
+69b6dad9d523d504332e731d85be5f07c91a61d6,normad,train,Poland,Europe,1,0,-1,0
+69d5203fe9cb09069722044a1714e7ee7c3688eb,normad,train,Lebanon,Asia,1,1,0,0
+6a809ed1f7b3d931b78467338f41d8303d7b8f2c,normad,train,Poland,Europe,1,0,-1,0
+6af019d2c5841f22256e950f0beff9e16aee03fc,normad,train,Italy,Europe,1,1,0,0
+6b6b83c9f1a5cbf59ff0d9863cfe5b3fa153ef81,normad,train,Romania,Europe,1,0,-1,0
+6bcf4710d94839d34eb2ef60fe23448ab5612f11,normad,train,Singapore,Asia,1,0,-1,0
+6ce39360c89ecdcaba5d090f91ae6b69e935b0c7,normad,train,Somalia,Africa,1,0,-1,0
+6d824a811021aea7c604d678808d4b493d646e34,normad,train,Egypt,Africa,1,0,-1,0
+6e5f9641c702f3135f94acb9d4252080c1bbb110,normad,train,Hong Kong,Asia,1,0,-1,0
+6f9f8e5a997ad07f839f6b7e9ab1e4340894e378,normad,train,Mexico,America,1,0,-1,0
+70e1218f4548c88da43b2ace0c8b2a2cc63019b4,normad,train,Malta,Europe,1,0,-1,0
+70fc100c99195e1b6ae08fb0d0b74d4e72591009,normad,train,Iraq,Asia,1,0,-1,0
+71429ca6f49ef8a95cd6a182924c7d14b00f191e,normad,train,"Taiwan, Province of China",Asia,1,1,0,0
+73528606738f9476dea94f5d24a2715ae46fefbd,normad,train,China,Asia,1,1,0,0
+735a333d7d04436914a2ef488c086ac30ee2e33e,normad,train,Lebanon,Asia,1,0,-1,0
+73a0710ae33590a24242bacc12e76a0a83015484,normad,train,North Macedonia,Europe,1,0,-1,0
+73cd48b0427a31f1ed302d109900b6c5d7f2d959,normad,train,Spain,Europe,1,0,-1,0
+748f8dce6b2fd93ecc0bb04f1e170d700c57f9a9,normad,train,Poland,Europe,1,1,0,0
+74a91dffee92ba9d790e26968fb8ba3ded2c3e69,normad,train,Italy,Europe,1,0,-1,0
+752d2a1eeebd0bcba8221ff2802425852b55db2d,normad,train,Singapore,Asia,1,1,0,0
+76456e141c86cb588ae290c245ba8b5f004676f8,normad,train,Romania,Europe,1,1,0,0
+76d50407e29e4a46266fc6690acc7cb630e90f4e,normad,train,Italy,Europe,1,1,0,0
+774d680c28f9452c039bcb3b1ae82cc740c66c45,normad,train,China,Asia,1,1,0,0
+788def8a68b1c6dca25580eef2faa0e7286d484a,normad,train,Tonga,Oceania,1,0,-1,0
+79f3d8fb199b9a271b1a045b76e92867783bf6ac,normad,train,Iraq,Asia,1,0,-1,0
+7a03cb31ef5e0bd5174f6090c343b6971c8f0841,normad,train,Lebanon,Asia,1,1,0,0
+7a74d21c9c05151d3a90354d369eb6be85ed0d54,normad,train,Philippines,Asia,1,0,-1,0
+7a90b741b0b7883bc16dcf130f13c28a48ae030b,normad,train,Singapore,Asia,1,0,-1,0
+7bddd0f4d311f800eadea7ce8d7c374715114e9a,normad,train,Viet Nam,Asia,1,0,-1,0
+7bed8afcc8f5d1a3fcb88cade402b8e50f2f35bf,normad,train,Tonga,Oceania,1,0,-1,0
+7d76423479103d3fbc3ae620c3e142f09fe87b4b,normad,train,Iraq,Asia,1,0,-1,0
+7dc4156a3a4991c5285bb7aafa342375bf6ca8e6,normad,train,Egypt,Africa,1,0,-1,0
+7e5eaad0069d55e0cb63453a86c1f5cb8980b30a,normad,train,russia,Europe,1,0,-1,0
+7f42618e732b222c0aff6a77bb9b59da27e1535c,normad,train,Iraq,Asia,1,0,-1,0
+7fb0947c366aebf44bb21088ceffa81952d86d07,normad,train,China,Asia,1,0,-1,0
+80178bf03c7ffb42ede02deca1fcd30041643ee5,normad,train,Egypt,Africa,1,0,-1,0
+8056346bf27dc836103b0d2f9b25213954ccc0a3,normad,train,Poland,Europe,1,0,-1,0
+80743675b3519b40699493c74ed1b44f811f337b,normad,train,"Taiwan, Province of China",Asia,1,0,-1,0
+80d599cd96ee0579855816d42ac27e46cc0aa489,normad,train,Somalia,Africa,1,0,-1,0
+811baeaa3cda8468954a6c103ec1c3870dc40cca,normad,train,Myanmar,Asia,1,1,0,0
+8268afe4c0cdef6cfb07c3f71bd356b9a8277444,normad,train,Timor-Leste,,1,0,-1,0
+834f9ec285c4e2986c6b88335422f94ccda0b23e,normad,train,Serbia,Europe,1,0,-1,0
+83a35524bb0d1b0cec1a41fa4f04f0a41b89ca0a,normad,train,Ukraine,Europe,1,0,-1,0
+83e821e4eb781065fb9cd404888f27f816d4c482,normad,train,Timor-Leste,,1,1,0,0
+84e5008385e04167e843014c016aa83e10e990e1,normad,train,Malta,Europe,1,0,-1,0
+850065cf0d1ae1e24de8c144c42236dbbaded56d,normad,train,Colombia,America,1,0,-1,0
+851021351985e2120f4e54ab50fb42a41cb2eb41,normad,train,Myanmar,Asia,1,0,-1,0
+852ff5fc81c915818675b63b4fbce22cb6e9c9e1,normad,train,China,Asia,1,0,-1,0
+85c2c73d737a06f297ed70245c2947b5b207e237,normad,train,"Korea, Republic of",Asia,1,1,0,0
+8743b98ea355a137af88b9bca1877e8d7d1ace88,normad,train,russia,Europe,1,0,-1,0
+881fe197e7da673eaf86fa0cff38192d38d85a75,normad,train,Serbia,Europe,1,0,-1,0
+89471345f12e862976bd5eff7796df87151276d4,normad,train,Sudan,Africa,1,0,-1,0
+8af0cdbd80e2eef9f36600c797ba699f8cfd02d4,normad,train,Canada,America,1,0,-1,0
+8b14d71a20bf676f06bd264cf829ead58620e808,normad,train,Ukraine,Europe,1,0,-1,0
+8baa49f663a1390dd84df5dc2ba6c40ab0fdbf9b,normad,train,russia,Europe,1,1,0,0
+8bdb47e0cb0aa33729bf298b40248b2d31d83146,normad,train,Serbia,Europe,1,1,0,0
+8c14dfd453a5244decc7455666ea9832ef47175d,normad,train,Romania,Europe,1,0,-1,0
+8c6792e0603f4847e685bca97df14471920c380e,normad,train,North Macedonia,Europe,1,1,0,0
+8cf82e034de071168ea01bf47edd76a63c47373c,normad,train,Serbia,Europe,1,0,-1,0
+8d57deed018cabe0251b418e2da2a1af3fb61de0,normad,train,Ukraine,Europe,1,0,-1,0
+8d7b699e3e6a6d4e2fe3782b25656b650aaeb3c4,normad,train,Canada,America,1,0,-1,0
+8dff37e86c08f928e35b30c420cb1a940f54d511,normad,train,Egypt,Africa,1,0,-1,0
+8e5e6daca0be5e0cc844f77e30767ce7379004f7,normad,train,Singapore,Asia,1,0,-1,0
+8fb563386e7e51bf48d287fcef61b2017ac7814b,normad,train,Timor-Leste,,1,0,-1,0
+8fe8405e76e6eecfd4b9d0c1b1b8acf80d594b97,normad,train,Romania,Europe,1,1,0,0
+90e3f41668b1e64fbe037eed21d0751fdb79353a,normad,train,North Macedonia,Europe,1,0,-1,0
+914ba90cc89a5982f9d1629bfb5b27ba94ba67c0,normad,train,Sudan,Africa,1,0,-1,0
+9153452a47ccfddd1a8b1f5d374873715a578263,normad,train,Iraq,Asia,1,0,-1,0
+915f5dced7d2cd7eebf76098f9b7cb68504bc056,normad,train,Sweden,Europe,1,1,0,0
+91833ce1e2b43449964efcc9fcbe8e8b9a3d3c9e,normad,train,Viet Nam,Asia,1,0,-1,0
+91f738100d2f1a5fb096f3b38e783bfd5bd506bb,normad,train,Singapore,Asia,1,1,0,0
+920977f1e005755f329297e7ea0cedae337c5e6a,normad,train,Germany,Europe,1,1,0,0
+92a77dd2b1f176ada8717346c6b5fda76794712a,normad,train,China,Asia,1,0,-1,0
+93e11aafb6bfc8f92164a64cefa4f8100982ba46,normad,train,China,Asia,1,0,-1,0
+95e9ad04d6cc3ae32a2d17622aa95f78249376e3,normad,train,Argentina,America,1,0,-1,0
+9695126202592f9dccc21dd9d20824686e0898c0,normad,train,Poland,Europe,1,0,-1,0
+9698ee10fb2a0b8406a1aca4235dfc2ebfd560f2,normad,train,Philippines,Asia,1,0,-1,0
+9779a6a4ca3ab7a0b2683ccf7a1675451e5a1ec5,normad,train,"Taiwan, Province of China",Asia,1,1,0,0
+99b01d0817e529d260e17f3c2d57085e3052a92d,normad,train,Hong Kong,Asia,1,0,-1,0
+9adf33e315160344e945062b5b6cea0e125f0325,normad,train,Lebanon,Asia,1,0,-1,0
+9aeb015556fa8f1afc7eebff12c8259717e0d696,normad,train,China,Asia,1,0,-1,0
+9b0b73127d4b876dbcd7199ca81e0a4ad8ad520f,normad,train,Hong Kong,Asia,1,1,0,0
+9bd5f384e00b1a1b5bd73e61acad8b58284f92fa,normad,train,Sudan,Africa,1,0,-1,0
+9c7ca171f808d2d58f32646577b6914bfeae24e6,normad,train,Ukraine,Europe,1,1,0,0
+9cd7c00c0b408c44eb7c5fab0dd2d5c95ffedd30,normad,train,Viet Nam,Asia,1,0,-1,0
+9d3099e439607ed2331a072b323441284fc335db,normad,train,Spain,Europe,1,1,0,0
+9d6f586d76df4536d79617ff1af336183b032472,normad,train,China,Asia,1,0,-1,0
+9e72e95676f904083e93786ca95f3272c7c49bc2,normad,train,Hong Kong,Asia,1,1,0,0
+9ea9643267a727f71dfc723691103757c0e2c9a1,normad,train,Pakistan,Asia,1,0,-1,0
+a0bc19711ac1757a35d1d7f77ca41f53cf7d90fe,normad,train,Ukraine,Europe,1,0,-1,0
+a1aa1ba835c109b507a55a831db2aba55ff5a7af,normad,train,Zimbabwe,Africa,1,1,0,0
+a2df50519411852b298fee0c86514d493db0ff28,normad,train,Serbia,Europe,1,0,-1,0
+a4714a4c74c5bed25ba909f87886f17005a92749,normad,train,Zimbabwe,Africa,1,0,-1,0
+a51f7abe3d947eb927febaf2bd74f4352ea23e45,normad,train,Colombia,America,1,0,-1,0
+a56b6d471b27b742472c58f51eea8e77aa7f9c52,normad,train,Sweden,Europe,1,1,0,0
+a74f80d64ed74563a2b68f3cf5a521b142fd14d8,normad,train,Sudan,Africa,1,0,-1,0
+a7734c013d00406095d6cd750d244c042e5e6b37,normad,train,United Kingdom,Europe,1,0,-1,0
+a7ea3101a01ca8a6300bb114197ab78abebda372,normad,train,russia,Europe,1,0,-1,0
+a859c19479de8cf87c373ce8dc576b1f55c1a061,normad,train,Romania,Europe,1,0,-1,0
+a8ae06320dea739e23fd2d2fc3142bec2d5188b7,normad,train,Colombia,America,1,0,-1,0
+a8b8b5f782e0fd359677e5add1f0a034f36f12d2,normad,train,Malta,Europe,1,0,-1,0
+a9ca45f3759a7c7fe7c23939f7fc83945620dce8,normad,train,Hong Kong,Asia,1,0,-1,0
+aa5b8fee4a1ceb279f0e63e2a769c6fb7f346593,normad,train,Germany,Europe,1,0,-1,0
+aa5ddaf45155526b31213f273062f663efc44ff4,normad,train,Serbia,Europe,1,0,-1,0
+aa9d2d4662677d74b20bb1a1d29f8949b61af0ac,normad,train,Germany,Europe,1,0,-1,0
+aab810f360151b7d32201910b32e912620999466,normad,train,United Kingdom,Europe,1,1,0,0
+acebb35be4487017a97581be09f39ec2b952a708,normad,train,Zimbabwe,Africa,1,0,-1,0
+acfd03065fd317adcba768ff33e245cce07846db,normad,train,Somalia,Africa,1,0,-1,0
+ad84ac9ca099a0ebe90cf81692f93c5d3d5c3295,normad,train,North Macedonia,Europe,1,0,-1,0
+adbee1a3653634adccffb1e39fae7d35f3a51f5e,normad,train,Tonga,Oceania,1,0,-1,0
+adc80ee800dc2047dd04eebcb7483c05a39ce649,normad,train,Tonga,Oceania,1,0,-1,0
+aec1d9db661b159ff6ecf6771bfceafa954bd27d,normad,train,Pakistan,Asia,1,0,-1,0
+af6c241eed77fafabb090620c1bc7aff016c29b5,normad,train,Iraq,Asia,1,0,-1,0
+b04df85e049d71729b85165d706399175a24003e,normad,train,Canada,America,1,1,0,0
+b065bcaed20a232ef991541bfd637df41249d49d,normad,train,Zimbabwe,Africa,1,1,0,0
+b44b4120827ac63c7e8c011846fbf7707c30b4cb,normad,train,Argentina,America,1,0,-1,0
+b4ec6096971545bc39fc6204c33eeb9e5ae73dbf,normad,train,Sweden,Europe,1,0,-1,0
+b6f2b61af5ff7e5c64fa738f929ac54ffa635ad6,normad,train,"Taiwan, Province of China",Asia,1,1,0,0
+b73568fc7a7cdfa4752d6a5daa707a6594812927,normad,train,Myanmar,Asia,1,1,0,0
+b81cb5ece86257ab1cf81acbdb4255d7ac3c4ae7,normad,train,Viet Nam,Asia,1,1,0,0
+ba63682d6dd19c7e55b3d210b80341b9ca185c76,normad,train,Spain,Europe,1,1,0,0
+bac2d029dbe7169c9972940566342587d0c6bacc,normad,train,China,Asia,1,1,0,0
+bb4679f83bd5ea1630664c10b3a42072f01c85ec,normad,train,"Korea, Republic of",Asia,1,0,-1,0
+bbd022697db4cbab18bd4dcb84a6664ab259a036,normad,train,Zimbabwe,Africa,1,0,-1,0
+bbf975174912c7a12f6c49fe27d478e2cedb5ed4,normad,train,Sweden,Europe,1,1,0,0
+bbffa549dd0ed1ed32a828664d94f783a227bb81,normad,train,Argentina,America,1,0,-1,0
+bc2085fe5cacb4f5de564ecb0dd6cb617f55ba04,normad,train,Viet Nam,Asia,1,0,-1,0
+bcda0e66ec28cc1c2cc98dfc1776cbfbdb5f3d46,normad,train,Tonga,Oceania,1,0,-1,0
+bd048771b7d4bf65d5fd689018f16b7e2046d3fc,normad,train,Argentina,America,1,1,0,0
+bd78f0425020d91efbd02ea86dcfba9965cfe262,normad,train,Italy,Europe,1,1,0,0
+bd9237c671a92be72638be4829a99bbbaec7867d,normad,train,"Korea, Republic of",Asia,1,0,-1,0
+bed2f5484422721c631891ad3615b60f8b8a2128,normad,train,Serbia,Europe,1,0,-1,0
+bf36b39f8b11ca1d59397cc274b2bcfdcdbede0a,normad,train,Germany,Europe,1,1,0,0
+bf3be4a602c7efaa510addb656515ad9aa355dba,normad,train,Philippines,Asia,1,1,0,0
+bfd5cd7d19407eaf8eb80eaaa56999401180210d,normad,train,Pakistan,Asia,1,0,-1,0
+c069d8e687722a928a2a115efe9a51ad76e27ba7,normad,train,North Macedonia,Europe,1,1,0,0
+c0b53743ae0734ed0e9a01fa1fc2039ca46ea3f9,normad,train,Poland,Europe,1,1,0,0
+c120bf707a8373f2a1254d4ed4dd4c17b8503252,normad,train,Somalia,Africa,1,0,-1,0
+c2c67746fbba94dc814ce75d2cda355e708f084c,normad,train,Zimbabwe,Africa,1,0,-1,0
+c32bf7a5e22359d7d6239d3808e9641f80bed802,normad,train,Myanmar,Asia,1,1,0,0
+c3eb10572e8e13cf7aa7ba544dc8a2e2db427cab,normad,train,Myanmar,Asia,1,1,0,0
+c417c6a598cd4868c6aaf2d0f02e880c03af82ad,normad,train,"Korea, Republic of",Asia,1,0,-1,0
+c4f184962d4a2cda33477648a36b1ea426a0d828,normad,train,Spain,Europe,1,0,-1,0
+c638cb7674f5c5fa4dd19a9465ab4ed4f386616a,normad,train,"Taiwan, Province of China",Asia,1,0,-1,0
+c6f50e948056ef77138ec8106dbc1eebef1b5166,normad,train,Lebanon,Asia,1,1,0,0
+c750155b1392ba035c18e91e5cea0a35eebf1604,normad,train,Colombia,America,1,0,-1,0
+c75b9aae468b63654534eefa403da6f81e024e80,normad,train,Colombia,America,1,0,-1,0
+c7b49103fda9af76112e67d368cafe8188799a2a,normad,train,Zimbabwe,Africa,1,1,0,0
+c87f563772cffa066cf815beecbd2d01693c41f1,normad,train,Colombia,America,1,1,0,0
+c8c6a867a33eaf6f876411728522a468f56c974c,normad,train,Tonga,Oceania,1,1,0,0
+c9219d8d746a7525261a37ac119867daa3219901,normad,train,Mexico,America,1,0,-1,0
+ca4e6d4c94244542b0ff2d216ba9bb8644742aae,normad,train,Philippines,Asia,1,0,-1,0
+ca6a0d79b726af59669c2fcd5862645368623af0,normad,train,Ukraine,Europe,1,0,-1,0
+ca711c50f14553abf48b9f968263510054b8124c,normad,train,Romania,Europe,1,0,-1,0
+ca94b6292d52f8526f44dc27cb304b648d5d25d9,normad,train,Egypt,Africa,1,1,0,0
+cb075a2a1ad5111d654c20a4f14a3ad554ab0f86,normad,train,Argentina,America,1,0,-1,0
+ce5202c527649d8819ef2916813047a2124facf9,normad,train,Argentina,America,1,0,-1,0
+ce81ff0d9b656c6a71805fbcff3b9cd222f00ddf,normad,train,Romania,Europe,1,1,0,0
+cf2ccf3871535bd2fa79feee7cf8dcf539c16ebf,normad,train,Italy,Europe,1,0,-1,0
+cf54867d5d31e949469ff983b975c5bebad32ca0,normad,train,Timor-Leste,,1,0,-1,0
+cf6e03f4a831bbc554f2b00f809f144e266a4084,normad,train,Singapore,Asia,1,1,0,0
+d09c4498a6e0999da3479fdb5de89015b0d38444,normad,train,Canada,America,1,0,-1,0
+d1274038afdc0bba79d8c3a0a3907275a106ad6d,normad,train,Germany,Europe,1,0,-1,0
+d1edb710e73a3c23c9efc7f0f9cf906d97aa28af,normad,train,Singapore,Asia,1,1,0,0
+d1f083d3328eb737967c256cc65a3e8502bdbddd,normad,train,Egypt,Africa,1,0,-1,0
+d1f7b190f7a70c29c9c931e3537cfddbae52291d,normad,train,"Taiwan, Province of China",Asia,1,1,0,0
+d358a153efd0353d5323d122c162efaad7661dab,normad,train,Sudan,Africa,1,0,-1,0
+d3c4e82350c374a7e32b28b79891bc9172ddda60,normad,train,North Macedonia,Europe,1,0,-1,0
+d434f0af2199c8e94bba42ec4a6ec1ad2d7293d4,normad,train,Germany,Europe,1,0,-1,0
+d4461bfc5046893a915c2a5968e20afb8ffae4eb,normad,train,Canada,America,1,1,0,0
+d480d734fbfe29f76d4a92547def00aa6ba21d0d,normad,train,Myanmar,Asia,1,0,-1,0
+d486a95da01ebb9340367f9bd102261c15be4b7c,normad,train,russia,Europe,1,0,-1,0
+d52ae926daa74a7d3b7bbc95f7fb13e45cfbdd72,normad,train,Colombia,America,1,1,0,0
+d5ac17bb8501a80cb856f27648badd5e5adb2a28,normad,train,Viet Nam,Asia,1,0,-1,0
+d67cfc3a04abc38d1e06d4252d2ebab8cc7e9c7c,normad,train,Iraq,Asia,1,1,0,0
+d6ac6374e17101d4df9b2a4a05a713e7ec63efa8,normad,train,Pakistan,Asia,1,1,0,0
+d6e5af2d17ee120968b2b111dcf5768b4bd14a6f,normad,train,"Taiwan, Province of China",Asia,1,0,-1,0
+d6e5e3ded24216a5644bf454f290e0cecfb4c38e,normad,train,Germany,Europe,1,0,-1,0
+d727441aa30935b4acab3c69a73e98f121724a34,normad,train,Iraq,Asia,1,0,-1,0
+d75a9b200a5fd6f4c91ac7380712cf7ca8560c92,normad,train,Ukraine,Europe,1,0,-1,0
+d75f1c9c4efd871a6f0d5f6f55120820418db4ba,normad,train,russia,Europe,1,0,-1,0
+d7ee4f47d7ecb83f1911c8a55ca10dbcd239b306,normad,train,Malta,Europe,1,0,-1,0
+d7fd98ea137c703f5399a7f03235f86a1f9e0101,normad,train,Malta,Europe,1,1,0,0
+d9082c1d22a456300f58b3052e11b7902561df0a,normad,train,Hong Kong,Asia,1,0,-1,0
+d981b99ae2b2a544ee52fe171f19ec76a795041e,normad,train,Tonga,Oceania,1,0,-1,0
+d9a5ad26fd3fae566825e08d16c1d3eebc6e3c2a,normad,train,Ukraine,Europe,1,0,-1,0
+db204d45e3b0916d3e328f7d1f95faa4c2b97f51,normad,train,Colombia,America,1,0,-1,0
+dcfa4d00d77dd3b8873c7c7936d2f82c38976375,normad,train,Viet Nam,Asia,1,1,0,0
+decd70e17dcbb5eab2dafc4a21828fca8392ef64,normad,train,Tonga,Oceania,1,1,0,0
+dfa722709b3833c15411d8cbb029d8e1b589a91d,normad,train,"Taiwan, Province of China",Asia,1,0,-1,0
+dfb12977d898dfa64bb6f374a1995f0382b2213c,normad,train,Sudan,Africa,1,0,-1,0
+dfff00089b8b29ac3593eb517d0cdb001e07bbda,normad,train,Argentina,America,1,1,0,0
+e04ad664905bb5843c7b9ed0cde631d2bbcc107f,normad,train,Sudan,Africa,1,0,-1,0
+e0b5eb1b04b4a7ffaa8834ad482051bc534e439f,normad,train,Mexico,America,1,0,-1,0
+e0c03c1f4097750daaa4c43c03980ffa413ef7dc,normad,train,Serbia,Europe,1,1,0,0
+e12c1886f1e2da0cd5a4644e42c59ccab5ce22dc,normad,train,Myanmar,Asia,1,0,-1,0
+e1462b5024df4d5208995bca1abb64cdbbae4c97,normad,train,Iraq,Asia,1,0,-1,0
+e1dd592393573d56a7f9287e7966511a66f8e718,normad,train,Timor-Leste,,1,1,0,0
+e1f78c9d91d0eac355b480b19dbd356ab45a986a,normad,train,Pakistan,Asia,1,0,-1,0
+e3035ba3ea261a3d8fee43e1e5e8d0285952c0e1,normad,train,Italy,Europe,1,1,0,0
+e518ee91913c508c8ca6f273adf2389eba6ee990,normad,train,Sweden,Europe,1,0,-1,0
+e54408e0d3bd44256f02228d9ed7378488bbd691,normad,train,Viet Nam,Asia,1,1,0,0
+e5ed220055a33f2ca69361544e11f4fdf8302bff,normad,train,Spain,Europe,1,1,0,0
+e62e5627e19979e75e35c4276cfd280186264d3a,normad,train,"Taiwan, Province of China",Asia,1,0,-1,0
+e6c0eec8178e25d6b1aeccf461d8d8c9862afb42,normad,train,Germany,Europe,1,1,0,0
+e6d36a21fcbf984408e6d7b1055b7dcf96c3cdc0,normad,train,Somalia,Africa,1,0,-1,0
+e78072edbf928943cd93679665fa0b9c984d8993,normad,train,Myanmar,Asia,1,0,-1,0
+e79667811c3bfc2c85a3d1339ddb2ef6338ee482,normad,train,Canada,America,1,1,0,0
+e830a844b4de361c439ac7a31c3df6b3b12224db,normad,train,"Taiwan, Province of China",Asia,1,0,-1,0
+ea751cd0c9c45fe782b0a3da7dd737872ede8ec4,normad,train,Germany,Europe,1,0,-1,0
+eb27494ff8985c87d882c1d4367916cffcc7986e,normad,train,Sweden,Europe,1,0,-1,0
+eb3d6064a552f2641c39977121c5556412acc349,normad,train,Hong Kong,Asia,1,0,-1,0
+ebfdff0cc87c686e6d1860e8c34622cb41924b36,normad,train,United Kingdom,Europe,1,0,-1,0
+ec55999b5f452e395b67fe8254c058f259f8f9e5,normad,train,Italy,Europe,1,0,-1,0
+ecab7e3fec9f0b38fff2fe5013e9db587da9e536,normad,train,Somalia,Africa,1,0,-1,0
+ee024e754fcbf16590cd6762a0fa66f009639a83,normad,train,Zimbabwe,Africa,1,0,-1,0
+ee225518550621a984df48e7479f574e7932d65b,normad,train,Timor-Leste,,1,0,-1,0
+ee7ef6dd740fd58e3f7795740a586407ddecce05,normad,train,russia,Europe,1,0,-1,0
+ef3a97302858361aaef3c0589ee6b5326d5c112c,normad,train,Canada,America,1,0,-1,0
+ef6ffc9030d510b547431b7c6be9ce16b2850e9c,normad,train,Pakistan,Asia,1,0,-1,0
+ef93ad4dfe9eb3d9f160e3b7d1e880ac3986bbb0,normad,train,"Korea, Republic of",Asia,1,0,-1,0
+f25ab43a6e46c5807d330ca0bd2614ea69613032,normad,train,Serbia,Europe,1,1,0,0
+f25cda642752aaadf7fda922fc7aefa4a605fec8,normad,train,United Kingdom,Europe,1,0,-1,0
+f26c7fc73d6c6723c4d9bd49b7a4076006e41bed,normad,train,Egypt,Africa,1,0,-1,0
+f496c1e43c96a89cf30fcde4e1b0ff97e15100b8,normad,train,Germany,Europe,1,0,-1,0
+f5a8739f921a73ae61bea0d26e4602556787ee61,normad,train,Sweden,Europe,1,0,-1,0
+f5b0d36c2c4180b5e362583de7507ff8cf4aa7df,normad,train,Myanmar,Asia,1,0,-1,0
+f69720c59cce53dd0a7f64b90436740d597b5ed0,normad,train,Spain,Europe,1,0,-1,0
+f8899c42339130320968eb06ededf718f3bca11e,normad,train,"Taiwan, Province of China",Asia,1,1,0,0
+f96930a1f711bd439414049e25861b576f1762b2,normad,train,Tonga,Oceania,1,1,0,0
+fa21d1411e03c5c4b8de202e99c9316e189853ab,normad,train,China,Asia,1,0,-1,0
+fb649b070faacbf52241f09ad07d14353923d895,normad,train,Colombia,America,1,0,-1,0
+fb7f3cf386d8bd5cee416708e989dbadb0daca7b,normad,train,Sudan,Africa,1,0,-1,0
+fc8adc5a1c189fe4d510673a194046862c150537,normad,train,Malta,Europe,1,0,-1,0
+fc9dc908fd06302d06cbcfeff44377e76180d1d1,normad,train,Somalia,Africa,1,1,0,0
+fd4459d7437e0e2f710ec259a34fab3a69c46dcc,normad,train,Romania,Europe,1,0,-1,0
+fd4c78e24f1cf86b97788b9e4cfb44813e3e8602,normad,train,Pakistan,Asia,1,1,0,0
+fd997704232618f78f42986b1e616527b983e6f2,normad,train,Philippines,Asia,1,0,-1,0
+fddd106c1b896af8934f87ab3e20a549cfffc568,normad,train,Malta,Europe,1,0,-1,0
+fe1766f543e6877a3ac9f88eb45b077ba7fa258d,normad,train,Philippines,Asia,1,0,-1,0
+fed7db9639f629db845dc1fe71d536c16c10d086,normad,train,China,Asia,1,1,0,0
+ff0818245a9bf56e2f3ccbb4a7cce0638e068eb1,normad,train,Iraq,Asia,1,1,0,0
+ff6efff2e597c132b72c461c6c0b57ca327ac9b6,normad,train,Viet Nam,Asia,1,1,0,0
+ff89d4862c2f0f2ea244d887653facab8c394aec,normad,train,Pakistan,Asia,1,0,-1,0

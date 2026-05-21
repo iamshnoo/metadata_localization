@@ -1,0 +1,49 @@
+dataset,benchmark,metric,model_group,variant,column_label,value,value_std,seed_count
+BLEnD,blend,accuracy,MAPLE 1B,custom_tplus_eplus,"(T+,I+)",25.190839694656486,1.6193285065340774,5
+BLEnD,blend,accuracy,MAPLE 1B,custom_tplus_eminus,"(T+,I-)",25.190839694656486,1.6193285065340774,5
+BLEnD,blend,accuracy,MAPLE 1B,custom_tminus_eplus,"(T-,I+)",25.190839694656486,1.6193285065340774,5
+BLEnD,blend,accuracy,MAPLE 1B,custom_tminus_eminus,"(T-,I-)",25.190839694656486,1.6193285065340774,5
+Global-MMLU CS,globalmmlu_cs,accuracy,MAPLE 1B,custom_tplus_eplus,"(T+,I+)",24.873737373737367,0.9363886978656142,5
+Global-MMLU CS,globalmmlu_cs,accuracy,MAPLE 1B,custom_tplus_eminus,"(T+,I-)",24.873737373737367,0.9363886978656142,5
+Global-MMLU CS,globalmmlu_cs,accuracy,MAPLE 1B,custom_tminus_eplus,"(T-,I+)",24.873737373737367,0.9363886978656142,5
+Global-MMLU CS,globalmmlu_cs,accuracy,MAPLE 1B,custom_tminus_eminus,"(T-,I-)",24.873737373737367,0.9363886978656142,5
+NormAd,normad,accuracy,MAPLE 1B,custom_tplus_eplus,"(T+,I+)",34.02962400303836,1.033153855581877,5
+NormAd,normad,accuracy,MAPLE 1B,custom_tplus_eminus,"(T+,I-)",34.02962400303836,1.033153855581877,5
+NormAd,normad,accuracy,MAPLE 1B,custom_tminus_eplus,"(T-,I+)",34.02962400303836,1.033153855581877,5
+NormAd,normad,accuracy,MAPLE 1B,custom_tminus_eminus,"(T-,I-)",34.02962400303836,1.033153855581877,5
+BLEnD,blend,accuracy,MAPLE 3B,custom_tplus_eplus,"(T+,I+)",14.656488549618313,0.7759771339428454,5
+BLEnD,blend,accuracy,MAPLE 3B,custom_tplus_eminus,"(T+,I-)",13.333333333333329,0.6386717759802065,5
+BLEnD,blend,accuracy,MAPLE 3B,custom_tminus_eplus,"(T-,I+)",17.099236641221374,0.8323372638064191,5
+BLEnD,blend,accuracy,MAPLE 3B,custom_tminus_eminus,"(T-,I-)",18.218829516539436,1.3536321708163241,5
+Global-MMLU CS,globalmmlu_cs,accuracy,MAPLE 3B,custom_tplus_eplus,"(T+,I+)",27.2979797979798,0.9166005764081578,5
+Global-MMLU CS,globalmmlu_cs,accuracy,MAPLE 3B,custom_tplus_eminus,"(T+,I-)",27.095959595959595,0.6536454093709474,5
+Global-MMLU CS,globalmmlu_cs,accuracy,MAPLE 3B,custom_tminus_eplus,"(T-,I+)",27.070707070707073,0.9261172131763757,5
+Global-MMLU CS,globalmmlu_cs,accuracy,MAPLE 3B,custom_tminus_eminus,"(T-,I-)",27.373737373737367,0.5813567895566335,5
+NormAd,normad,accuracy,MAPLE 3B,custom_tplus_eplus,"(T+,I+)",34.02962400303835,0.2929595256464391,5
+NormAd,normad,accuracy,MAPLE 3B,custom_tplus_eminus,"(T+,I-)",34.485377895936196,0.4212129322601403,5
+NormAd,normad,accuracy,MAPLE 3B,custom_tminus_eplus,"(T-,I+)",29.821496391948347,0.35056530981281986,5
+NormAd,normad,accuracy,MAPLE 3B,custom_tminus_eminus,"(T-,I-)",31.279908849221414,0.2837045103985264,5
+BLEnD,blend,accuracy,LLaMA-3.2-1B,llama3_chat_with_metadata,(I+),16.081424936386764,0.6586350689844691,5
+BLEnD,blend,accuracy,LLaMA-3.2-1B,llama3_chat_without_metadata,(I-),16.488549618320608,0.7060782150387591,5
+Global-MMLU CS,globalmmlu_cs,accuracy,LLaMA-3.2-1B,llama3_chat_with_metadata,(I+),29.015151515151512,0.7752566380307427,5
+Global-MMLU CS,globalmmlu_cs,accuracy,LLaMA-3.2-1B,llama3_chat_without_metadata,(I-),27.626262626262626,0.9632439960990212,5
+NormAd,normad,accuracy,LLaMA-3.2-1B,llama3_chat_with_metadata,(I+),36.71857197113559,0.38488799271274443,5
+NormAd,normad,accuracy,LLaMA-3.2-1B,llama3_chat_without_metadata,(I-),36.232434485377894,0.7852667348323321,5
+BLEnD,blend,accuracy,LLaMA-3.2-3B,llama3_chat_with_metadata,(I+),17.353689567430024,0.5214733214228819,5
+BLEnD,blend,accuracy,LLaMA-3.2-3B,llama3_chat_without_metadata,(I-),16.437659033078877,1.0429466428457634,5
+Global-MMLU CS,globalmmlu_cs,accuracy,LLaMA-3.2-3B,llama3_chat_with_metadata,(I+),30.27777777777777,0.7752566380307425,5
+Global-MMLU CS,globalmmlu_cs,accuracy,LLaMA-3.2-3B,llama3_chat_without_metadata,(I-),30.050505050505045,0.598916223516736,5
+NormAd,normad,accuracy,LLaMA-3.2-3B,llama3_chat_with_metadata,(I+),33.034561336878085,0.9575803964062638,5
+NormAd,normad,accuracy,LLaMA-3.2-3B,llama3_chat_without_metadata,(I-),30.710216483099124,0.34139316451567664,5
+BLEnD,blend,accuracy,Gemma-4-E2B,llama3_chat_with_metadata,(I+),23.25699745547073,0.9788999522479047,5
+BLEnD,blend,accuracy,Gemma-4-E2B,llama3_chat_without_metadata,(I-),22.13740458015267,1.1379480801525663,5
+Global-MMLU CS,globalmmlu_cs,accuracy,Gemma-4-E2B,llama3_chat_with_metadata,(I+),31.843434343434343,0.5881724595379881,5
+Global-MMLU CS,globalmmlu_cs,accuracy,Gemma-4-E2B,llama3_chat_without_metadata,(I-),31.818181818181813,0.35712463696290603,5
+NormAd,normad,accuracy,Gemma-4-E2B,llama3_chat_with_metadata,(I+),40.972274971515375,0.7366454937445324,5
+NormAd,normad,accuracy,Gemma-4-E2B,llama3_chat_without_metadata,(I-),35.260159513862504,0.8332149846048725,5
+BLEnD,blend,accuracy,Gemma-4-E4B,llama3_chat_with_metadata,(I+),36.79389312977098,1.1743491866884819,5
+BLEnD,blend,accuracy,Gemma-4-E4B,llama3_chat_without_metadata,(I-),30.941475826972002,1.088511431868063,5
+Global-MMLU CS,globalmmlu_cs,accuracy,Gemma-4-E4B,llama3_chat_with_metadata,(I+),45.35353535353535,1.1236664374387397,5
+Global-MMLU CS,globalmmlu_cs,accuracy,Gemma-4-E4B,llama3_chat_without_metadata,(I-),43.232323232323225,0.395264541477235,5
+NormAd,normad,accuracy,Gemma-4-E4B,llama3_chat_with_metadata,(I+),65.10444360045577,0.1685707635485951,5
+NormAd,normad,accuracy,Gemma-4-E4B,llama3_chat_without_metadata,(I-),63.46372958602355,0.36428648107198947,5

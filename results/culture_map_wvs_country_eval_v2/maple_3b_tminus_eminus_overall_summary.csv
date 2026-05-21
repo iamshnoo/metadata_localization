@@ -1,0 +1,2 @@
+variant,label,model_path,size,train_metadata,eval_metadata,n_countries,mean_target_distance,median_target_distance,mean_target_rank,top1_rate,top3_rate
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,3B,False,False,15,4.010379748651201,3.805490254508229,8.0,0.06666666666666667,0.2

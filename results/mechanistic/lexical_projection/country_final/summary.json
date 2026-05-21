@@ -1,0 +1,6 @@
+{
+  "variant": "country_final",
+  "prompt_kind": "country",
+  "mean_us_uk_symmetric_kl": 0.635199211537838,
+  "mean_expected_rank": 81.0
+}

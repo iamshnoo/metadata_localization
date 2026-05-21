@@ -3,6 +3,10 @@
 __MACOSX/
 .vscode/
 .env
+.env.*
+*.pem
+*.key
+id_rsa*
 __pycache__/
 *.pyc
 
@@ -17,6 +21,7 @@ models/
 logs/
 src/wandb/
 results/per_sample_losses/
+results/analysis/localnewsqa_locale_switch/pair_level.csv
 
 # Local helper state
 .agents/

@@ -30,7 +30,7 @@ Quick start:
 1. `python3 -m pip install -e .`
 2. `culture-map download-paper-assets`
 3. `culture-map plot-map --with-paper-models --output outputs/paper_map.png`
-4. `culture-map run-openai-part1 --recent --env-file .agents/.env --output-dir outputs/openai_recent`
+4. `culture-map run-openai-part1 --recent --output-dir outputs/openai_recent`
 5. `culture-map plot-map --with-paper-models --points-csv outputs/openai_recent/all_model_mean_projection.csv --output outputs/openai_recent_map.png`
 
 Key outputs:

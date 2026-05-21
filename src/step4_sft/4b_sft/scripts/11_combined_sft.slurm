@@ -8,7 +8,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=40GB
 #SBATCH --time=0-23:59:58
-#SBATCH --output=/scratch/amukher6/logs/culture/out/sft_without_n.%A_%a.out.txt
-#SBATCH --error=/scratch/amukher6/logs/culture/err/sft_without_n.%A_%a.err.txt
+#SBATCH --output=/path/to/logs/culture/out/sft_without_n.%A_%a.out.txt
+#SBATCH --error=/path/to/logs/culture/err/sft_without_n.%A_%a.err.txt
 
 python sft.py

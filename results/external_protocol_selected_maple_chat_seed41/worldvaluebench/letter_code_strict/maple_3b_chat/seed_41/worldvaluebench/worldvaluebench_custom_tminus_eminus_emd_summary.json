@@ -1,0 +1,6 @@
+{
+  "overall_emd": 0.2797972869989329,
+  "groups": 333,
+  "scored_rows": 1458,
+  "jsonl_path": "results/external_protocol_selected_maple_chat_seed41/worldvaluebench/letter_code_strict/maple_3b_chat/seed_41/worldvaluebench/worldvaluebench_custom_tminus_eminus.jsonl"
+}

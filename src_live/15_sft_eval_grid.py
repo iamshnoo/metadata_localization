@@ -201,9 +201,9 @@ def main() -> int:
     )
     parser.add_argument(
         "--eval-script",
-        default="/scratch/amukher6/metacul/src/14_sft_eval.py",
+        default="/path/to/metacul/src/14_sft_eval.py",
     )
-    parser.add_argument("--dataset", default="iamshnoo/qa_metacul")
+    parser.add_argument("--dataset", default="YOUR_HF_USERNAME/qa_metacul")
     parser.add_argument("--split", default="train")
     parser.add_argument("--locale-role", choices=["target", "contrast", "auto"], default="target")
     parser.add_argument("--size", choices=["1b", "3b"], default="1b")
@@ -214,7 +214,7 @@ def main() -> int:
     parser.add_argument("--top-p", type=float, default=0.9)
     parser.add_argument(
         "--results-dir",
-        default="/scratch/amukher6/metacul/results/downstream",
+        default="/path/to/metacul/results/downstream",
     )
     parser.add_argument(
         "--summary-csv",
@@ -249,7 +249,7 @@ def main() -> int:
     results_dir.mkdir(parents=True, exist_ok=True)
     dataset_name_slug = dataset_slug(args.dataset)
     summary_csv = Path(args.summary_csv) if args.summary_csv else Path(
-        "/scratch/amukher6/metacul/results/{}_eval_summary_{}.csv".format(
+        "/path/to/metacul/results/{}_eval_summary_{}.csv".format(
             dataset_name_slug, args.locale_role
         )
     )

@@ -25,14 +25,14 @@ except Exception as exc:  # pragma: no cover
     ) from exc
 
 
-DEFAULT_DATASET = "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
-DEFAULT_OUTPUT_DIR = "/scratch/amukher6/metacul/results/noamerica_cluster"
-DEFAULT_MODEL = "/scratch/amukher6/metacul/models/ablations/leave_one_out/combined_no_america_with_metadata_1b"
+DEFAULT_DATASET = "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/"
+DEFAULT_OUTPUT_DIR = "/path/to/metacul/results/noamerica_cluster"
+DEFAULT_MODEL = "/path/to/metacul/models/ablations/leave_one_out/combined_no_america_with_metadata_1b"
 DEFAULT_TOKENIZER = "meta-llama/Llama-3.2-1B"
-DEFAULT_COMBINED_MODEL = "/scratch/amukher6/metacul/models/combined_with_metadata_1b"
-DEFAULT_LOO_MODEL_BASE = "/scratch/amukher6/metacul/models/ablations/leave_one_out"
-DEFAULT_CONTINENT_TEST_BASE = "/scratch/amukher6/metacul/training_data/meco_datasets/continents"
-DEFAULT_PER_SAMPLE_DIR = "/scratch/amukher6/metacul/results/per_sample_losses"
+DEFAULT_COMBINED_MODEL = "/path/to/metacul/models/combined_with_metadata_1b"
+DEFAULT_LOO_MODEL_BASE = "/path/to/metacul/models/ablations/leave_one_out"
+DEFAULT_CONTINENT_TEST_BASE = "/path/to/metacul/training_data/meco_datasets/continents"
+DEFAULT_PER_SAMPLE_DIR = "/path/to/metacul/results/per_sample_losses"
 
 
 def load_split(dataset_path, split):

@@ -11,8 +11,8 @@ import re
 
 import numpy as np
 
-DEFAULT_PER_SAMPLE_DIR = "/scratch/amukher6/metacul/results/per_sample_losses"
-DEFAULT_OUTPUT_DIR = "/scratch/amukher6/metacul/results/significance"
+DEFAULT_PER_SAMPLE_DIR = "/path/to/metacul/results/per_sample_losses"
+DEFAULT_OUTPUT_DIR = "/path/to/metacul/results/significance"
 
 
 def _slugify(value):
@@ -201,15 +201,15 @@ def plot3_rows(args, rng):
     meta_order = ["with_metadata", "without_metadata"]
     for meta in meta_order:
         for region in regions:
-            model_a = f"/scratch/amukher6/metacul/models/combined_{meta}_1b"
-            model_b = f"/scratch/amukher6/metacul/models/combined_{meta}_500m"
+            model_a = f"/path/to/metacul/models/combined_{meta}_1b"
+            model_b = f"/path/to/metacul/models/combined_{meta}_500m"
             if region == "combined":
                 test_path = (
-                    f"/scratch/amukher6/metacul/training_data/meco_datasets/combined/{meta}/"
+                    f"/path/to/metacul/training_data/meco_datasets/combined/{meta}/"
                 )
             else:
                 test_path = (
-                    f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{region}/{meta}/"
+                    f"/path/to/metacul/training_data/meco_datasets/continents/{region}/{meta}/"
                 )
             stats = compute_pair(model_a, model_b, test_path, args, rng)
             row = {
@@ -235,13 +235,13 @@ def plot4_rows(args, rng):
             for test in continents:
                 for test_meta in test_metas:
                     model_a = (
-                        f"/scratch/amukher6/metacul/models/{train}_without_metadata_{size}"
+                        f"/path/to/metacul/models/{train}_without_metadata_{size}"
                     )
                     model_b = (
-                        f"/scratch/amukher6/metacul/models/{train}_with_metadata_{size}"
+                        f"/path/to/metacul/models/{train}_with_metadata_{size}"
                     )
                     test_path = (
-                        f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{test}/{test_meta}/"
+                        f"/path/to/metacul/training_data/meco_datasets/continents/{test}/{test_meta}/"
                     )
                     stats = compute_pair(model_a, model_b, test_path, args, rng)
                     row = {
@@ -266,13 +266,13 @@ def plot5_rows(args, rng):
     for size in sizes:
         for train in continents:
             for test in continents:
-                model_a = f"/scratch/amukher6/metacul/models/{train}_with_metadata_{size}"
-                model_b = f"/scratch/amukher6/metacul/models/{test}_with_metadata_{size}"
+                model_a = f"/path/to/metacul/models/{train}_with_metadata_{size}"
+                model_b = f"/path/to/metacul/models/{test}_with_metadata_{size}"
                 test_path_a = (
-                    f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{test}/with_metadata/"
+                    f"/path/to/metacul/training_data/meco_datasets/continents/{test}/with_metadata/"
                 )
                 test_path_b = (
-                    f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{train}/with_metadata/"
+                    f"/path/to/metacul/training_data/meco_datasets/continents/{train}/with_metadata/"
                 )
                 path_a = per_sample_path(
                     args.per_sample_dir,
@@ -334,25 +334,25 @@ def plot7_rows(args, rng):
     for meta in metas:
         for step in steps:
             if step == 10000:
-                combined_model = f"/scratch/amukher6/metacul/models/combined_{meta}_1b"
+                combined_model = f"/path/to/metacul/models/combined_{meta}_1b"
             else:
                 combined_model = (
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/"
+                    "/path/to/metacul/models/ablation_intermediates/metadata/"
                     f"combined_{meta}_1b_step{step // 1000}k"
                 )
             for cont in continents:
                 if step == 10000:
                     loo_model = (
-                        "/scratch/amukher6/metacul/models/ablations/leave_one_out/"
+                        "/path/to/metacul/models/ablations/leave_one_out/"
                         f"combined_no_{cont}_{meta}_1b"
                     )
                 else:
                     loo_model = (
-                        "/scratch/amukher6/metacul/models/ablation_intermediates/leave_one_out/"
+                        "/path/to/metacul/models/ablation_intermediates/leave_one_out/"
                         f"combined_no_{cont}_{meta}_1b_step{step // 1000}k"
                     )
                 left_out_test = (
-                    f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{cont}/{meta}/"
+                    f"/path/to/metacul/training_data/meco_datasets/continents/{cont}/{meta}/"
                 )
                 stats_left = compute_pair(loo_model, combined_model, left_out_test, args, rng)
                 row_left = {
@@ -369,7 +369,7 @@ def plot7_rows(args, rng):
                 rows.append(row_left)
 
                 all_test = (
-                    f"/scratch/amukher6/metacul/training_data/meco_datasets/combined/{meta}/"
+                    f"/path/to/metacul/training_data/meco_datasets/combined/{meta}/"
                 )
                 stats_all = compute_pair(loo_model, combined_model, all_test, args, rng)
                 row_all = {
@@ -400,13 +400,13 @@ def plot4_avg_by_test(args, rng):
                 deltas_tok = []
                 for train_cont in continents:
                     model_a = (
-                        f"/scratch/amukher6/metacul/models/{train_cont}_without_metadata_{size}"
+                        f"/path/to/metacul/models/{train_cont}_without_metadata_{size}"
                     )
                     model_b = (
-                        f"/scratch/amukher6/metacul/models/{train_cont}_with_metadata_{size}"
+                        f"/path/to/metacul/models/{train_cont}_with_metadata_{size}"
                     )
                     test_path = (
-                        f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{test_cont}/{test_meta}/"
+                        f"/path/to/metacul/training_data/meco_datasets/continents/{test_cont}/{test_meta}/"
                     )
                     path_a = per_sample_path(
                         args.per_sample_dir,

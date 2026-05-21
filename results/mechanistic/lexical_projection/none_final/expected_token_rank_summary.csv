@@ -1,0 +1,25 @@
+variant,prompt_kind,case_id,locale,country_name,continent,expected_word,expected_token_id,expected_rank,expected_prob
+none_final,none,football_role,us,United States,America,quarterback,20046,5,0.021635355427861214
+none_final,none,football_role,gb,United Kingdom,Europe,striker,45041,8,0.01793633960187435
+none_final,none,football_role,in,India,Asia,striker,45041,8,0.01793633960187435
+none_final,none,football_role,ng,Nigeria,Africa,striker,45041,8,0.01793633960187435
+none_final,none,fuel_word,us,United States,America,gas,6962,202,0.0006134589784778655
+none_final,none,fuel_word,gb,United Kingdom,Europe,petrol,58183,629,0.00015510679804719985
+none_final,none,fuel_word,in,India,Asia,petrol,58183,629,0.00015510679804719985
+none_final,none,fuel_word,ng,Nigeria,Africa,petrol,58183,629,0.00015510679804719985
+none_final,none,biscuit_word,us,United States,America,cookies,8443,607,0.000112350688141305
+none_final,none,biscuit_word,gb,United Kingdom,Europe,biscuits,87076,226,0.0004306842165533453
+none_final,none,biscuit_word,in,India,Asia,biscuits,87076,226,0.0004306842165533453
+none_final,none,biscuit_word,ng,Nigeria,Africa,biscuits,87076,226,0.0004306842165533453
+none_final,none,chips_word,us,United States,America,fries,53031,8,0.004996160045266151
+none_final,none,chips_word,gb,United Kingdom,Europe,chips,24512,16,0.0031265171710401773
+none_final,none,chips_word,in,India,Asia,chips,24512,16,0.0031265171710401773
+none_final,none,chips_word,ng,Nigeria,Africa,chips,24512,16,0.0031265171710401773
+none_final,none,cricket_baseball,us,United States,America,baseball,20075,1028,5.884535130462609e-05
+none_final,none,cricket_baseball,gb,United Kingdom,Europe,cricket,37099,49,0.002663543913513422
+none_final,none,cricket_baseball,in,India,Asia,cricket,37099,49,0.002663543913513422
+none_final,none,cricket_baseball,ng,Nigeria,Africa,football,9141,118,0.000864726142026484
+none_final,none,head_of_government,us,United States,America,president,4872,45,0.0023540016263723373
+none_final,none,head_of_government,gb,United Kingdom,Europe,prime,10461,15,0.00991071667522192
+none_final,none,head_of_government,in,India,Asia,prime,10461,15,0.00991071667522192
+none_final,none,head_of_government,ng,Nigeria,Africa,president,4872,45,0.0023540016263723373

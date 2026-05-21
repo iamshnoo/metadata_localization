@@ -11,7 +11,7 @@ import argparse
 import os
 from pathlib import Path
 
-HF_HOME_DEFAULT = "/scratch/amukher6/.cache/huggingface"
+HF_HOME_DEFAULT = "/path/to/workspace/.cache/huggingface"
 os.environ.setdefault("HF_HOME", HF_HOME_DEFAULT)
 os.environ.setdefault("HF_DATASETS_CACHE", os.path.join(os.environ["HF_HOME"], "datasets"))
 os.makedirs(os.environ["HF_DATASETS_CACHE"], exist_ok=True)
@@ -61,7 +61,7 @@ def main():
     parser.add_argument("--num-proc", type=int, default=8)
     args = parser.parse_args()
 
-    base = Path("/scratch/amukher6/metacul/training_data/meco_datasets")
+    base = Path("/path/to/metacul/training_data/meco_datasets")
     src_path = base / "combined" / "with_metadata" / args.split
 
     out_dir_name = "combined_only_country" if args.ablation == "only_country" else "combined_only_continent"

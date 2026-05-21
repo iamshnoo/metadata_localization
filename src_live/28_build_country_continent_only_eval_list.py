@@ -2,17 +2,17 @@
 import json
 import os
 
-RESULTS_DIR = "/scratch/amukher6/metacul/results"
+RESULTS_DIR = "/path/to/metacul/results"
 OUTPUT_JSON = os.path.join(
     RESULTS_DIR, "perplexity", "eval_list_metadata_family_full.json"
 )
 
 final_models = [
-    "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
-    "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
-    "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
-    "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
-    "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
+    "/path/to/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+    "/path/to/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+    "/path/to/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+    "/path/to/metacul/models/combined_only_country_with_metadata_1b",
+    "/path/to/metacul/models/combined_only_continent_with_metadata_1b",
 ]
 
 intermediate_models = []
@@ -25,19 +25,19 @@ for base in [
 ]:
     for step in [2, 4, 8]:
         intermediate_models.append(
-            f"/scratch/amukher6/metacul/models/ablation_intermediates/metadata/{base}_step{step}k"
+            f"/path/to/metacul/models/ablation_intermediates/metadata/{base}_step{step}k"
         )
 
 models = final_models + intermediate_models
 
 test_sets = [
-    "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",
-    "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/",
-    "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
-    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
-    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
-    "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/",
-    "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/",
+    "/path/to/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",
+    "/path/to/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/",
+    "/path/to/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
+    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
+    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
+    "/path/to/metacul/training_data/meco_datasets/combined_only_country/with_metadata/",
+    "/path/to/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/",
 ]
 
 rows = [

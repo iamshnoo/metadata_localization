@@ -7,9 +7,9 @@ import pandas as pd
 from matplotlib.lines import Line2D
 
 
-CSV_PATH = Path("/scratch/amukher6/metacul/results/plots/plot12/plot_14.csv")
-RESULTS_DIR = Path("/scratch/amukher6/metacul/results/plots/plot12")
-LATEX_FIG = Path("/scratch/amukher6/metacul/latex/figs/appendix/13_local_country_ppl_500m_1b.pdf")
+CSV_PATH = Path("/path/to/metacul/results/plots/plot12/plot_14.csv")
+RESULTS_DIR = Path("/path/to/metacul/results/plots/plot12")
+LATEX_FIG = Path("/path/to/metacul/latex/figs/appendix/13_local_country_ppl_500m_1b.pdf")
 
 CONTINENTS = ["Africa", "America", "Asia", "Europe"]
 SIZE_COLORS = {"500M": "#f4a3a3", "1B": "#9ad1a6"}
@@ -211,7 +211,7 @@ def main():
         framealpha=0.93,
         edgecolor="black",
         fontsize=14,
-        title="Model:",
+        title="Model",
         title_fontsize=14,
         bbox_to_anchor=(0.5, 0.81),
     )

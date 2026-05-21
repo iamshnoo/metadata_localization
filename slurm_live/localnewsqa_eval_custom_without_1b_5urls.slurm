@@ -7,16 +7,16 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=40GB
 #SBATCH --time=0-23:59:58
-#SBATCH --output=/scratch/amukher6/logs/slurm_logs/lnqa_1b_without_5urls.%j.out
-#SBATCH --error=/scratch/amukher6/logs/slurm_logs/lnqa_1b_without_5urls.%j.err
+#SBATCH --output=/path/to/logs/slurm_logs/lnqa_1b_without_5urls.%j.out
+#SBATCH --error=/path/to/logs/slurm_logs/lnqa_1b_without_5urls.%j.err
 
 set -euo pipefail
 
 : "${HF_TOKEN:?HF_TOKEN must be set in environment}"
-PYTHON=/home/amukher6/nanotron-env/bin/python
-SCRIPT=/scratch/amukher6/metacul/src/14_sft_eval.py
-DATASET=iamshnoo/LocalNewsQA
-OUT_DIR=/scratch/amukher6/metacul/results/downstream_localnewsqa
+PYTHON=/path/to/nanotron-env/bin/python
+SCRIPT=/path/to/metacul/src/14_sft_eval.py
+DATASET=YOUR_HF_USERNAME/LocalNewsQA
+OUT_DIR=/path/to/metacul/results/downstream_localnewsqa
 mkdir -p "$OUT_DIR"
 
 URLS=(
@@ -31,7 +31,7 @@ for U in "${URLS[@]}"; do
   SLUG=$(echo "$U" | sed 's/[^a-zA-Z0-9]/_/g')
   "$PYTHON" "$SCRIPT" \
     --model-type custom \
-    --custom-model-path /scratch/amukher6/metacul/models/sft/combined_without_metadata_chat \
+    --custom-model-path /path/to/metacul/models/sft/combined_without_metadata_chat \
     --size 1b \
     --dataset "$DATASET" \
     --split train \

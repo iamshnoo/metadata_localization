@@ -1,0 +1,49 @@
+group_name,delta_pp,family,split,group_type
+Civic institutions,2.6020977460388304,1B,overall,topic
+Economy and business,3.1148282097649185,1B,overall,topic
+Education,1.0366681756450882,1B,overall,topic
+Geography and infrastructure,2.376421443490369,1B,overall,topic
+Media and culture,2.4153101627804663,1B,overall,topic
+Politics and government,0.3114998933219542,1B,overall,topic
+Public life and holidays,1.861092380310182,1B,overall,topic
+Sports,3.929824561403508,1B,overall,topic
+Civic institutions,4.290726817042606,1B,ambiguous,topic
+Economy and business,5.316582914572864,1B,ambiguous,topic
+Education,2.4936644703497213,1B,ambiguous,topic
+Geography and infrastructure,3.169014084507042,1B,ambiguous,topic
+Media and culture,4.459770114942529,1B,ambiguous,topic
+Politics and government,1.0730804810360777,1B,ambiguous,topic
+Public life and holidays,3.6609829488465397,1B,ambiguous,topic
+Sports,8.50844277673546,1B,ambiguous,topic
+Civic institutions,0.0,1B,validated_ambiguous,topic
+Economy and business,0.0,1B,validated_ambiguous,topic
+Education,0.0,1B,validated_ambiguous,topic
+Geography and infrastructure,0.0,1B,validated_ambiguous,topic
+Media and culture,0.0,1B,validated_ambiguous,topic
+Politics and government,0.0,1B,validated_ambiguous,topic
+Public life and holidays,0.0,1B,validated_ambiguous,topic
+Sports,-13.333333333333334,1B,validated_ambiguous,topic
+Civic institutions,4.918544967641152,3B,overall,topic
+Economy and business,6.170886075949367,3B,overall,topic
+Education,3.58985966500679,3B,overall,topic
+Geography and infrastructure,4.000928289626363,3B,overall,topic
+Media and culture,4.483062032556093,3B,overall,topic
+Politics and government,3.763601450821421,3B,overall,topic
+Public life and holidays,6.608226567768037,3B,overall,topic
+Sports,7.013157894736842,3B,overall,topic
+Civic institutions,7.238095238095238,3B,ambiguous,topic
+Economy and business,8.572864321608039,3B,ambiguous,topic
+Education,7.572225038013178,3B,ambiguous,topic
+Geography and infrastructure,7.847082494969819,3B,ambiguous,topic
+Media and culture,8.395402298850573,3B,ambiguous,topic
+Politics and government,6.577243293246992,3B,ambiguous,topic
+Public life and holidays,9.327983951855568,3B,ambiguous,topic
+Sports,9.362101313320824,3B,ambiguous,topic
+Civic institutions,-30.000000000000004,3B,validated_ambiguous,topic
+Economy and business,0.0,3B,validated_ambiguous,topic
+Education,10.0,3B,validated_ambiguous,topic
+Geography and infrastructure,-20.000000000000007,3B,validated_ambiguous,topic
+Media and culture,-10.0,3B,validated_ambiguous,topic
+Politics and government,-50.0,3B,validated_ambiguous,topic
+Public life and holidays,-20.0,3B,validated_ambiguous,topic
+Sports,26.666666666666668,3B,validated_ambiguous,topic

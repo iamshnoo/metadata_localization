@@ -12,11 +12,11 @@ from pathlib import Path
 import pandas as pd
 
 
-DEFAULT_INPUT_CSV = "/scratch/amukher6/metacul/results/qa_metacul_eval.csv"
-DEFAULT_OUTPUT_SUMMARY = "/scratch/amukher6/metacul/results/qa_metacul_eval_adversarial_summary.csv"
-DEFAULT_OUTPUT_CONTINENT = "/scratch/amukher6/metacul/results/qa_metacul_eval_adversarial_by_continent.csv"
-DEFAULT_OUTPUT_TEX = "/scratch/amukher6/metacul/results/qa_metacul_eval_adversarial_table.tex"
-DEFAULT_QA_DATASET = "/scratch/amukher6/metacul/qa_data/hf_dataset.jsonl"
+DEFAULT_INPUT_CSV = "/path/to/metacul/results/qa_metacul_eval.csv"
+DEFAULT_OUTPUT_SUMMARY = "/path/to/metacul/results/qa_metacul_eval_adversarial_summary.csv"
+DEFAULT_OUTPUT_CONTINENT = "/path/to/metacul/results/qa_metacul_eval_adversarial_by_continent.csv"
+DEFAULT_OUTPUT_TEX = "/path/to/metacul/results/qa_metacul_eval_adversarial_table.tex"
+DEFAULT_QA_DATASET = "/path/to/metacul/qa_data/hf_dataset.jsonl"
 
 
 def detect_variants(df: pd.DataFrame) -> list[str]:

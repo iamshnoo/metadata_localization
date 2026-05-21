@@ -1,6 +1,6 @@
 {
-  "model_path": "/scratch/amukher6/metacul/models/europe_without_metadata_500m",
-  "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+  "model_path": "/path/to/metacul/models/europe_without_metadata_500m",
+  "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
   "split": "test",
   "max_samples": 1000,
   "seed": 42

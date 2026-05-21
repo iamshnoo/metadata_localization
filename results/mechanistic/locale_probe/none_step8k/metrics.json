@@ -1,0 +1,19 @@
+{
+  "variant": "none_step8k",
+  "model_path": "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
+  "prompt_kind": "none",
+  "sample_per_continent": 250,
+  "total_examples": 1000,
+  "continent_probe": {
+    "accuracy": 0.635,
+    "macro_f1": 0.6326820913287079,
+    "train_size": 800,
+    "test_size": 200
+  },
+  "country_probe": {
+    "accuracy": 0.5,
+    "macro_f1": 0.27545241622378686,
+    "train_size": 800,
+    "test_size": 200
+  }
+}

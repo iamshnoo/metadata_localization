@@ -1,34 +1,34 @@
 [
   {
-    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step2k",
-    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+    "model_path": "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step2k",
+    "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/"
   },
   {
-    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step4k",
-    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+    "model_path": "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step4k",
+    "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/"
   },
   {
-    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step8k",
-    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+    "model_path": "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_500m_step8k",
+    "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/"
   },
   {
-    "model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_500m",
-    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
+    "model_path": "/path/to/metacul/models/combined_with_metadata_500m",
+    "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/"
   },
   {
-    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step2k",
-    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+    "model_path": "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step2k",
+    "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/"
   },
   {
-    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step4k",
-    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+    "model_path": "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step4k",
+    "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/"
   },
   {
-    "model_path": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step8k",
-    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+    "model_path": "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_500m_step8k",
+    "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/"
   },
   {
-    "model_path": "/scratch/amukher6/metacul/models/combined_without_metadata_500m",
-    "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"
+    "model_path": "/path/to/metacul/models/combined_without_metadata_500m",
+    "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/"
   }
 ]

@@ -1,0 +1,6 @@
+{
+  "overall_emd": 0.4198864502362444,
+  "groups": 333,
+  "scored_rows": 1458,
+  "jsonl_path": "/path/to/metacul/results/final_benchmark_matrix/closed_form/qwen25_3b/base/seed_41/worldvaluebench/worldvaluebench_llama3_chat_with_metadata.jsonl"
+}

@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 SLURM_SCRIPT="$SCRIPT_DIR/culture_map_wvs_country_eval_single.slurm"
-LOG_DIR=/scratch/amukher6/logs/slurm_logs
+LOG_DIR=/path/to/logs/slurm_logs
 mkdir -p "$LOG_DIR"
 
 timestamp=$(date +%Y%m%d_%H%M%S)

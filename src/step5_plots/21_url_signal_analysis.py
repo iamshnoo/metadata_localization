@@ -15,8 +15,8 @@ from datasets import load_from_disk
 from tqdm import tqdm
 
 
-DEFAULT_DATASET = "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"
-DEFAULT_OUTPUT_DIR = "/scratch/amukher6/metacul/results/url_analysis"
+DEFAULT_DATASET = "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/"
+DEFAULT_OUTPUT_DIR = "/path/to/metacul/results/url_analysis"
 
 
 CONTINENT_TOKENS = {

@@ -1,0 +1,121 @@
+question_id,benchmark,subset,country,continent,answered_by_all,custom_tplus_eplus_correct,custom_tplus_eplus_incorrect,custom_tplus_eplus_skipped,custom_tminus_eminus_correct,custom_tminus_eminus_incorrect,custom_tminus_eminus_skipped
+03589f49c1099a2f7acd24277d265a8ab562ecb3,normad,train,Colombia,America,1,1,0,0,1,0,0
+0546d7d6777b3f31f49eebfafc8eb9553982f0e1,normad,train,Philippines,Asia,1,0,-1,0,0,-1,0
+09c83ef5a39e013f8238670d67cfe62ebb6a66f4,normad,train,Sudan,Africa,1,0,-1,0,0,-1,0
+0a9ee4455b8dd3a016d3c53d17363a5187dee3e5,normad,train,Tonga,Oceania,1,0,-1,0,0,-1,0
+0c67ef2381734b0b52be4c6e4d3c5d6156394338,normad,train,Colombia,America,1,1,0,0,1,0,0
+0d8c3832d89a232d0a1a1c06ed038da17dfe8dc8,normad,train,Philippines,Asia,1,0,-1,0,0,-1,0
+0fdd7cc831681a7ba3c3202b10f55586f293c966,normad,train,Hong Kong,Asia,1,0,-1,0,0,-1,0
+11c0c99fb6bef89a30432ec08a5de3a01c3b97fb,normad,train,Zimbabwe,Africa,1,0,-1,0,0,-1,0
+1243af26df3742f0a99b825f5e74091efa78638a,normad,train,Spain,Europe,1,0,-1,0,0,-1,0
+1285aa15a2ba039989d85022de6a0f538be54f1b,normad,train,Sudan,Africa,1,0,-1,0,1,0,0
+1552577a42409571ea73382a5a74777cc32552a6,normad,train,Sudan,Africa,1,0,-1,0,0,-1,0
+168f452db0c77de9e921fd8f5023ac0966a3bc39,normad,train,Hong Kong,Asia,1,0,-1,0,0,-1,0
+1d34e54a10ec558a41899031c8d5b607ccced904,normad,train,Lebanon,Asia,1,1,0,0,1,0,0
+1dd7e0f1bc43ecbe53ea33e05723b994dd210f37,normad,train,Lebanon,Asia,1,1,0,0,1,0,0
+1e608ce8e3f46f4305b070b8d854f5e1f1e43c78,normad,train,Egypt,Africa,1,0,-1,0,0,-1,0
+200bfba710f710bcc20a1afa3fe99349d09e1b54,normad,train,Colombia,America,1,1,0,0,1,0,0
+2138cae31ecb5d25b087bc0c2ae63361e32fdbeb,normad,train,Hong Kong,Asia,1,0,-1,0,0,-1,0
+21555ab338a9f8f3cfb7826f489245cbb7948302,normad,train,Viet Nam,Asia,1,0,-1,0,0,-1,0
+22b13c526db58e4013f9e29ad2f1d6cf3c87a821,normad,train,Egypt,Africa,1,0,-1,0,0,-1,0
+28c77ebbcac8b866bbe15078cf4c20588b5458a4,normad,train,Hong Kong,Asia,1,0,-1,0,0,-1,0
+2f13ca88216943a4505e15f17fb86ef1b09eae9f,normad,train,Tonga,Oceania,1,1,0,0,1,0,0
+303aa40d76c7346f65b3b421c46ed06b266502e8,normad,train,Spain,Europe,1,1,0,0,0,-1,0
+33bacaff1c69dafbd2a68c893ffb8f30a19e74e0,normad,train,Egypt,Africa,1,0,-1,0,0,-1,0
+398ba8c1382c18635007fe11f96fdd2abddcc04b,normad,train,Tonga,Oceania,1,1,0,0,1,0,0
+3b07687d62c4da751b26d4725f6a94091a0c0362,normad,train,Philippines,Asia,1,1,0,0,1,0,0
+3b9da73766e82157511332007c69b36be2030ec4,normad,train,Spain,Europe,1,0,-1,0,0,-1,0
+3f270a156b868c6cbc3d3b8fe9cc89715aad4e18,normad,train,Lebanon,Asia,1,1,0,0,0,-1,0
+4191af55974aef6e8bd293c686baf0104a414eb8,normad,train,Viet Nam,Asia,1,0,-1,0,0,-1,0
+43613005dc1ba3726bb54c7f1a41c0174a69ea2a,normad,train,Philippines,Asia,1,0,-1,0,0,-1,0
+456e2468a48411c8479fdb6391144381e7057d70,normad,train,Sudan,Africa,1,0,-1,0,0,-1,0
+476de0b81a762b10d769b8102217d72b9f2e583a,normad,train,Spain,Europe,1,0,-1,0,0,-1,0
+4d9d437ae2030ca973e07053218962dab39966e7,normad,train,Zimbabwe,Africa,1,0,-1,0,0,-1,0
+4da230bba4a009da3af09ff7e7ab636c2172f645,normad,train,Zimbabwe,Africa,1,1,0,0,1,0,0
+4f6d0f134a255a02abcd21e946860315756042b2,normad,train,Egypt,Africa,1,0,-1,0,0,-1,0
+503de06a67f8ed00d99de7198dd2f91b812a56a9,normad,train,Egypt,Africa,1,1,0,0,1,0,0
+50b5f0479558e1405e155e83328047a976344a62,normad,train,Sudan,Africa,1,0,-1,0,0,-1,0
+53dc67097f40ef289eeda3e86f21dd1f11dd2592,normad,train,Spain,Europe,1,0,-1,0,1,0,0
+53e6050952621c939d28ac2cfaeae9cf4ed9393f,normad,train,Viet Nam,Asia,1,0,-1,0,0,-1,0
+5447e444bd2f08dce0b79e0c107bb311a6c7eca8,normad,train,Spain,Europe,1,1,0,0,1,0,0
+5508dc4092d65e84debd558790c4c6b72340667e,normad,train,Sudan,Africa,1,0,-1,0,0,-1,0
+5d4eee029cb81b09b87f906b961c0667603c0883,normad,train,Sudan,Africa,1,1,0,0,0,-1,0
+606bbe27d4ea043ad1e3b5247c09e2e4ea746867,normad,train,Zimbabwe,Africa,1,0,-1,0,0,-1,0
+626199f5e5904569bdc2c55db6eb2b757c5c3787,normad,train,Lebanon,Asia,1,0,-1,0,0,-1,0
+6412fcd40267ac2100e76bdc17e5c8a6ff2b0ccb,normad,train,Hong Kong,Asia,1,0,-1,0,0,-1,0
+64d342dc3e63ace9466a8133078e40370a637e16,normad,train,Philippines,Asia,1,0,-1,0,1,0,0
+667aa0fd1ccb80f63a7b60de2e36a565ca42396b,normad,train,Philippines,Asia,1,1,0,0,0,-1,0
+69d5203fe9cb09069722044a1714e7ee7c3688eb,normad,train,Lebanon,Asia,1,0,-1,0,1,0,0
+6d824a811021aea7c604d678808d4b493d646e34,normad,train,Egypt,Africa,1,1,0,0,0,-1,0
+6e5f9641c702f3135f94acb9d4252080c1bbb110,normad,train,Hong Kong,Asia,1,0,-1,0,0,-1,0
+735a333d7d04436914a2ef488c086ac30ee2e33e,normad,train,Lebanon,Asia,1,0,-1,0,0,-1,0
+73cd48b0427a31f1ed302d109900b6c5d7f2d959,normad,train,Spain,Europe,1,0,-1,0,0,-1,0
+788def8a68b1c6dca25580eef2faa0e7286d484a,normad,train,Tonga,Oceania,1,0,-1,0,0,-1,0
+7a03cb31ef5e0bd5174f6090c343b6971c8f0841,normad,train,Lebanon,Asia,1,1,0,0,1,0,0
+7a74d21c9c05151d3a90354d369eb6be85ed0d54,normad,train,Philippines,Asia,1,0,-1,0,0,-1,0
+7bddd0f4d311f800eadea7ce8d7c374715114e9a,normad,train,Viet Nam,Asia,1,0,-1,0,0,-1,0
+7bed8afcc8f5d1a3fcb88cade402b8e50f2f35bf,normad,train,Tonga,Oceania,1,0,-1,0,0,-1,0
+7dc4156a3a4991c5285bb7aafa342375bf6ca8e6,normad,train,Egypt,Africa,1,0,-1,0,0,-1,0
+80178bf03c7ffb42ede02deca1fcd30041643ee5,normad,train,Egypt,Africa,1,0,-1,0,0,-1,0
+850065cf0d1ae1e24de8c144c42236dbbaded56d,normad,train,Colombia,America,1,0,-1,0,0,-1,0
+89471345f12e862976bd5eff7796df87151276d4,normad,train,Sudan,Africa,1,0,-1,0,0,-1,0
+8dff37e86c08f928e35b30c420cb1a940f54d511,normad,train,Egypt,Africa,1,0,-1,0,0,-1,0
+914ba90cc89a5982f9d1629bfb5b27ba94ba67c0,normad,train,Sudan,Africa,1,0,-1,0,0,-1,0
+91833ce1e2b43449964efcc9fcbe8e8b9a3d3c9e,normad,train,Viet Nam,Asia,1,0,-1,0,0,-1,0
+9698ee10fb2a0b8406a1aca4235dfc2ebfd560f2,normad,train,Philippines,Asia,1,0,-1,0,0,-1,0
+99b01d0817e529d260e17f3c2d57085e3052a92d,normad,train,Hong Kong,Asia,1,0,-1,0,0,-1,0
+9adf33e315160344e945062b5b6cea0e125f0325,normad,train,Lebanon,Asia,1,0,-1,0,0,-1,0
+9b0b73127d4b876dbcd7199ca81e0a4ad8ad520f,normad,train,Hong Kong,Asia,1,1,0,0,1,0,0
+9bd5f384e00b1a1b5bd73e61acad8b58284f92fa,normad,train,Sudan,Africa,1,0,-1,0,0,-1,0
+9cd7c00c0b408c44eb7c5fab0dd2d5c95ffedd30,normad,train,Viet Nam,Asia,1,0,-1,0,0,-1,0
+9d3099e439607ed2331a072b323441284fc335db,normad,train,Spain,Europe,1,1,0,0,1,0,0
+9e72e95676f904083e93786ca95f3272c7c49bc2,normad,train,Hong Kong,Asia,1,1,0,0,1,0,0
+a1aa1ba835c109b507a55a831db2aba55ff5a7af,normad,train,Zimbabwe,Africa,1,1,0,0,1,0,0
+a4714a4c74c5bed25ba909f87886f17005a92749,normad,train,Zimbabwe,Africa,1,0,-1,0,0,-1,0
+a51f7abe3d947eb927febaf2bd74f4352ea23e45,normad,train,Colombia,America,1,0,-1,0,0,-1,0
+a74f80d64ed74563a2b68f3cf5a521b142fd14d8,normad,train,Sudan,Africa,1,0,-1,0,0,-1,0
+a8ae06320dea739e23fd2d2fc3142bec2d5188b7,normad,train,Colombia,America,1,0,-1,0,0,-1,0
+a9ca45f3759a7c7fe7c23939f7fc83945620dce8,normad,train,Hong Kong,Asia,1,0,-1,0,0,-1,0
+acebb35be4487017a97581be09f39ec2b952a708,normad,train,Zimbabwe,Africa,1,0,-1,0,0,-1,0
+adbee1a3653634adccffb1e39fae7d35f3a51f5e,normad,train,Tonga,Oceania,1,0,-1,0,0,-1,0
+adc80ee800dc2047dd04eebcb7483c05a39ce649,normad,train,Tonga,Oceania,1,1,0,0,0,-1,0
+b065bcaed20a232ef991541bfd637df41249d49d,normad,train,Zimbabwe,Africa,1,1,0,0,1,0,0
+b81cb5ece86257ab1cf81acbdb4255d7ac3c4ae7,normad,train,Viet Nam,Asia,1,1,0,0,1,0,0
+ba63682d6dd19c7e55b3d210b80341b9ca185c76,normad,train,Spain,Europe,1,1,0,0,1,0,0
+bbd022697db4cbab18bd4dcb84a6664ab259a036,normad,train,Zimbabwe,Africa,1,0,-1,0,0,-1,0
+bc2085fe5cacb4f5de564ecb0dd6cb617f55ba04,normad,train,Viet Nam,Asia,1,0,-1,0,0,-1,0
+bcda0e66ec28cc1c2cc98dfc1776cbfbdb5f3d46,normad,train,Tonga,Oceania,1,0,-1,0,0,-1,0
+bf3be4a602c7efaa510addb656515ad9aa355dba,normad,train,Philippines,Asia,1,1,0,0,1,0,0
+c2c67746fbba94dc814ce75d2cda355e708f084c,normad,train,Zimbabwe,Africa,1,0,-1,0,0,-1,0
+c4f184962d4a2cda33477648a36b1ea426a0d828,normad,train,Spain,Europe,1,0,-1,0,0,-1,0
+c6f50e948056ef77138ec8106dbc1eebef1b5166,normad,train,Lebanon,Asia,1,1,0,0,1,0,0
+c750155b1392ba035c18e91e5cea0a35eebf1604,normad,train,Colombia,America,1,0,-1,0,0,-1,0
+c75b9aae468b63654534eefa403da6f81e024e80,normad,train,Colombia,America,1,0,-1,0,0,-1,0
+c7b49103fda9af76112e67d368cafe8188799a2a,normad,train,Zimbabwe,Africa,1,1,0,0,1,0,0
+c87f563772cffa066cf815beecbd2d01693c41f1,normad,train,Colombia,America,1,1,0,0,1,0,0
+c8c6a867a33eaf6f876411728522a468f56c974c,normad,train,Tonga,Oceania,1,1,0,0,1,0,0
+ca4e6d4c94244542b0ff2d216ba9bb8644742aae,normad,train,Philippines,Asia,1,0,-1,0,0,-1,0
+ca94b6292d52f8526f44dc27cb304b648d5d25d9,normad,train,Egypt,Africa,1,0,-1,0,1,0,0
+d1f083d3328eb737967c256cc65a3e8502bdbddd,normad,train,Egypt,Africa,1,0,-1,0,0,-1,0
+d358a153efd0353d5323d122c162efaad7661dab,normad,train,Sudan,Africa,1,1,0,0,0,-1,0
+d52ae926daa74a7d3b7bbc95f7fb13e45cfbdd72,normad,train,Colombia,America,1,1,0,0,1,0,0
+d5ac17bb8501a80cb856f27648badd5e5adb2a28,normad,train,Viet Nam,Asia,1,0,-1,0,0,-1,0
+d9082c1d22a456300f58b3052e11b7902561df0a,normad,train,Hong Kong,Asia,1,0,-1,0,0,-1,0
+d981b99ae2b2a544ee52fe171f19ec76a795041e,normad,train,Tonga,Oceania,1,0,-1,0,0,-1,0
+db204d45e3b0916d3e328f7d1f95faa4c2b97f51,normad,train,Colombia,America,1,0,-1,0,0,-1,0
+dcfa4d00d77dd3b8873c7c7936d2f82c38976375,normad,train,Viet Nam,Asia,1,1,0,0,1,0,0
+decd70e17dcbb5eab2dafc4a21828fca8392ef64,normad,train,Tonga,Oceania,1,1,0,0,1,0,0
+dfb12977d898dfa64bb6f374a1995f0382b2213c,normad,train,Sudan,Africa,1,0,-1,0,0,-1,0
+e04ad664905bb5843c7b9ed0cde631d2bbcc107f,normad,train,Sudan,Africa,1,0,-1,0,0,-1,0
+e54408e0d3bd44256f02228d9ed7378488bbd691,normad,train,Viet Nam,Asia,1,1,0,0,1,0,0
+e5ed220055a33f2ca69361544e11f4fdf8302bff,normad,train,Spain,Europe,1,1,0,0,1,0,0
+eb3d6064a552f2641c39977121c5556412acc349,normad,train,Hong Kong,Asia,1,0,-1,0,0,-1,0
+ee024e754fcbf16590cd6762a0fa66f009639a83,normad,train,Zimbabwe,Africa,1,0,-1,0,0,-1,0
+f26c7fc73d6c6723c4d9bd49b7a4076006e41bed,normad,train,Egypt,Africa,1,0,-1,0,0,-1,0
+f69720c59cce53dd0a7f64b90436740d597b5ed0,normad,train,Spain,Europe,1,1,0,0,0,-1,0
+f96930a1f711bd439414049e25861b576f1762b2,normad,train,Tonga,Oceania,1,1,0,0,1,0,0
+fb649b070faacbf52241f09ad07d14353923d895,normad,train,Colombia,America,1,0,-1,0,0,-1,0
+fb7f3cf386d8bd5cee416708e989dbadb0daca7b,normad,train,Sudan,Africa,1,0,-1,0,0,-1,0
+fd997704232618f78f42986b1e616527b983e6f2,normad,train,Philippines,Asia,1,0,-1,0,0,-1,0
+fe1766f543e6877a3ac9f88eb45b077ba7fa258d,normad,train,Philippines,Asia,1,0,-1,0,0,-1,0
+ff6efff2e597c132b72c461c6c0b57ca327ac9b6,normad,train,Viet Nam,Asia,1,1,0,0,1,0,0

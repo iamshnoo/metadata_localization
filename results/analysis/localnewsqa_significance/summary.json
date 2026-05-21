@@ -1,0 +1,8 @@
+{
+  "validated_ambiguous_items": 18,
+  "accuracy_csv": "/path/to/metacul/results/analysis/localnewsqa_significance/accuracy_with_bootstrap_ci.csv",
+  "paired_csv": "/path/to/metacul/results/analysis/localnewsqa_significance/paired_bootstrap_comparisons.csv",
+  "country_csv": "/path/to/metacul/results/analysis/localnewsqa_significance/country_delta_distribution.csv",
+  "topic_csv": "/path/to/metacul/results/analysis/localnewsqa_significance/topic_delta_distribution.csv",
+  "margin_csv": "/path/to/metacul/results/analysis/localnewsqa_significance/margin_summary.csv"
+}

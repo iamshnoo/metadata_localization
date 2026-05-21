@@ -17,8 +17,8 @@ from matplotlib.lines import Line2D
 from matplotlib.patches import FancyBboxPatch
 from matplotlib.ticker import MaxNLocator
 
-RESULTS_CSV = "/scratch/amukher6/metacul/results/perplexity_eval.csv"
-PLOTS_DIR = "/scratch/amukher6/metacul/results/plots"
+RESULTS_CSV = "/path/to/metacul/results/perplexity_eval.csv"
+PLOTS_DIR = "/path/to/metacul/results/plots"
 
 
 sns.set(font_scale=1.4)
@@ -99,7 +99,7 @@ def _load_significance_map(path, key_fields):
 
 def plot_continent_models_metadata_effect():
     # Plot: continent models (500m, 1b) on their own continent, showing metadata effects.
-    # Output: /scratch/amukher6/metacul/results/plots/plot1/perplexity_continent_metadata_effect_{size}.pdf
+    # Output: /path/to/metacul/results/plots/plot1/perplexity_continent_metadata_effect_{size}.pdf
     df = _load_perplexity_df()
     axis_label_fs = 22
     tick_fs = 19
@@ -114,10 +114,10 @@ def plot_continent_models_metadata_effect():
             for model_meta in meta_order:
                 for test_meta in meta_order:
                     model_path = (
-                        f"/scratch/amukher6/metacul/models/{cont}_{model_meta}_{size}"
+                        f"/path/to/metacul/models/{cont}_{model_meta}_{size}"
                     )
                     test_path = (
-                        "/scratch/amukher6/metacul/training_data/meco_datasets/"
+                        "/path/to/metacul/training_data/meco_datasets/"
                         f"continents/{cont}/{test_meta}/"
                     )
                     pairs.add((model_path, test_path))
@@ -295,7 +295,7 @@ def _aggregate_rows(rows):
 
 def plot_local_vs_global_on_local_and_global():
     # Plot: local vs global models on local test sets + global test set.
-    # Output: /scratch/amukher6/metacul/results/plots/plot2/perplexity_local_vs_global_{size}.pdf
+    # Output: /path/to/metacul/results/plots/plot2/perplexity_local_vs_global_{size}.pdf
     df = _load_perplexity_df()
     pairs = set()
     axis_label_fs = 22
@@ -320,11 +320,11 @@ def plot_local_vs_global_on_local_and_global():
             for combo in combos:
                 meta = combo["meta"]
                 if combo["scope"] == "local":
-                    model_path = f"/scratch/amukher6/metacul/models/{cont}_{meta}_{size}"
+                    model_path = f"/path/to/metacul/models/{cont}_{meta}_{size}"
                 else:
-                    model_path = f"/scratch/amukher6/metacul/models/combined_{meta}_{size}"
+                    model_path = f"/path/to/metacul/models/combined_{meta}_{size}"
                 test_path = (
-                    f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{cont}/{meta}/"
+                    f"/path/to/metacul/training_data/meco_datasets/continents/{cont}/{meta}/"
                 )
                 pairs.add((model_path, test_path))
                 row = df[
@@ -348,10 +348,10 @@ def plot_local_vs_global_on_local_and_global():
         for combo in combos:
             meta = combo["meta"]
             test_path = (
-                f"/scratch/amukher6/metacul/training_data/meco_datasets/combined/{meta}/"
+                f"/path/to/metacul/training_data/meco_datasets/combined/{meta}/"
             )
             if combo["scope"] == "global":
-                model_path = f"/scratch/amukher6/metacul/models/combined_{meta}_{size}"
+                model_path = f"/path/to/metacul/models/combined_{meta}_{size}"
                 pairs.add((model_path, test_path))
                 row = df[
                     (df["model_path"] == model_path)
@@ -364,7 +364,7 @@ def plot_local_vs_global_on_local_and_global():
                 local_rows = []
                 for cont in continents:
                     model_path = (
-                        f"/scratch/amukher6/metacul/models/{cont}_{meta}_{size}"
+                        f"/path/to/metacul/models/{cont}_{meta}_{size}"
                     )
                     pairs.add((model_path, test_path))
                     row = df[
@@ -521,7 +521,7 @@ def plot_local_vs_global_on_local_and_global():
 
 def plot_scaling_global_models():
     # Plot: scaling impact for global models as a dumbbell with delta annotations.
-    # Output: /scratch/amukher6/metacul/results/plots/plot3/perplexity_scaling_global_delta.pdf
+    # Output: /path/to/metacul/results/plots/plot3/perplexity_scaling_global_delta.pdf
     df = _load_perplexity_df()
     pairs = set()
     axis_label_fs = 22
@@ -538,15 +538,15 @@ def plot_scaling_global_models():
     records = []
     for meta in meta_order:
         for size in size_order:
-            model_path = f"/scratch/amukher6/metacul/models/combined_{meta}_{size}"
+            model_path = f"/path/to/metacul/models/combined_{meta}_{size}"
             for region, label in zip(regions, region_labels):
                 if region == "combined":
                     test_path = (
-                        f"/scratch/amukher6/metacul/training_data/meco_datasets/combined/{meta}/"
+                        f"/path/to/metacul/training_data/meco_datasets/combined/{meta}/"
                     )
                 else:
                     test_path = (
-                        f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{region}/{meta}/"
+                        f"/path/to/metacul/training_data/meco_datasets/continents/{region}/{meta}/"
                     )
                 pairs.add((model_path, test_path))
                 row = df[
@@ -754,15 +754,15 @@ def plot_scaling_global_models():
 
 def plot_cross_continent_generalization():
     # Plot: cross-continent generalization (local models/tests), with deltas.
-    # Output: /scratch/amukher6/metacul/results/plots/plot4/perplexity_cross_continent_{size}.pdf
+    # Output: /path/to/metacul/results/plots/plot4/perplexity_cross_continent_{size}.pdf
     df = _load_perplexity_df()
     pairs = set()
     sig_plot4 = _load_significance_map(
-        "/scratch/amukher6/metacul/results/significance/plot4.csv",
+        "/path/to/metacul/results/significance/plot4.csv",
         ["size", "train_continent", "test_continent", "test_meta"],
     )
     sig_plot4_avg = _load_significance_map(
-        "/scratch/amukher6/metacul/results/significance/plot4_avg_by_test.csv",
+        "/path/to/metacul/results/significance/plot4_avg_by_test.csv",
         ["size", "test_continent", "test_meta"],
     )
 
@@ -782,10 +782,10 @@ def plot_cross_continent_generalization():
         values = []
         for train_cont in continents:
             row_vals = []
-            model_path = f"/scratch/amukher6/metacul/models/{train_cont}_{model_meta}_{size}"
+            model_path = f"/path/to/metacul/models/{train_cont}_{model_meta}_{size}"
             for test_cont in continents:
                 test_path = (
-                    f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{test_cont}/{test_meta}/"
+                    f"/path/to/metacul/training_data/meco_datasets/continents/{test_cont}/{test_meta}/"
                 )
                 pairs.add((model_path, test_path))
                 row = df[
@@ -1304,11 +1304,11 @@ def plot_cross_continent_generalization():
 
 def plot_cross_continent_asymmetry():
     # Plot: cross-continent asymmetry for local models/tests (Local(T+,I+)).
-    # Output: /scratch/amukher6/metacul/results/plots/plot5/perplexity_asymmetry_{size}.pdf
+    # Output: /path/to/metacul/results/plots/plot5/perplexity_asymmetry_{size}.pdf
     df = _load_perplexity_df()
     pairs = set()
     sig_plot5 = _load_significance_map(
-        "/scratch/amukher6/metacul/results/significance/plot5.csv",
+        "/path/to/metacul/results/significance/plot5.csv",
         ["size", "train_continent", "test_continent"],
     )
     axis_label_fs = 22
@@ -1325,10 +1325,10 @@ def plot_cross_continent_asymmetry():
         values = []
         for train_cont in continents:
             row_vals = []
-            model_path = f"/scratch/amukher6/metacul/models/{train_cont}_with_metadata_{size}"
+            model_path = f"/path/to/metacul/models/{train_cont}_with_metadata_{size}"
             for test_cont in continents:
                 test_path = (
-                    f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{test_cont}/with_metadata/"
+                    f"/path/to/metacul/training_data/meco_datasets/continents/{test_cont}/with_metadata/"
                 )
                 pairs.add((model_path, test_path))
                 row = df[
@@ -1439,19 +1439,19 @@ def plot_cross_continent_asymmetry():
 
 def plot_sft_accuracy_apples_to_apples():
     # Plot: apples-to-apples QA accuracy (answered_by_all=1) across continents.
-    # Output: /scratch/amukher6/metacul/results/plots/plot8/accuracy_apples_to_apples.pdf
+    # Output: /path/to/metacul/results/plots/plot8/accuracy_apples_to_apples.pdf
     axis_label_fs = 22
     tick_fs = 19
     legend_fs = 18
     title_fs = 16
     value_fs = 15
-    df = pd.read_csv("/scratch/amukher6/metacul/results/qa_metacul_eval.csv")
+    df = pd.read_csv("/path/to/metacul/results/qa_metacul_eval.csv")
     # If corruption rates are present, use only the clean (c0) rows for plot8.
     if "url_corruption_rate" in df.columns:
         df = df[df["url_corruption_rate"] == 0.0].copy()
 
     # If metadata-only runs were used, backfill missing variants from the original eval CSV.
-    original_path = "/scratch/amukher6/metacul/results/qa_metacul_eval_original.csv"
+    original_path = "/path/to/metacul/results/qa_metacul_eval_original.csv"
     if os.path.exists(original_path):
         df_orig = pd.read_csv(original_path)
         missing_cols = [
@@ -1776,11 +1776,11 @@ def _filter_explicit_qa(df, qa_path):
 
 def plot_adversarial_url_accuracy(exclude_explicit=False, output_name="qa_adversarial_accuracy.pdf"):
     # Plot: QA accuracy vs URL corruption rate.
-    # Output: /scratch/amukher6/metacul/results/plots/plot9/{output_name}
+    # Output: /path/to/metacul/results/plots/plot9/{output_name}
     axis_label_fs = 22
     tick_fs = 19
     legend_fs = 18
-    df_path = "/scratch/amukher6/metacul/results/qa_metacul_eval.csv"
+    df_path = "/path/to/metacul/results/qa_metacul_eval.csv"
     if not os.path.exists(df_path):
         print(f"[!] Missing adversarial CSV: {df_path}")
         return
@@ -1790,7 +1790,7 @@ def plot_adversarial_url_accuracy(exclude_explicit=False, output_name="qa_advers
         print("[!] Adversarial CSV is empty.")
         return
     if exclude_explicit:
-        df = _filter_explicit_qa(df, "/scratch/amukher6/metacul/qa_data/hf_dataset.jsonl")
+        df = _filter_explicit_qa(df, "/path/to/metacul/qa_data/hf_dataset.jsonl")
 
     variants = []
     for col in df.columns:
@@ -1932,7 +1932,7 @@ def plot_adversarial_url_accuracy(exclude_explicit=False, output_name="qa_advers
 
 def plot_metadata_ablations():
     # Plot: metadata ablations across checkpoints on metadata/combined test sets.
-    # Output: /scratch/amukher6/metacul/results/plots/plot6/perplexity_metadata_ablations_1b.pdf
+    # Output: /path/to/metacul/results/plots/plot6/perplexity_metadata_ablations_1b.pdf
     df = _load_perplexity_df()
     pairs = set()
     axis_label_fs = 18
@@ -1944,36 +1944,36 @@ def plot_metadata_ablations():
     step_labels = ["2k", "4k", "8k", "10k"]
 
     metadata_tests = {
-        "url": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",
-        "url_continent": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
-        "url_country": "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/",
+        "url": "/path/to/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",
+        "url_continent": "/path/to/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
+        "url_country": "/path/to/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/",
     }
 
     combined_tests = {
-        "with": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
-        "without": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+        "with": "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
+        "without": "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
     }
 
     model_groups = {
         "combined_with": {
-            "final": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/combined_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step{step}k",
         },
         "combined_without": {
-            "final": "/scratch/amukher6/metacul/models/combined_without_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/combined_without_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step{step}k",
         },
         "url": {
-            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step{step}k",
         },
         "url_continent": {
-            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step{step}k",
         },
         "url_country": {
-            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step{step}k",
         },
     }
 
@@ -2253,8 +2253,8 @@ def plot_metadata_ablations():
 def plot_metadata_family_full_grid():
     # Plot: metadata-family ablations with a 3-panel main figure and a 5x7 appendix grid.
     # Outputs:
-    #   /scratch/amukher6/metacul/results/plots/plot10/perplexity_metadata_family_main_1b.pdf
-    #   /scratch/amukher6/metacul/results/plots/plot11/perplexity_metadata_family_full_grid_1b.pdf
+    #   /path/to/metacul/results/plots/plot10/perplexity_metadata_family_main_1b.pdf
+    #   /path/to/metacul/results/plots/plot11/perplexity_metadata_family_full_grid_1b.pdf
     df = _load_perplexity_df()
     pairs_main = set()
     pairs_appendix = set()
@@ -2269,87 +2269,87 @@ def plot_metadata_family_full_grid():
     tests = [
         (
             "URL-only (I+)",
-            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",
+            "/path/to/metacul/training_data/meco_datasets/combined_only_url/with_metadata/",
         ),
         (
             "URL+Country (I+)",
-            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/",
+            "/path/to/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/",
         ),
         (
             "URL+Continent (I+)",
-            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
+            "/path/to/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/",
         ),
         (
             "Country-only (I+)",
-            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/",
+            "/path/to/metacul/training_data/meco_datasets/combined_only_country/with_metadata/",
         ),
         (
             "Continent-only (I+)",
-            "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/",
+            "/path/to/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/",
         ),
         (
             "Global metadata (I+)",
-            "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+            "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
         ),
         (
             "Global no-metadata (I-)",
-            "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+            "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
         ),
     ]
 
     model_groups = {
         "combined_with": {
             "label": "Global [URL][Country][Continent] (T+)",
-            "final": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/combined_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step{step}k",
             "color": "#2b8c66",
             "marker": "o",
             "linestyle": "--",
         },
         "combined_without": {
             "label": "Global (T-)",
-            "final": "/scratch/amukher6/metacul/models/combined_without_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/combined_without_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step{step}k",
             "color": "#7f7f7f",
             "marker": "s",
             "linestyle": "--",
         },
         "url": {
             "label": "URL-only [URL] (T+)",
-            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step{step}k",
             "color": "#f4a3a3",
             "marker": "D",
             "linestyle": "-",
         },
         "url_country": {
             "label": "URL+Country [URL][Country] (T+)",
-            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/ablations/metadata/combined_only_url_country_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_url_country_with_metadata_1b_step{step}k",
             "color": "#b8a1d9",
             "marker": "v",
             "linestyle": "-",
         },
         "url_continent": {
             "label": "URL+Continent [URL][Continent] (T+)",
-            "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/ablations/metadata/combined_only_url_continent_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_url_continent_with_metadata_1b_step{step}k",
             "color": "#6baed6",
             "marker": "^",
             "linestyle": "-",
         },
         "country_only": {
             "label": "Country-only [Country] (T+)",
-            "final": "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/combined_only_country_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step{step}k",
             "color": "#f0c36d",
             "marker": "P",
             "linestyle": "-",
         },
         "continent_only": {
             "label": "Continent-only [Continent] (T+)",
-            "final": "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
-            "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step{step}k",
+            "final": "/path/to/metacul/models/combined_only_continent_with_metadata_1b",
+            "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step{step}k",
             "color": "#74c476",
             "marker": "o",
             "linestyle": "-",
@@ -2607,7 +2607,7 @@ def plot_metadata_family_full_grid():
 
 def plot_leave_one_out_ablations():
     # Plot: leave-one-out ablations (with/without metadata).
-    # Output: /scratch/amukher6/metacul/results/plots/plot7/leave_one_out_{meta}.pdf
+    # Output: /path/to/metacul/results/plots/plot7/leave_one_out_{meta}.pdf
     df = _load_perplexity_df()
     pairs = set()
 
@@ -2616,8 +2616,8 @@ def plot_leave_one_out_ablations():
     continents = ["africa", "america", "asia", "europe"]
 
     combined_tests = {
-        "with_metadata": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
-        "without_metadata": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+        "with_metadata": "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
+        "without_metadata": "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
     }
 
     def _lookup(model_path, test_path):
@@ -2631,20 +2631,20 @@ def plot_leave_one_out_ablations():
 
     def _model_path(meta, step):
         if step == 10000:
-            return f"/scratch/amukher6/metacul/models/combined_{meta}_1b"
+            return f"/path/to/metacul/models/combined_{meta}_1b"
         return (
-            "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/"
+            "/path/to/metacul/models/ablation_intermediates/metadata/"
             f"combined_{meta}_1b_step{step // 1000}k"
         )
 
     def _loo_model_path(continent, meta, step):
         if step == 10000:
             return (
-                "/scratch/amukher6/metacul/models/ablations/leave_one_out/"
+                "/path/to/metacul/models/ablations/leave_one_out/"
                 f"combined_no_{continent}_{meta}_1b"
             )
         return (
-            "/scratch/amukher6/metacul/models/ablation_intermediates/leave_one_out/"
+            "/path/to/metacul/models/ablation_intermediates/leave_one_out/"
             f"combined_no_{continent}_{meta}_1b_step{step // 1000}k"
         )
 
@@ -2681,7 +2681,7 @@ def plot_leave_one_out_ablations():
             combined_model = _model_path(meta, step)
             for cont in continents:
                 left_out_test = (
-                    f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{cont}/{meta}/"
+                    f"/path/to/metacul/training_data/meco_datasets/continents/{cont}/{meta}/"
                 )
                 pairs.add((combined_model, left_out_test))
                 mean, ci_low, ci_high = _lookup_with_ci(
@@ -2953,10 +2953,10 @@ def plot_compute_tradeoff_global_models():
             "label": "1B T+",
             "color": "#1b9e77",
             "marker": "o",
-            "model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
-            "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
-            "config_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b/config.json",
-            "results_dir": "/scratch/amukher6/metacul/results/downstream",
+            "model_path": "/path/to/metacul/models/combined_with_metadata_1b",
+            "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
+            "config_path": "/path/to/metacul/models/combined_with_metadata_1b/config.json",
+            "results_dir": "/path/to/metacul/results/downstream",
             "results_metadata_label": "with_metadata",
         },
         {
@@ -2965,10 +2965,10 @@ def plot_compute_tradeoff_global_models():
             "label": "1B T-",
             "color": "#d95f02",
             "marker": "o",
-            "model_path": "/scratch/amukher6/metacul/models/combined_without_metadata_1b",
-            "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
-            "config_path": "/scratch/amukher6/metacul/models/combined_without_metadata_1b/config.json",
-            "results_dir": "/scratch/amukher6/metacul/results/downstream",
+            "model_path": "/path/to/metacul/models/combined_without_metadata_1b",
+            "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
+            "config_path": "/path/to/metacul/models/combined_without_metadata_1b/config.json",
+            "results_dir": "/path/to/metacul/results/downstream",
             "results_metadata_label": "without_metadata",
         },
         {
@@ -2977,10 +2977,10 @@ def plot_compute_tradeoff_global_models():
             "label": "3B T+",
             "color": "#1b9e77",
             "marker": "s",
-            "model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_3b",
-            "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
-            "config_path": "/scratch/amukher6/metacul/models/combined_with_metadata_3b/config.json",
-            "results_dir": "/scratch/amukher6/metacul/results/downstream_3b",
+            "model_path": "/path/to/metacul/models/combined_with_metadata_3b",
+            "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
+            "config_path": "/path/to/metacul/models/combined_with_metadata_3b/config.json",
+            "results_dir": "/path/to/metacul/results/downstream_3b",
             "results_metadata_label": "with_metadata",
         },
         {
@@ -2989,10 +2989,10 @@ def plot_compute_tradeoff_global_models():
             "label": "3B T-",
             "color": "#d95f02",
             "marker": "s",
-            "model_path": "/scratch/amukher6/metacul/models/combined_without_metadata_3b",
-            "test_set_path": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
-            "config_path": "/scratch/amukher6/metacul/models/combined_without_metadata_3b/config.json",
-            "results_dir": "/scratch/amukher6/metacul/results/downstream_3b",
+            "model_path": "/path/to/metacul/models/combined_without_metadata_3b",
+            "test_set_path": "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
+            "config_path": "/path/to/metacul/models/combined_without_metadata_3b/config.json",
+            "results_dir": "/path/to/metacul/results/downstream_3b",
             "results_metadata_label": "without_metadata",
         },
     ]
@@ -3170,45 +3170,45 @@ def plot_token_efficiency_global_ppl():
             "tplus": [
                 (
                     2000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step2k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step2k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     4000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step4k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step4k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     8000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step8k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step8k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     10000,
-                    "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/combined_with_metadata_1b",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
             ],
             "tminus": [
                 (
                     2000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step2k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step2k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     4000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step4k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step4k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     8000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step8k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     10000,
-                    "/scratch/amukher6/metacul/models/combined_without_metadata_1b",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/combined_without_metadata_1b",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
             ],
         },
@@ -3216,45 +3216,45 @@ def plot_token_efficiency_global_ppl():
             "tplus": [
                 (
                     2000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step2k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step2k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     4000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step4k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step4k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     8000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step8k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_3b_step8k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
                 (
                     10000,
-                    "/scratch/amukher6/metacul/models/combined_with_metadata_3b",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+                    "/path/to/metacul/models/combined_with_metadata_3b",
+                    "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
                 ),
             ],
             "tminus": [
                 (
                     2000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step2k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step2k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     4000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step4k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step4k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     8000,
-                    "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step8k",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_3b_step8k",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
                 (
                     10000,
-                    "/scratch/amukher6/metacul/models/combined_without_metadata_3b",
-                    "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/",
+                    "/path/to/metacul/models/combined_without_metadata_3b",
+                    "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/",
                 ),
             ],
         },

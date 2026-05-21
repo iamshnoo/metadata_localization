@@ -1,0 +1,2 @@
+variant,label,country,country_code,continent,category,RC1,RC2,target_distance,target_rank,nearest_country,nearest_distance,top1_hit,top3_hit
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Bangladesh,bd,Asia,African-Islamic,1.9289044601940355,-2.49183484939444,3.107766800496752,1,Bangladesh,3.107766800496752,1,1

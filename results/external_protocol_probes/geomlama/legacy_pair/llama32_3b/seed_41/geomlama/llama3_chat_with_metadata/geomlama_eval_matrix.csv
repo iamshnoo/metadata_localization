@@ -1,0 +1,81 @@
+question_id,benchmark,subset,country,continent,answered_by_all,llama3_chat_with_metadata_correct,llama3_chat_with_metadata_incorrect,llama3_chat_with_metadata_skipped
+025a420f835f08fa1d494ec5c46505b215bbd2ce,geomlama,en,China,Asia,1,1,0,0
+0433c68afd9f3dee61a0138e8b1d092d2774e202,geomlama,en,Greece,Europe,1,0,-1,0
+06e450c263fcca35979fb0341c90f969a1c909ac,geomlama,en,United States,America,1,0,-1,0
+08d75242668b3a128b7db5e8bb76a67ada41b0fa,geomlama,en,China,Asia,1,0,-1,0
+09b10a077d1ffb234d7d26ae644270cb21a5446c,geomlama,en,China,Asia,1,0,-1,0
+0a1d791404c4166a11bdde874d4b47812c2ac5d2,geomlama,en,China,Asia,1,1,0,0
+0a54eeac5b05dbfc76bda8f2cfd148ac5cba7e91,geomlama,en,China,Asia,1,0,-1,0
+0c1c2ff999288aa9974d62572f14eca530cf7c32,geomlama,en,India,Asia,1,1,0,0
+11348186576a73b038923f4c0f7bffc3b32126a5,geomlama,en,India,Asia,1,0,-1,0
+1256f85be9b392fe64b473c8bd8dfe6015e583e0,geomlama,en,Iran,Asia,1,0,-1,0
+1990d3c98200e59eed63bd14e88d776e1cab6a64,geomlama,en,China,Asia,1,1,0,0
+1a6e48f84fb7a90488ac0c0bbdfd8cc6f5876c84,geomlama,en,United States,America,1,0,-1,0
+2233ca117465f1bb39d856bf0eca65cbc58a14a1,geomlama,en,Kenya,Africa,1,0,-1,0
+295847e8386f4f37f10e249867afbc33b569e31a,geomlama,en,United States,America,1,1,0,0
+2cabe7911c177ad0c319e8a77d1a31948bc0b393,geomlama,en,Iran,Asia,1,0,-1,0
+2cde0dfa8910f8fefc12faaa6b7e825976d206a7,geomlama,en,Kenya,Africa,1,0,-1,0
+3138c169c6eaf085dc6fdf2fa8cc79d7fac9ccf7,geomlama,en,Kenya,Africa,1,0,-1,0
+3601885fc0f93297437ebd086e532d517819b55a,geomlama,en,United States,America,1,0,-1,0
+3ac42cb1dc32807ebe43f2402ca2119b7f9097b6,geomlama,en,United States,America,1,0,-1,0
+3c59f77648bab730cbaffad165948fcd24e31867,geomlama,en,United States,America,1,0,-1,0
+41c3ade3862566931cea4cfa5548470d03419735,geomlama,en,China,Asia,1,0,-1,0
+424a7c742a649fa6d5b9605ee5aadab88fb7acf2,geomlama,en,China,Asia,1,0,-1,0
+4a5602c0067b9c418f5f6258a67fecb3784612e4,geomlama,en,Kenya,Africa,1,0,-1,0
+4ba71e4d85ad6fba99d92787d31bc496ffb199ec,geomlama,en,United States,America,1,0,-1,0
+4cd9f6c9c4bb40ebbd3f978cbf89546cdaea7b26,geomlama,en,China,Asia,1,1,0,0
+51d6aa36890ce28ccbae84d0e42444769232a1a0,geomlama,en,Greece,Europe,1,0,-1,0
+55381df0ec0b2441c727edf2b5a9572aefde240d,geomlama,en,India,Asia,1,1,0,0
+55b950cd039928ae72f1b66726641deef03bc231,geomlama,en,Greece,Europe,1,0,-1,0
+578f9f85210212928bb8ef4b39afe10ceb773300,geomlama,en,China,Asia,1,0,-1,0
+5a528465ab852258948184a08b3ec8c6e9adeaa8,geomlama,en,Kenya,Africa,1,0,-1,0
+6256290537c67a0a92384f333870a3fea9daeb48,geomlama,en,Iran,Asia,1,0,-1,0
+644e236ac13e81017f95b21824e4ea5dae059dd4,geomlama,en,Iran,Asia,1,1,0,0
+662225a3215c6753d9fbb697dc54738b94369dca,geomlama,en,Greece,Europe,1,0,-1,0
+6635603c37555a54d96c5cca89640254fae1b2e9,geomlama,en,China,Asia,1,0,-1,0
+7258ac4080e5e3bc4383d7e60f40b04d88a8e45c,geomlama,en,India,Asia,1,0,-1,0
+72f08310a8411f130f790d17dde63c8a26a54ca0,geomlama,en,Iran,Asia,1,1,0,0
+84961440640b4c1e46a8cb8a31af14e1ce2f299d,geomlama,en,Greece,Europe,1,0,-1,0
+849710d2094c424b76159b903eaf14f883be04dc,geomlama,en,United States,America,1,1,0,0
+88520c52cde1dd143e7206a39ec04aac3adea605,geomlama,en,Iran,Asia,1,0,-1,0
+885dc145f3a0211a6eab1c1d87ff2416c4ddfce0,geomlama,en,India,Asia,1,0,-1,0
+8a315e84aae7803817d46669475a2d9802a0ccab,geomlama,en,India,Asia,1,0,-1,0
+8c7019934df4cd69459f63b9ae844ed667359eb2,geomlama,en,India,Asia,1,0,-1,0
+91154e67a21fa0acf337185b819ceb8984b28c7a,geomlama,en,Greece,Europe,1,0,-1,0
+912bddfb1c82e82c23ae9a8578beceb832744612,geomlama,en,Kenya,Africa,1,0,-1,0
+94e7b3aec89c321d75317149b67c584eda1afcee,geomlama,en,Greece,Europe,1,0,-1,0
+959e2fd21259bcd68cb72a45bd316e9c5daad459,geomlama,en,Kenya,Africa,1,1,0,0
+96d16ad7a4fdc56de4eb66e22e7fe531e0c6de43,geomlama,en,Iran,Asia,1,0,-1,0
+984243f394661b72ae8d2a945ae886a3630cfdf7,geomlama,en,Iran,Asia,1,0,-1,0
+9daa5ad4dadeba6b35ff95912bf4f2b7b4530d17,geomlama,en,Iran,Asia,1,1,0,0
+9e40f72c49eccd806fcd549140a9de92dc6441eb,geomlama,en,United States,America,1,0,-1,0
+a1a8ba283feee67e8c836ac37c1b4b01c50365b5,geomlama,en,Iran,Asia,1,0,-1,0
+a1e0d54eed0e6094059a37f4651c3490b6dceb86,geomlama,en,Greece,Europe,1,0,-1,0
+a7a12f189e9da0a3d1ce2c0aa83637a2a79fe4e8,geomlama,en,Kenya,Africa,1,0,-1,0
+aadd3c0160fb992f99338b42da2e1417f0fc7b55,geomlama,en,Kenya,Africa,1,0,-1,0
+ad5035915c038ee8976b6f939b3897c54bafcbcf,geomlama,en,China,Asia,1,0,-1,0
+af4ce5c5217b64aceceaa15a57359ed962518eb3,geomlama,en,Kenya,Africa,1,1,0,0
+b1080152314d8ae6ffd14c8ea8b3edbe066f65ee,geomlama,en,India,Asia,1,0,-1,0
+b191f98fbd702554d887028cf20b79bbd6405d01,geomlama,en,Greece,Europe,1,0,-1,0
+b5bf1706ed183e9688cffab47c47ad5793ada719,geomlama,en,Greece,Europe,1,1,0,0
+c292d6d75faf758301c25b4979cf4df8e82b9b87,geomlama,en,United States,America,1,0,-1,0
+c4bb879dc481c109540f5891b1993ee8c2c7db5e,geomlama,en,India,Asia,1,0,-1,0
+c5b72a9b7b418774390d1c2311c7d959ee168b1e,geomlama,en,India,Asia,1,0,-1,0
+c63bea6ebcd5deabdb3da235ba18c21479e20af6,geomlama,en,China,Asia,1,0,-1,0
+c685ee53df60bcfd7b04da12428957bd2f1c26de,geomlama,en,Greece,Europe,1,1,0,0
+cb31b0fa17a4a90746b2eeb847fa13c2a766b4f2,geomlama,en,India,Asia,1,0,-1,0
+d46ba1e279e388cd11c325c2cc750c5c44e8ba3f,geomlama,en,Kenya,Africa,1,0,-1,0
+d52f1d54a27435476fb33ea5ee6ad869b562d4e1,geomlama,en,Greece,Europe,1,0,-1,0
+d56eaab6a197b6797b39447a13eac5a733fa9a66,geomlama,en,Iran,Asia,1,0,-1,0
+e06a37322e009584bba66135a53750d6a9f2220b,geomlama,en,China,Asia,1,1,0,0
+e393dd988193d863b4a9f1c3cf304262dfde463c,geomlama,en,Iran,Asia,1,0,-1,0
+e3f57fdc021f0716d10f6c6c051509f5fa4dfea1,geomlama,en,United States,America,1,1,0,0
+e4d94863fbe26c01699a9eda60512ca23faffc4b,geomlama,en,India,Asia,1,1,0,0
+e9482a99b0311b04f1a1feedb5c4eca7bb24200c,geomlama,en,Greece,Europe,1,1,0,0
+eea8bf15b9d79840ae667c8d1090c3f433260b06,geomlama,en,Kenya,Africa,1,0,-1,0
+f019ddb106f872320ed0c0afdd4d73efd3667479,geomlama,en,United States,America,1,0,-1,0
+f1b604217ec7904131d539798681cff7940c6eef,geomlama,en,United States,America,1,0,-1,0
+f2fbeee2eba62f3789f49345ce45ff8e822bebc6,geomlama,en,India,Asia,1,0,-1,0
+f390811c9bd61d4bca6f8841ef1046bd94063467,geomlama,en,United States,America,1,0,-1,0
+f90103afda5ed61de5cfe91d690e3a4e5cbafe50,geomlama,en,Iran,Asia,1,0,-1,0
+fe89f252fbc65a6cb797e959bfd8d87534acc5bb,geomlama,en,Kenya,Africa,1,0,-1,0

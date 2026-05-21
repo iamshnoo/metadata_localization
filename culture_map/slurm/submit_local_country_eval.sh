@@ -1,8 +1,8 @@
 #!/bin/bash
 set -euo pipefail
 
-SLURM_SCRIPT=/scratch/amukher6/culture-map/slurm/run_local_country_eval_single.slurm
-LOG_DIR=/scratch/amukher6/logs/slurm_logs
+SLURM_SCRIPT=/path/to/culture-map/slurm/run_local_country_eval_single.slurm
+LOG_DIR=/path/to/logs/slurm_logs
 mkdir -p "$LOG_DIR"
 
 timestamp=$(date +%Y%m%d_%H%M%S)

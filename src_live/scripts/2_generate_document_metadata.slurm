@@ -4,8 +4,8 @@
 #SBATCH --mem=40GB
 #SBATCH --time=0-00:30:00
 #SBATCH --array=1-270%10
-#SBATCH --output=/scratch/amukher6/logs/culture/out/doc_metadata_%A_%a.out.txt
-#SBATCH --error=/scratch/amukher6/logs/culture/err/doc_metadata_%A_%a.err.txt
+#SBATCH --output=/path/to/logs/culture/out/doc_metadata_%A_%a.out.txt
+#SBATCH --error=/path/to/logs/culture/err/doc_metadata_%A_%a.err.txt
 
 # Document metadata generation using job arrays
 # This script reads year-country combinations from splits.txt file
@@ -40,7 +40,7 @@ fi
 echo "Processing: Year=$YEAR, Country=$COUNTRY"
 
 # Check if document metadata already exists
-OUTPUT_DIR="/scratch/amukher6/metacul/document_metadata/${YEAR}_${COUNTRY}"
+OUTPUT_DIR="/path/to/metacul/document_metadata/${YEAR}_${COUNTRY}"
 METADATA_FILE="$OUTPUT_DIR/document_metadata_${YEAR}_${COUNTRY}.pkl"
 
 if [ -f "$METADATA_FILE" ]; then
@@ -50,7 +50,7 @@ if [ -f "$METADATA_FILE" ]; then
 fi
 
 # Check if required LDA output exists
-LDA_OUTPUT_DIR="/scratch/amukher6/metacul/data/lmw_output/now/${YEAR}/all/${COUNTRY}"
+LDA_OUTPUT_DIR="/path/to/metacul/data/lmw_output/now/${YEAR}/all/${COUNTRY}"
 TOPIC_KEYS_FILE="$LDA_OUTPUT_DIR/mallet.topic_keys.20"
 TOPIC_DIST_FILE="$LDA_OUTPUT_DIR/mallet.topic_distributions.20"
 
@@ -118,7 +118,7 @@ else
 fi
 
 # Log completion to a central tracking file
-COMPLETION_LOG="/scratch/amukher6/metacul/logs/document_metadata_completion.log"
+COMPLETION_LOG="/path/to/metacul/logs/document_metadata_completion.log"
 echo "$(date): $SLURM_ARRAY_JOB_ID-$SLURM_ARRAY_TASK_ID: $YEAR-$COUNTRY: EXIT_CODE=$EXIT_CODE" >> "$COMPLETION_LOG"
 
 exit $EXIT_CODE

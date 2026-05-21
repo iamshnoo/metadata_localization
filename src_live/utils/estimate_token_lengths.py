@@ -55,7 +55,7 @@ def analyze_dataset(dataset_path, sample_size=1000):
 
 def main():
     # Find all MECO datasets
-    base_path = "/scratch/amukher6/metacul/training_data/meco_datasets"
+    base_path = "/path/to/metacul/training_data/meco_datasets"
     dataset_patterns = [
         f"{base_path}/continents/*/with_metadata/train",
         f"{base_path}/continents/*/without_metadata/train", 

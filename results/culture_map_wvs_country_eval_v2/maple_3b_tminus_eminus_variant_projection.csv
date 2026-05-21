@@ -1,0 +1,151 @@
+country,#variant,a008,a165,e018,e025,f063,f118,f120,g006,y002,y003,country_code,continent,RC1,RC2,model,label,variant,train_metadata,eval_metadata
+Bangladesh,variant 0,1,2,2,3,1,1,1,3,1,-1,bd,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Bangladesh,variant 1,1,2,2,3,1,1,1,3,1,1,bd,Asia,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Bangladesh,variant 2,3,2,2,3,1,1,1,3,1,1,bd,Asia,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Bangladesh,variant 3,1,2,2,3,1,1,1,3,1,-1,bd,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Bangladesh,variant 4,3,2,2,3,1,1,1,3,1,-1,bd,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Bangladesh,variant 5,3,2,2,3,1,1,1,3,1,-1,bd,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Bangladesh,variant 6,1,2,2,3,1,1,1,3,1,-1,bd,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Bangladesh,variant 7,1,2,2,3,1,1,1,3,1,-1,bd,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Bangladesh,variant 8,3,2,2,3,1,1,1,3,1,-1,bd,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Bangladesh,variant 9,3,2,2,3,1,1,1,3,1,1,bd,Asia,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Canada,variant 0,1,2,2,3,1,1,1,3,1,-1,ca,America,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Canada,variant 1,1,2,2,3,1,1,1,3,1,1,ca,America,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Canada,variant 2,3,2,2,3,1,1,1,3,1,1,ca,America,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Canada,variant 3,1,2,2,3,1,1,1,3,1,-1,ca,America,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Canada,variant 4,3,2,2,3,1,1,1,3,1,-1,ca,America,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Canada,variant 5,3,2,2,3,1,1,1,3,1,-1,ca,America,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Canada,variant 6,1,2,2,3,1,1,1,3,1,-1,ca,America,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Canada,variant 7,1,2,2,3,1,1,1,3,1,-1,ca,America,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Canada,variant 8,3,2,2,3,1,1,1,3,1,-1,ca,America,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Canada,variant 9,3,2,2,3,1,1,1,3,1,1,ca,America,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ghana,variant 0,1,2,2,3,1,1,1,3,1,-1,gh,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ghana,variant 1,1,2,2,3,1,1,1,3,1,1,gh,Africa,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ghana,variant 2,3,2,2,3,1,1,1,3,1,1,gh,Africa,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ghana,variant 3,1,2,2,3,1,1,1,3,1,-1,gh,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ghana,variant 4,3,2,2,3,1,1,1,3,1,-1,gh,Africa,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ghana,variant 5,3,2,2,3,1,1,1,3,1,-1,gh,Africa,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ghana,variant 6,1,2,2,3,1,1,1,3,1,-1,gh,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ghana,variant 7,1,2,2,3,1,1,1,3,1,-1,gh,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ghana,variant 8,3,2,2,3,1,1,1,3,1,-1,gh,Africa,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ghana,variant 9,3,2,2,3,1,1,1,3,1,1,gh,Africa,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Great Britain,variant 0,1,2,2,3,1,1,1,3,1,-1,gb,Europe,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Great Britain,variant 1,1,2,2,3,1,1,1,3,1,1,gb,Europe,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Great Britain,variant 2,3,2,2,3,1,1,1,3,1,1,gb,Europe,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Great Britain,variant 3,1,2,2,3,1,1,1,3,1,-1,gb,Europe,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Great Britain,variant 4,3,2,2,3,1,1,1,3,1,-1,gb,Europe,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Great Britain,variant 5,3,2,2,3,1,1,1,3,1,-1,gb,Europe,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Great Britain,variant 6,1,2,2,3,1,1,1,3,1,-1,gb,Europe,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Great Britain,variant 7,1,2,2,3,1,1,1,3,1,-1,gb,Europe,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Great Britain,variant 8,3,2,2,3,1,1,1,3,1,-1,gb,Europe,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Great Britain,variant 9,3,2,2,3,1,1,1,3,1,1,gb,Europe,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Hong Kong SAR,variant 0,1,2,2,3,1,1,1,3,1,-1,hk,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Hong Kong SAR,variant 1,1,2,2,3,1,1,1,3,1,1,hk,Asia,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Hong Kong SAR,variant 2,3,2,2,3,1,1,1,3,1,1,hk,Asia,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Hong Kong SAR,variant 3,1,2,2,3,1,1,1,3,1,-1,hk,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Hong Kong SAR,variant 4,3,2,2,3,1,1,1,3,1,-1,hk,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Hong Kong SAR,variant 5,3,2,2,3,1,1,1,3,1,-1,hk,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Hong Kong SAR,variant 6,1,2,2,3,1,1,1,3,1,-1,hk,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Hong Kong SAR,variant 7,1,2,2,3,1,1,1,3,1,-1,hk,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Hong Kong SAR,variant 8,3,2,2,3,1,1,1,3,1,-1,hk,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Hong Kong SAR,variant 9,3,2,2,3,1,1,1,3,1,1,hk,Asia,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+India,variant 0,1,2,2,3,1,1,1,3,1,-1,in,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+India,variant 1,1,2,2,3,1,1,1,3,1,1,in,Asia,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+India,variant 2,3,2,2,3,1,1,1,3,1,1,in,Asia,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+India,variant 3,1,2,2,3,1,1,1,3,1,-1,in,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+India,variant 4,3,2,2,3,1,1,1,3,1,-1,in,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+India,variant 5,3,2,2,3,1,1,1,3,1,-1,in,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+India,variant 6,1,2,2,3,1,1,1,3,1,-1,in,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+India,variant 7,1,2,2,3,1,1,1,3,1,-1,in,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+India,variant 8,3,2,2,3,1,1,1,3,1,-1,in,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+India,variant 9,3,2,2,3,1,1,1,3,1,1,in,Asia,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ireland,variant 0,1,2,2,3,1,1,1,3,1,-1,ie,Europe,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ireland,variant 1,1,2,2,3,1,1,1,3,1,1,ie,Europe,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ireland,variant 2,3,2,2,3,1,1,1,3,1,1,ie,Europe,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ireland,variant 3,1,2,2,3,1,1,1,3,1,-1,ie,Europe,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ireland,variant 4,3,2,2,3,1,1,1,3,1,-1,ie,Europe,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ireland,variant 5,3,2,2,3,1,1,1,3,1,-1,ie,Europe,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ireland,variant 6,1,2,2,3,1,1,1,3,1,-1,ie,Europe,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ireland,variant 7,1,2,2,3,1,1,1,3,1,-1,ie,Europe,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ireland,variant 8,3,2,2,3,1,1,1,3,1,-1,ie,Europe,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Ireland,variant 9,3,2,2,3,1,1,1,3,1,1,ie,Europe,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Kenya,variant 0,1,2,2,3,1,1,1,3,1,-1,ke,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Kenya,variant 1,1,2,2,3,1,1,1,3,1,1,ke,Africa,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Kenya,variant 2,3,2,2,3,1,1,1,3,1,1,ke,Africa,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Kenya,variant 3,1,2,2,3,1,1,1,3,1,-1,ke,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Kenya,variant 4,3,2,2,3,1,1,1,3,1,-1,ke,Africa,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Kenya,variant 5,3,2,2,3,1,1,1,3,1,-1,ke,Africa,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Kenya,variant 6,1,2,2,3,1,1,1,3,1,-1,ke,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Kenya,variant 7,1,2,2,3,1,1,1,3,1,-1,ke,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Kenya,variant 8,3,2,2,3,1,1,1,3,1,-1,ke,Africa,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Kenya,variant 9,3,2,2,3,1,1,1,3,1,1,ke,Africa,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Malaysia,variant 0,1,2,2,3,1,1,1,3,1,-1,my,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Malaysia,variant 1,1,2,2,3,1,1,1,3,1,1,my,Asia,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Malaysia,variant 2,3,2,2,3,1,1,1,3,1,1,my,Asia,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Malaysia,variant 3,1,2,2,3,1,1,1,3,1,-1,my,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Malaysia,variant 4,3,2,2,3,1,1,1,3,1,-1,my,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Malaysia,variant 5,3,2,2,3,1,1,1,3,1,-1,my,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Malaysia,variant 6,1,2,2,3,1,1,1,3,1,-1,my,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Malaysia,variant 7,1,2,2,3,1,1,1,3,1,-1,my,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Malaysia,variant 8,3,2,2,3,1,1,1,3,1,-1,my,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Malaysia,variant 9,3,2,2,3,1,1,1,3,1,1,my,Asia,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Nigeria,variant 0,1,2,2,3,1,1,1,3,1,-1,ng,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Nigeria,variant 1,1,2,2,3,1,1,1,3,1,1,ng,Africa,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Nigeria,variant 2,3,2,2,3,1,1,1,3,1,1,ng,Africa,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Nigeria,variant 3,1,2,2,3,1,1,1,3,1,-1,ng,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Nigeria,variant 4,3,2,2,3,1,1,1,3,1,-1,ng,Africa,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Nigeria,variant 5,3,2,2,3,1,1,1,3,1,-1,ng,Africa,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Nigeria,variant 6,1,2,2,3,1,1,1,3,1,-1,ng,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Nigeria,variant 7,1,2,2,3,1,1,1,3,1,-1,ng,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Nigeria,variant 8,3,2,2,3,1,1,1,3,1,-1,ng,Africa,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Nigeria,variant 9,3,2,2,3,1,1,1,3,1,1,ng,Africa,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Pakistan,variant 0,1,2,2,3,1,1,1,3,1,-1,pk,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Pakistan,variant 1,1,2,2,3,1,1,1,3,1,1,pk,Asia,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Pakistan,variant 2,3,2,2,3,1,1,1,3,1,1,pk,Asia,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Pakistan,variant 3,1,2,2,3,1,1,1,3,1,-1,pk,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Pakistan,variant 4,3,2,2,3,1,1,1,3,1,-1,pk,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Pakistan,variant 5,3,2,2,3,1,1,1,3,1,-1,pk,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Pakistan,variant 6,1,2,2,3,1,1,1,3,1,-1,pk,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Pakistan,variant 7,1,2,2,3,1,1,1,3,1,-1,pk,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Pakistan,variant 8,3,2,2,3,1,1,1,3,1,-1,pk,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Pakistan,variant 9,3,2,2,3,1,1,1,3,1,1,pk,Asia,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Philippines,variant 0,1,2,2,3,1,1,1,3,1,-1,ph,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Philippines,variant 1,1,2,2,3,1,1,1,3,1,1,ph,Asia,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Philippines,variant 2,3,2,2,3,1,1,1,3,1,1,ph,Asia,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Philippines,variant 3,1,2,2,3,1,1,1,3,1,-1,ph,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Philippines,variant 4,3,2,2,3,1,1,1,3,1,-1,ph,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Philippines,variant 5,3,2,2,3,1,1,1,3,1,-1,ph,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Philippines,variant 6,1,2,2,3,1,1,1,3,1,-1,ph,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Philippines,variant 7,1,2,2,3,1,1,1,3,1,-1,ph,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Philippines,variant 8,3,2,2,3,1,1,1,3,1,-1,ph,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Philippines,variant 9,3,2,2,3,1,1,1,3,1,1,ph,Asia,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Singapore,variant 0,1,2,2,3,1,1,1,3,1,-1,sg,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Singapore,variant 1,1,2,2,3,1,1,1,3,1,1,sg,Asia,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Singapore,variant 2,3,2,2,3,1,1,1,3,1,1,sg,Asia,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Singapore,variant 3,1,2,2,3,1,1,1,3,1,-1,sg,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Singapore,variant 4,3,2,2,3,1,1,1,3,1,-1,sg,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Singapore,variant 5,3,2,2,3,1,1,1,3,1,-1,sg,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Singapore,variant 6,1,2,2,3,1,1,1,3,1,-1,sg,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Singapore,variant 7,1,2,2,3,1,1,1,3,1,-1,sg,Asia,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Singapore,variant 8,3,2,2,3,1,1,1,3,1,-1,sg,Asia,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+Singapore,variant 9,3,2,2,3,1,1,1,3,1,1,sg,Asia,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+South Africa,variant 0,1,2,2,3,1,1,1,3,1,-1,za,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+South Africa,variant 1,1,2,2,3,1,1,1,3,1,1,za,Africa,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+South Africa,variant 2,3,2,2,3,1,1,1,3,1,1,za,Africa,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+South Africa,variant 3,1,2,2,3,1,1,1,3,1,-1,za,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+South Africa,variant 4,3,2,2,3,1,1,1,3,1,-1,za,Africa,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+South Africa,variant 5,3,2,2,3,1,1,1,3,1,-1,za,Africa,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+South Africa,variant 6,1,2,2,3,1,1,1,3,1,-1,za,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+South Africa,variant 7,1,2,2,3,1,1,1,3,1,-1,za,Africa,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+South Africa,variant 8,3,2,2,3,1,1,1,3,1,-1,za,Africa,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+South Africa,variant 9,3,2,2,3,1,1,1,3,1,1,za,Africa,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+United States,variant 0,1,2,2,3,1,1,1,3,1,-1,us,America,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+United States,variant 1,1,2,2,3,1,1,1,3,1,1,us,America,-0.6612245383514038,2.1622673838083553,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+United States,variant 2,3,2,2,3,1,1,1,3,1,1,us,America,-1.8665453844075393,4.380191259305972,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+United States,variant 3,1,2,2,3,1,1,1,3,1,-1,us,America,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+United States,variant 4,3,2,2,3,1,1,1,3,1,-1,us,America,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+United States,variant 5,3,2,2,3,1,1,1,3,1,-1,us,America,-2.349073887528696,3.8622232498839626,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+United States,variant 6,1,2,2,3,1,1,1,3,1,-1,us,America,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+United States,variant 7,1,2,2,3,1,1,1,3,1,-1,us,America,-1.1437530414725607,1.6442993743863457,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+United States,variant 8,3,2,2,3,1,1,1,3,1,-1,us,America,-2.3490738875286956,3.862223249883961,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False
+United States,variant 9,3,2,2,3,1,1,1,3,1,1,us,America,-1.8665453844075388,4.38019125930597,/path/to/metacul/models/combined_without_metadata_3b,"MAPLE 3B (T-, I-)",maple_3b_tminus_eminus,False,False

@@ -1,0 +1,41 @@
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lccccc@{}}
+\toprule
+Model & \makecell[c]{Overall\\[-1pt]$\Delta$ acc.} & \makecell[c]{Ambig.\\[-1pt]$\Delta$ acc.} & \makecell[c]{Explicit\\[-1pt]$\Delta$ acc.} & \makecell[c]{Exact pair\\[-1pt]$\Delta$} & \makecell[c]{Margin switch\\[-1pt]$\Delta$} \\
+\midrule
+\multicolumn{6}{@{}l}{\textit{\providerMAPLE{}~MAPLE family}\hfill {\scriptsize \tableprimaryplus{$(\Tplus,\Iplus)$}$-$\tableprimaryminus{$(\Tminus,\Iminus)$}}} \\
+MAPLE 1B Base & \cigainposstrong{+2.3}{+1.9}{+2.5} & \cigainposstrong{+4.4}{+4.0}{+4.4} & \cigainposstrong{+0.5}{0.0}{+1.1} & \cigainposstrong{+2.6}{+2.6}{+2.9} & \cigainposstrong{+6.1}{+5.9}{+6.5} \\
+MAPLE 1B Chat & \cigainposstrong{+2.3}{+1.9}{+2.7} & \cigainposstrong{+4.4}{+3.5}{+5.0} & \cigainpos{+0.5}{0.0}{+1.2} & \cigainposstrong{+3.8}{+3.6}{+3.9} & \cigainposstrong{+9.3}{+8.9}{+9.5} \\
+MAPLE 3B Base & \cigainposstrong{+5.0}{+4.6}{+5.5} & \cigainposstrong{+7.9}{+7.2}{+8.6} & \cigainposstrong{+2.5}{+2.0}{+3.3} & \cigainposstrong{+6.4}{+6.0}{+6.5} & \cigainposstrong{+15.4}{+15.1}{+16.0} \\
+MAPLE 3B Chat & \cigainposstrong{+4.9}{+4.4}{+5.4} & \cigainposstrong{+8.8}{+8.0}{+9.7} & \cigainposstrong{+1.6}{+0.6}{+2.4} & \cigainposstrong{+4.6}{+4.3}{+4.8} & \cigainposstrong{+9.2}{+8.5}{+9.7} \\
+\midrule
+\multicolumn{6}{@{}l}{\textit{\providerMeta{}~LLaMA family}\hfill {\scriptsize \tableprimaryplus{$\Iplus$}$-$\tableprimaryminus{$\Iminus$}}} \\
+LLaMA-3.2-1B Base & \cigainpos{+0.1}{0.0}{+0.4} & \cigainposstrong{+2.1}{+1.8}{+2.3} & \cigainnegstrong{-1.6}{-2.1}{-1.1} & \cigainposstrong{+2.8}{+2.6}{+3.0} & \cigainposstrong{+6.5}{+6.3}{+6.8} \\
+LLaMA-3.2-1B Inst. & \cigainnegstrong{-0.7}{-1.1}{-0.6} & \cigainposstrong{+1.7}{+1.2}{+1.9} & \cigainnegstrong{-2.8}{-3.1}{-2.6} & \cigainposstrong{+2.5}{+2.3}{+2.6} & \cigainposstrong{+5.6}{+5.2}{+5.9} \\
+LLaMA-3.2-3B Base & \cigainposstrong{+1.1}{+0.9}{+1.3} & \cigainposstrong{+5.0}{+4.6}{+5.7} & \cigainnegstrong{-2.2}{-2.6}{-1.9} & \cigainposstrong{+5.9}{+5.5}{+6.2} & \cigainposstrong{+12.1}{+11.7}{+12.2} \\
+LLaMA-3.2-3B Inst. & \cigainnegstrong{-4.6}{-5.0}{-4.4} & \cigainzero{0.0}{-0.6}{+0.5} & \cigainnegstrong{-8.5}{-8.9}{-8.2} & \cigainposstrong{+3.9}{+3.7}{+4.3} & \cigainposstrong{+8.6}{+8.3}{+8.9} \\
+\midrule
+\multicolumn{6}{@{}l}{\textit{\providerQwen{}~Qwen2.5 family}\hfill {\scriptsize \tableprimaryplus{$\Iplus$}$-$\tableprimaryminus{$\Iminus$}}} \\
+Qwen2.5-1.5B Base & \cigainposstrong{+1.0}{+0.9}{+1.1} & \cigainposstrong{+2.7}{+2.3}{+3.0} & \cigainnegstrong{-0.5}{-0.9}{-0.4} & \cigainposstrong{+2.1}{+1.9}{+2.2} & \cigainposstrong{+4.1}{+3.8}{+4.3} \\
+Qwen2.5-1.5B Inst. & \cigainposstrong{+2.2}{+1.9}{+2.4} & \cigainposstrong{+8.5}{+8.1}{+8.9} & \cigainnegstrong{-3.2}{-3.4}{-2.8} & \cigainposstrong{+9.5}{+9.2}{+10.0} & \cigainposstrong{+17.4}{+17.1}{+17.7} \\
+Qwen2.5-3B Base & \cigainposstrong{+1.5}{+1.2}{+1.8} & \cigainposstrong{+8.1}{+7.5}{+8.5} & \cigainnegstrong{-4.1}{-4.6}{-3.6} & \cigainposstrong{+11.1}{+10.7}{+11.4} & \cigainposstrong{+19.7}{+19.4}{+20.1} \\
+Qwen2.5-3B Inst. & \cigainposstrong{+3.4}{+2.9}{+3.6} & \cigainposstrong{+8.4}{+8.3}{+8.8} & \cigainnegstrong{-0.8}{-1.1}{-0.7} & \cigainposstrong{+9.8}{+9.4}{+10.3} & \cigainposstrong{+19.3}{+18.9}{+20.0} \\
+\midrule
+\multicolumn{6}{@{}l}{\textit{\providerQwen{}~Qwen3.5 family}\hfill {\scriptsize \tableprimaryplus{$\Iplus$}$-$\tableprimaryminus{$\Iminus$}}} \\
+Qwen3.5-0.8B Base & \cigainposstrong{+1.0}{+0.7}{+1.2} & \cigainposstrong{+3.9}{+3.5}{+4.3} & \cigainnegstrong{-1.5}{-1.8}{-1.4} & \cigainposstrong{+3.8}{+3.7}{+4.1} & \cigainposstrong{+8.0}{+7.6}{+8.3} \\
+Qwen3.5-0.8B Chat & \cigainposstrong{+0.6}{+0.3}{+0.7} & \cigainposstrong{+3.5}{+3.0}{+3.9} & \cigainnegstrong{-1.9}{-2.3}{-1.8} & \cigainposstrong{+3.3}{+3.1}{+3.5} & \cigainposstrong{+7.3}{+7.0}{+7.6} \\
+Qwen3.5-2B Base & \cigainposstrong{+4.1}{+4.1}{+4.5} & \cigainposstrong{+9.0}{+8.6}{+9.7} & \cigainneg{-0.1}{-0.2}{+0.1} & \cigainposstrong{+9.6}{+9.1}{+10.1} & \cigainposstrong{+16.8}{+16.4}{+17.0} \\
+Qwen3.5-2B Chat & \cigainposstrong{+4.9}{+4.7}{+5.1} & \cigainposstrong{+8.5}{+8.0}{+8.8} & \cigainposstrong{+1.8}{+1.5}{+2.0} & \cigainposstrong{+8.9}{+8.4}{+9.0} & \cigainposstrong{+16.0}{+15.7}{+16.5} \\
+Qwen3.5-4B Base & \cigainposstrong{+0.7}{+0.6}{+0.9} & \cigainposstrong{+1.6}{+1.3}{+1.8} & \cigainzero{0.0}{-0.1}{+0.2} & \cigainposstrong{+1.7}{+1.5}{+1.8} & \cigainposstrong{+3.4}{+3.3}{+3.7} \\
+Qwen3.5-4B Chat & \cigainposstrong{+0.6}{+0.5}{+0.6} & \cigainposstrong{+1.0}{+0.9}{+1.2} & \cigainpos{+0.2}{-0.1}{+0.4} & \cigainposstrong{+1.2}{+1.1}{+1.4} & \cigainposstrong{+2.7}{+2.5}{+3.0} \\
+\midrule
+\multicolumn{6}{@{}l}{\textit{\providerGoogle{}~Gemma-4 family}\hfill {\scriptsize \tableprimaryplus{$\Iplus$}$-$\tableprimaryminus{$\Iminus$}}} \\
+Gemma-4-E2B Base & \cigainposstrong{+2.2}{+2.0}{+2.6} & \cigainposstrong{+2.4}{+1.9}{+2.6} & \cigainposstrong{+2.1}{+1.6}{+2.4} & \cigainposstrong{+0.5}{+0.4}{+0.6} & \cigainposstrong{+1.5}{+1.3}{+1.7} \\
+Gemma-4-E2B-it & \cigainposstrong{+1.9}{+1.7}{+2.1} & \cigainposstrong{+3.5}{+3.2}{+3.8} & \cigainposstrong{+0.6}{+0.3}{+0.9} & \cigainposstrong{+4.0}{+3.9}{+4.2} & \cigainposstrong{+8.3}{+7.9}{+8.6} \\
+Gemma-4-E4B Base & \cigainposstrong{+0.8}{+0.8}{+1.1} & \cigainposstrong{+1.1}{+0.8}{+1.6} & \cigainposstrong{+0.6}{+0.4}{+1.0} & \cigainposstrong{+1.2}{+1.2}{+1.4} & \cigainposstrong{+3.4}{+3.2}{+3.6} \\
+Gemma-4-E4B-it & \cigainposstrong{+4.5}{+4.3}{+4.7} & \cigainposstrong{+7.2}{+6.9}{+7.5} & \cigainposstrong{+2.2}{+1.9}{+2.5} & \cigainposstrong{+8.5}{+8.1}{+8.7} & \cigainposstrong{+17.1}{+16.9}{+17.7} \\
+\midrule
+\multicolumn{6}{@{}l}{\textit{\providerMistral{}~Ministral family}\hfill {\scriptsize \tableprimaryplus{$\Iplus$}$-$\tableprimaryminus{$\Iminus$}}} \\
+Ministral-3-3B Base & \cigainposstrong{+2.2}{+1.9}{+2.2} & \cigainposstrong{+5.0}{+4.6}{+5.7} & \cigainneg{-0.2}{-0.6}{+0.1} & \cigainposstrong{+5.3}{+5.1}{+5.6} & \cigainposstrong{+12.0}{+11.8}{+12.3} \\
+Ministral-3-3B Inst. & \cigainposstrong{+3.1}{+2.9}{+3.2} & \cigainposstrong{+5.8}{+5.3}{+6.2} & \cigainposstrong{+0.7}{+0.5}{+1.0} & \cigainposstrong{+6.6}{+6.3}{+6.8} & \cigainposstrong{+14.5}{+13.8}{+15.1} \\
+\bottomrule
+\end{tabular*}

@@ -1,0 +1,5 @@
+family,variant,variant_label,n_pairs,exact_pair_accuracy_pct,margin_switch_rate_pct,mean_target_margin,mean_contrast_margin
+MAPLE 1B,tplus_eplus,"(T+, I+)",16409,0.0,0.0,1.3483494716607547,-1.3483494716607547
+MAPLE 1B,tminus_eminus,"(T-, I-)",16409,0.0,0.0,1.3986824827959552,-1.3986824827959552
+MAPLE 3B,tplus_eplus,"(T+, I+)",16409,0.0,0.0,1.3483494716607547,-1.3483494716607547
+MAPLE 3B,tminus_eminus,"(T-, I-)",16409,0.0,0.0,1.3986824827959552,-1.3986824827959552

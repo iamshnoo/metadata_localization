@@ -1,0 +1,3 @@
+variant,status,correct,processed_total,accuracy,skipped,total_rows,error
+custom_tplus_eplus,ok,117,393,0.29770992366412213,0,393,
+custom_tminus_eminus,ok,94,393,0.23918575063613232,0,393,

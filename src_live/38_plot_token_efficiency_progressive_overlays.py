@@ -9,8 +9,8 @@ from matplotlib.offsetbox import AnnotationBbox, DrawingArea
 from matplotlib.patches import Circle, Rectangle
 
 
-CSV_PATH = Path("/scratch/amukher6/metacul/results/plots/plot11/plot_13.csv")
-OUT_DIR = Path("/scratch/amukher6/metacul/slides")
+CSV_PATH = Path("/path/to/metacul/results/plots/plot11/plot_13.csv")
+OUT_DIR = Path("/path/to/metacul/slides")
 
 
 def load_rows():

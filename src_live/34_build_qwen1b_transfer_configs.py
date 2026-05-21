@@ -193,8 +193,8 @@ def main():
     parser.add_argument("--with-metadata-validation-dataset", action="append", default=[], help="Validation dataset folder for the metadata-conditioned global run. Repeatable.")
     parser.add_argument("--without-metadata-dataset", action="append", default=[], help="Tokenized dataset folder for the no-metadata global run. Repeatable.")
     parser.add_argument("--without-metadata-validation-dataset", action="append", default=[], help="Validation dataset folder for the no-metadata global run. Repeatable.")
-    parser.add_argument("--output-dir", default="/scratch/amukher6/metacul/qwen_transfer_configs")
-    parser.add_argument("--checkpoint-root", default="/scratch/amukher6/metacul/checkpoints_qwen_transfer")
+    parser.add_argument("--output-dir", default="/path/to/metacul/qwen_transfer_configs")
+    parser.add_argument("--checkpoint-root", default="/path/to/metacul/checkpoints_qwen_transfer")
     parser.add_argument("--tokenizer-name", default="meta-llama/Llama-3.2-1B")
     parser.add_argument("--project", default="metacul_qwen_transfer")
     parser.add_argument("--steps", type=int, default=10000)
@@ -244,7 +244,7 @@ def main():
         lines = ["#!/usr/bin/env bash", "set -euo pipefail", ""]
         for _, yaml_path in outputs:
             lines.append(
-                "cd /scratch/amukher6/pretrain/nanotron && "
+                "cd /path/to/workspace/pretrain/nanotron && "
                 "ENABLE_TIMERS=1 CUDA_DEVICE_MAX_CONNECTIONS=1 "
                 "torchrun --nproc_per_node={} run_train.py --config-file {}".format(
                     args.dp * args.tp * args.pp, yaml_path

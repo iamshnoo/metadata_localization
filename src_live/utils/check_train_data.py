@@ -15,7 +15,7 @@ from datasets import load_from_disk
 # Paths and settings
 CONTINENT = "africa"
 HF_TRAIN_PATH = Path(
-    f"/scratch/amukher6/metacul/training_data/meco_datasets/continents/{CONTINENT}/with_metadata/train"
+    f"/path/to/metacul/training_data/meco_datasets/continents/{CONTINENT}/with_metadata/train"
 )
 
 # Training hyperparameters (adjust as needed)

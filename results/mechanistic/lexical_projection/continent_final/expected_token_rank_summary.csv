@@ -1,0 +1,25 @@
+variant,prompt_kind,case_id,locale,country_name,continent,expected_word,expected_token_id,expected_rank,expected_prob
+continent_final,continent,football_role,us,United States,America,quarterback,20046,14,0.008043885231018066
+continent_final,continent,football_role,gb,United Kingdom,Europe,striker,45041,3,0.05518827214837074
+continent_final,continent,football_role,in,India,Asia,striker,45041,4,0.09219545871019363
+continent_final,continent,football_role,ng,Nigeria,Africa,striker,45041,4,0.06863287091255188
+continent_final,continent,fuel_word,us,United States,America,gas,6962,111,0.0013319605495780706
+continent_final,continent,fuel_word,gb,United Kingdom,Europe,petrol,58183,369,0.00028837882564403117
+continent_final,continent,fuel_word,in,India,Asia,petrol,58183,260,0.0004313676035962999
+continent_final,continent,fuel_word,ng,Nigeria,Africa,petrol,58183,114,0.001497275079600513
+continent_final,continent,biscuit_word,us,United States,America,cookies,8443,120,0.0008534084772691131
+continent_final,continent,biscuit_word,gb,United Kingdom,Europe,biscuits,87076,43,0.0035751231480389833
+continent_final,continent,biscuit_word,in,India,Asia,biscuits,87076,33,0.004426504485309124
+continent_final,continent,biscuit_word,ng,Nigeria,Africa,biscuits,87076,59,0.0019902759231626987
+continent_final,continent,chips_word,us,United States,America,fries,53031,1,0.029608964920043945
+continent_final,continent,chips_word,gb,United Kingdom,Europe,chips,24512,18,0.004564846400171518
+continent_final,continent,chips_word,in,India,Asia,chips,24512,340,0.0004969641449861228
+continent_final,continent,chips_word,ng,Nigeria,Africa,chips,24512,110,0.0013275999808683991
+continent_final,continent,cricket_baseball,us,United States,America,baseball,20075,67,0.001598307746462524
+continent_final,continent,cricket_baseball,gb,United Kingdom,Europe,cricket,37099,19,0.005510006099939346
+continent_final,continent,cricket_baseball,in,India,Asia,cricket,37099,3,0.04166194796562195
+continent_final,continent,cricket_baseball,ng,Nigeria,Africa,football,9141,12,0.007935029454529285
+continent_final,continent,head_of_government,us,United States,America,president,4872,13,0.009626292623579502
+continent_final,continent,head_of_government,gb,United Kingdom,Europe,prime,10461,7,0.01816459745168686
+continent_final,continent,head_of_government,in,India,Asia,prime,10461,12,0.011098714545369148
+continent_final,continent,head_of_government,ng,Nigeria,Africa,president,4872,30,0.004818547051399946

@@ -1,0 +1,2 @@
+variant,status,correct,processed_total,accuracy,skipped,total_rows,error
+custom_tminus_eminus,ok,141,393,0.35877862595419846,0,393,

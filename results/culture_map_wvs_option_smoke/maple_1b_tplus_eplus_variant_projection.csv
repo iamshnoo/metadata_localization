@@ -1,0 +1,11 @@
+country,#variant,a008,a165,e018,e025,f063,f118,f120,g006,y002,y003,country_code,continent,RC1,RC2,model,label,variant,train_metadata,eval_metadata
+Bangladesh,variant 0,1,1,1,1,1,1,1,1,2,-1,bd,Asia,1.9289044601940355,-2.49183484939444,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 1,1,1,1,1,1,1,1,1,2,-1,bd,Asia,1.9289044601940355,-2.49183484939444,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 2,1,1,1,1,1,1,1,1,2,-1,bd,Asia,1.9289044601940355,-2.49183484939444,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 3,1,1,1,1,1,1,1,1,2,-1,bd,Asia,1.9289044601940355,-2.49183484939444,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 4,1,1,1,1,1,1,1,1,2,-1,bd,Asia,1.9289044601940355,-2.49183484939444,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 5,1,1,1,1,1,1,1,1,2,-1,bd,Asia,1.9289044601940355,-2.49183484939444,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 6,1,1,1,1,1,1,1,1,2,-1,bd,Asia,1.9289044601940355,-2.49183484939444,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 7,1,1,1,1,1,1,1,1,2,-1,bd,Asia,1.9289044601940355,-2.49183484939444,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 8,1,1,1,1,1,1,1,1,2,-1,bd,Asia,1.9289044601940355,-2.49183484939444,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 9,1,1,1,1,1,1,1,1,2,-1,bd,Asia,1.9289044601940355,-2.49183484939444,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True

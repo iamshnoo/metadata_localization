@@ -1,0 +1,11 @@
+country,#variant,a008,a165,e018,e025,f063,f118,f120,g006,y002,y003,country_code,continent,RC1,RC2,model,label,variant,train_metadata,eval_metadata
+Bangladesh,variant 0,4,2,2,3,10,10,10,4,2,-1,bd,Asia,-0.6901497015433607,5.255153345071907,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 1,4,2,2,3,10,10,10,4,2,-1,bd,Asia,-0.6901497015433607,5.255153345071907,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 2,4,2,2,3,10,10,10,4,2,-1,bd,Asia,-0.6901497015433607,5.255153345071907,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 3,4,2,2,3,10,10,10,4,2,-1,bd,Asia,-0.6901497015433607,5.255153345071907,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 4,4,2,2,3,10,10,10,4,2,-1,bd,Asia,-0.6901497015433607,5.255153345071907,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 5,4,2,2,3,10,10,10,4,2,-1,bd,Asia,-0.6901497015433607,5.255153345071907,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 6,4,2,2,3,10,10,10,4,2,-1,bd,Asia,-0.6901497015433607,5.255153345071907,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 7,4,2,2,3,10,10,10,4,2,-1,bd,Asia,-0.6901497015433607,5.255153345071907,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 8,4,2,2,3,10,10,10,4,2,-1,bd,Asia,-0.690149701543361,5.255153345071907,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True
+Bangladesh,variant 9,4,2,2,3,10,10,10,4,2,-1,bd,Asia,-0.690149701543361,5.255153345071907,/path/to/metacul/models/combined_with_metadata_1b,"MAPLE 1B (T+, I+)",maple_1b_tplus_eplus,True,True

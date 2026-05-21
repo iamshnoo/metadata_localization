@@ -4,8 +4,8 @@
 #SBATCH --mem=40G
 #SBATCH --time=0-06:00:00
 #SBATCH --array=1-13%13
-#SBATCH --output=/scratch/amukher6/logs/culture/out/hf_datasets_%A_%a.out.txt
-#SBATCH --error=/scratch/amukher6/logs/culture/err/hf_datasets_%A_%a.err.txt
+#SBATCH --output=/path/to/logs/culture/out/hf_datasets_%A_%a.out.txt
+#SBATCH --error=/path/to/logs/culture/err/hf_datasets_%A_%a.err.txt
 
 echo "Job Array ID: $SLURM_ARRAY_JOB_ID"
 echo "Task ID: $SLURM_ARRAY_TASK_ID"
@@ -49,7 +49,7 @@ if [ -z "$SPLIT_NAME" ]; then
 fi
 
 # Determine output path
-OUTPUT_PATH="/scratch/amukher6/metacul/training_data/hf_datasets/$SPLIT_TYPE/$SPLIT_NAME"
+OUTPUT_PATH="/path/to/metacul/training_data/hf_datasets/$SPLIT_TYPE/$SPLIT_NAME"
 
 # Check if dataset already exists
 if [ -d "$OUTPUT_PATH" ]; then
@@ -96,18 +96,18 @@ if [ "$SPLIT_TYPE" = "continents" ]; then
         "europe") SPLIT_DIR_NAME="Europe" ;;
         *) SPLIT_DIR_NAME="$SPLIT_NAME" ;;
     esac
-    SPLIT_DIR="/scratch/amukher6/metacul/training_data/individual_splits/continents/$SPLIT_DIR_NAME"
+    SPLIT_DIR="/path/to/metacul/training_data/individual_splits/continents/$SPLIT_DIR_NAME"
     TRAIN_FILE="$SPLIT_DIR/train/${SPLIT_DIR_NAME}_train_ids.pkl"
     VALID_FILE="$SPLIT_DIR/valid/${SPLIT_DIR_NAME}_valid_ids.pkl"
     TEST_FILE="$SPLIT_DIR/test/${SPLIT_DIR_NAME}_test_ids.pkl"
 elif [ "$SPLIT_TYPE" = "novel-concept" ]; then
-    SPLIT_DIR="/scratch/amukher6/metacul/training_data/individual_splits/novel_concept/$SPLIT_NAME"
+    SPLIT_DIR="/path/to/metacul/training_data/individual_splits/novel_concept/$SPLIT_NAME"
     YEAR=$(echo $SPLIT_NAME | sed 's/pivot_//')
     TRAIN_FILE="$SPLIT_DIR/train/pre_${YEAR}_train_ids.pkl"
     VALID_FILE="$SPLIT_DIR/valid/pre_${YEAR}_valid_ids.pkl"
     TEST_FILE="$SPLIT_DIR/test/pre_${YEAR}_test_ids.pkl"
 elif [ "$SPLIT_TYPE" = "concept-change" ]; then
-    SPLIT_DIR="/scratch/amukher6/metacul/training_data/individual_splits/concept_change/$SPLIT_NAME"
+    SPLIT_DIR="/path/to/metacul/training_data/individual_splits/concept_change/$SPLIT_NAME"
     TRAIN_FILE="$SPLIT_DIR/train/${SPLIT_NAME}_train_ids.pkl"
     VALID_FILE="$SPLIT_DIR/valid/${SPLIT_NAME}_valid_ids.pkl"
     TEST_FILE="$SPLIT_DIR/test/${SPLIT_NAME}_test_ids.pkl"

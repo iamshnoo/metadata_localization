@@ -1,0 +1,6 @@
+{
+  "overall_emd": 0.4138888888888889,
+  "groups": 33,
+  "scored_rows": 120,
+  "jsonl_path": "/path/to/metacul/results/external_protocol_probes_tokenizerfix_20260504_120/worldvaluebench/figure9_3b/maple_1b/seed_41/worldvaluebench/worldvaluebench_custom_tminus_eminus.jsonl"
+}

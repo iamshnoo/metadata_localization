@@ -1,0 +1,7 @@
+config,seed,benchmark,metric,plus_rows,minus_rows,plus_value,minus_value,req1_satisfied
+gemma4_e2b,seed_41,geomlama,accuracy,80,80,48.75,45.0,True
+llama32_1b,seed_41,geomlama,accuracy,80,80,25.0,32.5,False
+llama32_3b,seed_41,geomlama,accuracy,80,80,21.25,27.500000000000004,False
+maple_1b,seed_41,geomlama,accuracy,80,80,36.25,36.25,False
+maple_1b,seed_41,globalopinionqa,accuracy,80,80,32.5,32.5,False
+maple_3b,seed_41,geomlama,accuracy,80,80,41.25,50.0,False

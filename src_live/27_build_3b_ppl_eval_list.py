@@ -2,8 +2,8 @@
 import json
 from pathlib import Path
 
-SOURCE = Path("/scratch/amukher6/metacul/results/perplexity/eval_list.json")
-OUTPUT = Path("/scratch/amukher6/metacul/results/perplexity/eval_list_3b_requested.json")
+SOURCE = Path("/path/to/metacul/results/perplexity/eval_list.json")
+OUTPUT = Path("/path/to/metacul/results/perplexity/eval_list_3b_requested.json")
 
 
 def is_requested_3b_combo(combo: dict) -> bool:

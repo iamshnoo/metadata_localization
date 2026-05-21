@@ -20,7 +20,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--model-type', default='custom', help='Model type to evaluate')
 parser.add_argument('--metadata', action='store_true', help='Include metadata in prompts')
 parser.add_argument('--size', choices=['1b', '3b'], default='1b', help='Custom model size suffix')
-parser.add_argument('--dataset', default="iamshnoo/qa_metacul", help="HF dataset name or local path")
+parser.add_argument('--dataset', default="YOUR_HF_USERNAME/qa_metacul", help="HF dataset name or local path")
 parser.add_argument('--split', default="train", help="Dataset split to evaluate")
 parser.add_argument('--output-jsonl', default=None)
 parser.add_argument('--custom-model-path', default=None, help='Override the merged custom chat model path')
@@ -42,14 +42,14 @@ name = f"{name_prefix}_{args.size}"
 
 model_type = args.model_type
 if model_type == "custom":
-    model_name = args.custom_model_path or f"/scratch/amukher6/metacul/models/sft/{name}{args.name_suffix}_chat"
+    model_name = args.custom_model_path or f"/path/to/metacul/models/sft/{name}{args.name_suffix}_chat"
 else:
     if model_type == "llama3_chat":
         model_name = args.llama_model_name
     else:
         raise ValueError(f"Unknown model_type: {model_type}")
 
-chat_template_path="/scratch/amukher6/metacul/src/chat_template.jinja"
+chat_template_path="/path/to/metacul/src/chat_template.jinja"
 
 if args.output_jsonl is None:
     suffix = "with_metadata" if metadata else "without_metadata"
@@ -57,7 +57,7 @@ if args.output_jsonl is None:
     rate_pct = int(round(args.url_corruption_rate * 100))
     corruption_suffix = f"_c{rate_pct}"
     args.output_jsonl = (
-        f"/scratch/amukher6/metacul/results/qa_metacul_eval_"
+        f"/path/to/metacul/results/qa_metacul_eval_"
         f"{suffix}_{model_type}_{base_slug}{corruption_suffix}.jsonl"
     )
 

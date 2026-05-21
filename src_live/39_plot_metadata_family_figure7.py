@@ -7,29 +7,29 @@ import pandas as pd
 from matplotlib.lines import Line2D
 
 
-CSV_PATH = Path("/scratch/amukher6/metacul/results/plots/plot10/plot_10.csv")
-RESULTS_DIR = Path("/scratch/amukher6/metacul/results/plots/plot10")
-LATEX_FIG = Path("/scratch/amukher6/metacul/latex/figs/main/6_perplexity_metadata_ablations_1b_main.pdf")
+CSV_PATH = Path("/path/to/metacul/results/plots/plot10/plot_10.csv")
+RESULTS_DIR = Path("/path/to/metacul/results/plots/plot10")
+LATEX_FIG = Path("/path/to/metacul/latex/figs/main/6_perplexity_metadata_ablations_1b_main.pdf")
 
 
 STEPS = [2000, 4000, 8000, 10000]
 STEP_LABELS = ["2k", "4k", "8k", "10k"]
 
 TESTS = [
-    ("[URL] (I+)", "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"),
-    ("[URL][Country] (I+)", "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"),
-    ("[URL][Continent] (I+)", "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"),
-    ("[Country] (I+)", "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"),
-    ("[Continent] (I+)", "/scratch/amukher6/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"),
-    ("[URL][Country][Continent] (I+)", "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/"),
-    ("No metadata (I-)", "/scratch/amukher6/metacul/training_data/meco_datasets/combined/without_metadata/"),
+    ("[URL] (I+)", "/path/to/metacul/training_data/meco_datasets/combined_only_url/with_metadata/"),
+    ("[URL][Country] (I+)", "/path/to/metacul/training_data/meco_datasets/combined_only_url_country/with_metadata/"),
+    ("[URL][Continent] (I+)", "/path/to/metacul/training_data/meco_datasets/combined_only_url_continent/with_metadata/"),
+    ("[Country] (I+)", "/path/to/metacul/training_data/meco_datasets/combined_only_country/with_metadata/"),
+    ("[Continent] (I+)", "/path/to/metacul/training_data/meco_datasets/combined_only_continent/with_metadata/"),
+    ("[URL][Country][Continent] (I+)", "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/"),
+    ("No metadata (I-)", "/path/to/metacul/training_data/meco_datasets/combined/without_metadata/"),
 ]
 
 MODEL_GROUPS = {
     "combined_with": {
         "label": "[URL][Country][Continent] (T+)",
-        "final": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
-        "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step{step}k",
+        "final": "/path/to/metacul/models/combined_with_metadata_1b",
+        "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_with_metadata_1b_step{step}k",
         "color": "#2b8c66",
         "marker": "o",
         "linestyle": "-",
@@ -37,8 +37,8 @@ MODEL_GROUPS = {
     },
     "combined_without": {
         "label": "[No metadata] (T-)",
-        "final": "/scratch/amukher6/metacul/models/combined_without_metadata_1b",
-        "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step{step}k",
+        "final": "/path/to/metacul/models/combined_without_metadata_1b",
+        "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_without_metadata_1b_step{step}k",
         "color": "#7f7f7f",
         "marker": "s",
         "linestyle": (0, (5, 2)),
@@ -46,8 +46,8 @@ MODEL_GROUPS = {
     },
     "url": {
         "label": "[URL] (T+)",
-        "final": "/scratch/amukher6/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
-        "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step{step}k",
+        "final": "/path/to/metacul/models/ablations/metadata/combined_only_url_with_metadata_1b",
+        "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_url_with_metadata_1b_step{step}k",
         "color": "#f4a3a3",
         "marker": "D",
         "linestyle": (0, (3, 1, 1, 1)),
@@ -55,8 +55,8 @@ MODEL_GROUPS = {
     },
     "country_only": {
         "label": "[Country] (T+)",
-        "final": "/scratch/amukher6/metacul/models/combined_only_country_with_metadata_1b",
-        "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step{step}k",
+        "final": "/path/to/metacul/models/combined_only_country_with_metadata_1b",
+        "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step{step}k",
         "color": "#f0c36d",
         "marker": "P",
         "linestyle": (0, (1, 1)),
@@ -64,8 +64,8 @@ MODEL_GROUPS = {
     },
     "continent_only": {
         "label": "[Continent] (T+)",
-        "final": "/scratch/amukher6/metacul/models/combined_only_continent_with_metadata_1b",
-        "steps": "/scratch/amukher6/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step{step}k",
+        "final": "/path/to/metacul/models/combined_only_continent_with_metadata_1b",
+        "steps": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_continent_with_metadata_1b_step{step}k",
         "color": "#74c476",
         "marker": "X",
         "linestyle": (0, (7, 2, 1.2, 2)),
@@ -119,9 +119,9 @@ def _series_for_own_average(df, keys):
 def _style_axes(ax):
     for spine in ax.spines.values():
         spine.set_visible(True)
-        spine.set_linewidth(1.5)
+        spine.set_linewidth(1.0)
         spine.set_color("black")
-    ax.grid(axis="y", linestyle="--", linewidth=0.6, alpha=0.28)
+    ax.grid(axis="y", linestyle="--", linewidth=0.45, alpha=0.28)
     ax.set_axisbelow(True)
 
 
@@ -142,11 +142,11 @@ def _draw_panel(ax, title, series_map, keys):
             color=cfg["color"],
             marker=cfg["marker"],
             linestyle=cfg["linestyle"],
-            linewidth=2.8 if is_global else 2.2,
-            markersize=7.2,
+            linewidth=2.15 if is_global else 1.75,
+            markersize=5.7,
             markerfacecolor=cfg.get("markerfacecolor", cfg["color"]),
             markeredgecolor="black",
-            markeredgewidth=0.95,
+            markeredgewidth=0.85,
             label=cfg["label"],
             zorder=4 if is_global else 3,
         )
@@ -165,9 +165,9 @@ def _draw_panel(ax, title, series_map, keys):
 
     _style_axes(ax)
     ax.set_xticks(x_vals)
-    ax.set_xticklabels(STEP_LABELS, fontsize=13)
-    ax.tick_params(axis="y", labelsize=13)
-    bbox_props = dict(facecolor="#e2e2e2", edgecolor="black", linewidth=1.0, alpha=0.95, boxstyle="round,pad=0.36")
+    ax.set_xticklabels(STEP_LABELS, fontsize=9.0)
+    ax.tick_params(axis="y", labelsize=9.0)
+    bbox_props = dict(facecolor="#e2e2e2", edgecolor="black", linewidth=0.65, alpha=0.95, boxstyle="round,pad=0.24")
     ax.text(
         0.5,
         0.90,
@@ -175,7 +175,7 @@ def _draw_panel(ax, title, series_map, keys):
         transform=ax.transAxes,
         ha="center",
         va="top",
-        fontsize=12.5,
+        fontsize=8.2,
         fontweight="bold",
         bbox=bbox_props,
         zorder=10,
@@ -186,11 +186,11 @@ def _draw_panel(ax, title, series_map, keys):
 
 def main():
     df = pd.read_csv(CSV_PATH)
-    fig, axes = plt.subplots(1, 3, figsize=(15.5, 5.15), sharey=True)
+    fig, axes = plt.subplots(1, 3, figsize=(6.95, 2.82), sharey=True)
     panels = [
-        ("Avg. over [URL], [URL][Country],\n[URL][Continent], [Country], [Continent]", "own_average"),
-        ("Test set:\n[URL][Country][Continent] (I+)", TESTS[5][1]),
-        ("Test set:\nNo metadata (I-)", TESTS[6][1]),
+        ("Avg. metadata-formatted\ntest sets", "own_average"),
+        ("Test set\n[URL][Country][Continent] (I+)", TESTS[5][1]),
+        ("Test set\nNo metadata (I-)", TESTS[6][1]),
     ]
     keys = ["url", "country_only", "continent_only", "combined_with", "combined_without"]
 
@@ -207,14 +207,14 @@ def main():
         for ax in axes:
             ax.set_ylim(y_min - 0.18, y_max + 0.30)
 
-    axes[0].set_ylabel("Perplexity (↓ better)", fontsize=18)
-    fig.text(0.5, 0.03, "Training steps", ha="center", fontsize=18)
+    axes[0].set_ylabel("Perplexity (↓ better)", fontsize=10.0)
+    fig.text(0.5, 0.045, "Training steps", ha="center", fontsize=10.0)
 
     legend_handles = [
         Line2D([], [], color=MODEL_GROUPS[key]["color"], marker=MODEL_GROUPS[key]["marker"],
-               linestyle=MODEL_GROUPS[key]["linestyle"], linewidth=2.2, markersize=7,
+               linestyle=MODEL_GROUPS[key]["linestyle"], linewidth=1.75, markersize=5.5,
                markerfacecolor=MODEL_GROUPS[key].get("markerfacecolor", MODEL_GROUPS[key]["color"]),
-               markeredgecolor="black", markeredgewidth=0.9, label=MODEL_GROUPS[key]["label"])
+               markeredgecolor="black", markeredgewidth=0.8, label=MODEL_GROUPS[key]["label"])
         for key in keys
     ]
     fig.legend(
@@ -224,15 +224,18 @@ def main():
         fancybox=True,
         framealpha=0.93,
         edgecolor="black",
-        fontsize=12.5,
-        title_fontsize=12.5,
+        fontsize=8.1,
+        title_fontsize=8.3,
         loc="upper center",
         ncol=3,
-        bbox_to_anchor=(0.5, 0.975),
+        bbox_to_anchor=(0.5, 0.985),
+        borderpad=0.45,
+        columnspacing=0.85,
+        handletextpad=0.45,
     )
 
     fig.tight_layout()
-    fig.subplots_adjust(top=0.72, bottom=0.12)
+    fig.subplots_adjust(top=0.70, bottom=0.18, left=0.075, right=0.995, wspace=0.11)
 
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
     LATEX_FIG.parent.mkdir(parents=True, exist_ok=True)

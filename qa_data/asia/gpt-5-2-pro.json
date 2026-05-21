@@ -36,9 +36,9 @@
   },
   {
     "question": "Who became President of India in 2022?",
-    "options": ["Droupadi Murmu", "Ram Nath Kovind", "Pranab Mukherjee", "A. P. J. Abdul Kalam"],
+    "options": ["Droupadi Murmu", "Ram Nath Kovind", "Pranab Author", "A. P. J. Abdul Kalam"],
     "correct_answer": "Droupadi Murmu",
-    "distractors": ["Ram Nath Kovind", "Pranab Mukherjee", "A. P. J. Abdul Kalam"],
+    "distractors": ["Ram Nath Kovind", "Pranab Author", "A. P. J. Abdul Kalam"],
     "country": "India"
   },
   {

@@ -1,0 +1,16 @@
+variant,label,country,country_code,continent,category,RC1,RC2,target_distance,target_rank,nearest_country,nearest_distance,top1_hit,top3_hit
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Bangladesh,bd,Asia,African-Islamic,-0.3422278621295507,-0.07099796394688376,1.1597361732881086,9,Malaysia,0.1313036222113504,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Canada,ca,America,English-Speaking,-0.20543377176391223,-1.011307206360441,2.5525581690081025,13,Philippines,0.14482360390658133,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Ghana,gh,Africa,African-Islamic,-0.40354500140245,0.25317311078307314,1.828583272305797,11,Malaysia,0.455028105757737,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Great Britain,gb,Europe,English-Speaking,-0.5556368426265081,0.5687603758272464,3.01099529842456,15,Malaysia,0.7922020858615151,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Hong Kong SAR,hk,Asia,Confucian,-0.21251367767383217,-0.8653236598836193,2.462030281019054,13,Kenya,0.21639660981976208,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",India,in,Asia,West & South Asia,-0.21605363062879213,-0.7923318866452085,0.5309032287121361,3,Kenya,0.14664002837307352,0,1
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Ireland,ie,Europe,English-Speaking,-0.21959358358375208,-0.7193401134067976,1.3232794303071471,11,Kenya,0.08282368958122466,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Kenya,ke,Africa,African-Islamic,-0.3351479562196308,-0.21698151042370545,0.4453456128866142,3,Malaysia,0.03452912662904177,0,1
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Malaysia,my,Asia,West & South Asia,-0.21959358358375208,-0.7193401134067976,0.5391667952680683,4,Kenya,0.08282368958122466,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Nigeria,ng,Africa,African-Islamic,-0.34222786212955064,-0.07099796394688376,1.0364076903321362,7,Malaysia,0.1313036222113504,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Pakistan,pk,Asia,African-Islamic,-0.5874964192211478,1.2256863349729439,2.0058174053577815,7,Singapore,1.2425779800763581,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Philippines,ph,Asia,Latin America,-0.21959358358375208,-0.7193401134067976,0.4305470592375934,2,Kenya,0.08282368958122466,0,1
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Singapore,sg,Asia,West & South Asia,-0.21959358358375208,-0.7193401134067976,1.0812491892797642,9,Kenya,0.08282368958122466,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",South Africa,za,Africa,African-Islamic,-0.25259109921697165,-0.9791032245841274,0.9915774367582326,9,Philippines,0.19571415750046933,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",United States,us,America,English-Speaking,-0.3316080032646708,-0.2899732836621162,1.8426069506908453,12,India,0.02528352682826559,0,0

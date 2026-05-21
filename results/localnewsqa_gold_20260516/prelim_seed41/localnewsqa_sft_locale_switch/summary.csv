@@ -1,0 +1,5 @@
+family,variant,variant_label,pair_count,seed_count,exact_pair,exact_pair_std,margin_switch,margin_switch_std
+MAPLE Chat 1B,tplus_eplus,"(T+, I+)",1700,1,0.03588235294117647,0.0,0.11352941176470588,0.0
+MAPLE Chat 1B,tminus_eminus,"(T-, I-)",1700,1,0.0,0.0,0.0,0.0
+MAPLE Chat 3B,tplus_eplus,"(T+, I+)",1700,1,0.051176470588235295,0.0,0.13647058823529412,0.0
+MAPLE Chat 3B,tminus_eminus,"(T-, I-)",1700,1,0.0,0.0,0.0,0.0

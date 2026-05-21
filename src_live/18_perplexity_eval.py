@@ -17,9 +17,9 @@ from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
-DEFAULT_EVAL_LIST = "/scratch/amukher6/metacul/results/perplexity/eval_list.json"
-DEFAULT_OUTPUT_CSV = "/scratch/amukher6/metacul/results/perplexity_eval.csv"
-DEFAULT_PER_SAMPLE_DIR = "/scratch/amukher6/metacul/results/per_sample_losses"
+DEFAULT_EVAL_LIST = "/path/to/metacul/results/perplexity/eval_list.json"
+DEFAULT_OUTPUT_CSV = "/path/to/metacul/results/perplexity_eval.csv"
+DEFAULT_PER_SAMPLE_DIR = "/path/to/metacul/results/per_sample_losses"
 
 
 class PerplexityEvaluator:

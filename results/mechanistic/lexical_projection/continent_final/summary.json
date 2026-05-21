@@ -1,0 +1,6 @@
+{
+  "variant": "continent_final",
+  "prompt_kind": "continent",
+  "mean_us_uk_symmetric_kl": 0.30756566673517227,
+  "mean_expected_rank": 73.58333333333333
+}

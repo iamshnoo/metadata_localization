@@ -23,10 +23,10 @@
       "America": 248
     }
   },
-  "dataset": "/scratch/amukher6/metacul/training_data/meco_datasets/continents/america/with_metadata/",
+  "dataset": "/path/to/metacul/training_data/meco_datasets/continents/america/with_metadata/",
   "split": "test",
   "seed": 42,
   "max_samples": 1000,
-  "model_path": "/scratch/amukher6/metacul/models/ablations/leave_one_out/combined_no_america_with_metadata_1b",
+  "model_path": "/path/to/metacul/models/ablations/leave_one_out/combined_no_america_with_metadata_1b",
   "tokenizer_path": "meta-llama/Llama-3.2-1B"
 }

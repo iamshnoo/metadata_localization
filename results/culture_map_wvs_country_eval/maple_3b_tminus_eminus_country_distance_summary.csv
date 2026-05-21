@@ -1,0 +1,16 @@
+variant,label,country,country_code,continent,category,RC1,RC2,target_distance,target_rank,nearest_country,nearest_distance,top1_hit,top3_hit
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",Bangladesh,bd,Asia,African-Islamic,1.7138653894294014,-1.9646986003243843,2.7072517425437588,10,Ireland,1.0691258989787098,0,0
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",Canada,ca,America,English-Speaking,1.7138653894294014,-1.9646986003243843,1.7079940017505597,3,Ireland,1.0691258989787098,0,1
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",Ghana,gh,Africa,African-Islamic,1.7138653894294014,-1.9646986003243843,2.8267922860652157,13,Ireland,1.0691258989787098,0,0
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",Great Britain,gb,Europe,English-Speaking,1.7138653894294014,-1.9646986003243843,1.8652883764559838,4,Ireland,1.0691258989787098,0,0
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",Hong Kong SAR,hk,Asia,Confucian,1.7138653894294014,-1.9646986003243843,3.408653462754775,15,Ireland,1.0691258989787098,0,0
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",India,in,Asia,West & South Asia,1.7138653894294014,-1.9646986003243843,2.66794924243964,8,Ireland,1.0691258989787098,0,0
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",Ireland,ie,Europe,English-Speaking,1.7138653894294014,-1.9646986003243843,1.0691258989787098,1,Ireland,1.0691258989787098,1,1
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",Kenya,ke,Africa,African-Islamic,1.7138653894294014,-1.9646986003243843,2.3800416526542154,7,Ireland,1.0691258989787098,0,0
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",Malaysia,my,Asia,West & South Asia,1.7138653894294014,-1.9646986003243843,2.726981286263296,11,Ireland,1.0691258989787098,0,0
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",Nigeria,ng,Africa,African-Islamic,1.7138653894294014,-1.9646986003243843,2.9683230127980242,14,Ireland,1.0691258989787098,0,0
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",Pakistan,pk,Asia,African-Islamic,1.7138653894294014,-1.9646986003243843,2.77912426675347,12,Ireland,1.0691258989787098,0,0
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",Philippines,ph,Asia,Latin America,1.7138653894294014,-1.9646986003243843,2.033618548706651,5,Ireland,1.0691258989787098,0,0
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",Singapore,sg,Asia,West & South Asia,1.7138653894294014,-1.9646986003243843,2.6959334540296385,9,Ireland,1.0691258989787098,0,0
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",South Africa,za,Africa,African-Islamic,1.7138653894294014,-1.9646986003243843,2.2761181897080163,6,Ireland,1.0691258989787098,0,0
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",United States,us,America,English-Speaking,1.7138653894294014,-1.9646986003243843,1.5535382664489212,2,Ireland,1.0691258989787098,0,1

@@ -1,0 +1,31 @@
+variant,label,country,country_code,continent,category,RC1,RC2,target_distance,target_rank,nearest_country,nearest_distance,top1_hit,top3_hit
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Bangladesh,bd,Asia,African-Islamic,-0.3422278621295507,-0.0709979639468837,1.1597361732881086,9,Malaysia,0.1313036222113504,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Canada,ca,America,English-Speaking,-0.2054337717639122,-1.011307206360441,2.5525581690081025,13,Philippines,0.1448236039065813,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Ghana,gh,Africa,African-Islamic,-0.40354500140245,0.2531731107830731,1.828583272305797,11,Malaysia,0.455028105757737,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Great Britain,gb,Europe,English-Speaking,-0.5556368426265081,0.5687603758272464,3.01099529842456,15,Malaysia,0.7922020858615151,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Hong Kong SAR,hk,Asia,Confucian,-0.2125136776738321,-0.8653236598836193,2.462030281019054,13,Kenya,0.216396609819762,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",India,in,Asia,West & South Asia,-0.2160536306287921,-0.7923318866452085,0.5309032287121361,3,Kenya,0.1466400283730735,0,1
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Ireland,ie,Europe,English-Speaking,-0.219593583583752,-0.7193401134067976,1.3232794303071471,11,Kenya,0.0828236895812246,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Kenya,ke,Africa,African-Islamic,-0.3351479562196308,-0.2169815104237054,0.4453456128866142,3,Malaysia,0.0345291266290417,0,1
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Malaysia,my,Asia,West & South Asia,-0.219593583583752,-0.7193401134067976,0.5391667952680683,4,Kenya,0.0828236895812246,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Nigeria,ng,Africa,African-Islamic,-0.3422278621295506,-0.0709979639468837,1.0364076903321362,7,Malaysia,0.1313036222113504,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Pakistan,pk,Asia,African-Islamic,-0.5874964192211478,1.225686334972944,2.005817405357781,7,Singapore,1.242577980076358,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Philippines,ph,Asia,Latin America,-0.219593583583752,-0.7193401134067976,0.4305470592375934,2,Kenya,0.0828236895812246,0,1
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",Singapore,sg,Asia,West & South Asia,-0.219593583583752,-0.7193401134067976,1.0812491892797642,9,Kenya,0.0828236895812246,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",South Africa,za,Africa,African-Islamic,-0.2525910992169716,-0.9791032245841274,0.9915774367582326,9,Philippines,0.1957141575004693,0,0
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",United States,us,America,English-Speaking,-0.3316080032646708,-0.2899732836621162,1.8426069506908451,12,India,0.0252835268282655,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Bangladesh,bd,Asia,African-Islamic,1.9289044601940355,-2.49183484939444,3.107766800496752,8,Ireland,1.6217729197505029,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Canada,ca,America,English-Speaking,1.9289044601940355,-2.49183484939444,2.171060085152428,3,Ireland,1.6217729197505029,0,1
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Ghana,gh,Africa,African-Islamic,1.024913825651935,-0.8283919427712275,2.181614605853697,15,Ireland,0.3100367761833092,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Great Britain,gb,Europe,English-Speaking,1.9289044601940355,-2.49183484939444,2.318738243829208,4,Ireland,1.6217729197505029,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Hong Kong SAR,hk,Asia,Confucian,1.024913825651935,-0.8283919427712275,2.1737743736663844,14,Ireland,0.3100367761833092,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",India,in,Asia,West & South Asia,1.9289044601940355,-2.49183484939444,3.179310029664029,10,Ireland,1.6217729197505029,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Ireland,ie,Europe,English-Speaking,1.9289044601940355,-2.49183484939444,1.6217729197505029,1,Ireland,1.6217729197505029,1,1
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Kenya,ke,Africa,African-Islamic,1.5673082063771957,-1.8264576867451552,2.181938974852336,7,Ireland,0.8696663923319793,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Malaysia,my,Asia,West & South Asia,1.9289044601940355,-2.49183484939444,3.242680642834736,12,Ireland,1.6217729197505029,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Nigeria,ng,Africa,African-Islamic,1.9289044601940355,-2.49183484939444,3.3911582266794835,14,Ireland,1.6217729197505029,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Pakistan,pk,Asia,African-Islamic,1.9289044601940355,-2.49183484939444,3.2228697656407803,11,Ireland,1.6217729197505029,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Philippines,ph,Asia,Latin America,1.9289044601940355,-2.49183484939444,2.4749707215160237,5,Ireland,1.6217729197505029,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",Singapore,sg,Asia,West & South Asia,1.9289044601940355,-2.49183484939444,3.25544452529676,13,Ireland,1.6217729197505029,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",South Africa,za,Africa,African-Islamic,1.7481063332856153,-2.1591462680697977,2.452398636454864,6,Ireland,1.2449352849672544,0,0
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",United States,us,America,English-Speaking,1.9289044601940355,-2.49183484939444,2.109528158427588,2,Ireland,1.6217729197505029,0,1

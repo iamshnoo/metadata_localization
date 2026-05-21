@@ -1,0 +1,9 @@
+variant,label,size,train_metadata,eval_metadata,mean_target_distance,median_target_distance,mean_target_rank,top1_rate_pct,top3_rate_pct,unique_projection_points
+maple_1b_tminus_eminus,"MAPLE 1B (T-, I-)",1B,False,False,5.42372029692118,5.594932980499705,8.0,6.666666666666668,20.0,1
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",1B,False,True,5.3727130982185685,5.38120704152789,8.2,6.666666666666668,20.0,8
+maple_1b_tplus_eminus,"MAPLE 1B (T+, I-)",1B,True,False,6.130068329508378,6.293028726635478,8.0,6.666666666666668,20.0,1
+maple_1b_tplus_eplus,"MAPLE 1B (T+, I+)",1B,True,True,5.9115870225744045,6.090056521778148,8.0,6.666666666666668,20.0,2
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",3B,False,False,6.326093843693589,6.4556749868185666,8.0,6.666666666666668,20.0,1
+maple_3b_tminus_eplus,"MAPLE 3B (T-, I+)",3B,False,True,6.281070715702533,6.619940225020398,8.0,6.666666666666668,20.0,6
+maple_3b_tplus_eminus,"MAPLE 3B (T+, I-)",3B,True,False,5.9115870225744045,6.090056521778148,8.0,6.666666666666668,20.0,2
+maple_3b_tplus_eplus,"MAPLE 3B (T+, I+)",3B,True,True,5.666322369906851,5.819129651252871,8.066666666666666,6.666666666666668,13.333333333333334,9

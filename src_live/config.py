@@ -6,7 +6,7 @@ import os
 
 class Config:
     # Base paths
-    BASE = "/scratch/amukher6/"
+    BASE = "/path/to/workspace/"
     
     # Data paths
     DATA_ROOT = BASE + "metacul/data/now"

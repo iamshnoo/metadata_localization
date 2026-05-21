@@ -1,0 +1,5 @@
+condition,1b_overall,1b_ambiguous,3b_overall,3b_ambiguous
+"Clean (T+,I+)",34.34,38.7,35.53,37.69
+Full URL mismatch (100%),34.1,38.27,34.89,36.64
+URL-country mask (100%),34.3,38.67,34.72,36.61
+"No metadata (T-,I-)",32.17,34.66,31.09,30.22

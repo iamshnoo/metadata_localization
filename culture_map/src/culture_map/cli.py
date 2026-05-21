@@ -195,7 +195,7 @@ def build_parser():
     run_parser = subparsers.add_parser("run-openai-part1", help="Run the paper's part 1 prompt suite against OpenAI models")
     run_parser.add_argument("--data-dir", default="data/paper_osf")
     run_parser.add_argument("--output-dir", default="outputs/openai_runs")
-    run_parser.add_argument("--env-file", default=".agents/.env")
+    run_parser.add_argument("--env-file", default=None)
     run_parser.add_argument("--base-url", default="https://api.openai.com/v1")
     run_parser.add_argument("--model", action="append")
     run_parser.add_argument("--recent", action="store_true")
@@ -207,7 +207,7 @@ def build_parser():
     anthropic_parser = subparsers.add_parser("run-anthropic-part1", help="Run the paper's part 1 prompt suite against Anthropic models")
     anthropic_parser.add_argument("--data-dir", default="data/paper_osf")
     anthropic_parser.add_argument("--output-dir", default="outputs/anthropic_runs")
-    anthropic_parser.add_argument("--env-file", default=".agents/.env")
+    anthropic_parser.add_argument("--env-file", default=None)
     anthropic_parser.add_argument("--base-url", default="https://api.anthropic.com/v1")
     anthropic_parser.add_argument("--model", action="append")
     anthropic_parser.add_argument("--recent", action="store_true")
@@ -219,7 +219,7 @@ def build_parser():
     gemini_parser = subparsers.add_parser("run-gemini-part1", help="Run the paper's part 1 prompt suite against Gemini models")
     gemini_parser.add_argument("--data-dir", default="data/paper_osf")
     gemini_parser.add_argument("--output-dir", default="outputs/gemini_runs")
-    gemini_parser.add_argument("--env-file", default=".agents/.env")
+    gemini_parser.add_argument("--env-file", default=None)
     gemini_parser.add_argument("--base-url", default="https://generativelanguage.googleapis.com/v1beta")
     gemini_parser.add_argument("--model", action="append")
     gemini_parser.add_argument("--recent", action="store_true")
@@ -231,7 +231,7 @@ def build_parser():
     together_parser = subparsers.add_parser("run-together-part1", help="Run the paper's part 1 prompt suite against Together models")
     together_parser.add_argument("--data-dir", default="data/paper_osf")
     together_parser.add_argument("--output-dir", default="outputs/together_runs")
-    together_parser.add_argument("--env-file", default=".agents/.env")
+    together_parser.add_argument("--env-file", default=None)
     together_parser.add_argument("--base-url", default="https://api.together.xyz/v1")
     together_parser.add_argument("--model", action="append")
     together_parser.add_argument("--recent", action="store_true")
@@ -246,14 +246,14 @@ def build_parser():
     )
     local_country_parser.add_argument("--data-dir", default="data/paper_osf")
     local_country_parser.add_argument("--output-dir", default="outputs/local_country_eval")
-    local_country_parser.add_argument("--env-file", default=".agents/.env")
+    local_country_parser.add_argument("--env-file", default=None)
     local_country_parser.add_argument(
         "--base-url",
         default="https://www.worldvaluessurvey.org/WVSContents.jsp?CMSID=tradrat",
     )
     local_country_parser.add_argument(
         "--chat-template-path",
-        default="/scratch/amukher6/metacul/src/chat_template.jinja",
+        default="/path/to/metacul/src/chat_template.jinja",
     )
     local_country_parser.add_argument("--variant", action="append")
     local_country_parser.add_argument("--country-code", action="append")

@@ -1,0 +1,151 @@
+country,#variant,a008,a165,e018,e025,f063,f118,f120,g006,y002,y003,country_code,continent,RC1,RC2,model,label,variant,train_metadata,eval_metadata
+Bangladesh,variant 0,1,1,1,3,1,1,1,4,2,-1,bd,Asia,0.11524119788727841,1.2561484127905644,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Bangladesh,variant 1,4,1,2,3,1,1,1,4,2,-1,bd,Asia,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Bangladesh,variant 2,4,1,1,3,1,1,1,4,2,-1,bd,Asia,-1.6927400711969225,4.58303422603699,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Bangladesh,variant 3,4,2,1,3,1,1,1,4,2,-1,bd,Asia,-2.6053467158473462,5.119338714755088,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Bangladesh,variant 4,4,2,3,1,1,1,1,4,2,-1,bd,Asia,-1.4756539053687812,6.072901664637869,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Bangladesh,variant 5,4,2,2,3,1,1,1,4,2,-1,bd,Asia,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Bangladesh,variant 6,4,1,1,3,1,1,1,4,2,-1,bd,Asia,-1.6927400711969225,4.58303422603699,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Bangladesh,variant 7,4,2,1,3,1,1,1,4,2,-1,bd,Asia,-2.6053467158473462,5.119338714755088,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Bangladesh,variant 8,4,2,2,3,1,1,1,4,2,-1,bd,Asia,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Bangladesh,variant 9,4,1,2,3,1,1,1,4,2,-1,bd,Asia,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Canada,variant 0,4,2,2,1,1,1,1,4,2,-1,ca,America,-1.4402543758191815,5.342983932253761,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Canada,variant 1,1,1,2,3,1,1,1,1,2,-1,ca,America,0.6930130610666715,-1.255644602124896,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Canada,variant 2,4,1,2,3,1,1,1,4,2,-1,ca,America,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Canada,variant 3,4,1,2,3,1,1,1,4,2,-1,ca,America,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Canada,variant 4,4,1,1,3,1,2,1,1,2,-1,ca,America,-0.9142051828403387,1.33563574726872,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Canada,variant 5,4,2,2,1,1,1,1,4,2,-1,ca,America,-1.4402543758191815,5.342983932253761,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Canada,variant 6,4,2,3,3,1,1,1,4,2,-1,ca,America,-2.6761457749465456,6.579174179523305,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Canada,variant 7,4,2,3,3,1,1,1,1,2,-1,ca,America,-2.062974382217553,3.3374634322237355,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Canada,variant 8,4,2,2,3,1,1,1,4,2,-1,ca,America,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Canada,variant 9,1,2,2,3,1,1,1,1,2,-1,ca,America,-0.2195935835837521,-0.7193401134067976,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ghana,variant 0,4,1,3,3,1,1,1,4,2,-1,gh,Africa,-1.7635391302961219,6.042869690805206,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ghana,variant 1,4,1,2,3,1,1,1,1,2,-1,gh,Africa,-1.1149682080175294,2.071241211121529,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ghana,variant 2,4,1,1,1,2,1,1,1,2,-1,gh,Africa,0.016748158729697288,0.7277303850485439,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ghana,variant 3,4,1,2,3,1,1,1,1,2,-1,gh,Africa,-1.1149682080175294,2.071241211121529,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ghana,variant 4,4,1,2,1,1,1,1,4,2,-1,gh,Africa,-0.5276477311687578,4.806679443535662,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ghana,variant 5,4,2,1,1,1,1,1,4,2,-1,gh,Africa,-1.4048548462695818,4.613066199869652,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ghana,variant 6,4,1,1,1,1,1,1,4,2,-1,gh,Africa,-0.49224820161915817,4.076761711151554,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ghana,variant 7,4,1,2,3,1,1,1,4,2,-1,gh,Africa,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ghana,variant 8,4,2,2,3,1,1,1,1,2,-1,gh,Africa,-2.027574852667953,2.607545699839627,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ghana,variant 9,4,2,1,3,1,1,1,1,2,-1,gh,Africa,-1.9921753231183532,1.8776279674555187,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Great Britain,variant 0,1,2,2,3,1,1,1,4,2,-1,gb,Europe,-0.8327649763127449,2.5223706338927716,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Great Britain,variant 1,4,2,2,3,1,1,1,4,2,-1,gb,Europe,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Great Britain,variant 2,4,1,1,1,1,1,1,4,2,-1,gb,Europe,-0.49224820161915817,4.076761711151554,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Great Britain,variant 3,4,1,2,3,1,1,1,4,2,-1,gb,Europe,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Great Britain,variant 4,4,1,1,3,1,1,1,4,2,-1,gb,Europe,-1.6927400711969225,4.58303422603699,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Great Britain,variant 5,3,2,1,3,1,1,1,1,2,-1,gb,Europe,-1.3895149000902864,0.7686660297067105,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Great Britain,variant 6,4,2,1,3,1,1,1,1,2,-1,gb,Europe,-1.9921753231183532,1.8776279674555187,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Great Britain,variant 7,4,2,3,3,1,1,1,1,2,-1,gb,Europe,-2.062974382217553,3.3374634322237355,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Great Britain,variant 8,4,2,2,3,1,1,1,4,2,-1,gb,Europe,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Great Britain,variant 9,4,1,1,3,1,1,1,4,2,-1,gb,Europe,-1.6927400711969225,4.58303422603699,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Hong Kong SAR,variant 0,4,1,2,3,1,1,1,1,2,-1,hk,Asia,-1.1149682080175294,2.071241211121529,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Hong Kong SAR,variant 1,4,2,2,3,1,1,8,4,2,-1,hk,Asia,-1.5519348429096678,6.178234428547406,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Hong Kong SAR,variant 2,4,1,3,3,1,1,1,1,1,-1,hk,Asia,-1.6657462669699397,3.003657933099063,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Hong Kong SAR,variant 3,4,1,2,1,1,1,1,4,2,-1,hk,Asia,-0.5276477311687578,4.806679443535662,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Hong Kong SAR,variant 4,4,2,2,3,1,1,1,4,2,-1,hk,Asia,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Hong Kong SAR,variant 5,4,2,3,3,1,1,1,4,2,-1,hk,Asia,-2.6761457749465456,6.579174179523305,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Hong Kong SAR,variant 6,4,1,3,3,1,1,1,4,2,-1,hk,Asia,-1.7635391302961219,6.042869690805206,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Hong Kong SAR,variant 7,4,1,3,3,1,1,1,4,2,-1,hk,Asia,-1.7635391302961219,6.042869690805206,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Hong Kong SAR,variant 8,4,2,2,3,1,1,1,4,2,-1,hk,Asia,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Hong Kong SAR,variant 9,4,2,3,3,1,1,1,4,2,-1,hk,Asia,-2.6761457749465456,6.579174179523305,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+India,variant 0,4,2,3,3,1,1,1,4,2,-1,in,Asia,-2.6761457749465456,6.579174179523305,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+India,variant 1,4,2,1,3,1,1,1,4,2,-1,in,Asia,-2.6053467158473462,5.119338714755088,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+India,variant 2,4,1,2,3,1,1,1,4,2,-1,in,Asia,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+India,variant 3,4,1,3,1,1,1,1,4,2,-1,in,Asia,-0.5630472607183575,5.536597175919771,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+India,variant 4,1,1,2,3,1,3,1,1,2,-1,in,Asia,1.0237400523218538,-1.267020065062297,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+India,variant 5,4,1,1,3,1,1,1,4,2,-1,in,Asia,-1.6927400711969225,4.58303422603699,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+India,variant 6,4,2,2,3,1,1,1,4,2,-1,in,Asia,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+India,variant 7,4,2,2,3,1,1,1,4,2,-1,in,Asia,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+India,variant 8,4,1,3,3,1,1,1,3,2,-1,in,Asia,-1.5591486660531242,4.962299441705349,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+India,variant 9,3,2,3,1,1,2,1,4,2,-1,in,Asia,-0.7076299867131229,4.95825199542036,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ireland,variant 0,4,1,2,3,1,1,1,1,2,-1,ie,Europe,-1.1149682080175294,2.071241211121529,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ireland,variant 1,4,2,1,3,1,1,1,1,1,-1,ie,Europe,-2.5075538525211636,2.080126957048945,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ireland,variant 2,1,2,2,3,1,1,1,4,2,-1,ie,Europe,-0.8327649763127449,2.5223706338927716,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ireland,variant 3,1,2,2,3,1,1,1,1,2,-1,ie,Europe,-0.2195935835837521,-0.7193401134067976,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ireland,variant 4,4,1,2,3,1,1,1,4,1,-1,ie,Europe,-2.2435181301493325,5.515450948014523,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ireland,variant 5,4,2,1,3,1,1,1,4,2,-1,ie,Europe,-2.6053467158473462,5.119338714755088,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ireland,variant 6,4,1,1,3,1,1,1,1,2,-1,ie,Europe,-1.0795686784679297,1.3413234787374204,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ireland,variant 7,4,2,1,3,1,1,1,4,2,-1,ie,Europe,-2.6053467158473462,5.119338714755088,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ireland,variant 8,4,2,2,3,1,1,1,4,2,-1,ie,Europe,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Ireland,variant 9,4,1,2,3,1,1,1,4,2,-1,ie,Europe,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Kenya,variant 0,4,1,2,3,1,1,1,4,2,-1,ke,Africa,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Kenya,variant 1,4,1,3,3,1,1,1,1,2,-1,ke,Africa,-1.150367737567129,2.801158943505637,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Kenya,variant 2,4,1,2,3,1,1,1,4,2,-1,ke,Africa,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Kenya,variant 3,4,1,2,3,1,1,1,1,2,-1,ke,Africa,-1.1149682080175294,2.071241211121529,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Kenya,variant 4,4,1,1,3,1,1,1,1,2,-1,ke,Africa,-1.0795686784679297,1.3413234787374204,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Kenya,variant 5,4,1,3,3,1,1,1,4,2,-1,ke,Africa,-1.7635391302961219,6.042869690805206,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Kenya,variant 6,4,1,2,1,1,1,1,4,2,-1,ke,Africa,-0.5276477311687578,4.806679443535662,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Kenya,variant 7,4,1,3,3,1,1,1,1,2,-1,ke,Africa,-1.150367737567129,2.801158943505637,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Kenya,variant 8,4,1,1,3,1,1,1,4,2,-1,ke,Africa,-1.6927400711969225,4.58303422603699,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Kenya,variant 9,1,2,2,3,1,1,1,4,2,-1,ke,Africa,-0.8327649763127449,2.5223706338927716,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Malaysia,variant 0,1,2,3,3,1,1,1,1,2,-1,my,Asia,-0.2549931131333517,0.010577618977311298,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Malaysia,variant 1,4,2,1,3,1,1,1,4,2,-1,my,Asia,-2.6053467158473462,5.119338714755088,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Malaysia,variant 2,4,2,1,3,1,1,1,1,2,-1,my,Asia,-1.9921753231183532,1.8776279674555187,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Malaysia,variant 3,4,1,1,3,1,1,1,4,2,-1,my,Asia,-1.6927400711969225,4.58303422603699,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Malaysia,variant 4,4,1,1,3,1,1,1,4,2,-1,my,Asia,-1.6927400711969225,4.58303422603699,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Malaysia,variant 5,4,1,3,3,1,1,1,4,2,-1,my,Asia,-1.7635391302961219,6.042869690805206,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Malaysia,variant 6,4,2,3,3,1,1,1,4,2,-1,my,Asia,-2.6761457749465456,6.579174179523305,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Malaysia,variant 7,1,2,2,1,1,1,1,4,2,-1,my,Asia,0.3677268932650194,2.016098119007336,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Malaysia,variant 8,4,1,1,3,1,1,1,1,2,-1,my,Asia,-1.0795686784679297,1.3413234787374204,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Malaysia,variant 9,1,2,3,3,1,1,1,1,2,-1,my,Asia,-0.2549931131333517,0.010577618977311298,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Nigeria,variant 0,4,1,2,3,1,1,1,4,2,-1,ng,Africa,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Nigeria,variant 1,4,1,2,1,1,1,1,1,2,-1,ng,Africa,0.08552366156023491,1.5649686962360934,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Nigeria,variant 2,4,1,1,3,1,1,1,4,2,-1,ng,Africa,-1.6927400711969225,4.58303422603699,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Nigeria,variant 3,1,1,3,3,1,1,1,4,2,-1,ng,Africa,0.04444213878807926,2.7159838775587817,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Nigeria,variant 4,4,1,2,1,1,1,1,4,2,-1,ng,Africa,-0.5276477311687578,4.806679443535662,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Nigeria,variant 5,4,2,2,1,1,1,1,1,2,-1,ng,Africa,-0.8270829830901888,2.1012731849541915,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Nigeria,variant 6,4,1,1,3,1,1,1,4,2,-1,ng,Africa,-1.6927400711969225,4.58303422603699,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Nigeria,variant 7,1,2,3,1,1,1,1,1,2,-1,ng,Africa,0.9454987564444127,-0.49569489590812416,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Nigeria,variant 8,4,2,2,3,1,1,2,1,2,-1,ng,Africa,-1.8720303665983418,2.6545425543265146,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Nigeria,variant 9,4,1,3,3,1,1,1,1,2,-1,ng,Africa,-1.150367737567129,2.801158943505637,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Pakistan,variant 0,4,1,2,3,1,1,1,4,2,-1,pk,Asia,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Pakistan,variant 1,4,2,1,3,1,1,1,1,2,-1,pk,Asia,-1.9921753231183532,1.8776279674555187,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Pakistan,variant 2,4,1,2,3,1,1,1,4,2,-1,pk,Asia,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Pakistan,variant 3,4,2,3,3,1,1,1,4,2,-1,pk,Asia,-2.6761457749465456,6.579174179523305,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Pakistan,variant 4,4,1,3,1,1,1,1,4,2,-1,pk,Asia,-0.5630472607183575,5.536597175919771,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Pakistan,variant 5,4,1,3,3,1,1,1,4,2,-1,pk,Asia,-1.7635391302961219,6.042869690805206,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Pakistan,variant 6,4,1,3,3,1,1,1,4,2,-1,pk,Asia,-1.7635391302961219,6.042869690805206,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Pakistan,variant 7,4,1,2,1,1,1,1,1,2,-1,pk,Asia,0.08552366156023491,1.5649686962360934,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Pakistan,variant 8,4,1,2,3,1,1,1,4,2,-1,pk,Asia,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Pakistan,variant 9,4,2,3,1,1,1,1,4,1,-1,pk,Asia,-1.9910324347715918,6.275400654231294,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Philippines,variant 0,4,1,1,3,1,1,1,4,2,-1,ph,Asia,-1.6927400711969225,4.58303422603699,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Philippines,variant 1,4,1,2,3,1,1,1,4,2,-1,ph,Asia,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Philippines,variant 2,4,1,3,3,1,1,1,3,2,-1,ph,Asia,-1.5591486660531242,4.962299441705349,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Philippines,variant 3,4,2,2,3,1,1,1,1,2,-1,ph,Asia,-2.027574852667953,2.607545699839627,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Philippines,variant 4,4,2,2,3,1,1,1,4,2,-1,ph,Asia,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Philippines,variant 5,1,1,1,3,1,1,1,4,2,-1,ph,Asia,0.11524119788727841,1.2561484127905644,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Philippines,variant 6,4,1,2,3,1,1,1,1,2,-1,ph,Asia,-1.1149682080175294,2.071241211121529,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Philippines,variant 7,1,2,1,3,8,1,1,4,2,-1,ph,Asia,-1.5265906734241066,1.0412088498845757,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Philippines,variant 8,1,1,3,3,1,1,1,4,2,-1,ph,Asia,0.04444213878807926,2.7159838775587817,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Philippines,variant 9,4,1,3,3,1,1,1,1,2,-1,ph,Asia,-1.150367737567129,2.801158943505637,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Singapore,variant 0,4,2,2,3,1,1,1,4,2,-1,sg,Asia,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Singapore,variant 1,4,2,2,1,1,1,1,1,2,-1,sg,Asia,-0.8270829830901888,2.1012731849541915,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Singapore,variant 2,4,2,1,3,1,1,1,4,2,-1,sg,Asia,-2.6053467158473462,5.119338714755088,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Singapore,variant 3,4,1,2,3,1,1,1,1,2,-1,sg,Asia,-1.1149682080175294,2.071241211121529,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Singapore,variant 4,4,1,3,3,1,1,1,1,2,-1,sg,Asia,-1.150367737567129,2.801158943505637,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Singapore,variant 5,4,1,3,3,1,1,1,4,1,-1,sg,Asia,-2.2789176596989322,6.245368680398632,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Singapore,variant 6,4,2,2,3,1,1,1,4,2,-1,sg,Asia,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Singapore,variant 7,1,1,3,3,1,1,1,4,2,-1,sg,Asia,0.04444213878807926,2.7159838775587817,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Singapore,variant 8,4,1,2,3,1,1,1,4,2,-1,sg,Asia,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+Singapore,variant 9,1,1,2,3,1,1,1,4,2,-1,sg,Asia,0.07984166833767872,1.9860661451746733,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+South Africa,variant 0,4,2,2,3,1,1,1,1,2,-1,za,Africa,-2.027574852667953,2.607545699839627,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+South Africa,variant 1,4,1,2,3,1,1,1,4,2,-1,za,Africa,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+South Africa,variant 2,4,1,2,3,1,1,1,4,2,-1,za,Africa,-1.7281396007465222,5.312951958421098,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+South Africa,variant 3,4,2,2,3,1,1,1,4,2,-1,za,Africa,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+South Africa,variant 4,4,2,1,1,1,1,1,4,2,-1,za,Africa,-1.4048548462695818,4.613066199869652,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+South Africa,variant 5,4,1,1,3,1,1,1,4,2,-1,za,Africa,-1.6927400711969225,4.58303422603699,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+South Africa,variant 6,4,1,1,1,1,1,1,1,1,-1,za,Africa,-0.39445533829297597,1.037549953445411,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+South Africa,variant 7,1,1,1,3,1,1,1,1,2,-1,za,Africa,0.7284125906162712,-1.9855623345090045,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+South Africa,variant 8,4,2,2,3,1,2,1,1,2,-1,za,Africa,-1.8622113570403622,2.6018579683709264,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+South Africa,variant 9,4,1,1,3,1,1,1,4,2,-1,za,Africa,-1.6927400711969225,4.58303422603699,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+United States,variant 0,4,1,1,3,1,1,1,1,2,-1,us,America,-1.0795686784679297,1.3413234787374204,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+United States,variant 1,4,2,2,3,1,1,1,4,2,-1,us,America,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+United States,variant 2,4,2,2,3,1,1,1,1,2,-1,us,America,-2.027574852667953,2.607545699839627,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+United States,variant 3,4,2,1,3,1,1,1,1,2,-1,us,America,-1.9921753231183532,1.8776279674555187,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+United States,variant 4,4,2,2,1,1,1,1,4,2,-1,us,America,-1.4402543758191815,5.342983932253761,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+United States,variant 5,1,2,3,3,1,1,1,1,2,-1,us,America,-0.2549931131333517,0.010577618977311298,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+United States,variant 6,4,1,2,1,1,1,1,4,2,-1,us,America,-0.5276477311687578,4.806679443535662,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+United States,variant 7,4,2,2,3,1,1,1,4,2,-1,us,America,-2.640746245396946,5.8492564471391955,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+United States,variant 8,4,1,1,3,1,1,1,4,2,-1,us,America,-1.6927400711969223,4.58303422603699,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True
+United States,variant 9,4,1,2,1,1,1,1,1,2,-1,us,America,0.08552366156023508,1.5649686962360936,/path/to/metacul/models/combined_with_metadata_3b,"MAPLE 3B (T+, I+)",maple_3b_tplus_eplus,True,True

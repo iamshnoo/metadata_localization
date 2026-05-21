@@ -8,16 +8,16 @@ import numpy as np
 from matplotlib.colors import LinearSegmentedColormap
 
 
-SIG_CSV = Path("/scratch/amukher6/metacul/results/significance/plot4.csv")
-OUT_DIR = Path("/scratch/amukher6/metacul/slides")
+SIG_CSV = Path("/path/to/metacul/results/significance/plot4.csv")
+OUT_DIR = Path("/path/to/metacul/slides")
 
 CONTINENTS = ["africa", "america", "asia", "europe"]
 LABELS = ["Africa", "America", "Asia", "Europe"]
 PANEL_STYLES = {
-    "Local(T+,I+)": {"base": "#a3cea8", "title_fc": "#a3cea8", "title_ec": "black"},
-    "Local(T+,I-)": {"base": "#eca7a4", "title_fc": "#eca7a4", "title_ec": "black"},
-    "Local(T-,I+)": {"base": "#fad9b7", "title_fc": "#fad9b7", "title_ec": "black"},
-    "Local(T-,I-)": {"base": "#d9d9d9", "title_fc": "#d9d9d9", "title_ec": "black"},
+    "Local (T+, I+)": {"base": "#a3cea8", "title_fc": "#a3cea8", "title_ec": "black"},
+    "Local (T+, I-)": {"base": "#eca7a4", "title_fc": "#eca7a4", "title_ec": "black"},
+    "Local (T-, I+)": {"base": "#fad9b7", "title_fc": "#fad9b7", "title_ec": "black"},
+    "Local (T-, I-)": {"base": "#d9d9d9", "title_fc": "#d9d9d9", "title_ec": "black"},
 }
 STAGES = [
     ("cross_continent_simple_overlay_step1_diagonal_only", {0, 1, 2, 3}, set()),
@@ -169,10 +169,10 @@ def render_stage(panels, vmin, vmax, out_stem, diagonal_indices, visible_rows):
 def main():
     rows = load_rows()
     panels = [
-        ("Local(T+,I+)", build_matrix(rows, "with_metadata", True)),
-        ("Local(T-,I+)", build_matrix(rows, "with_metadata", False)),
-        ("Local(T+,I-)", build_matrix(rows, "without_metadata", True)),
-        ("Local(T-,I-)", build_matrix(rows, "without_metadata", False)),
+        ("Local (T+, I+)", build_matrix(rows, "with_metadata", True)),
+        ("Local (T-, I+)", build_matrix(rows, "with_metadata", False)),
+        ("Local (T+, I-)", build_matrix(rows, "without_metadata", True)),
+        ("Local (T-, I-)", build_matrix(rows, "without_metadata", False)),
     ]
     vmin = min(float(np.nanmin(panel)) for _, panel in panels)
     vmax = max(float(np.nanmax(panel)) for _, panel in panels)

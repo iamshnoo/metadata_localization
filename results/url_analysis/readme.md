@@ -1,7 +1,7 @@
 Here’s exactly what the URL analysis script does:
 
 Loads the train split of
-/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/
+/path/to/metacul/training_data/meco_datasets/combined/with_metadata/
 
 For each sample, it parses the text field and extracts:
 

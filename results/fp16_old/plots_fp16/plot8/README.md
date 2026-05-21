@@ -1,6 +1,6 @@
 # Plot 8: Apples-to-Apples QA Accuracy
 
-- Source data: `/scratch/amukher6/metacul/results/qa_metacul_eval.csv`
+- Source data: `/path/to/metacul/results/qa_metacul_eval.csv`
 - Filter: only rows where `answered_by_all == 1`.
 - Metric: accuracy = correct / (correct + incorrect).
 - Models: Custom vs LLaMA-3, each with/without metadata.

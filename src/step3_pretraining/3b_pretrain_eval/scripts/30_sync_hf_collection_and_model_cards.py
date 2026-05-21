@@ -17,19 +17,19 @@ import numpy as np
 import wandb
 from huggingface_hub import HfApi
 
-OWNER = "iamshnoo"
+OWNER = "YOUR_HF_USERNAME"
 COLLECTION_SLUG = f"{OWNER}/metadata-conditioned-llms"
 COLLECTION_TITLE_FALLBACK = "Metadata Conditioned LLMs"
 COLLECTION_DESCRIPTION_FALLBACK = (
-    "Source: English NOW corpus (english-corpora.org/now). Paper: arxiv.org/abs/2601.15236. Code: github.com/iamshnoo/metadata_localization"
+    "Source: English NOW corpus (english-corpora.org/now). Paper: arxiv.org/abs/2601.15236. Code: github.com/YOUR_HF_USERNAME/metadata_localization"
 )
-PROJECT_GITHUB_URL = "https://github.com/iamshnoo/metadata_localization"
+PROJECT_GITHUB_URL = "https://github.com/YOUR_HF_USERNAME/metadata_localization"
 NOW_CORPUS_URL = "https://www.english-corpora.org/now/"
 PAPER_URL = "https://arxiv.org/abs/2601.15236"
 
-PRETRAIN_LOGS = Path("/scratch/amukher6/pretrain/logs/slurm_logs")
-SFT_LOGS = Path("/scratch/amukher6/metacul/logs/slurm_logs")
-LOCAL_WANDB = Path("/scratch/amukher6/metacul/src/wandb")
+PRETRAIN_LOGS = Path("/path/to/workspace/pretrain/logs/slurm_logs")
+SFT_LOGS = Path("/path/to/metacul/logs/slurm_logs")
+LOCAL_WANDB = Path("/path/to/metacul/src/wandb")
 
 STEP_RE = re.compile(r"_step(\d+k)$")
 
@@ -182,7 +182,7 @@ def resolve_sft_run_path(repo_name: str) -> Optional[str]:
     run_paths = []
     for debug_log in sorted(LOCAL_WANDB.glob("run-*/logs/debug.log")):
         text = debug_log.read_text(errors="ignore")
-        if f"/scratch/amukher6/metacul/models/sft/{adapter_dir}" in text:
+        if f"/path/to/metacul/models/sft/{adapter_dir}" in text:
             run_id = debug_log.parents[1].name.rsplit("-", 1)[-1]
             run_paths.append(f"{OWNER}/huggingface/{run_id}")
     if run_paths:
@@ -569,7 +569,7 @@ def main() -> int:
     parser.add_argument("--skip-plots", action="store_true", default=False)
     parser.add_argument("--skip-cards", action="store_true", default=False)
     parser.add_argument("--dry-run", action="store_true", default=False)
-    parser.add_argument("--write-report", default="/scratch/amukher6/metacul/results/hf_collection_sync_report.json")
+    parser.add_argument("--write-report", default="/path/to/metacul/results/hf_collection_sync_report.json")
     args = parser.parse_args()
 
     token = os.environ.get("HF_TOKEN")

@@ -134,13 +134,13 @@ def main():
     login()
 
     # Your username on Hugging Face
-    HF_USERNAME = "iamshnoo"  # Replace with your HF username
+    HF_USERNAME = "YOUR_HF_USERNAME"  # Replace with your HF username
 
     # Base path where your datasets are stored
-    BASE_PATH = "/scratch/amukher6/metacul/training_data/meco_datasets"
+    BASE_PATH = "/path/to/metacul/training_data/meco_datasets"
 
     # Parse the splits file to get all dataset paths
-    splits_file = "/scratch/amukher6/metacul/src/8_meco_splits.txt"  # Update path as needed
+    splits_file = "/path/to/metacul/src/8_meco_splits.txt"  # Update path as needed
 
     def parse_splits_file(splits_file):
         """Parse meco_splits.txt to extract split configurations."""

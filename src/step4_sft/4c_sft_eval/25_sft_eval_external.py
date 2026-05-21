@@ -30,11 +30,11 @@ SYSTEM_PROMPT = (
     "Write a response that appropriately completes the request."
 )
 
-CHAT_TEMPLATE_PATH = "/scratch/amukher6/metacul/src/chat_template.jinja"
+CHAT_TEMPLATE_PATH = "/path/to/metacul/src/chat_template.jinja"
 
-DEFAULT_OUTPUT_DIR = "/scratch/amukher6/metacul/results/external_benchmarks"
+DEFAULT_OUTPUT_DIR = "/path/to/metacul/results/external_benchmarks"
 DEFAULT_BASE_URL = "www.globalfactcheck.org"
-DEFAULT_WVB_ROOT = "/scratch/amukher6/WorldValuesBench"
+DEFAULT_WVB_ROOT = "/path/to/WorldValuesBench"
 
 VARIANT_SPECS = {
     # Canonical custom variants (explicit train/eval metadata settings)
@@ -90,7 +90,7 @@ BENCHMARK_PRESETS = {
     # These benchmarks frequently appear under different dataset IDs/schemas.
     # Keep them configurable via CLI overrides.
     "geolmama": {
-        "dataset": "iamshnoo/geomlama",
+        "dataset": "YOUR_HF_USERNAME/geomlama",
         "split": "en",
         "question_field": "question",
         "choices_field": "candidate_answers",
@@ -99,7 +99,7 @@ BENCHMARK_PRESETS = {
     },
     # Alias for user typo convenience.
     "geomlama": {
-        "dataset": "iamshnoo/geomlama",
+        "dataset": "YOUR_HF_USERNAME/geomlama",
         "split": "en",
         "question_field": "question",
         "choices_field": "candidate_answers",
@@ -1251,7 +1251,7 @@ def build_model(
         if custom_metadata is None:
             raise ValueError("custom_metadata must be set for custom model.")
         name = "combined_with_metadata" if custom_metadata else "combined_without_metadata"
-        model_name = f"/scratch/amukher6/metacul/models/sft/{name}_chat"
+        model_name = f"/path/to/metacul/models/sft/{name}_chat"
     elif model_type == "llama3_chat":
         model_name = "meta-llama/Llama-3.2-1B-Instruct"
     else:

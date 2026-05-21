@@ -1,6 +1,6 @@
 # Plot 3: Global Model Scaling (500m vs 1b)
 
-- Source data: `/scratch/amukher6/metacul/results/perplexity_eval.csv`
+- Source data: `/path/to/metacul/results/perplexity_eval.csv`
 - Models: global (combined) models at 500m and 1b.
 - Test sets: Africa, America, Asia, Europe, and All (combined).
 - Single figure with both metadata conditions; two dumbbells per region.

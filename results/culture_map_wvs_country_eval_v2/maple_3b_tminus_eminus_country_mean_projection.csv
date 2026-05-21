@@ -1,0 +1,16 @@
+variant,label,model,train_metadata,eval_metadata,country,country_code,continent,RC1,RC2,Category
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,Bangladesh,bd,Asia,-1.6016549135642815,2.9086517149617572,African-Islamic
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,Canada,ca,America,-1.6016549135642815,2.9086517149617572,English-Speaking
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,Ghana,gh,Africa,-1.6016549135642815,2.9086517149617572,African-Islamic
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,Great Britain,gb,Europe,-1.6016549135642815,2.9086517149617572,English-Speaking
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,Hong Kong SAR,hk,Asia,-1.6016549135642815,2.9086517149617572,Confucian
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,India,in,Asia,-1.6016549135642815,2.9086517149617572,West & South Asia
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,Ireland,ie,Europe,-1.6016549135642815,2.9086517149617572,English-Speaking
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,Kenya,ke,Africa,-1.6016549135642815,2.9086517149617572,African-Islamic
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,Malaysia,my,Asia,-1.6016549135642815,2.9086517149617572,West & South Asia
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,Nigeria,ng,Africa,-1.6016549135642815,2.9086517149617572,African-Islamic
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,Pakistan,pk,Asia,-1.6016549135642815,2.9086517149617572,African-Islamic
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,Philippines,ph,Asia,-1.6016549135642815,2.9086517149617572,Latin America
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,Singapore,sg,Asia,-1.6016549135642815,2.9086517149617572,West & South Asia
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,South Africa,za,Africa,-1.6016549135642815,2.9086517149617572,African-Islamic
+maple_3b_tminus_eminus,"MAPLE 3B (T-, I-)",/path/to/metacul/models/combined_without_metadata_3b,False,False,United States,us,America,-1.6016549135642812,2.908651714961757,English-Speaking

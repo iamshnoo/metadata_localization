@@ -37,12 +37,12 @@
   },
   "per_cluster_ppl": null,
   "per_cluster_delta": null,
-  "dataset": "/scratch/amukher6/metacul/training_data/meco_datasets/combined/with_metadata/",
+  "dataset": "/path/to/metacul/training_data/meco_datasets/combined/with_metadata/",
   "split": "test",
   "seed": 42,
   "max_samples": 1000,
-  "model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
+  "model_path": "/path/to/metacul/models/combined_with_metadata_1b",
   "tokenizer_path": "meta-llama/Llama-3.2-1B",
-  "baseline_model_path": "/scratch/amukher6/metacul/models/combined_with_metadata_1b",
-  "per_sample_dir": "/scratch/amukher6/metacul/results/per_sample_losses"
+  "baseline_model_path": "/path/to/metacul/models/combined_with_metadata_1b",
+  "per_sample_dir": "/path/to/metacul/results/per_sample_losses"
 }

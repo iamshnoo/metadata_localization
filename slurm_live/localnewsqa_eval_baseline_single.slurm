@@ -2,13 +2,14 @@
 #SBATCH --job-name=lnqa-base
 #SBATCH --partition=contrib-gpuq
 #SBATCH --qos=cs_dept
-#SBATCH --gres=gpu:3g.40gb:1
+#SBATCH --gres=gpu:A100.80gb:1
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=48GB
 #SBATCH --time=1-00:00:00
-#SBATCH --output=/scratch/amukher6/logs/slurm_logs/lnqa_baseline.%j.out
-#SBATCH --error=/scratch/amukher6/logs/slurm_logs/lnqa_baseline.%j.err
+#SBATCH --requeue
+#SBATCH --output=/path/to/logs/slurm_logs/lnqa_baseline.%j.out
+#SBATCH --error=/path/to/logs/slurm_logs/lnqa_baseline.%j.err
 
 set -euo pipefail
 
@@ -16,12 +17,19 @@ set -euo pipefail
 : "${MODEL_SLUG:?MODEL_SLUG must be set}"
 : "${META_TAG:?META_TAG must be set (with_metadata|without_metadata)}"
 
-export XDG_CACHE_HOME=/scratch/amukher6/cache
-export PIP_CACHE_DIR=/scratch/amukher6/cache/pip
-export HF_HOME=/scratch/amukher6/cache/huggingface
-export HF_HUB_CACHE=/scratch/amukher6/cache/huggingface/hub
-export HF_DATASETS_CACHE=/scratch/amukher6/cache/huggingface/datasets
-export TRANSFORMERS_CACHE=/scratch/amukher6/cache/huggingface
+ENV_FILE=${ENV_FILE:-}
+if [[ -n "" && -f "" ]]; then
+  set -a
+  source ""
+  set +a
+fi
+
+export XDG_CACHE_HOME=/path/to/cache
+export PIP_CACHE_DIR=/path/to/cache/pip
+export HF_HOME=/path/to/cache/huggingface
+export HF_HUB_CACHE=/path/to/cache/huggingface/hub
+export HF_DATASETS_CACHE=/path/to/cache/huggingface/datasets
+export TRANSFORMERS_CACHE=/path/to/cache/huggingface
 export TOKENIZERS_PARALLELISM=${TOKENIZERS_PARALLELISM:-false}
 export HF_ENABLE_PARALLEL_LOADING=${HF_ENABLE_PARALLEL_LOADING:-false}
 mkdir -p \
@@ -32,12 +40,12 @@ mkdir -p \
   "$HF_DATASETS_CACHE" \
   "$TRANSFORMERS_CACHE"
 
-PYTHON=/home/amukher6/nanotron-env/bin/python
-SCRIPT=/scratch/amukher6/metacul/src/14_sft_eval.py
-DATASET=${DATASET:-iamshnoo/LocalNewsQA}
+PYTHON=${PYTHON:-/path/to/nanotron-env/bin/python}
+SCRIPT=/path/to/metacul/src/14_sft_eval.py
+DATASET=${DATASET:-YOUR_HF_USERNAME/LocalNewsQA}
 SPLIT=${SPLIT:-train}
 LOCALE_ROLE=${LOCALE_ROLE:-target}
-OUT_DIR=${OUT_DIR:-/scratch/amukher6/metacul/results/downstream_localnewsqa_external_baselines}
+OUT_DIR=${OUT_DIR:-/path/to/metacul/results/downstream_localnewsqa_external_baselines}
 BATCH_SIZE=${BATCH_SIZE:-2}
 RUN_TAG=${RUN_TAG:-}
 SHUFFLE_OPTIONS=${SHUFFLE_OPTIONS:-0}
@@ -45,6 +53,7 @@ OPTION_SHUFFLE_SEED=${OPTION_SHUFFLE_SEED:-42}
 MCQ_SCORING=${MCQ_SCORING:-option_text_avg}
 ANSWER_FORMAT=${ANSWER_FORMAT:-option}
 LOCALIZE_MODEL=${LOCALIZE_MODEL:-0}
+SPLIT_TYPE_FILTER=${SPLIT_TYPE_FILTER:-all}
 mkdir -p "$OUT_DIR"
 
 OUT_JSONL="$OUT_DIR/localnewsqa_${MODEL_SLUG}_${META_TAG}_${LOCALE_ROLE}.jsonl"
@@ -104,6 +113,7 @@ CMD=(
   --dataset "$DATASET"
   --split "$SPLIT"
   --locale-role "$LOCALE_ROLE"
+  --split-type-filter "$SPLIT_TYPE_FILTER"
   --base-url "www.globalfactcheck.org"
   --output-jsonl "$OUT_JSONL"
   --url-corruption-rate 0
@@ -123,6 +133,8 @@ fi
 if [[ "$META_TAG" == "with_metadata" ]]; then
   CMD+=(--metadata)
 fi
+
+CMD+=(--resume)
 
 echo "Running: ${CMD[*]}"
 "${CMD[@]}"

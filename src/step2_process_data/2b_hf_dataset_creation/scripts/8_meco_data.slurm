@@ -4,8 +4,8 @@
 #SBATCH --mem=40G
 #SBATCH --time=0-06:00:00
 #SBATCH --array=1-13%13
-#SBATCH --output=/scratch/amukher6/logs/culture/out/meco_datasets_%A_%a.out.txt
-#SBATCH --error=/scratch/amukher6/logs/culture/err/meco_datasets_%A_%a.err.txt
+#SBATCH --output=/path/to/logs/culture/out/meco_datasets_%A_%a.out.txt
+#SBATCH --error=/path/to/logs/culture/err/meco_datasets_%A_%a.err.txt
 
 # MECO dataset creation using job arrays
 echo "Job Array ID: $SLURM_ARRAY_JOB_ID"
@@ -46,7 +46,7 @@ if [ "$SPLIT_TYPE" = "continents" ]; then
         "europe") HF_DIR_NAME="europe" ;;
         *) HF_DIR_NAME="$SPLIT_NAME" ;;
     esac
-    INPUT_PATH="/scratch/amukher6/metacul/training_data/hf_datasets/continents/$HF_DIR_NAME"
+    INPUT_PATH="/path/to/metacul/training_data/hf_datasets/continents/$HF_DIR_NAME"
 
     # If lowercase doesn't exist, try capitalized (fallback)
     if [ ! -d "$INPUT_PATH" ]; then
@@ -57,12 +57,12 @@ if [ "$SPLIT_TYPE" = "continents" ]; then
             "europe") HF_DIR_NAME="Europe" ;;
             *) HF_DIR_NAME="$SPLIT_NAME" ;;
         esac
-        INPUT_PATH="/scratch/amukher6/metacul/training_data/hf_datasets/continents/$HF_DIR_NAME"
+        INPUT_PATH="/path/to/metacul/training_data/hf_datasets/continents/$HF_DIR_NAME"
     fi
 elif [ "$SPLIT_TYPE" = "novel-concept" ]; then
-    INPUT_PATH="/scratch/amukher6/metacul/training_data/hf_datasets/novel_concept/$SPLIT_NAME"
+    INPUT_PATH="/path/to/metacul/training_data/hf_datasets/novel_concept/$SPLIT_NAME"
 elif [ "$SPLIT_TYPE" = "concept-change" ]; then
-    INPUT_PATH="/scratch/amukher6/metacul/training_data/hf_datasets/concept_change/$SPLIT_NAME"
+    INPUT_PATH="/path/to/metacul/training_data/hf_datasets/concept_change/$SPLIT_NAME"
 fi
 
 if [ ! -d "$INPUT_PATH" ]; then
@@ -72,7 +72,7 @@ if [ ! -d "$INPUT_PATH" ]; then
 fi
 
 # Check if MECO datasets already exist
-OUTPUT_PATH="/scratch/amukher6/metacul/training_data/meco_datasets"
+OUTPUT_PATH="/path/to/metacul/training_data/meco_datasets"
 if [ "$SPLIT_TYPE" = "continents" ]; then
     # Python script creates lowercase output directories
     MECO_PATH="$OUTPUT_PATH/continents/$SPLIT_NAME"
@@ -143,11 +143,11 @@ except Exception as e:
 else
     echo "✗ Output directory not found: $MECO_PATH"
     echo "Checking what was actually created:"
-    ls -la "/scratch/amukher6/metacul/training_data/meco_datasets/continents/" 2>/dev/null || echo "No continents directory found"
+    ls -la "/path/to/metacul/training_data/meco_datasets/continents/" 2>/dev/null || echo "No continents directory found"
 fi
 
 # Log completion
-COMPLETION_LOG="/scratch/amukher6/metacul/logs/meco_datasets_completion.log"
+COMPLETION_LOG="/path/to/metacul/logs/meco_datasets_completion.log"
 echo "$(date): $SLURM_ARRAY_JOB_ID-$SLURM_ARRAY_TASK_ID: $SPLIT_TYPE/$SPLIT_NAME: EXIT_CODE=$EXIT_CODE" >> "$COMPLETION_LOG"
 
 exit $EXIT_CODE

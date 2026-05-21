@@ -1,0 +1,7 @@
+config,seed,benchmark,metric,plus_rows,minus_rows,plus_value,minus_value,req1_satisfied
+name_grounded_qanswer_countryfinal_qmask05_bos,seed_41,geomlama,accuracy,150,150,34.66666666666667,41.333333333333336,False
+name_plain_qanswer_countryfinal_qmask05_bos,seed_41,geomlama,accuracy,150,150,41.333333333333336,41.333333333333336,False
+name_plain_qanswer_countryfinal_qmask05_bos,seed_41,globalopinionqa,accuracy,10275,10275,22.121654501216543,21.35279805352798,True
+name_plain_qanswer_countryfinal_qmask05_bos,seed_41,mmlu,accuracy,12413,12991,25.610247321356646,25.725502270802863,False
+name_plain_qanswer_countryfinal_qmask05_bos,seed_41,worldvaluebench,accuracy,1405,1405,20.640569395017792,21.352313167259787,True
+name_strict_qanswer_countryfinal_qmask05_bos,seed_41,geomlama,accuracy,150,150,36.0,41.333333333333336,False

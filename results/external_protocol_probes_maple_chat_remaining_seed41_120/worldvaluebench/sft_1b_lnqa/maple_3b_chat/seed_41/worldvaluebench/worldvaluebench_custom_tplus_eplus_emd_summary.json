@@ -1,0 +1,6 @@
+{
+  "overall_emd": 0.25000000000000006,
+  "groups": 33,
+  "scored_rows": 120,
+  "jsonl_path": "results/external_protocol_probes_maple_chat_remaining_seed41_120/worldvaluebench/sft_1b_lnqa/maple_3b_chat/seed_41/worldvaluebench/worldvaluebench_custom_tplus_eplus.jsonl"
+}

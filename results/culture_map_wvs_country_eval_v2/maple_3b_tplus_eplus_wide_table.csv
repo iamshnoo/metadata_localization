@@ -1,0 +1,151 @@
+country,#variant,a008,a165,e018,e025,f063,f118,f120,g006,y002,y003,country_code,continent
+Bangladesh,variant 0,4,2,2,3,1,1,1,4,2,-1,bd,Asia
+Bangladesh,variant 1,4,2,2,3,1,1,1,4,2,-1,bd,Asia
+Bangladesh,variant 2,4,2,2,3,1,1,1,4,2,-1,bd,Asia
+Bangladesh,variant 3,4,2,2,3,1,1,1,4,2,-1,bd,Asia
+Bangladesh,variant 4,4,2,2,3,1,1,1,4,2,-1,bd,Asia
+Bangladesh,variant 5,4,2,2,3,1,1,1,4,2,-1,bd,Asia
+Bangladesh,variant 6,4,2,2,3,1,1,1,4,2,-1,bd,Asia
+Bangladesh,variant 7,4,2,2,3,1,1,1,4,2,-1,bd,Asia
+Bangladesh,variant 8,4,2,2,3,1,1,1,4,2,-1,bd,Asia
+Bangladesh,variant 9,4,2,2,3,1,1,1,4,2,-1,bd,Asia
+Canada,variant 0,4,2,2,3,1,1,1,4,2,-1,ca,America
+Canada,variant 1,4,2,2,3,1,1,1,4,2,-1,ca,America
+Canada,variant 2,4,2,2,3,1,1,1,4,2,-1,ca,America
+Canada,variant 3,4,2,2,3,1,1,1,4,2,-1,ca,America
+Canada,variant 4,4,2,2,3,1,1,1,4,2,-1,ca,America
+Canada,variant 5,4,2,2,3,1,1,1,4,2,-1,ca,America
+Canada,variant 6,4,2,2,3,1,1,1,4,2,-1,ca,America
+Canada,variant 7,4,2,2,3,1,1,1,4,2,-1,ca,America
+Canada,variant 8,4,2,2,3,1,1,1,4,2,-1,ca,America
+Canada,variant 9,4,2,2,3,1,1,1,4,2,-1,ca,America
+Ghana,variant 0,4,2,2,1,1,1,1,4,2,-1,gh,Africa
+Ghana,variant 1,4,2,2,1,1,1,1,4,2,-1,gh,Africa
+Ghana,variant 2,4,2,2,1,1,1,1,4,2,-1,gh,Africa
+Ghana,variant 3,4,2,2,1,1,1,1,4,2,-1,gh,Africa
+Ghana,variant 4,4,2,2,1,1,1,1,4,2,-1,gh,Africa
+Ghana,variant 5,4,2,2,1,1,1,1,4,2,-1,gh,Africa
+Ghana,variant 6,4,2,2,3,1,1,1,4,2,-1,gh,Africa
+Ghana,variant 7,4,2,2,1,1,1,1,4,2,-1,gh,Africa
+Ghana,variant 8,4,2,2,3,1,1,1,4,2,-1,gh,Africa
+Ghana,variant 9,4,2,2,1,1,1,1,4,2,-1,gh,Africa
+Great Britain,variant 0,4,2,2,1,1,1,1,4,2,-1,gb,Europe
+Great Britain,variant 1,4,2,2,1,1,1,1,4,2,-1,gb,Europe
+Great Britain,variant 2,4,2,2,1,1,1,1,4,2,-1,gb,Europe
+Great Britain,variant 3,4,2,2,1,1,1,1,4,2,-1,gb,Europe
+Great Britain,variant 4,4,2,2,1,1,1,1,4,2,-1,gb,Europe
+Great Britain,variant 5,4,2,2,1,1,1,1,4,2,-1,gb,Europe
+Great Britain,variant 6,4,2,2,1,1,1,1,4,2,-1,gb,Europe
+Great Britain,variant 7,4,2,2,1,1,1,1,4,2,-1,gb,Europe
+Great Britain,variant 8,4,2,2,1,1,1,1,4,2,-1,gb,Europe
+Great Britain,variant 9,4,2,2,1,1,1,1,4,2,-1,gb,Europe
+Hong Kong SAR,variant 0,4,2,2,3,1,1,1,4,2,-1,hk,Asia
+Hong Kong SAR,variant 1,4,2,2,1,1,1,1,4,2,-1,hk,Asia
+Hong Kong SAR,variant 2,4,2,2,1,1,1,1,4,2,-1,hk,Asia
+Hong Kong SAR,variant 3,4,2,2,3,1,1,1,4,2,-1,hk,Asia
+Hong Kong SAR,variant 4,4,2,2,3,1,1,1,4,2,-1,hk,Asia
+Hong Kong SAR,variant 5,4,2,2,1,1,1,1,4,2,-1,hk,Asia
+Hong Kong SAR,variant 6,4,2,2,3,1,1,1,4,2,-1,hk,Asia
+Hong Kong SAR,variant 7,4,2,2,3,1,1,1,4,2,-1,hk,Asia
+Hong Kong SAR,variant 8,4,2,2,3,1,1,1,4,2,-1,hk,Asia
+Hong Kong SAR,variant 9,4,2,2,1,1,1,1,4,2,-1,hk,Asia
+India,variant 0,4,2,2,3,1,1,1,4,2,-1,in,Asia
+India,variant 1,4,2,2,3,1,1,1,4,2,-1,in,Asia
+India,variant 2,4,2,2,3,1,1,1,4,2,-1,in,Asia
+India,variant 3,4,2,2,3,1,1,1,4,2,-1,in,Asia
+India,variant 4,4,2,2,3,1,1,1,4,2,-1,in,Asia
+India,variant 5,4,2,2,3,1,1,1,4,2,-1,in,Asia
+India,variant 6,4,2,2,3,1,1,1,4,2,-1,in,Asia
+India,variant 7,4,2,2,3,1,1,1,4,2,-1,in,Asia
+India,variant 8,4,2,2,3,1,1,1,4,2,-1,in,Asia
+India,variant 9,4,2,2,3,1,1,1,4,2,-1,in,Asia
+Ireland,variant 0,4,2,2,1,1,1,1,4,2,-1,ie,Europe
+Ireland,variant 1,4,2,2,1,1,1,1,4,2,-1,ie,Europe
+Ireland,variant 2,4,2,2,1,1,1,1,4,2,-1,ie,Europe
+Ireland,variant 3,4,2,2,1,1,1,1,4,2,-1,ie,Europe
+Ireland,variant 4,4,2,2,1,1,1,1,4,2,-1,ie,Europe
+Ireland,variant 5,4,2,2,3,1,1,1,4,2,-1,ie,Europe
+Ireland,variant 6,4,2,2,3,1,1,1,4,2,-1,ie,Europe
+Ireland,variant 7,4,2,2,3,1,1,1,4,2,-1,ie,Europe
+Ireland,variant 8,4,2,2,3,1,1,1,4,2,-1,ie,Europe
+Ireland,variant 9,4,2,2,1,1,1,1,4,2,-1,ie,Europe
+Kenya,variant 0,4,2,2,1,1,1,1,4,2,-1,ke,Africa
+Kenya,variant 1,4,2,2,1,1,1,1,4,2,-1,ke,Africa
+Kenya,variant 2,4,2,2,1,1,1,1,4,2,-1,ke,Africa
+Kenya,variant 3,4,2,2,3,1,1,1,4,2,-1,ke,Africa
+Kenya,variant 4,4,2,2,1,1,1,1,4,2,-1,ke,Africa
+Kenya,variant 5,4,2,2,3,1,1,1,4,2,-1,ke,Africa
+Kenya,variant 6,4,2,2,3,1,1,1,4,2,-1,ke,Africa
+Kenya,variant 7,4,2,2,1,1,1,1,4,2,-1,ke,Africa
+Kenya,variant 8,4,2,2,3,1,1,1,4,2,-1,ke,Africa
+Kenya,variant 9,4,2,2,3,1,1,1,4,2,-1,ke,Africa
+Malaysia,variant 0,4,2,2,1,1,1,1,4,2,-1,my,Asia
+Malaysia,variant 1,4,2,2,1,1,1,1,4,2,-1,my,Asia
+Malaysia,variant 2,4,2,2,1,1,1,1,4,2,-1,my,Asia
+Malaysia,variant 3,4,2,2,1,1,1,1,4,2,-1,my,Asia
+Malaysia,variant 4,4,2,2,1,1,1,1,4,2,-1,my,Asia
+Malaysia,variant 5,4,2,2,1,1,1,1,4,2,-1,my,Asia
+Malaysia,variant 6,4,2,2,1,1,1,1,4,2,-1,my,Asia
+Malaysia,variant 7,4,2,2,1,1,1,1,4,2,-1,my,Asia
+Malaysia,variant 8,4,2,2,1,1,1,1,4,2,-1,my,Asia
+Malaysia,variant 9,4,2,2,1,1,1,1,4,2,-1,my,Asia
+Nigeria,variant 0,4,2,2,1,1,1,1,4,2,-1,ng,Africa
+Nigeria,variant 1,4,2,2,1,1,1,1,4,2,-1,ng,Africa
+Nigeria,variant 2,4,2,2,1,1,1,1,4,2,-1,ng,Africa
+Nigeria,variant 3,4,2,2,1,1,1,1,4,2,-1,ng,Africa
+Nigeria,variant 4,4,2,2,1,1,1,1,4,2,-1,ng,Africa
+Nigeria,variant 5,4,2,2,1,1,1,1,4,2,-1,ng,Africa
+Nigeria,variant 6,4,2,2,1,1,1,1,4,2,-1,ng,Africa
+Nigeria,variant 7,4,2,2,1,1,1,1,4,2,-1,ng,Africa
+Nigeria,variant 8,4,2,2,3,1,1,1,4,2,-1,ng,Africa
+Nigeria,variant 9,4,2,2,1,1,1,1,4,2,-1,ng,Africa
+Pakistan,variant 0,4,2,2,3,1,1,1,4,2,-1,pk,Asia
+Pakistan,variant 1,4,2,2,3,1,1,1,4,2,-1,pk,Asia
+Pakistan,variant 2,4,2,2,3,1,1,1,4,2,-1,pk,Asia
+Pakistan,variant 3,4,2,2,3,1,1,1,4,2,-1,pk,Asia
+Pakistan,variant 4,4,2,2,3,1,1,1,4,2,-1,pk,Asia
+Pakistan,variant 5,4,2,2,3,1,1,1,4,2,-1,pk,Asia
+Pakistan,variant 6,4,2,2,3,1,1,1,4,2,-1,pk,Asia
+Pakistan,variant 7,4,2,2,3,1,1,1,4,2,-1,pk,Asia
+Pakistan,variant 8,4,2,2,3,1,1,1,4,2,-1,pk,Asia
+Pakistan,variant 9,4,2,2,3,1,1,1,4,2,-1,pk,Asia
+Philippines,variant 0,4,2,2,3,1,1,1,4,2,-1,ph,Asia
+Philippines,variant 1,4,2,2,3,1,1,1,4,2,-1,ph,Asia
+Philippines,variant 2,4,2,2,3,1,1,1,4,2,-1,ph,Asia
+Philippines,variant 3,4,2,2,3,1,1,1,4,2,-1,ph,Asia
+Philippines,variant 4,4,2,2,3,1,1,1,4,2,-1,ph,Asia
+Philippines,variant 5,4,2,2,3,1,1,1,4,2,-1,ph,Asia
+Philippines,variant 6,4,2,2,3,1,1,1,4,2,-1,ph,Asia
+Philippines,variant 7,4,2,2,3,1,1,1,4,2,-1,ph,Asia
+Philippines,variant 8,4,2,2,3,1,1,1,4,2,-1,ph,Asia
+Philippines,variant 9,4,2,2,3,1,1,1,4,2,-1,ph,Asia
+Singapore,variant 0,4,2,2,1,1,1,1,4,2,-1,sg,Asia
+Singapore,variant 1,4,2,2,1,1,1,1,4,2,-1,sg,Asia
+Singapore,variant 2,4,2,2,1,1,1,1,4,2,-1,sg,Asia
+Singapore,variant 3,4,2,2,1,1,1,1,4,2,-1,sg,Asia
+Singapore,variant 4,4,2,2,1,1,1,1,4,2,-1,sg,Asia
+Singapore,variant 5,4,2,2,1,1,1,1,4,2,-1,sg,Asia
+Singapore,variant 6,4,2,2,1,1,1,1,4,2,-1,sg,Asia
+Singapore,variant 7,4,2,2,1,1,1,1,4,2,-1,sg,Asia
+Singapore,variant 8,4,2,2,1,1,1,1,4,2,-1,sg,Asia
+Singapore,variant 9,4,2,2,1,1,1,1,4,2,-1,sg,Asia
+South Africa,variant 0,4,2,2,3,1,1,1,4,2,-1,za,Africa
+South Africa,variant 1,4,2,2,3,1,1,1,4,2,-1,za,Africa
+South Africa,variant 2,4,2,2,3,1,1,1,4,2,-1,za,Africa
+South Africa,variant 3,4,2,2,3,1,1,1,4,2,-1,za,Africa
+South Africa,variant 4,4,2,2,1,1,1,1,4,2,-1,za,Africa
+South Africa,variant 5,4,2,2,3,1,1,1,4,2,-1,za,Africa
+South Africa,variant 6,4,2,2,3,1,1,1,4,2,-1,za,Africa
+South Africa,variant 7,4,2,2,3,1,1,1,4,2,-1,za,Africa
+South Africa,variant 8,4,2,2,3,1,1,1,4,2,-1,za,Africa
+South Africa,variant 9,4,2,2,3,1,1,1,4,2,-1,za,Africa
+United States,variant 0,4,2,2,3,1,1,1,4,2,-1,us,America
+United States,variant 1,4,2,2,3,1,1,1,4,2,-1,us,America
+United States,variant 2,4,2,2,3,1,1,1,4,2,-1,us,America
+United States,variant 3,4,2,2,3,1,1,1,4,2,-1,us,America
+United States,variant 4,4,2,2,3,1,1,1,4,2,-1,us,America
+United States,variant 5,4,2,2,3,1,1,1,4,2,-1,us,America
+United States,variant 6,4,2,2,3,1,1,1,4,2,-1,us,America
+United States,variant 7,4,2,2,3,1,1,1,4,2,-1,us,America
+United States,variant 8,4,2,2,3,1,1,1,4,2,-1,us,America
+United States,variant 9,4,2,2,3,1,1,1,4,2,-1,us,America

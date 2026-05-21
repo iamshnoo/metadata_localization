@@ -1,0 +1,19 @@
+{
+  "variant": "country_step8k",
+  "model_path": "/path/to/metacul/models/ablation_intermediates/metadata/combined_only_country_with_metadata_1b_step8k",
+  "prompt_kind": "country",
+  "sample_per_continent": 250,
+  "total_examples": 1000,
+  "continent_probe": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "train_size": 800,
+    "test_size": 200
+  },
+  "country_probe": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "train_size": 800,
+    "test_size": 200
+  }
+}

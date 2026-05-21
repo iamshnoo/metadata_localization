@@ -3,7 +3,7 @@ from collections import defaultdict
 import re
 from tqdm import tqdm
 
-base = "/scratch/amukher6/metacul/training_data/meco_datasets/continents/europe/with_metadata"
+base = "/path/to/metacul/training_data/meco_datasets/continents/europe/with_metadata"
 splits = ["train", "validation", "test"]
 
 def parse_meta(text):
@@ -32,5 +32,5 @@ print(results)
 
 # save results to a file
 import json
-with open("/scratch/amukher6/metacul/results/dataset_stats/europe_stats.json", "w") as f:
+with open("/path/to/metacul/results/dataset_stats/europe_stats.json", "w") as f:
     json.dump(results, f, indent=2)

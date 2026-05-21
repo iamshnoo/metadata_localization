@@ -8,15 +8,22 @@ import os
 import random
 import re
 import difflib
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
 
 import numpy as np
+import pycountry
 import torch
 from datasets import Dataset, get_dataset_config_names, load_dataset
+from pycountry_convert import country_alpha2_to_continent_code
 from tqdm import tqdm
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import (
+    AutoConfig,
+    AutoModelForCausalLM,
+    AutoModelForImageTextToText,
+    AutoTokenizer,
+)
 
 
 SEED = 42
@@ -31,11 +38,57 @@ SYSTEM_PROMPT = (
     "Write a response that appropriately completes the request."
 )
 
-CHAT_TEMPLATE_PATH = "/scratch/amukher6/metacul/src/chat_template.jinja"
+CHAT_TEMPLATE_PATH = "/path/to/metacul/src/chat_template.jinja"
+DEFAULT_ENV_PATH = ""
 
-DEFAULT_OUTPUT_DIR = "/scratch/amukher6/metacul/results/external_benchmarks"
+
+def load_default_chat_template() -> Optional[str]:
+    path = Path(CHAT_TEMPLATE_PATH)
+    if not path.exists():
+        return None
+    return path.read_text(encoding="utf-8")
+
+
+def load_tokenizer_robust(model_name: str, hf_kwargs: Dict[str, object]):
+    attempts = [
+        {"fix_mistral_regex": True},
+        {},
+        {"fix_mistral_regex": True, "use_fast": False},
+        {"use_fast": False},
+    ]
+    last_exc: Optional[Exception] = None
+    for extra in attempts:
+        kwargs = dict(hf_kwargs)
+        kwargs.update(extra)
+        try:
+            return AutoTokenizer.from_pretrained(model_name, **kwargs)
+        except TypeError as exc:
+            last_exc = exc
+            if "fix_mistral_regex" not in extra:
+                break
+        except Exception as exc:
+            last_exc = exc
+    if last_exc is None:
+        raise RuntimeError(f"Failed to load tokenizer for {model_name}")
+    raise last_exc
+
+
+def custom_model_uses_chat_prompt(path: str) -> bool:
+    norm = os.path.normpath(path)
+    base = os.path.basename(norm)
+    return base.endswith("_chat") or f"{os.sep}models{os.sep}sft{os.sep}" in norm
+
+DEFAULT_OUTPUT_DIR = "/path/to/metacul/results/external_benchmarks"
 DEFAULT_BASE_URL = "www.globalfactcheck.org"
-DEFAULT_WVB_ROOT = "/scratch/amukher6/WorldValuesBench"
+DEFAULT_WVB_ROOT = "/path/to/WorldValuesBench"
+DEFAULT_CUSTOM_TOKENIZER_PATH = "meta-llama/Llama-3.2-1B"
+TOKENIZER_FILE_NAMES = (
+    "tokenizer.json",
+    "tokenizer.model",
+    "vocab.json",
+    "merges.txt",
+    "special_tokens_map.json",
+)
 
 VARIANT_SPECS = {
     # Canonical custom variants (explicit train/eval metadata settings)
@@ -82,16 +135,54 @@ BENCHMARK_PRESETS = {
     # Works out of the box.
     "mmlu": {
         "dataset": "cais/mmlu",
+        "dataset_config": None,
         "split": "test",
         "question_field": "question",
         "choices_field": "choices",
         "answer_field": "answer",
         "answer_format": "index",
     },
+    "blend": {
+        "dataset": "nayeon212/BLEnD",
+        "dataset_config": "multiple-choice-questions",
+        "split": "test",
+        "question_field": "prompt",
+        "choices_field": "choices",
+        "answer_field": "answer_idx",
+        "answer_format": "letter",
+    },
+    "globalmmlu": {
+        "dataset": "CohereLabs/Global-MMLU",
+        "dataset_config": "en",
+        "split": "test",
+        "question_field": "question",
+        "choices_field": "choices",
+        "answer_field": "answer",
+        "answer_format": "letter",
+    },
+    "globalmmlu_cs": {
+        "dataset": "CohereLabs/Global-MMLU",
+        "dataset_config": "en",
+        "split": "test",
+        "question_field": "question",
+        "choices_field": "choices",
+        "answer_field": "answer",
+        "answer_format": "letter",
+    },
+    "normad": {
+        "dataset": "akhilayerukola/NormAd",
+        "dataset_config": None,
+        "split": "train",
+        "question_field": "Story",
+        "choices_field": "choices",
+        "answer_field": "Gold Label",
+        "answer_format": "text",
+    },
     # These benchmarks frequently appear under different dataset IDs/schemas.
     # Keep them configurable via CLI overrides.
     "geolmama": {
-        "dataset": "iamshnoo/geomlama",
+        "dataset": "YOUR_HF_USERNAME/geomlama",
+        "dataset_config": None,
         "split": "en",
         "question_field": "question",
         "choices_field": "candidate_answers",
@@ -100,7 +191,8 @@ BENCHMARK_PRESETS = {
     },
     # Alias for user typo convenience.
     "geomlama": {
-        "dataset": "iamshnoo/geomlama",
+        "dataset": "YOUR_HF_USERNAME/geomlama",
+        "dataset_config": None,
         "split": "en",
         "question_field": "question",
         "choices_field": "candidate_answers",
@@ -109,6 +201,7 @@ BENCHMARK_PRESETS = {
     },
     "globalopinionqa": {
         "dataset": "Anthropic/llm_global_opinions",
+        "dataset_config": None,
         "split": "train",
         "question_field": "question",
         "choices_field": "options",
@@ -117,6 +210,7 @@ BENCHMARK_PRESETS = {
     },
     "worldvaluebench": {
         "dataset": None,
+        "dataset_config": None,
         "split": "probe",
         "question_field": "question",
         "choices_field": "choices",
@@ -220,6 +314,40 @@ CODE_TO_COUNTRY_NAME = {
     "tz": "Tanzania",
     "gb": "United Kingdom",
     "ie": "Ireland",
+}
+
+COUNTRY_NAME_ALIASES = {
+    "uk": "United Kingdom",
+    "u k": "United Kingdom",
+    "united kingdom": "United Kingdom",
+    "great britain": "United Kingdom",
+    "britain": "United Kingdom",
+    "northern ireland": "United Kingdom",
+    "us": "United States",
+    "u s": "United States",
+    "u s a": "United States",
+    "usa": "United States",
+    "united states of america": "United States",
+    "united states of america usa": "United States",
+    "north korea": "North Korea",
+    "north_korea": "North Korea",
+    "south korea": "South Korea",
+    "south_korea": "South Korea",
+    "northern nigeria": "Nigeria",
+    "northern_nigeria": "Nigeria",
+    "west java": "Indonesia",
+    "west_java": "Indonesia",
+    "assam": "India",
+    "hong kong sar": "Hong Kong",
+}
+
+CONTINENT_CODE_TO_NAME = {
+    "AF": "Africa",
+    "AS": "Asia",
+    "EU": "Europe",
+    "NA": "America",
+    "SA": "America",
+    "OC": "Oceania",
 }
 
 GLOBALOPINIONQA_COUNTRY_ALIASES = {
@@ -358,13 +486,95 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--metadata-tag-mode",
         default="correct",
-        choices=["correct", "shuffled", "adversarial"],
+        choices=["correct", "available_only", "shuffled", "adversarial"],
         help=(
             "How to assign metadata tags when eval metadata is enabled. "
             "'correct' uses dataset tags/mapping, "
+            "'available_only' uses dataset tags/mapping when available but does not synthesize a full pair "
+            "when the benchmark row has no geo metadata, "
             "'shuffled' rotates tags across examples, "
             "'adversarial' forces a different continent/country when possible."
         ),
+    )
+    parser.add_argument(
+        "--metadata-prompt-style",
+        default="legacy_code",
+        choices=[
+            "legacy_code",
+            "name_plain",
+            "name_grounded",
+            "code_grounded",
+            "code_disambiguate",
+            "name_strict",
+            "code_grounded_strict",
+            "country_first_strict",
+        ],
+        help="Formatting style for eval-time locale metadata prompts.",
+    )
+    parser.add_argument(
+        "--qa-prompt-style",
+        default="question",
+        choices=["question", "instruction", "instruction_input", "question_answer"],
+        help="QA prompt wrapper style.",
+    )
+    parser.add_argument(
+        "--answer-cue-style",
+        default="none",
+        choices=[
+            "none",
+            "answer_colon",
+            "answer_newline",
+            "final_answer_colon",
+            "the_correct_answer_is",
+            "country_answer_colon",
+            "country_final_answer_colon",
+            "country_the_correct_answer_is",
+        ],
+        help="Answer cue appended after the options block.",
+    )
+    parser.add_argument(
+        "--omit-option-labels",
+        action="store_true",
+        help="Render options as bullets instead of A/B/C/D labels.",
+    )
+    parser.add_argument(
+        "--exact-option-text-instruction",
+        action="store_true",
+        help="Use exact-option-text answer instruction when labels are shown.",
+    )
+    parser.add_argument(
+        "--mcq-scoring",
+        default="option_text_avg",
+        choices=["option_text_avg", "option_text_sum", "option_letter"],
+        help="How to score MCQ candidates under log-likelihood.",
+    )
+    parser.add_argument(
+        "--length-norm-alpha",
+        type=float,
+        default=None,
+        help="If set, score candidates with sum(log p) / len(tokens)^alpha.",
+    )
+    parser.add_argument(
+        "--add-prompt-bos",
+        action="store_true",
+        help="Force BOS before prompt scoring when tokenizer supports it.",
+    )
+    parser.add_argument(
+        "--null-calibration-mode",
+        default="none",
+        choices=["none", "question_masked", "question_masked_no_metadata"],
+        help="Optional null calibration prompt used for score subtraction.",
+    )
+    parser.add_argument(
+        "--null-calibration-beta",
+        type=float,
+        default=0.0,
+        help="Scale factor for null-calibration subtraction.",
+    )
+    parser.add_argument(
+        "--null-question-text",
+        default="[MASKED QUESTION]",
+        help="Replacement text for the question in null-calibration prompts.",
     )
     parser.add_argument("--output-dir", default=DEFAULT_OUTPUT_DIR)
     parser.add_argument(
@@ -378,6 +588,15 @@ def parse_args() -> argparse.Namespace:
         help="Optional local model path override for custom T- model.",
     )
     parser.add_argument(
+        "--custom-tokenizer-path",
+        default=DEFAULT_CUSTOM_TOKENIZER_PATH,
+        help=(
+            "Fallback tokenizer path for custom MAPLE checkpoints whose local "
+            "directories contain only weights/config. Used only when the model "
+            "directory has no tokenizer files."
+        ),
+    )
+    parser.add_argument(
         "--llama-model-name",
         default="meta-llama/Llama-3.2-1B-Instruct",
         help="Model path/repo for llama3_chat variants.",
@@ -386,6 +605,11 @@ def parse_args() -> argparse.Namespace:
         "--disable-custom-chat-template",
         action="store_true",
         help="Do not force-load chat_template.jinja for custom models.",
+    )
+    parser.add_argument(
+        "--force-custom-chat-prompt",
+        action="store_true",
+        help="Force custom models to use the chat-style prompt wrapper even for raw base checkpoints.",
     )
     parser.add_argument(
         "--worldvaluesbench-root",
@@ -397,6 +621,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Load/standardize dataset and print counts without running models.",
     )
+    parser.add_argument(
+        "--resume",
+        action="store_true",
+        help="Resume from an existing variant JSONL when present instead of overwriting it.",
+    )
     return parser.parse_args()
 
 
@@ -405,6 +634,22 @@ def get_hf_token() -> Optional[str]:
         token = os.getenv(key)
         if token and token.strip():
             return token.strip()
+    env_path = Path(DEFAULT_ENV_PATH)
+    if env_path.exists():
+        for raw_line in env_path.read_text(encoding="utf-8").splitlines():
+            line = raw_line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, value = line.split("=", 1)
+            key = key.strip()
+            if key not in {"HF_TOKEN", "HUGGINGFACE_HUB_TOKEN", "HUGGINGFACE_TOKEN"}:
+                continue
+            value = value.strip()
+            if value and value[0] in {"'", '"'} and value[-1] == value[0]:
+                value = value[1:-1]
+            if value:
+                os.environ["HF_TOKEN"] = value
+                return value
     return None
 
 
@@ -426,6 +671,11 @@ def resolve_benchmark_spec(args: argparse.Namespace) -> Dict[str, str]:
     preset = BENCHMARK_PRESETS[args.benchmark].copy()
     spec = {
         "dataset": args.dataset if args.dataset is not None else preset["dataset"],
+        "dataset_config": (
+            args.dataset_config
+            if args.dataset_config is not None
+            else preset.get("dataset_config")
+        ),
         "split": args.split if args.split is not None else preset["split"],
         "question_field": (
             args.question_field
@@ -469,6 +719,18 @@ def _to_options(raw) -> List[str]:
     if isinstance(raw, str):
         # Attempt JSON parse if choices are stringified.
         raw_strip = raw.strip()
+        if raw_strip.startswith("{") and raw_strip.endswith("}"):
+            try:
+                parsed = json.loads(raw_strip)
+                if isinstance(parsed, dict):
+                    return [str(parsed[k]).strip() for k in sorted(parsed.keys())]
+            except json.JSONDecodeError:
+                try:
+                    parsed = ast.literal_eval(raw_strip)
+                    if isinstance(parsed, dict):
+                        return [str(parsed[k]).strip() for k in sorted(parsed.keys())]
+                except Exception:
+                    pass
         if raw_strip.startswith("[") and raw_strip.endswith("]"):
             try:
                 parsed = json.loads(raw_strip)
@@ -573,7 +835,8 @@ def _normalize_country(raw_country: Optional[str]) -> Optional[str]:
         return c_l
     if c_l in {"usa", "us"}:
         return "us"
-    mapped = COUNTRY_CODE_MAP.get(c)
+    canonical_name = COUNTRY_NAME_ALIASES.get(_canon_name(c), c)
+    mapped = COUNTRY_CODE_MAP.get(canonical_name) or COUNTRY_CODE_MAP.get(c)
     if mapped:
         return mapped
     alias = {
@@ -586,6 +849,13 @@ def _normalize_country(raw_country: Optional[str]) -> Optional[str]:
     }.get(_canon_name(c))
     if alias:
         return alias
+    try:
+        record = pycountry.countries.lookup(canonical_name)
+        alpha2 = getattr(record, "alpha_2", None)
+        if alpha2:
+            return alpha2.lower()
+    except LookupError:
+        pass
     return None
 
 
@@ -606,7 +876,52 @@ def continent_from_country_name(country_name: Optional[str]) -> Optional[str]:
     if not country_name:
         return None
     key = _canon_name(country_name)
-    return _normalize_continent_label(NAME_TO_CONTINENT.get(key))
+    seeded = _normalize_continent_label(NAME_TO_CONTINENT.get(key))
+    if seeded is not None:
+        return seeded
+    code = _normalize_country(country_name)
+    if code is None:
+        return None
+    try:
+        cont_code = country_alpha2_to_continent_code(code.upper())
+    except Exception:
+        return None
+    return CONTINENT_CODE_TO_NAME.get(cont_code)
+
+
+def _display_country_name(raw_country: Optional[str]) -> Optional[str]:
+    if raw_country is None:
+        return None
+    text = str(raw_country).strip()
+    if not text:
+        return None
+    canonical = COUNTRY_NAME_ALIASES.get(_canon_name(text), text.replace("_", " ").strip())
+    code = _normalize_country(canonical)
+    if code in CODE_TO_COUNTRY_NAME:
+        return CODE_TO_COUNTRY_NAME[code]
+    try:
+        record = pycountry.countries.lookup(canonical)
+        return getattr(record, "name", canonical)
+    except LookupError:
+        return canonical
+
+
+def _parse_listlike(raw) -> List[str]:
+    if raw is None:
+        return []
+    if isinstance(raw, list):
+        return [str(x).strip() for x in raw if str(x).strip()]
+    text = str(raw).strip()
+    if not text:
+        return []
+    if text.startswith("[") and text.endswith("]"):
+        try:
+            parsed = ast.literal_eval(text)
+            if isinstance(parsed, list):
+                return [str(x).strip() for x in parsed if str(x).strip()]
+        except Exception:
+            pass
+    return [text]
 
 
 def seed_name_to_continent_map(worldvaluesbench_root: str) -> None:
@@ -1015,6 +1330,220 @@ def _load_worldvaluesbench_items(args: argparse.Namespace) -> List[StandardizedI
     return items
 
 
+def _load_blend_items(
+    args: argparse.Namespace,
+    spec: Dict[str, str],
+    hf_token: Optional[str],
+) -> List[StandardizedItem]:
+    split = _choose_split(
+        spec["dataset"],
+        spec.get("dataset_config"),
+        spec["split"],
+        token=hf_token,
+    )
+    ds = load_dataset_with_token(
+        spec["dataset"],
+        spec.get("dataset_config"),
+        split=split,
+        token=hf_token,
+    )
+    items: List[StandardizedItem] = []
+    skipped = 0
+    seen_base_ids = set()
+    deduped = 0
+    for i, row in enumerate(ds):
+        base_id = str(row.get("ID", "")).strip()
+        if base_id:
+            if base_id in seen_base_ids:
+                deduped += 1
+                continue
+            seen_base_ids.add(base_id)
+        raw_prompt = str(row.get("prompt", "")).strip()
+        question = raw_prompt
+        if "\n\nA." in question:
+            question = question.split("\n\nA.", 1)[0].strip()
+        if " Without any explanation" in question:
+            question = question.split(" Without any explanation", 1)[0].strip()
+        options = _to_options(row.get("choices"))
+        correct_answer = _answer_from_row(row.get("answer_idx"), options, "letter")
+        if not question or len(options) < 2 or correct_answer is None:
+            skipped += 1
+            continue
+        country_name = _display_country_name(row.get("country"))
+        continent = continent_from_country_name(country_name)
+        qid = _hash_id(
+            [
+                "blend",
+                split,
+                base_id,
+                question,
+                json.dumps(options, ensure_ascii=False),
+                correct_answer,
+                country_name or "",
+                continent or "",
+            ]
+        )
+        items.append(
+            StandardizedItem(
+                question_id=qid,
+                question=question,
+                options=options,
+                correct_answer=correct_answer,
+                benchmark="blend",
+                subset=split,
+                country=country_name,
+                continent=continent,
+                source_index=i,
+            )
+        )
+    if skipped > 0:
+        print(f"[!] Skipped {skipped} BLEnD rows due to schema mismatch.")
+    if deduped > 0:
+        print(f"[✔] Collapsed {deduped} expanded BLEnD MCQ rows onto unique source-question IDs.")
+    return items
+
+
+def _load_global_mmlu_items(
+    args: argparse.Namespace,
+    spec: Dict[str, str],
+    hf_token: Optional[str],
+    cs_only: bool,
+) -> List[StandardizedItem]:
+    split = _choose_split(
+        spec["dataset"],
+        spec.get("dataset_config"),
+        spec["split"],
+        token=hf_token,
+    )
+    ds = load_dataset_with_token(
+        spec["dataset"],
+        spec.get("dataset_config"),
+        split=split,
+        token=hf_token,
+    )
+    items: List[StandardizedItem] = []
+    skipped = 0
+    filtered = 0
+    for i, row in enumerate(ds):
+        if cs_only and str(row.get("cultural_sensitivity_label", "")).strip().upper() != "CS":
+            filtered += 1
+            continue
+        question = str(row.get("question", "")).strip()
+        options = [
+            str(row.get("option_a", "")).strip(),
+            str(row.get("option_b", "")).strip(),
+            str(row.get("option_c", "")).strip(),
+            str(row.get("option_d", "")).strip(),
+        ]
+        if not question or not all(options):
+            skipped += 1
+            continue
+        correct_answer = _answer_from_row(row.get("answer"), options, "letter")
+        if correct_answer is None:
+            skipped += 1
+            continue
+        countries = _parse_listlike(row.get("country"))
+        regions = _parse_listlike(row.get("region"))
+        country_name = _display_country_name(countries[0]) if countries else None
+        continent = (
+            _normalize_continent_label(regions[0]) if regions else continent_from_country_name(country_name)
+        )
+        subset = spec.get("dataset_config") or "default"
+        if cs_only:
+            subset = f"{subset}_cs"
+        qid = _hash_id(
+            [
+                "globalmmlu_cs" if cs_only else "globalmmlu",
+                subset,
+                question,
+                json.dumps(options, ensure_ascii=False),
+                correct_answer,
+                country_name or "",
+                continent or "",
+            ]
+        )
+        items.append(
+            StandardizedItem(
+                question_id=qid,
+                question=question,
+                options=options,
+                correct_answer=correct_answer,
+                benchmark="globalmmlu_cs" if cs_only else "globalmmlu",
+                subset=subset,
+                country=country_name,
+                continent=continent,
+                source_index=i,
+            )
+        )
+    if filtered > 0:
+        print(f"[✔] Filtered {filtered} Global-MMLU rows outside the CS subset.")
+    if skipped > 0:
+        print(f"[!] Skipped {skipped} Global-MMLU rows due to schema mismatch.")
+    return items
+
+
+def _load_normad_items(
+    args: argparse.Namespace,
+    spec: Dict[str, str],
+    hf_token: Optional[str],
+) -> List[StandardizedItem]:
+    split = _choose_split(
+        spec["dataset"],
+        spec.get("dataset_config"),
+        spec["split"],
+        token=hf_token,
+    )
+    ds = load_dataset_with_token(
+        spec["dataset"],
+        spec.get("dataset_config"),
+        split=split,
+        token=hf_token,
+    )
+    items: List[StandardizedItem] = []
+    skipped = 0
+    for i, row in enumerate(ds):
+        story = str(row.get("Story", "")).strip()
+        background = str(row.get("Background", "")).strip()
+        rule = str(row.get("Rule-of-Thumb", "")).strip()
+        label = str(row.get("Gold Label", "")).strip().lower()
+        if label not in {"yes", "no", "neutral"} or not story:
+            skipped += 1
+            continue
+        question = (
+            f"Cultural context:\n{background}\n\n"
+            f"Relevant rule of thumb:\n{rule}\n\n"
+            f"Situation:\n{story}"
+        ).strip()
+        country_name = _display_country_name(row.get("Country"))
+        continent = continent_from_country_name(country_name)
+        qid = _hash_id(
+            [
+                "normad",
+                split,
+                question,
+                label,
+                country_name or "",
+                continent or "",
+            ]
+        )
+        items.append(
+            StandardizedItem(
+                question_id=qid,
+                question=question,
+                options=["yes", "no", "neutral"],
+                correct_answer=label,
+                benchmark="normad",
+                subset=split,
+                country=country_name,
+                continent=continent,
+                source_index=i,
+            )
+        )
+    if skipped > 0:
+        print(f"[!] Skipped {skipped} NormAd rows due to schema mismatch.")
+    return items
+
+
 def _wasserstein_equal_weight(values_a: List[float], values_b: List[float]) -> float:
     if not values_a or not values_b:
         return float("nan")
@@ -1129,6 +1658,30 @@ def load_standardized_items(
     spec: Dict[str, str],
     hf_token: Optional[str],
 ) -> List[StandardizedItem]:
+    if args.benchmark == "blend":
+        items = _load_blend_items(args, spec, hf_token=hf_token)
+        if args.max_samples > 0:
+            items = items[: args.max_samples]
+        return items
+
+    if args.benchmark == "globalmmlu":
+        items = _load_global_mmlu_items(args, spec, hf_token=hf_token, cs_only=False)
+        if args.max_samples > 0:
+            items = items[: args.max_samples]
+        return items
+
+    if args.benchmark == "globalmmlu_cs":
+        items = _load_global_mmlu_items(args, spec, hf_token=hf_token, cs_only=True)
+        if args.max_samples > 0:
+            items = items[: args.max_samples]
+        return items
+
+    if args.benchmark == "normad":
+        items = _load_normad_items(args, spec, hf_token=hf_token)
+        if args.max_samples > 0:
+            items = items[: args.max_samples]
+        return items
+
     if args.benchmark in {"geolmama", "geomlama"}:
         items = _load_geolmama_items(args, spec, hf_token=hf_token)
         if args.max_samples > 0:
@@ -1156,7 +1709,9 @@ def load_standardized_items(
 
     items: List[StandardizedItem] = []
 
-    if args.benchmark == "mmlu" and args.dataset_config == "all":
+    dataset_cfg = spec.get("dataset_config")
+
+    if args.benchmark == "mmlu" and dataset_cfg == "all":
         cfgs = [c for c in get_dataset_config_names(spec["dataset"]) if c != "all"]
         for cfg in tqdm(cfgs, desc="Loading mmlu subjects"):
             split = _choose_split(spec["dataset"], cfg, spec["split"], token=hf_token)
@@ -1181,17 +1736,17 @@ def load_standardized_items(
     else:
         split = _choose_split(
             spec["dataset"],
-            args.dataset_config,
+            dataset_cfg,
             spec["split"],
             token=hf_token,
         )
         ds = load_dataset_with_token(
             spec["dataset"],
-            args.dataset_config,
+            dataset_cfg,
             split=split,
             token=hf_token,
         )
-        subset = args.dataset_config if args.dataset_config is not None else "default"
+        subset = dataset_cfg if dataset_cfg is not None else "default"
         items = _standardize_dataset_rows(
             ds=ds,
             benchmark=args.benchmark,
@@ -1274,13 +1829,92 @@ def _standardize_dataset_rows(
     return out
 
 
+def has_local_tokenizer_files(path: str) -> bool:
+    if not path or not os.path.isdir(path):
+        return False
+    root = Path(path)
+    return any((root / name).exists() for name in TOKENIZER_FILE_NAMES)
+
+
+def resolve_tokenizer_source(model_type: str, model_name: str, custom_tokenizer_path: Optional[str]) -> str:
+    if model_type != "custom":
+        return model_name
+    if has_local_tokenizer_files(model_name):
+        return model_name
+    if custom_tokenizer_path and (
+        not os.path.isdir(custom_tokenizer_path)
+        or has_local_tokenizer_files(custom_tokenizer_path)
+    ):
+        print(
+            "[tokenizer] custom model directory has no tokenizer files; "
+            f"using fallback tokenizer: {custom_tokenizer_path}"
+        )
+        return custom_tokenizer_path
+    return model_name
+
+
+def _tokenizer_vocab_size(tokenizer) -> int:
+    size = getattr(tokenizer, "vocab_size", None)
+    if size is not None:
+        try:
+            return int(size)
+        except Exception:
+            pass
+    try:
+        return int(len(tokenizer))
+    except Exception:
+        return 0
+
+
+def validate_mcq_tokenizer(tokenizer, tokenizer_source: str, model_name: str) -> None:
+    sample_texts = [" A", " B", " C", " D", " answer", " country", " egg", " fruit"]
+    encoded = [
+        tuple(tokenizer(text, add_special_tokens=False).input_ids)
+        for text in sample_texts
+    ]
+    vocab_size = _tokenizer_vocab_size(tokenizer)
+    distinct = len(set(encoded))
+    if vocab_size < 1000 or distinct < 4:
+        preview = ", ".join(f"{text!r}->{list(ids)}" for text, ids in zip(sample_texts, encoded))
+        raise RuntimeError(
+            "Degenerate tokenizer for MCQ scoring. "
+            f"model={model_name} tokenizer_source={tokenizer_source} "
+            f"class={tokenizer.__class__.__name__} vocab_size={vocab_size} "
+            f"distinct_sample_encodings={distinct}; sample={preview}. "
+            "This usually means a MAPLE checkpoint is missing tokenizer files. "
+            "Pass --custom-tokenizer-path pointing at a valid Llama-3.2 tokenizer."
+        )
+
+
+def validate_tokenizer_model_compatibility(model, tokenizer, tokenizer_source: str, model_name: str) -> None:
+    sample_texts = [" A", " B", " C", " D", " answer", " country", " egg", " fruit"]
+    sample_ids: List[int] = []
+    for text in sample_texts:
+        sample_ids.extend(tokenizer(text, add_special_tokens=False).input_ids)
+    for token_id in (tokenizer.bos_token_id, tokenizer.eos_token_id, tokenizer.pad_token_id):
+        if token_id is not None:
+            sample_ids.append(int(token_id))
+    if not sample_ids:
+        raise RuntimeError(f"Tokenizer produced no sample ids: {tokenizer_source}")
+    max_sample_id = max(sample_ids)
+    embedding_count = int(model.get_input_embeddings().num_embeddings)
+    if max_sample_id >= embedding_count:
+        raise RuntimeError(
+            "Tokenizer/model vocabulary mismatch. "
+            f"model={model_name} tokenizer_source={tokenizer_source} "
+            f"max_sample_token_id={max_sample_id} model_embeddings={embedding_count}"
+        )
+
+
 def build_model(
     model_type: str,
     hf_token: Optional[str],
     custom_metadata: Optional[bool] = None,
     custom_model_path: Optional[str] = None,
     llama_model_name: Optional[str] = None,
+    custom_tokenizer_path: Optional[str] = None,
     disable_custom_chat_template: bool = False,
+    force_custom_chat_prompt: bool = False,
 ):
     if model_type == "custom":
         if custom_metadata is None:
@@ -1289,34 +1923,109 @@ def build_model(
             model_name = custom_model_path
         else:
             name = "combined_with_metadata" if custom_metadata else "combined_without_metadata"
-            model_name = f"/scratch/amukher6/metacul/models/sft/{name}_chat"
+            model_name = f"/path/to/metacul/models/sft/{name}_chat"
     elif model_type == "llama3_chat":
         model_name = llama_model_name or "meta-llama/Llama-3.2-1B-Instruct"
     else:
         raise ValueError(f"Unknown model_type: {model_type}")
 
-    hf_kwargs = {}
-    if hf_token and model_type == "llama3_chat":
-        hf_kwargs["token"] = hf_token
+    hf_kwargs = {"trust_remote_code": True}
 
-    try:
-        tokenizer = AutoTokenizer.from_pretrained(
-            model_name, fix_mistral_regex=True, **hf_kwargs
-        )
-    except TypeError:
-        tokenizer = AutoTokenizer.from_pretrained(model_name, **hf_kwargs)
-    tokenizer.pad_token = tokenizer.eos_token
-    if model_type == "custom" and not disable_custom_chat_template:
-        with open(CHAT_TEMPLATE_PATH, "r", encoding="utf-8") as f:
-            tokenizer.chat_template = f.read()
-    if model_type == "llama3_chat" and not getattr(tokenizer, "chat_template", None):
-        with open(CHAT_TEMPLATE_PATH, "r", encoding="utf-8") as f:
-            tokenizer.chat_template = f.read()
-
-    model = AutoModelForCausalLM.from_pretrained(
-        model_name, device_map="auto", dtype="auto", **hf_kwargs
+    tokenizer_source = resolve_tokenizer_source(
+        model_type=model_type,
+        model_name=model_name,
+        custom_tokenizer_path=custom_tokenizer_path,
     )
-    return model, tokenizer
+    tokenizer_hf_kwargs = dict(hf_kwargs)
+    if hf_token and not os.path.isdir(tokenizer_source):
+        tokenizer_hf_kwargs["token"] = hf_token
+    tokenizer = load_tokenizer_robust(tokenizer_source, tokenizer_hf_kwargs)
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token or tokenizer.unk_token
+    if tokenizer.pad_token_id is None and tokenizer.eos_token_id is not None:
+        tokenizer.pad_token_id = tokenizer.eos_token_id
+    validate_mcq_tokenizer(
+        tokenizer=tokenizer,
+        tokenizer_source=tokenizer_source,
+        model_name=model_name,
+    )
+    print(
+        f"[tokenizer] model={model_name} source={tokenizer_source} "
+        f"class={tokenizer.__class__.__name__} vocab_size={_tokenizer_vocab_size(tokenizer)}"
+    )
+    uses_chat_prompt = model_type == "llama3_chat" or (
+        model_type == "custom"
+        and (
+            force_custom_chat_prompt
+            or custom_model_uses_chat_prompt(model_name)
+        )
+    )
+    default_chat_template = load_default_chat_template()
+    if (
+        model_type == "custom"
+        and uses_chat_prompt
+        and not disable_custom_chat_template
+        and default_chat_template is not None
+    ):
+        tokenizer.chat_template = default_chat_template
+    if (
+        model_type == "llama3_chat"
+        and not getattr(tokenizer, "chat_template", None)
+        and default_chat_template is not None
+    ):
+        tokenizer.chat_template = default_chat_template
+
+    config_hf_kwargs = dict(hf_kwargs)
+    if hf_token and not os.path.isdir(model_name):
+        config_hf_kwargs["token"] = hf_token
+    config = AutoConfig.from_pretrained(model_name, **config_hf_kwargs)
+    model_loader = AutoModelForCausalLM
+    if config.__class__.__name__ == "Mistral3Config":
+        model_loader = AutoModelForImageTextToText
+
+    model_hf_kwargs = dict(hf_kwargs)
+    if hf_token and not os.path.isdir(model_name):
+        model_hf_kwargs["token"] = hf_token
+    model = model_loader.from_pretrained(
+        model_name, device_map="auto", dtype="auto", **model_hf_kwargs
+    )
+    validate_tokenizer_model_compatibility(
+        model=model,
+        tokenizer=tokenizer,
+        tokenizer_source=tokenizer_source,
+        model_name=model_name,
+    )
+    model_info = {
+        "model_name": model_name,
+        "tokenizer_source": tokenizer_source,
+        "tokenizer_class": tokenizer.__class__.__name__,
+        "tokenizer_vocab_size": _tokenizer_vocab_size(tokenizer),
+        "uses_chat_prompt": uses_chat_prompt,
+    }
+    return model, tokenizer, uses_chat_prompt, model_info
+
+
+def render_prompt(
+    tokenizer,
+    messages: List[Dict[str, str]],
+    uses_chat_prompt: bool,
+) -> str:
+    if uses_chat_prompt and getattr(tokenizer, "chat_template", None):
+        return tokenizer.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+    if uses_chat_prompt:
+        system = next((m["content"] for m in messages if m.get("role") == "system"), "")
+        user = next((m["content"] for m in messages if m.get("role") == "user"), "")
+        chunks = []
+        if system:
+            chunks.append(f"System:\n{system.strip()}")
+        if user:
+            chunks.append(f"User:\n{user.strip()}")
+        chunks.append("Assistant:\n")
+        return "\n\n".join(chunks)
+    user = next((m["content"] for m in messages if m.get("role") == "user"), "")
+    return user.rstrip() + "\n"
 
 
 def choose_metadata_tags(
@@ -1357,6 +2066,12 @@ def choose_metadata_tags(
             }
 
     if country_code is None and continent_norm is None:
+        if mode == "available_only":
+            return {
+                "country_tag": None,
+                "continent_tag": None,
+                "metadata_source": "missing_geo_fields",
+            }
         # Deterministically sample a full pair when benchmark lacks geo fields.
         pairs = sorted(COUNTRY_CONTINENT_MAP.items())
         idx = int(_hash_id([item.question_id, str(seed)]), 16) % len(pairs)
@@ -1368,7 +2083,19 @@ def choose_metadata_tags(
         }
 
     if country_code is not None and continent_norm is None:
-        continent_norm = COUNTRY_CONTINENT_MAP[country_code]
+        continent_norm = COUNTRY_CONTINENT_MAP.get(country_code)
+        if continent_norm is None:
+            country_name = _display_country_name(item.country)
+            continent_norm = continent_from_country_name(country_name)
+        if continent_norm is None:
+            pairs = sorted(COUNTRY_CONTINENT_MAP.items())
+            idx = int(_hash_id([item.question_id, str(seed), "country_fallback"]), 16) % len(pairs)
+            fallback_code, fallback_continent = pairs[idx]
+            return {
+                "country_tag": fallback_code,
+                "continent_tag": fallback_continent,
+                "metadata_source": "country_missing_continent_fallback",
+            }
         return {
             "country_tag": country_code,
             "continent_tag": continent_norm,
@@ -1401,44 +2128,265 @@ def choose_metadata_tags(
     }
 
 
+def build_core_user_content(
+    item: StandardizedItem,
+    prompt_options: List[str],
+    qa_prompt_style: str,
+    answer_cue_style: str,
+    omit_option_labels: bool,
+    exact_option_text_instruction: bool,
+    mcq_scoring: str,
+    answer_cue_country_name: Optional[str] = None,
+) -> str:
+    question = item.question.strip()
+    if omit_option_labels:
+        options_block = "\n".join([f"- {opt}" for opt in prompt_options])
+    else:
+        options_block = "\n".join(
+            [f"{chr(65 + i)}: {opt}" for i, opt in enumerate(prompt_options)]
+        )
+
+    if mcq_scoring == "option_letter":
+        answer_instruction = "Answer with only the correct option letter (A, B, C, or D)."
+    elif exact_option_text_instruction:
+        answer_instruction = "Answer with the exact text of the correct option."
+    else:
+        answer_instruction = "Answer with the correct option."
+
+    if answer_cue_style == "none":
+        answer_cue = ""
+    elif answer_cue_style == "answer_colon":
+        answer_cue = "\n\nAnswer:"
+    elif answer_cue_style == "answer_newline":
+        answer_cue = "\n\nAnswer:\n"
+    elif answer_cue_style == "final_answer_colon":
+        answer_cue = "\n\nFinal answer:"
+    elif answer_cue_style == "the_correct_answer_is":
+        answer_cue = "\n\nThe correct answer is"
+    elif answer_cue_style == "country_answer_colon":
+        answer_cue = (
+            f"\n\nFor {answer_cue_country_name}, answer:"
+            if answer_cue_country_name
+            else "\n\nAnswer:"
+        )
+    elif answer_cue_style == "country_final_answer_colon":
+        answer_cue = (
+            f"\n\nFor {answer_cue_country_name}, final answer:"
+            if answer_cue_country_name
+            else "\n\nFinal answer:"
+        )
+    elif answer_cue_style == "country_the_correct_answer_is":
+        answer_cue = (
+            f"\n\nFor {answer_cue_country_name}, the correct answer is"
+            if answer_cue_country_name
+            else "\n\nThe correct answer is"
+        )
+    else:
+        raise ValueError(f"Unsupported answer_cue_style: {answer_cue_style}")
+
+    if qa_prompt_style == "question":
+        return (
+            f"Question: {question}\n\n"
+            f"Options:\n{options_block}\n\n"
+            f"{answer_instruction}"
+            f"{answer_cue}"
+        )
+    if qa_prompt_style == "instruction":
+        return (
+            "### Instruction:\n"
+            f"{question}\n\n"
+            "Options:\n"
+            f"{options_block}\n\n"
+            f"{answer_instruction}"
+            f"{answer_cue}"
+        )
+    if qa_prompt_style == "instruction_input":
+        return (
+            "### Instruction:\n"
+            "Answer the following locale-specific multiple-choice question.\n\n"
+            "### Input:\n"
+            f"Question: {question}\n\n"
+            "Options:\n"
+            f"{options_block}\n\n"
+            f"{answer_instruction}"
+            f"{answer_cue}"
+        )
+    if qa_prompt_style == "question_answer":
+        answer_suffix = answer_cue if answer_cue else "\n\nAnswer:"
+        return (
+            f"Question: {question}\n\n"
+            f"Options:\n{options_block}"
+            f"{answer_suffix}"
+        )
+    raise ValueError(f"Unsupported qa_prompt_style: {qa_prompt_style}")
+
+
+def add_metadata_block(
+    content: str,
+    base_url: str,
+    country_tag: str,
+    continent_tag: str,
+    country_name: str,
+    metadata_prompt_style: str,
+) -> str:
+    if metadata_prompt_style == "legacy_code":
+        metadata_block = (
+            f"URL: {base_url}/{country_tag}\n"
+            f"COUNTRY: {country_tag}\n"
+            f"CONTINENT: {continent_tag}\n\n"
+            f"TITLE: Facts about the country {country_tag}\n\n"
+            "CONTENT:\n"
+        )
+        return metadata_block + content
+    if metadata_prompt_style == "name_plain":
+        metadata_block = (
+            f"URL: {base_url}/{country_tag}\n"
+            f"COUNTRY: {country_name}\n"
+            f"COUNTRY_CODE: {country_tag}\n"
+            f"CONTINENT: {continent_tag}\n\n"
+            f"TITLE: Facts about {country_name}\n\n"
+            "CONTENT:\n"
+        )
+        return metadata_block + content
+    if metadata_prompt_style == "name_grounded":
+        metadata_block = (
+            f"URL: {base_url}/{country_tag}\n"
+            f"COUNTRY: {country_name}\n"
+            f"COUNTRY_CODE: {country_tag}\n"
+            f"CONTINENT: {continent_tag}\n\n"
+            f"TITLE: Facts about {country_name}\n\n"
+            "CONTENT:\n"
+            f"Use the locale metadata above as grounding. Answer for {country_name}, not a different country.\n\n"
+        )
+        return metadata_block + content
+    if metadata_prompt_style == "code_grounded":
+        metadata_block = (
+            f"URL: {base_url}/{country_tag}\n"
+            f"COUNTRY: {country_tag}\n"
+            f"COUNTRY_NAME: {country_name}\n"
+            f"CONTINENT: {continent_tag}\n\n"
+            f"TITLE: Facts about the country {country_tag}\n\n"
+            "CONTENT:\n"
+            f"Use the locale metadata above as grounding. This question is about {country_name}.\n\n"
+        )
+        return metadata_block + content
+    if metadata_prompt_style == "code_disambiguate":
+        metadata_block = (
+            f"URL: {base_url}/{country_tag}\n"
+            f"COUNTRY: {country_tag}\n"
+            f"COUNTRY_NAME: {country_name}\n"
+            f"CONTINENT: {continent_tag}\n\n"
+            f"TITLE: Facts about the country {country_tag}\n\n"
+            "CONTENT:\n"
+            f"Use the locale metadata above to disambiguate country-specific facts. "
+            f"When multiple answers could fit different countries, answer for {country_name}.\n\n"
+        )
+        return metadata_block + content
+    if metadata_prompt_style == "name_strict":
+        metadata_block = (
+            f"URL: {base_url}/{country_tag}\n"
+            f"COUNTRY: {country_name}\n"
+            f"COUNTRY_CODE: {country_tag}\n"
+            f"CONTINENT: {continent_tag}\n\n"
+            f"TITLE: Facts about {country_name}\n\n"
+            "CONTENT:\n"
+            f"This question is specifically about factual knowledge in {country_name}. "
+            f"Choose the answer that is correct for {country_name}, not the answer that would fit a different country "
+            f"or the answer that is only more globally common.\n\n"
+        )
+        return metadata_block + content
+    if metadata_prompt_style == "code_grounded_strict":
+        metadata_block = (
+            f"URL: {base_url}/{country_tag}\n"
+            f"COUNTRY: {country_tag}\n"
+            f"COUNTRY_NAME: {country_name}\n"
+            f"CONTINENT: {continent_tag}\n\n"
+            f"TITLE: Facts about the country {country_tag}\n\n"
+            "CONTENT:\n"
+            f"This question is specifically about factual knowledge in {country_name}. "
+            f"Use the locale metadata above to disambiguate country-specific facts. "
+            f"Choose the answer that is correct for {country_name}, even when a different option is more globally common.\n\n"
+        )
+        return metadata_block + content
+    if metadata_prompt_style == "country_first_strict":
+        metadata_block = (
+            f"COUNTRY: {country_name}\n"
+            f"COUNTRY_CODE: {country_tag}\n"
+            f"CONTINENT: {continent_tag}\n"
+            f"URL: {base_url}/{country_tag}\n\n"
+            f"TITLE: Facts about {country_name}\n\n"
+            "CONTENT:\n"
+            f"Answer this question for {country_name}. "
+            f"When multiple options could fit different countries, pick the option that is factual for {country_name}.\n\n"
+        )
+        return metadata_block + content
+    raise ValueError(f"Unsupported metadata_prompt_style: {metadata_prompt_style}")
+
+
 def build_user_content(
     item: StandardizedItem,
     prompt_options: List[str],
     with_metadata: bool,
     base_url: str,
     seed: int,
+    qa_prompt_style: str = "question",
+    answer_cue_style: str = "none",
+    omit_option_labels: bool = False,
+    exact_option_text_instruction: bool = False,
+    mcq_scoring: str = "option_text_avg",
     metadata_tag_mode: str = "correct",
     shuffled_tags_by_qid: Optional[Dict[str, Dict[str, str]]] = None,
+    metadata_prompt_style: str = "legacy_code",
 ) -> Tuple[str, Dict[str, Optional[str]]]:
-    options_block = "\n".join(
-        [f"{chr(65 + i)}: {opt}" for i, opt in enumerate(prompt_options)]
-    )
-    core = (
-        f"Question: {item.question}\n\n"
-        f"Options:\n{options_block}\n\n"
-        "Answer with the correct option."
-    )
-
-    if not with_metadata:
-        return f"CONTENT:\n{core}", {
-            "url_country_tag": None,
-            "url_continent_tag": None,
-            "metadata_source": "none",
-        }
-
     if metadata_tag_mode == "shuffled":
         if shuffled_tags_by_qid is None:
             raise ValueError("shuffled_tags_by_qid must be set for metadata_tag_mode='shuffled'")
         tags = shuffled_tags_by_qid[item.question_id]
     else:
         tags = choose_metadata_tags(item, seed=seed, mode=metadata_tag_mode)
-    content = (
-        f"URL: {base_url}/{tags['country_tag']}\n"
-        f"COUNTRY: {tags['country_tag']}\n"
-        f"CONTINENT: {tags['continent_tag']}\n\n"
-        f"TITLE: Facts about the country {tags['country_tag']}\n\n"
-        "CONTENT:\n"
-        f"{core}"
+    country_tag = tags["country_tag"]
+    continent_tag = tags["continent_tag"]
+    country_name = item.country
+    if not country_name and country_tag:
+        country_name = CODE_TO_COUNTRY_NAME.get(country_tag, str(country_tag).upper())
+    core = build_core_user_content(
+        item=item,
+        prompt_options=prompt_options,
+        qa_prompt_style=qa_prompt_style,
+        answer_cue_style=answer_cue_style,
+        omit_option_labels=omit_option_labels,
+        exact_option_text_instruction=exact_option_text_instruction,
+        mcq_scoring=mcq_scoring,
+        answer_cue_country_name=country_name if with_metadata and country_name else None,
+    )
+
+    if not with_metadata:
+        return (
+            f"CONTENT:\n{core}",
+            {
+                "url_country_tag": None,
+                "url_continent_tag": None,
+                "metadata_source": "none",
+            },
+        )
+
+    if not country_tag or not continent_tag or not country_name:
+        return (
+            f"CONTENT:\n{core}",
+            {
+                "url_country_tag": None,
+                "url_continent_tag": None,
+                "metadata_source": tags["metadata_source"],
+            },
+        )
+
+    content = add_metadata_block(
+        content=core,
+        base_url=base_url,
+        country_tag=country_tag,
+        continent_tag=continent_tag,
+        country_name=country_name,
+        metadata_prompt_style=metadata_prompt_style,
     )
     return content, {
         "url_country_tag": tags["country_tag"],
@@ -1491,20 +2439,44 @@ def extract_answer(raw_output: str, options: List[str]) -> Dict[str, Optional[st
     }
 
 
-def predict_option_by_loglikelihood(
+def get_candidate_texts(
+    options: List[str],
+    answer_cue_style: str,
+    mcq_scoring: str,
+) -> List[str]:
+    letters = [chr(65 + i) for i in range(len(options))]
+    option_prefix = "" if answer_cue_style == "answer_newline" else " "
+    if mcq_scoring == "option_letter":
+        return [option_prefix + letter for letter in letters]
+    return [option_prefix + str(opt).strip() for opt in options]
+
+
+def score_candidate_texts(
     model,
     tokenizer,
     prompt: str,
-    options: List[str],
-) -> Dict[str, Optional[str]]:
-    # OLMES-style MCQ scoring: rank full option texts by conditional log-likelihood.
-    prompt_ids = tokenizer(prompt, return_tensors="pt", add_special_tokens=False).input_ids.to(model.device)
+    candidate_texts: List[str],
+    add_prompt_bos: bool,
+) -> Tuple[List[float], List[float]]:
+    prompt_ids = tokenizer(
+        prompt,
+        return_tensors="pt",
+        add_special_tokens=False,
+    ).input_ids.to(model.device)
+    if add_prompt_bos and tokenizer.bos_token_id is not None:
+        bos = torch.tensor([[tokenizer.bos_token_id]], device=model.device, dtype=prompt_ids.dtype)
+        if prompt_ids.numel() == 0 or int(prompt_ids[0, 0].item()) != tokenizer.bos_token_id:
+            prompt_ids = torch.cat([bos, prompt_ids], dim=1)
+
     scores_sum: List[float] = []
     scores_avg: List[float] = []
     with torch.no_grad():
-        for opt in options:
-            cand_text = " " + str(opt).strip()
-            cand_ids = tokenizer(cand_text, return_tensors="pt", add_special_tokens=False).input_ids.to(model.device)
+        for cand_text in candidate_texts:
+            cand_ids = tokenizer(
+                cand_text,
+                return_tensors="pt",
+                add_special_tokens=False,
+            ).input_ids.to(model.device)
             if cand_ids.numel() == 0:
                 scores_sum.append(float("-inf"))
                 scores_avg.append(float("-inf"))
@@ -1523,15 +2495,100 @@ def predict_option_by_loglikelihood(
             score_avg = score_sum / max(tok_len, 1)
             scores_sum.append(score_sum)
             scores_avg.append(score_avg)
+    return scores_sum, scores_avg
 
-    best_idx = int(np.argmax(scores_avg)) if scores_avg else 0
+
+def select_option_scores(
+    scores_sum: List[float],
+    scores_avg: List[float],
+    mcq_scoring: str,
+    length_norm_alpha: Optional[float],
+) -> List[float]:
+    if mcq_scoring == "option_letter":
+        return scores_avg
+    if length_norm_alpha is not None:
+        selected: List[float] = []
+        for score_sum, score_avg in zip(scores_sum, scores_avg):
+            tok_len = abs(score_sum / score_avg) if score_avg != 0 else 1.0
+            selected.append(score_sum / max(tok_len, 1.0) ** length_norm_alpha)
+        return selected
+    if mcq_scoring == "option_text_sum":
+        return scores_sum
+    return scores_avg
+
+
+def predict_option_by_loglikelihood(
+    model,
+    tokenizer,
+    prompt: str,
+    options: List[str],
+    answer_cue_style: str,
+    mcq_scoring: str,
+    add_prompt_bos: bool,
+    length_norm_alpha: Optional[float],
+    null_calibration_mode: str,
+    null_calibration_beta: float,
+    calibration_prompt: Optional[str] = None,
+) -> Dict[str, Optional[str]]:
+    candidate_texts = get_candidate_texts(
+        options=options,
+        answer_cue_style=answer_cue_style,
+        mcq_scoring=mcq_scoring,
+    )
+    scores_sum, scores_avg = score_candidate_texts(
+        model=model,
+        tokenizer=tokenizer,
+        prompt=prompt,
+        candidate_texts=candidate_texts,
+        add_prompt_bos=add_prompt_bos,
+    )
+    primary_scores = select_option_scores(
+        scores_sum=scores_sum,
+        scores_avg=scores_avg,
+        mcq_scoring=mcq_scoring,
+        length_norm_alpha=length_norm_alpha,
+    )
+    calibration_sums = None
+    calibration_avgs = None
+    calibration_scores = None
+    if calibration_prompt is not None and null_calibration_mode != "none":
+        calibration_sums, calibration_avgs = score_candidate_texts(
+            model=model,
+            tokenizer=tokenizer,
+            prompt=calibration_prompt,
+            candidate_texts=candidate_texts,
+            add_prompt_bos=add_prompt_bos,
+        )
+        calibration_scores = select_option_scores(
+            scores_sum=calibration_sums,
+            scores_avg=calibration_avgs,
+            mcq_scoring=mcq_scoring,
+            length_norm_alpha=length_norm_alpha,
+        )
+        final_scores = [
+            score - null_calibration_beta * calibration_score
+            for score, calibration_score in zip(primary_scores, calibration_scores)
+        ]
+    else:
+        final_scores = primary_scores
+
+    best_idx = int(np.argmax(final_scores)) if final_scores else 0
     best_letter = chr(65 + best_idx) if best_idx < 26 else None
     return {
         "processed_option_letter": best_letter,
         "processed_answer": options[best_idx],
-        "answer_extraction_method": "loglikelihood_option_text",
+        "answer_extraction_method": mcq_scoring,
         "option_loglikelihood_sums": scores_sum,
         "option_loglikelihood_avgs": scores_avg,
+        "option_loglikelihood_length_norm_alpha": length_norm_alpha,
+        "option_loglikelihood_primary_scores": primary_scores,
+        "null_calibration_mode": null_calibration_mode,
+        "null_calibration_beta": null_calibration_beta,
+        "null_calibration_option_loglikelihood_sums": calibration_sums,
+        "null_calibration_option_loglikelihood_avgs": calibration_avgs,
+        "null_calibration_option_scores": calibration_scores,
+        "option_loglikelihood_selected_scores": final_scores,
+        "scoring_candidates": candidate_texts,
     }
 
 
@@ -1566,6 +2623,26 @@ def ensure_parent(path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
 
 
+def row_identity_from_item(item: StandardizedItem) -> Tuple[str, str, str, str, str]:
+    return (
+        str(item.benchmark),
+        str(item.question_id),
+        str(item.question_key or ""),
+        str(item.participant_id if item.participant_id is not None else ""),
+        str(item.source_index),
+    )
+
+
+def row_identity_from_row(row: Dict[str, object]) -> Tuple[str, str, str, str, str]:
+    return (
+        str(row.get("benchmark", "")),
+        str(row.get("question_id", "")),
+        str(row.get("question_key", "") or ""),
+        str(row.get("participant_id", "") if row.get("participant_id") is not None else ""),
+        str(row.get("source_index", "")),
+    )
+
+
 def evaluate_variant(
     args: argparse.Namespace,
     items: List[StandardizedItem],
@@ -1574,6 +2651,8 @@ def evaluate_variant(
     with_metadata: bool,
     model,
     tokenizer,
+    uses_chat_prompt: bool,
+    model_info: Dict[str, object],
     output_jsonl: Path,
     metadata_tag_mode: str = "correct",
 ) -> Dict[str, float]:
@@ -1581,6 +2660,30 @@ def evaluate_variant(
     total = len(items)
     correct = 0
     processed_total = 0
+    completed_keys = set()
+    write_mode = "w"
+
+    if args.resume and output_jsonl.exists():
+        with output_jsonl.open("r", encoding="utf-8") as existing_f:
+            for line in existing_f:
+                if not line.strip():
+                    continue
+                row = json.loads(line)
+                completed_keys.add(row_identity_from_row(row))
+                if row.get("processed_answer") is not None:
+                    is_correct = row.get("is_correct")
+                    if is_correct is None:
+                        is_correct = row.get("processed_answer") == row.get("correct_answer")
+                    processed_total += 1
+                    correct += int(bool(is_correct))
+        write_mode = "a"
+        print(
+            f"[resume] {variant_name}: loaded {len(completed_keys)} existing rows from {output_jsonl}"
+        )
+
+    pending_items = [
+        item for item in items if row_identity_from_item(item) not in completed_keys
+    ]
 
     shuffled_tags_by_qid: Optional[Dict[str, Dict[str, str]]] = None
     if with_metadata and metadata_tag_mode == "shuffled":
@@ -1596,10 +2699,16 @@ def evaluate_variant(
             item.question_id: shuffled[i] for i, item in enumerate(items)
         }
 
-    with output_jsonl.open("w", encoding="utf-8") as out_f:
-        for start in tqdm(range(0, total, args.batch_size), desc=f"Eval {variant_name}"):
-            batch = items[start : min(start + args.batch_size, total)]
+    # Frequent cancel/requeue cycles are common in this environment, so flush each
+    # completed row promptly to preserve as much partial progress as possible.
+    with output_jsonl.open(write_mode, encoding="utf-8", buffering=1) as out_f:
+        for start in tqdm(
+            range(0, len(pending_items), args.batch_size),
+            desc=f"Eval {variant_name}",
+        ):
+            batch = pending_items[start : min(start + args.batch_size, len(pending_items))]
             prompts = []
+            calibration_prompts = []
             meta_info_batch = []
             prompt_options_batch = []
             prompt_permutations = []
@@ -1616,17 +2725,58 @@ def evaluate_variant(
                     with_metadata=with_metadata,
                     base_url=args.base_url,
                     seed=args.seed,
+                    qa_prompt_style=args.qa_prompt_style,
+                    answer_cue_style=args.answer_cue_style,
+                    omit_option_labels=args.omit_option_labels,
+                    exact_option_text_instruction=args.exact_option_text_instruction,
+                    mcq_scoring=args.mcq_scoring,
                     metadata_tag_mode=metadata_tag_mode,
                     shuffled_tags_by_qid=shuffled_tags_by_qid,
+                    metadata_prompt_style=args.metadata_prompt_style,
                 )
                 messages = [
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": user_content},
                 ]
-                prompt = tokenizer.apply_chat_template(
-                    messages, tokenize=False, add_generation_prompt=True
+                prompt = render_prompt(
+                    tokenizer=tokenizer,
+                    messages=messages,
+                    uses_chat_prompt=uses_chat_prompt,
                 )
                 prompts.append(prompt)
+                calibration_prompt = None
+                if args.null_calibration_mode in {"question_masked", "question_masked_no_metadata"}:
+                    calibration_item = replace(item, question=args.null_question_text)
+                    calibration_with_metadata = (
+                        False
+                        if args.null_calibration_mode == "question_masked_no_metadata"
+                        else with_metadata
+                    )
+                    calibration_user_content, _ = build_user_content(
+                        item=calibration_item,
+                        prompt_options=prompt_options,
+                        with_metadata=calibration_with_metadata,
+                        base_url=args.base_url,
+                        seed=args.seed,
+                        qa_prompt_style=args.qa_prompt_style,
+                        answer_cue_style=args.answer_cue_style,
+                        omit_option_labels=args.omit_option_labels,
+                        exact_option_text_instruction=args.exact_option_text_instruction,
+                        mcq_scoring=args.mcq_scoring,
+                        metadata_tag_mode=metadata_tag_mode,
+                        shuffled_tags_by_qid=shuffled_tags_by_qid,
+                        metadata_prompt_style=args.metadata_prompt_style,
+                    )
+                    calibration_messages = [
+                        {"role": "system", "content": SYSTEM_PROMPT},
+                        {"role": "user", "content": calibration_user_content},
+                    ]
+                    calibration_prompt = render_prompt(
+                        tokenizer=tokenizer,
+                        messages=calibration_messages,
+                        uses_chat_prompt=uses_chat_prompt,
+                    )
+                calibration_prompts.append(calibration_prompt)
                 meta_info_batch.append(meta_info)
                 prompt_options_batch.append(prompt_options)
                 prompt_permutations.append(prompt_permutation)
@@ -1638,6 +2788,13 @@ def evaluate_variant(
                     tokenizer=tokenizer,
                     prompt=prompts[i],
                     options=prompt_options,
+                    answer_cue_style=args.answer_cue_style,
+                    mcq_scoring=args.mcq_scoring,
+                    add_prompt_bos=args.add_prompt_bos,
+                    length_norm_alpha=args.length_norm_alpha,
+                    null_calibration_mode=args.null_calibration_mode,
+                    null_calibration_beta=args.null_calibration_beta,
+                    calibration_prompt=calibration_prompts[i],
                 )
                 raw_output = processed["processed_option_letter"]
                 is_correct = None
@@ -1662,7 +2819,18 @@ def evaluate_variant(
                     "continent": item.continent,
                     "variant": variant_name,
                     "model_type": model_type,
+                    **model_info,
                     "metadata": with_metadata,
+                    "metadata_prompt_style": args.metadata_prompt_style if with_metadata else "none",
+                    "qa_prompt_style": args.qa_prompt_style,
+                    "answer_cue_style": args.answer_cue_style,
+                    "omit_option_labels": args.omit_option_labels,
+                    "exact_option_text_instruction": args.exact_option_text_instruction,
+                    "mcq_scoring": args.mcq_scoring,
+                    "length_norm_alpha": args.length_norm_alpha,
+                    "add_prompt_bos": args.add_prompt_bos,
+                    "null_calibration_mode": args.null_calibration_mode,
+                    "null_calibration_beta": args.null_calibration_beta,
                     "metadata_tag_mode": metadata_tag_mode,
                     "base_url": args.base_url,
                     "options_shuffled": args.shuffle_options,
@@ -1675,6 +2843,7 @@ def evaluate_variant(
                 if is_correct is not None:
                     row["is_correct"] = is_correct
                 out_f.write(json.dumps(row, ensure_ascii=False) + "\n")
+                out_f.flush()
 
     acc = correct / processed_total if processed_total else 0.0
     return {
@@ -1867,7 +3036,7 @@ def main() -> int:
         if model_key not in loaded_models:
             print(f"[...] Loading model for key={model_key}")
             try:
-                model, tokenizer = build_model(
+                model, tokenizer, uses_chat_prompt, model_info = build_model(
                     model_type,
                     hf_token=hf_token,
                     custom_metadata=(
@@ -1883,9 +3052,11 @@ def main() -> int:
                         )
                     ),
                     llama_model_name=args.llama_model_name,
+                    custom_tokenizer_path=args.custom_tokenizer_path,
                     disable_custom_chat_template=args.disable_custom_chat_template,
+                    force_custom_chat_prompt=args.force_custom_chat_prompt,
                 )
-                loaded_models[model_key] = (model, tokenizer)
+                loaded_models[model_key] = (model, tokenizer, uses_chat_prompt, model_info)
             except Exception as e:
                 err_msg = f"{type(e).__name__}: {e}"
                 failed_model_types[model_key] = err_msg
@@ -1904,7 +3075,7 @@ def main() -> int:
                 )
                 continue
         else:
-            model, tokenizer = loaded_models[model_key]
+            model, tokenizer, uses_chat_prompt, model_info = loaded_models[model_key]
 
         output_jsonl = out_dir / f"{args.benchmark}_{variant}.jsonl"
         summary = evaluate_variant(
@@ -1915,6 +3086,8 @@ def main() -> int:
             with_metadata=with_metadata,
             model=model,
             tokenizer=tokenizer,
+            uses_chat_prompt=uses_chat_prompt,
+            model_info=model_info,
             output_jsonl=output_jsonl,
             metadata_tag_mode=args.metadata_tag_mode,
         )

@@ -1,0 +1,1001 @@
+doc_id,country,continent,year,boundary_idx
+53897333,Nigeria,Africa,2022,5
+40721671,Nigeria,Africa,2019,5
+19170475,South Africa,Africa,2017,5
+30762454,South Africa,Africa,2019,5
+7987346,Nigeria,Africa,2016,5
+9723659,South Africa,Africa,2016,5
+19493380,Nigeria,Africa,2017,5
+30484695,Ghana,Africa,2019,5
+19123298,Nigeria,Africa,2017,5
+60564570,Tanzania,Africa,2019,5
+50807614,Kenya,Africa,2019,5
+51016968,Nigeria,Africa,2019,5
+40751769,Nigeria,Africa,2019,5
+17944904,Nigeria,Africa,2017,5
+8216597,Nigeria,Africa,2016,5
+15789713,Nigeria,Africa,2016,5
+30083207,Ghana,Africa,2018,5
+10051255,Tanzania,Africa,2016,5
+51160683,Nigeria,Africa,2019,5
+4837086,South Africa,Africa,2014,5
+105115579,Nigeria,Africa,2024,5
+30606424,Ghana,Africa,2019,5
+50676505,Kenya,Africa,2019,5
+8452957,Nigeria,Africa,2016,5
+91468721,South Africa,Africa,2022,5
+32645304,Ghana,Africa,2021,5
+17665863,South Africa,Africa,2017,5
+40910834,Nigeria,Africa,2019,5
+10351992,South Africa,Africa,2016,5
+50942976,Kenya,Africa,2019,5
+52278608,Nigeria,Africa,2020,5
+18235145,South Africa,Africa,2017,5
+7928746,South Africa,Africa,2016,5
+115624574,Nigeria,Africa,2024,5
+52041107,Nigeria,Africa,2020,5
+21638758,Nigeria,Africa,2017,5
+22142536,Nigeria,Africa,2017,5
+62645375,South Africa,Africa,2021,5
+16714008,Nigeria,Africa,2017,5
+116388461,South Africa,Africa,2024,5
+111672909,South Africa,Africa,2024,5
+110824444,Tanzania,Africa,2024,5
+30985415,South Africa,Africa,2019,5
+25581225,Nigeria,Africa,2018,5
+14826573,Ghana,Africa,2016,5
+616940,South Africa,Africa,2013,5
+90517006,Nigeria,Africa,2022,5
+62661470,South Africa,Africa,2021,5
+17447756,Nigeria,Africa,2017,5
+118373779,Kenya,Africa,2024,5
+18972254,South Africa,Africa,2017,5
+61899735,South Africa,Africa,2020,5
+114266996,Ghana,Africa,2024,5
+119023990,Nigeria,Africa,2024,5
+40046427,Nigeria,Africa,2018,5
+26044897,Nigeria,Africa,2018,5
+10156891,Nigeria,Africa,2016,5
+22222324,South Africa,Africa,2017,5
+19742744,Nigeria,Africa,2017,5
+14722121,Nigeria,Africa,2016,5
+20040662,Nigeria,Africa,2017,5
+94603639,South Africa,Africa,2022,5
+61798420,South Africa,Africa,2020,5
+30130690,South Africa,Africa,2018,5
+62202487,South Africa,Africa,2020,5
+114029654,South Africa,Africa,2024,5
+106124266,Nigeria,Africa,2024,5
+61162411,South Africa,Africa,2019,5
+25686195,Nigeria,Africa,2018,5
+1814007,Ghana,Africa,2012,5
+23814361,South Africa,Africa,2018,5
+255280,South Africa,Africa,2013,5
+30822519,South Africa,Africa,2019,5
+30356954,South Africa,Africa,2018,5
+13842520,Ghana,Africa,2016,5
+62977809,South Africa,Africa,2021,5
+31199910,South Africa,Africa,2019,5
+2613866,South Africa,Africa,2014,5
+15750671,Nigeria,Africa,2016,5
+51761543,Nigeria,Africa,2020,5
+40383093,Nigeria,Africa,2018,5
+11000179,Nigeria,Africa,2016,5
+40764777,Nigeria,Africa,2019,5
+104124971,Nigeria,Africa,2023,5
+52896050,Nigeria,Africa,2021,5
+30989285,South Africa,Africa,2019,5
+26124026,Nigeria,Africa,2018,5
+117566910,Nigeria,Africa,2024,5
+1281840,South Africa,Africa,2012,5
+98527535,Nigeria,Africa,2023,5
+117944657,Nigeria,Africa,2024,5
+15180009,Kenya,Africa,2016,5
+52796246,Nigeria,Africa,2021,5
+16008708,Ghana,Africa,2016,5
+13671703,South Africa,Africa,2016,5
+30604059,South Africa,Africa,2019,5
+61183481,South Africa,Africa,2019,5
+2790051,South Africa,Africa,2014,5
+62723955,Kenya,Africa,2021,5
+30705570,South Africa,Africa,2019,5
+1855383,Nigeria,Africa,2013,5
+50220052,Kenya,Africa,2018,5
+1851430,Nigeria,Africa,2013,5
+52757290,Nigeria,Africa,2021,5
+62421923,South Africa,Africa,2020,5
+14507150,Nigeria,Africa,2016,5
+7496272,South Africa,Africa,2016,5
+30285908,Ghana,Africa,2018,5
+22406243,Ghana,Africa,2017,5
+19860327,Nigeria,Africa,2017,5
+40133257,Nigeria,Africa,2018,5
+93799858,Nigeria,Africa,2022,5
+9893691,South Africa,Africa,2016,5
+14001824,South Africa,Africa,2016,5
+50809438,Kenya,Africa,2019,5
+93581312,Ghana,Africa,2022,5
+23244810,Nigeria,Africa,2018,5
+63475917,South Africa,Africa,2021,5
+63403943,South Africa,Africa,2021,5
+1807974,Kenya,Africa,2012,5
+3222017,South Africa,Africa,2015,5
+61621408,Kenya,Africa,2020,5
+30969398,South Africa,Africa,2019,5
+113708047,Kenya,Africa,2024,5
+50999449,Nigeria,Africa,2019,5
+93007429,Nigeria,Africa,2022,5
+241111,South Africa,Africa,2013,5
+30406817,South Africa,Africa,2019,5
+20993379,South Africa,Africa,2017,5
+23433211,Kenya,Africa,2018,5
+8661140,South Africa,Africa,2016,5
+14628347,Ghana,Africa,2016,5
+40532078,Nigeria,Africa,2019,5
+30503136,South Africa,Africa,2019,5
+15821868,Kenya,Africa,2016,5
+24623909,South Africa,Africa,2018,5
+25074767,Ghana,Africa,2018,5
+92877166,Nigeria,Africa,2022,5
+103497431,Nigeria,Africa,2023,5
+1805528,Ghana,Africa,2012,5
+61586743,South Africa,Africa,2020,5
+8794667,South Africa,Africa,2016,5
+62692595,Kenya,Africa,2021,5
+61513018,Kenya,Africa,2020,5
+51200664,Nigeria,Africa,2019,5
+1886283,Nigeria,Africa,2014,5
+52173666,Nigeria,Africa,2020,5
+16616862,Ghana,Africa,2017,5
+41008176,Nigeria,Africa,2019,5
+95389303,Nigeria,Africa,2022,5
+61917848,South Africa,Africa,2020,5
+100506646,Nigeria,Africa,2023,5
+13626303,Nigeria,Africa,2016,5
+24960054,Nigeria,Africa,2018,5
+15865876,Nigeria,Africa,2016,5
+18505602,Nigeria,Africa,2017,5
+16613920,Kenya,Africa,2017,5
+25163177,Nigeria,Africa,2018,5
+395318,South Africa,Africa,2013,5
+93493698,Nigeria,Africa,2022,5
+92547804,Nigeria,Africa,2022,5
+2981287,South Africa,Africa,2015,5
+30578054,Ghana,Africa,2019,5
+23058969,South Africa,Africa,2018,5
+30792312,South Africa,Africa,2019,5
+61723885,Kenya,Africa,2020,5
+60039889,Tanzania,Africa,2018,5
+50618153,Kenya,Africa,2019,5
+108616877,Nigeria,Africa,2024,5
+63544056,Kenya,Africa,2021,5
+118826867,Nigeria,Africa,2024,5
+98304735,Nigeria,Africa,2023,5
+32824153,Nigeria,Africa,2021,5
+62357760,South Africa,Africa,2020,5
+50248508,Kenya,Africa,2018,5
+97575175,South Africa,Africa,2023,5
+92931869,South Africa,Africa,2022,5
+95962328,Nigeria,Africa,2022,5
+30715217,South Africa,Africa,2019,5
+10002387,Nigeria,Africa,2016,5
+40421467,Nigeria,Africa,2018,5
+51459870,Nigeria,Africa,2020,5
+40649514,Nigeria,Africa,2019,5
+1891801,Ghana,Africa,2014,5
+117877823,Kenya,Africa,2024,5
+15015764,Nigeria,Africa,2016,5
+1898539,Ghana,Africa,2014,5
+40879715,Nigeria,Africa,2019,5
+40272988,Nigeria,Africa,2018,5
+25467546,Nigeria,Africa,2018,5
+15941272,Nigeria,Africa,2016,5
+40164055,Nigeria,Africa,2018,5
+41240356,Nigeria,Africa,2019,5
+51862500,Nigeria,Africa,2020,5
+101151640,South Africa,Africa,2023,5
+14221729,Nigeria,Africa,2016,5
+19966865,South Africa,Africa,2017,5
+17199813,Kenya,Africa,2017,5
+114431825,Nigeria,Africa,2024,5
+53686050,Nigeria,Africa,2022,5
+102890237,Kenya,Africa,2023,5
+32388840,Ghana,Africa,2020,5
+4931039,South Africa,Africa,2015,5
+15125745,Nigeria,Africa,2016,5
+4918121,South Africa,Africa,2015,5
+52941178,Nigeria,Africa,2021,5
+109129359,Nigeria,Africa,2024,5
+17280581,Nigeria,Africa,2017,5
+18796237,Nigeria,Africa,2017,5
+24363317,Kenya,Africa,2018,5
+117283002,South Africa,Africa,2024,5
+50947113,Kenya,Africa,2019,5
+52834875,Nigeria,Africa,2021,5
+4897424,South Africa,Africa,2015,5
+40151482,Nigeria,Africa,2018,5
+20353550,Nigeria,Africa,2017,5
+40155277,Nigeria,Africa,2018,5
+53178451,Nigeria,Africa,2021,5
+51774867,Nigeria,Africa,2020,5
+95921909,Nigeria,Africa,2022,5
+30765281,South Africa,Africa,2019,5
+105864110,Nigeria,Africa,2024,5
+94627281,South Africa,Africa,2022,5
+15710103,South Africa,Africa,2016,5
+30007214,South Africa,Africa,2018,5
+7754793,Ghana,Africa,2016,5
+30705997,South Africa,Africa,2019,5
+17991200,Nigeria,Africa,2017,5
+92780422,South Africa,Africa,2022,5
+105308858,Kenya,Africa,2024,5
+20954619,Nigeria,Africa,2017,5
+40060435,Nigeria,Africa,2018,5
+63460453,Kenya,Africa,2021,5
+40481885,Nigeria,Africa,2019,5
+18483325,Nigeria,Africa,2017,5
+14915080,Nigeria,Africa,2016,5
+24325663,South Africa,Africa,2018,5
+53133621,Nigeria,Africa,2021,5
+21373066,Kenya,Africa,2017,5
+19510863,Kenya,Africa,2017,5
+105228019,Nigeria,Africa,2024,5
+52606770,Nigeria,Africa,2021,5
+40044044,Nigeria,Africa,2018,5
+22715729,South Africa,Africa,2018,5
+63461525,South Africa,Africa,2021,5
+41243437,Nigeria,Africa,2019,5
+62535384,South Africa,Africa,2021,5
+61165759,South Africa,Africa,2019,5
+7501267,Ghana,Africa,2016,5
+19033780,South Africa,Africa,2017,5
+88112133,United States,America,2021,5
+108896744,United States,America,2024,5
+86319629,United States,America,2020,5
+23259972,United States,America,2018,5
+102321704,United States,America,2023,5
+86008116,United States,America,2020,5
+70082511,United States,America,2018,5
+1266068,United States,America,2012,5
+51272937,Canada,America,2019,5
+118422852,Jamaica,America,2024,5
+63360449,United States,America,2021,5
+93941109,Canada,America,2022,5
+14898873,United States,America,2016,5
+3922121,United States,America,2015,5
+91440027,United States,America,2023,5
+1540396,United States,America,2010,5
+21512232,United States,America,2017,5
+16417548,Canada,America,2017,5
+83653326,United States,America,2020,5
+43260553,United States,America,2021,5
+84778184,United States,America,2020,5
+86491019,United States,America,2020,5
+97013234,United States,America,2023,5
+84683607,United States,America,2020,5
+86267453,United States,America,2020,5
+84407873,United States,America,2020,5
+93088976,Canada,America,2022,5
+60524975,Canada,America,2019,5
+85830195,United States,America,2020,5
+16712257,Canada,America,2017,5
+1126188,United States,America,2012,5
+90551344,Canada,America,2022,5
+114370349,United States,America,2024,5
+3682431,United States,America,2015,5
+95133047,United States,America,2022,5
+90574733,United States,America,2023,5
+52664362,United States,America,2021,5
+87036460,United States,America,2021,5
+2773404,United States,America,2014,5
+86608934,United States,America,2021,5
+88706140,United States,America,2022,5
+87306080,United States,America,2021,5
+85663565,United States,America,2020,5
+117706060,United States,America,2024,5
+118516795,United States,America,2024,5
+32505534,United States,America,2021,5
+3775586,Canada,America,2015,5
+86310661,United States,America,2020,5
+952312,Canada,America,2012,5
+63569394,United States,America,2021,5
+23488694,United States,America,2018,5
+31431929,United States,America,2019,5
+31455480,United States,America,2019,5
+118436037,Canada,America,2024,5
+20997159,United States,America,2017,5
+85837136,United States,America,2020,5
+86332747,United States,America,2020,5
+87758209,United States,America,2021,5
+80155108,United States,America,2019,5
+32657622,United States,America,2021,5
+255905,United States,America,2013,5
+200254325,United States,America,2024,5
+97780147,United States,America,2023,5
+92159513,United States,America,2022,5
+71048654,Jamaica,America,2019,5
+87826515,United States,America,2021,5
+1608134,United States,America,2010,5
+84588674,United States,America,2020,5
+200238089,United States,America,2024,5
+60967442,Canada,America,2019,5
+98386069,United States,America,2023,5
+88114118,United States,America,2021,5
+23251520,Canada,America,2018,5
+13882576,Canada,America,2016,5
+1365669,Canada,America,2010,5
+86810564,United States,America,2021,5
+90792334,United States,America,2023,5
+86339402,United States,America,2020,5
+86963391,United States,America,2021,5
+32057681,United States,America,2020,5
+3407972,United States,America,2015,5
+82472457,United States,America,2019,5
+85347070,United States,America,2020,5
+96678823,Canada,America,2023,5
+14851129,United States,America,2016,5
+18878776,United States,America,2017,5
+1052002,Canada,America,2012,5
+33384469,United States,America,2021,5
+84272152,United States,America,2020,5
+33008219,United States,America,2021,5
+84062939,United States,America,2020,5
+85742525,United States,America,2020,5
+83206670,United States,America,2020,5
+87415503,United States,America,2021,5
+81712902,United States,America,2019,5
+84102896,United States,America,2020,5
+118992294,Canada,America,2024,5
+117281151,United States,America,2024,5
+70226506,United States,America,2018,5
+81307877,United States,America,2019,5
+16909621,Canada,America,2017,5
+87118933,United States,America,2021,5
+86691926,United States,America,2021,5
+62823484,United States,America,2021,5
+88750426,United States,America,2022,5
+7679573,Canada,America,2016,5
+63761175,United States,America,2022,5
+2941955,United States,America,2015,5
+7474512,Canada,America,2016,5
+117300942,United States,America,2024,5
+3968233,Canada,America,2011,5
+815155,Canada,America,2012,5
+14325516,Canada,America,2016,5
+70801633,United States,America,2019,5
+20079203,Canada,America,2017,5
+98872016,United States,America,2023,5
+63551168,United States,America,2021,5
+104580063,Canada,America,2023,5
+85176002,United States,America,2020,5
+89798989,United States,America,2022,5
+87450507,United States,America,2021,5
+95197995,United States,America,2022,5
+200191146,United States,America,2024,5
+90234681,United States,America,2022,5
+91487828,United States,America,2023,5
+73978233,United States,America,2022,5
+98408188,United States,America,2023,5
+20275185,Canada,America,2017,5
+92447574,United States,America,2022,5
+86893277,United States,America,2021,5
+24811289,United States,America,2018,5
+60603785,Canada,America,2019,5
+31848229,United States,America,2020,5
+87209421,United States,America,2021,5
+52941661,United States,America,2021,5
+2808306,Canada,America,2014,5
+91031859,Canada,America,2022,5
+60624518,Canada,America,2019,5
+60954491,Canada,America,2019,5
+86165274,United States,America,2020,5
+2825052,United States,America,2014,5
+100448784,United States,America,2023,5
+118295479,United States,America,2024,5
+90409969,United States,America,2022,5
+86109245,United States,America,2020,5
+16285424,United States,America,2017,5
+22433875,Canada,America,2017,5
+85029010,United States,America,2020,5
+90070949,United States,America,2022,5
+87343229,United States,America,2021,5
+84998365,United States,America,2020,5
+44035,Canada,America,2013,5
+7176024,Canada,America,2016,5
+89567212,United States,America,2022,5
+13596581,United States,America,2016,5
+86223348,United States,America,2020,5
+88216414,United States,America,2021,5
+88622594,United States,America,2022,5
+102398589,United States,America,2023,5
+84338590,United States,America,2020,5
+82378073,United States,America,2019,5
+31497984,United States,America,2019,5
+115939987,United States,America,2024,5
+96702064,Canada,America,2023,5
+86463282,United States,America,2020,5
+4819117,Canada,America,2014,5
+84766870,United States,America,2020,5
+89127993,United States,America,2022,5
+33667102,United States,America,2022,5
+53675746,United States,America,2022,5
+87698278,United States,America,2021,5
+87766735,United States,America,2021,5
+22588519,Canada,America,2018,5
+200267358,United States,America,2024,5
+63113597,United States,America,2021,5
+62485008,Canada,America,2020,5
+31516113,United States,America,2019,5
+85541071,United States,America,2020,5
+81122653,United States,America,2019,5
+89968048,United States,America,2022,5
+32517788,United States,America,2021,5
+90620950,United States,America,2022,5
+23632190,Canada,America,2018,5
+31815641,United States,America,2020,5
+110090,Canada,America,2013,5
+21687604,United States,America,2017,5
+113506013,United States,America,2024,5
+51976948,Canada,America,2020,5
+20705909,United States,America,2017,5
+81529633,United States,America,2019,5
+1512580,United States,America,2010,5
+51972552,Canada,America,2020,5
+1507234,United States,America,2010,5
+4614985,Jamaica,America,2014,5
+7417478,United States,America,2016,5
+15004229,United States,America,2016,5
+3419778,Canada,America,2015,5
+89709782,United States,America,2022,5
+53531252,Jamaica,America,2022,5
+88001604,United States,America,2021,5
+85008447,United States,America,2020,5
+87275973,United States,America,2021,5
+92600392,United States,America,2022,5
+88697953,United States,America,2022,5
+95330192,Canada,America,2022,5
+32983430,United States,America,2021,5
+115521779,United States,America,2024,5
+84871219,United States,America,2020,5
+51443550,Canada,America,2020,5
+70338460,United States,America,2018,5
+8375529,United States,America,2016,5
+110344614,United States,America,2024,5
+86935597,United States,America,2021,5
+82268410,United States,America,2019,5
+20002090,United States,America,2017,5
+112907245,United States,America,2024,5
+60537771,Canada,America,2019,5
+31745503,United States,America,2020,5
+84579162,United States,America,2020,5
+70800826,United States,America,2019,5
+97373629,United States,America,2023,5
+82417590,United States,America,2019,5
+97115984,United States,America,2023,5
+31729399,United States,America,2020,5
+16764706,Canada,America,2017,5
+18287700,United States,America,2017,5
+82729968,United States,America,2019,5
+82797723,United States,America,2019,5
+34117553,United States,America,2022,5
+89756260,United States,America,2022,5
+70123142,United States,America,2018,5
+89213246,United States,America,2022,5
+104107870,United States,America,2023,5
+80115244,United States,America,2019,5
+20533741,United States,America,2017,5
+88759548,United States,America,2022,5
+4268344,Canada,America,2011,5
+112367271,United States,America,2024,5
+106422003,Canada,America,2024,5
+43120523,United States,America,2021,5
+88597271,United States,America,2022,5
+82218618,United States,America,2019,5
+84646729,United States,America,2020,5
+85248410,United States,America,2020,5
+89844063,United States,America,2022,5
+31734245,United States,America,2020,5
+32433190,United States,America,2020,5
+248129,United States,America,2013,5
+73991501,Canada,America,2022,5
+93211176,United States,America,2022,5
+9189379,sg,Asia,2016,5
+52833209,Malaysia,Asia,2021,5
+42054675,sg,Asia,2020,5
+98177797,India,Asia,2023,5
+23870381,India,Asia,2018,5
+9609418,Malaysia,Asia,2016,5
+30827152,India,Asia,2019,5
+40070491,sg,Asia,2018,5
+109255328,India,Asia,2024,5
+71165042,India,Asia,2019,5
+62174147,Sri Lanka,Asia,2020,5
+117652385,India,Asia,2024,5
+98636163,India,Asia,2023,5
+30175516,India,Asia,2018,5
+51330536,Pakistan,Asia,2020,5
+24417655,sg,Asia,2018,5
+14220605,Malaysia,Asia,2016,5
+25488754,Sri Lanka,Asia,2018,5
+14606764,sg,Asia,2016,5
+7574629,Pakistan,Asia,2016,5
+41256792,sg,Asia,2019,5
+90403552,India,Asia,2022,5
+9067598,Philippines,Asia,2016,5
+19073974,Malaysia,Asia,2017,5
+30250477,India,Asia,2018,5
+99098771,India,Asia,2023,5
+93826830,sg,Asia,2022,5
+74241429,India,Asia,2022,5
+2848677,Philippines,Asia,2014,5
+104660695,India,Asia,2023,5
+71880054,India,Asia,2020,5
+16259200,sg,Asia,2017,5
+102779722,India,Asia,2023,5
+115385825,India,Asia,2024,5
+19584208,Philippines,Asia,2017,5
+70889188,Philippines,Asia,2019,5
+96813222,India,Asia,2023,5
+33741208,Philippines,Asia,2022,5
+53619379,Philippines,Asia,2022,5
+17853335,India,Asia,2017,5
+17728902,India,Asia,2017,5
+7268656,India,Asia,2016,5
+72372518,India,Asia,2020,5
+52422019,India,Asia,2021,5
+92922564,India,Asia,2022,5
+73970197,India,Asia,2022,5
+117173258,Philippines,Asia,2024,5
+118063233,India,Asia,2024,5
+14635011,Pakistan,Asia,2016,5
+16711320,Pakistan,Asia,2017,5
+2971293,India,Asia,2015,5
+394819,India,Asia,2013,5
+107788641,Bangladesh,Asia,2024,5
+99657575,Malaysia,Asia,2023,5
+30161654,India,Asia,2018,5
+43324245,India,Asia,2021,5
+4364614,India,Asia,2011,5
+132838,India,Asia,2013,5
+19610368,Philippines,Asia,2017,5
+91793952,India,Asia,2022,5
+16901410,Malaysia,Asia,2017,5
+30077290,India,Asia,2018,5
+106121843,India,Asia,2024,5
+30681332,India,Asia,2019,5
+115270566,India,Asia,2024,5
+119301103,Sri Lanka,Asia,2024,5
+773250,Sri Lanka,Asia,2012,5
+43543788,sg,Asia,2021,5
+42142770,sg,Asia,2020,5
+18943246,Malaysia,Asia,2017,5
+40647325,sg,Asia,2019,5
+95147239,Sri Lanka,Asia,2022,5
+20129550,India,Asia,2017,5
+7502019,sg,Asia,2016,5
+100978901,India,Asia,2023,5
+40748580,sg,Asia,2019,5
+15681859,Philippines,Asia,2016,5
+104068053,India,Asia,2023,5
+71102984,India,Asia,2019,5
+25792675,Hong Kong,Asia,2018,5
+94675261,India,Asia,2022,5
+108722721,Philippines,Asia,2024,5
+74051823,India,Asia,2022,5
+2143719,India,Asia,2015,5
+8643916,India,Asia,2016,5
+14370814,India,Asia,2016,5
+21212233,India,Asia,2017,5
+109016725,India,Asia,2024,5
+25722719,sg,Asia,2018,5
+74313898,India,Asia,2022,5
+16494884,Malaysia,Asia,2017,5
+95959576,India,Asia,2022,5
+119431859,India,Asia,2024,5
+108127415,Philippines,Asia,2024,5
+21204440,Malaysia,Asia,2017,5
+21069877,India,Asia,2017,5
+2301892,India,Asia,2014,5
+18277964,India,Asia,2017,5
+92681398,India,Asia,2022,5
+18437266,Malaysia,Asia,2017,5
+4166609,India,Asia,2011,5
+71552053,India,Asia,2020,5
+95641055,India,Asia,2022,5
+51677556,Pakistan,Asia,2020,5
+4677225,Malaysia,Asia,2015,5
+8731556,Pakistan,Asia,2016,5
+4932736,sg,Asia,2015,5
+99819957,Pakistan,Asia,2023,5
+90351875,India,Asia,2022,5
+18397424,Malaysia,Asia,2017,5
+99839432,Pakistan,Asia,2023,5
+22819460,sg,Asia,2018,5
+60134296,Pakistan,Asia,2018,5
+60185593,Pakistan,Asia,2018,5
+40412280,sg,Asia,2018,5
+3186674,sg,Asia,2015,5
+117792264,Pakistan,Asia,2024,5
+95126891,India,Asia,2022,5
+18096360,sg,Asia,2017,5
+71622581,India,Asia,2020,5
+8552572,India,Asia,2016,5
+14519251,India,Asia,2016,5
+753747,India,Asia,2012,5
+23610506,Pakistan,Asia,2018,5
+21528663,Philippines,Asia,2017,5
+945236,India,Asia,2012,5
+96581242,India,Asia,2023,5
+18494780,Malaysia,Asia,2017,5
+91689304,Malaysia,Asia,2022,5
+7334884,India,Asia,2016,5
+20900809,Malaysia,Asia,2017,5
+91442736,Pakistan,Asia,2022,5
+3350041,Philippines,Asia,2015,5
+40466003,sg,Asia,2019,5
+52683787,India,Asia,2021,5
+106403039,India,Asia,2024,5
+72882909,India,Asia,2021,5
+4649015,Pakistan,Asia,2014,5
+74308331,India,Asia,2022,5
+3443066,Philippines,Asia,2015,5
+22367810,Malaysia,Asia,2017,5
+22528530,Malaysia,Asia,2018,5
+9520418,India,Asia,2016,5
+2057021,India,Asia,2013,5
+62876407,India,Asia,2021,5
+87360194,India,Asia,2021,5
+4581790,Malaysia,Asia,2013,5
+21350258,Pakistan,Asia,2017,5
+96751504,Philippines,Asia,2023,5
+97243936,India,Asia,2023,5
+14921471,Pakistan,Asia,2016,5
+13782795,Pakistan,Asia,2016,5
+1675239,India,Asia,2010,5
+8853492,India,Asia,2016,5
+117363444,India,Asia,2024,5
+92525715,India,Asia,2022,5
+13806469,sg,Asia,2016,5
+26144480,Pakistan,Asia,2018,5
+9488495,Malaysia,Asia,2016,5
+43256651,Sri Lanka,Asia,2021,5
+90679372,sg,Asia,2022,5
+107859161,Pakistan,Asia,2024,5
+30955003,India,Asia,2019,5
+71328491,India,Asia,2019,5
+24094213,India,Asia,2018,5
+30156913,India,Asia,2018,5
+110797182,India,Asia,2024,5
+15016724,Philippines,Asia,2016,5
+19445531,sg,Asia,2017,5
+105629238,India,Asia,2024,5
+52451760,Pakistan,Asia,2021,5
+30781010,India,Asia,2019,5
+98061753,Bangladesh,Asia,2023,5
+14373580,India,Asia,2016,5
+25781350,India,Asia,2018,5
+19012907,India,Asia,2017,5
+42007164,sg,Asia,2020,5
+109017925,India,Asia,2024,5
+74038432,India,Asia,2022,5
+7962352,India,Asia,2016,5
+98034559,India,Asia,2023,5
+70921496,Philippines,Asia,2019,5
+94320590,Pakistan,Asia,2022,5
+72461576,Philippines,Asia,2020,5
+74293083,India,Asia,2022,5
+21080747,sg,Asia,2017,5
+23855049,Pakistan,Asia,2018,5
+7044240,India,Asia,2016,5
+21952689,Malaysia,Asia,2017,5
+30111547,India,Asia,2018,5
+93251092,India,Asia,2022,5
+8149644,Pakistan,Asia,2016,5
+13876939,Hong Kong,Asia,2016,5
+15354618,Pakistan,Asia,2016,5
+16748061,Malaysia,Asia,2017,5
+115792332,India,Asia,2024,5
+106249328,India,Asia,2024,5
+30763531,India,Asia,2019,5
+8313849,India,Asia,2016,5
+19438433,India,Asia,2017,5
+110365084,India,Asia,2024,5
+24048384,India,Asia,2018,5
+90562682,India,Asia,2022,5
+25409131,India,Asia,2018,5
+92488332,Sri Lanka,Asia,2022,5
+101554533,India,Asia,2023,5
+22582118,India,Asia,2018,5
+32517085,Philippines,Asia,2021,5
+16242270,Malaysia,Asia,2017,5
+10105302,Malaysia,Asia,2016,5
+20622194,Pakistan,Asia,2017,5
+86836549,India,Asia,2021,5
+41703264,Hong Kong,Asia,2020,5
+19068561,Malaysia,Asia,2017,5
+25853131,India,Asia,2018,5
+40258051,sg,Asia,2018,5
+72177812,India,Asia,2020,5
+8485587,sg,Asia,2016,5
+30374229,India,Asia,2018,5
+23173890,India,Asia,2018,5
+95814371,Philippines,Asia,2022,5
+22007053,India,Asia,2017,5
+20828523,Malaysia,Asia,2017,5
+111283943,Pakistan,Asia,2024,5
+4862573,India,Asia,2015,5
+25670030,sg,Asia,2018,5
+40861958,Sri Lanka,Asia,2019,5
+964160,India,Asia,2012,5
+1620934,India,Asia,2010,5
+53560633,Philippines,Asia,2022,5
+515975,India,Asia,2013,5
+98911128,India,Asia,2023,5
+104470955,Sri Lanka,Asia,2023,5
+19865525,India,Asia,2017,5
+62438810,India,Asia,2020,5
+31016746,India,Asia,2019,5
+92312570,Philippines,Asia,2022,5
+25878536,India,Asia,2018,5
+16434165,Philippines,Asia,2017,5
+112297579,India,Asia,2024,5
+40622010,sg,Asia,2019,5
+50966949,Pakistan,Asia,2019,5
+52856724,Philippines,Asia,2021,5
+19120697,sg,Asia,2017,5
+105087218,India,Asia,2024,5
+98035611,Malaysia,Asia,2023,5
+106260933,Philippines,Asia,2024,5
+97160972,India,Asia,2023,5
+107380316,India,Asia,2024,5
+72858143,India,Asia,2021,5
+18779329,United Kingdom,Europe,2017,5
+15011239,Ireland,Europe,2016,5
+106092064,Ireland,Europe,2024,5
+20292099,United Kingdom,Europe,2017,5
+104747836,United Kingdom,Europe,2024,5
+41548662,United Kingdom,Europe,2019,5
+43246314,United Kingdom,Europe,2021,5
+44200915,United Kingdom,Europe,2022,5
+110192826,United Kingdom,Europe,2024,5
+107171280,Ireland,Europe,2024,5
+94500099,United Kingdom,Europe,2022,5
+113484318,United Kingdom,Europe,2024,5
+20119282,United Kingdom,Europe,2017,5
+109086532,United Kingdom,Europe,2024,5
+50596614,United Kingdom,Europe,2019,5
+43933357,United Kingdom,Europe,2022,5
+90852705,United Kingdom,Europe,2022,5
+96450926,United Kingdom,Europe,2023,5
+16673877,United Kingdom,Europe,2017,5
+100356939,United Kingdom,Europe,2023,5
+42021073,United Kingdom,Europe,2020,5
+60234204,Ireland,Europe,2018,5
+114061579,United Kingdom,Europe,2024,5
+9981628,Ireland,Europe,2016,5
+102633985,United Kingdom,Europe,2023,5
+90878589,United Kingdom,Europe,2022,5
+94719599,United Kingdom,Europe,2022,5
+102293043,United Kingdom,Europe,2023,5
+43378905,United Kingdom,Europe,2021,5
+20875027,Ireland,Europe,2017,5
+8297452,United Kingdom,Europe,2016,5
+42810336,United Kingdom,Europe,2021,5
+111688239,United Kingdom,Europe,2024,5
+16146517,Ireland,Europe,2016,5
+118442731,United Kingdom,Europe,2024,5
+44142522,United Kingdom,Europe,2022,5
+43486278,United Kingdom,Europe,2021,5
+42945396,United Kingdom,Europe,2021,5
+23521164,United Kingdom,Europe,2018,5
+96982291,Ireland,Europe,2023,5
+97474256,Ireland,Europe,2023,5
+18102701,Ireland,Europe,2017,5
+3474349,Ireland,Europe,2015,5
+90077403,United Kingdom,Europe,2022,5
+107471459,Ireland,Europe,2024,5
+22948763,United Kingdom,Europe,2018,5
+41867600,United Kingdom,Europe,2020,5
+14795764,United Kingdom,Europe,2016,5
+101632551,United Kingdom,Europe,2023,5
+91060089,United Kingdom,Europe,2022,5
+21844952,Ireland,Europe,2017,5
+91014452,Ireland,Europe,2022,5
+60057810,Ireland,Europe,2018,5
+50322898,United Kingdom,Europe,2019,5
+62157777,United Kingdom,Europe,2020,5
+15526373,Ireland,Europe,2016,5
+23240725,United Kingdom,Europe,2018,5
+22702537,United Kingdom,Europe,2018,5
+100809748,United Kingdom,Europe,2023,5
+4415991,United Kingdom,Europe,2011,5
+60625393,Ireland,Europe,2019,5
+3401612,United Kingdom,Europe,2015,5
+113762363,United Kingdom,Europe,2024,5
+1754811,United Kingdom,Europe,2010,5
+24860607,United Kingdom,Europe,2018,5
+91346229,United Kingdom,Europe,2022,5
+62861398,Ireland,Europe,2021,5
+33728588,United Kingdom,Europe,2022,5
+2872926,United Kingdom,Europe,2014,5
+63589754,Ireland,Europe,2021,5
+82121042,United Kingdom,Europe,2019,5
+43499995,United Kingdom,Europe,2021,5
+41501493,United Kingdom,Europe,2019,5
+104679384,United Kingdom,Europe,2023,5
+72508786,United Kingdom,Europe,2020,5
+93001872,United Kingdom,Europe,2022,5
+22003042,United Kingdom,Europe,2017,5
+94074920,United Kingdom,Europe,2022,5
+15727642,Ireland,Europe,2016,5
+104965098,United Kingdom,Europe,2024,5
+44076473,United Kingdom,Europe,2022,5
+909193,United Kingdom,Europe,2012,5
+13986478,United Kingdom,Europe,2016,5
+18254036,United Kingdom,Europe,2017,5
+60952865,Ireland,Europe,2019,5
+26298638,Ireland,Europe,2018,5
+62180728,United Kingdom,Europe,2020,5
+42745904,United Kingdom,Europe,2021,5
+18192409,United Kingdom,Europe,2017,5
+19016107,Ireland,Europe,2017,5
+63204394,Ireland,Europe,2021,5
+20904170,Ireland,Europe,2017,5
+117243740,Ireland,Europe,2024,5
+91263294,United Kingdom,Europe,2022,5
+96240323,United Kingdom,Europe,2023,5
+43992244,United Kingdom,Europe,2022,5
+3489416,Ireland,Europe,2015,5
+22136475,United Kingdom,Europe,2017,5
+61662729,Ireland,Europe,2020,5
+113997883,United Kingdom,Europe,2024,5
+103977847,United Kingdom,Europe,2023,5
+42120719,United Kingdom,Europe,2020,5
+92408287,United Kingdom,Europe,2022,5
+109152653,United Kingdom,Europe,2024,5
+92015681,United Kingdom,Europe,2022,5
+99231434,United Kingdom,Europe,2023,5
+50225935,United Kingdom,Europe,2018,5
+258325,Ireland,Europe,2013,5
+97959858,United Kingdom,Europe,2023,5
+108943958,United Kingdom,Europe,2024,5
+60888907,Ireland,Europe,2019,5
+23780459,United Kingdom,Europe,2018,5
+16746871,United Kingdom,Europe,2017,5
+25832726,United Kingdom,Europe,2018,5
+13682946,Ireland,Europe,2016,5
+22901167,United Kingdom,Europe,2018,5
+98633242,United Kingdom,Europe,2023,5
+63310534,Ireland,Europe,2021,5
+90280785,United Kingdom,Europe,2022,5
+117209126,United Kingdom,Europe,2024,5
+63084145,United Kingdom,Europe,2021,5
+15302,United Kingdom,Europe,2013,5
+9389608,Ireland,Europe,2016,5
+21208502,Ireland,Europe,2017,5
+42605112,United Kingdom,Europe,2021,5
+8099588,United Kingdom,Europe,2016,5
+25893779,Ireland,Europe,2018,5
+1160648,United Kingdom,Europe,2012,5
+84483454,United Kingdom,Europe,2020,5
+25048178,United Kingdom,Europe,2018,5
+63266257,Ireland,Europe,2021,5
+104565209,Ireland,Europe,2023,5
+92636308,United Kingdom,Europe,2022,5
+13762905,Ireland,Europe,2016,5
+613266,United Kingdom,Europe,2013,5
+94500867,United Kingdom,Europe,2022,5
+62414855,Ireland,Europe,2020,5
+268864,United Kingdom,Europe,2013,5
+44002484,United Kingdom,Europe,2022,5
+20570178,Ireland,Europe,2017,5
+1035190,United Kingdom,Europe,2012,5
+19191883,Ireland,Europe,2017,5
+20401429,Ireland,Europe,2017,5
+90665955,United Kingdom,Europe,2022,5
+108703778,United Kingdom,Europe,2024,5
+13814530,United Kingdom,Europe,2016,5
+733559,United Kingdom,Europe,2012,5
+19622947,United Kingdom,Europe,2017,5
+50799307,United Kingdom,Europe,2019,5
+60503591,Ireland,Europe,2019,5
+62800466,Ireland,Europe,2021,5
+26150156,United Kingdom,Europe,2018,5
+3854719,Ireland,Europe,2015,5
+74035459,United Kingdom,Europe,2022,5
+15441899,Ireland,Europe,2016,5
+60539307,Ireland,Europe,2019,5
+50280267,United Kingdom,Europe,2018,5
+1584502,United Kingdom,Europe,2010,5
+90231308,United Kingdom,Europe,2022,5
+24600897,United Kingdom,Europe,2018,5
+17469591,Ireland,Europe,2017,5
+22815439,United Kingdom,Europe,2018,5
+94366431,United Kingdom,Europe,2022,5
+116653565,United Kingdom,Europe,2024,5
+9172921,United Kingdom,Europe,2016,5
+21635496,United Kingdom,Europe,2017,5
+105722812,United Kingdom,Europe,2024,5
+3881143,United Kingdom,Europe,2015,5
+99489511,United Kingdom,Europe,2023,5
+43625573,United Kingdom,Europe,2021,5
+41675485,United Kingdom,Europe,2020,5
+91682191,United Kingdom,Europe,2022,5
+7036245,Ireland,Europe,2016,5
+63530207,United Kingdom,Europe,2021,5
+99705335,United Kingdom,Europe,2023,5
+90648532,United Kingdom,Europe,2022,5
+606348,United Kingdom,Europe,2013,5
+15252251,Ireland,Europe,2016,5
+1182650,Ireland,Europe,2012,5
+4384548,United Kingdom,Europe,2011,5
+110018818,United Kingdom,Europe,2024,5
+98884727,Ireland,Europe,2023,5
+104352101,United Kingdom,Europe,2023,5
+16596945,Ireland,Europe,2017,5
+110785490,United Kingdom,Europe,2024,5
+91377272,United Kingdom,Europe,2023,5
+41414829,United Kingdom,Europe,2019,5
+20113097,United Kingdom,Europe,2017,5
+3588878,United Kingdom,Europe,2015,5
+97194372,United Kingdom,Europe,2023,5
+1521784,United Kingdom,Europe,2010,5
+43379397,United Kingdom,Europe,2021,5
+14049909,Ireland,Europe,2016,5
+1130815,United Kingdom,Europe,2012,5
+21466866,United Kingdom,Europe,2017,5
+23574032,United Kingdom,Europe,2018,5
+90807221,United Kingdom,Europe,2022,5
+42508745,United Kingdom,Europe,2020,5
+117269073,United Kingdom,Europe,2024,5
+110318889,United Kingdom,Europe,2024,5
+96343210,Ireland,Europe,2023,5
+92808601,United Kingdom,Europe,2022,5
+118321325,Ireland,Europe,2024,5
+91703323,United Kingdom,Europe,2022,5
+14593477,Ireland,Europe,2016,5
+3360941,United Kingdom,Europe,2015,5
+43582026,United Kingdom,Europe,2021,5
+43628265,United Kingdom,Europe,2021,5
+25132197,Ireland,Europe,2018,5
+63820140,Ireland,Europe,2022,5
+21368889,United Kingdom,Europe,2017,5
+22196353,United Kingdom,Europe,2017,5
+53660595,United Kingdom,Europe,2022,5
+14940261,Ireland,Europe,2016,5
+9958500,United Kingdom,Europe,2016,5
+113861608,United Kingdom,Europe,2024,5
+108094272,Ireland,Europe,2024,5
+98668643,Ireland,Europe,2023,5
+16194319,United Kingdom,Europe,2017,5
+18805515,Ireland,Europe,2017,5
+98982990,United Kingdom,Europe,2023,5
+1516559,Ireland,Europe,2010,5
+61312842,Ireland,Europe,2019,5
+101918270,Ireland,Europe,2023,5
+61978211,Ireland,Europe,2020,5
+105471457,United Kingdom,Europe,2024,5
+119107408,United Kingdom,Europe,2024,5
+3955964,United Kingdom,Europe,2011,5
+92483903,Ireland,Europe,2022,5
+11015023,Ireland,Europe,2016,5
+8533768,United Kingdom,Europe,2016,5
+41922129,United Kingdom,Europe,2020,5
+63483554,Ireland,Europe,2021,5
+42937584,United Kingdom,Europe,2021,5
+97342783,United Kingdom,Europe,2023,5
+14067553,Ireland,Europe,2016,5
+109520203,United Kingdom,Europe,2024,5
+62699165,Ireland,Europe,2021,5
+116660537,Ireland,Europe,2024,5
+96579937,United Kingdom,Europe,2023,5
+61791198,United Kingdom,Europe,2020,5
+50259796,United Kingdom,Europe,2018,5
+101888352,United Kingdom,Europe,2023,5
+19144791,United Kingdom,Europe,2017,5
+43954564,United Kingdom,Europe,2022,5
+15709124,United Kingdom,Europe,2016,5
+94039105,United Kingdom,Europe,2022,5
+111593153,United Kingdom,Europe,2024,5
+18386714,Ireland,Europe,2017,5
+63962837,Ireland,Europe,2022,5

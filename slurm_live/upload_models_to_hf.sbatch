@@ -6,18 +6,18 @@
 #SBATCH --mem=16G
 #SBATCH --partition=contrib
 #SBATCH --time=2-00:00:00
-#SBATCH --output=/scratch/amukher6/metacul/logs/slurm_logs/%x-%j.out
-#SBATCH --error=/scratch/amukher6/metacul/logs/slurm_logs/%x-%j.err
+#SBATCH --output=/path/to/metacul/logs/slurm_logs/%x-%j.out
+#SBATCH --error=/path/to/metacul/logs/slurm_logs/%x-%j.err
 
 set -euo pipefail
 
 MANIFEST="${1:?usage: sbatch $0 <manifest.txt>}"
-LOG="/scratch/amukher6/metacul/logs/hf_uploads/$(basename "$MANIFEST" .txt)-${SLURM_JOB_ID}.log"
+LOG="/path/to/metacul/logs/hf_uploads/$(basename "$MANIFEST" .txt)-${SLURM_JOB_ID}.log"
 
 set -a
-source /scratch/amukher6/babel/llm-languages/.env >/dev/null 2>&1
+# Set required tokens, e.g. HF_TOKEN, in the environment before running.
 set +a
-source /home/amukher6/nanotron-env/bin/activate
+source /path/to/nanotron-env/bin/activate
 
 python3 - <<'PY' "$MANIFEST" "$LOG"
 import os
@@ -34,7 +34,7 @@ if not token:
     raise RuntimeError('HF_TOKEN not set')
 
 api = HfApi(token=token)
-base_url = 'https://huggingface.co/iamshnoo/'
+base_url = 'https://huggingface.co/YOUR_HF_USERNAME/'
 paths = [Path(line.strip()) for line in manifest.read_text().splitlines() if line.strip() and not line.strip().startswith('#')]
 
 with log_path.open('a') as log:
@@ -49,12 +49,12 @@ with log_path.open('a') as log:
             print(f'SKIP empty {path}')
             log.write(f'SKIP empty {path}\n')
             continue
-        api.create_repo(repo_id=f'iamshnoo/{repo_name}', repo_type='model', exist_ok=True)
+        api.create_repo(repo_id=f'YOUR_HF_USERNAME/{repo_name}', repo_type='model', exist_ok=True)
         print(f'UPLOAD {path} -> {base_url}{repo_name}')
         log.write(f'UPLOAD {path} -> {base_url}{repo_name}\n')
         api.upload_folder(
             folder_path=str(path),
-            repo_id=f'iamshnoo/{repo_name}',
+            repo_id=f'YOUR_HF_USERNAME/{repo_name}',
             repo_type='model',
             commit_message=f'Upload {repo_name}',
         )

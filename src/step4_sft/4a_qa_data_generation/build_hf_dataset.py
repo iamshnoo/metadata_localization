@@ -102,7 +102,7 @@ def main() -> int:
     parser.add_argument(
         "--upload",
         action="store_true",
-        help="Upload dataset to HuggingFace Hub (iamshnoo/qa_metacul).",
+        help="Upload dataset to HuggingFace Hub (YOUR_HF_USERNAME/qa_metacul).",
     )
     args = parser.parse_args()
 
@@ -130,7 +130,7 @@ def main() -> int:
         print_report(records)
 
     if args.upload:
-        repo_id = "iamshnoo/qa_metacul"
+        repo_id = "YOUR_HF_USERNAME/qa_metacul"
         dataset.push_to_hub(repo_id)
         print(f"Uploaded dataset to {repo_id}")
 

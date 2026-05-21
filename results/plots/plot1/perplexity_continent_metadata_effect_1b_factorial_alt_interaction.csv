@@ -1,0 +1,29 @@
+continent,condition,train_meta,infer_meta,mean_ppl
+Africa,T-/I-,T-,I-,10.493806
+Africa,T+/I-,T+,I-,10.389681
+Africa,T-/I+,T-,I+,11.383434
+Africa,T+/I+,T+,I+,9.063804
+Africa,train_effect_at_I-,T+ minus T-,I-,-0.1041249999999998
+Africa,train_effect_at_I+,T+ minus T-,I+,-2.31963
+Africa,difference_in_differences,interaction,I+ minus I-,-2.2155050000000003
+America,T-/I-,T-,I-,8.981938
+America,T+/I-,T+,I-,9.328166
+America,T-/I+,T-,I+,8.997427
+America,T+/I+,T+,I+,8.334115
+America,train_effect_at_I-,T+ minus T-,I-,0.346228
+America,train_effect_at_I+,T+ minus T-,I+,-0.6633119999999995
+America,difference_in_differences,interaction,I+ minus I-,-1.0095399999999994
+Asia,T-/I-,T-,I-,8.29483
+Asia,T+/I-,T+,I-,8.49448
+Asia,T-/I+,T-,I+,8.238835
+Asia,T+/I+,T+,I+,7.534573
+Asia,train_effect_at_I-,T+ minus T-,I-,0.1996500000000001
+Asia,train_effect_at_I+,T+ minus T-,I+,-0.7042619999999999
+Asia,difference_in_differences,interaction,I+ minus I-,-0.903912
+Europe,T-/I-,T-,I-,9.320186
+Europe,T+/I-,T+,I-,9.633084
+Europe,T-/I+,T-,I+,9.326996
+Europe,T+/I+,T+,I+,8.544948
+Europe,train_effect_at_I-,T+ minus T-,I-,0.31289800000000056
+Europe,train_effect_at_I+,T+ minus T-,I+,-0.7820479999999996
+Europe,difference_in_differences,interaction,I+ minus I-,-1.0949460000000002

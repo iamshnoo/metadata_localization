@@ -1,0 +1,16 @@
+variant,label,country,country_code,continent,category,RC1,RC2,target_distance,target_rank,nearest_country,nearest_distance,top1_hit,top3_hit
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",Bangladesh,bd,Asia,African-Islamic,-0.5917116217026487,0.8639591113027099,1.992543521233435,9,Singapore,0.9961261562856192,0,0
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",Canada,ca,America,English-Speaking,-0.797863033463773,0.9449587071400807,3.318184375495777,14,Singapore,1.2114726941166327,0,0
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",Ghana,gh,Africa,African-Islamic,-0.3762420332030852,0.6458711966235559,2.2075952067183406,12,Singapore,0.6949181963021756,0,0
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",Great Britain,gb,Europe,English-Speaking,-0.7874455302257594,0.9556907650204247,3.349925820179268,15,Singapore,1.2088486365588478,0,0
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",Hong Kong SAR,hk,Asia,Confucian,-0.585237698335265,1.0167866758533792,1.5014367467485445,5,Singapore,1.0890152105022617,0,0
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",India,in,Asia,West & South Asia,-0.27206700082294827,0.7531917754269974,1.036374284337258,3,Singapore,0.6805748140966383,0,1
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",Ireland,ie,Europe,English-Speaking,-0.5639092695372927,0.8367867744110292,2.5415099888204553,13,Singapore,0.9576389060164133,0,0
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",Kenya,ke,Africa,African-Islamic,-0.5303059287741412,0.7805310818626475,1.46122891685896,5,Singapore,0.8977200174991534,0,0
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",Malaysia,my,Asia,West & South Asia,-0.47876807583386005,0.7602811829033049,0.9672031748666885,2,Singapore,0.8438547472312835,0,1
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",Nigeria,ng,Africa,African-Islamic,-0.18362490699852035,0.8941465984778049,1.933821246226811,8,Singapore,0.735523821636557,0,0
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",Pakistan,pk,Asia,African-Islamic,-0.32360485376322934,0.7734416743863403,1.613231261389856,7,Singapore,0.7317099795639022,0,0
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",Philippines,ph,Asia,Latin America,-0.3855602099415242,0.7829595154653388,1.941378931811424,9,Singapore,0.7842112139445312,0,0
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",Singapore,sg,Asia,West & South Asia,-0.5823934449642096,0.7268707924609268,0.9133133543817915,1,Singapore,0.9133133543817915,1,1
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",South Africa,za,Africa,African-Islamic,-0.8082805367017867,0.9342266492597364,1.5749266674218745,4,Singapore,1.214275320489699,0,0
+maple_1b_tminus_eplus,"MAPLE 1B (T-, I+)",United States,us,America,English-Speaking,-0.3797547755733587,0.856357111524846,2.2800002865974194,11,Singapore,0.8296814026311218,0,0
