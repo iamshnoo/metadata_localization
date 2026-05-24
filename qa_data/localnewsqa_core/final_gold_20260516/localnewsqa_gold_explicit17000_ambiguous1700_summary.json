@@ -1,0 +1,61 @@
+{
+  "valid": true,
+  "output_jsonl": "qa_data/localnewsqa_core/final_gold_20260516/localnewsqa_gold_explicit17000_ambiguous1700.jsonl",
+  "source_explicit": "qa_data/localnewsqa_core/runs/quality_audit/no_api_splits_20260515/web_semantic_gold_ambiguous_1700/explicit_max_audit/strict_defensible_1000_curated_final/localnewsqa_targetqa_explicit_strict_defensible_1000_per_country_curated_final.jsonl",
+  "source_ambiguous": "qa_data/localnewsqa_core/runs/quality_audit/no_api_splits_20260515/web_semantic_gold_ambiguous_1700/localnewsqa_ambiguous_semantic_gold_1700.jsonl",
+  "rows": 18700,
+  "split_counts": {
+    "explicit": 17000,
+    "ambiguous": 1700
+  },
+  "explicit": {
+    "rows": 17000,
+    "country_counts": {
+      "Bangladesh": 1000,
+      "Canada": 1000,
+      "Ghana": 1000,
+      "Hong Kong": 1000,
+      "India": 1000,
+      "Ireland": 1000,
+      "Jamaica": 1000,
+      "Kenya": 1000,
+      "Malaysia": 1000,
+      "Nigeria": 1000,
+      "Pakistan": 1000,
+      "Philippines": 1000,
+      "South Africa": 1000,
+      "Sri Lanka": 1000,
+      "Tanzania": 1000,
+      "United Kingdom": 1000,
+      "United States": 1000
+    },
+    "duplicate_ids": 0,
+    "duplicate_normalized_questions": 0,
+    "errors": []
+  },
+  "ambiguous": {
+    "rows": 1700,
+    "country_counts": {
+      "Bangladesh": 100,
+      "Canada": 100,
+      "Ghana": 100,
+      "Hong Kong": 100,
+      "India": 100,
+      "Ireland": 100,
+      "Jamaica": 100,
+      "Kenya": 100,
+      "Malaysia": 100,
+      "Nigeria": 100,
+      "Pakistan": 100,
+      "Philippines": 100,
+      "South Africa": 100,
+      "Sri Lanka": 100,
+      "Tanzania": 100,
+      "United Kingdom": 100,
+      "United States": 100
+    },
+    "duplicate_ids": 0,
+    "duplicate_normalized_questions": 0,
+    "errors": []
+  }
+}

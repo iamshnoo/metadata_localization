@@ -10,6 +10,12 @@ helpers, and evaluation scripts.
 
 ## What Lives Where
 
+List the tracked recipe files with:
+
+```bash
+python tools/repo.py pretraining-recipes
+```
+
 | Path | Purpose |
 | --- | --- |
 | `src/step3_pretraining/3a_pretrain/continents/` | Markdown command manifests for Nanotron training runs. |

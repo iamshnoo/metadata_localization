@@ -46,6 +46,12 @@ have been summarized or compressed.
 
 ## Relationship To Code
 
+- `qa_data/localnewsqa_core/final_gold_20260516/` contains the final gold
+  benchmark data evaluated by the LocalNewsQA result summaries.
+- `docs/DATASET_AND_AUDIT.md` describes the generation and quality-audit
+  pipeline behind that benchmark.
+- `docs/SFT_AND_EVALUATION.md` maps the SFT, benchmark, and significance
+  scripts that consume these result files.
 - `src/step5_plots/` contains the plotting and table-generation scripts.
 - `src_live/` contains live summary scripts used for many final result sweeps.
 - `slurm_live/` contains the run manifests for cluster-generated outputs.

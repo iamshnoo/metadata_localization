@@ -53,7 +53,40 @@ to the directory containing `combined_with_metadata_1b`,
 
 ## `qa_data/`
 
-Benchmark data surface for the legacy `qa_metacul` evaluation. It includes:
+Benchmark data surface for LocalNewsQA Core plus the legacy `qa_metacul`
+evaluation.
+
+### LocalNewsQA Core
+
+`qa_data/localnewsqa_core/` is the reusable generation, validation, automated
+audit, repair, and release pipeline for the final LocalNewsQA benchmark.
+
+Useful commands:
+
+```bash
+python tools/repo.py localnewsqa-pipeline
+python qa_data/localnewsqa_core/01_build_generation_requests.py --help
+python qa_data/localnewsqa_core/24_audit_full_dataset_quality.py --help
+python qa_data/localnewsqa_core/27_llm_verify_core_quality.py --help
+```
+
+Important files:
+
+| Path | Purpose |
+| --- | --- |
+| `qa_data/localnewsqa_core/config.py` | Country, topic, quota, split, and prompt configuration. |
+| `qa_data/localnewsqa_core/prompts/` | Developer prompts for explicit and ambiguous candidate generation. |
+| `qa_data/localnewsqa_core/human_validation_guidelines.md` | Reviewer-facing validation rubric. |
+| `qa_data/localnewsqa_core/final_gold_20260516/` | Final 18,700 row JSONL release and summary. |
+| `qa_data/hf_dataset_localnewsqa_gold_20260516/` | Compact Hugging Face-style parquet export. |
+
+The final release has 17,000 explicit rows and 1,700 ambiguous rows balanced
+across 17 countries. See `docs/DATASET_AND_AUDIT.md` for the full stage map.
+
+### Legacy `qa_metacul`
+
+The older benchmark is preserved for compatibility with earlier runs. It
+includes:
 
 - continent-level JSON inputs;
 - `hf_dataset.jsonl`, a normalized JSONL export;
@@ -96,6 +129,63 @@ ablations. The training engine is the project Nanotron fork at
 `https://github.com/iamshnoo/nanotron`; this repository stores the MAPLE
 recipes and downstream conversion/evaluation utilities. See
 `docs/PRETRAINING.md` for the full usage guide.
+
+### SFT
+
+`src/step4_sft/4b_sft/` contains the supervised fine-tuning component. The
+entrypoints train with-metadata and without-metadata adapters, merge LoRA
+weights back into model checkpoints, and preserve the SLURM manifests used for
+the paper runs.
+
+```bash
+python tools/repo.py sft
+```
+
+Start with:
+
+| File | Purpose |
+| --- | --- |
+| `src/step4_sft/4b_sft/12_sft.py` | Earlier SFT training entrypoint. |
+| `src/step4_sft/4b_sft/15_sft.py` | Later SFT training entrypoint used by the final runs. |
+| `src/step4_sft/4b_sft/13_merge_lora.py` | Earlier adapter merge entrypoint. |
+| `src/step4_sft/4b_sft/16_merge_lora.py` | Later adapter merge entrypoint used by the final runs. |
+| `src/step4_sft/4b_sft/scripts/` | Cluster launch manifests. |
+
+### Evaluations
+
+The evaluation surface spans pretraining, SFT, LocalNewsQA, external
+benchmarks, cultural projection, open-ended geographic probes, significance,
+and plots.
+
+```bash
+python tools/repo.py evals
+```
+
+Start with:
+
+| Area | Entry points |
+| --- | --- |
+| Pretraining perplexity | `src/step3_pretraining/3b_pretrain_eval/` |
+| SFT/local QA evaluation | `src/step4_sft/4c_sft_eval/` |
+| Cultural projection | `culture_map/`, `slurm_live/submit_culture_map_wvs_maple.sh` |
+| Live benchmark runs | `slurm_live/pretrained_localnewsqa_eval_*.slurm`, `slurm_live/pretrained_external_eval_*.slurm` |
+| Plots and significance | `src/step5_plots/`, `results/analysis/` |
+
+See `docs/SFT_AND_EVALUATION.md` for the full map.
+
+## `tools/`
+
+Python helper entrypoints. `tools/repo.py` is intentionally small and
+dependency-free; it replaces Makefile-style shortcuts with direct Python
+commands:
+
+```bash
+python tools/repo.py components
+python tools/repo.py pretraining-recipes
+python tools/repo.py localnewsqa-pipeline
+python tools/repo.py sft
+python tools/repo.py evals
+```
 
 ## `src_live/`
 

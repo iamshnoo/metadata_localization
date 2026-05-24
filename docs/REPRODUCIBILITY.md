@@ -12,6 +12,8 @@ Required outside Git:
 - raw English News on the Web corpus files;
 - generated document metadata and processed training corpora;
 - trained model checkpoints and LoRA adapters;
+- LocalNewsQA intermediate `runs/` artifacts, raw provider outputs, and web
+  fetch caches;
 - API credentials for hosted model providers;
 - cluster-specific modules, partitions, cache paths, and job logs.
 
@@ -55,27 +57,64 @@ manifests and downstream tooling. Large checkpoints live outside Git; the
 repository tracks only recipes, conversion/evaluation code, and selected summary
 outputs. See `docs/PRETRAINING.md`.
 
-### 4. QA generation, SFT, and evaluation
+### 4. LocalNewsQA generation and audit
 
 ```text
-src/step4_sft/
-qa_data/
+qa_data/localnewsqa_core/
+qa_data/hf_dataset_localnewsqa_gold_20260516/
 ```
 
-The QA benchmark builder is available directly from `qa_data/` and mirrored
-inside `src/step4_sft/4a_qa_data_generation/`. SFT scripts train adapters,
-merge LoRA weights, and evaluate metadata-sensitive behavior.
+This stage builds LocalNewsQA Core candidates, runs human-validation and web
+evidence workflows, applies automated heuristic/semantic/LLM audits, repairs
+weak rows, and emits the final gold release. The repository tracks the complete
+script surface, prompts, guidelines, final JSONL release, final summary, and
+parquet export. It excludes the multi-GB `runs/` workspace.
 
-### 5. Analysis and paper artifacts
+Useful discovery command:
+
+```bash
+python tools/repo.py localnewsqa-pipeline
+```
+
+See `docs/DATASET_AND_AUDIT.md`.
+
+### 5. SFT training and adapter merge
 
 ```text
+src/step4_sft/4a_qa_data_generation/
+src/step4_sft/4b_sft/
+```
+
+The legacy QA benchmark builder is available directly from `qa_data/` and
+mirrored inside `src/step4_sft/4a_qa_data_generation/`. SFT scripts train
+adapters for metadata variants and merge LoRA weights into checkpoints for
+evaluation.
+
+```bash
+python tools/repo.py sft
+```
+
+See `docs/SFT_AND_EVALUATION.md`.
+
+### 6. Evaluation, analysis, and paper artifacts
+
+```text
+src/step3_pretraining/3b_pretrain_eval/
+src/step4_sft/4c_sft_eval/
 src/step5_plots/
+slurm_live/
 results/
 ```
 
-Plotting and analysis scripts consume tracked result summaries plus external
-artifacts when needed. Most paper-facing tables, plots, and summaries are stored
-under `results/`.
+Evaluation covers pretraining perplexity, LocalNewsQA, external benchmarks,
+SFT comparisons, WVS/culture-map projections, open-ended geographic probes,
+significance tests, and paper plots. Plotting and analysis scripts consume
+tracked result summaries plus external artifacts when needed. Most paper-facing
+tables, plots, and summaries are stored under `results/`.
+
+```bash
+python tools/repo.py evals
+```
 
 ## Reusable Package Workflow
 
@@ -98,6 +137,18 @@ The files in `slurm_live/` are preserved as executable run manifests. They are
 not intended to be portable without editing account, partition, cache, and model
 paths. Their value is to document the exact orchestration used for the
 submission runs.
+
+## Python Entry Point Index
+
+This repository uses direct Python commands instead of a required Makefile:
+
+```bash
+python tools/repo.py components
+python tools/repo.py pretraining-recipes
+python tools/repo.py localnewsqa-pipeline
+python tools/repo.py sft
+python tools/repo.py evals
+```
 
 ## Large Result Handling
 

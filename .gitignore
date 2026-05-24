@@ -15,6 +15,8 @@ data/
 document_metadata/
 training_data/
 themes/
+!qa_data/hf_dataset_localnewsqa_gold_20260516/data/
+!qa_data/hf_dataset_localnewsqa_gold_20260516/data/*.parquet
 
 # Large local artifacts
 models/
@@ -22,6 +24,7 @@ logs/
 src/wandb/
 results/per_sample_losses/
 results/analysis/localnewsqa_locale_switch/pair_level.csv
+qa_data/localnewsqa_core/runs/
 
 # Local helper state
 .agents/

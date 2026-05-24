@@ -1,10 +1,14 @@
 # Metadata Localization
 
 This repository contains the reusable software and public artifacts for the
-metadata localization submission. The codebase supports three related tasks:
+metadata localization submission. The codebase supports the full component
+surface used by the project:
 
 - building metadata-conditioned training corpora from geographically grounded
   news data;
+- running MAPLE pretraining recipes through the project Nanotron fork;
+- generating, validating, auditing, and releasing LocalNewsQA benchmark data;
+- supervised fine-tuning and LoRA merge workflows;
 - evaluating pretrained and instruction-tuned models on local knowledge,
   cultural projection, and external benchmark surfaces;
 - reproducing the paper tables, plots, and summary analyses from tracked
@@ -45,7 +49,10 @@ python qa_data/build_hf_dataset.py --help
 Inspect the reproducibility pipeline:
 
 ```bash
-find src -maxdepth 2 -type d | sort
+python tools/repo.py components
+python tools/repo.py localnewsqa-pipeline
+python tools/repo.py sft
+python tools/repo.py evals
 ```
 
 ## What To Use
@@ -53,11 +60,16 @@ find src -maxdepth 2 -type d | sort
 | Need | Start here | What it provides |
 | --- | --- | --- |
 | Installable software package | `culture_map/` | CLI and Python modules for WVS-style cultural projection, plotting, and provider/model evaluation. |
-| Benchmark data surface | `qa_data/` | Legacy `qa_metacul` JSON, JSONL, and Hugging Face dataset export plus the dataset builder. |
+| LocalNewsQA gold benchmark | `qa_data/localnewsqa_core/final_gold_20260516/`, `qa_data/hf_dataset_localnewsqa_gold_20260516/` | Final 18,700 row explicit/ambiguous gold benchmark as JSONL and parquet. |
+| Dataset generation and audit | `qa_data/localnewsqa_core/`, `docs/DATASET_AND_AUDIT.md` | LocalNewsQA candidate generation, human validation, web evidence, automated audit, repair, and release scripts. |
+| Legacy QA benchmark | `qa_data/` | Legacy `qa_metacul` JSON, JSONL, Hugging Face dataset export, and builder. |
 | Nanotron pretraining | `src/step3_pretraining/`, `docs/PRETRAINING.md` | MAPLE Nanotron training recipes, checkpoint conversion, and pretrained-model evaluation. |
+| SFT training and merge | `src/step4_sft/4b_sft/`, `docs/SFT_AND_EVALUATION.md` | Supervised fine-tuning, LoRA merge, and cluster launch manifests for metadata variants. |
+| Evaluation stack | `src/step3_pretraining/3b_pretrain_eval/`, `src/step4_sft/4c_sft_eval/`, `slurm_live/`, `docs/SFT_AND_EVALUATION.md` | LocalNewsQA, external benchmarks, WVS/culture-map, open-ended probes, significance, and plots. |
 | Reproducibility pipeline | `src/` | Step-structured scripts from data processing through model evaluation and paper plots. |
 | Live experiment scripts | `src_live/`, `slurm_live/` | Flat mirrors of active scripts and cluster launchers used for paper runs. |
 | Paper artifacts | `results/` | Tracked summary tables, plots, benchmark outputs, and compressed large result files. |
+| Python component index | `tools/repo.py` | Small no-dependency helper for discovering component entrypoints. |
 | Workspace sync utility | `sync_from_workspace.py` | Copies curated code/results from the private workspace into this public repo layout. |
 
 ## Repository Layout
@@ -66,11 +78,12 @@ find src -maxdepth 2 -type d | sort
 metadata_localization/
 ├── culture_map/       # installable package: cultural map projection/evaluation
 ├── docs/              # reviewer-facing guides and artifact manifests
-├── qa_data/           # QA benchmark data and dataset build script
+├── qa_data/           # QA benchmark data, LocalNewsQA Core, and builders
 ├── results/           # tracked summary results, plots, and compressed artifacts
 ├── slurm_live/        # cluster job launchers used by the experiments
 ├── src/               # organized pipeline by paper stage
 ├── src_live/          # live flat script mirror from the experiment workspace
+├── tools/             # Python helper entrypoints for repository discovery
 ├── sync_from_workspace.py
 └── README.md
 ```
@@ -89,10 +102,13 @@ src/
 
 ## Reusable Software Components
 
-The primary reusable software component is `culture_map`, which can be installed
-with `pip install -e culture_map`. It exposes the `culture-map` command and
-separate modules for asset loading, scoring, projection, plotting, provider
-runners, and local checkpoint evaluation.
+The repository is Python-first. Use `python tools/repo.py components` to list
+the main reusable entrypoints without relying on a Makefile.
+
+The installable package is `culture_map`, which can be installed with
+`pip install -e culture_map`. It exposes the `culture-map` command and separate
+modules for asset loading, scoring, projection, plotting, provider runners, and
+local checkpoint evaluation.
 
 Useful commands:
 
@@ -110,6 +126,17 @@ culture-map run-local-country-eval --variant <variant-name>
 See `culture_map/README.md` and `docs/COMPONENTS.md` for the package API,
 expected inputs, and common workflows.
 
+The other reusable components are script-level pipelines:
+
+- `qa_data/localnewsqa_core/` for LocalNewsQA generation, validation, automated
+  audit, and final release construction.
+- `src/step3_pretraining/` for MAPLE pretraining recipes using
+  `https://github.com/iamshnoo/nanotron`, checkpoint conversion, and pretrained
+  evaluation.
+- `src/step4_sft/4b_sft/` for SFT training and LoRA merge.
+- `src/step4_sft/4c_sft_eval/` and `src/step5_plots/` for benchmark
+  evaluation, significance testing, and paper plots.
+
 ## Reproducing Experiments
 
 The public repository includes code and summary artifacts. Large raw corpora,
@@ -121,10 +148,12 @@ Recommended reading order:
 
 1. `docs/COMPONENTS.md` for module boundaries and reusable entrypoints.
 2. `docs/PRETRAINING.md` for the Nanotron training, conversion, and evaluation workflow.
-3. `docs/REPRODUCIBILITY.md` for the end-to-end pipeline and external inputs.
-4. `docs/RESULTS.md` for the tracked result directories and paper artifacts.
-5. `qa_data/README.md` for the QA benchmark surface.
-6. `culture_map/README.md` for cultural projection workflows.
+3. `docs/DATASET_AND_AUDIT.md` for LocalNewsQA generation and audit.
+4. `docs/SFT_AND_EVALUATION.md` for SFT and benchmark evaluation.
+5. `docs/REPRODUCIBILITY.md` for the end-to-end pipeline and external inputs.
+6. `docs/RESULTS.md` for the tracked result directories and paper artifacts.
+7. `qa_data/README.md` for the QA benchmark surface.
+8. `culture_map/README.md` for cultural projection workflows.
 
 ## Data And Artifact Policy
 

@@ -1,0 +1,12 @@
+{
+  "rows": 18700,
+  "explicit_rows": 17000,
+  "ambiguous_rows": 1700,
+  "countries": 17,
+  "topic_labels": 16,
+  "paper_topic_families": 8,
+  "explicit_per_country_min": 1000,
+  "explicit_per_country_max": 1000,
+  "ambiguous_per_country_min": 100,
+  "ambiguous_per_country_max": 100
+}
