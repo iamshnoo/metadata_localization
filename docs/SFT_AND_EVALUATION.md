@@ -54,7 +54,7 @@ The repository covers several evaluation surfaces:
 
 ## Result Artifacts
 
-The `results/` directory tracks summary-heavy artifacts rather than private raw
+The `results/` directory tracks summary-heavy artifacts rather than full raw
 logs. Useful starting points:
 
 ```text

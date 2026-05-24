@@ -55,7 +55,6 @@ Use the Python index to see the main reusable scripts:
 python tools/repo.py localnewsqa-pipeline
 ```
 
-The pipeline is intentionally Python-first. There is no required Makefile layer.
 Each script can be inspected or run directly, and the portable scripts expose
 their arguments through `--help`.
 
@@ -71,9 +70,9 @@ their arguments through `--help`.
 | Strict gold construction | `41_*.py` through `70_*.py` | Build semantic-gold ambiguous rows, strict explicit rows, reviewer-risk reports, and final release data. |
 
 Late numbered scripts preserve the exact curation and repair manifests used in
-the submission. Some expect the private `runs/` workspace produced by earlier
-steps. They remain valuable because they expose the actual quality gates and
-manual repair logic, while large intermediate artifacts stay out of Git.
+the submission. Some expect the `runs/` workspace produced by earlier steps.
+They remain valuable because they expose the actual quality gates and manual
+repair logic, while large intermediate artifacts stay out of Git.
 
 ## Automated Quality Gates
 

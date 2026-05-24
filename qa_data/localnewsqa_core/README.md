@@ -69,8 +69,8 @@ evidence fields, validation fields, and release provenance.
 | Strict release | `46_final_gold_quality_audit.py` through `70_audit_ambiguous_human_weak_locale_pattern.py` | Run final audits, explicit strict balancing, manual repair manifests, final validation, and release build. |
 
 The numbered files intentionally preserve the experiment order. Some late
-repair scripts are historical manifests that expect the private `runs/`
-workspace created by earlier stages. They are tracked for reproducibility and
+repair scripts are historical manifests that expect the `runs/` workspace
+created by earlier stages. They are tracked for reproducibility and
 auditability; use the `--help` output on scripts that expose arguments when
 rerunning in a new workspace.
 
@@ -81,7 +81,7 @@ Generation behavior is controlled by:
 - `config.py` for country lists, topics, quotas, prompt paths, and split names.
 - `prompts/developer_explicit.md` for locale-explicit questions.
 - `prompts/developer_ambiguous.md` for locale-ambiguous questions.
-- `human_validation_guidelines.md` for reviewer-facing quality criteria.
+- `human_validation_guidelines.md` for the validation rubric.
 
 The generation scripts create request files and do not submit paid API jobs
 automatically.
@@ -91,4 +91,4 @@ automatically.
 The repository tracks source code and the small final release artifacts. It
 does not track `runs/`, raw Batch API outputs, evidence-fetch caches, web audit
 fetch logs, reviewer dashboards, or intermediate CSV/JSONL pools. Those files
-were several GB in the private workspace and are ignored by Git.
+were several GB in the source workspace and are ignored by Git.

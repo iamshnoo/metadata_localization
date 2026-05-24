@@ -176,8 +176,7 @@ See `docs/SFT_AND_EVALUATION.md` for the full map.
 ## `tools/`
 
 Python helper entrypoints. `tools/repo.py` is intentionally small and
-dependency-free; it replaces Makefile-style shortcuts with direct Python
-commands:
+dependency-free; it records direct Python discovery commands:
 
 ```bash
 python tools/repo.py components
@@ -189,10 +188,10 @@ python tools/repo.py evals
 
 ## `src_live/`
 
-Flat mirror of the live scratch-workspace scripts. This is useful when matching
-cluster logs, historical commands, or `slurm_live/` job files that reference the
-original script names. New users should prefer the organized `src/` tree unless
-they are reproducing an exact live run.
+Flat mirror of the live experiment-workspace scripts. This is useful when
+matching cluster logs, historical commands, or `slurm_live/` job files that
+reference the original script names. New users should prefer the organized
+`src/` tree unless they are reproducing an exact live run.
 
 ## `slurm_live/`
 
@@ -204,12 +203,12 @@ document the exact command arguments used for paper runs.
 
 Tracked result artifacts. This directory is intentionally summary-heavy:
 tables, plots, JSON summaries, benchmark score files, and compressed large
-artifacts. It does not contain private checkpoints, raw corpora, or full logs.
+artifacts. It does not contain checkpoints, raw corpora, or full logs.
 
 See `docs/RESULTS.md` for a directory-by-directory inventory.
 
 ## `sync_from_workspace.py`
 
 Repository curation utility. It copies selected code, benchmark files, and
-summary artifacts from the private scratch workspace into this public repository
-layout. It is useful for maintainers, not required for reviewers.
+summary artifacts from the experiment workspace into this repository layout. It
+is useful for maintainers, not required for running the public components.

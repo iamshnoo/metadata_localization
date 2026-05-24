@@ -14,10 +14,9 @@ surface used by the project:
 - reproducing the paper tables, plots, and summary analyses from tracked
   result artifacts.
 
-The repository is organized so reviewers can quickly find the installable
-software component, the benchmark data, and the experiment pipeline without
-needing access to the private scratch workspace used for large raw corpora and
-model checkpoints.
+The top-level layout separates the reusable package, benchmark data, training
+recipes, evaluation scripts, and paper artifacts so each component can be used
+directly.
 
 ## Quick Start
 
@@ -70,14 +69,14 @@ python tools/repo.py evals
 | Live experiment scripts | `src_live/`, `slurm_live/` | Flat mirrors of active scripts and cluster launchers used for paper runs. |
 | Paper artifacts | `results/` | Tracked summary tables, plots, benchmark outputs, and compressed large result files. |
 | Python component index | `tools/repo.py` | Small no-dependency helper for discovering component entrypoints. |
-| Workspace sync utility | `sync_from_workspace.py` | Copies curated code/results from the private workspace into this public repo layout. |
+| Workspace sync utility | `sync_from_workspace.py` | Copies curated code/results from the experiment workspace into this repo layout. |
 
 ## Repository Layout
 
 ```text
 metadata_localization/
 ├── culture_map/       # installable package: cultural map projection/evaluation
-├── docs/              # reviewer-facing guides and artifact manifests
+├── docs/              # component guides and artifact manifests
 ├── qa_data/           # QA benchmark data, LocalNewsQA Core, and builders
 ├── results/           # tracked summary results, plots, and compressed artifacts
 ├── slurm_live/        # cluster job launchers used by the experiments
@@ -102,13 +101,12 @@ src/
 
 ## Reusable Software Components
 
-The repository is Python-first. Use `python tools/repo.py components` to list
-the main reusable entrypoints without relying on a Makefile.
+Use `python tools/repo.py components` to list the main reusable entrypoints.
 
-The installable package is `culture_map`, which can be installed with
-`pip install -e culture_map`. It exposes the `culture-map` command and separate
-modules for asset loading, scoring, projection, plotting, provider runners, and
-local checkpoint evaluation.
+`culture_map` is an installable package we use for WVS-style cultural
+projection. Install it with `pip install -e culture_map`; it exposes the
+`culture-map` command and separate modules for asset loading, scoring,
+projection, plotting, provider runners, and local checkpoint evaluation.
 
 Useful commands:
 
@@ -139,7 +137,7 @@ The other reusable components are script-level pipelines:
 
 ## Reproducing Experiments
 
-The public repository includes code and summary artifacts. Large raw corpora,
+The repository includes code and summary artifacts. Large raw corpora,
 licensed inputs, model checkpoints, and cluster logs are intentionally excluded
 from Git. The pipeline expects those external assets to be present in the
 workspace paths configured by the individual scripts.
@@ -163,7 +161,7 @@ tables, plots, and compressed result files needed for review. It does not track:
 - raw NOW corpus data;
 - generated document metadata and full training corpora;
 - model checkpoints and training logs;
-- API keys, local environment files, or cluster-private state;
+- API keys, local environment files, or cluster-local state;
 - raw result files larger than GitHub's 100 MB object limit.
 
 One large CSV rejected by GitHub is committed as

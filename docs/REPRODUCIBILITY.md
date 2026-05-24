@@ -31,8 +31,7 @@ src/step2_process_data/2a_metadata_processing/
 ```
 
 These scripts prepare raw documents, fit topic models, create document metadata,
-and build metadata indices. They expect the private corpus workspace to be
-available.
+and build metadata indices. They expect the corpus workspace to be available.
 
 ### 2. Dataset construction
 
@@ -140,7 +139,7 @@ submission runs.
 
 ## Python Entry Point Index
 
-This repository uses direct Python commands instead of a required Makefile:
+This repository uses direct Python commands for component discovery:
 
 ```bash
 python tools/repo.py components

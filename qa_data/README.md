@@ -53,4 +53,4 @@ self-contained QA generation stage.
 
 The LocalNewsQA Core final release is tracked in this repository. Multi-GB
 intermediate generation, validation, and web-audit workspaces live under
-`qa_data/localnewsqa_core/runs/` in the private workspace and are ignored here.
+`qa_data/localnewsqa_core/runs/` in the source workspace and are ignored here.
