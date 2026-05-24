@@ -31,19 +31,6 @@ complete experiment cache.
 | `results/significance/` | Statistical tests and confidence interval summaries. |
 | `results/url_analysis/` | URL-signal and adversarial metadata analyses. |
 
-## Large And Compressed Files
-
-`results/analysis/localnewsqa_locale_switch/pair_level.csv.gz` is the compressed
-version of a raw pair-level CSV that exceeds GitHub's 100 MB file limit. To
-inspect it:
-
-```bash
-gzip -cd results/analysis/localnewsqa_locale_switch/pair_level.csv.gz | head
-```
-
-Raw generated outputs larger than GitHub can accept are not tracked unless they
-have been summarized or compressed.
-
 ## Relationship To Code
 
 - `qa_data/localnewsqa_core/final_gold_20260516/` contains the final gold

@@ -148,10 +148,3 @@ python tools/repo.py localnewsqa-pipeline
 python tools/repo.py sft
 python tools/repo.py evals
 ```
-
-## Large Result Handling
-
-GitHub rejects individual files larger than 100 MB. Large raw outputs are either
-excluded, summarized, or compressed. The compressed file
-`results/analysis/localnewsqa_locale_switch/pair_level.csv.gz` replaces the raw
-CSV that exceeded GitHub's object size limit.
