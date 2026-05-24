@@ -253,7 +253,8 @@ def build_parser():
     )
     local_country_parser.add_argument(
         "--chat-template-path",
-        default="/path/to/metacul/src/chat_template.jinja",
+        default=None,
+        help="Reserved for compatibility with older cluster launchers.",
     )
     local_country_parser.add_argument("--variant", action="append")
     local_country_parser.add_argument("--country-code", action="append")

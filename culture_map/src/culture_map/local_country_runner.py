@@ -1,5 +1,6 @@
 from collections import OrderedDict
 from itertools import permutations
+import os
 from pathlib import Path
 
 import numpy as np
@@ -12,6 +13,17 @@ from .utils import ensure_dir, load_env_file, write_jsonl
 
 
 DEFAULT_BASE_URL = "www.worldvaluessurvey.org/wvs-source"
+
+
+def _default_model_path(model_name):
+    return model_name
+
+
+def _resolve_model_path(model_path):
+    expanded = os.path.expanduser(os.path.expandvars(str(model_path)))
+    if Path(expanded).is_absolute():
+        return expanded
+    return str(Path(os.environ.get("MAPLE_MODEL_ROOT", "models")) / expanded)
 
 METACUL_COUNTRY_SPECS = OrderedDict(
     [
@@ -35,14 +47,14 @@ METACUL_COUNTRY_SPECS = OrderedDict(
 
 MAPLE_VARIANTS = OrderedDict(
     [
-        ("maple_1b_tplus_eplus", {"label": "MAPLE 1B (T+, I+)", "model_path": "/path/to/metacul/models/combined_with_metadata_1b", "train_metadata": True, "eval_metadata": True, "size": "1B"}),
-        ("maple_1b_tplus_eminus", {"label": "MAPLE 1B (T+, I-)", "model_path": "/path/to/metacul/models/combined_with_metadata_1b", "train_metadata": True, "eval_metadata": False, "size": "1B"}),
-        ("maple_1b_tminus_eplus", {"label": "MAPLE 1B (T-, I+)", "model_path": "/path/to/metacul/models/combined_without_metadata_1b", "train_metadata": False, "eval_metadata": True, "size": "1B"}),
-        ("maple_1b_tminus_eminus", {"label": "MAPLE 1B (T-, I-)", "model_path": "/path/to/metacul/models/combined_without_metadata_1b", "train_metadata": False, "eval_metadata": False, "size": "1B"}),
-        ("maple_3b_tplus_eplus", {"label": "MAPLE 3B (T+, I+)", "model_path": "/path/to/metacul/models/combined_with_metadata_3b", "train_metadata": True, "eval_metadata": True, "size": "3B"}),
-        ("maple_3b_tplus_eminus", {"label": "MAPLE 3B (T+, I-)", "model_path": "/path/to/metacul/models/combined_with_metadata_3b", "train_metadata": True, "eval_metadata": False, "size": "3B"}),
-        ("maple_3b_tminus_eplus", {"label": "MAPLE 3B (T-, I+)", "model_path": "/path/to/metacul/models/combined_without_metadata_3b", "train_metadata": False, "eval_metadata": True, "size": "3B"}),
-        ("maple_3b_tminus_eminus", {"label": "MAPLE 3B (T-, I-)", "model_path": "/path/to/metacul/models/combined_without_metadata_3b", "train_metadata": False, "eval_metadata": False, "size": "3B"}),
+        ("maple_1b_tplus_eplus", {"label": "MAPLE 1B (T+, I+)", "model_path": _default_model_path("combined_with_metadata_1b"), "train_metadata": True, "eval_metadata": True, "size": "1B"}),
+        ("maple_1b_tplus_eminus", {"label": "MAPLE 1B (T+, I-)", "model_path": _default_model_path("combined_with_metadata_1b"), "train_metadata": True, "eval_metadata": False, "size": "1B"}),
+        ("maple_1b_tminus_eplus", {"label": "MAPLE 1B (T-, I+)", "model_path": _default_model_path("combined_without_metadata_1b"), "train_metadata": False, "eval_metadata": True, "size": "1B"}),
+        ("maple_1b_tminus_eminus", {"label": "MAPLE 1B (T-, I-)", "model_path": _default_model_path("combined_without_metadata_1b"), "train_metadata": False, "eval_metadata": False, "size": "1B"}),
+        ("maple_3b_tplus_eplus", {"label": "MAPLE 3B (T+, I+)", "model_path": _default_model_path("combined_with_metadata_3b"), "train_metadata": True, "eval_metadata": True, "size": "3B"}),
+        ("maple_3b_tplus_eminus", {"label": "MAPLE 3B (T+, I-)", "model_path": _default_model_path("combined_with_metadata_3b"), "train_metadata": True, "eval_metadata": False, "size": "3B"}),
+        ("maple_3b_tminus_eplus", {"label": "MAPLE 3B (T-, I+)", "model_path": _default_model_path("combined_without_metadata_3b"), "train_metadata": False, "eval_metadata": True, "size": "3B"}),
+        ("maple_3b_tminus_eminus", {"label": "MAPLE 3B (T-, I-)", "model_path": _default_model_path("combined_without_metadata_3b"), "train_metadata": False, "eval_metadata": False, "size": "3B"}),
     ]
 )
 
@@ -276,7 +288,9 @@ def run_local_country_models(
                 if path.exists():
                     path.unlink()
 
-        model_path = spec["model_path"]
+        model_path = _resolve_model_path(spec["model_path"])
+        output_spec = dict(spec)
+        output_spec["model_path"] = model_path
         try:
             tokenizer = AutoTokenizer.from_pretrained(
                 model_path,
@@ -384,7 +398,7 @@ def run_local_country_models(
         distance_df = _build_country_distance_summary(country_means, human_targets, variant_name, spec["label"])
         distance_df.to_csv(paths["distance_csv"], index=False)
 
-        overall_df = _build_overall_summary(distance_df, variant_name, spec)
+        overall_df = _build_overall_summary(distance_df, variant_name, output_spec)
         overall_df.to_csv(paths["overall_csv"], index=False)
 
         all_country_means.append(country_means)

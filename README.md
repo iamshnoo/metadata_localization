@@ -1,160 +1,146 @@
-# MeCo: Metacultural Training Pipeline
+# Metadata Localization
 
-This repository contains the complete pipeline for training language models on metacultural data with various splits and configurations.
+This repository contains the reusable software and public artifacts for the
+metadata localization submission. The codebase supports three related tasks:
 
-## 📁 Project Structure
+- building metadata-conditioned training corpora from geographically grounded
+  news data;
+- evaluating pretrained and instruction-tuned models on local knowledge,
+  cultural projection, and external benchmark surfaces;
+- reproducing the paper tables, plots, and summary analyses from tracked
+  result artifacts.
 
-```
-metacul/
-├── src/                          # Source code
-├── train_configs/                # Generated training configurations
-├── data/                         # Raw data (ignored)
-├── training_data/                # Processed datasets (ignored)
-├── logs/                         # Training logs and checkpoints (ignored)
-├── quick_llama/                  # Quick LLaMA library (ignored)
-├── MeCo/                         # MeCo dataset repository (ignored)
-└── scripts/                      # SLURM job scripts
-```
+The repository is organized so reviewers can quickly find the installable
+software component, the benchmark data, and the experiment pipeline without
+needing access to the private scratch workspace used for large raw corpora and
+model checkpoints.
 
-## 🚀 Execution Order
+## Quick Start
 
-### Phase 1: Data Preparation
+Clone the repository and install the reusable `culture-map` package:
 
-#### 1. **Raw Data Processing** (`0_data_now.py`)
-- **Purpose**: Download and preprocess raw NOW corpus data
-- **SLURM**: `scripts/now_data.slurm`
-- **Output**: Cleaned text data in `data/`
-
-#### 2. **LDA Topic Modeling** (`1_lda.py`)
-- **Purpose**: Generate topic models for document clustering
-- **SLURM**: `scripts/lda.slurm`
-- **Input**: Raw text data
-- **Output**: LDA models and topic assignments
-
-#### 3. **Document Metadata Generation** (`2_generate_document_metadata.py`)
-- **Purpose**: Extract metadata (dates, sources, topics) for each document
-- **SLURM**: `scripts/generate_document_metadata.slurm`
-- **Input**: Raw data + LDA topics
-- **Output**: Document metadata in `document_metadata/`
-
-#### 4. **Theme Identification** (`3_identify_dominant_themes.py`)
-- **Purpose**: Identify dominant themes across different time periods and regions
-- **Input**: Document metadata
-- **Output**: Theme classifications in `themes/`
-
-#### 5. **Metadata Enhancement** (`4_update_metadata_with_themes.py`)
-- **Purpose**: Enhance document metadata with identified themes
-- **Input**: Document metadata + themes
-- **Output**: Enhanced metadata
-
-#### 6. **Meta Index Creation** (`5_create_meta_index.py`)
-- **Purpose**: Create searchable index of all documents with metadata
-- **Input**: Enhanced metadata
-- **Output**: Meta index for efficient querying
-
-### Phase 2: Dataset Creation
-
-#### 7. **Data Splitting** (`6_data_splitter_ids_only.py`)
-- **Purpose**: Split data into different configurations (continents, concepts, etc.)
-- **Input**: Meta index
-- **Output**: Split configurations
-
-#### 8. **HuggingFace Dataset Creation** (`7_create_hf_datasets_streaming.py`)
-- **Purpose**: Convert splits into HuggingFace dataset format
-- **SLURM**: `scripts/create_hf_datasets.slurm`
-- **Input**: Split configurations
-- **Output**: HF datasets in `training_data/hf_datasets/`
-
-#### 9. **MECO Dataset Creation** (`8_create_meco_datasets.py`)
-- **Purpose**: Create final training datasets with/without metadata
-- **SLURM**: `scripts/meco_data.slurm`
-- **Input**: HF datasets
-- **Output**: MECO datasets in `training_data/meco_datasets/`
-
-### Phase 3: Training
-
-#### 10. **Training Configuration Generation** (`generate_train_configs.py`)
-- **Purpose**: Generate all training configuration files
-- **Input**: `scripts/meco_splits.txt`
-- **Output**: Training configs in `train_configs/`
-
-#### 11. **Model Training** (`9_train_meco.py`)
-- **Purpose**: Train language models on MECO datasets
-- **SLURM**: `scripts/train_meco.slurm`
-- **Input**: MECO datasets + training configs
-- **Output**: Trained models in `logs/`
-
-## 🎯 Training Modes
-
-The pipeline supports 4 training modes for each data split:
-
-1. **Pretraining**: Train from scratch on MECO data
-2. **Continued Pretraining**: Continue training from HuggingFace LLaMA model
-3. **Pretrain + Instruct**: Pretraining → Instruction tuning
-4. **Continued Pretrain + Instruct**: Continued pretraining → Instruction tuning
-
-## 📊 Data Splits
-
-Available in `scripts/meco_splits.txt`:
-
-- **Continents**: africa, asia, europe, america
-- **Novel Concepts**: pivot_2012, pivot_2015, pivot_2018, pivot_2021
-- **Concept Change**: development_&_society, global_politics, identity_&_gender, innovation_&_markets, urban_governance
-
-Each split has **with_metadata** and **without_metadata** variants.
-
-## 🚀 Quick Start
-
-### 1. Generate Training Configs
 ```bash
-cd src
-python generate_train_configs.py
+git clone https://github.com/iamshnoo/metadata_localization.git
+cd metadata_localization
+python -m pip install -e culture_map
+culture-map --help
 ```
 
-### 2. Run Training
+Render the released cultural-values map and overlay model projections:
+
 ```bash
-# Single GPU
-sbatch scripts/train_meco.slurm train_configs/continents/africa/with_metadata/pretraining.yaml
-
-# Multi-GPU (4 GPUs)
-sbatch scripts/train_meco.slurm train_configs/continents/africa/with_metadata/pretraining.yaml 4
+culture-map download-paper-assets --data-dir data/paper_osf
+culture-map plot-map \
+  --data-dir data/paper_osf \
+  --with-paper-models \
+  --output outputs/culture_map.png
 ```
 
-### 3. Monitor Training
+Build the tracked QA benchmark export:
+
 ```bash
-# Check logs
-tail -f /scratch/amukher6/logs/culture/out/meco_train_*.out.txt
-
-# Check completion log
-tail -f /scratch/amukher6/metacul/logs/meco_training_completion.log
+python qa_data/build_hf_dataset.py --help
 ```
 
-## 📋 Configuration Files
+Inspect the reproducibility pipeline:
 
-Training configurations are automatically generated in:
-```
-train_configs/
-├── continents/africa/with_metadata/
-│   ├── pretraining.yaml
-│   ├── continued_pretraining.yaml
-│   ├── pretrain_instruct.yaml
-│   └── continued_pretrain_instruct.yaml
-└── ... (all other splits)
+```bash
+find src -maxdepth 2 -type d | sort
 ```
 
-Each config file is self-sufficient and contains all parameters needed for training.
+## What To Use
 
-## 🔧 Key Features
+| Need | Start here | What it provides |
+| --- | --- | --- |
+| Installable software package | `culture_map/` | CLI and Python modules for WVS-style cultural projection, plotting, and provider/model evaluation. |
+| Benchmark data surface | `qa_data/` | Legacy `qa_metacul` JSON, JSONL, and Hugging Face dataset export plus the dataset builder. |
+| Reproducibility pipeline | `src/` | Step-structured scripts from data processing through model evaluation and paper plots. |
+| Live experiment scripts | `src_live/`, `slurm_live/` | Flat mirrors of active scripts and cluster launchers used for paper runs. |
+| Paper artifacts | `results/` | Tracked summary tables, plots, benchmark outputs, and compressed large result files. |
+| Workspace sync utility | `sync_from_workspace.py` | Copies curated code/results from the private workspace into this public repo layout. |
 
-- **Scalable**: Supports 1-8 GPU training
-- **Reproducible**: All configs version controlled
-- **Comprehensive**: Covers all training paradigms
-- **Efficient**: Uses Quick LLaMA for fast training
-- **Monitored**: WandB integration for experiment tracking
+## Repository Layout
 
-## 📝 Notes
+```text
+metadata_localization/
+├── culture_map/       # installable package: cultural map projection/evaluation
+├── docs/              # reviewer-facing guides and artifact manifests
+├── qa_data/           # QA benchmark data and dataset build script
+├── results/           # tracked summary results, plots, and compressed artifacts
+├── slurm_live/        # cluster job launchers used by the experiments
+├── src/               # organized pipeline by paper stage
+├── src_live/          # live flat script mirror from the experiment workspace
+├── sync_from_workspace.py
+└── README.md
+```
 
-- All data directories are git-ignored to keep repository clean
-- SLURM scripts are configured for the cluster environment
-- Training checkpoints are saved every 1000 steps
-- Logs are automatically organized by experiment type
+The `src/` tree is the canonical organized view:
+
+```text
+src/
+├── step0_dataset/          # raw NOW processing and corpus statistics
+├── step1_lda_analysis/     # topic modeling and document theme scaffolding
+├── step2_process_data/     # metadata, splits, and HF/MECO dataset creation
+├── step3_pretraining/      # checkpoint conversion and pretraining evaluation
+├── step4_sft/              # QA generation, SFT, and SFT evaluation
+└── step5_plots/            # paper figures, significance, and analysis scripts
+```
+
+## Reusable Software Components
+
+The primary reusable software component is `culture_map`, which can be installed
+with `pip install -e culture_map`. It exposes the `culture-map` command and
+separate modules for asset loading, scoring, projection, plotting, provider
+runners, and local checkpoint evaluation.
+
+Useful commands:
+
+```bash
+culture-map download-paper-assets
+culture-map derive-projection
+culture-map plot-map --with-paper-models
+culture-map run-openai-part1 --model <model-name>
+culture-map run-anthropic-part1 --model <model-name>
+culture-map run-gemini-part1 --model <model-name>
+culture-map run-together-part1 --model <model-name>
+culture-map run-local-country-eval --variant <variant-name>
+```
+
+See `culture_map/README.md` and `docs/COMPONENTS.md` for the package API,
+expected inputs, and common workflows.
+
+## Reproducing Experiments
+
+The public repository includes code and summary artifacts. Large raw corpora,
+licensed inputs, model checkpoints, and cluster logs are intentionally excluded
+from Git. The pipeline expects those external assets to be present in the
+workspace paths configured by the individual scripts.
+
+Recommended reading order:
+
+1. `docs/COMPONENTS.md` for module boundaries and reusable entrypoints.
+2. `docs/REPRODUCIBILITY.md` for the end-to-end pipeline and external inputs.
+3. `docs/RESULTS.md` for the tracked result directories and paper artifacts.
+4. `qa_data/README.md` for the QA benchmark surface.
+5. `culture_map/README.md` for cultural projection workflows.
+
+## Data And Artifact Policy
+
+The repository tracks source code, small benchmark artifacts, summary result
+tables, plots, and compressed result files needed for review. It does not track:
+
+- raw NOW corpus data;
+- generated document metadata and full training corpora;
+- model checkpoints and training logs;
+- API keys, local environment files, or cluster-private state;
+- raw result files larger than GitHub's 100 MB object limit.
+
+One large CSV rejected by GitHub is committed as
+`results/analysis/localnewsqa_locale_switch/pair_level.csv.gz`; the raw CSV is
+ignored locally.
+
+## Citation
+
+If you use this repository, cite the accompanying submission and the benchmark
+or artifact you use. A final BibTeX entry can be added here once the submission
+metadata is fixed.
