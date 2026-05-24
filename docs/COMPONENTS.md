@@ -80,12 +80,22 @@ to a stage of the submission workflow.
 | `step0_dataset/` | Raw NOW data preparation and corpus statistics. |
 | `step1_lda_analysis/` | Topic-modeling and document theme scaffolding. |
 | `step2_process_data/` | Metadata creation, split definitions, and HF/MECO dataset builders. |
-| `step3_pretraining/` | Checkpoint conversion, perplexity lists, and pretraining analyses. |
+| `step3_pretraining/` | Nanotron run recipes, checkpoint conversion, perplexity lists, and pretraining analyses. |
 | `step4_sft/` | QA generation, SFT training, LoRA merge, and SFT evaluation. |
 | `step5_plots/` | Plot generation, significance tests, and summary analyses. |
 
 Most scripts are designed as reproducibility entrypoints rather than library
 APIs. Use the directory names and numbered filenames to follow the paper order.
+
+### Nanotron Pretraining
+
+`src/step3_pretraining/3a_pretrain/continents/` contains copy-pastable
+Nanotron `slurm_launcher.py` commands for 500M and 1B MAPLE runs, including
+with-metadata, without-metadata, leave-one-continent, and metadata-field
+ablations. The training engine is the project Nanotron fork at
+`https://github.com/iamshnoo/nanotron`; this repository stores the MAPLE
+recipes and downstream conversion/evaluation utilities. See
+`docs/PRETRAINING.md` for the full usage guide.
 
 ## `src_live/`
 

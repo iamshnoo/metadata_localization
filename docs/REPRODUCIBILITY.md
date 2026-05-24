@@ -48,9 +48,12 @@ the same directory show the cluster entrypoints.
 src/step3_pretraining/
 ```
 
-This stage contains checkpoint conversion helpers and pretraining evaluation
-scripts. Large checkpoints live outside Git; the repository tracks only the
-conversion/evaluation code and selected summary outputs.
+This stage contains Nanotron training recipes, checkpoint conversion helpers,
+and pretraining evaluation scripts. The training engine is the project fork at
+`https://github.com/iamshnoo/nanotron`; this repository stores the MAPLE run
+manifests and downstream tooling. Large checkpoints live outside Git; the
+repository tracks only recipes, conversion/evaluation code, and selected summary
+outputs. See `docs/PRETRAINING.md`.
 
 ### 4. QA generation, SFT, and evaluation
 

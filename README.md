@@ -54,6 +54,7 @@ find src -maxdepth 2 -type d | sort
 | --- | --- | --- |
 | Installable software package | `culture_map/` | CLI and Python modules for WVS-style cultural projection, plotting, and provider/model evaluation. |
 | Benchmark data surface | `qa_data/` | Legacy `qa_metacul` JSON, JSONL, and Hugging Face dataset export plus the dataset builder. |
+| Nanotron pretraining | `src/step3_pretraining/`, `docs/PRETRAINING.md` | MAPLE Nanotron training recipes, checkpoint conversion, and pretrained-model evaluation. |
 | Reproducibility pipeline | `src/` | Step-structured scripts from data processing through model evaluation and paper plots. |
 | Live experiment scripts | `src_live/`, `slurm_live/` | Flat mirrors of active scripts and cluster launchers used for paper runs. |
 | Paper artifacts | `results/` | Tracked summary tables, plots, benchmark outputs, and compressed large result files. |
@@ -119,10 +120,11 @@ workspace paths configured by the individual scripts.
 Recommended reading order:
 
 1. `docs/COMPONENTS.md` for module boundaries and reusable entrypoints.
-2. `docs/REPRODUCIBILITY.md` for the end-to-end pipeline and external inputs.
-3. `docs/RESULTS.md` for the tracked result directories and paper artifacts.
-4. `qa_data/README.md` for the QA benchmark surface.
-5. `culture_map/README.md` for cultural projection workflows.
+2. `docs/PRETRAINING.md` for the Nanotron training, conversion, and evaluation workflow.
+3. `docs/REPRODUCIBILITY.md` for the end-to-end pipeline and external inputs.
+4. `docs/RESULTS.md` for the tracked result directories and paper artifacts.
+5. `qa_data/README.md` for the QA benchmark surface.
+6. `culture_map/README.md` for cultural projection workflows.
 
 ## Data And Artifact Policy
 
