@@ -57,12 +57,15 @@ def main() -> int:
     run_root = args.run_root
     plot_root = args.out_dir or (run_root / "plots")
     plot67 = load_plot67()
+    seed41_switch_csv = run_root / "summaries/localnewsqa_locale_switch_seed41/summary.csv"
 
     plot67.ACCURACY_CSV = args.accuracy_csv or (
         run_root / "plots/plot_8_pretrained_target_split_seed41_bootstrap.csv"
     )
     plot67.SWITCH_CSV = args.switch_csv or (
-        run_root / "summaries/localnewsqa_locale_switch/summary.csv"
+        seed41_switch_csv
+        if seed41_switch_csv.exists()
+        else run_root / "summaries/localnewsqa_locale_switch/summary.csv"
     )
     plot67.GAIN_CSV = args.gain_csv or (
         run_root / "appendix_model_gain_tables/localnewsqa_model_gains_long.csv"
