@@ -1,5 +1,9 @@
 # Metadata Localization
 
+[Anjishnu Mukherjee](https://iamshnoo.github.io/), Ziwei Zhu, Antonios Anastasopoulos · EMNLP ’26 (Main)
+
+[Paper](https://arxiv.org/abs/2601.15236) · [Research overview and publications](https://iamshnoo.github.io/#metadata-localization)
+
 This repository contains the reusable software and public artifacts for the
 metadata localization submission. The codebase supports the full component
 surface used by the project:
