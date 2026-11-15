@@ -1,8 +1,8 @@
-# Metadata Localization
+# MAPLE: Metadata Conditioned LLM Pretraining for Locale-Aware Question Answering
 
 [Anjishnu Mukherjee](https://iamshnoo.github.io/), Ziwei Zhu, Antonios Anastasopoulos · EMNLP ’26 (Main)
 
-[Paper](https://arxiv.org/abs/2601.15236) · [Research overview and publications](https://iamshnoo.github.io/#metadata-localization)
+[Paper](https://aclanthology.org/2026.emnlp-main.2053/) · [arXiv](https://arxiv.org/abs/2601.15236) · [Project page](https://iamshnoo.github.io/metadata_localization/) · [LocalNewsQA on Hugging Face](https://huggingface.co/datasets/iamshnoo/LocalNewsQA) · [Research overview and publications](https://iamshnoo.github.io/#metadata-localization)
 
 This repository contains the reusable software and public artifacts for the
 metadata localization submission. The codebase supports the full component
@@ -167,3 +167,27 @@ tables, plots, and compressed result files needed for review. It does not track:
 - model checkpoints and training logs;
 - API keys, local environment files, or cluster-local state;
 - raw result files larger than GitHub's 100 MB object limit.
+
+## Citation
+
+```bibtex
+@inproceedings{mukherjee-etal-2026-maple,
+    title = "{MAPLE}: Metadata Conditioned {LLM} Pretraining for Locale-Aware Question Answering",
+    author = "Mukherjee, Anjishnu  and
+      Zhu, Ziwei  and
+      Anastasopoulos, Antonios",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Junyi Jessy  and
+      Elliott, Desmond",
+    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.emnlp-main.2053/",
+    doi = "10.18653/2026.emnlp-main.2053",
+    pages = "46746--46772",
+    ISBN = "979-8-89176-459-0"
+}
+```
